@@ -1,0 +1,17 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "3A75A621-BFA2-46D6-9489-F45405FD3350",
+        "deviceName" : "Poker QA Betting Offline",
+        "exportedFileName" : "ED5C9347-72AA-4EAB-97D8-4EACDB2E5AC3.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "all-in-before-confirm_0_31612597-3C0F-4297-B08B-AD14314687BD.png",
+        "timestamp" : 1792194051.664
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testAllInExactConfirmation()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testAllInExactConfirmation"
+  }
+]

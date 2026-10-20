@@ -1,0 +1,2 @@
+Evidence: replica/tests/evidence/ev-call-20261017-141459
+PASS: EV call/fold lesson and restored progress.

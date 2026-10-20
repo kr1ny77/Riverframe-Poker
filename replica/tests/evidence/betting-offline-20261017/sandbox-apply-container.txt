@@ -1,0 +1,61 @@
+(lldb) target create ".build/qa-sandbox-symbols"
+Current executable set to '/Users/kr1ny77/Desktop/Poker/.build/qa-sandbox-symbols' (arm64).
+(lldb) breakpoint set --name sleep
+Breakpoint 1: where = libsystem_c.dylib`sleep, address = 0x00000001803a3df0
+(lldb) run
+Process 91667 launched: '/Users/kr1ny77/Desktop/Poker/.build/qa-sandbox-symbols' (arm64)
+Process 91667 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.1
+       frame #0: 0x000000018ff67df0 libsystem_c.dylib`sleep
+libsystem_c.dylib`sleep:
+->  0x18ff67df0 <+0>:  pacibsp 
+    0x18ff67df4 <+4>:  sub    sp, sp, #0x40
+    0x18ff67df8 <+8>:  stp    x20, x19, [sp, #0x20]
+    0x18ff67dfc <+12>: stp    x29, x30, [sp, #0x30]
+Target 0: (qa-sandbox-symbols) stopped.
+(lldb) disassemble --name sandbox_apply_container
+libsandbox.1.dylib`sandbox_apply_container:
+    0x19453ce88 <+0>:   pacibsp 
+    0x19453ce8c <+4>:   sub    sp, sp, #0x40
+    0x19453ce90 <+8>:   stp    x20, x19, [sp, #0x20]
+    0x19453ce94 <+12>:  stp    x29, x30, [sp, #0x30]
+    0x19453ce98 <+16>:  add    x29, sp, #0x30
+    0x19453ce9c <+20>:  ldr    x8, [x0]
+    0x19453cea0 <+24>:  cbz    x8, 0x19453cebc           ; <+52>
+    0x19453cea4 <+28>:  stp    x8, x1, [sp]
+    0x19453cea8 <+32>:  cbz    x1, 0x19453cedc           ; <+84>
+    0x19453ceac <+36>:  mov    x0, x1
+    0x19453ceb0 <+40>:  bl     0x194550614               ; symbol stub for: strlen
+    0x19453ceb4 <+44>:  add    x8, x0, #0x1
+    0x19453ceb8 <+48>:  b      0x19453cee0               ; <+88>
+    0x19453cebc <+52>:  ldp    x8, x9, [x0, #0x8]
+    0x19453cec0 <+56>:  stp    x8, x9, [sp]
+    0x19453cec4 <+60>:  str    x1, [sp, #0x10]
+    0x19453cec8 <+64>:  cbz    x1, 0x19453cef8           ; <+112>
+    0x19453cecc <+68>:  mov    x0, x1
+    0x19453ced0 <+72>:  bl     0x194550614               ; symbol stub for: strlen
+    0x19453ced4 <+76>:  add    x8, x0, #0x1
+    0x19453ced8 <+80>:  b      0x19453cefc               ; <+116>
+    0x19453cedc <+84>:  mov    x8, #0x0                  ; =0 
+    0x19453cee0 <+88>:  str    x8, [sp, #0x10]
+    0x19453cee4 <+92>:  adrp   x0, 42
+    0x19453cee8 <+96>:  add    x0, x0, #0xf2d            ; "Sandbox"
+    0x19453ceec <+100>: mov    x2, sp
+    0x19453cef0 <+104>: mov    w1, #0x1                  ; =1 
+    0x19453cef4 <+108>: b      0x19453cf10               ; <+136>
+    0x19453cef8 <+112>: mov    x8, #0x0                  ; =0 
+    0x19453cefc <+116>: str    x8, [sp, #0x18]
+    0x19453cf00 <+120>: adrp   x0, 42
+    0x19453cf04 <+124>: add    x0, x0, #0xf2d            ; "Sandbox"
+    0x19453cf08 <+128>: mov    x2, sp
+    0x19453cf0c <+132>: mov    w1, #0x0                  ; =0 
+    0x19453cf10 <+136>: bl     0x194550064               ; symbol stub for: __sandbox_ms
+    0x19453cf14 <+140>: mov    x19, x0
+    0x19453cf18 <+144>: cbnz   w0, 0x19453cf20           ; <+152>
+    0x19453cf1c <+148>: bl     0x1945500f4               ; symbol stub for: _sandbox_enter_notify_libxpc
+    0x19453cf20 <+152>: mov    x0, x19
+    0x19453cf24 <+156>: ldp    x29, x30, [sp, #0x30]
+    0x19453cf28 <+160>: ldp    x20, x19, [sp, #0x20]
+    0x19453cf2c <+164>: add    sp, sp, #0x40
+    0x19453cf30 <+168>: retab  
+(lldb) quit

@@ -1,0 +1,18 @@
+Monitoring boot status for Poker QA Regression iPhone17e (3B044FD3-F86D-4F2E-A1BA-4707C747DBF6).
+[2026-10-18 15:45:26 +0000] Status=2, isTerminal=NO, Elapsed=00:01.
+	Waiting on Data Migration
+		Reason:(null)
+		Migration Elapsed:00:00 seconds
+
+[2026-10-18 15:45:27 +0000] Status=4, isTerminal=NO, Elapsed=00:02.
+	Waiting on System App
+
+[2026-10-18 15:45:27 +0000] Status=4, isTerminal=NO, Elapsed=00:02.
+	Waiting on System App
+
+[2026-10-18 15:45:28 +0000] Status=4, isTerminal=NO, Elapsed=00:03.
+	Waiting on System App
+
+[2026-10-18 15:45:29 +0000] Status=4294967295, isTerminal=YES, Elapsed=00:04.
+	Finished
+

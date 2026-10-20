@@ -1,0 +1,97 @@
+[
+  {
+    "test": "testAllInAfterBlindContribution",
+    "status": "passed",
+    "seconds": 23.47
+  },
+  {
+    "test": "testAllInExactConfirmation",
+    "status": "passed",
+    "seconds": 21.962
+  },
+  {
+    "test": "testBetCustomAmountAndValidation",
+    "status": "passed",
+    "seconds": 37.949
+  },
+  {
+    "test": "testRaiseMaximum",
+    "status": "passed",
+    "seconds": 20.942
+  },
+  {
+    "test": "testRaiseMinimum",
+    "status": "passed",
+    "seconds": 21.919
+  },
+  {
+    "test": "testRegressionCourseNavigation",
+    "status": "passed",
+    "seconds": 93.67
+  },
+  {
+    "test": "testRegressionGameplay",
+    "status": "passed",
+    "seconds": 32.916
+  },
+  {
+    "test": "testRegressionLessonBlockers",
+    "status": "passed",
+    "seconds": 75.436
+  },
+  {
+    "test": "testRegressionLessonCombinations",
+    "status": "passed",
+    "seconds": 124.885
+  },
+  {
+    "test": "testRegressionLessonEV",
+    "status": "passed",
+    "seconds": 56.772
+  },
+  {
+    "test": "testRegressionLessonKnownEquity",
+    "status": "passed",
+    "seconds": 53.244
+  },
+  {
+    "test": "testRegressionLessonOuts",
+    "status": "passed",
+    "seconds": 29.048
+  },
+  {
+    "test": "testRegressionLessonPositions",
+    "status": "passed",
+    "seconds": 75.759
+  },
+  {
+    "test": "testRegressionLessonPotOdds",
+    "status": "passed",
+    "seconds": 65.299
+  },
+  {
+    "test": "testRegressionLessonRangeEquity",
+    "status": "passed",
+    "seconds": 73.549
+  },
+  {
+    "test": "testRegressionOffline",
+    "status": "passed",
+    "seconds": 112.588
+  },
+  {
+    "test": "testShortRaiseDoesNotReopen",
+    "status": "passed",
+    "seconds": 14.055
+  },
+  {
+    "test": "testShortStackAllInRaise",
+    "status": "passed",
+    "seconds": 17.122
+  },
+  {
+    "test": "testShortStackCallAllIn",
+    "status": "passed",
+    "seconds": 16.882
+  }
+]

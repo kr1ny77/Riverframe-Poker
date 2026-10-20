@@ -1,0 +1,2 @@
+Evidence: replica/tests/evidence/positions-20261017-140146
+PASS: positions lesson and restored progress.

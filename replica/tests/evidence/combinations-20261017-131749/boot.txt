@@ -1,0 +1,18 @@
+Monitoring boot status for Poker QA Combinations iPhone17e (4273C8DC-B790-4ACF-B4CC-DD64D44D1F32).
+[2026-10-17 11:23:24 +0000] Status=2, isTerminal=NO, Elapsed=00:01.
+	Waiting on Data Migration
+		Reason:(null)
+		Migration Elapsed:00:00 seconds
+
+[2026-10-17 11:23:25 +0000] Status=4, isTerminal=NO, Elapsed=00:01.
+	Waiting on System App
+
+[2026-10-17 11:23:25 +0000] Status=4, isTerminal=NO, Elapsed=00:02.
+	Waiting on System App
+
+[2026-10-17 11:23:26 +0000] Status=4294967295, isTerminal=YES, Elapsed=00:03.
+	Finished
+
+Monitoring boot status for Poker QA Combinations iPhone17e (4273C8DC-B790-4ACF-B4CC-DD64D44D1F32).
+Device already booted, nothing to do.
+

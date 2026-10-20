@@ -1,0 +1,3 @@
+QA simulator: 9455F7B8-55E0-4C55-916B-905140849069
+Evidence: replica/tests/evidence/combinations-20261017-020801
+PASS: comparison lesson, shared progress regressions and corrupt-history feedback. Evidence: replica/tests/evidence/combinations-20261017-020801

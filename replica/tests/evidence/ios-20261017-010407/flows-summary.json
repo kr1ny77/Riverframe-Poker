@@ -1,0 +1,45 @@
+{
+  "devicesAndConfigurations" : [
+    {
+      "device" : {
+        "architecture" : "arm64",
+        "deviceId" : "185F59F3-FF35-4425-843E-7A3A7C7FBDF5",
+        "deviceName" : "Poker QA iPhone17e",
+        "modelName" : "iPhone 17e",
+        "osBuildNumber" : "24A434",
+        "osVersion" : "27.0",
+        "platform" : "iOS Simulator"
+      },
+      "expectedFailures" : 0,
+      "failedTests" : 0,
+      "passedTests" : 5,
+      "skippedTests" : 0,
+      "testPlanConfiguration" : {
+        "configurationId" : "1",
+        "configurationName" : "Test Scheme Action"
+      }
+    }
+  ],
+  "environmentDescription" : "PokerTrainer · Built with macOS 26.6.2",
+  "expectedFailures" : 0,
+  "failedTests" : 0,
+  "finishTime" : 1792192018.942,
+  "passedTests" : 5,
+  "result" : "Passed",
+  "runtimeWarnings" : [
+
+  ],
+  "skippedTests" : 0,
+  "startTime" : 1792191850.137,
+  "statistics" : [
+
+  ],
+  "testFailures" : [
+
+  ],
+  "title" : "Test - PokerTrainer",
+  "topInsights" : [
+
+  ],
+  "totalTestCount" : 5
+}

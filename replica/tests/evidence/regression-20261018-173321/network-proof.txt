@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/kr1ny77/Desktop/Poker/Tools/collect-offline-proof.py", line 31, in <module>
+    assert len(proofs) >= 5, f'Expected at least five isolated application launches, got {len(proofs)}'
+AssertionError: Expected at least five isolated application launches, got 2

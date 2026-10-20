@@ -1,0 +1,120 @@
+Building for debugging...
+[3 / 5] PokerCore
+[5 / 8] PokerCore
+Build complete! (0,45 sec)
+PASS all evaluator categories and seven-card selection
+PASS wheel and pair kicker ordering
+PASS board-only tie
+PASS full six-player hand and big blind option
+PASS early fold settlement and hidden cards
+PASS rejected commands preserve state
+PASS short all-in keeps raise closed
+PASS cumulative short all-ins reopen raise
+PASS unequal all-ins and side pots
+PASS short blind all-in runout and refunds
+PASS split pot and odd chip order
+PASS 200 deterministic mixed hands
+PASS deterministic deal and bot decisions
+PASS pot odds denominator and explanation
+PASS answer tolerance boundaries
+PASS atomic local persistence round trip
+PASS duplicate attempt rejection
+PASS schema and corruption rejection
+PASS persisted answer consistency
+PASS outs known cards and nine valid outs
+PASS outs exact enumeration and analytic formula
+PASS outs independent evaluator over all 1081 runouts
+PASS outs choice keys and versioned grading
+PASS legacy pot odds and outs results coexist
+Checks: 24/24 passed; 10937 assertions; 0 failures.
+Building for production...
+[3 / 23] PokerCore
+[5 / 24] PokerCore
+[12 / 23] PokerCoreChecks-product
+[14 / 23] PokerCoreChecks-product
+[14 / 23] PokerNativeTests-product
+[18 / 22] PokerNativeTests-product
+[21 / 21] PokerCoreChecks-product
+Build complete! (7,54 sec)
+Test Suite 'All tests' started at 2026-10-17 13:50:30.986.
+Test Suite 'All tests' passed at 2026-10-17 13:50:30.987.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test randomLegalActionsMatchIndependentPotLedger() started.
+◇ Test handComparisonCoversEveryCategoryAndKnownShowdowns() started.
+◇ Test equityRejectsEveryDuplicateLocation() started.
+◇ Test everyTemplateExplanationMatchesEvaluatorRanksAndWinner() started.
+◇ Test categoricalArchiveRejectsTamperedGradeAndDuplicateIdentity() started.
+◇ Test comparisonAttemptsRoundTripAndDetectTamperedResult() started.
+◇ Test knownHandEquityRejectsImpossibleCardsAndPersists() started.
+◇ Test bestFiveQuestionsHaveOnePhysicalBestSubsetAndRejectWrongAnswers() started.
+◇ Test potOddsAndStoredHistoryAreConsistent() started.
+◇ Test replayedActionAndSettlementAreRejected() started.
+◇ Test knownHandEquityExactCountsAndTies() started.
+◇ Test rangeEquityValidationScalingAndPersistence() started.
+◇ Test equityMatchesIndependentOracle(_:) started.
+◇ Test comparisonQuestionDecodingRejectsTamperedCardsAndIDs() started.
+◇ Test generatedQuestionsStayValidAcrossSeeds() started.
+◇ Test exhaustiveFiveCardCategoryCounts() started.
+◇ Test rangeEquityExactWeightedOracle() started.
+◇ Test sevenCardIndependentReference() started.
+◇ Test completeDealsHaveUniqueCards() started.
+◇ Test fullLessonMixedAnswersPersistAndRestore() started.
+◇ Test legacyV1MigratesAtomicallyAndNumericWritesPreserveComparisons() started.
+◇ Test shortOpeningAfterCheckFollowsFullBetProfile() started.
+◇ Test specialSevenCardKickersAndTies() started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "lesson-flop", hero: [12, 25], opponent: [11, 24], board: [0, 18, 33], expected: [907, 0, 83]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "lesson-turn-split", hero: [12, 24], opponent: [38, 50], board: [8, 22, 36, 39], expected: [0, 44, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT lesson-turn-split: W/T/L=[0, 44, 0], total=44, equity=50.0
+◇ Test case passing 1 argument fixture → EquityFixture(name: "royal-flop", hero: [12, 11], opponent: [25, 24], board: [8, 9, 10], expected: [990, 0, 0]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "zero-flop", hero: [25, 24], opponent: [12, 11], board: [8, 9, 10], expected: [0, 0, 990]) to equityMatchesIndependentOracle(_:) started.
+EXACT lesson-flop: W/T/L=[907, 0, 83], total=990, equity=91.61616161616162
+◇ Test case passing 1 argument fixture → EquityFixture(name: "royal-turn", hero: [12, 11], opponent: [25, 24], board: [8, 9, 10, 0], expected: [44, 0, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT royal-turn: W/T/L=[44, 0, 0], total=44, equity=100.0
+◇ Test case passing 1 argument fixture → EquityFixture(name: "zero-turn", hero: [25, 24], opponent: [12, 11], board: [8, 9, 10, 0], expected: [0, 0, 44]) to equityMatchesIndependentOracle(_:) started.
+EXACT zero-turn: W/T/L=[0, 0, 44], total=44, equity=0.0
+◇ Test case passing 1 argument fixture → EquityFixture(name: "turn-vulnerable-lead", hero: [12, 25], opponent: [11, 24], board: [0, 18, 33, 40], expected: [42, 0, 2]) to equityMatchesIndependentOracle(_:) started.
+EXACT turn-vulnerable-lead: W/T/L=[42, 0, 2], total=44, equity=95.45454545454545
+◇ Test case passing 1 argument fixture → EquityFixture(name: "turn-two-splits", hero: [11, 25], opponent: [23, 38], board: [0, 1, 2, 3], expected: [42, 2, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT turn-two-splits: W/T/L=[42, 2, 0], total=44, equity=97.72727272727273
+✔ Test equityRejectsEveryDuplicateLocation() passed after 0.173 seconds.
+✔ Test replayedActionAndSettlementAreRejected() passed after 0.172 seconds.
+✔ Test potOddsAndStoredHistoryAreConsistent() passed after 0.172 seconds.
+✔ Test comparisonAttemptsRoundTripAndDetectTamperedResult() passed after 0.173 seconds.
+✔ Test comparisonQuestionDecodingRejectsTamperedCardsAndIDs() passed after 0.172 seconds.
+✔ Test categoricalArchiveRejectsTamperedGradeAndDuplicateIdentity() passed after 0.173 seconds.
+✔ Test handComparisonCoversEveryCategoryAndKnownShowdowns() passed after 0.173 seconds.
+✔ Test knownHandEquityRejectsImpossibleCardsAndPersists() passed after 0.173 seconds.
+✔ Test bestFiveQuestionsHaveOnePhysicalBestSubsetAndRejectWrongAnswers() passed after 0.173 seconds.
+✔ Test everyTemplateExplanationMatchesEvaluatorRanksAndWinner() passed after 0.173 seconds.
+✔ Test legacyV1MigratesAtomicallyAndNumericWritesPreserveComparisons() passed after 0.173 seconds.
+✔ Test specialSevenCardKickersAndTies() passed after 0.172 seconds.
+✔ Test shortOpeningAfterCheckFollowsFullBetProfile() passed after 0.172 seconds.
+✔ Test fullLessonMixedAnswersPersistAndRestore() passed after 0.173 seconds.
+✔ Test rangeEquityValidationScalingAndPersistence() passed after 0.173 seconds.
+EXACT royal-flop: W/T/L=[990, 0, 0], total=990, equity=100.0
+EXACT zero-flop: W/T/L=[0, 0, 990], total=990, equity=0.0
+✔ Test equityMatchesIndependentOracle(_:) with 8 test cases passed after 0.189 seconds.
+RANGE EXACT equity-range-flop-v1: W/T/L=3628/0/332; evaluations=1980; equity=91.61616161616162
+✔ Test completeDealsHaveUniqueCards() passed after 0.267 seconds.
+RANGE EXACT equity-range-turn-1to3-v1: W/T/L=132/44/0; evaluations=88; equity=87.5
+RANGE EXACT equity-range-turn-3to1-v1: W/T/L=44/132/0; evaluations=88; equity=62.5
+✔ Test rangeEquityExactWeightedOracle() passed after 0.300 seconds.
+✔ Test sevenCardIndependentReference() passed after 0.329 seconds.
+EQUITY FLOP: wins=907 ties=0 losses=83 total=990 equity=91.61616161616162
+✔ Test knownHandEquityExactCountsAndTies() passed after 0.406 seconds.
+✔ Test generatedQuestionsStayValidAcrossSeeds() passed after 0.408 seconds.
+✔ Test randomLegalActionsMatchIndependentPotLedger() passed after 0.709 seconds.
+✔ Test exhaustiveFiveCardCategoryCounts() passed after 3.349 seconds.
+✔ Test run with 23 tests in 0 suites passed after 3.349 seconds.
+PokerTrainer.xcodeproj/project.pbxproj: OK
+iOS Simulator build completed.
+PASS App persistence: record, duplicate ID, reload, corruption protection, explicit reset
+PASS comparison progress: typed answers, mixed archive, same-ID retry, relaunch, failed reload protection and clear
+PASS Save failure: no phantom result, error visible, same-ID retry succeeds once
+PASS Application game loop: home paused, cancelled bot, resumed hand, hero actions, completed hand, 6000 chips conserved
+Основной банк 60: Вы
+PASS Next hand; main-actor model integration finished
+PASS BUG-001: failed reload blocks writes; successful reload unlocks recording

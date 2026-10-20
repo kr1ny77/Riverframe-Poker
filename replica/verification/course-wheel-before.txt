@@ -1,0 +1,20 @@
+Building for production...
+[1 / 2]
+[2 / 4] PokerNativeTests-product
+[4 / 6] PokerNativeTests-product
+[8 / 12] PokerNativeTests-product
+[10 / 12] PokerNativeTests-product
+Build complete! (8,64 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test courseWheelErrorRetainsItsSpecificCategory() started.
+✘ Test courseWheelErrorRetainsItsSpecificCategory() recorded an issue at LearningCourseTests.swift:119:5: Expectation failed: course.progress(.combinations).errors.first?.category == .wheel
+↳ course.progress(.combinations).errors.first?.category == .wheel → false
+↳   course.progress(.combinations).errors.first?.category → .bestFive
+↳     some → .bestFive
+↳     some → .wheel
+✘ Test courseWheelErrorRetainsItsSpecificCategory() failed after 0.002 seconds with 1 issue.
+✘ Test run with 1 test in 0 suites failed after 0.002 seconds with 1 issue.
+Note: Some test targets reported failures:
+  - PokerNativeTests (Swift Testing)

@@ -1,0 +1,4 @@
+QA simulator: A6B608D6-71E7-4618-AF9A-2D4D2B05BB53
+Evidence: replica/tests/evidence/ios-20261017-010741
+cp: /Users/kr1ny77/Library/Developer/CoreSimulator/Devices/A6B608D6-71E7-4618-AF9A-2D4D2B05BB53/data/Containers/Data/Application/571E5230-81CF-45B0-AC63-9A23894C623F/Library/Application Support/PokerPractice/practice-v1.json: No such file or directory
+cp: /Users/kr1ny77/Library/Developer/CoreSimulator/Devices/A6B608D6-71E7-4618-AF9A-2D4D2B05BB53/data/Containers/Data/Application/571E5230-81CF-45B0-AC63-9A23894C623F/Library/Application Support/PokerPractice/practice-v1.json: No such file or directory

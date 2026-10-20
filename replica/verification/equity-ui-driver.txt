@@ -1,0 +1,2 @@
+Evidence: replica/tests/evidence/equity-20261017-133423
+PASS: equity lesson and restored progress.

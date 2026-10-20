@@ -1,0 +1,1 @@
+PASS BUG-001: failed reload blocks writes; successful reload unlocks recording

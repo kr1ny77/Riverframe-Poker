@@ -1,0 +1,30 @@
+Building for production...
+[1 / 1]
+[2 / 4] PokerNativeTests-product
+[3 / 4] PokerNativeTests-product
+[7 / 11] PokerNativeTests-product
+Build complete! (4,47 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test equityRejectsEveryDuplicateLocation() started.
+◇ Test equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "lesson-flop", hero: [12, 25], opponent: [11, 24], board: [0, 18, 33], expected: [907, 0, 83]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "lesson-turn-split", hero: [12, 24], opponent: [38, 50], board: [8, 22, 36, 39], expected: [0, 44, 0]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "zero-flop", hero: [25, 24], opponent: [12, 11], board: [8, 9, 10], expected: [0, 0, 990]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "royal-flop", hero: [12, 11], opponent: [25, 24], board: [8, 9, 10], expected: [990, 0, 0]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "zero-turn", hero: [25, 24], opponent: [12, 11], board: [8, 9, 10, 0], expected: [0, 0, 44]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "royal-turn", hero: [12, 11], opponent: [25, 24], board: [8, 9, 10, 0], expected: [44, 0, 0]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "turn-vulnerable-lead", hero: [12, 25], opponent: [11, 24], board: [0, 18, 33, 40], expected: [42, 0, 2]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "turn-two-splits", hero: [11, 25], opponent: [23, 38], board: [0, 1, 2, 3], expected: [42, 2, 0]) to equityMatchesIndependentOracle(_:) started.
+✔ Test equityRejectsEveryDuplicateLocation() passed after 0.001 seconds.
+EXACT turn-two-splits: W/T/L=[42, 2, 0], total=44, equity=97.72727272727273
+EXACT lesson-turn-split: W/T/L=[0, 44, 0], total=44, equity=50.0
+EXACT turn-vulnerable-lead: W/T/L=[42, 0, 2], total=44, equity=95.45454545454545
+EXACT royal-turn: W/T/L=[44, 0, 0], total=44, equity=100.0
+EXACT zero-turn: W/T/L=[0, 0, 44], total=44, equity=0.0
+EXACT royal-flop: W/T/L=[990, 0, 0], total=990, equity=100.0
+EXACT zero-flop: W/T/L=[0, 0, 990], total=990, equity=0.0
+EXACT lesson-flop: W/T/L=[907, 0, 83], total=990, equity=91.61616161616162
+✔ Test equityMatchesIndependentOracle(_:) with 8 test cases passed after 0.081 seconds.
+✔ Test run with 2 tests in 0 suites passed after 0.081 seconds.

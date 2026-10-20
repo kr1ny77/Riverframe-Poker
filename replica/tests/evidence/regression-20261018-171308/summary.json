@@ -1,0 +1,95 @@
+{
+  "devicesAndConfigurations" : [
+    {
+      "device" : {
+        "architecture" : "arm64",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "modelName" : "iPhone 17e",
+        "osBuildNumber" : "24A434",
+        "osVersion" : "27.0",
+        "platform" : "iOS Simulator"
+      },
+      "expectedFailures" : 0,
+      "failedTests" : 2,
+      "passedTests" : 17,
+      "skippedTests" : 0,
+      "testPlanConfiguration" : {
+        "configurationId" : "1",
+        "configurationName" : "Test Scheme Action"
+      }
+    }
+  ],
+  "environmentDescription" : "PokerTrainer · Built with macOS 26.6.2",
+  "expectedFailures" : 0,
+  "failedTests" : 2,
+  "finishTime" : 1792337544.051,
+  "passedTests" : 17,
+  "result" : "Failed",
+  "runtimeWarnings" : [
+    {
+      "issueType" : "Runtime Warning",
+      "message" : "Invalid frame dimension (negative or non-finite)."
+    },
+    {
+      "issueType" : "Runtime Warning",
+      "message" : "Invalid frame dimension (negative or non-finite)."
+    },
+    {
+      "issueType" : "Runtime Warning",
+      "message" : "Invalid frame dimension (negative or non-finite)."
+    },
+    {
+      "issueType" : "Runtime Warning",
+      "message" : "Invalid frame dimension (negative or non-finite)."
+    },
+    {
+      "issueType" : "Runtime Warning",
+      "message" : "Invalid frame dimension (negative or non-finite)."
+    },
+    {
+      "issueType" : "Runtime Warning",
+      "message" : "Invalid frame dimension (negative or non-finite)."
+    },
+    {
+      "issueType" : "Runtime Warning",
+      "message" : "Invalid frame dimension (negative or non-finite)."
+    },
+    {
+      "issueType" : "Runtime Warning",
+      "message" : "Invalid frame dimension (negative or non-finite)."
+    }
+  ],
+  "skippedTests" : 0,
+  "startTime" : 1792336391.658,
+  "statistics" : [
+
+  ],
+  "testFailures" : [
+    {
+      "failureText" : "XCTAssertTrue failed - Calculation details must remain available before formula assertions",
+      "targetName" : "PokerTrainerUITests",
+      "testIdentifier" : 14,
+      "testIdentifierString" : "CriticalFlows/testRegressionLessonPotOdds()",
+      "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionLessonPotOdds",
+      "testName" : "testRegressionLessonPotOdds()"
+    },
+    {
+      "failureText" : "XCTAssertTrue failed - Calculation details must remain available before formula assertions",
+      "targetName" : "PokerTrainerUITests",
+      "testIdentifier" : 16,
+      "testIdentifierString" : "CriticalFlows/testRegressionOffline()",
+      "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionOffline",
+      "testName" : "testRegressionOffline()"
+    }
+  ],
+  "title" : "Test - PokerTrainer",
+  "topInsights" : [
+    {
+      "category" : "Common Failures",
+      "impact" : "100% of failures",
+      "text" : "2 runs of 2 tests failed with XCTAssertTrue failed - Calculation details must remain available before formula assertions"
+    }
+  ],
+  "totalTestCount" : 19
+}

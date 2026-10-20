@@ -1,0 +1,4 @@
+1.1.1.1: host TCP443 connected
+example.com: host TCP443 connected
+sandbox-exec control: 1
+nc: connectx to 1.1.1.1 port 443 (tcp) failed: Operation not permitted

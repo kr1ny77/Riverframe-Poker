@@ -1,0 +1,10 @@
+{
+  "case" : "testOfflineAllSections",
+  "error" : "dlopen(\/usr\/lib\/libsandbox.1.dylib, 0x0105): tried: '\/Users\/kr1ny77\/Desktop\/Poker\/.build\/ui-qa\/Build\/Products\/Debug-iphonesimulator\/libsandbox.1.dylib' (no such file), '\/private\/var\/run\/com.apple.security.cryptexd\/mnt\/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.TMrvJ5\/Library\/Developer\/CoreSimulator\/Profiles\/Runtimes\/iOS 27.0.simruntime\/Contents\/Resources\/RuntimeRoot\/usr\/lib\/libsandbox.1.dylib' (no such file), '\/usr\/lib\/libsandbox.1.dylib' (no such file, not in dyld cache)",
+  "external_connect_errno" : -1,
+  "loopback_connect_errno" : -1,
+  "process" : 91575,
+  "profile" : "no-network",
+  "sandbox_flags" : 2,
+  "sandbox_result" : -1
+}

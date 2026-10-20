@@ -1,0 +1,1 @@
+PASS: current application container has byte-identical valid history after fault injection.

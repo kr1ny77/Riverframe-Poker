@@ -1,0 +1,6 @@
+Monitoring boot status for Poker QA iPhone17e (A6B608D6-71E7-4618-AF9A-2D4D2B05BB53).
+Device already booted, nothing to do.
+
+Monitoring boot status for Poker QA iPhone17e (A6B608D6-71E7-4618-AF9A-2D4D2B05BB53).
+Device already booted, nothing to do.
+

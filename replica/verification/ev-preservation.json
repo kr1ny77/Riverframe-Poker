@@ -1,0 +1,6 @@
+{
+  "Sources/PokerCore/Cards.swift": true,
+  "Sources/PokerCore/HoldemGame.swift": true,
+  "App/Application/GameViewModel.swift": true,
+  "App/PokerTrainerApp.swift": true
+}

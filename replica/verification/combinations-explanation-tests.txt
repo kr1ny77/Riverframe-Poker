@@ -1,0 +1,11 @@
+Building for debugging...
+[2 / 5] PokerNativeTests-product
+[4 / 7] PokerNativeTests-product
+[6 / 7] PokerNativeTests-product
+Build complete! (1,28 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test everyTemplateExplanationMatchesEvaluatorRanksAndWinner() started.
+✔ Test everyTemplateExplanationMatchesEvaluatorRanksAndWinner() passed after 0.089 seconds.
+✔ Test run with 1 test in 0 suites passed after 0.089 seconds.

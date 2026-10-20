@@ -1,0 +1,32 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "FE38BAC3-BC47-435F-9A7E-764E7CBCBE57",
+        "deviceName" : "Poker QA Betting Edges",
+        "exportedFileName" : "AC6CE641-DB96-428B-BF7D-D307E904C06F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "all-in-total-1000-pay-990-before-confirm_0_4E48E152-8CFB-427D-BF1B-ED7386A3FA77.png",
+        "timestamp" : 1792194908.681
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testAllInAfterBlindContribution()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testAllInAfterBlindContribution"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "FE38BAC3-BC47-435F-9A7E-764E7CBCBE57",
+        "deviceName" : "Poker QA Betting Edges",
+        "exportedFileName" : "48E098D9-FED9-4FD1-A34A-BF6F04092515.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "short-call-all-in-5-before-confirm_0_D29DDC6D-21D5-478D-A06A-8E5DF758183A.png",
+        "timestamp" : 1792194931.051
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testShortStackCallAllIn()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testShortStackCallAllIn"
+  }
+]

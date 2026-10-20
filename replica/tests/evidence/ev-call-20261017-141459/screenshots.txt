@@ -1,0 +1,7 @@
+Exported 4 attachments for: CriticalFlows/testEVCallLessonAndRelaunch():
+File: 5A2F1A86-4ED6-48BB-A101-8C05307F66BD.png, suggested name: "ev-call-restored-progress_0_1697FF96-5FDA-4AA2-9A8B-7B34BBDA731D.png"
+File: E285947A-39BF-4698-A168-0C3F277A193B.png, suggested name: "ev-call-review-3_0_2A10B0DB-AE6A-42C2-BFEF-D1900D5D71E3.png"
+File: 02974E80-6B87-4DEF-B4A5-E8AECADEAF69.png, suggested name: "ev-call-review-2_0_58A73A9B-8985-4C48-98B6-E819D887A8F1.png"
+File: 4F075840-C540-45CC-B5F1-07F2C0F51CB6.png, suggested name: "ev-call-review-1_0_20082657-54C3-4C2C-A906-864DD80C6934.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/ev-call-20261017-141459/screenshots/manifest.json

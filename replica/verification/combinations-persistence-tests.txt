@@ -1,0 +1,8 @@
+Building for debugging...
+Build complete! (0,17 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test fullLessonMixedAnswersPersistAndRestore() started.
+✔ Test fullLessonMixedAnswersPersistAndRestore() passed after 0.018 seconds.
+✔ Test run with 1 test in 0 suites passed after 0.018 seconds.

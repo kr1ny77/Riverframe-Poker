@@ -1,0 +1,26 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "9455F7B8-55E0-4C55-916B-905140849069",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "C7919B08-FB65-4D3B-8E9D-848A67545719.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-feedback-save-failure_0_648E3003-B515-4EF0-A453-F1C079DDE1FB.png",
+        "timestamp" : 1792196092.933
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "9455F7B8-55E0-4C55-916B-905140849069",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "251D6188-FA30-40FF-A50E-09EA667455B1.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "pot-odds-save-failure_0_A3904BD5-3631-439F-AD6C-FCE47F014799.png",
+        "timestamp" : 1792196070.701
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testStorageFailureStillShowsPotOddsExplanation()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testStorageFailureStillShowsPotOddsExplanation"
+  }
+]

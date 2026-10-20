@@ -1,0 +1,4 @@
+Exported 1 attachment for: CriticalFlows/testStorageFailureStillShowsPotOddsExplanation():
+File: E147C22B-0836-4C15-8297-E1A7A8497675.png, suggested name: "pot-odds-save-failure_0_60E88830-BB9E-41F7-B4BD-AD1CE0C9CF32.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/ios-20261017-011222/save-failure-screenshots/manifest.json

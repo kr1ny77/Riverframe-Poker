@@ -1,0 +1,17 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4B8F8F7C-CD03-4B06-BDA0-1D63577B923A",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "BA2AFAF8-F6DB-4ACD-BC4D-63893AAAE7D1.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-repeat-copy_0_B8B8C272-3047-429B-9AE0-A6C5611F2E50.png",
+        "timestamp" : 1792242131.829
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testCourseRepeatCopy()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testCourseRepeatCopy"
+  }
+]

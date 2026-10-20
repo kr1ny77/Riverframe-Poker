@@ -1,0 +1,35 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "BD53067F-3089-42DE-A629-3F7CF209AD06",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "896DEA7F-C3F3-4C9D-ADA0-7D9981311C7F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-restored-progress_0_A3713DF4-9813-4070-AF44-C1865F4D9D01.png",
+        "timestamp" : 1792240923.64
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "BD53067F-3089-42DE-A629-3F7CF209AD06",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "6BB9C113-FB88-4132-BEF9-CFE1B146EE48.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-small-sample_0_3F87E61B-7509-406B-839E-6B25FE87DF5E.png",
+        "timestamp" : 1792240914.815
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "BD53067F-3089-42DE-A629-3F7CF209AD06",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "5F311CA1-FB38-47E0-ADE6-E5FF6FFE7E5D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-pot-odds-last-review_0_EDE1700E-FF82-4A27-88D9-5A265436DFEC.png",
+        "timestamp" : 1792240895.873
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testCourseRoutesPotOddsAndSample()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testCourseRoutesPotOddsAndSample"
+  }
+]

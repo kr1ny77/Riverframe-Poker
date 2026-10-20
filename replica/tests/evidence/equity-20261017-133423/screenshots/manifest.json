@@ -1,0 +1,35 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "6E16609C-E40A-4625-8408-910CB1026657",
+        "deviceName" : "Poker QA Equity iPhone17e",
+        "exportedFileName" : "9287C9CE-CD3F-44C3-B991-058F3CEFFA0A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "equity-restored-progress_0_8360CF6F-2779-471E-9C80-42B3E6713CD6.png",
+        "timestamp" : 1792236954.738
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "6E16609C-E40A-4625-8408-910CB1026657",
+        "deviceName" : "Poker QA Equity iPhone17e",
+        "exportedFileName" : "798A757B-3D26-4C2E-8EA6-157AD9074A82.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "equity-completed_0_4B55466B-5D92-4E39-821C-670FFEBEDB38.png",
+        "timestamp" : 1792236941.162
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "6E16609C-E40A-4625-8408-910CB1026657",
+        "deviceName" : "Poker QA Equity iPhone17e",
+        "exportedFileName" : "13197A9D-803B-4E16-9C7D-937E15D8FE5A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "equity-flop-explanation_0_BEE33E17-1B41-449E-A1FC-AD5E93A2702D.png",
+        "timestamp" : 1792236934.881
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testKnownHandEquityLessonAndRelaunch()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testKnownHandEquityLessonAndRelaunch"
+  }
+]

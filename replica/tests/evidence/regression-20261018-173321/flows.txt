@@ -1,0 +1,1692 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project PokerTrainer.xcodeproj -scheme PokerTrainer -destination "platform=iOS Simulator,id=FEE47D7A-4BBC-4FA4-B914-AEBA24FB3F45" -derivedDataPath .build/ui-qa -resultBundlePath replica/tests/evidence/regression-20261018-173321/flows.xcresult -parallel-testing-enabled NO -collect-test-diagnostics never "-only-testing:PokerTrainerUITests/CriticalFlows/testRegressionLessonPotOdds" "-only-testing:PokerTrainerUITests/CriticalFlows/testRegressionOffline" CODE_SIGNING_ALLOWED=NO test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  PokerDomain: /Users/kr1ny77/Desktop/Poker @ local
+
+Writing result bundle at path:
+	/Users/kr1ny77/Desktop/Poker/replica/tests/evidence/regression-20261018-173321/flows.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (4 targets)
+    Target 'PokerTrainerUITests' in project 'PokerTrainer'
+        ➜ Explicit dependency on target 'PokerTrainer' in project 'PokerTrainer'
+        ➜ Explicit dependency on target 'PokerCore-product' in project 'PokerDomain'
+    Target 'PokerTrainer' in project 'PokerTrainer'
+        ➜ Explicit dependency on target 'PokerCore-product' in project 'PokerDomain'
+    Target 'PokerCore-product' in project 'PokerDomain'
+        ➜ Explicit dependency on target 'PokerCore' in project 'PokerDomain'
+    Target 'PokerCore' in project 'PokerDomain' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 913d662b3f3be2842e710318850824c7
+Build description path: /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/XCBuildData/913d662b3f3be2842e710318850824c7.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache
+
+SwiftDriver PokerTrainer normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainer -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ PokerTrainer (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    
+
+SwiftCompile normal arm64 Compiling\ EVCallLessonView.swift /Users/kr1ny77/Desktop/Poker/App/UI/EVCallLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/EVCallLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile EVCallLessonView.swift
+
+SwiftCompile normal arm64 Compiling\ DesignSystem.swift /Users/kr1ny77/Desktop/Poker/App/UI/DesignSystem.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/DesignSystem.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile DesignSystem.swift
+
+SwiftCompile normal arm64 Compiling\ PokerTrainerViews.swift /Users/kr1ny77/Desktop/Poker/App/UI/PokerTrainerViews.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/PokerTrainerViews.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile PokerTrainerViews.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling DesignSystem.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriverJobDiscovery normal arm64 Compiling EVCallLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for PokerTrainer (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriver\ Compilation\ Requirements PokerTrainer normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainer -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftsourceinfo (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftsourceinfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.abi.json (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.abi.json /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+SwiftDriver PokerTrainerUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainerUITests -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ PokerTrainerUITests (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    
+
+SwiftCompile normal arm64 Compiling\ CriticalFlows.swift /Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:9:9: warning: main actor-isolated property 'app' can not be mutated from a nonisolated context
+  4 | @MainActor
+  5 | final class CriticalFlows: XCTestCase {
+  6 |     private var app: XCUIApplication!
+    |                 `- note: mutation of this property is only permitted within the actor
+  7 |     override func setUpWithError() throws {
+  8 |         continueAfterFailure=false
+  9 |         app=XCUIApplication()
+    |         `- warning: main actor-isolated property 'app' can not be mutated from a nonisolated context
+ 10 |         app.terminate()
+ 11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:9:13: warning: call to main actor-isolated initializer 'init()' in a synchronous nonisolated context [#ActorIsolatedCall]
+  7 |     override func setUpWithError() throws {
+  8 |         continueAfterFailure=false
+  9 |         app=XCUIApplication()
+    |             `- warning: call to main actor-isolated initializer 'init()' in a synchronous nonisolated context [#ActorIsolatedCall]
+ 10 |         app.terminate()
+ 11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework/Headers/XCUIApplication.h:29:1: note: calls to initializer 'init()' from outside of its actor context are implicitly asynchronous
+ 27 |  * Returns a proxy for the application specified by the "Target Application" target setting.
+ 28 |  */
+ 29 | - (instancetype)init NS_DESIGNATED_INITIALIZER;
+    | `- note: calls to initializer 'init()' from outside of its actor context are implicitly asynchronous
+ 30 | + (instancetype)new;
+ 31 | 
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:10:13: warning: call to main actor-isolated instance method 'terminate()' in a synchronous nonisolated context [#ActorIsolatedCall]
+  8 |         continueAfterFailure=false
+  9 |         app=XCUIApplication()
+ 10 |         app.terminate()
+    |             `- warning: call to main actor-isolated instance method 'terminate()' in a synchronous nonisolated context [#ActorIsolatedCall]
+ 11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+ 12 |         app.launch()
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework/Headers/XCUIApplication.h:84:1: note: calls to instance method 'terminate()' from outside of its actor context are implicitly asynchronous
+ 82 |  * is sent to the process.
+ 83 |  */
+ 84 | - (void)terminate;
+    | `- note: calls to instance method 'terminate()' from outside of its actor context are implicitly asynchronous
+ 85 | 
+ 86 | /*!
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:10:9: warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+  4 | @MainActor
+  5 | final class CriticalFlows: XCTestCase {
+  6 |     private var app: XCUIApplication!
+    |                 `- note: property declared here
+  7 |     override func setUpWithError() throws {
+  8 |         continueAfterFailure=false
+  9 |         app=XCUIApplication()
+ 10 |         app.terminate()
+    |         `- warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+ 11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+ 12 |         app.launch()
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:11:13: warning: main actor-isolated property 'launchArguments' can not be mutated from a nonisolated context
+  9 |         app=XCUIApplication()
+ 10 |         app.terminate()
+ 11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+    |             `- warning: main actor-isolated property 'launchArguments' can not be mutated from a nonisolated context
+ 12 |         app.launch()
+ 13 |     }
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework/Headers/XCUIApplication.h:93:51: note: mutation of this property is only permitted within the actor
+ 91 |  * is launched.
+ 92 |  */
+ 93 | @property (nonatomic, copy) NSArray <NSString *> *launchArguments;
+    |                                                   `- note: mutation of this property is only permitted within the actor
+ 94 | 
+ 95 | /*!
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:11:9: warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+  4 | @MainActor
+  5 | final class CriticalFlows: XCTestCase {
+  6 |     private var app: XCUIApplication!
+    |                 `- note: property declared here
+  7 |     override func setUpWithError() throws {
+  8 |         continueAfterFailure=false
+  9 |         app=XCUIApplication()
+ 10 |         app.terminate()
+ 11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+    |         `- warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+ 12 |         app.launch()
+ 13 |     }
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:12:13: warning: call to main actor-isolated instance method 'launch()' in a synchronous nonisolated context [#ActorIsolatedCall]
+ 10 |         app.terminate()
+ 11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+ 12 |         app.launch()
+    |             `- warning: call to main actor-isolated instance method 'launch()' in a synchronous nonisolated context [#ActorIsolatedCall]
+ 13 |     }
+ 14 |     private func tab(_ name:String) {
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework/Headers/XCUIApplication.h:54:1: note: calls to instance method 'launch()' from outside of its actor context are implicitly asynchronous
+ 52 |  * at that point.
+ 53 | */
+ 54 | - (void)launch;
+    | `- note: calls to instance method 'launch()' from outside of its actor context are implicitly asynchronous
+ 55 | 
+ 56 | /*!
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:12:9: warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+  4 | @MainActor
+  5 | final class CriticalFlows: XCTestCase {
+  6 |     private var app: XCUIApplication!
+    |                 `- note: property declared here
+  7 |     override func setUpWithError() throws {
+  8 |         continueAfterFailure=false
+    :
+ 10 |         app.terminate()
+ 11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+ 12 |         app.launch()
+    |         `- warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+ 13 |     }
+ 14 |     private func tab(_ name:String) {
+
+[#ActorIsolatedCall]: <https://docs.swift.org/compiler/documentation/diagnostics/actor-isolated-call>
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile CriticalFlows.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for PokerTrainerUITests (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+
+SwiftDriver\ Compilation\ Requirements PokerTrainerUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainerUITests -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftsourceinfo (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftsourceinfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.abi.json (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.abi.json /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+SwiftDriverJobDiscovery normal arm64 Compiling CriticalFlows.swift (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+
+SwiftDriver\ Compilation PokerTrainerUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainerUITests -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling PokerTrainerViews.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriver\ Compilation PokerTrainer normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainer -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Info.plist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/empty-PokerTrainer.plist (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-infoPlistUtility /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/empty-PokerTrainer.plist -producttype com.apple.product-type.application -genpkginfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Info.plist
+
+Ld /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib normal (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -filelist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.LinkFileList -install_name @rpath/PokerTrainer.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_lto.o -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-ExecutorLinkFileList-normal-arm64.txt (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    construct-stub-executor-link-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'PokerTrainer' from project 'PokerTrainer')
+
+Ld /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer normal (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-ExecutorLinkFileList-normal-arm64.txt /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer
+
+CopySwiftLibs /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Frameworks --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PlugIns --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/SystemExtensions --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name PokerTrainer --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk --xcode-version 27A9275 --platform-family iOS --deployment-target 17.0 --bundle-identifier org.pokerpractice.native --output /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app --target-triple arm64-apple-ios17.0-simulator --binary-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer --dependency-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_dependency_info.dat --stringsdata-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftFileList --metadata-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer.DependencyMetadataFileList --static-metadata-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer.DependencyStaticMetadataFileList --swift-const-vals-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-18 17:33:32.968 appintentsmetadataprocessor[75160:9535191] Starting appintentsmetadataprocessor export
+2026-10-18 17:33:32.975 appintentsmetadataprocessor[75160:9535191] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+Ld /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PokerTrainerUITests normal (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -filelist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_lto.o -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PokerTrainerUITests
+
+ProcessInfoPlistFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Info.plist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/empty-PokerTrainerUITests.plist (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-infoPlistUtility /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/empty-PokerTrainerUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/ProductTypeInfoPlistAdditions.plist -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Info.plist
+
+ExtractAppIntentsMetadata (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name PokerTrainerUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk --xcode-version 27A9275 --platform-family iOS --deployment-target 17.0 --bundle-identifier org.pokerpractice.native.uitests --output /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest --target-triple arm64-apple-ios17.0-simulator --binary-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PokerTrainerUITests --dependency-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_dependency_info.dat --stringsdata-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.SwiftFileList --metadata-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests.DependencyMetadataFileList --static-metadata-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-18 17:33:33.294 appintentsmetadataprocessor[75163:9535222] Starting appintentsmetadataprocessor export
+2026-10-18 17:33:33.297 appintentsmetadataprocessor[75163:9535222] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CopySwiftLibs /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PokerTrainerUITests --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Frameworks --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PlugIns --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/SystemExtensions --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+PruneExplicitPrecompiledModules /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+Resolve Package Graph
+
+2026-10-18 17:33:40.080 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-18 17:34:35.495442+0200 PokerTrainerUITests-Runner[75424:9538844] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-18 17:34:54.022.
+Test Suite 'PokerTrainerUITests.xctest' started at 2026-10-18 17:34:54.037.
+Test Suite 'CriticalFlows' started at 2026-10-18 17:34:54.037.
+Test Case '-[PokerTrainerUITests.CriticalFlows testRegressionLessonPotOdds]' started.
+    t =     1.47s Start Test at 2026-10-18 17:34:55.507
+    t =     2.05s Set Up
+    t =     2.10s     Terminate org.pokerpractice.native:0
+    t =     2.14s     Open org.pokerpractice.native
+    t =     2.16s         Launch org.pokerpractice.native
+2026-10-18 17:34:57.112 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-18 17:34:57.112 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-18 17:34:57.276 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+    t =    21.56s             Setting up automation session
+objc[75424]: Class UIAccessibilityLoaderWebShared is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.TMrvJ5/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10287c398) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.TMrvJ5/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x106684310). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =    26.69s             Wait for org.pokerpractice.native to idle
+    t =    28.53s Waiting 10.0s for "Настройки" Button to exist
+    t =    29.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Настройки" Button`
+    t =    29.57s         Checking existence of `"Настройки" Button`
+    t =    30.00s Tap "Настройки" Button
+    t =    30.00s     Wait for org.pokerpractice.native to idle
+    t =    30.01s     Find the "Настройки" Button
+    t =    30.07s     Check for interrupting elements affecting "Настройки" Button
+    t =    30.14s     Synthesize event
+    t =    30.64s     Wait for org.pokerpractice.native to idle
+    t =    33.14s Tap "Очистить результаты" Button
+    t =    33.14s     Wait for org.pokerpractice.native to idle
+    t =    33.15s     Find the "Очистить результаты" Button
+    t =    33.25s     Check for interrupting elements affecting "Очистить результаты" Button
+    t =    33.30s     Synthesize event
+    t =    33.62s     Wait for org.pokerpractice.native to idle
+    t =    33.96s Tap "Очистить" Button
+    t =    33.96s     Wait for org.pokerpractice.native to idle
+    t =    33.97s     Find the "Очистить" Button
+    t =    34.01s     Check for interrupting elements affecting "Очистить" Button
+    t =    34.08s     Synthesize event
+    t =    34.41s     Wait for org.pokerpractice.native to idle
+    t =    34.67s Terminate org.pokerpractice.native:75586
+2026-10-18 17:35:28.764 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:35:28.769 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:35:28.782 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    35.99s Open org.pokerpractice.native
+    t =    35.99s     Launch org.pokerpractice.native
+2026-10-18 17:35:30.706 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-18 17:35:30.711 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-18 17:35:30.835 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    38.85s         Setting up automation session
+    t =    43.90s         Wait for org.pokerpractice.native to idle
+    t =    45.44s Waiting 10.0s for "Тренировка" Button to exist
+    t =    46.49s     Checking `Expect predicate `existsNoRetry == 1` for object "Тренировка" Button`
+    t =    46.49s         Checking existence of `"Тренировка" Button`
+    t =    46.88s Tap "Тренировка" Button
+    t =    46.88s     Wait for org.pokerpractice.native to idle
+    t =    46.90s     Find the "Тренировка" Button
+    t =    46.96s     Check for interrupting elements affecting "Тренировка" Button
+    t =    47.00s     Synthesize event
+    t =    47.55s     Wait for org.pokerpractice.native to idle
+    t =    49.43s Checking existence of `"training.pot-odds" Button`
+    t =    49.52s Find the "training.pot-odds" Button
+    t =    49.56s Checking existence of `Keyboard (First Match)`
+    t =    49.75s Checking existence of `"training.pot-odds" Button`
+    t =    49.80s Find the "training.pot-odds" Button
+    t =    49.88s Find the "training.pot-odds" Button
+    t =    50.01s Find the "training.pot-odds" Button
+    t =    50.35s Tap "training.pot-odds" Button
+    t =    50.36s     Wait for org.pokerpractice.native to idle
+    t =    50.49s     Find the "training.pot-odds" Button
+    t =    50.56s     Check for interrupting elements affecting "training.pot-odds" Button
+    t =    50.84s     Synthesize event
+    t =    51.23s     Wait for org.pokerpractice.native to idle
+    t =    51.84s Waiting 5.0s for "Процент" TextField to exist
+    t =    52.85s     Checking `Expect predicate `existsNoRetry == 1` for object "Процент" TextField`
+    t =    52.85s         Checking existence of `"Процент" TextField`
+    t =    52.97s Find the "Проверить" Button
+    t =    53.02s Tap "Процент" TextField
+    t =    53.03s     Wait for org.pokerpractice.native to idle
+    t =    53.07s     Find the "Процент" TextField
+    t =    53.19s     Check for interrupting elements affecting "Процент" TextField
+    t =    53.45s     Synthesize event
+    t =    53.95s     Wait for org.pokerpractice.native to idle
+<unknown>:0: warning: -[PokerTrainerUITests.CriticalFlows testRegressionLessonPotOdds] : Invalid frame dimension (negative or non-finite).
+    t =    57.84s Type '101' into "Процент" TextField
+    t =    57.84s     Wait for org.pokerpractice.native to idle
+    t =    58.56s     Find the "Процент" TextField
+    t =    58.94s     Check for interrupting elements affecting "Процент" TextField
+    t =    58.99s     Synthesize event
+    t =    59.29s     Wait for org.pokerpractice.native to idle
+    t =    59.30s Find the "Проверить" Button
+    t =    59.39s Type '25' into "Процент" TextField
+    t =    59.39s     Wait for org.pokerpractice.native to idle
+    t =    59.48s     Find the "Процент" TextField
+    t =    59.58s     Check for interrupting elements affecting "Процент" TextField
+    t =    59.64s     Synthesize event
+    t =    59.96s     Wait for org.pokerpractice.native to idle
+    t =    60.00s Tap "Проверить" Button
+    t =    60.00s     Wait for org.pokerpractice.native to idle
+    t =    60.02s     Find the "Проверить" Button
+    t =    60.11s     Check for interrupting elements affecting "Проверить" Button
+    t =    60.20s     Synthesize event
+    t =    60.60s     Wait for org.pokerpractice.native to idle
+    t =    60.62s Checking existence of `"Подробнее о расчёте" Button`
+    t =    60.68s Checking existence of `"Подробнее о расчёте" Button`
+    t =    60.72s Find the Target Application 'org.pokerpractice.native'
+    t =    60.76s Checking existence of `"Подробнее о расчёте" Button`
+    t =    60.80s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    60.80s     Wait for org.pokerpractice.native to idle
+    t =    60.82s     Find the Target Application 'org.pokerpractice.native'
+    t =    60.90s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    61.06s     Synthesize event
+    t =    61.07s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.10s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.20s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.24s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.28s         Find the Target Application 'org.pokerpractice.native'
+    t =    62.45s     Wait for org.pokerpractice.native to idle
+    t =    62.47s Checking existence of `"Подробнее о расчёте" Button`
+    t =    62.52s Find the Target Application 'org.pokerpractice.native'
+    t =    62.57s Checking existence of `"Подробнее о расчёте" Button`
+    t =    62.64s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    62.64s     Wait for org.pokerpractice.native to idle
+    t =    62.69s     Find the Target Application 'org.pokerpractice.native'
+    t =    62.81s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    63.04s     Synthesize event
+    t =    63.08s         Find the Target Application 'org.pokerpractice.native'
+    t =    63.16s         Find the Target Application 'org.pokerpractice.native'
+    t =    63.29s         Find the Target Application 'org.pokerpractice.native'
+    t =    63.43s         Find the Target Application 'org.pokerpractice.native'
+    t =    63.59s         Find the Target Application 'org.pokerpractice.native'
+    t =    64.78s     Wait for org.pokerpractice.native to idle
+    t =    64.79s Checking existence of `"Подробнее о расчёте" Button`
+    t =    64.88s Find the Target Application 'org.pokerpractice.native'
+    t =    64.96s Checking existence of `"Подробнее о расчёте" Button`
+    t =    65.01s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    65.01s     Wait for org.pokerpractice.native to idle
+    t =    65.06s     Find the Target Application 'org.pokerpractice.native'
+    t =    65.21s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    65.34s     Synthesize event
+    t =    65.58s         Find the Target Application 'org.pokerpractice.native'
+    t =    65.71s         Find the Target Application 'org.pokerpractice.native'
+    t =    65.85s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.13s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.53s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.10s     Wait for org.pokerpractice.native to idle
+    t =    68.18s Checking existence of `"Подробнее о расчёте" Button`
+    t =    68.26s Find the Target Application 'org.pokerpractice.native'
+    t =    68.35s Checking existence of `"Подробнее о расчёте" Button`
+    t =    68.42s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    68.42s     Wait for org.pokerpractice.native to idle
+    t =    68.60s     Find the Target Application 'org.pokerpractice.native'
+    t =    68.76s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    68.87s     Synthesize event
+    t =    68.88s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.91s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.99s         Find the Target Application 'org.pokerpractice.native'
+    t =    69.06s         Find the Target Application 'org.pokerpractice.native'
+    t =    69.11s         Find the Target Application 'org.pokerpractice.native'
+    t =    70.30s     Wait for org.pokerpractice.native to idle
+    t =    70.40s Checking existence of `"Подробнее о расчёте" Button`
+    t =    70.62s Find the Target Application 'org.pokerpractice.native'
+    t =    70.86s Checking existence of `"Подробнее о расчёте" Button`
+    t =    71.45s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    71.45s     Wait for org.pokerpractice.native to idle
+    t =    71.87s     Find the Target Application 'org.pokerpractice.native'
+    t =    71.96s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    72.04s     Synthesize event
+    t =    72.06s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.24s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.32s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.56s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.74s         Find the Target Application 'org.pokerpractice.native'
+    t =    73.96s     Wait for org.pokerpractice.native to idle
+    t =    73.98s Checking existence of `"Подробнее о расчёте" Button`
+    t =    74.03s Find the Target Application 'org.pokerpractice.native'
+    t =    74.09s Checking existence of `"Подробнее о расчёте" Button`
+    t =    74.13s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    74.13s     Wait for org.pokerpractice.native to idle
+    t =    74.17s     Find the Target Application 'org.pokerpractice.native'
+    t =    74.34s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    74.43s     Synthesize event
+    t =    74.45s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.49s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.53s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.61s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.73s         Find the Target Application 'org.pokerpractice.native'
+    t =    75.89s     Wait for org.pokerpractice.native to idle
+    t =    75.90s Checking existence of `"Подробнее о расчёте" Button`
+    t =    75.93s Find the Target Application 'org.pokerpractice.native'
+    t =    75.95s Checking existence of `"Подробнее о расчёте" Button`
+    t =    75.99s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    75.99s     Wait for org.pokerpractice.native to idle
+    t =    76.01s     Find the Target Application 'org.pokerpractice.native'
+    t =    76.09s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    76.12s     Synthesize event
+    t =    76.12s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.16s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.19s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.22s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.27s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.44s     Wait for org.pokerpractice.native to idle
+    t =    77.47s Checking existence of `"Подробнее о расчёте" Button`
+    t =    77.50s Find the Target Application 'org.pokerpractice.native'
+    t =    77.52s Checking existence of `"Подробнее о расчёте" Button`
+    t =    77.56s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    77.56s     Wait for org.pokerpractice.native to idle
+    t =    77.57s     Find the Target Application 'org.pokerpractice.native'
+    t =    77.61s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    77.64s     Synthesize event
+    t =    77.64s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.68s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.72s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.74s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.83s         Find the Target Application 'org.pokerpractice.native'
+    t =    78.99s     Wait for org.pokerpractice.native to idle
+    t =    79.00s Checking existence of `"Подробнее о расчёте" Button`
+    t =    79.04s Find the Target Application 'org.pokerpractice.native'
+    t =    79.06s Checking existence of `"Подробнее о расчёте" Button`
+    t =    79.08s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    79.08s     Wait for org.pokerpractice.native to idle
+    t =    79.09s     Find the Target Application 'org.pokerpractice.native'
+    t =    79.12s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    79.16s     Synthesize event
+    t =    79.17s         Find the Target Application 'org.pokerpractice.native'
+    t =    79.21s         Find the Target Application 'org.pokerpractice.native'
+    t =    79.25s         Find the Target Application 'org.pokerpractice.native'
+    t =    79.28s         Find the Target Application 'org.pokerpractice.native'
+    t =    79.33s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.49s     Wait for org.pokerpractice.native to idle
+    t =    80.50s Checking existence of `"Подробнее о расчёте" Button`
+    t =    80.54s Find the Target Application 'org.pokerpractice.native'
+    t =    80.59s Checking existence of `"Подробнее о расчёте" Button`
+    t =    80.64s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    80.64s     Wait for org.pokerpractice.native to idle
+    t =    80.65s     Find the Target Application 'org.pokerpractice.native'
+    t =    80.69s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    80.74s     Synthesize event
+    t =    80.75s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.78s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.83s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.86s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.90s         Find the Target Application 'org.pokerpractice.native'
+    t =    82.05s     Wait for org.pokerpractice.native to idle
+    t =    82.06s Checking existence of `"Подробнее о расчёте" Button`
+    t =    82.09s Find the Target Application 'org.pokerpractice.native'
+    t =    82.12s Checking existence of `"Подробнее о расчёте" Button`
+    t =    82.14s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    82.14s     Wait for org.pokerpractice.native to idle
+    t =    82.15s     Find the Target Application 'org.pokerpractice.native'
+    t =    82.18s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    82.21s     Synthesize event
+    t =    82.22s         Find the Target Application 'org.pokerpractice.native'
+    t =    82.24s         Find the Target Application 'org.pokerpractice.native'
+    t =    82.27s         Find the Target Application 'org.pokerpractice.native'
+    t =    82.29s         Find the Target Application 'org.pokerpractice.native'
+    t =    82.32s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.47s     Wait for org.pokerpractice.native to idle
+    t =    83.48s Checking existence of `"Подробнее о расчёте" Button`
+    t =    83.52s Find the Target Application 'org.pokerpractice.native'
+    t =    83.55s Checking existence of `"Подробнее о расчёте" Button`
+    t =    83.58s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    83.58s     Wait for org.pokerpractice.native to idle
+    t =    83.60s     Find the Target Application 'org.pokerpractice.native'
+    t =    83.64s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    83.69s     Synthesize event
+    t =    83.70s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.72s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.77s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.80s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.83s         Find the Target Application 'org.pokerpractice.native'
+    t =    84.97s     Wait for org.pokerpractice.native to idle
+    t =    84.98s Checking existence of `"Подробнее о расчёте" Button`
+    t =    85.02s Find the Target Application 'org.pokerpractice.native'
+    t =    85.04s Checking existence of `"Подробнее о расчёте" Button`
+    t =    85.08s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    85.08s     Wait for org.pokerpractice.native to idle
+    t =    85.09s     Find the Target Application 'org.pokerpractice.native'
+    t =    85.11s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    85.15s     Synthesize event
+    t =    85.16s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.19s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.22s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.24s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.27s         Find the Target Application 'org.pokerpractice.native'
+    t =    86.42s     Wait for org.pokerpractice.native to idle
+    t =    86.43s Checking existence of `"Подробнее о расчёте" Button`
+    t =    86.46s Find the Target Application 'org.pokerpractice.native'
+    t =    86.48s Checking existence of `"Подробнее о расчёте" Button`
+    t =    86.51s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    86.51s     Wait for org.pokerpractice.native to idle
+    t =    86.53s     Find the Target Application 'org.pokerpractice.native'
+    t =    86.56s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    86.60s     Synthesize event
+    t =    86.61s         Find the Target Application 'org.pokerpractice.native'
+    t =    86.63s         Find the Target Application 'org.pokerpractice.native'
+    t =    86.66s         Find the Target Application 'org.pokerpractice.native'
+    t =    86.70s         Find the Target Application 'org.pokerpractice.native'
+    t =    86.73s         Find the Target Application 'org.pokerpractice.native'
+    t =    87.89s     Wait for org.pokerpractice.native to idle
+    t =    87.90s Checking existence of `"Подробнее о расчёте" Button`
+    t =    87.93s Find the Target Application 'org.pokerpractice.native'
+    t =    87.95s Checking existence of `"Подробнее о расчёте" Button`
+    t =    87.98s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    87.98s     Wait for org.pokerpractice.native to idle
+    t =    87.99s     Find the Target Application 'org.pokerpractice.native'
+    t =    88.02s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    88.05s     Synthesize event
+    t =    88.05s         Find the Target Application 'org.pokerpractice.native'
+    t =    88.10s         Find the Target Application 'org.pokerpractice.native'
+    t =    88.12s         Find the Target Application 'org.pokerpractice.native'
+    t =    88.15s         Find the Target Application 'org.pokerpractice.native'
+    t =    88.17s         Find the Target Application 'org.pokerpractice.native'
+    t =    89.35s     Wait for org.pokerpractice.native to idle
+    t =    89.41s Checking existence of `"Подробнее о расчёте" Button`
+    t =    89.48s Find the Target Application 'org.pokerpractice.native'
+    t =    89.55s Checking existence of `"Подробнее о расчёте" Button`
+    t =    89.62s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    89.62s     Wait for org.pokerpractice.native to idle
+    t =    89.64s     Find the Target Application 'org.pokerpractice.native'
+    t =    89.70s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    89.79s     Synthesize event
+    t =    89.81s         Find the Target Application 'org.pokerpractice.native'
+    t =    89.84s         Find the Target Application 'org.pokerpractice.native'
+    t =    89.88s         Find the Target Application 'org.pokerpractice.native'
+    t =    89.92s         Find the Target Application 'org.pokerpractice.native'
+    t =    89.96s         Find the Target Application 'org.pokerpractice.native'
+    t =    91.12s     Wait for org.pokerpractice.native to idle
+    t =    91.13s Checking existence of `"Подробнее о расчёте" Button`
+    t =    91.16s Find the Target Application 'org.pokerpractice.native'
+    t =    91.18s Checking existence of `"Подробнее о расчёте" Button`
+    t =    91.22s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    91.22s     Wait for org.pokerpractice.native to idle
+    t =    91.23s     Find the Target Application 'org.pokerpractice.native'
+    t =    91.26s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    91.30s     Synthesize event
+    t =    91.31s         Find the Target Application 'org.pokerpractice.native'
+    t =    91.33s         Find the Target Application 'org.pokerpractice.native'
+    t =    91.37s         Find the Target Application 'org.pokerpractice.native'
+    t =    91.41s         Find the Target Application 'org.pokerpractice.native'
+    t =    91.46s         Find the Target Application 'org.pokerpractice.native'
+    t =    92.63s     Wait for org.pokerpractice.native to idle
+    t =    92.99s Checking existence of `"Подробнее о расчёте" Button`
+    t =    93.02s Find the Target Application 'org.pokerpractice.native'
+    t =    93.05s Checking existence of `"Подробнее о расчёте" Button`
+    t =    93.08s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    93.08s     Wait for org.pokerpractice.native to idle
+    t =    93.09s     Find the Target Application 'org.pokerpractice.native'
+    t =    93.13s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    93.17s     Synthesize event
+    t =    93.17s         Find the Target Application 'org.pokerpractice.native'
+    t =    93.20s         Find the Target Application 'org.pokerpractice.native'
+    t =    93.23s         Find the Target Application 'org.pokerpractice.native'
+    t =    93.26s         Find the Target Application 'org.pokerpractice.native'
+    t =    93.30s         Find the Target Application 'org.pokerpractice.native'
+    t =    94.46s     Wait for org.pokerpractice.native to idle
+    t =    94.85s Checking existence of `"Подробнее о расчёте" Button`
+    t =    94.88s Find the Target Application 'org.pokerpractice.native'
+    t =    94.91s Checking existence of `"Подробнее о расчёте" Button`
+    t =    94.94s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    94.94s     Wait for org.pokerpractice.native to idle
+    t =    94.94s     Find the Target Application 'org.pokerpractice.native'
+    t =    94.97s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    95.01s     Synthesize event
+    t =    95.02s         Find the Target Application 'org.pokerpractice.native'
+    t =    95.04s         Find the Target Application 'org.pokerpractice.native'
+    t =    95.07s         Find the Target Application 'org.pokerpractice.native'
+    t =    95.09s         Find the Target Application 'org.pokerpractice.native'
+    t =    95.12s         Find the Target Application 'org.pokerpractice.native'
+    t =    96.27s     Wait for org.pokerpractice.native to idle
+    t =    96.64s Checking existence of `"Подробнее о расчёте" Button`
+    t =    96.67s Find the Target Application 'org.pokerpractice.native'
+    t =    96.70s Checking existence of `"Подробнее о расчёте" Button`
+    t =    96.73s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    96.73s     Wait for org.pokerpractice.native to idle
+    t =    96.74s     Find the Target Application 'org.pokerpractice.native'
+    t =    96.76s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    96.81s     Synthesize event
+    t =    96.81s         Find the Target Application 'org.pokerpractice.native'
+    t =    96.84s         Find the Target Application 'org.pokerpractice.native'
+    t =    96.87s         Find the Target Application 'org.pokerpractice.native'
+    t =    96.90s         Find the Target Application 'org.pokerpractice.native'
+    t =    96.93s         Find the Target Application 'org.pokerpractice.native'
+    t =    98.08s     Wait for org.pokerpractice.native to idle
+    t =    98.46s Checking existence of `"Подробнее о расчёте" Button`
+    t =    98.49s Find the Target Application 'org.pokerpractice.native'
+    t =    98.52s Checking existence of `"Подробнее о расчёте" Button`
+    t =    98.56s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    98.56s     Wait for org.pokerpractice.native to idle
+    t =    98.59s     Find the Target Application 'org.pokerpractice.native'
+    t =    98.64s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    98.69s     Synthesize event
+    t =    98.70s         Find the Target Application 'org.pokerpractice.native'
+    t =    98.72s         Find the Target Application 'org.pokerpractice.native'
+    t =    98.76s         Find the Target Application 'org.pokerpractice.native'
+    t =    98.78s         Find the Target Application 'org.pokerpractice.native'
+    t =    98.82s         Find the Target Application 'org.pokerpractice.native'
+    t =    99.98s     Wait for org.pokerpractice.native to idle
+    t =   100.34s Checking existence of `"Подробнее о расчёте" Button`
+    t =   100.38s Find the Target Application 'org.pokerpractice.native'
+    t =   100.42s Checking existence of `"Подробнее о расчёте" Button`
+    t =   100.45s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =   100.45s     Wait for org.pokerpractice.native to idle
+    t =   100.46s     Find the Target Application 'org.pokerpractice.native'
+    t =   100.50s     Check for interrupting elements affecting "Учебный стол" Application
+    t =   100.55s     Synthesize event
+    t =   100.55s         Find the Target Application 'org.pokerpractice.native'
+    t =   100.61s         Find the Target Application 'org.pokerpractice.native'
+    t =   100.65s         Find the Target Application 'org.pokerpractice.native'
+    t =   100.68s         Find the Target Application 'org.pokerpractice.native'
+    t =   100.73s         Find the Target Application 'org.pokerpractice.native'
+    t =   101.89s     Wait for org.pokerpractice.native to idle
+    t =   102.24s Checking existence of `"Подробнее о расчёте" Button`
+    t =   102.27s Find the Target Application 'org.pokerpractice.native'
+    t =   102.31s Checking existence of `"Подробнее о расчёте" Button`
+    t =   102.34s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =   102.34s     Wait for org.pokerpractice.native to idle
+    t =   102.35s     Find the Target Application 'org.pokerpractice.native'
+    t =   102.38s     Check for interrupting elements affecting "Учебный стол" Application
+    t =   102.43s     Synthesize event
+    t =   102.44s         Find the Target Application 'org.pokerpractice.native'
+    t =   102.47s         Find the Target Application 'org.pokerpractice.native'
+    t =   102.50s         Find the Target Application 'org.pokerpractice.native'
+    t =   102.53s         Find the Target Application 'org.pokerpractice.native'
+    t =   102.56s         Find the Target Application 'org.pokerpractice.native'
+    t =   103.72s     Wait for org.pokerpractice.native to idle
+    t =   104.08s Checking existence of `"Подробнее о расчёте" Button`
+    t =   104.12s Find the Target Application 'org.pokerpractice.native'
+    t =   104.17s Checking existence of `"Подробнее о расчёте" Button`
+    t =   104.21s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =   104.21s     Wait for org.pokerpractice.native to idle
+    t =   104.26s     Find the Target Application 'org.pokerpractice.native'
+    t =   104.30s     Check for interrupting elements affecting "Учебный стол" Application
+    t =   104.36s     Synthesize event
+    t =   104.37s         Find the Target Application 'org.pokerpractice.native'
+    t =   104.50s         Find the Target Application 'org.pokerpractice.native'
+    t =   104.55s         Find the Target Application 'org.pokerpractice.native'
+    t =   104.58s         Find the Target Application 'org.pokerpractice.native'
+    t =   104.63s         Find the Target Application 'org.pokerpractice.native'
+    t =   105.79s     Wait for org.pokerpractice.native to idle
+    t =   106.14s Checking existence of `"Подробнее о расчёте" Button`
+    t =   106.21s Requesting snapshot of accessibility hierarchy for app with pid 75659
+    t =   106.68s Requesting snapshot of accessibility hierarchy for app with pid 75659
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:55: error: -[PokerTrainerUITests.CriticalFlows testRegressionLessonPotOdds] : XCTAssertTrue failed - Optional(Attributes: Application, 0x10605bc00, pid: 75659, label: 'Учебный стол'
+Element subtree:
+ →Application, 0x10605bc00, pid: 75659, label: 'Учебный стол'
+    Window (Main), 0x10605af80, {{0.0, 0.0}, {390.0, 844.0}}
+      Other, 0x10605ad00, {{0.0, 0.0}, {390.0, 844.0}}
+      Other, 0x10605b0c0, {{0.0, 0.0}, {390.0, 844.0}}
+        Other, 0x10605b340, {{0.0, 0.0}, {390.0, 844.0}}
+          Other, 0x10605b480, {{0.0, 0.0}, {390.0, 844.0}}
+            Other, 0x10605b200, {{0.0, 0.0}, {390.0, 844.0}}
+              Other, 0x10605b5c0, {{0.0, 0.0}, {390.0, 844.0}}
+                Other, 0x10605b840, {{0.0, 0.0}, {390.0, 844.0}}
+                  Other, 0x106059a40, {{0.0, 0.0}, {390.0, 844.0}}
+                    Other, 0x106059e00, {{0.0, 0.0}, {390.0, 844.0}}
+                      Other, 0x1060588c0, {{0.0, 0.0}, {390.0, 844.0}}
+                        Other, 0x106059f40, {{0.0, 0.0}, {390.0, 844.0}}
+                          Other, 0x106059cc0, {{0.0, 0.0}, {390.0, 844.0}}
+                            NavigationBar, 0x10605a080, {{0.0, 47.0}, {390.0, 54.0}}, identifier: 'Упражнение'
+                              Button, 0x10605bac0, {{16.0, 47.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Тренировка'
+                              StaticText, 0x10605be80, {{142.7, 58.7}, {104.7, 20.7}}, label: 'Упражнение'
+                            Other, 0x10605bd40, {{0.0, 0.0}, {390.0, 844.0}}
+                              Other, 0x110be8000, {{0.0, 0.0}, {390.0, 844.0}}
+                                Other, 0x110be8140, {{0.0, 0.0}, {390.0, 844.0}}
+                                  Other, 0x110be8280, {{0.0, 0.0}, {390.0, 844.0}}
+                                    ScrollView, 0x110be83c0, {{0.0, 0.0}, {390.0, 844.0}}
+                                      Other, 0x110be8500, {{0.0, 0.0}, {390.0, 844.0}}
+                                        Other, 0x110be8640, {{0.0, 0.0}, {390.0, 141.0}}
+                                        Other, 0x110be8780, {{0.0, 568.0}, {390.0, 143.0}}
+                                      Other, 0x110be88c0, {{0.0, 0.0}, {390.0, 844.0}}
+                                      Other, 0x110be8a00, {{0.0, 101.0}, {390.0, 443.3}}
+                                        StaticText, 0x110be8b40, {{16.0, 117.0}, {153.3, 26.3}}, label: 'Шансы банка'
+                                        StaticText, 0x110be8c80, {{16.0, 151.3}, {339.3, 18.0}}, label: 'Какая доля банка нужна, чтобы оплатить колл?'
+                                        Other, 0x110be8dc0, {{32.0, 215.3}, {278.0, 42.3}}
+                                          StaticText, 0x110be8f00, {{32.0, 215.3}, {89.0, 42.3}}, label: 'Банк до ставки, 100'
+                                            StaticText, 0x110be9040, {{32.0, 215.3}, {89.0, 14.3}}, label: 'Банк до ставки'
+                                            StaticText, 0x110be9180, {{32.0, 233.7}, {38.0, 24.0}}, label: '100'
+                                          StaticText, 0x110be92c0, {{143.3, 215.3}, {41.0, 42.3}}, label: 'Ставка, 50'
+                                            StaticText, 0x110be9400, {{143.3, 215.3}, {41.0, 14.3}}, label: 'Ставка'
+                                            StaticText, 0x110be9540, {{143.3, 233.7}, {25.3, 24.0}}, label: '50'
+                                          StaticText, 0x110be9680, {{254.7, 215.3}, {55.3, 42.3}}, label: 'Ваш колл, 50'
+                                            StaticText, 0x110be97c0, {{254.7, 215.3}, {55.3, 14.3}}, label: 'Ваш колл'
+                                            StaticText, 0x110be9900, {{254.7, 233.7}, {25.3, 24.0}}, label: '50'
+                                        StaticText, 0x110be9a40, {{32.0, 294.7}, {326.0, 24.0}}, label: 'Банк после колла, 200'
+                                          StaticText, 0x110be9b80, {{32.0, 296.5}, {140.3, 20.3}}, label: 'Банк после колла'
+                                          StaticText, 0x110be9cc0, {{320.0, 294.7}, {38.0, 24.0}}, label: '200'
+                                        StaticText, 0x110be9e00, {{16.0, 352.7}, {298.7, 38.0}}, label: 'Equity — средняя доля банка. Введите её минимальный процент для колла.'
+                                        TextField, 0x110be9f40, {{30.0, 422.7}, {330.0, 25.7}}, placeholderValue: 'Процент', value: 25, Keyboard Focused
+                                        Button, 0x110bea080, {{16.0, 480.3}, {358.0, 48.0}}, label: 'Проверить'
+                                      Other, 0x110bea1c0, {{357.0, 101.0}, {30.0, 427.0}}, label: 'Вертикальная полоса прокрутки, 2 страницы', value: 0 %
+                                        Other, 0x110bea300, {{384.0, 104.0}, {3.0, 413.0}}
+                                      Other, 0x110bea440, {{357.0, 101.0}, {30.0, 427.0}}, label: 'Вертикальная полоса прокрутки, 2 страницы', value: 0 %
+                                        Other, 0x110bea580, {{384.0, 104.0}, {3.0, 413.0}}
+                            Toolbar, 0x110bea6c0, {{0.0, 0.0}, {390.0, 844.0}}, identifier: 'Toolbar', label: 'Панель инструментов'
+                              Other, 0x110bea800, {{0.0, 0.0}, {390.0, 844.0}}
+                Other, 0x110bea940, {{0.0, 0.0}, {390.0, 844.0}}
+                  Other, 0x110beaa80, {{0.0, 761.0}, {390.0, 83.0}}
+                    Other, 0x110beabc0, {{0.0, 0.0}, {390.0, 844.0}}
+                      TabBar, 0x110bead00, {{0.0, 761.0}, {390.0, 83.0}}, label: 'Панель вкладок'
+                        Other, 0x110beae40, {{21.0, 761.0}, {348.0, 62.0}}
+                          Other, 0x110beaf80, {{21.0, 761.0}, {101.3, 54.0}}
+                          Other, 0x110beb0c0, {{21.0, 761.0}, {348.0, 62.0}}
+                            Button, 0x110beb200, {{25.0, 765.0}, {101.3, 54.0}}, identifier: 'suit.spade.fill', label: 'Играть'
+                              Image, 0x110beb340, {{63.0, 771.3}, {25.7, 26.3}}, identifier: 'suit.spade.fill', label: 'Пика'
+                            Button, 0x110beb480, {{104.6, 765.0}, {101.3, 54.0}}, identifier: 'brain.head.profile', label: 'Тренировка', Selected
+                              Image, 0x110beb5c0, {{140.9, 769.3}, {28.7, 31.0}}, identifier: 'brain.head.profile.fill', label: 'Профиль головы с изображением мозга, с заливкой'
+                            Button, 0x110beb700, {{184.1, 765.0}, {101.3, 54.0}}, identifier: 'chart.bar.fill', label: 'Прогресс'
+                              Image, 0x110beb840, {{217.4, 772.3}, {35.0, 25.3}}, identifier: 'chart.bar.fill', label: 'гистограмма'
+                            Button, 0x110beb980, {{263.7, 765.0}, {101.3, 54.0}}, identifier: 'gearshape.fill', label: 'Настройки'
+                              Image, 0x110bebac0, {{300.3, 771.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'Форма шестеренки, с заливкой'
+                          Other, 0x110bebc00, {{21.0, 761.0}, {348.0, 62.0}}
+                          Other, 0x110bebd40, {{104.6, 765.0}, {101.3, 54.0}}
+                            Other, 0x110bebe80, {{104.6, 765.0}, {101.3, 54.0}}
+                              Other, 0x110bf0000, {{104.6, 765.0}, {101.3, 54.0}}
+                              Other, 0x110bf0140, {{104.6, 765.0}, {101.3, 54.0}}
+                                Other, 0x110bf0280, {{104.6, 765.0}, {101.3, 54.0}}
+                                  Other, 0x110bf03c0, {{104.6, 765.0}, {101.3, 54.0}}
+                                    Other, 0x110bf0500, {{104.6, 765.0}, {101.3, 54.0}}
+                                  Other, 0x110bf0640, {{104.6, 765.0}, {101.3, 54.0}}
+                                Other, 0x110bf0780, {{104.6, 765.0}, {101.3, 54.0}}
+                    Other, 0x110bf08c0, {{0.0, 761.0}, {390.0, 83.0}}
+                      Other, 0x110bf0a00, {{0.0, 761.0}, {390.0, 83.0}}
+                        Other, 0x110bf0b40, {{0.0, 761.0}, {390.0, 83.0}}
+                          Other, 0x110bf0c80, {{0.0, 761.0}, {390.0, 83.0}}
+                            Other, 0x110bf0dc0, {{0.0, 761.0}, {390.0, 83.0}}
+                              Other, 0x110bf0f00, {{0.0, 761.0}, {390.0, 83.0}}
+                          Other, 0x110bf1040, {{0.0, 761.0}, {390.0, 83.0}}
+                            Other, 0x110bf1180, {{0.0, 761.0}, {390.0, 83.0}}
+    Window, 0x110bf12c0, {{0.0, 0.0}, {390.0, 844.0}}
+      Other, 0x110bf1400, {{0.0, 0.0}, {390.0, 844.0}}
+        Other, 0x110bf1540, {{0.0, 0.0}, {390.0, 844.0}}
+        Other, 0x110bf1680, {{0.0, 494.0}, {390.0, 350.0}}
+          Other, 0x110bf17c0, {{0.0, 494.0}, {390.0, 48.0}}
+            Other, 0x110bf1900, {{0.0, 494.0}, {390.0, 48.0}}
+              Other, 0x110bf1a40, {{0.0, 494.0}, {390.0, 48.0}}
+                Toolbar, 0x110bf1b80, {{0.0, 494.0}, {390.0, 48.0}}, identifier: 'Toolbar', label: 'Панель инструментов'
+                  Other, 0x110bf1cc0, {{0.0, 494.0}, {390.0, 48.0}}
+                    Other, 0x110bf1e00, {{16.0, 494.0}, {358.0, 48.0}}
+                      Other, 0x110bf1f40, {{16.0, 494.0}, {358.0, 48.0}}
+                        Other, 0x110bf2080, {{16.0, 494.0}, {0.0, 0.0}}
+                          Other, 0x110bf21c0, {{288.7, 494.0}, {85.3, 48.0}}
+                            Other, 0x110bf2300, {{288.7, 494.0}, {85.3, 48.0}}
+                              Other, 0x110bf2440, {{293.7, 500.0}, {75.3, 36.0}}
+                                Other, 0x110bf2580, {{293.7, 500.0}, {75.3, 36.0}}
+                                  Other, 0x110bf26c0, {{293.7, 500.0}, {75.3, 36.0}}
+                                    Other, 0x110bf2800, {{293.7, 500.0}, {75.3, 36.0}}
+                                      Button, 0x110bf2940, {{293.7, 500.0}, {75.3, 36.0}}, label: 'Готово'
+          Other, 0x110bf2a80, {{0.0, 542.0}, {390.0, 302.0}}, identifier: 'inputView'
+    Window, 0x110bf2bc0, {{0.0, 0.0}, {390.0, 844.0}}
+      Other, 0x110bf2d00, {{0.0, 0.0}, {390.0, 844.0}}
+        Other, 0x110bf2e40, {{0.0, 542.0}, {390.0, 302.0}}
+          Other, 0x110bf2f80, {{0.0, 542.0}, {390.0, 303.0}}
+            Other, 0x110bf30c0, {{0.0, 542.0}, {390.0, 303.0}}
+              Other, 0x110bf3200, {{0.0, 542.0}, {390.0, 303.0}}
+          Other, 0x110bf3340, {{0.0, 559.0}, {390.0, 227.0}}
+            Keyboard, 0x110bf3480, {{0.0, 559.0}, {390.0, 227.0}}
+              Other, 0x110bf35c0, {{0.0, 559.0}, {390.0, 227.0}}
+                Other, 0x110bf3700, {{0.0, 559.0}, {390.0, 227.0}}, identifier: 'UIKeyboardLayoutStar Preview'
+                  Key, 0x110bf3840, {{4.7, 566.0}, {128.3, 54.0}}, label: '1'
+                  Key, 0x110bf3980, {{133.0, 566.0}, {128.7, 54.0}}, label: '2'
+                  Key, 0x110bf3ac0, {{261.7, 566.0}, {128.3, 54.0}}, label: '3'
+                  Key, 0x110bf3c00, {{4.7, 620.0}, {128.3, 54.0}}, label: '4'
+                  Key, 0x110bf3d40, {{133.0, 620.0}, {128.7, 54.0}}, label: '5'
+                  Key, 0x110bf3e80, {{261.7, 620.0}, {128.3, 54.0}}, label: '6'
+                  Key, 0x110bf8000, {{4.7, 674.0}, {128.3, 54.0}}, label: '7'
+                  Key, 0x110bf8140, {{133.0, 674.0}, {128.7, 54.0}}, label: '8'
+                  Key, 0x110bf8280, {{261.7, 674.0}, {128.3, 54.0}}, label: '9'
+                  Key, 0x110bf83c0, {{4.7, 728.0}, {128.3, 54.0}}, label: ','
+                  Key, 0x110bf8500, {{133.0, 728.0}, {128.7, 54.0}}, label: '0'
+                  Key, 0x110bf8640, {{261.7, 728.0}, {128.3, 54.0}}, label: 'Удалить'
+          Other, 0x110bf8780, {{0.0, 559.0}, {390.0, 285.0}}
+            Button, 0x110bf88c0, {{313.4, 775.4}, {68.1, 68.7}}, identifier: 'dictation', label: 'Диктовать', Disabled
+              StaticText, 0x110bf8a00, {{313.4, 775.4}, {0.0, 0.0}}
+Path to element:
+ →Application, 0x10605bc00, pid: 75659, label: 'Учебный стол'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x110bf8b40, pid: 75659, label: 'Учебный стол'
+  }
+)
+    t =   107.19s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testRegressionLessonPotOdds]' failed (106.038 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testRegressionOffline]' started.
+    t =     0.00s Start Test at 2026-10-18 17:36:41.545
+    t =     0.06s Set Up
+    t =     0.06s     Terminate org.pokerpractice.native:75659
+2026-10-18 17:36:41.827 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:36:41.853 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:36:41.863 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+    t =     1.08s     Open org.pokerpractice.native
+    t =     1.08s         Launch org.pokerpractice.native
+2026-10-18 17:36:42.636 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-18 17:36:42.637 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-18 17:36:42.648 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+
+    t =     1.31s             Setting up automation session
+    t =     5.48s             Wait for org.pokerpractice.native to idle
+    t =     7.61s Waiting 10.0s for "Настройки" Button to exist
+    t =     8.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Настройки" Button`
+    t =     8.62s         Checking existence of `"Настройки" Button`
+    t =     8.76s Tap "Настройки" Button
+    t =     8.76s     Wait for org.pokerpractice.native to idle
+    t =     8.76s     Find the "Настройки" Button
+    t =     8.79s     Check for interrupting elements affecting "Настройки" Button
+    t =     8.82s     Synthesize event
+    t =     9.15s     Wait for org.pokerpractice.native to idle
+    t =    11.09s Tap "Очистить результаты" Button
+    t =    11.09s     Wait for org.pokerpractice.native to idle
+    t =    11.09s     Find the "Очистить результаты" Button
+    t =    11.15s     Check for interrupting elements affecting "Очистить результаты" Button
+    t =    11.18s     Synthesize event
+    t =    11.47s     Wait for org.pokerpractice.native to idle
+    t =    11.79s Tap "Очистить" Button
+    t =    11.79s     Wait for org.pokerpractice.native to idle
+    t =    11.79s     Find the "Очистить" Button
+    t =    11.82s     Check for interrupting elements affecting "Очистить" Button
+    t =    11.85s     Synthesize event
+    t =    12.14s     Wait for org.pokerpractice.native to idle
+    t =    12.41s Terminate org.pokerpractice.native:75848
+2026-10-18 17:36:53.969 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:36:53.970 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:36:53.972 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    13.44s Open org.pokerpractice.native
+    t =    13.45s     Launch org.pokerpractice.native
+2026-10-18 17:36:54.992 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-18 17:36:54.992 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-18 17:36:55.001 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    13.65s         Setting up automation session
+    t =    16.81s         Wait for org.pokerpractice.native to idle
+    t =    18.43s Terminate org.pokerpractice.native:75871
+2026-10-18 17:36:59.988 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:36:59.989 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:36:59.991 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    19.49s Open org.pokerpractice.native
+    t =    19.49s     Launch org.pokerpractice.native
+2026-10-18 17:37:01.041 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-18 17:37:01.041 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-18 17:37:01.046 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    19.70s         Setting up automation session
+    t =    23.66s         Wait for org.pokerpractice.native to idle
+    t =    25.67s Find the Target Application 'org.pokerpractice.native'
+    t =    25.95s Added attachment named 'offline-launch'
+    t =    25.95s Tap Button (First Match)
+    t =    25.95s     Wait for org.pokerpractice.native to idle
+    t =    25.95s     Find the Button (First Match)
+    t =    26.01s     Check for interrupting elements affecting "Открыть стол" Button
+    t =    26.03s     Synthesize event
+    t =    26.35s     Wait for org.pokerpractice.native to idle
+    t =    26.89s Checking existence of `"Следующая раздача" Button`
+    t =    26.96s Checking existence of `"Чек" Button`
+    t =    26.99s Checking existence of `Button (First Match)`
+    t =    27.34s Checking existence of `"Следующая раздача" Button`
+    t =    27.38s Checking existence of `"Чек" Button`
+    t =    27.42s Checking existence of `Button (First Match)`
+    t =    27.82s Checking existence of `"Следующая раздача" Button`
+    t =    27.86s Checking existence of `"Чек" Button`
+    t =    27.89s Checking existence of `Button (First Match)`
+    t =    28.28s Checking existence of `"Следующая раздача" Button`
+    t =    28.52s Checking existence of `"Чек" Button`
+    t =    28.55s Checking existence of `Button (First Match)`
+    t =    28.57s Find the Button (First Match)
+    t =    28.62s Find the "Колл 10" Button
+    t =    28.64s Tap "Колл 10" Button
+    t =    28.64s     Wait for org.pokerpractice.native to idle
+    t =    28.65s     Find the "Колл 10" Button
+    t =    28.68s     Check for interrupting elements affecting "Колл 10" Button
+    t =    28.73s     Synthesize event
+    t =    29.03s     Wait for org.pokerpractice.native to idle
+    t =    29.03s Checking existence of `"Следующая раздача" Button`
+    t =    29.07s Checking existence of `"Чек" Button`
+    t =    29.10s Checking existence of `Button (First Match)`
+    t =    29.46s Checking existence of `"Следующая раздача" Button`
+    t =    29.50s Checking existence of `"Чек" Button`
+    t =    29.54s Checking existence of `Button (First Match)`
+    t =    29.91s Checking existence of `"Следующая раздача" Button`
+    t =    29.99s Checking existence of `"Чек" Button`
+    t =    30.02s Checking existence of `Button (First Match)`
+    t =    30.37s Checking existence of `"Следующая раздача" Button`
+    t =    30.42s Checking existence of `"Чек" Button`
+    t =    30.45s Checking existence of `Button (First Match)`
+    t =    30.81s Checking existence of `"Следующая раздача" Button`
+    t =    30.91s Checking existence of `"Чек" Button`
+    t =    30.96s Checking existence of `Button (First Match)`
+    t =    31.37s Checking existence of `"Следующая раздача" Button`
+    t =    31.40s Checking existence of `"Чек" Button`
+    t =    31.43s Checking existence of `Button (First Match)`
+    t =    31.83s Checking existence of `"Следующая раздача" Button`
+    t =    31.86s Checking existence of `"Чек" Button`
+    t =    31.89s Checking existence of `Button (First Match)`
+    t =    32.24s Checking existence of `"Следующая раздача" Button`
+    t =    32.29s Checking existence of `"Чек" Button`
+    t =    32.33s Checking existence of `Button (First Match)`
+    t =    32.68s Checking existence of `"Следующая раздача" Button`
+    t =    32.73s Checking existence of `"Чек" Button`
+    t =    32.76s Checking existence of `Button (First Match)`
+    t =    33.15s Checking existence of `"Следующая раздача" Button`
+    t =    33.20s Checking existence of `"Чек" Button`
+    t =    33.26s Find the "Чек" Button
+    t =    33.30s Find the "Чек" Button
+    t =    33.34s Tap "Чек" Button
+    t =    33.34s     Wait for org.pokerpractice.native to idle
+    t =    33.34s     Find the "Чек" Button
+    t =    33.38s     Check for interrupting elements affecting "Чек" Button
+    t =    33.41s     Synthesize event
+    t =    33.73s     Wait for org.pokerpractice.native to idle
+    t =    33.73s Checking existence of `"Следующая раздача" Button`
+    t =    33.77s Checking existence of `"Чек" Button`
+    t =    33.81s Checking existence of `Button (First Match)`
+    t =    34.17s Checking existence of `"Следующая раздача" Button`
+    t =    34.21s Checking existence of `"Чек" Button`
+    t =    34.24s Checking existence of `Button (First Match)`
+    t =    34.61s Checking existence of `"Следующая раздача" Button`
+    t =    34.65s Checking existence of `"Чек" Button`
+    t =    34.69s Checking existence of `Button (First Match)`
+    t =    35.06s Checking existence of `"Следующая раздача" Button`
+    t =    35.09s Checking existence of `"Чек" Button`
+    t =    35.12s Checking existence of `Button (First Match)`
+    t =    35.49s Checking existence of `"Следующая раздача" Button`
+    t =    35.52s Checking existence of `"Чек" Button`
+    t =    35.56s Checking existence of `Button (First Match)`
+    t =    35.93s Checking existence of `"Следующая раздача" Button`
+    t =    35.97s Checking existence of `"Чек" Button`
+    t =    36.01s Checking existence of `Button (First Match)`
+    t =    36.37s Checking existence of `"Следующая раздача" Button`
+    t =    36.41s Checking existence of `"Чек" Button`
+    t =    36.45s Find the "Чек" Button
+    t =    36.49s Find the "Чек" Button
+    t =    36.52s Tap "Чек" Button
+    t =    36.52s     Wait for org.pokerpractice.native to idle
+    t =    36.53s     Find the "Чек" Button
+    t =    36.56s     Check for interrupting elements affecting "Чек" Button
+    t =    36.60s     Synthesize event
+    t =    36.89s     Wait for org.pokerpractice.native to idle
+    t =    36.89s Checking existence of `"Следующая раздача" Button`
+    t =    36.94s Checking existence of `"Чек" Button`
+    t =    36.98s Checking existence of `Button (First Match)`
+    t =    37.35s Checking existence of `"Следующая раздача" Button`
+    t =    37.40s Checking existence of `"Чек" Button`
+    t =    37.43s Checking existence of `Button (First Match)`
+    t =    37.79s Checking existence of `"Следующая раздача" Button`
+    t =    37.82s Checking existence of `"Чек" Button`
+    t =    37.86s Checking existence of `Button (First Match)`
+    t =    38.23s Checking existence of `"Следующая раздача" Button`
+    t =    38.28s Checking existence of `"Чек" Button`
+    t =    38.31s Checking existence of `Button (First Match)`
+    t =    38.68s Checking existence of `"Следующая раздача" Button`
+    t =    38.71s Checking existence of `"Чек" Button`
+    t =    38.74s Checking existence of `Button (First Match)`
+    t =    39.09s Checking existence of `"Следующая раздача" Button`
+    t =    39.18s Checking existence of `"Чек" Button`
+    t =    39.22s Checking existence of `Button (First Match)`
+    t =    39.58s Checking existence of `"Следующая раздача" Button`
+    t =    39.64s Checking existence of `"Чек" Button`
+    t =    39.67s Checking existence of `Button (First Match)`
+    t =    40.04s Checking existence of `"Следующая раздача" Button`
+    t =    40.07s Checking existence of `"Чек" Button`
+    t =    40.10s Find the "Чек" Button
+    t =    40.14s Find the "Чек" Button
+    t =    40.17s Tap "Чек" Button
+    t =    40.17s     Wait for org.pokerpractice.native to idle
+    t =    40.18s     Find the "Чек" Button
+    t =    40.21s     Check for interrupting elements affecting "Чек" Button
+    t =    40.24s     Synthesize event
+    t =    40.60s     Wait for org.pokerpractice.native to idle
+    t =    40.62s Checking existence of `"Следующая раздача" Button`
+    t =    40.87s Checking existence of `"Следующая раздача" Button`
+    t =    40.95s Find the "Следующая раздача" Button
+    t =    41.00s Checking existence of `Keyboard (First Match)`
+    t =    41.07s Checking existence of `"Следующая раздача" Button`
+    t =    41.13s Find the "Следующая раздача" Button
+    t =    41.19s Find the Target Application 'org.pokerpractice.native'
+    t =    41.22s Checking existence of `"Следующая раздача" Button`
+    t =    41.25s Find the "Следующая раздача" Button
+    t =    41.29s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    41.29s     Wait for org.pokerpractice.native to idle
+    t =    41.29s     Find the Target Application 'org.pokerpractice.native'
+    t =    41.32s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    41.37s     Synthesize event
+    t =    41.37s         Find the Target Application 'org.pokerpractice.native'
+    t =    41.40s         Find the Target Application 'org.pokerpractice.native'
+    t =    41.44s         Find the Target Application 'org.pokerpractice.native'
+    t =    41.47s         Find the Target Application 'org.pokerpractice.native'
+    t =    41.50s         Find the Target Application 'org.pokerpractice.native'
+    t =    42.65s     Wait for org.pokerpractice.native to idle
+    t =    42.93s Checking existence of `"Следующая раздача" Button`
+    t =    42.97s Find the "Следующая раздача" Button
+    t =    43.02s Find the Target Application 'org.pokerpractice.native'
+    t =    43.15s Added attachment named 'completed-hand'
+    t =    43.15s Tap "Следующая раздача" Button
+    t =    43.15s     Wait for org.pokerpractice.native to idle
+    t =    43.15s     Find the "Следующая раздача" Button
+    t =    43.19s     Check for interrupting elements affecting "Следующая раздача" Button
+    t =    43.22s     Synthesize event
+    t =    43.52s     Wait for org.pokerpractice.native to idle
+    t =    43.52s Waiting 5.0s for "Раздача 2" StaticText to exist
+    t =    44.53s     Checking `Expect predicate `existsNoRetry == 1` for object "Раздача 2" StaticText`
+    t =    44.54s         Checking existence of `"Раздача 2" StaticText`
+    t =    44.58s Terminate org.pokerpractice.native:75878
+2026-10-18 17:37:26.151 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:37:26.152 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:37:26.153 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    45.64s Open org.pokerpractice.native
+    t =    45.64s     Launch org.pokerpractice.native
+2026-10-18 17:37:27.185 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-18 17:37:27.186 xcodebuild[75083:9534285] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-18 17:37:27.197 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    45.85s         Setting up automation session
+    t =    49.13s         Wait for org.pokerpractice.native to idle
+    t =    50.88s Waiting 10.0s for "Тренировка" Button to exist
+    t =    51.90s     Checking `Expect predicate `existsNoRetry == 1` for object "Тренировка" Button`
+    t =    51.90s         Checking existence of `"Тренировка" Button`
+    t =    52.03s Tap "Тренировка" Button
+    t =    52.03s     Wait for org.pokerpractice.native to idle
+    t =    52.03s     Find the "Тренировка" Button
+    t =    52.06s     Check for interrupting elements affecting "brain.head.profile" Button
+    t =    52.08s     Synthesize event
+    t =    52.41s     Wait for org.pokerpractice.native to idle
+    t =    54.22s Checking existence of `"training.pot-odds" Button`
+    t =    54.28s Find the "training.pot-odds" Button
+    t =    54.32s Checking existence of `Keyboard (First Match)`
+    t =    54.39s Checking existence of `"training.pot-odds" Button`
+    t =    54.42s Find the "training.pot-odds" Button
+    t =    54.46s Find the "training.pot-odds" Button
+    t =    54.50s Find the "training.pot-odds" Button
+    t =    54.54s Tap "training.pot-odds" Button
+    t =    54.54s     Wait for org.pokerpractice.native to idle
+    t =    54.54s     Find the "training.pot-odds" Button
+    t =    54.57s     Check for interrupting elements affecting "training.pot-odds" Button
+    t =    54.60s     Synthesize event
+    t =    54.89s     Wait for org.pokerpractice.native to idle
+    t =    55.32s Waiting 5.0s for "Процент" TextField to exist
+    t =    56.35s     Checking `Expect predicate `existsNoRetry == 1` for object "Процент" TextField`
+    t =    56.35s         Checking existence of `"Процент" TextField`
+    t =    56.37s Find the "Проверить" Button
+    t =    56.39s Tap "Процент" TextField
+    t =    56.39s     Wait for org.pokerpractice.native to idle
+    t =    56.40s     Find the "Процент" TextField
+    t =    56.42s     Check for interrupting elements affecting "Процент" TextField
+    t =    56.44s     Synthesize event
+    t =    56.73s     Wait for org.pokerpractice.native to idle
+<unknown>:0: warning: -[PokerTrainerUITests.CriticalFlows testRegressionOffline] : Invalid frame dimension (negative or non-finite).
+    t =    57.09s Type '101' into "Процент" TextField
+    t =    57.09s     Wait for org.pokerpractice.native to idle
+    t =    57.48s     Find the "Процент" TextField
+    t =    57.57s     Check for interrupting elements affecting "Процент" TextField
+    t =    57.61s     Synthesize event
+    t =    57.87s     Wait for org.pokerpractice.native to idle
+    t =    57.88s Find the "Проверить" Button
+    t =    57.91s Type '25' into "Процент" TextField
+    t =    57.91s     Wait for org.pokerpractice.native to idle
+    t =    57.91s     Find the "Процент" TextField
+    t =    57.93s     Check for interrupting elements affecting "Процент" TextField
+    t =    57.96s     Synthesize event
+    t =    58.25s     Wait for org.pokerpractice.native to idle
+    t =    58.25s Tap "Проверить" Button
+    t =    58.25s     Wait for org.pokerpractice.native to idle
+    t =    58.26s     Find the "Проверить" Button
+    t =    58.29s     Check for interrupting elements affecting "Проверить" Button
+    t =    58.31s     Synthesize event
+    t =    58.60s     Wait for org.pokerpractice.native to idle
+    t =    58.61s Checking existence of `"Подробнее о расчёте" Button`
+    t =    58.63s Checking existence of `"Подробнее о расчёте" Button`
+    t =    58.66s Find the Target Application 'org.pokerpractice.native'
+    t =    58.68s Checking existence of `"Подробнее о расчёте" Button`
+    t =    58.71s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    58.71s     Wait for org.pokerpractice.native to idle
+    t =    58.71s     Find the Target Application 'org.pokerpractice.native'
+    t =    58.73s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    58.76s     Synthesize event
+    t =    58.76s         Find the Target Application 'org.pokerpractice.native'
+    t =    58.78s         Find the Target Application 'org.pokerpractice.native'
+    t =    58.80s         Find the Target Application 'org.pokerpractice.native'
+    t =    58.82s         Find the Target Application 'org.pokerpractice.native'
+    t =    58.84s         Find the Target Application 'org.pokerpractice.native'
+    t =    59.98s     Wait for org.pokerpractice.native to idle
+    t =    59.98s Checking existence of `"Подробнее о расчёте" Button`
+    t =    60.01s Find the Target Application 'org.pokerpractice.native'
+    t =    60.03s Checking existence of `"Подробнее о расчёте" Button`
+    t =    60.06s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    60.06s     Wait for org.pokerpractice.native to idle
+    t =    60.06s     Find the Target Application 'org.pokerpractice.native'
+    t =    60.08s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    60.10s     Synthesize event
+    t =    60.10s         Find the Target Application 'org.pokerpractice.native'
+    t =    60.12s         Find the Target Application 'org.pokerpractice.native'
+    t =    60.14s         Find the Target Application 'org.pokerpractice.native'
+    t =    60.16s         Find the Target Application 'org.pokerpractice.native'
+    t =    60.18s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.32s     Wait for org.pokerpractice.native to idle
+    t =    61.33s Checking existence of `"Подробнее о расчёте" Button`
+    t =    61.36s Find the Target Application 'org.pokerpractice.native'
+    t =    61.37s Checking existence of `"Подробнее о расчёте" Button`
+    t =    61.40s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    61.40s     Wait for org.pokerpractice.native to idle
+    t =    61.40s     Find the Target Application 'org.pokerpractice.native'
+    t =    61.42s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    61.44s     Synthesize event
+    t =    61.44s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.46s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.48s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.49s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.51s         Find the Target Application 'org.pokerpractice.native'
+    t =    62.64s     Wait for org.pokerpractice.native to idle
+    t =    62.65s Checking existence of `"Подробнее о расчёте" Button`
+    t =    62.68s Find the Target Application 'org.pokerpractice.native'
+    t =    62.70s Checking existence of `"Подробнее о расчёте" Button`
+    t =    62.73s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    62.73s     Wait for org.pokerpractice.native to idle
+    t =    62.73s     Find the Target Application 'org.pokerpractice.native'
+    t =    62.75s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    62.77s     Synthesize event
+    t =    62.77s         Find the Target Application 'org.pokerpractice.native'
+    t =    62.79s         Find the Target Application 'org.pokerpractice.native'
+    t =    62.81s         Find the Target Application 'org.pokerpractice.native'
+    t =    62.83s         Find the Target Application 'org.pokerpractice.native'
+    t =    62.85s         Find the Target Application 'org.pokerpractice.native'
+    t =    63.99s     Wait for org.pokerpractice.native to idle
+    t =    64.00s Checking existence of `"Подробнее о расчёте" Button`
+    t =    64.03s Find the Target Application 'org.pokerpractice.native'
+    t =    64.05s Checking existence of `"Подробнее о расчёте" Button`
+    t =    64.07s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    64.07s     Wait for org.pokerpractice.native to idle
+    t =    64.07s     Find the Target Application 'org.pokerpractice.native'
+    t =    64.09s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    64.12s     Synthesize event
+    t =    64.12s         Find the Target Application 'org.pokerpractice.native'
+    t =    64.15s         Find the Target Application 'org.pokerpractice.native'
+    t =    64.17s         Find the Target Application 'org.pokerpractice.native'
+    t =    64.19s         Find the Target Application 'org.pokerpractice.native'
+    t =    64.21s         Find the Target Application 'org.pokerpractice.native'
+    t =    65.35s     Wait for org.pokerpractice.native to idle
+    t =    65.35s Checking existence of `"Подробнее о расчёте" Button`
+    t =    65.38s Find the Target Application 'org.pokerpractice.native'
+    t =    65.39s Checking existence of `"Подробнее о расчёте" Button`
+    t =    65.42s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    65.42s     Wait for org.pokerpractice.native to idle
+    t =    65.42s     Find the Target Application 'org.pokerpractice.native'
+    t =    65.44s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    65.46s     Synthesize event
+    t =    65.46s         Find the Target Application 'org.pokerpractice.native'
+    t =    65.48s         Find the Target Application 'org.pokerpractice.native'
+    t =    65.50s         Find the Target Application 'org.pokerpractice.native'
+    t =    65.51s         Find the Target Application 'org.pokerpractice.native'
+    t =    65.53s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.67s     Wait for org.pokerpractice.native to idle
+    t =    66.68s Checking existence of `"Подробнее о расчёте" Button`
+    t =    66.71s Find the Target Application 'org.pokerpractice.native'
+    t =    66.72s Checking existence of `"Подробнее о расчёте" Button`
+    t =    66.75s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    66.75s     Wait for org.pokerpractice.native to idle
+    t =    66.75s     Find the Target Application 'org.pokerpractice.native'
+    t =    66.77s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    66.79s     Synthesize event
+    t =    66.79s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.81s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.82s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.84s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.86s         Find the Target Application 'org.pokerpractice.native'
+    t =    67.99s     Wait for org.pokerpractice.native to idle
+    t =    67.99s Checking existence of `"Подробнее о расчёте" Button`
+    t =    68.01s Find the Target Application 'org.pokerpractice.native'
+    t =    68.03s Checking existence of `"Подробнее о расчёте" Button`
+    t =    68.05s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    68.05s     Wait for org.pokerpractice.native to idle
+    t =    68.05s     Find the Target Application 'org.pokerpractice.native'
+    t =    68.07s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    68.09s     Synthesize event
+    t =    68.10s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.11s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.13s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.15s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.17s         Find the Target Application 'org.pokerpractice.native'
+    t =    69.30s     Wait for org.pokerpractice.native to idle
+    t =    69.31s Checking existence of `"Подробнее о расчёте" Button`
+    t =    69.33s Find the Target Application 'org.pokerpractice.native'
+    t =    69.35s Checking existence of `"Подробнее о расчёте" Button`
+    t =    69.37s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    69.37s     Wait for org.pokerpractice.native to idle
+    t =    69.37s     Find the Target Application 'org.pokerpractice.native'
+    t =    69.39s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    69.42s     Synthesize event
+    t =    69.42s         Find the Target Application 'org.pokerpractice.native'
+    t =    69.44s         Find the Target Application 'org.pokerpractice.native'
+    t =    69.46s         Find the Target Application 'org.pokerpractice.native'
+    t =    69.47s         Find the Target Application 'org.pokerpractice.native'
+    t =    69.49s         Find the Target Application 'org.pokerpractice.native'
+    t =    70.63s     Wait for org.pokerpractice.native to idle
+    t =    70.63s Checking existence of `"Подробнее о расчёте" Button`
+    t =    70.66s Find the Target Application 'org.pokerpractice.native'
+    t =    70.67s Checking existence of `"Подробнее о расчёте" Button`
+    t =    70.70s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    70.70s     Wait for org.pokerpractice.native to idle
+    t =    70.70s     Find the Target Application 'org.pokerpractice.native'
+    t =    70.72s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    70.74s     Synthesize event
+    t =    70.74s         Find the Target Application 'org.pokerpractice.native'
+    t =    70.76s         Find the Target Application 'org.pokerpractice.native'
+    t =    70.78s         Find the Target Application 'org.pokerpractice.native'
+    t =    70.80s         Find the Target Application 'org.pokerpractice.native'
+    t =    70.82s         Find the Target Application 'org.pokerpractice.native'
+    t =    71.95s     Wait for org.pokerpractice.native to idle
+    t =    71.96s Checking existence of `"Подробнее о расчёте" Button`
+    t =    71.98s Find the Target Application 'org.pokerpractice.native'
+    t =    71.99s Checking existence of `"Подробнее о расчёте" Button`
+    t =    72.02s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    72.02s     Wait for org.pokerpractice.native to idle
+    t =    72.02s     Find the Target Application 'org.pokerpractice.native'
+    t =    72.04s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    72.06s     Synthesize event
+    t =    72.06s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.08s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.10s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.11s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.13s         Find the Target Application 'org.pokerpractice.native'
+    t =    73.26s     Wait for org.pokerpractice.native to idle
+    t =    73.27s Checking existence of `"Подробнее о расчёте" Button`
+    t =    73.31s Find the Target Application 'org.pokerpractice.native'
+    t =    73.33s Checking existence of `"Подробнее о расчёте" Button`
+    t =    73.36s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    73.36s     Wait for org.pokerpractice.native to idle
+    t =    73.36s     Find the Target Application 'org.pokerpractice.native'
+    t =    73.38s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    73.40s     Synthesize event
+    t =    73.40s         Find the Target Application 'org.pokerpractice.native'
+    t =    73.42s         Find the Target Application 'org.pokerpractice.native'
+    t =    73.44s         Find the Target Application 'org.pokerpractice.native'
+    t =    73.45s         Find the Target Application 'org.pokerpractice.native'
+    t =    73.47s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.61s     Wait for org.pokerpractice.native to idle
+    t =    74.62s Checking existence of `"Подробнее о расчёте" Button`
+    t =    74.66s Find the Target Application 'org.pokerpractice.native'
+    t =    74.68s Checking existence of `"Подробнее о расчёте" Button`
+    t =    74.70s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    74.70s     Wait for org.pokerpractice.native to idle
+    t =    74.71s     Find the Target Application 'org.pokerpractice.native'
+    t =    74.73s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    74.75s     Synthesize event
+    t =    74.75s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.77s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.79s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.80s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.83s         Find the Target Application 'org.pokerpractice.native'
+    t =    75.96s     Wait for org.pokerpractice.native to idle
+    t =    75.96s Checking existence of `"Подробнее о расчёте" Button`
+    t =    75.99s Find the Target Application 'org.pokerpractice.native'
+    t =    76.01s Checking existence of `"Подробнее о расчёте" Button`
+    t =    76.03s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    76.03s     Wait for org.pokerpractice.native to idle
+    t =    76.03s     Find the Target Application 'org.pokerpractice.native'
+    t =    76.05s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    76.08s     Synthesize event
+    t =    76.08s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.10s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.12s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.13s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.16s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.29s     Wait for org.pokerpractice.native to idle
+    t =    77.30s Checking existence of `"Подробнее о расчёте" Button`
+    t =    77.33s Find the Target Application 'org.pokerpractice.native'
+    t =    77.34s Checking existence of `"Подробнее о расчёте" Button`
+    t =    77.37s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    77.37s     Wait for org.pokerpractice.native to idle
+    t =    77.37s     Find the Target Application 'org.pokerpractice.native'
+    t =    77.39s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    77.41s     Synthesize event
+    t =    77.41s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.43s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.44s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.46s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.48s         Find the Target Application 'org.pokerpractice.native'
+    t =    78.63s     Wait for org.pokerpractice.native to idle
+    t =    78.63s Checking existence of `"Подробнее о расчёте" Button`
+    t =    78.70s Find the Target Application 'org.pokerpractice.native'
+    t =    78.72s Checking existence of `"Подробнее о расчёте" Button`
+    t =    78.74s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    78.74s     Wait for org.pokerpractice.native to idle
+    t =    78.74s     Find the Target Application 'org.pokerpractice.native'
+    t =    78.76s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    78.78s     Synthesize event
+    t =    78.78s         Find the Target Application 'org.pokerpractice.native'
+    t =    78.80s         Find the Target Application 'org.pokerpractice.native'
+    t =    78.81s         Find the Target Application 'org.pokerpractice.native'
+    t =    78.87s         Find the Target Application 'org.pokerpractice.native'
+    t =    78.89s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.03s     Wait for org.pokerpractice.native to idle
+    t =    80.03s Checking existence of `"Подробнее о расчёте" Button`
+    t =    80.06s Find the Target Application 'org.pokerpractice.native'
+    t =    80.08s Checking existence of `"Подробнее о расчёте" Button`
+    t =    80.11s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    80.11s     Wait for org.pokerpractice.native to idle
+    t =    80.11s     Find the Target Application 'org.pokerpractice.native'
+    t =    80.13s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    80.16s     Synthesize event
+    t =    80.16s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.17s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.19s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.21s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.23s         Find the Target Application 'org.pokerpractice.native'
+    t =    81.36s     Wait for org.pokerpractice.native to idle
+    t =    81.74s Checking existence of `"Подробнее о расчёте" Button`
+    t =    81.77s Find the Target Application 'org.pokerpractice.native'
+    t =    81.79s Checking existence of `"Подробнее о расчёте" Button`
+    t =    81.81s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    81.81s     Wait for org.pokerpractice.native to idle
+    t =    81.81s     Find the Target Application 'org.pokerpractice.native'
+    t =    81.83s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    81.85s     Synthesize event
+    t =    81.85s         Find the Target Application 'org.pokerpractice.native'
+    t =    81.87s         Find the Target Application 'org.pokerpractice.native'
+    t =    81.89s         Find the Target Application 'org.pokerpractice.native'
+    t =    81.90s         Find the Target Application 'org.pokerpractice.native'
+    t =    81.93s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.06s     Wait for org.pokerpractice.native to idle
+    t =    83.43s Checking existence of `"Подробнее о расчёте" Button`
+    t =    83.46s Find the Target Application 'org.pokerpractice.native'
+    t =    83.48s Checking existence of `"Подробнее о расчёте" Button`
+    t =    83.50s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    83.50s     Wait for org.pokerpractice.native to idle
+    t =    83.50s     Find the Target Application 'org.pokerpractice.native'
+    t =    83.52s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    83.54s     Synthesize event
+    t =    83.54s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.56s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.58s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.59s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.61s         Find the Target Application 'org.pokerpractice.native'
+    t =    84.75s     Wait for org.pokerpractice.native to idle
+    t =    85.12s Checking existence of `"Подробнее о расчёте" Button`
+    t =    85.15s Find the Target Application 'org.pokerpractice.native'
+    t =    85.17s Checking existence of `"Подробнее о расчёте" Button`
+    t =    85.19s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    85.19s     Wait for org.pokerpractice.native to idle
+    t =    85.19s     Find the Target Application 'org.pokerpractice.native'
+    t =    85.21s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    85.23s     Synthesize event
+    t =    85.24s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.25s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.27s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.29s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.31s         Find the Target Application 'org.pokerpractice.native'
+    t =    86.44s     Wait for org.pokerpractice.native to idle
+    t =    86.82s Checking existence of `"Подробнее о расчёте" Button`
+    t =    86.86s Find the Target Application 'org.pokerpractice.native'
+    t =    86.88s Checking existence of `"Подробнее о расчёте" Button`
+    t =    86.90s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    86.90s     Wait for org.pokerpractice.native to idle
+    t =    86.90s     Find the Target Application 'org.pokerpractice.native'
+    t =    86.92s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    86.94s     Synthesize event
+    t =    86.95s         Find the Target Application 'org.pokerpractice.native'
+    t =    86.96s         Find the Target Application 'org.pokerpractice.native'
+    t =    86.98s         Find the Target Application 'org.pokerpractice.native'
+    t =    87.00s         Find the Target Application 'org.pokerpractice.native'
+    t =    87.02s         Find the Target Application 'org.pokerpractice.native'
+    t =    88.15s     Wait for org.pokerpractice.native to idle
+    t =    88.52s Checking existence of `"Подробнее о расчёте" Button`
+    t =    88.55s Find the Target Application 'org.pokerpractice.native'
+    t =    88.57s Checking existence of `"Подробнее о расчёте" Button`
+    t =    88.59s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    88.59s     Wait for org.pokerpractice.native to idle
+    t =    88.59s     Find the Target Application 'org.pokerpractice.native'
+    t =    88.61s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    88.63s     Synthesize event
+    t =    88.63s         Find the Target Application 'org.pokerpractice.native'
+    t =    88.65s         Find the Target Application 'org.pokerpractice.native'
+    t =    88.67s         Find the Target Application 'org.pokerpractice.native'
+    t =    88.68s         Find the Target Application 'org.pokerpractice.native'
+    t =    88.70s         Find the Target Application 'org.pokerpractice.native'
+    t =    89.84s     Wait for org.pokerpractice.native to idle
+    t =    90.21s Checking existence of `"Подробнее о расчёте" Button`
+    t =    90.25s Find the Target Application 'org.pokerpractice.native'
+    t =    90.27s Checking existence of `"Подробнее о расчёте" Button`
+    t =    90.29s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    90.29s     Wait for org.pokerpractice.native to idle
+    t =    90.30s     Find the Target Application 'org.pokerpractice.native'
+    t =    90.31s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    90.33s     Synthesize event
+    t =    90.34s         Find the Target Application 'org.pokerpractice.native'
+    t =    90.35s         Find the Target Application 'org.pokerpractice.native'
+    t =    90.37s         Find the Target Application 'org.pokerpractice.native'
+    t =    90.39s         Find the Target Application 'org.pokerpractice.native'
+    t =    90.41s         Find the Target Application 'org.pokerpractice.native'
+    t =    91.54s     Wait for org.pokerpractice.native to idle
+    t =    91.90s Checking existence of `"Подробнее о расчёте" Button`
+    t =    91.93s Find the Target Application 'org.pokerpractice.native'
+    t =    91.95s Checking existence of `"Подробнее о расчёте" Button`
+    t =    91.97s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds 
+    t =    91.97s     Wait for org.pokerpractice.native to idle
+    t =    91.97s     Find the Target Application 'org.pokerpractice.native'
+    t =    91.99s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    92.01s     Synthesize event
+    t =    92.01s         Find the Target Application 'org.pokerpractice.native'
+    t =    92.03s         Find the Target Application 'org.pokerpractice.native'
+    t =    92.04s         Find the Target Application 'org.pokerpractice.native'
+    t =    92.06s         Find the Target Application 'org.pokerpractice.native'
+    t =    92.08s         Find the Target Application 'org.pokerpractice.native'
+    t =    93.21s     Wait for org.pokerpractice.native to idle
+    t =    93.59s Checking existence of `"Подробнее о расчёте" Button`
+    t =    93.62s Requesting snapshot of accessibility hierarchy for app with pid 75937
+    t =    93.77s Requesting snapshot of accessibility hierarchy for app with pid 75937
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:55: error: -[PokerTrainerUITests.CriticalFlows testRegressionOffline] : XCTAssertTrue failed - Optional(Attributes: Application, 0x110bfbc00, pid: 75937, label: 'Учебный стол'
+Element subtree:
+ →Application, 0x110bfbc00, pid: 75937, label: 'Учебный стол'
+    Window (Main), 0x110bfb0c0, {{0.0, 0.0}, {390.0, 844.0}}
+      Other, 0x110bfb340, {{0.0, 0.0}, {390.0, 844.0}}
+      Other, 0x110bfb200, {{0.0, 0.0}, {390.0, 844.0}}
+        Other, 0x110bfae40, {{0.0, 0.0}, {390.0, 844.0}}
+          Other, 0x110bfad00, {{0.0, 0.0}, {390.0, 844.0}}
+            Other, 0x110bfaa80, {{0.0, 0.0}, {390.0, 844.0}}
+              Other, 0x110bfa6c0, {{0.0, 0.0}, {390.0, 844.0}}
+                Other, 0x110bfa940, {{0.0, 0.0}, {390.0, 844.0}}
+                  Other, 0x110bf9680, {{0.0, 0.0}, {390.0, 844.0}}
+                    Other, 0x110bfa800, {{0.0, 0.0}, {390.0, 844.0}}
+                      Other, 0x110bfabc0, {{0.0, 0.0}, {390.0, 844.0}}
+                        Other, 0x110bf92c0, {{0.0, 0.0}, {390.0, 844.0}}
+                          Other, 0x110bf9400, {{0.0, 0.0}, {390.0, 844.0}}
+                            NavigationBar, 0x110bf8f00, {{0.0, 47.0}, {390.0, 54.0}}, identifier: 'Упражнение'
+                              Button, 0x110bfa580, {{16.0, 47.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'Тренировка'
+                              StaticText, 0x110bf9cc0, {{142.7, 58.7}, {104.7, 20.7}}, label: 'Упражнение'
+                            Other, 0x110bf9f40, {{0.0, 0.0}, {390.0, 844.0}}
+                              Other, 0x110bf9040, {{0.0, 0.0}, {390.0, 844.0}}
+                                Other, 0x110bfb700, {{0.0, 0.0}, {390.0, 844.0}}
+                                  Other, 0x110bfb5c0, {{0.0, 0.0}, {390.0, 844.0}}
+                                    ScrollView, 0x111148000, {{0.0, 0.0}, {390.0, 844.0}}
+                                      Other, 0x111148140, {{0.0, 0.0}, {390.0, 844.0}}
+                                        Other, 0x111148280, {{0.0, 0.0}, {390.0, 141.0}}
+                                        Other, 0x1111483c0, {{0.0, 568.0}, {390.0, 143.0}}
+                                      Other, 0x111148500, {{0.0, 0.0}, {390.0, 844.0}}
+                                      Other, 0x111148640, {{0.0, 101.0}, {390.0, 443.3}}
+                                        StaticText, 0x111148780, {{16.0, 117.0}, {153.3, 26.3}}, label: 'Шансы банка'
+                                        StaticText, 0x1111488c0, {{16.0, 151.3}, {339.3, 18.0}}, label: 'Какая доля банка нужна, чтобы оплатить колл?'
+                                        Other, 0x111148a00, {{32.0, 215.3}, {278.0, 42.3}}
+                                          StaticText, 0x111148b40, {{32.0, 215.3}, {89.0, 42.3}}, label: 'Банк до ставки, 100'
+                                            StaticText, 0x111148c80, {{32.0, 215.3}, {89.0, 14.3}}, label: 'Банк до ставки'
+                                            StaticText, 0x111148dc0, {{32.0, 233.7}, {38.0, 24.0}}, label: '100'
+                                          StaticText, 0x111148f00, {{143.3, 215.3}, {41.0, 42.3}}, label: 'Ставка, 50'
+                                            StaticText, 0x111149040, {{143.3, 215.3}, {41.0, 14.3}}, label: 'Ставка'
+                                            StaticText, 0x111149180, {{143.3, 233.7}, {25.3, 24.0}}, label: '50'
+                                          StaticText, 0x1111492c0, {{254.7, 215.3}, {55.3, 42.3}}, label: 'Ваш колл, 50'
+                                            StaticText, 0x111149400, {{254.7, 215.3}, {55.3, 14.3}}, label: 'Ваш колл'
+                                            StaticText, 0x111149540, {{254.7, 233.7}, {25.3, 24.0}}, label: '50'
+                                        StaticText, 0x111149680, {{32.0, 294.7}, {326.0, 24.0}}, label: 'Банк после колла, 200'
+                                          StaticText, 0x1111497c0, {{32.0, 296.5}, {140.3, 20.3}}, label: 'Банк после колла'
+                                          StaticText, 0x111149900, {{320.0, 294.7}, {38.0, 24.0}}, label: '200'
+                                        StaticText, 0x111149a40, {{16.0, 352.7}, {298.7, 38.0}}, label: 'Equity — средняя доля банка. Введите её минимальный процент для колла.'
+                                        TextField, 0x111149b80, {{30.0, 422.7}, {330.0, 25.7}}, placeholderValue: 'Процент', value: 25, Keyboard Focused
+                                        Button, 0x111149cc0, {{16.0, 480.3}, {358.0, 48.0}}, label: 'Проверить'
+                                      Other, 0x111149e00, {{357.0, 101.0}, {30.0, 427.0}}, label: 'Вертикальная полоса прокрутки, 2 страницы', value: 0 %
+                                        Other, 0x111149f40, {{384.0, 104.0}, {3.0, 413.0}}
+                                      Other, 0x11114a080, {{357.0, 101.0}, {30.0, 427.0}}, label: 'Вертикальная полоса прокрутки, 2 страницы', value: 0 %
+                                        Other, 0x11114a1c0, {{384.0, 104.0}, {3.0, 413.0}}
+                            Toolbar, 0x11114a300, {{0.0, 0.0}, {390.0, 844.0}}, identifier: 'Toolbar', label: 'Панель инструментов'
+                              Other, 0x11114a440, {{0.0, 0.0}, {390.0, 844.0}}
+                Other, 0x11114a580, {{0.0, 0.0}, {390.0, 844.0}}
+                  Other, 0x11114a6c0, {{0.0, 761.0}, {390.0, 83.0}}
+                    Other, 0x11114a800, {{0.0, 0.0}, {390.0, 844.0}}
+                      TabBar, 0x11114a940, {{0.0, 761.0}, {390.0, 83.0}}, label: 'Панель вкладок'
+                        Other, 0x11114aa80, {{21.0, 761.0}, {348.0, 62.0}}
+                          Other, 0x11114abc0, {{21.0, 761.0}, {101.3, 54.0}}
+                          Other, 0x11114ad00, {{21.0, 761.0}, {348.0, 62.0}}
+                            Button, 0x11114ae40, {{25.0, 765.0}, {101.3, 54.0}}, identifier: 'suit.spade.fill', label: 'Играть'
+                              Image, 0x11114af80, {{63.0, 771.3}, {25.7, 26.3}}, identifier: 'suit.spade.fill', label: 'Пика'
+                            Button, 0x11114b0c0, {{104.6, 765.0}, {101.3, 54.0}}, identifier: 'brain.head.profile', label: 'Тренировка', Selected
+                              Image, 0x11114b200, {{140.9, 769.3}, {28.7, 31.0}}, identifier: 'brain.head.profile.fill', label: 'Профиль головы с изображением мозга, с заливкой'
+                            Button, 0x11114b340, {{184.1, 765.0}, {101.3, 54.0}}, identifier: 'chart.bar.fill', label: 'Прогресс'
+                              Image, 0x11114b480, {{217.4, 772.3}, {35.0, 25.3}}, identifier: 'chart.bar.fill', label: 'гистограмма'
+                            Button, 0x11114b5c0, {{263.7, 765.0}, {101.3, 54.0}}, identifier: 'gearshape.fill', label: 'Настройки'
+                              Image, 0x11114b700, {{300.3, 771.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'Форма шестеренки, с заливкой'
+                          Other, 0x11114b840, {{21.0, 761.0}, {348.0, 62.0}}
+                          Other, 0x11114b980, {{104.6, 765.0}, {101.3, 54.0}}
+                            Other, 0x11114bac0, {{104.6, 765.0}, {101.3, 54.0}}
+                              Other, 0x11114bc00, {{104.6, 765.0}, {101.3, 54.0}}
+                              Other, 0x11114bd40, {{104.6, 765.0}, {101.3, 54.0}}
+                                Other, 0x11114be80, {{104.6, 765.0}, {101.3, 54.0}}
+                                  Other, 0x11114c000, {{104.6, 765.0}, {101.3, 54.0}}
+                                    Other, 0x11114c140, {{104.6, 765.0}, {101.3, 54.0}}
+                                  Other, 0x11114c280, {{104.6, 765.0}, {101.3, 54.0}}
+                                Other, 0x11114c3c0, {{104.6, 765.0}, {101.3, 54.0}}
+                    Other, 0x11114c500, {{0.0, 761.0}, {390.0, 83.0}}
+                      Other, 0x11114c640, {{0.0, 761.0}, {390.0, 83.0}}
+                        Other, 0x11114c780, {{0.0, 761.0}, {390.0, 83.0}}
+                          Other, 0x11114c8c0, {{0.0, 761.0}, {390.0, 83.0}}
+                            Other, 0x11114ca00, {{0.0, 761.0}, {390.0, 83.0}}
+                              Other, 0x11114cb40, {{0.0, 761.0}, {390.0, 83.0}}
+                          Other, 0x11114cc80, {{0.0, 761.0}, {390.0, 83.0}}
+                            Other, 0x11114cdc0, {{0.0, 761.0}, {390.0, 83.0}}
+    Window, 0x11114cf00, {{0.0, 0.0}, {390.0, 844.0}}
+      Other, 0x11114d040, {{0.0, 0.0}, {390.0, 844.0}}
+        Other, 0x11114d180, {{0.0, 0.0}, {390.0, 844.0}}
+        Other, 0x11114d2c0, {{0.0, 494.0}, {390.0, 350.0}}
+          Other, 0x11114d400, {{0.0, 494.0}, {390.0, 48.0}}
+            Other, 0x11114d540, {{0.0, 494.0}, {390.0, 48.0}}
+              Other, 0x11114d680, {{0.0, 494.0}, {390.0, 48.0}}
+                Toolbar, 0x11114d7c0, {{0.0, 494.0}, {390.0, 48.0}}, identifier: 'Toolbar', label: 'Панель инструментов'
+                  Other, 0x11114d900, {{0.0, 494.0}, {390.0, 48.0}}
+                    Other, 0x11114da40, {{16.0, 494.0}, {358.0, 48.0}}
+                      Other, 0x11114db80, {{16.0, 494.0}, {358.0, 48.0}}
+                        Other, 0x11114dcc0, {{16.0, 494.0}, {0.0, 0.0}}
+                          Other, 0x11114de00, {{288.7, 494.0}, {85.3, 48.0}}
+                            Other, 0x11114df40, {{288.7, 494.0}, {85.3, 48.0}}
+                              Other, 0x11114e080, {{293.7, 500.0}, {75.3, 36.0}}
+                                Other, 0x11114e1c0, {{293.7, 500.0}, {75.3, 36.0}}
+                                  Other, 0x11114e300, {{293.7, 500.0}, {75.3, 36.0}}
+                                    Other, 0x11114e440, {{293.7, 500.0}, {75.3, 36.0}}
+                                      Button, 0x11114e580, {{293.7, 500.0}, {75.3, 36.0}}, label: 'Готово'
+          Other, 0x11114e6c0, {{0.0, 542.0}, {390.0, 302.0}}, identifier: 'inputView'
+    Window, 0x11114e800, {{0.0, 0.0}, {390.0, 844.0}}
+      Other, 0x11114e940, {{0.0, 0.0}, {390.0, 844.0}}
+        Other, 0x11114ea80, {{0.0, 542.0}, {390.0, 302.0}}
+          Other, 0x11114ebc0, {{0.0, 542.0}, {390.0, 303.0}}
+            Other, 0x11114ed00, {{0.0, 542.0}, {390.0, 303.0}}
+              Other, 0x11114ee40, {{0.0, 542.0}, {390.0, 303.0}}
+          Other, 0x11114ef80, {{0.0, 559.0}, {390.0, 227.0}}
+            Keyboard, 0x11114f0c0, {{0.0, 559.0}, {390.0, 227.0}}
+              Other, 0x11114f200, {{0.0, 559.0}, {390.0, 227.0}}
+                Other, 0x11114f340, {{0.0, 559.0}, {390.0, 227.0}}, identifier: 'UIKeyboardLayoutStar Preview'
+                  Key, 0x11114f480, {{4.7, 566.0}, {128.3, 54.0}}, label: '1'
+                  Key, 0x11114f5c0, {{133.0, 566.0}, {128.7, 54.0}}, label: '2'
+                  Key, 0x11114f700, {{261.7, 566.0}, {128.3, 54.0}}, label: '3'
+                  Key, 0x11114f840, {{4.7, 620.0}, {128.3, 54.0}}, label: '4'
+                  Key, 0x11114f980, {{133.0, 620.0}, {128.7, 54.0}}, label: '5'
+                  Key, 0x11114fac0, {{261.7, 620.0}, {128.3, 54.0}}, label: '6'
+                  Key, 0x11114fc00, {{4.7, 674.0}, {128.3, 54.0}}, label: '7'
+                  Key, 0x11114fd40, {{133.0, 674.0}, {128.7, 54.0}}, label: '8'
+                  Key, 0x11114fe80, {{261.7, 674.0}, {128.3, 54.0}}, label: '9'
+                  Key, 0x111268000, {{4.7, 728.0}, {128.3, 54.0}}, label: ','
+                  Key, 0x111268140, {{133.0, 728.0}, {128.7, 54.0}}, label: '0'
+                  Key, 0x111268280, {{261.7, 728.0}, {128.3, 54.0}}, label: 'Удалить'
+          Other, 0x1112683c0, {{0.0, 559.0}, {390.0, 285.0}}
+            Button, 0x111268500, {{313.4, 775.4}, {68.1, 68.7}}, identifier: 'dictation', label: 'Диктовать', Disabled
+              StaticText, 0x111268640, {{313.4, 775.4}, {0.0, 0.0}}
+Path to element:
+ →Application, 0x110bfbc00, pid: 75937, label: 'Учебный стол'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x111268780, pid: 75937, label: 'Учебный стол'
+  }
+)
+    t =    93.83s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testRegressionOffline]' failed (94.138 seconds).
+Test Suite 'CriticalFlows' failed at 2026-10-18 17:38:15.684.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 200.176 (201.647) seconds
+Test Suite 'PokerTrainerUITests.xctest' failed at 2026-10-18 17:38:15.685.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 200.176 (201.648) seconds
+Test Suite 'Selected tests' failed at 2026-10-18 17:38:15.685.
+	 Executed 2 tests, with 2 failures (0 unexpected) in 200.176 (201.663) seconds
+2026-10-18 17:38:15.751 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:38:15.752 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:38:15.753 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:38:15.824 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:38:15.825 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:38:15.826 xcodebuild[75083:9534285] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-18 17:38:16.129 xcodebuild[75083:9534285] [MT] IDETestOperationsObserverDebug: 282.803 elapsed -- Testing started completed.
+2026-10-18 17:38:16.129 xcodebuild[75083:9534285] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-18 17:38:16.129 xcodebuild[75083:9534285] [MT] IDETestOperationsObserverDebug: 282.803 sec, +282.803 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/kr1ny77/Desktop/Poker/replica/tests/evidence/regression-20261018-173321/flows.xcresult
+
+Failing tests:
+	CriticalFlows.testRegressionLessonPotOdds()
+	CriticalFlows.testRegressionOffline()
+
+** TEST FAILED **
+
+Testing started

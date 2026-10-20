@@ -1,0 +1,7 @@
+{
+  "profile": "(version 1)(allow default)(deny network-outbound (remote ip \"*:*\"))(deny network-inbound (local ip \"*:*\"))",
+  "bytes": 500,
+  "sha256": "e50b63d0d80189ae6b91078900b4c990075577e87f5b4d5b33ca0942b78f32d3",
+  "path": "/Users/kr1ny77/Desktop/Poker/.build/qa-no-network.bin",
+  "scope": "QA app process only; compile step applies no policy"
+}

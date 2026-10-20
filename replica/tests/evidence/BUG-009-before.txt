@@ -1,0 +1,24 @@
+Building for production...
+[1 / 2]
+[2 / 6] PokerNativeTests-product
+[4 / 8] PokerNativeTests-product
+[8 / 12] PokerNativeTests-product
+[10 / 12] PokerNativeTests-product
+Build complete! (8,46 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test courseEqualDatesPreserveRecordedOrder() started.
+✘ Test courseEqualDatesPreserveRecordedOrder() recorded an issue at LearningCourseTests.swift:177:5: Expectation failed: progress.latestCorrect == 1
+↳ progress.latestCorrect == 1 → false
+↳   progress.latestCorrect → 0
+✘ Test courseEqualDatesPreserveRecordedOrder() recorded an issue at LearningCourseTests.swift:178:5: Expectation failed: progress.observations.map(\.id) == attempts.map(\.id)
+↳ progress.observations.map(\.id) == attempts.map(\.id) → false
+↳   progress.observations.map(\.id) → [00000000-0000-4000-8000-000000000000, FFFFFFFF-FFFF-4FFF-8FFF-FFFFFFFFFFFF]
+↳   attempts.map(\.id) → [FFFFFFFF-FFFF-4FFF-8FFF-FFFFFFFFFFFF, 00000000-0000-4000-8000-000000000000]
+✘ Test courseEqualDatesPreserveRecordedOrder() recorded an issue at LearningCourseTests.swift:183:5: Expectation failed: LearningCourseSnapshot(archive:try history.loadArchive()).progress(.potOdds).latestCorrect == 1
+↳ LearningCourseSnapshot(archive:try history.loadArchive()).progress(.potOdds).latestCorrect == 1 → <not evaluated>
+✘ Test courseEqualDatesPreserveRecordedOrder() failed after 0.002 seconds with 3 issues.
+✘ Test run with 1 test in 0 suites failed after 0.003 seconds with 3 issues.
+Note: Some test targets reported failures:
+  - PokerNativeTests (Swift Testing)

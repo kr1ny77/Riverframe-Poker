@@ -1,0 +1,2 @@
+Evidence: replica/tests/evidence/blockers-20261017-142518
+PASS: blockers lesson and restored progress.

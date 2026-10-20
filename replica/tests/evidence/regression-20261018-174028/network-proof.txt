@@ -1,0 +1,29 @@
+{
+  "launches": 5,
+  "processes": [
+    77281,
+    77080,
+    77236,
+    77202,
+    77153
+  ],
+  "result": "PASS: application process has no IP network; all UI flows completed",
+  "external_errno": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "loopback_errno": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "host_network_controls": {
+    "1.1.1.1": "host TCP443 connected",
+    "example.com": "host TCP443 connected"
+  }
+}

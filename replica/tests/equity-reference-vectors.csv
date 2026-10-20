@@ -1,0 +1,9 @@
+case_id,fixture,hero,opponent,board,wins,ties,losses,total,exact_equity_share
+EQ-H1,lesson-flop,A♠ A♥,K♠ K♥,2♠ 7♥ 9♦,907,0,83,990,907/990
+EQ-H2,lesson-turn-split,A♠ K♥,A♦ K♣,T♠ J♥ Q♦ 2♣,0,44,0,44,1/2
+EQ-E1,royal-flop,A♠ K♠,A♥ K♥,T♠ J♠ Q♠,990,0,0,990,1
+EQ-E2,zero-flop,A♥ K♥,A♠ K♠,T♠ J♠ Q♠,0,0,990,990,0
+EQ-E3,royal-turn,A♠ K♠,A♥ K♥,T♠ J♠ Q♠ 2♠,44,0,0,44,1
+EQ-E4,zero-turn,A♥ K♥,A♠ K♠,T♠ J♠ Q♠ 2♠,0,0,44,44,0
+EQ-E5,turn-vulnerable-lead,A♠ A♥,K♠ K♥,2♠ 7♥ 9♦ 3♣,42,0,2,44,21/22
+EQ-E6,turn-two-splits,K♠ A♥,Q♥ A♦,2♠ 3♠ 4♠ 5♠,42,2,0,44,43/44

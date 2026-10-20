@@ -1,0 +1,44 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "62289306-138D-4F6B-9F25-FA5B7DF0908D",
+        "deviceName" : "Poker QA EV iPhone17e",
+        "exportedFileName" : "5A2F1A86-4ED6-48BB-A101-8C05307F66BD.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-restored-progress_0_1697FF96-5FDA-4AA2-9A8B-7B34BBDA731D.png",
+        "timestamp" : 1792239396.736
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "62289306-138D-4F6B-9F25-FA5B7DF0908D",
+        "deviceName" : "Poker QA EV iPhone17e",
+        "exportedFileName" : "E285947A-39BF-4698-A168-0C3F277A193B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-review-3_0_2A10B0DB-AE6A-42C2-BFEF-D1900D5D71E3.png",
+        "timestamp" : 1792239381.814
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "62289306-138D-4F6B-9F25-FA5B7DF0908D",
+        "deviceName" : "Poker QA EV iPhone17e",
+        "exportedFileName" : "02974E80-6B87-4DEF-B4A5-E8AECADEAF69.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-review-2_0_58A73A9B-8985-4C48-98B6-E819D887A8F1.png",
+        "timestamp" : 1792239374.37
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "62289306-138D-4F6B-9F25-FA5B7DF0908D",
+        "deviceName" : "Poker QA EV iPhone17e",
+        "exportedFileName" : "4F075840-C540-45CC-B5F1-07F2C0F51CB6.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-review-1_0_20082657-54C3-4C2C-A906-864DD80C6934.png",
+        "timestamp" : 1792239366.694
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testEVCallLessonAndRelaunch()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testEVCallLessonAndRelaunch"
+  }
+]

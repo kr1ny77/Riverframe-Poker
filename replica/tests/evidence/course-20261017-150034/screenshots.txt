@@ -1,0 +1,4 @@
+Exported 1 attachment for: CriticalFlows/testCourseRepeatCopy():
+File: BA2AFAF8-F6DB-4ACD-BC4D-63893AAAE7D1.png, suggested name: "course-repeat-copy_0_B8B8C272-3047-429B-9AE0-A6C5611F2E50.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261017-150034/screenshots/manifest.json

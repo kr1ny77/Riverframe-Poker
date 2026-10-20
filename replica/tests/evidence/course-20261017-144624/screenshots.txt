@@ -1,0 +1,5 @@
+Exported 2 attachments for: CriticalFlows/testCourseWheelTaxonomyAndOverview():
+File: 23A7FBB0-A857-44E3-AB43-EAF44BF2D162.png, suggested name: "course-wheel-error_0_294B28AC-EEC2-4BB6-9A59-325708FEA175.png"
+File: A58FB487-A232-403C-B8EF-8156F0038C66.png, suggested name: "course-overview_0_6C8E6964-67C9-45DD-85E6-7AC4E4D4D119.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261017-144624/screenshots/manifest.json

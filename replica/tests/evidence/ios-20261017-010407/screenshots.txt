@@ -1,0 +1,17 @@
+Exported 1 attachment for: CriticalFlows/testFullHandAgainstBots():
+File: EEB7D4C7-7860-40F9-929E-F746433BF2C0.png, suggested name: "completed-hand_0_F3ADC6B5-B2D8-4933-B589-CBC09E51EF3B.png"
+
+Exported 1 attachment for: CriticalFlows/testLargeTextLessonRemainsReachable():
+File: A8EB95E6-CEA8-4663-801F-E37802B29054.png, suggested name: "large-text-training_0_3D848115-0A29-4E0F-9B13-E40E13773C99.png"
+
+Exported 1 attachment for: CriticalFlows/testOutsLessonAndWrongAnswer():
+File: 281011C7-7A05-4CE4-990A-CBAE8EC5CA30.png, suggested name: "outs-completed_0_8D24FD6A-9D60-4514-9712-3B2DC1DCAEEF.png"
+
+Exported 2 attachments for: CriticalFlows/testPotOddsExplanationAndRelaunch():
+File: B4226BB1-BB24-498D-9E65-3B8D124DE180.png, suggested name: "restored-progress_0_94C05551-B210-4E91-A3D1-99C3944CA6F8.png"
+File: E3B020F6-E92C-4170-A9F2-BA2CF77802FB.png, suggested name: "pot-odds-explanation_0_9C3D3137-C3DA-480C-AA5C-805C04D4A49B.png"
+
+Exported 1 attachment for: CriticalFlows/testSettingsClearRequiresConfirmation():
+File: 5D42056E-CF7A-46D8-922B-FED5A3551B0B.png, suggested name: "progress-after-cancel_0_E3E7CBF3-1C92-404B-950B-A891D36D596A.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/ios-20261017-010407/screenshots/manifest.json

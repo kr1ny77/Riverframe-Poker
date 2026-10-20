@@ -1,0 +1,92 @@
+Exported 1 attachment for: CriticalFlows/testAllInAfterBlindContribution():
+File: 346F5308-CD02-4742-A0ED-7CF67D679922.png, suggested name: "all-in-total-1000-pay-990-before-confirm_0_24F3225C-87A0-4AE8-859C-30FD9A3EF80E.png"
+
+Exported 1 attachment for: CriticalFlows/testAllInExactConfirmation():
+File: 506EBC1C-2022-45DC-B2F3-CBD1A2AE1ED0.png, suggested name: "all-in-before-confirm_0_1FA3F7A4-4804-4D93-95CF-FCE0C0B3CF5E.png"
+
+Exported 2 attachments for: CriticalFlows/testBetCustomAmountAndValidation():
+File: 750606FE-7EA3-4C1A-8904-2F4516F0F504.png, suggested name: "bet-37-applied_0_2559D011-1D6E-42D5-9080-3DAB9846748A.png"
+File: 1D7A2A71-F2C4-4B96-9210-40719E5EAA2A.png, suggested name: "bet-37-before-confirm_0_28FCBFDC-3532-4AAB-896F-0B61BF28A466.png"
+
+Exported 1 attachment for: CriticalFlows/testRaiseMaximum():
+File: 698DF3B4-C88A-47A6-90F2-3A57C9253EB8.png, suggested name: "maximum-raise-1000-before-confirm_0_C4A90557-5BB1-49EE-8869-57278617F0D8.png"
+
+Exported 1 attachment for: CriticalFlows/testRaiseMinimum():
+File: 2B18C718-61FD-4E4D-9EB4-517D8EE69983.png, suggested name: "minimum-raise-20-before-confirm_0_437BA3B1-434F-48B6-B60B-0CE59B23619B.png"
+
+Exported 3 attachments for: CriticalFlows/testRegressionCourseNavigation():
+File: BF7F9CEA-F7BF-4A87-8D89-3B9ED75FE969.png, suggested name: "course-restored-progress_0_B2FAAE12-8D04-4045-80CC-9719F94CC83F.png"
+File: D11E23BB-54A9-4807-B113-2028B26320AF.png, suggested name: "course-small-sample_0_F429B6A9-968D-4B55-935B-8119F5219182.png"
+File: 44F69448-E501-4643-AC5A-C49D52C880B4.png, suggested name: "course-pot-odds-last-review_0_41A9C23F-2315-439C-87E6-81161F3C4FD1.png"
+
+Exported 1 attachment for: CriticalFlows/testRegressionGameplay():
+File: 5D1E55A5-D022-4D0B-BD6C-7057CF6E12E7.png, suggested name: "completed-hand_0_52BCB044-1E65-47EB-85CF-4AD20DB5031D.png"
+
+Exported 7 attachments for: CriticalFlows/testRegressionLessonBlockers():
+File: 4AD9932E-BA8F-4A5B-A1F3-F4A98198FE55.png, suggested name: "blockers-restored-progress_0_0284E20A-2A0F-4C9D-AB50-8FC965B22A34.png"
+File: 3511B6AC-DB6F-4436-8A71-11A481A51EE6.png, suggested name: "blockers-review-6_0_E818F55D-0ECA-4D7A-83A6-006CC5571A5E.png"
+File: 1C734F39-B0BF-49AC-8049-C9BF92534944.png, suggested name: "blockers-review-5_0_F92F6CBC-9A93-4792-B619-D7CD99FFE0A0.png"
+File: 74C2DF2D-5E33-45E2-871C-482E7456B82F.png, suggested name: "blockers-review-4_0_CC155C65-6AAF-4ED5-94AE-27EF5CCA5B07.png"
+File: 22F0D1B4-36BE-400F-B926-5A554422B746.png, suggested name: "blockers-review-3_0_620A0492-D0F4-4312-B266-8865CB1B1A4A.png"
+File: 565A1273-4D72-4FF2-B1E7-9F1976BEA6CE.png, suggested name: "blockers-review-2_0_0AABE2DD-71B6-4DFC-9837-B63256EBE578.png"
+File: DCED03FE-3A69-4C80-8848-065DF95B7AC7.png, suggested name: "blockers-review-1_0_3B3E34AE-0AA2-4283-8078-DA8270E1C217.png"
+
+Exported 5 attachments for: CriticalFlows/testRegressionLessonCombinations():
+File: CB1079C9-A9AE-47D8-B9C9-A3439A8A4503.png, suggested name: "comparison-restored-progress_0_09E0FDA8-8CDC-407F-9032-F90829A88098.png"
+File: 0C59D4BE-4A4F-48EE-82FB-1DC6B279F485.png, suggested name: "comparison-completed_0_830FA706-B3F9-40C1-99A9-8983602310AF.png"
+File: 41A52F6D-3C76-4FAF-BE6D-C70B5AAF7EEC.png, suggested name: "comparison-review-11_0_97218AEB-CB8E-407D-A4B9-F1C58DBABEEC.png"
+File: 4EEBAAFC-9D05-40B5-835A-9750CD2928EA.png, suggested name: "comparison-review-10_0_BFC0BECD-66FB-4C77-A23D-2F1EC2F474CD.png"
+File: FD85E405-C511-46DE-AC39-8A09C2938CC7.png, suggested name: "comparison-review-1_0_2D341EF7-C8E2-49C5-B554-F2B3F4976412.png"
+
+Exported 4 attachments for: CriticalFlows/testRegressionLessonEV():
+File: 06944854-2F0E-49CE-AE37-FC0C321AD8F7.png, suggested name: "ev-call-restored-progress_0_C3E8FEBE-2659-4101-BDF0-3A10E07B6B5C.png"
+File: 723531B1-B378-4A62-81B2-B5DB5992F667.png, suggested name: "ev-call-review-3_0_5BC59AE7-E8E3-4F7F-AE84-7A4F531C7195.png"
+File: 0BCA5A82-B61F-4687-B511-2719E2A47CD4.png, suggested name: "ev-call-review-2_0_B1542679-8DE2-48D2-A0D5-F265B5E04BF3.png"
+File: 0AA9D07C-786B-4F61-AA4E-E2EA90D3673B.png, suggested name: "ev-call-review-1_0_D0DFE6D6-60AE-48D6-9F78-E38770EE81A1.png"
+
+Exported 3 attachments for: CriticalFlows/testRegressionLessonKnownEquity():
+File: BAD96BB9-2CFA-43B0-B086-D327820A60BE.png, suggested name: "equity-restored-progress_0_4C77E1B7-D38C-4A0F-8456-79B4899B040E.png"
+File: 956CF096-84EC-48CD-9FAA-ECA6007282CC.png, suggested name: "equity-completed_0_52B1CFDF-884D-43EF-9F75-2C93DB549069.png"
+File: B2ACAAB0-FFFE-4B07-8474-21B7C1C9A4E8.png, suggested name: "equity-flop-explanation_0_190FD187-A1BC-4102-96D9-DE310693E5D3.png"
+
+Exported 1 attachment for: CriticalFlows/testRegressionLessonOuts():
+File: 4F9680B6-35DD-4AFE-9D5C-B4A9390CDCEB.png, suggested name: "outs-completed_0_1B2BC82A-FAB2-426E-8021-4D1548F0B61D.png"
+
+Exported 4 attachments for: CriticalFlows/testRegressionLessonPositions():
+File: 6E62B89C-317B-4C38-AB1C-CF27CBF0B9D8.png, suggested name: "positions-restored-progress_0_F6F6B989-4923-44F1-A568-1017511A5C84.png"
+File: E53866F1-51BE-4229-8791-29A23F1104E1.png, suggested name: "positions-review-12_0_D223F4E9-5708-426E-91AA-6007AD4E349D.png"
+File: 714A1E33-358A-484B-A5D1-EC369D72E89F.png, suggested name: "positions-review-1_0_60D1EAD9-E3C2-42CD-B770-8EE41E8432AA.png"
+File: 0C1BF432-7EA8-4BE0-AAF7-D53C6CC487BA.png, suggested name: "positions-introduction_0_74132858-EF50-41D3-A00A-E6C3C1DBD34A.png"
+
+Exported 3 attachments for: CriticalFlows/testRegressionLessonPotOdds():
+File: DED00C4A-879A-4F53-9435-92376F7A1B8D.png, suggested name: "progress-after-cancel_0_0AF7DD19-A484-4388-8B38-8632430A2FB6.png"
+File: 7326AFB2-6443-454C-B852-4468EFACC299.png, suggested name: "restored-progress_0_BE9F4374-55A5-44BA-B49F-A326E8072438.png"
+File: 4B1562A4-C7C3-42FC-87B3-DDCF830503CD.png, suggested name: "pot-odds-explanation_0_568234D7-60CF-45E4-90C8-BF7FC5E72689.png"
+
+Exported 5 attachments for: CriticalFlows/testRegressionLessonRangeEquity():
+File: D556DD0B-5F8E-4D22-815F-96570A9D8D16.png, suggested name: "range-equity-restored-progress_0_9773C0EE-3651-4E28-B868-B2ABF77E38E2.png"
+File: F3B2C77E-8F58-4E05-AEEF-93436DA09A26.png, suggested name: "range-equity-completed_0_DB18B895-7E47-4772-9F45-904114D77490.png"
+File: 17D51198-0858-462D-AADD-1AC3B6A1628E.png, suggested name: "range-equity-review-3_0_7E5D2C30-F070-4074-85AE-3F3B1AD571C0.png"
+File: 54CAD11C-44C4-459B-ADCE-1E42E4FE0C4D.png, suggested name: "range-equity-review-2_0_7F02B146-791D-466D-A609-CF7BE677E82F.png"
+File: 7CA904F6-CC6A-4F5B-8EB1-3518950803FE.png, suggested name: "range-equity-review-1_0_3F947A7F-FA12-46A4-AF85-80278ACA24EB.png"
+
+Exported 7 attachments for: CriticalFlows/testRegressionOffline():
+File: 81E32F2F-7282-4543-A226-50CDB734DA65.png, suggested name: "offline-settings-progress-cleared_0_ACFF8D7D-8A55-45A1-B30E-CEC1E330E238.png"
+File: 4F49A530-B13C-4798-8B1E-00671C746F05.png, suggested name: "progress-after-cancel_0_B887C769-7ED4-49D2-A24E-7FBDBC27345B.png"
+File: B1280A3A-5B07-4887-863E-A4416D491EB4.png, suggested name: "outs-completed_0_9F1D4D3A-379F-4D18-B66A-E6A29FE8AA88.png"
+File: 35575FD5-8E88-4711-B239-8FA07CA4BB80.png, suggested name: "restored-progress_0_59438EA0-3041-467D-B5D1-4542E3D6F36C.png"
+File: 29E69D59-CBC4-4E1D-8B6B-ABC997DE8027.png, suggested name: "pot-odds-explanation_0_314E0363-FD23-4433-A60D-8E1A053E716D.png"
+File: 41362668-4E01-49DE-AFBD-50A0AAA7F953.png, suggested name: "completed-hand_0_8BCE7768-9560-46B8-A6FD-C467602BBA43.png"
+File: AE32C9E9-E8EA-4656-925A-F9DA93BD7886.png, suggested name: "offline-launch_0_98C25946-341D-4BD1-857F-2C8D05286097.png"
+
+Exported 1 attachment for: CriticalFlows/testShortRaiseDoesNotReopen():
+File: 0B2FCC22-A00E-4AF7-A1BC-5190A5251E2D.png, suggested name: "short-raise-facing-call-5-no-reopen_0_EDDB7ADA-A485-43FC-BB93-5292573C3AE0.png"
+
+Exported 2 attachments for: CriticalFlows/testShortStackAllInRaise():
+File: 95B43669-57DA-40E6-B040-04AF15812400.png, suggested name: "short-stack-all-in-15-before-confirm_0_765E5B2D-D39E-478C-96D4-DE9EF9B48495.png"
+File: AE95A640-8316-4FA4-A7A6-70AAB9BB2130.png, suggested name: "short-stack-legal-actions_0_8CAD297A-E267-4817-850E-9C7FEB4DFADD.png"
+
+Exported 1 attachment for: CriticalFlows/testShortStackCallAllIn():
+File: 83342FB7-0155-40EA-8561-DCE561849B70.png, suggested name: "short-call-all-in-5-before-confirm_0_42C9C5A7-4F27-4D0F-98EC-A2AF00343FBD.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/regression-20261017-150631/screenshots/manifest.json

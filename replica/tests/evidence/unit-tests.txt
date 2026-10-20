@@ -1,0 +1,38 @@
+Building for production...
+[Planning deferred tasks]
+[24 / 49] PokerCore
+[37 / 84]
+[43 / 84]
+[44 / 84]
+[49 / 84]
+[53 / 84]
+[56 / 84]
+[58 / 84]
+[59 / 84]
+[60 / 84] PokerCore
+[71 / 86] PokerCoreChecks-product
+[75 / 90]
+[77 / 90] PokerNativeTests-product
+[82 / 90] PokerNativeTests-product
+[84 / 90] PokerNativeTests-product
+[86 / 90] PokerCoreChecks-product
+[88 / 90] PokerCoreChecks-product
+[89 / 90] PokerCoreChecks-product
+Build complete! (7,33 sec)
+Test Suite 'All tests' started at 2026-10-16 18:25:22.529.
+Test Suite 'All tests' passed at 2026-10-16 18:25:22.533.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.004) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test exhaustiveFiveCardCategoryCounts() started.
+◇ Test replayedActionAndSettlementAreRejected() started.
+◇ Test shortOpeningAfterCheckFollowsFullBetProfile() started.
+◇ Test sevenCardIndependentReference() started.
+◇ Test completeDealsHaveUniqueCards() started.
+✔ Test shortOpeningAfterCheckFollowsFullBetProfile() passed after 0.001 seconds.
+✔ Test replayedActionAndSettlementAreRejected() passed after 0.001 seconds.
+✔ Test completeDealsHaveUniqueCards() passed after 0.286 seconds.
+✔ Test sevenCardIndependentReference() passed after 0.392 seconds.
+✔ Test exhaustiveFiveCardCategoryCounts() passed after 6.523 seconds.
+✔ Test run with 5 tests in 0 suites passed after 6.523 seconds.

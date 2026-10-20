@@ -1,0 +1,71 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "6BDE891C-0479-4283-8A06-AE162C085E85",
+        "deviceName" : "Poker QA Blockers iPhone17e",
+        "exportedFileName" : "2C775131-4A2A-4686-BCFE-8572F79D3BFB.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-restored-progress_0_DDA92EA7-3475-476B-9230-E780C6453D19.png",
+        "timestamp" : 1792240038.314
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "6BDE891C-0479-4283-8A06-AE162C085E85",
+        "deviceName" : "Poker QA Blockers iPhone17e",
+        "exportedFileName" : "561A3DD8-1A56-48E9-B56C-3382741FA6FD.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-6_0_E972B4D1-BDF3-478B-8627-6150CF701582.png",
+        "timestamp" : 1792240023.46
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "6BDE891C-0479-4283-8A06-AE162C085E85",
+        "deviceName" : "Poker QA Blockers iPhone17e",
+        "exportedFileName" : "C0A627DD-6FB0-4313-9B01-181C3F00D7DD.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-5_0_4C09B9A8-E3CF-4ED6-A3E2-056CEEC234BA.png",
+        "timestamp" : 1792240015.559
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "6BDE891C-0479-4283-8A06-AE162C085E85",
+        "deviceName" : "Poker QA Blockers iPhone17e",
+        "exportedFileName" : "C5575B55-3891-4A3F-977A-3BE7C96A5530.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-4_0_356B6A82-583B-4EE4-BD7D-F9A5907AC5ED.png",
+        "timestamp" : 1792240008.869
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "6BDE891C-0479-4283-8A06-AE162C085E85",
+        "deviceName" : "Poker QA Blockers iPhone17e",
+        "exportedFileName" : "D43F05D5-CD61-494B-9639-C3AAB8F552C5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-3_0_C3D89558-C2E2-4A8B-B208-0466833E1384.png",
+        "timestamp" : 1792240002.007
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "6BDE891C-0479-4283-8A06-AE162C085E85",
+        "deviceName" : "Poker QA Blockers iPhone17e",
+        "exportedFileName" : "9D04A075-22F3-4ABA-BEFB-3E5CAF5B175E.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-2_0_7EC9FC29-E6B3-4E11-99C6-1A4DEA0A1164.png",
+        "timestamp" : 1792239996.419
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "6BDE891C-0479-4283-8A06-AE162C085E85",
+        "deviceName" : "Poker QA Blockers iPhone17e",
+        "exportedFileName" : "D01F70D8-18D6-42FA-B413-554E91EF0B51.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-1_0_FF9A78D8-8968-4654-857D-B8F817DB11E0.png",
+        "timestamp" : 1792239992.695
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testBlockerLessonAndRelaunch()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testBlockerLessonAndRelaunch"
+  }
+]

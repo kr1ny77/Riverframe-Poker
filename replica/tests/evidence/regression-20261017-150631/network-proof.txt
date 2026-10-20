@@ -1,0 +1,29 @@
+{
+  "launches": 5,
+  "processes": [
+    35766,
+    35815,
+    35786,
+    35852,
+    35820
+  ],
+  "result": "PASS: application process has no IP network; all UI flows completed",
+  "external_errno": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "loopback_errno": [
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "host_network_controls": {
+    "1.1.1.1": "OSError(51, 'Network is unreachable')",
+    "example.com": "gaierror(8, 'nodename nor servname provided, or not known')"
+  }
+}

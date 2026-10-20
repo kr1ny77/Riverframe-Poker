@@ -1,0 +1,764 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "9FBD7FF1-A888-42D6-8779-8D41795FF56B",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.53 PM",
+        "timestamp" : 1792241633.697
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "D6BA4FDB-DB74-4ADF-A689-9D93F8282435",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.54 PM",
+        "timestamp" : 1792241634.115
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "B13FAB21-AC21-44EB-946D-2FC60F306DD8",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.52 PM",
+        "timestamp" : 1792241632.494
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "C24340A6-B8BF-4A5C-9098-CF94008CDFE5",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.52 PM",
+        "timestamp" : 1792241632.915
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "7655220D-44F2-49A1-A636-3C6E27F4536C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.51 PM",
+        "timestamp" : 1792241631.262
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "7B35AB8B-3E0E-4060-BC93-C9894739A712",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.51 PM",
+        "timestamp" : 1792241631.681
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "454F2512-6D34-4103-9FDD-C766AC8156D5",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.50 PM",
+        "timestamp" : 1792241630.049
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "3023AE66-EF18-40CB-9050-C1DB02EA4814",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.50 PM",
+        "timestamp" : 1792241630.474
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "12F4AC03-5849-4408-AEFF-E0A65E7E9155",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.48 PM",
+        "timestamp" : 1792241628.813
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "044D57B1-F2AC-4D2D-8CA0-020DB1D90D52",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.49 PM",
+        "timestamp" : 1792241629.235
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "95930EDA-60F9-4EB9-A4EA-5953A8BA44E0",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.47 PM",
+        "timestamp" : 1792241627.559
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "E708AA4C-E868-41B8-9631-E1EB336A8A0D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.47 PM",
+        "timestamp" : 1792241627.982
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "0A25324E-4096-40D8-B48C-1D8199071122",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.46 PM",
+        "timestamp" : 1792241626.3
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "1434D8D6-01D5-47E6-B8FE-9A66BD4F39DA",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.46 PM",
+        "timestamp" : 1792241626.723
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "CC844637-765B-43DA-ADB4-461A23D9E0B4",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.45 PM",
+        "timestamp" : 1792241625.041
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "4D2BFBB1-F3AA-4E82-AECA-C0C7B5A7B419",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.45 PM",
+        "timestamp" : 1792241625.464
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "0291ACFE-E1EA-46CF-A660-CA84A207FEEA",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.43 PM",
+        "timestamp" : 1792241623.801
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "DD4DA3CD-9798-4C55-862D-6BE89C1B7C9F",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.44 PM",
+        "timestamp" : 1792241624.223
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "63E2E45C-943F-4ECC-A830-9DCC6B9965C8",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.42 PM",
+        "timestamp" : 1792241622.528
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "F8BE9C3D-DAC9-49AD-9AEF-DDCAE6050809",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.42 PM",
+        "timestamp" : 1792241622.948
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "CC7D27E2-EA52-476F-82A4-B64D26821241",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.41 PM",
+        "timestamp" : 1792241621.272
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "1E56BC53-586A-4892-8A82-2BF813FC2FBC",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.41 PM",
+        "timestamp" : 1792241621.701
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "E0DA94B3-4121-446A-B0B2-07556034E589",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.39 PM",
+        "timestamp" : 1792241619.997
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "6DB91136-CFF8-484E-A896-B7CE7E04B9E8",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.40 PM",
+        "timestamp" : 1792241620.423
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "EBEF903D-A008-47E3-96E8-9C6C0D3CE6FB",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.38 PM",
+        "timestamp" : 1792241618.753
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "854A4491-E25D-45C2-B17A-103E0A36F7D7",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.39 PM",
+        "timestamp" : 1792241619.181
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "DD18E7BB-3C47-4A05-B518-0B3BFFF1563C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.37 PM",
+        "timestamp" : 1792241617.493
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "C3A8C15A-21A6-4BE2-89E4-4E050606DC46",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.37 PM",
+        "timestamp" : 1792241617.916
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "5625CE89-57CF-4B36-9867-2915824A672C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.36 PM",
+        "timestamp" : 1792241616.246
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "A40116A4-8443-42CC-9686-644BEA24675C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.36 PM",
+        "timestamp" : 1792241616.667
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "59A1C729-7C27-4798-8637-A88EC2C97AA2",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.34 PM",
+        "timestamp" : 1792241614.982
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "A4610160-DD05-41C0-9B29-D708D845E87B",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.35 PM",
+        "timestamp" : 1792241615.406
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "84604967-88B8-4280-9C1C-10DC87F23A2D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.33 PM",
+        "timestamp" : 1792241613.715
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "AE3169A5-75EC-4FB3-93A4-455744A22E88",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.34 PM",
+        "timestamp" : 1792241614.14
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "36A02429-063C-457B-BC8E-795C91AF0BEC",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.32 PM",
+        "timestamp" : 1792241612.481
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "84D4CC7A-DD71-4ABC-B426-02FD5ABF714F",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.32 PM",
+        "timestamp" : 1792241612.902
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "F272332D-4F6F-4F08-88FA-53F1EF5FFDCC",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.31 PM",
+        "timestamp" : 1792241611.217
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "AA72505B-18A4-4415-9A67-FDD02AB1F9AC",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.31 PM",
+        "timestamp" : 1792241611.633
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "36B241B5-AA52-4CE1-ADA6-4E005AA8A75F",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.29 PM",
+        "timestamp" : 1792241609.976
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "7DA5BA1E-CB51-4EB1-923D-11F527268A2D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.30 PM",
+        "timestamp" : 1792241610.401
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "E6ABE025-F643-4B44-BC45-5AFC4B64F192",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.28 PM",
+        "timestamp" : 1792241608.724
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "23D7C360-5D78-46F8-902D-B0190E403CFD",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.29 PM",
+        "timestamp" : 1792241609.155
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "C56829E7-03B1-4435-A861-7FECCD9A08AC",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.27 PM",
+        "timestamp" : 1792241607.371
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "24BD159E-5A7B-4CFF-B9AB-1ECBA84DBD97",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.27 PM",
+        "timestamp" : 1792241607.808
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "005BB8FF-A5F4-435B-BB04-3180C7BF191C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.25 PM",
+        "timestamp" : 1792241605.991
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "796329DA-84EE-4190-936E-127073A79E3B",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.26 PM",
+        "timestamp" : 1792241606.436
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "511C6B1D-030A-4F36-8DC3-FD8844E1CCE9",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.23 PM",
+        "timestamp" : 1792241603.191
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "5065DCBD-BE15-4BB4-9BC4-D97461827DFA",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.23 PM",
+        "timestamp" : 1792241603.617
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "CBB6BD93-7B8E-4972-939C-604D01ABE5C2",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.22 PM",
+        "timestamp" : 1792241602.463
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "40DEEE1F-90CF-4997-88B0-ED9D223BD6BB",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.22 PM",
+        "timestamp" : 1792241602.767
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "FA199FFD-EC10-4669-8253-8D633A864E68",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.19 PM",
+        "timestamp" : 1792241599.843
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "D1D54244-8BDE-44B0-B60E-3C6227E9A106",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.20 PM",
+        "timestamp" : 1792241600.148
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "D45FFFCB-8717-48A5-8869-4A6CA57D0A38",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.17 PM",
+        "timestamp" : 1792241597.739
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "715348B8-472F-43F0-9FCA-EB8EA5913ABB",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.18 PM",
+        "timestamp" : 1792241598.047
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "2B92A273-EAC0-411F-B254-15C5C509D397",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.17 PM",
+        "timestamp" : 1792241597.178
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "F366EF81-DBE1-4283-AF62-A32A2B56B455",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.17 PM",
+        "timestamp" : 1792241597.485
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "923C82C2-352C-4607-8FEE-D9A2779BEE50",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.16 PM",
+        "timestamp" : 1792241596.31
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "F72BE63B-56A1-426D-807A-C136E40C9BB2",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.16 PM",
+        "timestamp" : 1792241596.607
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "7143CECB-DFF9-4827-AC11-8CD957E65E89",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.15 PM",
+        "timestamp" : 1792241595.759
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "19A6C161-FC89-4799-85A5-529A67A2CF8F",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.16 PM",
+        "timestamp" : 1792241596.053
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "004E7BC9-B9E7-4A36-BB02-3A481DEAA288",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.15 PM",
+        "timestamp" : 1792241595.037
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "877E1BA0-46F5-4EF7-A900-EFC9E4185CB7",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.15 PM",
+        "timestamp" : 1792241595.331
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "315D4740-3505-4812-920E-694B651B1FD6",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.13 PM",
+        "timestamp" : 1792241593.504
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "C0B7A7CF-14B5-42EC-A26E-5D3F735D3D0D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.13 PM",
+        "timestamp" : 1792241593.807
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "C4FC60B7-C648-4C79-8646-1AF08BFFA295",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.12 PM",
+        "timestamp" : 1792241592.677
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "44BD4282-EEDF-4229-9DDE-ED9B4CFEA2AF",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.12 PM",
+        "timestamp" : 1792241592.993
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "16BA7326-5BBC-4EF0-9FA7-6C18EC6E48EB",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.12 PM",
+        "timestamp" : 1792241592.206
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "8661AE75-90FF-453D-AA05-D1F57AE4EBE8",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.12 PM",
+        "timestamp" : 1792241592.441
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "CFEF6E11-F224-4A4C-A437-1DBF42D3DF1F",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.11 PM",
+        "timestamp" : 1792241591.507
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "B261CE6B-69EF-478C-9E4F-F6A488241509",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.11 PM",
+        "timestamp" : 1792241591.801
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "9E44BA11-5034-4FC5-A752-5AB2556F2BCF",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.09 PM",
+        "timestamp" : 1792241589.93
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "1390AAC1-0C9A-4039-A8F2-7602C014300E",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.10 PM",
+        "timestamp" : 1792241590.252
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "CBEED403-7EEC-49EB-9C88-76FD293F144A",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.08 PM",
+        "timestamp" : 1792241588.823
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "A6DE663D-E10C-45CE-9817-DECD8D95D70C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.09 PM",
+        "timestamp" : 1792241589.14
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "2653AE1C-58F3-47EC-9D37-7203206CDABE",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.08 PM",
+        "timestamp" : 1792241588.36
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "CE3E3644-491F-4576-8906-CB88306050C7",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.08 PM",
+        "timestamp" : 1792241588.621
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "EBDD1B56-AA5F-493E-B242-44DE73B07091",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.06 PM",
+        "timestamp" : 1792241586.107
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "1C8DB38E-7382-4783-800E-82FDC24A87BA",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.06 PM",
+        "timestamp" : 1792241586.427
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "922EC648-437D-4B47-BFEF-92BFADFBD3E4",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.03 PM",
+        "timestamp" : 1792241583.905
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "67560F69-0F24-42F1-9656-4781150492A2",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.04 PM",
+        "timestamp" : 1792241584.248
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "3533B782-DD9C-4D44-B432-BFB26570A793",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-17 at 02.53.00 PM",
+        "timestamp" : 1792241580.996
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "4120BD61-B8D4-4F34-BA36-0858FD5B8B58",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.53.01 PM",
+        "timestamp" : 1792241581.424
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "9DC06DDD-D215-4E59-9C7E-63CC2E048627",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-17 at 02.52.58 PM",
+        "timestamp" : 1792241578.988
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "40254A6E-C4CF-41D9-924D-2B31DA737E86",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "24CE6EA5-D7F5-4D23-A186-3857167E6627.mp4",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Screen Recording 2026-10-17 at 02.52.49 PM.mp4",
+        "timestamp" : 1792241569.404
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testCourseRepeatCopy()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testCourseRepeatCopy"
+  }
+]

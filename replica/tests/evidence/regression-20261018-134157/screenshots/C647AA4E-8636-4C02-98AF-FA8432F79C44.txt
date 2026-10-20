@@ -1,0 +1,4 @@
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  ↪︎Find: Descendants matching type StaticText
+    ↪︎Find: Elements matching predicate '"Набор завершён" IN identifiers'

@@ -1,0 +1,1745 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "9A3C768B-32E4-4594-8437-8BD04E84B308.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "all-in-total-1000-pay-990-before-confirm_0_0BCB2D40-2328-43AA-9DFC-C875769ECCDC.png",
+        "timestamp" : 1792336471.717
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testAllInAfterBlindContribution()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testAllInAfterBlindContribution"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "98CFD2C6-9C02-4615-9D5F-68E0AA8EBCF4.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "all-in-before-confirm_0_F5520D81-423F-4B72-A0F5-BE916FCB29D5.png",
+        "timestamp" : 1792336492.102
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testAllInExactConfirmation()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testAllInExactConfirmation"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "83DDFAB0-D11E-48C7-BA90-5C0ABC34E1CB.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "bet-37-applied_0_D8C59F51-0A0F-45AB-9D33-2D694C1CB131.png",
+        "timestamp" : 1792336528.755
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "C6969751-F5D0-457B-A4F2-6A0D042DE07F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "bet-37-before-confirm_0_17710244-F676-4A40-9E1A-1F3F51F3BB1F.png",
+        "timestamp" : 1792336526.643
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testBetCustomAmountAndValidation()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testBetCustomAmountAndValidation"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "053CC48B-8F4E-4255-B719-DC055B79DDAF.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "maximum-raise-1000-before-confirm_0_5E93BF70-210D-4B95-BBE8-6CBF933E5571.png",
+        "timestamp" : 1792336548.114
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRaiseMaximum()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRaiseMaximum"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "F13F6A32-1A40-473B-9665-5027AA5DF45D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "minimum-raise-20-before-confirm_0_B347DBB3-117A-4A2B-9017-073FAA0047BA.png",
+        "timestamp" : 1792336572.085
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRaiseMinimum()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRaiseMinimum"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "ACCE7F75-693D-498F-9BBD-6734A74E7332.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-restored-progress_0_859AE6E1-56D7-437D-9743-482B501154EB.png",
+        "timestamp" : 1792336664.785
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "CF2FB882-14EC-4EB0-B698-0E7DC1B30227.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-small-sample_0_BC18D300-1945-4D39-B70A-88B4EFDAF03F.png",
+        "timestamp" : 1792336654.945
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "B246D7E2-5A6D-4C46-B718-34FF1CA9CE9D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-pot-odds-last-review_0_4D8FAAC0-A3EC-4463-A823-B528020AFF67.png",
+        "timestamp" : 1792336640.325
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionCourseNavigation()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionCourseNavigation"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "B723EF7D-54C5-4133-9AA7-31D521033861.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "completed-hand_0_E7A0805B-9269-4846-8009-1334FA9421FC.png",
+        "timestamp" : 1792336697.276
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionGameplay()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionGameplay"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "B242CB4C-3FD9-4552-8786-248F6CE6A6B5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-restored-progress_0_F6817705-2470-4FC0-BCCA-74955A8DA591.png",
+        "timestamp" : 1792336815.559
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E376547A-A8BE-4B08-979F-E393D8D0CEF6.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-6_0_6CDC9804-A483-4829-9E28-C3E34723CB33.png",
+        "timestamp" : 1792336794.794
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "13F0F052-37D0-45B2-9D53-335EBF7DD9C5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-5_0_99C4AA96-DC13-4E82-8AF8-C5F0D0BAACB5.png",
+        "timestamp" : 1792336777.332
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "BA943C2C-118D-48C2-B719-7A1FAA9F9B5B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-4_0_E2C9FED4-CDB1-478C-B1DB-AA6A3FE94385.png",
+        "timestamp" : 1792336761.531
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "828A7F27-5DBF-4825-84A8-5C86329A1EE3.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-3_0_82EFA7DF-9B6B-468C-A1A1-4548E9BCD08B.png",
+        "timestamp" : 1792336744.565
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "A641F55E-A9C2-4C99-B5FA-B0AE5A83217C.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-2_0_A4814332-5E94-4419-B579-27660123CB5E.png",
+        "timestamp" : 1792336737.493
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "7E4FE741-ED1D-4618-976D-537178B5CDF9.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "blockers-review-1_0_AC6266B4-8923-4985-BE22-4F027B75C847.png",
+        "timestamp" : 1792336730.549
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionLessonBlockers()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionLessonBlockers"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "15DA3D8D-EBEF-4A6C-B402-1F5EC954FF28.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-restored-progress_0_10D272EB-8BB0-46A2-A255-808502E81FD4.png",
+        "timestamp" : 1792336982.074
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "01A4B148-CBD8-47C6-8946-A8BF7928A783.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-completed_0_E8BD0BD1-7031-4998-B889-25564470C5C3.png",
+        "timestamp" : 1792336969.528
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "C243CF5F-9C76-490E-8946-C20A7E5EDDDF.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-review-11_0_25FE81B4-D100-4EF8-ADAC-F54709758493.png",
+        "timestamp" : 1792336950.832
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "7AF880D9-CD89-4304-BB43-4DF26AB117C7.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-review-10_0_4677E7D0-5BF8-48EF-B530-1CD31070D8E5.png",
+        "timestamp" : 1792336944.136
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "B533B6AD-8540-4E63-AA03-1FA74BB3F71E.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-review-1_0_AAEF5E6C-0315-4F8C-82E8-2D38875D6CFD.png",
+        "timestamp" : 1792336853.431
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionLessonCombinations()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionLessonCombinations"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "851CF39E-9FBE-49F9-BF09-806822A2F171.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-restored-progress_0_6DD9D097-8CDA-46F7-84DC-7E63555DC5DA.png",
+        "timestamp" : 1792337068.156
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "A5175014-16DC-401F-8512-FDECF3CB4650.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-review-3_0_5B9DA779-2239-4DD7-A75A-145276B8F77B.png",
+        "timestamp" : 1792337051.233
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "64FEB209-8C49-485A-8E94-06752D6D7B0E.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-review-2_0_5EEEF2AB-4D87-42F8-B7EA-60DDADC53412.png",
+        "timestamp" : 1792337037.634
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "FDF48FB3-17A5-4D60-A3FE-15315D4280AC.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-review-1_0_ECB60B12-307C-4626-934C-FF1D93379C9C.png",
+        "timestamp" : 1792337023.964
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionLessonEV()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionLessonEV"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "16FECB46-6BED-421F-BD86-B17E74F26E9A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "equity-restored-progress_0_C45DD929-8BD3-4345-8BCE-CB69347A3E6A.png",
+        "timestamp" : 1792337124.996
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "F9414B8C-7409-4863-AAB8-4B4991A5FAAB.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "equity-completed_0_AB3CAC5E-ACE1-43AE-A072-D217A4BD9FF7.png",
+        "timestamp" : 1792337112.511
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "5AF0B700-0B78-4EC7-ACC0-3B500CA4A709.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "equity-flop-explanation_0_7884830D-8CAE-4C85-A45F-CD54AEBB1B39.png",
+        "timestamp" : 1792337103.525
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionLessonKnownEquity()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionLessonKnownEquity"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "91F02B6C-109B-41F1-89B7-774BFF233A8F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "outs-completed_0_76FCA6C8-3ADF-4BB5-968E-A55A1428ED96.png",
+        "timestamp" : 1792337156.597
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionLessonOuts()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionLessonOuts"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "22D8DF7A-EF03-43CB-9C89-83C381F1A801.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "positions-restored-progress_0_F4436A75-EAE0-41B5-AC1D-4A00396C8BBD.png",
+        "timestamp" : 1792337247.676
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "1EF8A3B8-75B9-4621-8221-767C2EA4FF6A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "positions-review-12_0_814F4897-B94F-4669-B44F-6CE4A90F5BD2.png",
+        "timestamp" : 1792337234.035
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "06A3382E-4CA8-46DE-A0B9-DEC1856D0A95.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "positions-review-1_0_393BFDDC-BAD8-4C3D-845A-39183FEF704C.png",
+        "timestamp" : 1792337191.731
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "8A1280E4-095E-419E-BEE9-A2E5E857D78C.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "positions-introduction_0_68C97C24-2A86-4439-87A5-4C78D2981E1D.png",
+        "timestamp" : 1792337188.026
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionLessonPositions()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionLessonPositions"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "BEDC05A3-8C6D-4B17-B5C8-D6EE60CD277E",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.23 PM",
+        "timestamp" : 1792337303.663
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "06804716-1690-41F8-AF6E-5BA39106A8C8",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.24 PM",
+        "timestamp" : 1792337304.862
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "8FB16B37-CAFB-406B-A841-4A397E194A1D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.21 PM",
+        "timestamp" : 1792337301.964
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "6861CC0B-BEE0-454E-8D03-88ECABBED8E9",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.23 PM",
+        "timestamp" : 1792337303.16
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E7DDB5A3-42AF-47B6-B82E-9F852BCBB0FB",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.20 PM",
+        "timestamp" : 1792337300.264
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "2B51F837-7C23-43D2-BFB1-7F397DA33D03",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.21 PM",
+        "timestamp" : 1792337301.459
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "08F16BC2-685E-4A60-9EDD-0875E34F9461",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.18 PM",
+        "timestamp" : 1792337298.562
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "0B236270-9B50-4C3D-A2D1-8DFDEF034EA4",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.19 PM",
+        "timestamp" : 1792337299.757
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "FB4C8259-1D62-432D-8CC7-AD1BCCF35F46",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.16 PM",
+        "timestamp" : 1792337296.865
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "AD5ABCBE-B374-42BD-A0CC-C9168E70940A",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.18 PM",
+        "timestamp" : 1792337298.067
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E5331691-D795-4EAF-9E3D-781ED7605D81",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.15 PM",
+        "timestamp" : 1792337295.193
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "4B157F3D-9381-4796-B22F-9E47F8A5002F",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.16 PM",
+        "timestamp" : 1792337296.401
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "2A06119B-C032-4ADC-8446-7254902381A0",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.13 PM",
+        "timestamp" : 1792337293.488
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "9CCE2189-DC33-41AD-B0E2-0F9510DEE63C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.14 PM",
+        "timestamp" : 1792337294.697
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "210DCBB8-E17F-4F26-9ECC-2938CE971C31",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.11 PM",
+        "timestamp" : 1792337291.779
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "346E2762-9538-4C7E-8751-37E922D0D380",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.12 PM",
+        "timestamp" : 1792337292.977
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E939A098-802B-42BC-9208-A7010AADF585",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.10 PM",
+        "timestamp" : 1792337290.453
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "ED9433B4-A7A3-428D-9D0A-D33ABD2BB4B1",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.11 PM",
+        "timestamp" : 1792337291.648
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "BDF2EAD8-71C0-4449-A988-51C1B0CA83C6",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.09 PM",
+        "timestamp" : 1792337289.121
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "4BEA554E-343B-4392-A87F-746CCEB50E76",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.10 PM",
+        "timestamp" : 1792337290.318
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "7325E2B5-43AD-4807-A8E7-B02CB4A3AF50",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.07 PM",
+        "timestamp" : 1792337287.777
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "2BE3FFE1-03F9-4D74-BB95-067990DB67D7",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.08 PM",
+        "timestamp" : 1792337288.987
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "8EB39482-FF9C-4D00-A9DB-B8483E579A3E",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.06 PM",
+        "timestamp" : 1792337286.462
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "2BAE7458-937C-4D9F-987E-E26944050D1D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.07 PM",
+        "timestamp" : 1792337287.663
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "9B7FA9A4-6520-4918-92BA-80E004A268DF",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.05 PM",
+        "timestamp" : 1792337285.151
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "6672F653-FCAE-4B95-A352-F98F5A24E46B",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.06 PM",
+        "timestamp" : 1792337286.349
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "6BBAA356-48D2-46FC-96F9-F3C7382E644A",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.03 PM",
+        "timestamp" : 1792337283.826
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "82936D40-6196-4C2D-9BF5-47487DB6487E",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.05 PM",
+        "timestamp" : 1792337285.019
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "45122C40-7E95-4544-A00F-1C503150A2FB",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.02 PM",
+        "timestamp" : 1792337282.501
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "276B75B0-E67B-4C6C-83B8-D2FA5D7C6D5D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.03 PM",
+        "timestamp" : 1792337283.693
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "1EC49403-F526-4E99-B176-1A44E6229F7F",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.28.01 PM",
+        "timestamp" : 1792337281.175
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "9753EF56-ED60-4A99-8C02-E06F25A14133",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.02 PM",
+        "timestamp" : 1792337282.37
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "3667B5BD-4A91-4AB9-BBF5-27563413005A",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.27.59 PM",
+        "timestamp" : 1792337279.851
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "A29D387C-A037-45D2-BDE5-A5BD487099C1",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.28.01 PM",
+        "timestamp" : 1792337281.048
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "6CEBE5F7-6659-407F-BDB5-C07EB4EB9D28",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.27.58 PM",
+        "timestamp" : 1792337278.524
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "8317BA27-40E9-48BA-A4D4-B21F1B3E306F",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.59 PM",
+        "timestamp" : 1792337279.72
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "77193D30-0AEF-405B-9E02-2644178C5B92",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.27.57 PM",
+        "timestamp" : 1792337277.195
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "AEF1A1AE-494B-4850-B6AB-66624D0EB294",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.58 PM",
+        "timestamp" : 1792337278.393
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "8B311514-7A13-4EC4-B2D0-4C458A9FCBF2",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.27.55 PM",
+        "timestamp" : 1792337275.862
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "828BDE4A-0A5D-47B8-B6A5-3E69DD63681C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.57 PM",
+        "timestamp" : 1792337277.059
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "5F665153-C28A-47C2-8311-3920B1934AC7",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.27.54 PM",
+        "timestamp" : 1792337274.533
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "7C0761AA-BC64-42A6-A9EC-93A1ED926304",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.55 PM",
+        "timestamp" : 1792337275.73
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "2EF48223-3AE4-4154-A711-1AA33532F953",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.27.53 PM",
+        "timestamp" : 1792337273.204
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E043B6C7-7BFF-43B5-85C8-B4DD2F5CC227",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.54 PM",
+        "timestamp" : 1792337274.401
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "267BEB90-5E0D-4A1F-BCB1-742E518ECA69",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.27.51 PM",
+        "timestamp" : 1792337271.862
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "BF45AB78-11BC-43B5-8900-BE14B281EA2C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.53 PM",
+        "timestamp" : 1792337273.068
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "D75984F8-7F15-479C-B26F-B185096EFF2F",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.27.50 PM",
+        "timestamp" : 1792337270.534
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "A7AEA977-F345-4AFB-BD24-E1440218280E",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.51 PM",
+        "timestamp" : 1792337271.73
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "D392BDC5-30EE-47AD-B682-C4ECA7846251",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.50 PM",
+        "timestamp" : 1792337270.38
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "327CCD59-6004-4AA9-9BBA-009FE5DE2C8E",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.50 PM",
+        "timestamp" : 1792337270.009
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "00AD72E6-7279-436E-8559-F0BEAE6897DC",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.49 PM",
+        "timestamp" : 1792337269.634
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "5239A6F6-E397-475F-8A50-303E9FA10E50",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.48 PM",
+        "timestamp" : 1792337268.767
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "424CD5A9-D51B-4FD8-9274-E8B1C2857971",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.46 PM",
+        "timestamp" : 1792337266.983
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "6B49336D-6444-4328-B84E-CB6C063CCF37",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.44 PM",
+        "timestamp" : 1792337264.652
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "2B5CA262-F0A6-47A5-AA10-B94975ED6F75",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.37 PM",
+        "timestamp" : 1792337257.597
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "62B5F610-CFA3-48A0-A644-82039E99ADA2",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.36 PM",
+        "timestamp" : 1792337256.951
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "F5F2236E-919A-4C42-8D7D-F40952A02AC9",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.27.34 PM",
+        "timestamp" : 1792337254.82
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "498DD5CE-275C-4BD4-9C7A-FAD3F7C4143F.mp4",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Screen Recording 2026-10-18 at 05.27.28 PM.mp4",
+        "timestamp" : 1792337248.082
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionLessonPotOdds()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionLessonPotOdds"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "70751B86-2724-4FB6-B953-C011010382A5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "range-equity-restored-progress_0_089D4D0F-D2A2-44AC-9020-1245FF887E19.png",
+        "timestamp" : 1792337408.232
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "7A92673F-C2AD-4A22-9B0D-C123ECB1900B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "range-equity-completed_0_0134E754-EECC-4A14-8BFD-64AA73FD3668.png",
+        "timestamp" : 1792337395.808
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "D4C3E180-2323-4451-B150-0DC8CA376F69.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "range-equity-review-3_0_A7A476B5-75B8-4053-94C1-43DF2DEC6E4F.png",
+        "timestamp" : 1792337394.248
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "FF040108-D293-48C5-BB80-794C3805441A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "range-equity-review-2_0_B0A37C15-F1AE-46F9-80EE-8EE27235AC2E.png",
+        "timestamp" : 1792337375.329
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "83D7458D-A89B-4FF5-A6DF-5ABC2D489E7B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "range-equity-review-1_0_93F4A238-A949-4265-B911-AC3EAFF5ED99.png",
+        "timestamp" : 1792337356.333
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionLessonRangeEquity()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionLessonRangeEquity"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E4650449-004D-422A-AF25-3BC7D0D97038",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.32 PM",
+        "timestamp" : 1792337492.195
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E0B2C94A-1174-46E7-8AE6-0AF35D59F615",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.33 PM",
+        "timestamp" : 1792337493.392
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E91BEC8E-4D63-4337-9E26-B83862FDB6FF",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.30 PM",
+        "timestamp" : 1792337490.498
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "977FE533-C6D3-4341-B763-832A27A940F5",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.31 PM",
+        "timestamp" : 1792337491.697
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "A81BE03A-FC83-409B-A519-3BD67B671C70",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.28 PM",
+        "timestamp" : 1792337488.794
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "8B2927E9-B7B1-4CF2-97F0-3381325EF063",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.29 PM",
+        "timestamp" : 1792337489.986
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "4C42CA08-3984-4BBB-8348-19777AA4FBBF",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.27 PM",
+        "timestamp" : 1792337487.098
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "5D869639-D860-4F53-B92A-32C32E9D03AD",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.28 PM",
+        "timestamp" : 1792337488.292
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "A5EE58EB-A913-4623-A443-5C33DE6E43CE",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.25 PM",
+        "timestamp" : 1792337485.397
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "EE55EC79-D582-45A6-88C4-5EE77A4B00EB",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.26 PM",
+        "timestamp" : 1792337486.592
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "21041DD6-CB3B-47F9-8582-6246DAFA927C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.23 PM",
+        "timestamp" : 1792337483.697
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "AC439F40-E6F6-4EEA-BB7C-EB75063F8D0E",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.24 PM",
+        "timestamp" : 1792337484.892
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "9C8157CE-916A-470F-9A3E-4BDE383ACC55",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.21 PM",
+        "timestamp" : 1792337481.996
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "A256403D-BFA8-429C-BD51-0E9DDDCDB426",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.23 PM",
+        "timestamp" : 1792337483.192
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "05234A0A-2A26-42D0-921C-3266C3FB5B3C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.20 PM",
+        "timestamp" : 1792337480.297
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "65102B67-FA5E-4E15-8B86-558B4F699962",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.21 PM",
+        "timestamp" : 1792337481.498
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "91D1D210-69B0-4F9B-A80E-634111393243",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.18 PM",
+        "timestamp" : 1792337478.959
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "4A26A198-866B-4FA6-B677-2AECEA419A84",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.20 PM",
+        "timestamp" : 1792337480.154
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "B3C23953-1BCE-424F-B449-5AA71271E4A1",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.17 PM",
+        "timestamp" : 1792337477.629
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "20879370-3AC8-44F1-BD92-3910F6E0F42B",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.18 PM",
+        "timestamp" : 1792337478.825
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "7486932F-CDAC-4A22-8B79-9F77600087C4",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.16 PM",
+        "timestamp" : 1792337476.317
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "C17484DD-2B0D-418B-81B5-5D171A5BD92C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.17 PM",
+        "timestamp" : 1792337477.508
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "91618381-9DAC-45B0-BBAB-A93891A1D276",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.14 PM",
+        "timestamp" : 1792337474.987
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "0C087081-C67A-4EAC-BA32-B159B8D2F9D6",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.16 PM",
+        "timestamp" : 1792337476.185
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "84FCD347-F990-4BC3-87A0-8822F0AE0A03",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.13 PM",
+        "timestamp" : 1792337473.661
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "B8EFCEEF-3563-4363-8C3C-9E2AA747BA25",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.14 PM",
+        "timestamp" : 1792337474.855
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E7A7932F-C983-49FD-882B-037087F2185C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.12 PM",
+        "timestamp" : 1792337472.333
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "C6FC5E29-C500-4C52-9CF9-DA28E28CBFBF",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.13 PM",
+        "timestamp" : 1792337473.531
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "39A98026-2FBE-4BE6-89B2-EBB1F2E6DD45",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.11 PM",
+        "timestamp" : 1792337471.012
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "85C786E0-3330-4060-8227-C5EA30EF8B8D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.12 PM",
+        "timestamp" : 1792337472.201
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "EFD54356-85A1-4BAF-8464-909A2C113EF8",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.09 PM",
+        "timestamp" : 1792337469.683
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "A6265A3F-8E77-4D94-BE6D-B4ACDEE2484C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.10 PM",
+        "timestamp" : 1792337470.876
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "18D3F0F0-CA63-4893-BF7F-3A32F736DC33",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.08 PM",
+        "timestamp" : 1792337468.359
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "68B726B5-FD09-46D7-ADEE-DCBEEB11693E",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.09 PM",
+        "timestamp" : 1792337469.553
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "EE10B898-8CFD-4607-A827-1F827C2B9515",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.07 PM",
+        "timestamp" : 1792337467.029
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "3FEDBDAD-4D7B-41D1-A51A-5DD78347BCBE",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.08 PM",
+        "timestamp" : 1792337468.227
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "3113CB53-627A-439A-A231-87A13BDFEB8C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.05 PM",
+        "timestamp" : 1792337465.693
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "FB3F8E77-C378-49AB-9046-95695B861860",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.06 PM",
+        "timestamp" : 1792337466.892
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "BB175E61-83CF-427A-A336-E26E79ED58ED",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.04 PM",
+        "timestamp" : 1792337464.362
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "2331A2F6-5EF2-459D-BAA7-AE0E6222BBC7",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.05 PM",
+        "timestamp" : 1792337465.562
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "B8559DEE-418F-4F2E-A4F9-DE263E72F5BE",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.03 PM",
+        "timestamp" : 1792337463.034
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "9A4B6DC8-3CAB-478A-A73C-582C9AEEF406",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.04 PM",
+        "timestamp" : 1792337464.229
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "6B2BA1B7-A4BF-4827-BFE6-F8D61031AA47",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.01 PM",
+        "timestamp" : 1792337461.703
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "8E077577-8192-4D7F-94F9-623378CD09B8",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.02 PM",
+        "timestamp" : 1792337462.901
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "C0736FF3-F8A8-4A3D-8FC4-03FB1462AA82",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.31.00 PM",
+        "timestamp" : 1792337460.366
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "00F7DBC9-519C-483E-8524-2FD86D83979D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.01 PM",
+        "timestamp" : 1792337461.57
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "C364F50A-48A7-4B0C-9630-029B1745F494",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.59 PM",
+        "timestamp" : 1792337459.045
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "F494F14F-A7E5-4201-9FCC-589FED3319D2",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.31.00 PM",
+        "timestamp" : 1792337460.257
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "EA9110B4-7EEA-4D16-B277-0310D13F8FD3",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.58 PM",
+        "timestamp" : 1792337458.622
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "8EB0CDD1-00A4-421D-86CF-7BEC78A59215",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.58 PM",
+        "timestamp" : 1792337458.907
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "53271734-43FE-4BE0-A2C0-9AFE02064EEE",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.58 PM",
+        "timestamp" : 1792337458.257
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "8F557CA3-5141-4099-9676-E973920A35DB",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.58 PM",
+        "timestamp" : 1792337458.542
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "6D118F63-2323-4BF5-94F0-4C9BDABF6647",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.57 PM",
+        "timestamp" : 1792337457.919
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "022C1952-C5FA-454C-967D-2D5997B9A105",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.58 PM",
+        "timestamp" : 1792337458.166
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "D34473C0-1EF3-4083-9BBF-D92044EF8DDE",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.57 PM",
+        "timestamp" : 1792337457.036
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "F498F1A3-E328-4C36-B1EF-38D7119F0787",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.57 PM",
+        "timestamp" : 1792337457.329
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "12281B0A-B915-4ED2-AA34-55B83E3AF96A",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.55 PM",
+        "timestamp" : 1792337455.228
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "2B45DA30-2D9E-4F9A-9B6D-4F4B82B371E2",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.55 PM",
+        "timestamp" : 1792337455.515
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "FDFA27D0-3987-43F6-8938-5A13E53320BC",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.52 PM",
+        "timestamp" : 1792337452.855
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "D1241344-D979-4370-82BF-539F2BE14515",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.53 PM",
+        "timestamp" : 1792337453.162
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "BABF87C5-CFA7-4ABE-8EDA-95C3DD1DC00C",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.45 PM",
+        "timestamp" : 1792337445.022
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "D0CE6B6E-5684-470A-83D3-D167C239EE71",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.45 PM",
+        "timestamp" : 1792337445.308
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "29C8A02D-AE3F-4AF7-B85F-5119421D71E8.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "completed-hand_0_F0DAB11C-DAAF-4E31-80DF-FC2F275B4F49.png",
+        "timestamp" : 1792337444.951
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "B50326DE-959D-4F59-9BCE-624BF9579FF6",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.43 PM",
+        "timestamp" : 1792337443.493
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "35C5613F-D389-4A6E-957E-B33FBA8DAEB4",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.44 PM",
+        "timestamp" : 1792337444.734
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "2A2CA7A9-2F40-4689-8357-11D897E6EAE0",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.42 PM",
+        "timestamp" : 1792337442.791
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "5B7C6BAE-FE1E-498B-88CF-54C65675CA72",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.43 PM",
+        "timestamp" : 1792337443.081
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "EC0AEF40-FC5A-4BE2-AC66-E61C9C6C3DF4",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.39 PM",
+        "timestamp" : 1792337439.32
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "B98F0448-604F-4AF9-B86E-5014387AB780",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.39 PM",
+        "timestamp" : 1792337439.6
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "20B23794-C2E5-4B98-A92B-2CD685E6DD17",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.35 PM",
+        "timestamp" : 1792337435.76
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "267F1748-8174-45F1-AB09-9877E374741D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.36 PM",
+        "timestamp" : 1792337436.047
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "AE370617-401B-4C81-B8A8-357E4F8664B1",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.31 PM",
+        "timestamp" : 1792337431.317
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "143346A9-70A5-48B1-99A5-20C7F50CC5F9",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.31 PM",
+        "timestamp" : 1792337431.6
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "944A4745-1846-4F43-8A17-3E734EC792CB",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-18 at 05.30.29 PM",
+        "timestamp" : 1792337429.023
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "0EFC41A2-EC08-443C-8D60-C0CFE957196F",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.29 PM",
+        "timestamp" : 1792337429.332
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "B8331947-EBB7-4A2D-BF83-8F174C218CA7.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "offline-launch_0_87089088-6B96-46AC-90A2-7545981E9123.png",
+        "timestamp" : 1792337428.946
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "5947AE99-DB0C-4053-AFA9-94607CFCA89B",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.18 PM",
+        "timestamp" : 1792337418.047
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E77AFC40-416C-4DFD-ACA5-F68C2C360147",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.17 PM",
+        "timestamp" : 1792337417.399
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "E582B449-7A26-4687-B3D2-0BC5AE7F01C7",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-18 at 05.30.15 PM",
+        "timestamp" : 1792337415.252
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "A5870D1F-26C5-4751-9F32-AF574F66919D.mp4",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Screen Recording 2026-10-18 at 05.30.08 PM.mp4",
+        "timestamp" : 1792337408.604
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionOffline()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionOffline"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "DC286C86-573D-447D-96B2-53A0F037A06D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "short-raise-facing-call-5-no-reopen_0_489269ED-D065-4115-AACD-1B43DEEFC01E.png",
+        "timestamp" : 1792337508.97
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testShortRaiseDoesNotReopen()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testShortRaiseDoesNotReopen"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "7B487CAE-01A8-4372-929E-47EA6FA19183.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "short-stack-all-in-15-before-confirm_0_63C6CA65-27A7-44BA-969C-6DEA493A3C5D.png",
+        "timestamp" : 1792337524.557
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "7255E5FF-A1A5-41A3-B017-57F550BBA76A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "short-stack-legal-actions_0_4EE90F48-85E0-47C6-947A-E32438A13292.png",
+        "timestamp" : 1792337522.449
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testShortStackAllInRaise()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testShortStackAllInRaise"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "61C100CC-4DF7-4AE1-954D-E4D7BD07BCEE",
+        "deviceName" : "Poker QA Regression iPhone17e",
+        "exportedFileName" : "729ECFA1-1D37-4FD7-828B-276FFF7ADBA6.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "short-call-all-in-5-before-confirm_0_A6A74FED-A271-4ADC-894B-4049BA62C731.png",
+        "timestamp" : 1792337541.488
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testShortStackCallAllIn()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testShortStackCallAllIn"
+  }
+]

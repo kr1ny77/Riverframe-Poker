@@ -1,0 +1,56 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "CD489E94-5605-42B7-99BD-E0A309E55DF4",
+        "deviceName" : "Poker QA iPhone17e",
+        "exportedFileName" : "D42C2A0E-975B-463D-A47F-D406E2420B63.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "completed-hand_0_F565EB89-D0A3-4E50-8899-33E4E8B6A164.png",
+        "timestamp" : 1792168171.926
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testFullHandAgainstBots()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testFullHandAgainstBots"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "CD489E94-5605-42B7-99BD-E0A309E55DF4",
+        "deviceName" : "Poker QA iPhone17e",
+        "exportedFileName" : "2F27A5FA-683A-4F40-B473-A8F250274CB6.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "outs-completed_0_246176ED-53DD-41DD-B6E8-7F0855063272.png",
+        "timestamp" : 1792168195.888
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testOutsLessonAndWrongAnswer()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testOutsLessonAndWrongAnswer"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "CD489E94-5605-42B7-99BD-E0A309E55DF4",
+        "deviceName" : "Poker QA iPhone17e",
+        "exportedFileName" : "628D6288-254A-41B6-BFFF-629BA45E0D18.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "restored-progress_0_F30712EB-DB6E-47C0-9D0D-18333C035D24.png",
+        "timestamp" : 1792168241.4
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "CD489E94-5605-42B7-99BD-E0A309E55DF4",
+        "deviceName" : "Poker QA iPhone17e",
+        "exportedFileName" : "CFF26E93-5809-495B-B874-636DE1E6A431.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "pot-odds-explanation_0_8EFE0257-BAF8-4365-B976-CAF6FA6C5A2E.png",
+        "timestamp" : 1792168228.321
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testPotOddsExplanationAndRelaunch()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testPotOddsExplanationAndRelaunch"
+  }
+]

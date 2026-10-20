@@ -1,0 +1,27 @@
+Building for production...
+[Computing dependencies]
+[Using on-disk description]
+[1 / 2]
+[2 / 6] PokerNativeTests-product
+[4 / 8] PokerNativeTests-product
+[8 / 12] PokerNativeTests-product
+[10 / 12] PokerNativeTests-product
+Build complete! (26,42 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test courseAccuracyDenominatorsAndTopicIsolation() started.
+◇ Test courseUniqueTemplatesLatestGradesAndPersistence() started.
+◇ Test courseRepeatThresholdsAndRecentWindow() started.
+◇ Test courseWheelErrorRetainsItsSpecificCategory() started.
+◇ Test courseTaxonomyAndUnknownNumericIntegrity() started.
+◇ Test courseCatalogPrerequisitesAndFullCoverage() started.
+◇ Test courseTwoTaskSampleAndRepeatAfterCompletion() started.
+✔ Test courseAccuracyDenominatorsAndTopicIsolation() passed after 0.005 seconds.
+✔ Test courseRepeatThresholdsAndRecentWindow() passed after 0.005 seconds.
+✔ Test courseTaxonomyAndUnknownNumericIntegrity() passed after 0.006 seconds.
+✔ Test courseWheelErrorRetainsItsSpecificCategory() passed after 0.007 seconds.
+✔ Test courseCatalogPrerequisitesAndFullCoverage() passed after 0.934 seconds.
+✔ Test courseUniqueTemplatesLatestGradesAndPersistence() passed after 0.936 seconds.
+✔ Test courseTwoTaskSampleAndRepeatAfterCompletion() passed after 0.945 seconds.
+✔ Test run with 7 tests in 0 suites passed after 0.945 seconds.

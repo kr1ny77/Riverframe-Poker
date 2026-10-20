@@ -1,0 +1,6 @@
+{
+  "Sources/PokerCore/Cards.swift": "bf46c0e3763745de77050d224ce2d0d6a1ceffc782af91fbb4a86a455b157f40",
+  "Sources/PokerCore/HoldemGame.swift": "c448c17497f5ce7d74fefceaa6c3af273402a545e5fbccd5d33e468e16571d32",
+  "App/Application/GameViewModel.swift": "08a07457df136ad9d99daa965d6882c5ae8bda7096af628abb5e3470edef3a34",
+  "App/PokerTrainerApp.swift": "aad70616042ed6b10fe4e2c47cbb7e0b139eccaa7b40ba4c9a7f454592b93435"
+}

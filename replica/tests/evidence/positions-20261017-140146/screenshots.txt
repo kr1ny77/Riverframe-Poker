@@ -1,0 +1,7 @@
+Exported 4 attachments for: CriticalFlows/testPositionsLessonAndRelaunch():
+File: BCA746F8-42C1-405D-B93F-1F0239038FD8.png, suggested name: "positions-restored-progress_0_2BC29C7B-283C-4052-B2B3-92A199913BEF.png"
+File: 23505F71-245E-46CB-9165-3E12D4CD57D1.png, suggested name: "positions-review-12_0_D6636E2F-E188-4DBE-B65E-2478A1A05DA4.png"
+File: BBF5A3DB-8D65-4FB1-8103-1E5F8C2250E4.png, suggested name: "positions-review-1_0_96A491A5-4419-48D5-BCA9-3C7B423CC953.png"
+File: FDE2C9A6-C713-490F-B827-8A1570F04E5F.png, suggested name: "positions-introduction_0_7FC5710F-1665-45B9-ACC8-40844831D914.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/positions-20261017-140146/screenshots/manifest.json

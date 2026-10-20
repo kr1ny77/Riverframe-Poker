@@ -1,0 +1,137 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "4B55E3E1-1DE5-4D24-A965-FE8CE0A28444.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-large-text-feedback_0_65445799-9E47-4B25-92C9-5F16FDCE90FB.png",
+        "timestamp" : 1792235977.107
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testComparisonLargeTextSelection()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testComparisonLargeTextSelection"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "923A3183-7D77-4393-997E-C02B0663D696.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-restored-progress_0_1AEBDFFE-8F3F-4CBA-A9F7-129F07CDB330.png",
+        "timestamp" : 1792236084.789
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "09885599-4F8A-42CB-8CA9-F159382963A9.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-completed_0_364CEBB7-D951-4BDF-8350-936E0FF9C482.png",
+        "timestamp" : 1792236071.826
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "A8309D8D-0C9B-4196-BA4F-D71F3E804F0A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-review-11_0_3D788C73-6091-4F0A-86A2-73F6648A114B.png",
+        "timestamp" : 1792236060.26
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "D1DD29B8-B739-4AFD-86DB-371512D0C42C.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-review-10_0_15A7BDC3-49BD-468C-ACAD-25BF77D92F10.png",
+        "timestamp" : 1792236055.493
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "37BEAE79-68FD-4DFA-B3D8-7C624F5EF15F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "comparison-review-1_0_162980BD-1D68-45A4-9ABC-8E470EBC6AD4.png",
+        "timestamp" : 1792236003.435
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testComparisonLessonAndProgress()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testComparisonLessonAndProgress"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "8B746EBF-EA1E-4019-A672-6A3BB47A8289.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "completed-hand_0_3D2099A9-9727-45F3-B053-9565C9C3EE0D.png",
+        "timestamp" : 1792236120.789
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testFullHandAgainstBots()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testFullHandAgainstBots"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "4D028627-F7BF-47A1-BBB3-F2D50B1303E3.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "outs-completed_0_D195E3FB-920E-474B-A021-630683D9AB35.png",
+        "timestamp" : 1792236138.523
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testOutsLessonAndWrongAnswer()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testOutsLessonAndWrongAnswer"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "DA09252C-DB47-4E28-963D-C001EB4C489B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "restored-progress_0_BE11EEB8-A481-4967-9C8C-EF2E9B2EACC0.png",
+        "timestamp" : 1792236165.954
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "22982E1C-348C-4AB7-B830-51C6782E6A37.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "pot-odds-explanation_0_EC1185A1-3C75-4B98-905B-073FF81DEF29.png",
+        "timestamp" : 1792236152.173
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testPotOddsExplanationAndRelaunch()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testPotOddsExplanationAndRelaunch"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "4273C8DC-B790-4ACF-B4CC-DD64D44D1F32",
+        "deviceName" : "Poker QA Combinations iPhone17e",
+        "exportedFileName" : "5EA02658-A953-4301-AD26-65413A64859D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "progress-after-cancel_0_8132C574-95F3-4C7F-96CE-E60D906768AB.png",
+        "timestamp" : 1792236183.353
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testSettingsClearRequiresConfirmation()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testSettingsClearRequiresConfirmation"
+  }
+]

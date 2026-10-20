@@ -1,0 +1,3 @@
+QA simulator: 87D42A9F-583F-40B0-B116-E6EC4669A4D8
+Evidence: replica/tests/evidence/ios-20261017-014552
+PASS: native flows and corrupt-history feedback. Evidence: replica/tests/evidence/ios-20261017-014552

@@ -1,0 +1,1 @@
+FAIL BUG-001: record after failed reload overwrote original corrupted history

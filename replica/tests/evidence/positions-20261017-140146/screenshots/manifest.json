@@ -1,0 +1,44 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "24ABDF30-2157-4AFD-B9B3-6D2D569383EF",
+        "deviceName" : "Poker QA Positions iPhone17e",
+        "exportedFileName" : "BCA746F8-42C1-405D-B93F-1F0239038FD8.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "positions-restored-progress_0_2BC29C7B-283C-4052-B2B3-92A199913BEF.png",
+        "timestamp" : 1792238629.199
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "24ABDF30-2157-4AFD-B9B3-6D2D569383EF",
+        "deviceName" : "Poker QA Positions iPhone17e",
+        "exportedFileName" : "23505F71-245E-46CB-9165-3E12D4CD57D1.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "positions-review-12_0_D6636E2F-E188-4DBE-B65E-2478A1A05DA4.png",
+        "timestamp" : 1792238614.636
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "24ABDF30-2157-4AFD-B9B3-6D2D569383EF",
+        "deviceName" : "Poker QA Positions iPhone17e",
+        "exportedFileName" : "BBF5A3DB-8D65-4FB1-8103-1E5F8C2250E4.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "positions-review-1_0_96A491A5-4419-48D5-BCA9-3C7B423CC953.png",
+        "timestamp" : 1792238574.623
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "24ABDF30-2157-4AFD-B9B3-6D2D569383EF",
+        "deviceName" : "Poker QA Positions iPhone17e",
+        "exportedFileName" : "FDE2C9A6-C713-490F-B827-8A1570F04E5F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "positions-introduction_0_7FC5710F-1665-45B9-ACC8-40844831D914.png",
+        "timestamp" : 1792238571.043
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testPositionsLessonAndRelaunch()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testPositionsLessonAndRelaunch"
+  }
+]

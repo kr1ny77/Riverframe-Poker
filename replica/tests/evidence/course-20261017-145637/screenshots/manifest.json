@@ -1,0 +1,53 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "B39A7695-B4CA-4147-A57B-F297D27C862E",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "CC3660DB-03DC-460A-ACC1-38F08BB4253C.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-after-game-unchanged_0_B2DBC399-8E2A-44D9-8397-774366346778.png",
+        "timestamp" : 1792242024.132
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "B39A7695-B4CA-4147-A57B-F297D27C862E",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "3917246A-D82A-44BB-944B-62E0EAB6904D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "completed-hand_0_2E973CA2-FE8C-4616-822A-9A94AC9015A9.png",
+        "timestamp" : 1792242016.689
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "B39A7695-B4CA-4147-A57B-F297D27C862E",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "75FB36B9-9ED2-4E56-8B2F-19DB48DB5EA3.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-repeat-restored_0_EC8EAFD9-310E-4D52-BB3F-D00869E1AE7D.png",
+        "timestamp" : 1792241999.455
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "B39A7695-B4CA-4147-A57B-F297D27C862E",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "5CA8D3E6-011A-4563-B351-3353B23AB402.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-repeat-exercise_0_3A3354BE-ACBF-483D-BEE1-2BC9928D643F.png",
+        "timestamp" : 1792241986.137
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "B39A7695-B4CA-4147-A57B-F297D27C862E",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "C7907503-223A-4062-A3D6-5D6C10C2433B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "course-repeat-home_0_03DFB378-338D-4DEB-8C51-55EB9E75AC62.png",
+        "timestamp" : 1792241975.057
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testCourseRepeatNavigationPersistenceAndGameIndependence()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testCourseRepeatNavigationPersistenceAndGameIndependence"
+  }
+]

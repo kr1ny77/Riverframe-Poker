@@ -1,0 +1,21 @@
+Building for production...
+[Planning deferred tasks]
+[4 / 7]
+[5 / 8] PokerCore
+[6 / 9] PokerCore
+[13 / 15] PokerCoreChecks-product
+[16 / 16] PokerCoreChecks-product
+[19 / 20] PokerNativeTests-product
+[24 / 28] PokerNativeTests-product
+[26 / 28] PokerNativeTests-product
+Build complete! (12,09 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test evCallExactExamplesAgainstIndependentBranches() started.
+◇ Test evCallArchiveMigrationMixedWritesAndTampering() started.
+◇ Test evCallRejectsInvalidInputsAndQuestionSubstitution() started.
+✔ Test evCallRejectsInvalidInputsAndQuestionSubstitution() passed after 0.001 seconds.
+✔ Test evCallExactExamplesAgainstIndependentBranches() passed after 0.001 seconds.
+✔ Test evCallArchiveMigrationMixedWritesAndTampering() passed after 0.010 seconds.
+✔ Test run with 3 tests in 0 suites passed after 0.010 seconds.

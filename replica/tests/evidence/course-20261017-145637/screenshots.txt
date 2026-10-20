@@ -1,0 +1,8 @@
+Exported 5 attachments for: CriticalFlows/testCourseRepeatNavigationPersistenceAndGameIndependence():
+File: CC3660DB-03DC-460A-ACC1-38F08BB4253C.png, suggested name: "course-after-game-unchanged_0_B2DBC399-8E2A-44D9-8397-774366346778.png"
+File: 3917246A-D82A-44BB-944B-62E0EAB6904D.png, suggested name: "completed-hand_0_2E973CA2-FE8C-4616-822A-9A94AC9015A9.png"
+File: 75FB36B9-9ED2-4E56-8B2F-19DB48DB5EA3.png, suggested name: "course-repeat-restored_0_EC8EAFD9-310E-4D52-BB3F-D00869E1AE7D.png"
+File: 5CA8D3E6-011A-4563-B351-3353B23AB402.png, suggested name: "course-repeat-exercise_0_3A3354BE-ACBF-483D-BEE1-2BC9928D643F.png"
+File: C7907503-223A-4062-A3D6-5D6C10C2433B.png, suggested name: "course-repeat-home_0_03DFB378-338D-4DEB-8C51-55EB9E75AC62.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261017-145637/screenshots/manifest.json

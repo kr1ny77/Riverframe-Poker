@@ -1,0 +1,5 @@
+sandbox_apply=0 errno=0
+IPv4 TCP: errno=1 (DENIED)
+IPv4 UDP: errno=1 (DENIED)
+IPv6 TCP: errno=1 (DENIED)
+IPv6 UDP: errno=1 (DENIED)

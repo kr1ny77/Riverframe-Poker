@@ -1,0 +1,67 @@
+Building for debugging...
+[2 / 12]
+[3 / 13] PokerCore
+Build complete! (0,58 sec)
+PASS all evaluator categories and seven-card selection
+PASS wheel and pair kicker ordering
+PASS board-only tie
+PASS full six-player hand and big blind option
+PASS early fold settlement and hidden cards
+PASS rejected commands preserve state
+PASS short all-in keeps raise closed
+PASS cumulative short all-ins reopen raise
+PASS unequal all-ins and side pots
+PASS short blind all-in runout and refunds
+PASS split pot and odd chip order
+PASS 200 deterministic mixed hands
+PASS deterministic deal and bot decisions
+PASS pot odds denominator and explanation
+PASS answer tolerance boundaries
+PASS atomic local persistence round trip
+PASS duplicate attempt rejection
+PASS schema and corruption rejection
+PASS persisted answer consistency
+PASS outs known cards and nine valid outs
+PASS outs exact enumeration and analytic formula
+PASS outs independent evaluator over all 1081 runouts
+PASS outs choice keys and versioned grading
+PASS legacy pot odds and outs results coexist
+Checks: 24/24 passed; 10937 assertions; 0 failures.
+Building for production...
+[3 / 11] PokerCore
+[5 / 12] PokerCore
+[9 / 13] PokerNativeTests-product
+[13 / 14] PokerNativeTests-product
+[16 / 16] PokerNativeTests-product
+Build complete! (4,88 sec)
+Test Suite 'All tests' started at 2026-10-16 18:33:27.218.
+Test Suite 'All tests' passed at 2026-10-16 18:33:27.221.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.003) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test specialSevenCardKickersAndTies() started.
+◇ Test completeDealsHaveUniqueCards() started.
+◇ Test exhaustiveFiveCardCategoryCounts() started.
+◇ Test replayedActionAndSettlementAreRejected() started.
+◇ Test shortOpeningAfterCheckFollowsFullBetProfile() started.
+◇ Test potOddsAndStoredHistoryAreConsistent() started.
+◇ Test randomLegalActionsMatchIndependentPotLedger() started.
+◇ Test sevenCardIndependentReference() started.
+✔ Test shortOpeningAfterCheckFollowsFullBetProfile() passed after 0.001 seconds.
+✔ Test specialSevenCardKickersAndTies() passed after 0.001 seconds.
+✔ Test replayedActionAndSettlementAreRejected() passed after 0.001 seconds.
+✔ Test potOddsAndStoredHistoryAreConsistent() passed after 0.004 seconds.
+✔ Test completeDealsHaveUniqueCards() passed after 0.164 seconds.
+✔ Test sevenCardIndependentReference() passed after 0.216 seconds.
+✔ Test randomLegalActionsMatchIndependentPotLedger() passed after 0.629 seconds.
+✔ Test exhaustiveFiveCardCategoryCounts() passed after 3.415 seconds.
+✔ Test run with 8 tests in 0 suites passed after 3.416 seconds.
+PokerTrainer.xcodeproj/project.pbxproj: OK
+iOS Simulator build completed.
+PASS App persistence: record, duplicate ID, reload, corruption protection, explicit reset
+PASS Save failure: no phantom result, error visible, same-ID retry succeeds once
+PASS Application game loop: home paused, cancelled bot, resumed hand, hero actions, completed hand, 6000 chips conserved
+Основной банк 240: Бот 1, Бот 2, Бот 3
+PASS Next hand; main-actor model integration finished
+PASS BUG-001: failed reload blocks writes; successful reload unlocks recording

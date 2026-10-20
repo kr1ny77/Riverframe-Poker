@@ -1,0 +1,17 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "A6B608D6-71E7-4618-AF9A-2D4D2B05BB53",
+        "deviceName" : "Poker QA iPhone17e",
+        "exportedFileName" : "E147C22B-0836-4C15-8297-E1A7A8497675.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "pot-odds-save-failure_0_60E88830-BB9E-41F7-B4BD-AD1CE0C9CF32.png",
+        "timestamp" : 1792192475.732
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testStorageFailureStillShowsPotOddsExplanation()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testStorageFailureStillShowsPotOddsExplanation"
+  }
+]

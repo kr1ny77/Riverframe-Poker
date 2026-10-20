@@ -1,0 +1,9 @@
+{
+  "case" : "testOfflineAllSections",
+  "external_connect_errno" : 1,
+  "loopback_connect_errno" : 1,
+  "process" : 74151,
+  "profile" : "qa-deny-ip",
+  "profile_bytes" : 500,
+  "sandbox_result" : 0
+}

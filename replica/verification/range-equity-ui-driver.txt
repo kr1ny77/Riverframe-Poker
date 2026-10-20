@@ -1,0 +1,2 @@
+Evidence: replica/tests/evidence/range-equity-20261017-135140
+PASS: range equity lesson and restored progress.

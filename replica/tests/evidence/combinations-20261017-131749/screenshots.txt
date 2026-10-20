@@ -1,0 +1,24 @@
+Exported 1 attachment for: CriticalFlows/testComparisonLargeTextSelection():
+File: 4B55E3E1-1DE5-4D24-A965-FE8CE0A28444.png, suggested name: "comparison-large-text-feedback_0_65445799-9E47-4B25-92C9-5F16FDCE90FB.png"
+
+Exported 5 attachments for: CriticalFlows/testComparisonLessonAndProgress():
+File: 923A3183-7D77-4393-997E-C02B0663D696.png, suggested name: "comparison-restored-progress_0_1AEBDFFE-8F3F-4CBA-A9F7-129F07CDB330.png"
+File: 09885599-4F8A-42CB-8CA9-F159382963A9.png, suggested name: "comparison-completed_0_364CEBB7-D951-4BDF-8350-936E0FF9C482.png"
+File: A8309D8D-0C9B-4196-BA4F-D71F3E804F0A.png, suggested name: "comparison-review-11_0_3D788C73-6091-4F0A-86A2-73F6648A114B.png"
+File: D1DD29B8-B739-4AFD-86DB-371512D0C42C.png, suggested name: "comparison-review-10_0_15A7BDC3-49BD-468C-ACAD-25BF77D92F10.png"
+File: 37BEAE79-68FD-4DFA-B3D8-7C624F5EF15F.png, suggested name: "comparison-review-1_0_162980BD-1D68-45A4-9ABC-8E470EBC6AD4.png"
+
+Exported 1 attachment for: CriticalFlows/testFullHandAgainstBots():
+File: 8B746EBF-EA1E-4019-A672-6A3BB47A8289.png, suggested name: "completed-hand_0_3D2099A9-9727-45F3-B053-9565C9C3EE0D.png"
+
+Exported 1 attachment for: CriticalFlows/testOutsLessonAndWrongAnswer():
+File: 4D028627-F7BF-47A1-BBB3-F2D50B1303E3.png, suggested name: "outs-completed_0_D195E3FB-920E-474B-A021-630683D9AB35.png"
+
+Exported 2 attachments for: CriticalFlows/testPotOddsExplanationAndRelaunch():
+File: DA09252C-DB47-4E28-963D-C001EB4C489B.png, suggested name: "restored-progress_0_BE11EEB8-A481-4967-9C8C-EF2E9B2EACC0.png"
+File: 22982E1C-348C-4AB7-B830-51C6782E6A37.png, suggested name: "pot-odds-explanation_0_EC1185A1-3C75-4B98-905B-073FF81DEF29.png"
+
+Exported 1 attachment for: CriticalFlows/testSettingsClearRequiresConfirmation():
+File: 5EA02658-A953-4301-AD26-65413A64859D.png, suggested name: "progress-after-cancel_0_8132C574-95F3-4C7F-96CE-E60D906768AB.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/combinations-20261017-131749/screenshots/manifest.json

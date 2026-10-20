@@ -1,0 +1,15 @@
+Monitoring boot status for Poker QA iPhone17e (A6B608D6-71E7-4618-AF9A-2D4D2B05BB53).
+[2026-10-16 23:10:24 +0000] Status=2, isTerminal=NO, Elapsed=00:01.
+	Waiting on Data Migration
+		Reason:(null)
+		Migration Elapsed:00:00 seconds
+
+[2026-10-16 23:10:24 +0000] Status=4, isTerminal=NO, Elapsed=00:01.
+	Waiting on System App
+
+[2026-10-16 23:10:25 +0000] Status=4, isTerminal=NO, Elapsed=00:02.
+	Waiting on System App
+
+[2026-10-16 23:10:26 +0000] Status=4294967295, isTerminal=YES, Elapsed=00:03.
+	Finished
+

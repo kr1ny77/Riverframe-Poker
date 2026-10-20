@@ -1,0 +1,11 @@
+An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=2):
+The operation couldn’t be completed. No such file or directory
+No such file or directory
+Traceback (most recent call last):
+  File "/Users/kr1ny77/Desktop/Poker/Tools/collect-offline-proof.py", line 17, in <module>
+    container = Path(subprocess.check_output(['xcrun','simctl','get_app_container',device,'org.pokerpractice.native','data'],text=True).strip())
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['xcrun', 'simctl', 'get_app_container', '64B38CAD-D84D-4F9F-B404-CC2728ADE7D5', 'org.pokerpractice.native', 'data']' returned non-zero exit status 2.

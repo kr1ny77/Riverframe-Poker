@@ -1,0 +1,111 @@
+Building for production...
+[3 / 11] PokerCore
+[5 / 12] PokerCore
+Build complete! (4,01 sec)
+Test Suite 'All tests' started at 2026-10-20 15:35:23.437.
+Test Suite 'All tests' passed at 2026-10-20 15:35:23.438.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test courseRepeatThresholdsAndRecentWindow() started.
+◇ Test rangeEquityExactWeightedOracle() started.
+◇ Test randomLegalActionsMatchIndependentPotLedger() started.
+◇ Test courseUniqueTemplatesLatestGradesAndPersistence() started.
+◇ Test evCallArchiveMigrationMixedWritesAndTampering() started.
+◇ Test courseAccuracyDenominatorsAndTopicIsolation() started.
+◇ Test courseTwoTaskSampleAndRepeatAfterCompletion() started.
+◇ Test replayedActionAndSettlementAreRejected() started.
+◇ Test exhaustiveFiveCardCategoryCounts() started.
+◇ Test rangeEquityValidationScalingAndPersistence() started.
+◇ Test positionLessonSeatsAndAnswerKeys() started.
+◇ Test courseCatalogPrerequisitesAndFullCoverage() started.
+◇ Test specialSevenCardKickersAndTies() started.
+◇ Test equityRejectsEveryDuplicateLocation() started.
+◇ Test comparisonQuestionDecodingRejectsTamperedCardsAndIDs() started.
+◇ Test comparisonAttemptsRoundTripAndDetectTamperedResult() started.
+◇ Test blockerArchiveMigrationAndTampering() started.
+◇ Test generatedQuestionsStayValidAcrossSeeds() started.
+◇ Test potOddsAndStoredHistoryAreConsistent() started.
+◇ Test bestFiveQuestionsHaveOnePhysicalBestSubsetAndRejectWrongAnswers() started.
+◇ Test courseWheelErrorRetainsItsSpecificCategory() started.
+◇ Test fullLessonMixedAnswersPersistAndRestore() started.
+◇ Test courseTaxonomyAndUnknownNumericIntegrity() started.
+◇ Test positionsMigrateLegacyArchivesAndRejectTampering() started.
+◇ Test blockerInputValidationAndEmptyRange() started.
+◇ Test blockerAll169ClassesPartitionDeckAndRemoveExactly() started.
+◇ Test completeDealsHaveUniqueCards() started.
+◇ Test shortOpeningAfterCheckFollowsFullBetProfile() started.
+◇ Test evCallRejectsInvalidInputsAndQuestionSubstitution() started.
+◇ Test equityMatchesIndependentOracle(_:) started.
+◇ Test blockerLessonVectorsWeightsAndCounterexample() started.
+◇ Test legacyV1MigratesAtomicallyAndNumericWritesPreserveComparisons() started.
+◇ Test handComparisonCoversEveryCategoryAndKnownShowdowns() started.
+◇ Test evCallExactExamplesAgainstIndependentBranches() started.
+◇ Test categoricalArchiveRejectsTamperedGradeAndDuplicateIdentity() started.
+◇ Test knownHandEquityExactCountsAndTies() started.
+◇ Test courseEqualDatesPreserveRecordedOrder() started.
+◇ Test knownHandEquityRejectsImpossibleCardsAndPersists() started.
+◇ Test sevenCardIndependentReference() started.
+◇ Test everyTemplateExplanationMatchesEvaluatorRanksAndWinner() started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "lesson-flop", hero: [12, 25], opponent: [11, 24], board: [0, 18, 33], expected: [907, 0, 83]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "lesson-turn-split", hero: [12, 24], opponent: [38, 50], board: [8, 22, 36, 39], expected: [0, 44, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT lesson-turn-split: W/T/L=[0, 44, 0], total=44, equity=50.0
+◇ Test case passing 1 argument fixture → EquityFixture(name: "royal-flop", hero: [12, 11], opponent: [25, 24], board: [8, 9, 10], expected: [990, 0, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT lesson-flop: W/T/L=[907, 0, 83], total=990, equity=91.61616161616162
+◇ Test case passing 1 argument fixture → EquityFixture(name: "zero-flop", hero: [25, 24], opponent: [12, 11], board: [8, 9, 10], expected: [0, 0, 990]) to equityMatchesIndependentOracle(_:) started.
+EXACT royal-flop: W/T/L=[990, 0, 0], total=990, equity=100.0
+RANGE EXACT equity-range-flop-v1: W/T/L=3628/0/332; evaluations=1980; equity=91.61616161616162
+RANGE EXACT equity-range-turn-1to3-v1: W/T/L=132/44/0; evaluations=88; equity=87.5
+◇ Test case passing 1 argument fixture → EquityFixture(name: "royal-turn", hero: [12, 11], opponent: [25, 24], board: [8, 9, 10, 0], expected: [44, 0, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT royal-turn: W/T/L=[44, 0, 0], total=44, equity=100.0
+RANGE EXACT equity-range-turn-3to1-v1: W/T/L=44/132/0; evaluations=88; equity=62.5
+◇ Test case passing 1 argument fixture → EquityFixture(name: "zero-turn", hero: [25, 24], opponent: [12, 11], board: [8, 9, 10, 0], expected: [0, 0, 44]) to equityMatchesIndependentOracle(_:) started.
+EXACT zero-turn: W/T/L=[0, 0, 44], total=44, equity=0.0
+◇ Test case passing 1 argument fixture → EquityFixture(name: "turn-vulnerable-lead", hero: [12, 25], opponent: [11, 24], board: [0, 18, 33, 40], expected: [42, 0, 2]) to equityMatchesIndependentOracle(_:) started.
+EXACT turn-vulnerable-lead: W/T/L=[42, 0, 2], total=44, equity=95.45454545454545
+◇ Test case passing 1 argument fixture → EquityFixture(name: "turn-two-splits", hero: [11, 25], opponent: [23, 38], board: [0, 1, 2, 3], expected: [42, 2, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT turn-two-splits: W/T/L=[42, 2, 0], total=44, equity=97.72727272727273
+EXACT zero-flop: W/T/L=[0, 0, 990], total=990, equity=0.0
+✔ Test courseRepeatThresholdsAndRecentWindow() passed after 0.358 seconds.
+✔ Test positionLessonSeatsAndAnswerKeys() passed after 0.358 seconds.
+✔ Test replayedActionAndSettlementAreRejected() passed after 0.358 seconds.
+✔ Test courseAccuracyDenominatorsAndTopicIsolation() passed after 0.358 seconds.
+✔ Test equityRejectsEveryDuplicateLocation() passed after 0.358 seconds.
+✔ Test specialSevenCardKickersAndTies() passed after 0.358 seconds.
+✔ Test comparisonQuestionDecodingRejectsTamperedCardsAndIDs() passed after 0.358 seconds.
+✔ Test comparisonAttemptsRoundTripAndDetectTamperedResult() passed after 0.358 seconds.
+✔ Test evCallArchiveMigrationMixedWritesAndTampering() passed after 0.358 seconds.
+✔ Test courseWheelErrorRetainsItsSpecificCategory() passed after 0.358 seconds.
+✔ Test bestFiveQuestionsHaveOnePhysicalBestSubsetAndRejectWrongAnswers() passed after 0.358 seconds.
+✔ Test fullLessonMixedAnswersPersistAndRestore() passed after 0.358 seconds.
+✔ Test potOddsAndStoredHistoryAreConsistent() passed after 0.358 seconds.
+✔ Test blockerArchiveMigrationAndTampering() passed after 0.358 seconds.
+✔ Test blockerInputValidationAndEmptyRange() passed after 0.358 seconds.
+✔ Test courseTaxonomyAndUnknownNumericIntegrity() passed after 0.358 seconds.
+✔ Test positionsMigrateLegacyArchivesAndRejectTampering() passed after 0.358 seconds.
+✔ Test rangeEquityValidationScalingAndPersistence() passed after 0.358 seconds.
+✔ Test evCallRejectsInvalidInputsAndQuestionSubstitution() passed after 0.358 seconds.
+✔ Test shortOpeningAfterCheckFollowsFullBetProfile() passed after 0.358 seconds.
+✔ Test blockerLessonVectorsWeightsAndCounterexample() passed after 0.358 seconds.
+✔ Test blockerAll169ClassesPartitionDeckAndRemoveExactly() passed after 0.358 seconds.
+✔ Test equityMatchesIndependentOracle(_:) with 8 test cases passed after 0.358 seconds.
+✔ Test handComparisonCoversEveryCategoryAndKnownShowdowns() passed after 0.358 seconds.
+✔ Test legacyV1MigratesAtomicallyAndNumericWritesPreserveComparisons() passed after 0.358 seconds.
+✔ Test evCallExactExamplesAgainstIndependentBranches() passed after 0.358 seconds.
+✔ Test categoricalArchiveRejectsTamperedGradeAndDuplicateIdentity() passed after 0.358 seconds.
+✔ Test completeDealsHaveUniqueCards() passed after 0.358 seconds.
+✔ Test courseEqualDatesPreserveRecordedOrder() passed after 0.358 seconds.
+✔ Test knownHandEquityRejectsImpossibleCardsAndPersists() passed after 0.358 seconds.
+✔ Test rangeEquityExactWeightedOracle() passed after 0.359 seconds.
+✔ Test everyTemplateExplanationMatchesEvaluatorRanksAndWinner() passed after 0.365 seconds.
+✔ Test generatedQuestionsStayValidAcrossSeeds() passed after 0.534 seconds.
+✔ Test sevenCardIndependentReference() passed after 0.645 seconds.
+EQUITY FLOP: wins=907 ties=0 losses=83 total=990 equity=91.61616161616162
+✔ Test knownHandEquityExactCountsAndTies() passed after 0.741 seconds.
+✔ Test courseTwoTaskSampleAndRepeatAfterCompletion() passed after 0.746 seconds.
+✔ Test courseUniqueTemplatesLatestGradesAndPersistence() passed after 0.779 seconds.
+✔ Test courseCatalogPrerequisitesAndFullCoverage() passed after 0.795 seconds.
+✔ Test randomLegalActionsMatchIndependentPotLedger() passed after 0.934 seconds.
+✔ Test exhaustiveFiveCardCategoryCounts() passed after 3.562 seconds.
+✔ Test run with 40 tests in 0 suites passed after 3.562 seconds.

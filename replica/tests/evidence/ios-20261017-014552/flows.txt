@@ -1,0 +1,1658 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project PokerTrainer.xcodeproj -scheme PokerTrainer -destination "platform=iOS Simulator,id=87D42A9F-583F-40B0-B116-E6EC4669A4D8" -derivedDataPath .build/ui-qa -resultBundlePath replica/tests/evidence/ios-20261017-014552/flows.xcresult -parallel-testing-enabled NO -collect-test-diagnostics never "-skip-testing:PokerTrainerUITests/CriticalFlows/testStorageFailureStillShowsPotOddsExplanation" CODE_SIGNING_ALLOWED=NO test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  PokerDomain: /Users/kr1ny77/Desktop/Poker @ local
+
+Writing result bundle at path:
+	/Users/kr1ny77/Desktop/Poker/replica/tests/evidence/ios-20261017-014552/flows.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (4 targets)
+    Target 'PokerTrainerUITests' in project 'PokerTrainer'
+        ➜ Explicit dependency on target 'PokerTrainer' in project 'PokerTrainer'
+    Target 'PokerTrainer' in project 'PokerTrainer'
+        ➜ Explicit dependency on target 'PokerCore-product' in project 'PokerDomain'
+    Target 'PokerCore-product' in project 'PokerDomain'
+        ➜ Explicit dependency on target 'PokerCore' in project 'PokerDomain'
+    Target 'PokerCore' in project 'PokerDomain' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 1c4315534cfc99b4c1f7d6165fbebd9c
+Build description path: /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/XCBuildData/1c4315534cfc99b4c1f7d6165fbebd9c.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache
+
+ProcessInfoPlistFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Info.plist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/empty-PokerTrainer.plist (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-infoPlistUtility /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/empty-PokerTrainer.plist -producttype com.apple.product-type.application -genpkginfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Info.plist
+
+CopySwiftLibs /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Frameworks --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PlugIns --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/SystemExtensions --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ProcessInfoPlistFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Info.plist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/empty-PokerTrainerUITests.plist (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-infoPlistUtility /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/empty-PokerTrainerUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/ProductTypeInfoPlistAdditions.plist -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Info.plist
+
+CopySwiftLibs /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PokerTrainerUITests --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Frameworks --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PlugIns --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/SystemExtensions --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+PruneExplicitPrecompiledModules /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules
+
+Resolve Package Graph
+
+2026-10-17 01:45:56.303 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-17 01:46:27.927199+0200 PokerTrainerUITests-Runner[92168:8000155] [Default] Running tests...
+objc[92168]: Class UIAccessibilityLoaderWebShared is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.TMrvJ5/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x104b68398) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.TMrvJ5/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x1081f0310). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-17 01:46:44.940.
+Test Suite 'PokerTrainerUITests.xctest' started at 2026-10-17 01:46:44.973.
+Test Suite 'CriticalFlows' started at 2026-10-17 01:46:44.974.
+Test Case '-[PokerTrainerUITests.CriticalFlows testAllInExactConfirmation]' started.
+    t =     0.02s Start Test at 2026-10-17 01:46:44.998
+    t =     0.60s Set Up
+    t =     0.68s     Open org.pokerpractice.native
+    t =     0.72s         Launch org.pokerpractice.native
+2026-10-17 01:46:46.561 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:46:46.561 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:46:46.732 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+    t =     5.59s             Setting up automation session
+Resolve Package Graph
+
+    t =     9.22s             Wait for org.pokerpractice.native to idle
+    t =    11.10s Terminate org.pokerpractice.native:92289
+2026-10-17 01:46:56.085 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:46:56.086 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:46:56.087 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+    t =    12.16s Open org.pokerpractice.native
+    t =    12.16s     Launch org.pokerpractice.native
+2026-10-17 01:46:57.136 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:46:57.137 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:46:57.141 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    12.37s         Setting up automation session
+    t =    15.75s         Wait for org.pokerpractice.native to idle
+    t =    17.38s Tap Button (First Match)
+    t =    17.38s     Wait for org.pokerpractice.native to idle
+    t =    17.38s     Find the Button (First Match)
+    t =    17.78s     Check for interrupting elements affecting "Открыть стол" Button
+    t =    17.84s     Synthesize event
+    t =    18.32s     Wait for org.pokerpractice.native to idle
+    t =    18.43s Waiting 5.0s for "Пас" Button to exist
+    t =    19.47s     Checking `Expect predicate `existsNoRetry == 1` for object "Пас" Button`
+    t =    19.47s         Checking existence of `"Пас" Button`
+    t =    19.52s Tap "Олл-ин" Button
+    t =    19.52s     Wait for org.pokerpractice.native to idle
+    t =    19.53s     Find the "Олл-ин" Button
+    t =    19.57s     Check for interrupting elements affecting "Олл-ин" Button
+    t =    19.61s     Synthesize event
+    t =    19.92s     Wait for org.pokerpractice.native to idle
+    t =    20.09s Waiting 3.0s for StaticText (First Match) to exist
+    t =    21.13s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    21.13s         Checking existence of `StaticText (First Match)`
+    t =    21.22s Find the StaticText (First Match)
+    t =    21.28s Find the Target Application 'org.pokerpractice.native'
+    t =    21.47s Added attachment named 'all-in-before-confirm'
+    t =    21.47s Checking existence of `StaticText (First Match)`
+    t =    21.56s Find the StaticText (First Match)
+    t =    21.62s Find the StaticText (First Match)
+    t =    21.69s Tap "Подтвердить" Button
+    t =    21.69s     Wait for org.pokerpractice.native to idle
+    t =    21.69s     Find the "Подтвердить" Button
+    t =    21.75s     Check for interrupting elements affecting "Подтвердить" Button
+    t =    21.81s     Synthesize event
+    t =    22.12s     Wait for org.pokerpractice.native to idle
+    t =    22.53s Waiting 4.0s for Any (First Match) to exist
+    t =    23.55s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    23.55s         Checking existence of `Any (First Match)`
+    t =    23.60s Checking existence of `StaticText (First Match)`
+    t =    23.68s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testAllInExactConfirmation]' passed (23.918 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testBetCustomAmountAndValidation]' started.
+    t =     0.00s Start Test at 2026-10-17 01:47:08.899
+    t =     0.03s Set Up
+Resolve Package Graph
+
+    t =     0.04s     Open org.pokerpractice.native
+    t =     0.05s         Launch org.pokerpractice.native
+    t =     0.05s             Terminate org.pokerpractice.native:92334
+2026-10-17 01:47:08.974 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:47:08.975 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:47:08.976 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-17 01:47:10.021 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:47:10.021 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:47:10.025 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.33s             Setting up automation session
+    t =     4.74s             Wait for org.pokerpractice.native to idle
+    t =     6.33s Terminate org.pokerpractice.native:92378
+2026-10-17 01:47:15.241 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:47:15.242 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:47:15.243 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     7.38s Open org.pokerpractice.native
+    t =     7.38s     Launch org.pokerpractice.native
+2026-10-17 01:47:16.282 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:47:16.282 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:47:16.286 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     7.59s         Setting up automation session
+    t =    11.66s         Wait for org.pokerpractice.native to idle
+    t =    13.45s Tap Button (First Match)
+    t =    13.45s     Wait for org.pokerpractice.native to idle
+    t =    13.49s     Find the Button (First Match)
+    t =    13.90s     Check for interrupting elements affecting "Открыть стол" Button
+    t =    13.95s     Synthesize event
+    t =    14.30s     Wait for org.pokerpractice.native to idle
+    t =    14.45s Waiting 5.0s for "Чек" Button to exist
+    t =    15.48s     Checking `Expect predicate `existsNoRetry == 1` for object "Чек" Button`
+    t =    15.48s         Checking existence of `"Чек" Button`
+    t =    15.54s Checking existence of `"Чек" Button`
+    t =    15.59s Checking existence of `Button (First Match)`
+    t =    15.66s Tap "Ставка…" Button
+    t =    15.66s     Wait for org.pokerpractice.native to idle
+    t =    15.67s     Find the "Ставка…" Button
+    t =    15.71s     Check for interrupting elements affecting "Ставка…" Button
+    t =    15.75s     Synthesize event
+    t =    16.05s     Wait for org.pokerpractice.native to idle
+    t =    16.26s Checking existence of `"Банк: 60" StaticText`
+    t =    16.34s Waiting 3.0s for StaticText (First Match) to exist
+    t =    17.43s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    17.43s         Checking existence of `StaticText (First Match)`
+    t =    17.50s Find the StaticText (First Match)
+    t =    17.56s Waiting 3.0s for "Сумма" TextField to exist
+    t =    18.58s     Checking `Expect predicate `existsNoRetry == 1` for object "Сумма" TextField`
+    t =    18.58s         Checking existence of `"Сумма" TextField`
+    t =    18.64s Tap "Сумма" TextField
+    t =    18.64s     Wait for org.pokerpractice.native to idle
+    t =    18.64s     Find the "Сумма" TextField
+    t =    18.68s     Check for interrupting elements affecting "Сумма" TextField
+    t =    18.72s     Synthesize event
+    t =    19.01s     Wait for org.pokerpractice.native to idle
+    t =    20.03s Find the "Сумма" TextField
+    t =    20.10s Type '' into "Сумма" TextField
+    t =    20.10s     Wait for org.pokerpractice.native to idle
+    t =    20.41s     Find the "Сумма" TextField
+    t =    20.47s     Check for interrupting elements affecting "Сумма" TextField
+    t =    20.51s     Synthesize event
+    t =    20.75s     Wait for org.pokerpractice.native to idle
+    t =    20.75s Find the "Подтвердить" Button
+    t =    20.80s Waiting 3.0s for "Сумма" TextField to exist
+    t =    21.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Сумма" TextField`
+    t =    21.82s         Checking existence of `"Сумма" TextField`
+    t =    21.88s Tap "Сумма" TextField
+    t =    21.88s     Wait for org.pokerpractice.native to idle
+    t =    21.88s     Find the "Сумма" TextField
+    t =    21.93s     Check for interrupting elements affecting "Сумма" TextField
+    t =    21.97s     Synthesize event
+    t =    22.25s     Wait for org.pokerpractice.native to idle
+    t =    22.26s Find the "Сумма" TextField
+    t =    22.43s Type '9' into "Сумма" TextField
+    t =    22.43s     Wait for org.pokerpractice.native to idle
+    t =    22.81s     Find the "Сумма" TextField
+    t =    22.88s     Check for interrupting elements affecting "Сумма" TextField
+    t =    22.93s     Synthesize event
+    t =    23.23s     Wait for org.pokerpractice.native to idle
+    t =    23.49s Find the "Подтвердить" Button
+    t =    23.53s Checking existence of `"Минимум: 10." StaticText`
+    t =    23.58s Waiting 3.0s for "Сумма" TextField to exist
+    t =    24.60s     Checking `Expect predicate `existsNoRetry == 1` for object "Сумма" TextField`
+    t =    24.60s         Checking existence of `"Сумма" TextField`
+    t =    24.65s Tap "Сумма" TextField
+    t =    24.65s     Wait for org.pokerpractice.native to idle
+    t =    24.65s     Find the "Сумма" TextField
+    t =    24.70s     Check for interrupting elements affecting "Сумма" TextField
+    t =    24.74s     Synthesize event
+    t =    25.03s     Wait for org.pokerpractice.native to idle
+    t =    25.06s Find the "Сумма" TextField
+    t =    25.12s Type '991' into "Сумма" TextField
+    t =    25.12s     Wait for org.pokerpractice.native to idle
+    t =    25.45s     Find the "Сумма" TextField
+    t =    25.53s     Check for interrupting elements affecting "Сумма" TextField
+    t =    25.58s     Synthesize event
+    t =    25.85s     Wait for org.pokerpractice.native to idle
+    t =    26.06s Find the "Подтвердить" Button
+    t =    26.12s Checking existence of `"Максимум: 990." StaticText`
+    t =    26.16s Waiting 3.0s for "Сумма" TextField to exist
+    t =    27.18s     Checking `Expect predicate `existsNoRetry == 1` for object "Сумма" TextField`
+    t =    27.19s         Checking existence of `"Сумма" TextField`
+    t =    27.25s Tap "Сумма" TextField
+    t =    27.25s     Wait for org.pokerpractice.native to idle
+    t =    27.25s     Find the "Сумма" TextField
+    t =    27.30s     Check for interrupting elements affecting "Сумма" TextField
+    t =    27.35s     Synthesize event
+    t =    27.64s     Wait for org.pokerpractice.native to idle
+    t =    27.64s Find the "Сумма" TextField
+    t =    27.69s Type '999999999999999...' into "Сумма" TextField
+    t =    27.69s     Wait for org.pokerpractice.native to idle
+    t =    28.07s     Find the "Сумма" TextField
+    t =    28.12s     Check for interrupting elements affecting "Сумма" TextField
+    t =    28.17s     Synthesize event
+    t =    28.82s     Wait for org.pokerpractice.native to idle
+    t =    28.82s Find the "Подтвердить" Button
+    t =    28.87s Waiting 3.0s for "Сумма" TextField to exist
+    t =    29.89s     Checking `Expect predicate `existsNoRetry == 1` for object "Сумма" TextField`
+    t =    29.89s         Checking existence of `"Сумма" TextField`
+    t =    29.94s Tap "Сумма" TextField
+    t =    29.94s     Wait for org.pokerpractice.native to idle
+    t =    29.94s     Find the "Сумма" TextField
+    t =    29.99s     Check for interrupting elements affecting "Сумма" TextField
+    t =    30.04s     Synthesize event
+    t =    30.33s     Wait for org.pokerpractice.native to idle
+    t =    30.33s Find the "Сумма" TextField
+    t =    30.40s Type '...' into "Сумма" TextField
+    t =    30.40s     Wait for org.pokerpractice.native to idle
+    t =    30.78s     Find the "Сумма" TextField
+    t =    30.84s     Check for interrupting elements affecting "Сумма" TextField
+    t =    30.89s     Synthesize event
+    t =    31.52s     Wait for org.pokerpractice.native to idle
+    t =    31.52s Find the "Подтвердить" Button
+    t =    31.57s Find the "Сумма" TextField
+    t =    31.61s Find the Target Application 'org.pokerpractice.native'
+    t =    31.72s Added attachment named 'bet-37-before-confirm'
+    t =    31.72s Tap "Подтвердить" Button
+    t =    31.72s     Wait for org.pokerpractice.native to idle
+    t =    31.73s     Find the "Подтвердить" Button
+    t =    31.77s     Check for interrupting elements affecting "Подтвердить" Button
+    t =    31.81s     Synthesize event
+    t =    32.10s     Wait for org.pokerpractice.native to idle
+    t =    32.53s Waiting 4.0s for Any (First Match) to exist
+    t =    33.56s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    33.56s         Checking existence of `Any (First Match)`
+    t =    33.62s Checking existence of `StaticText (First Match)`
+    t =    33.68s Find the Target Application 'org.pokerpractice.native'
+    t =    33.78s Added attachment named 'bet-37-applied'
+    t =    33.78s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testBetCustomAmountAndValidation]' passed (34.053 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testFullHandAgainstBots]' started.
+    t =     0.00s Start Test at 2026-10-17 01:47:42.953
+    t =     0.03s Set Up
+    t =     0.03s     Open org.pokerpractice.native
+    t =     0.03s         Launch org.pokerpractice.native
+    t =     0.03s             Terminate org.pokerpractice.native:92391
+2026-10-17 01:47:43.007 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:47:43.008 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:47:43.009 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-17 01:47:44.027 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:47:44.027 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:47:44.034 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.28s             Setting up automation session
+    t =     3.82s             Wait for org.pokerpractice.native to idle
+    t =     5.33s Tap Button (First Match)
+    t =     5.33s     Wait for org.pokerpractice.native to idle
+    t =     5.33s     Find the Button (First Match)
+    t =     5.44s     Check for interrupting elements affecting "Открыть стол" Button
+    t =     5.46s     Synthesize event
+    t =     5.77s     Wait for org.pokerpractice.native to idle
+    t =     6.18s Checking existence of `"Следующая раздача" Button`
+    t =     6.22s Checking existence of `"Чек" Button`
+    t =     6.25s Checking existence of `Button (First Match)`
+    t =     6.60s Checking existence of `"Следующая раздача" Button`
+    t =     6.65s Checking existence of `"Чек" Button`
+    t =     6.69s Checking existence of `Button (First Match)`
+    t =     7.04s Checking existence of `"Следующая раздача" Button`
+    t =     7.08s Checking existence of `"Чек" Button`
+    t =     7.10s Checking existence of `Button (First Match)`
+    t =     7.46s Checking existence of `"Следующая раздача" Button`
+    t =     7.53s Checking existence of `"Чек" Button`
+    t =     7.56s Checking existence of `Button (First Match)`
+    t =     7.59s Find the Button (First Match)
+    t =     7.62s Find the "Колл 10" Button
+    t =     7.64s Tap "Колл 10" Button
+    t =     7.64s     Wait for org.pokerpractice.native to idle
+    t =     7.65s     Find the "Колл 10" Button
+    t =     7.67s     Check for interrupting elements affecting "Колл 10" Button
+    t =     7.70s     Synthesize event
+    t =     7.98s     Wait for org.pokerpractice.native to idle
+    t =     7.99s Checking existence of `"Следующая раздача" Button`
+    t =     8.02s Checking existence of `"Чек" Button`
+    t =     8.05s Checking existence of `Button (First Match)`
+    t =     8.40s Checking existence of `"Следующая раздача" Button`
+    t =     8.45s Checking existence of `"Чек" Button`
+    t =     8.48s Checking existence of `Button (First Match)`
+    t =     8.83s Checking existence of `"Следующая раздача" Button`
+    t =     8.88s Checking existence of `"Чек" Button`
+    t =     8.92s Checking existence of `Button (First Match)`
+    t =     9.26s Checking existence of `"Следующая раздача" Button`
+    t =     9.32s Checking existence of `"Чек" Button`
+    t =     9.35s Checking existence of `Button (First Match)`
+    t =     9.69s Checking existence of `"Следующая раздача" Button`
+    t =     9.73s Checking existence of `"Чек" Button`
+    t =     9.76s Checking existence of `Button (First Match)`
+    t =    10.11s Checking existence of `"Следующая раздача" Button`
+    t =    10.16s Checking existence of `"Чек" Button`
+    t =    10.19s Checking existence of `Button (First Match)`
+    t =    10.54s Checking existence of `"Следующая раздача" Button`
+    t =    10.58s Checking existence of `"Чек" Button`
+    t =    10.61s Checking existence of `Button (First Match)`
+    t =    10.96s Checking existence of `"Следующая раздача" Button`
+    t =    11.01s Checking existence of `"Чек" Button`
+    t =    11.04s Checking existence of `Button (First Match)`
+    t =    11.39s Checking existence of `"Следующая раздача" Button`
+    t =    11.43s Checking existence of `"Чек" Button`
+    t =    11.46s Checking existence of `Button (First Match)`
+    t =    11.80s Checking existence of `"Следующая раздача" Button`
+    t =    11.86s Checking existence of `"Чек" Button`
+    t =    11.89s Checking existence of `Button (First Match)`
+    t =    12.24s Checking existence of `"Следующая раздача" Button`
+    t =    12.30s Checking existence of `"Чек" Button`
+    t =    12.33s Find the "Чек" Button
+    t =    12.36s Find the "Чек" Button
+    t =    12.39s Tap "Чек" Button
+    t =    12.39s     Wait for org.pokerpractice.native to idle
+    t =    12.39s     Find the "Чек" Button
+    t =    12.42s     Check for interrupting elements affecting "Чек" Button
+    t =    12.45s     Synthesize event
+    t =    12.73s     Wait for org.pokerpractice.native to idle
+    t =    12.73s Checking existence of `"Следующая раздача" Button`
+    t =    12.76s Checking existence of `"Чек" Button`
+    t =    12.79s Checking existence of `Button (First Match)`
+    t =    13.14s Checking existence of `"Следующая раздача" Button`
+    t =    13.18s Checking existence of `"Чек" Button`
+    t =    13.20s Checking existence of `Button (First Match)`
+    t =    13.55s Checking existence of `"Следующая раздача" Button`
+    t =    13.61s Checking existence of `"Чек" Button`
+    t =    13.64s Checking existence of `Button (First Match)`
+    t =    13.98s Checking existence of `"Следующая раздача" Button`
+    t =    14.04s Checking existence of `"Чек" Button`
+    t =    14.06s Checking existence of `Button (First Match)`
+    t =    14.41s Checking existence of `"Следующая раздача" Button`
+    t =    14.47s Checking existence of `"Чек" Button`
+    t =    14.50s Checking existence of `Button (First Match)`
+    t =    14.85s Checking existence of `"Следующая раздача" Button`
+    t =    14.91s Checking existence of `"Чек" Button`
+    t =    14.94s Checking existence of `Button (First Match)`
+    t =    15.28s Checking existence of `"Следующая раздача" Button`
+    t =    15.34s Checking existence of `"Чек" Button`
+    t =    15.37s Checking existence of `Button (First Match)`
+    t =    15.72s Checking existence of `"Следующая раздача" Button`
+    t =    15.78s Checking existence of `"Чек" Button`
+    t =    15.81s Find the "Чек" Button
+    t =    15.84s Find the "Чек" Button
+    t =    15.87s Tap "Чек" Button
+    t =    15.87s     Wait for org.pokerpractice.native to idle
+    t =    15.87s     Find the "Чек" Button
+    t =    15.90s     Check for interrupting elements affecting "Чек" Button
+    t =    15.93s     Synthesize event
+    t =    16.22s     Wait for org.pokerpractice.native to idle
+    t =    16.23s Checking existence of `"Следующая раздача" Button`
+    t =    16.28s Checking existence of `"Чек" Button`
+    t =    16.31s Checking existence of `Button (First Match)`
+    t =    16.65s Checking existence of `"Следующая раздача" Button`
+    t =    16.69s Checking existence of `"Чек" Button`
+    t =    16.72s Checking existence of `Button (First Match)`
+    t =    17.07s Checking existence of `"Следующая раздача" Button`
+    t =    17.12s Checking existence of `"Чек" Button`
+    t =    17.16s Checking existence of `Button (First Match)`
+    t =    17.51s Checking existence of `"Следующая раздача" Button`
+    t =    17.56s Checking existence of `"Чек" Button`
+    t =    17.59s Checking existence of `Button (First Match)`
+    t =    17.95s Checking existence of `"Следующая раздача" Button`
+    t =    18.00s Checking existence of `"Чек" Button`
+    t =    18.03s Checking existence of `Button (First Match)`
+    t =    18.38s Checking existence of `"Следующая раздача" Button`
+    t =    18.43s Checking existence of `"Чек" Button`
+    t =    18.46s Checking existence of `Button (First Match)`
+    t =    18.80s Checking existence of `"Следующая раздача" Button`
+    t =    18.86s Checking existence of `"Чек" Button`
+    t =    18.89s Checking existence of `Button (First Match)`
+    t =    19.24s Checking existence of `"Следующая раздача" Button`
+    t =    19.30s Checking existence of `"Чек" Button`
+    t =    19.33s Find the "Чек" Button
+    t =    19.36s Find the "Чек" Button
+    t =    19.39s Tap "Чек" Button
+    t =    19.39s     Wait for org.pokerpractice.native to idle
+    t =    19.39s     Find the "Чек" Button
+    t =    19.42s     Check for interrupting elements affecting "Чек" Button
+    t =    19.45s     Synthesize event
+    t =    19.74s     Wait for org.pokerpractice.native to idle
+    t =    19.75s Checking existence of `"Следующая раздача" Button`
+    t =    19.81s Checking existence of `"Следующая раздача" Button`
+    t =    19.84s Find the "Следующая раздача" Button
+    t =    19.88s Swipe up Target Application 'org.pokerpractice.native'
+    t =    19.88s     Wait for org.pokerpractice.native to idle
+    t =    19.88s     Find the Target Application 'org.pokerpractice.native'
+    t =    19.91s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    19.94s     Synthesize event
+    t =    20.36s     Wait for org.pokerpractice.native to idle
+    t =    21.08s Checking existence of `"Следующая раздача" Button`
+    t =    21.14s Find the "Следующая раздача" Button
+    t =    21.18s Find the Target Application 'org.pokerpractice.native'
+    t =    21.29s Added attachment named 'completed-hand'
+    t =    21.29s Tap "Следующая раздача" Button
+    t =    21.29s     Wait for org.pokerpractice.native to idle
+    t =    21.29s     Find the "Следующая раздача" Button
+    t =    21.33s     Check for interrupting elements affecting "Следующая раздача" Button
+    t =    21.36s     Synthesize event
+    t =    21.65s     Wait for org.pokerpractice.native to idle
+    t =    21.65s Waiting 5.0s for "Раздача 2" StaticText to exist
+    t =    22.66s     Checking `Expect predicate `existsNoRetry == 1` for object "Раздача 2" StaticText`
+    t =    22.66s         Checking existence of `"Раздача 2" StaticText`
+    t =    22.70s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testFullHandAgainstBots]' passed (22.927 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testLargeTextLessonRemainsReachable]' started.
+    t =     0.00s Start Test at 2026-10-17 01:48:05.880
+    t =     0.02s Set Up
+    t =     0.02s     Open org.pokerpractice.native
+    t =     0.02s         Launch org.pokerpractice.native
+    t =     0.02s             Terminate org.pokerpractice.native:92442
+2026-10-17 01:48:05.908 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:05.909 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:05.909 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:06.938 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:48:06.938 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:48:06.944 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.27s             Setting up automation session
+Resolve Package Graph
+
+    t =     3.77s             Wait for org.pokerpractice.native to idle
+    t =     5.25s Terminate org.pokerpractice.native:92477
+2026-10-17 01:48:11.134 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:11.135 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:11.136 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.29s Open org.pokerpractice.native
+    t =     6.29s     Launch org.pokerpractice.native
+2026-10-17 01:48:12.177 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:48:12.177 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:48:12.183 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.51s         Setting up automation session
+    t =     8.99s         Wait for org.pokerpractice.native to idle
+    t =    10.61s Waiting 10.0s for "Тренировка" Button to exist
+    t =    11.63s     Checking `Expect predicate `existsNoRetry == 1` for object "Тренировка" Button`
+    t =    11.63s         Checking existence of `"Тренировка" Button`
+    t =    11.74s Tap "Тренировка" Button
+    t =    11.74s     Wait for org.pokerpractice.native to idle
+    t =    11.75s     Find the "Тренировка" Button
+    t =    11.77s     Check for interrupting elements affecting "Тренировка" Button
+    t =    11.78s     Synthesize event
+    t =    12.10s     Wait for org.pokerpractice.native to idle
+Resolve Package Graph
+
+    t =    13.86s Tap "Шансы банка" StaticText
+    t =    13.86s     Wait for org.pokerpractice.native to idle
+    t =    13.86s     Find the "Шансы банка" StaticText
+    t =    13.91s     Check for interrupting elements affecting "Шансы банка" StaticText
+    t =    13.93s     Synthesize event
+    t =    14.22s     Wait for org.pokerpractice.native to idle
+    t =    14.60s Checking existence of `"Процент" TextField`
+    t =    14.64s Find the "Процент" TextField
+    t =    14.66s Find the "Процент" TextField
+    t =    14.68s Find the Target Application 'org.pokerpractice.native'
+    t =    14.77s Added attachment named 'large-text-training'
+    t =    14.77s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testLargeTextLessonRemainsReachable]' passed (15.000 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testOfflineAllSections]' started.
+    t =     0.00s Start Test at 2026-10-17 01:48:20.881
+Resolve Package Graph
+
+    t =     0.03s Set Up
+    t =     0.03s     Open org.pokerpractice.native
+    t =     0.03s         Launch org.pokerpractice.native
+    t =     0.03s             Terminate org.pokerpractice.native:92483
+2026-10-17 01:48:20.937 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:20.938 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:20.938 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-17 01:48:21.963 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:48:21.963 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:48:21.967 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.29s             Setting up automation session
+    t =     3.87s             Wait for org.pokerpractice.native to idle
+    t =     5.37s Terminate org.pokerpractice.native:92516
+2026-10-17 01:48:26.258 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:26.258 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:26.259 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.41s Open org.pokerpractice.native
+    t =     6.41s     Launch org.pokerpractice.native
+2026-10-17 01:48:27.293 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:48:27.293 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:48:27.299 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.62s         Setting up automation session
+    t =     9.14s         Wait for org.pokerpractice.native to idle
+    t =    10.75s Find the Target Application 'org.pokerpractice.native'
+    t =    11.00s Added attachment named 'offline-launch'
+    t =    11.00s Tap Button (First Match)
+    t =    11.00s     Wait for org.pokerpractice.native to idle
+    t =    11.00s     Find the Button (First Match)
+    t =    11.04s     Check for interrupting elements affecting "Открыть стол" Button
+    t =    11.06s     Synthesize event
+    t =    11.36s     Wait for org.pokerpractice.native to idle
+    t =    11.79s Checking existence of `"Следующая раздача" Button`
+    t =    11.85s Checking existence of `"Чек" Button`
+    t =    11.87s Checking existence of `Button (First Match)`
+    t =    12.22s Checking existence of `"Следующая раздача" Button`
+    t =    12.27s Checking existence of `"Чек" Button`
+    t =    12.29s Checking existence of `Button (First Match)`
+    t =    12.64s Checking existence of `"Следующая раздача" Button`
+    t =    12.69s Checking existence of `"Чек" Button`
+    t =    12.72s Checking existence of `Button (First Match)`
+    t =    13.07s Checking existence of `"Следующая раздача" Button`
+    t =    13.13s Checking existence of `"Чек" Button`
+    t =    13.16s Checking existence of `Button (First Match)`
+    t =    13.19s Find the Button (First Match)
+    t =    13.22s Find the "Колл 10" Button
+    t =    13.24s Tap "Колл 10" Button
+    t =    13.24s     Wait for org.pokerpractice.native to idle
+    t =    13.25s     Find the "Колл 10" Button
+    t =    13.27s     Check for interrupting elements affecting "Колл 10" Button
+    t =    13.29s     Synthesize event
+    t =    13.58s     Wait for org.pokerpractice.native to idle
+    t =    13.59s Checking existence of `"Следующая раздача" Button`
+    t =    13.64s Checking existence of `"Чек" Button`
+    t =    13.67s Checking existence of `Button (First Match)`
+    t =    14.01s Checking existence of `"Следующая раздача" Button`
+    t =    14.04s Checking existence of `"Чек" Button`
+    t =    14.07s Checking existence of `Button (First Match)`
+    t =    14.42s Checking existence of `"Следующая раздача" Button`
+    t =    14.47s Checking existence of `"Чек" Button`
+    t =    14.50s Checking existence of `Button (First Match)`
+    t =    14.85s Checking existence of `"Следующая раздача" Button`
+    t =    14.91s Checking existence of `"Чек" Button`
+    t =    14.94s Checking existence of `Button (First Match)`
+    t =    15.28s Checking existence of `"Следующая раздача" Button`
+    t =    15.34s Checking existence of `"Чек" Button`
+    t =    15.37s Checking existence of `Button (First Match)`
+    t =    15.72s Checking existence of `"Следующая раздача" Button`
+    t =    15.74s Checking existence of `"Чек" Button`
+    t =    15.77s Checking existence of `Button (First Match)`
+    t =    16.11s Checking existence of `"Следующая раздача" Button`
+    t =    16.16s Checking existence of `"Чек" Button`
+    t =    16.18s Checking existence of `Button (First Match)`
+    t =    16.53s Checking existence of `"Следующая раздача" Button`
+    t =    16.58s Checking existence of `"Чек" Button`
+    t =    16.61s Checking existence of `Button (First Match)`
+    t =    16.96s Checking existence of `"Следующая раздача" Button`
+    t =    17.01s Checking existence of `"Чек" Button`
+    t =    17.04s Checking existence of `Button (First Match)`
+    t =    17.39s Checking existence of `"Следующая раздача" Button`
+    t =    17.44s Checking existence of `"Чек" Button`
+    t =    17.48s Find the "Чек" Button
+    t =    17.51s Find the "Чек" Button
+    t =    17.54s Tap "Чек" Button
+    t =    17.54s     Wait for org.pokerpractice.native to idle
+    t =    17.54s     Find the "Чек" Button
+    t =    17.57s     Check for interrupting elements affecting "Чек" Button
+    t =    17.59s     Synthesize event
+    t =    17.89s     Wait for org.pokerpractice.native to idle
+    t =    17.89s Checking existence of `"Следующая раздача" Button`
+    t =    17.94s Checking existence of `"Чек" Button`
+    t =    17.97s Checking existence of `Button (First Match)`
+    t =    18.32s Checking existence of `"Следующая раздача" Button`
+    t =    18.36s Checking existence of `"Чек" Button`
+    t =    18.39s Checking existence of `Button (First Match)`
+    t =    18.73s Checking existence of `"Следующая раздача" Button`
+    t =    18.79s Checking existence of `"Чек" Button`
+    t =    18.82s Checking existence of `Button (First Match)`
+    t =    19.16s Checking existence of `"Следующая раздача" Button`
+    t =    19.22s Checking existence of `"Чек" Button`
+    t =    19.25s Checking existence of `Button (First Match)`
+    t =    19.60s Checking existence of `"Следующая раздача" Button`
+    t =    19.66s Checking existence of `"Чек" Button`
+    t =    19.68s Checking existence of `Button (First Match)`
+    t =    20.03s Checking existence of `"Следующая раздача" Button`
+    t =    20.09s Checking existence of `"Чек" Button`
+    t =    20.12s Checking existence of `Button (First Match)`
+    t =    20.47s Checking existence of `"Следующая раздача" Button`
+    t =    20.53s Checking existence of `"Чек" Button`
+    t =    20.56s Checking existence of `Button (First Match)`
+    t =    20.90s Checking existence of `"Следующая раздача" Button`
+    t =    20.96s Checking existence of `"Чек" Button`
+    t =    20.99s Find the "Чек" Button
+    t =    21.02s Find the "Чек" Button
+    t =    21.05s Tap "Чек" Button
+    t =    21.05s     Wait for org.pokerpractice.native to idle
+    t =    21.06s     Find the "Чек" Button
+    t =    21.08s     Check for interrupting elements affecting "Чек" Button
+    t =    21.11s     Synthesize event
+    t =    21.40s     Wait for org.pokerpractice.native to idle
+    t =    21.41s Checking existence of `"Следующая раздача" Button`
+    t =    21.46s Checking existence of `"Чек" Button`
+    t =    21.49s Checking existence of `Button (First Match)`
+    t =    21.84s Checking existence of `"Следующая раздача" Button`
+    t =    21.88s Checking existence of `"Чек" Button`
+    t =    21.91s Checking existence of `Button (First Match)`
+    t =    22.26s Checking existence of `"Следующая раздача" Button`
+    t =    22.32s Checking existence of `"Чек" Button`
+    t =    22.35s Checking existence of `Button (First Match)`
+    t =    22.70s Checking existence of `"Следующая раздача" Button`
+    t =    22.75s Checking existence of `"Чек" Button`
+    t =    22.78s Checking existence of `Button (First Match)`
+    t =    23.13s Checking existence of `"Следующая раздача" Button`
+    t =    23.19s Checking existence of `"Чек" Button`
+    t =    23.22s Checking existence of `Button (First Match)`
+    t =    23.57s Checking existence of `"Следующая раздача" Button`
+    t =    23.61s Checking existence of `"Чек" Button`
+    t =    23.64s Checking existence of `Button (First Match)`
+    t =    23.99s Checking existence of `"Следующая раздача" Button`
+    t =    24.04s Checking existence of `"Чек" Button`
+    t =    24.07s Checking existence of `Button (First Match)`
+    t =    24.42s Checking existence of `"Следующая раздача" Button`
+    t =    24.48s Checking existence of `"Чек" Button`
+    t =    24.51s Find the "Чек" Button
+    t =    24.54s Find the "Чек" Button
+    t =    24.57s Tap "Чек" Button
+    t =    24.57s     Wait for org.pokerpractice.native to idle
+    t =    24.57s     Find the "Чек" Button
+    t =    24.60s     Check for interrupting elements affecting "Чек" Button
+    t =    24.63s     Synthesize event
+    t =    24.92s     Wait for org.pokerpractice.native to idle
+    t =    24.93s Checking existence of `"Следующая раздача" Button`
+    t =    24.98s Checking existence of `"Следующая раздача" Button`
+    t =    25.02s Find the "Следующая раздача" Button
+    t =    25.06s Swipe up Target Application 'org.pokerpractice.native'
+    t =    25.06s     Wait for org.pokerpractice.native to idle
+    t =    25.06s     Find the Target Application 'org.pokerpractice.native'
+    t =    25.08s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    25.11s     Synthesize event
+    t =    25.53s     Wait for org.pokerpractice.native to idle
+    t =    26.27s Checking existence of `"Следующая раздача" Button`
+    t =    26.33s Find the "Следующая раздача" Button
+    t =    26.37s Find the Target Application 'org.pokerpractice.native'
+    t =    26.47s Added attachment named 'completed-hand'
+    t =    26.47s Tap "Следующая раздача" Button
+    t =    26.47s     Wait for org.pokerpractice.native to idle
+    t =    26.47s     Find the "Следующая раздача" Button
+    t =    26.51s     Check for interrupting elements affecting "Следующая раздача" Button
+    t =    26.54s     Synthesize event
+    t =    26.83s     Wait for org.pokerpractice.native to idle
+    t =    26.84s Waiting 5.0s for "Раздача 2" StaticText to exist
+    t =    27.85s     Checking `Expect predicate `existsNoRetry == 1` for object "Раздача 2" StaticText`
+    t =    27.86s         Checking existence of `"Раздача 2" StaticText`
+    t =    27.91s Terminate org.pokerpractice.native:92540
+2026-10-17 01:48:48.801 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:48.802 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:48:48.803 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    28.95s Open org.pokerpractice.native
+    t =    28.95s     Launch org.pokerpractice.native
+2026-10-17 01:48:49.837 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:48:49.837 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:48:49.846 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    29.16s         Setting up automation session
+    t =    31.71s         Wait for org.pokerpractice.native to idle
+    t =    33.25s Waiting 10.0s for "Тренировка" Button to exist
+    t =    34.27s     Checking `Expect predicate `existsNoRetry == 1` for object "Тренировка" Button`
+    t =    34.27s         Checking existence of `"Тренировка" Button`
+    t =    34.37s Tap "Тренировка" Button
+    t =    34.37s     Wait for org.pokerpractice.native to idle
+    t =    34.37s     Find the "Тренировка" Button
+    t =    34.39s     Check for interrupting elements affecting "Тренировка" Button
+    t =    34.41s     Synthesize event
+    t =    34.72s     Wait for org.pokerpractice.native to idle
+    t =    36.45s Tap "Шансы банка" StaticText
+    t =    36.45s     Wait for org.pokerpractice.native to idle
+    t =    36.46s     Find the "Шансы банка" StaticText
+    t =    36.52s     Check for interrupting elements affecting "Шансы банка" StaticText
+    t =    36.53s     Synthesize event
+    t =    36.83s     Wait for org.pokerpractice.native to idle
+    t =    37.19s Waiting 5.0s for "Процент" TextField to exist
+    t =    38.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Процент" TextField`
+    t =    38.21s         Checking existence of `"Процент" TextField`
+    t =    38.26s Find the "Проверить" Button
+    t =    38.28s Tap "Процент" TextField
+    t =    38.28s     Wait for org.pokerpractice.native to idle
+    t =    38.28s     Find the "Процент" TextField
+    t =    38.30s     Check for interrupting elements affecting "Процент" TextField
+    t =    38.31s     Synthesize event
+    t =    38.60s     Wait for org.pokerpractice.native to idle
+    t =    38.74s Type '101' into "Процент" TextField
+    t =    38.74s     Wait for org.pokerpractice.native to idle
+    t =    39.17s     Find the "Процент" TextField
+    t =    39.22s     Check for interrupting elements affecting "Процент" TextField
+    t =    39.24s     Synthesize event
+    t =    39.50s     Wait for org.pokerpractice.native to idle
+    t =    39.50s Find the "Проверить" Button
+    t =    39.53s Type '25' into "Процент" TextField
+    t =    39.53s     Wait for org.pokerpractice.native to idle
+    t =    39.54s     Find the "Процент" TextField
+    t =    39.56s     Check for interrupting elements affecting "Процент" TextField
+    t =    39.58s     Synthesize event
+    t =    39.87s     Wait for org.pokerpractice.native to idle
+    t =    39.87s Tap "Проверить" Button
+    t =    39.87s     Wait for org.pokerpractice.native to idle
+    t =    39.88s     Find the "Проверить" Button
+    t =    39.91s     Check for interrupting elements affecting "Проверить" Button
+    t =    39.93s     Synthesize event
+    t =    40.22s     Wait for org.pokerpractice.native to idle
+    t =    40.49s Checking existence of `StaticText (First Match)`
+    t =    40.53s Find the StaticText (First Match)
+    t =    40.57s Checking existence of `"Порог эквити = цена колла / итоговый банк: 50 / 200 × 100 = 25.0 %." StaticText`
+    t =    40.60s Checking existence of `"Результат сохранён на устройстве." StaticText`
+    t =    40.62s Find the "Результат сохранён на устройстве." StaticText
+    t =    40.64s Checking existence of `"Результат сохранён на устройстве." StaticText`
+    t =    40.66s Find the Target Application 'org.pokerpractice.native'
+    t =    40.74s Added attachment named 'pot-odds-explanation'
+    t =    40.74s Waiting 10.0s for "Прогресс" Button to exist
+    t =    41.75s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    41.76s         Checking existence of `"Прогресс" Button`
+    t =    41.80s Tap "Прогресс" Button
+    t =    41.80s     Wait for org.pokerpractice.native to idle
+    t =    41.80s     Find the "Прогресс" Button
+    t =    41.82s     Check for interrupting elements affecting "chart.bar.fill" Button
+    t =    41.84s     Synthesize event
+    t =    42.13s     Wait for org.pokerpractice.native to idle
+    t =    43.85s Waiting 5.0s for "История" StaticText to exist
+    t =    44.88s     Checking `Expect predicate `existsNoRetry == 1` for object "История" StaticText`
+    t =    44.88s         Checking existence of `"История" StaticText`
+    t =    44.94s Find the StaticText (First Match)
+    t =    44.97s Terminate org.pokerpractice.native:92552
+2026-10-17 01:49:05.855 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:49:05.855 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:49:05.856 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    46.00s Open org.pokerpractice.native
+    t =    46.00s     Launch org.pokerpractice.native
+2026-10-17 01:49:06.886 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:49:06.886 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:49:06.894 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    46.21s         Setting up automation session
+    t =    48.72s         Wait for org.pokerpractice.native to idle
+    t =    50.21s Waiting 10.0s for "Прогресс" Button to exist
+    t =    51.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    51.22s         Checking existence of `"Прогресс" Button`
+    t =    51.34s Tap "Прогресс" Button
+    t =    51.34s     Wait for org.pokerpractice.native to idle
+    t =    51.34s     Find the "Прогресс" Button
+    t =    51.36s     Check for interrupting elements affecting "Прогресс" Button
+    t =    51.37s     Synthesize event
+    t =    51.68s     Wait for org.pokerpractice.native to idle
+    t =    53.42s Waiting 5.0s for "Верно 1 из 1 ответов по ключу" StaticText to exist
+    t =    54.44s     Checking `Expect predicate `existsNoRetry == 1` for object "Верно 1 из 1 ответов по ключу" StaticText`
+    t =    54.44s         Checking existence of `"Верно 1 из 1 ответов по ключу" StaticText`
+    t =    54.51s Find the Target Application 'org.pokerpractice.native'
+    t =    54.60s Added attachment named 'restored-progress'
+    t =    54.60s Terminate org.pokerpractice.native:92580
+2026-10-17 01:49:15.486 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:49:15.486 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:49:15.487 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    55.62s Open org.pokerpractice.native
+    t =    55.62s     Launch org.pokerpractice.native
+2026-10-17 01:49:16.508 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:49:16.508 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:49:16.514 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    55.83s         Setting up automation session
+    t =    58.33s         Wait for org.pokerpractice.native to idle
+    t =    59.97s Waiting 10.0s for "Тренировка" Button to exist
+    t =    60.99s     Checking `Expect predicate `existsNoRetry == 1` for object "Тренировка" Button`
+    t =    60.99s         Checking existence of `"Тренировка" Button`
+    t =    61.10s Tap "Тренировка" Button
+    t =    61.10s     Wait for org.pokerpractice.native to idle
+    t =    61.10s     Find the "Тренировка" Button
+    t =    61.12s     Check for interrupting elements affecting "Тренировка" Button
+    t =    61.13s     Synthesize event
+    t =    61.44s     Wait for org.pokerpractice.native to idle
+    t =    63.17s Tap "Ауты флеш-дро" StaticText
+    t =    63.17s     Wait for org.pokerpractice.native to idle
+    t =    63.18s     Find the "Ауты флеш-дро" StaticText
+    t =    63.21s     Check for interrupting elements affecting "Ауты флеш-дро" StaticText
+    t =    63.23s     Synthesize event
+    t =    63.52s     Wait for org.pokerpractice.native to idle
+    t =    63.89s Checking existence of `"9,0 %" Button`
+    t =    63.93s Find the "9,0 %" Button
+    t =    63.97s Swipe up Target Application 'org.pokerpractice.native'
+    t =    63.97s     Wait for org.pokerpractice.native to idle
+    t =    63.97s     Find the Target Application 'org.pokerpractice.native'
+    t =    63.98s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    64.01s     Synthesize event
+    t =    64.43s     Wait for org.pokerpractice.native to idle
+    t =    65.35s Checking existence of `"9,0 %" Button`
+    t =    65.39s Find the "9,0 %" Button
+    t =    65.43s Checking existence of `"9,0 %" Button`
+    t =    65.45s Tap "9,0 %" Button
+    t =    65.45s     Wait for org.pokerpractice.native to idle
+    t =    65.45s     Find the "9,0 %" Button
+    t =    65.47s     Check for interrupting elements affecting "9,0 %" Button
+    t =    65.49s     Synthesize event
+    t =    65.78s     Wait for org.pokerpractice.native to idle
+    t =    65.79s Checking existence of `"Разберём расчёт" StaticText`
+    t =    65.83s Find the "Разберём расчёт" StaticText
+    t =    65.86s Checking existence of `"Разберём расчёт" StaticText`
+    t =    65.89s Checking existence of `"К вероятности к риверу" Button`
+    t =    65.91s Find the "К вероятности к риверу" Button
+    t =    65.94s Swipe up Target Application 'org.pokerpractice.native'
+    t =    65.94s     Wait for org.pokerpractice.native to idle
+    t =    65.94s     Find the Target Application 'org.pokerpractice.native'
+    t =    65.96s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    65.98s     Synthesize event
+    t =    66.40s     Wait for org.pokerpractice.native to idle
+    t =    67.15s Checking existence of `"К вероятности к риверу" Button`
+    t =    67.20s Find the "К вероятности к риверу" Button
+    t =    67.23s Tap "К вероятности к риверу" Button
+    t =    67.23s     Wait for org.pokerpractice.native to idle
+    t =    67.23s     Find the "К вероятности к риверу" Button
+    t =    67.26s     Check for interrupting elements affecting "К вероятности к риверу" Button
+    t =    67.28s     Synthesize event
+    t =    67.57s     Wait for org.pokerpractice.native to idle
+    t =    67.58s Checking existence of `"35,0 %" Button`
+    t =    67.62s Find the "35,0 %" Button
+    t =    67.66s Tap "35,0 %" Button
+    t =    67.66s     Wait for org.pokerpractice.native to idle
+    t =    67.66s     Find the "35,0 %" Button
+    t =    67.68s     Check for interrupting elements affecting "35,0 %" Button
+    t =    67.70s     Synthesize event
+    t =    67.99s     Wait for org.pokerpractice.native to idle
+    t =    68.00s Checking existence of `"Завершить урок" Button`
+    t =    68.04s Find the "Завершить урок" Button
+    t =    68.08s Swipe up Target Application 'org.pokerpractice.native'
+    t =    68.08s     Wait for org.pokerpractice.native to idle
+    t =    68.08s     Find the Target Application 'org.pokerpractice.native'
+    t =    68.09s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    68.12s     Synthesize event
+    t =    68.53s     Wait for org.pokerpractice.native to idle
+    t =    69.24s Checking existence of `"Завершить урок" Button`
+    t =    69.28s Find the "Завершить урок" Button
+    t =    69.32s Tap "Завершить урок" Button
+    t =    69.32s     Wait for org.pokerpractice.native to idle
+    t =    69.41s     Find the "Завершить урок" Button
+    t =    69.44s     Check for interrupting elements affecting "Завершить урок" Button
+    t =    69.47s     Synthesize event
+    t =    69.76s     Wait for org.pokerpractice.native to idle
+    t =    69.77s Waiting 5.0s for "Урок завершён" StaticText to exist
+    t =    70.78s     Checking `Expect predicate `existsNoRetry == 1` for object "Урок завершён" StaticText`
+    t =    70.78s         Checking existence of `"Урок завершён" StaticText`
+    t =    70.82s Find the Target Application 'org.pokerpractice.native'
+    t =    70.92s Added attachment named 'outs-completed'
+    t =    70.92s Waiting 10.0s for "Прогресс" Button to exist
+    t =    71.94s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    71.95s         Checking existence of `"Прогресс" Button`
+    t =    71.98s Tap "Прогресс" Button
+    t =    71.98s     Wait for org.pokerpractice.native to idle
+    t =    71.99s     Find the "Прогресс" Button
+    t =    72.01s     Check for interrupting elements affecting "chart.bar.fill" Button
+    t =    72.03s     Synthesize event
+    t =    72.31s     Wait for org.pokerpractice.native to idle
+    t =    74.02s Get all elements bound by index for: Elements containing elements matching predicate 'label CONTAINS "ответов по ключу"'
+    t =    74.07s Find the StaticText (Element at index 0)
+    t =    74.10s Find the StaticText (Element at index 1)
+    t =    74.12s Waiting 10.0s for "Настройки" Button to exist
+    t =    75.14s     Checking `Expect predicate `existsNoRetry == 1` for object "Настройки" Button`
+    t =    75.14s         Checking existence of `"Настройки" Button`
+    t =    75.17s Tap "Настройки" Button
+    t =    75.17s     Wait for org.pokerpractice.native to idle
+    t =    75.17s     Find the "Настройки" Button
+    t =    75.19s     Check for interrupting elements affecting "gearshape.fill" Button
+    t =    75.21s     Synthesize event
+    t =    75.50s     Wait for org.pokerpractice.native to idle
+    t =    77.22s Tap "Очистить результаты" Button
+    t =    77.22s     Wait for org.pokerpractice.native to idle
+    t =    77.22s     Find the "Очистить результаты" Button
+    t =    77.26s     Check for interrupting elements affecting "Очистить результаты" Button
+    t =    77.28s     Synthesize event
+    t =    77.57s     Wait for org.pokerpractice.native to idle
+    t =    77.89s Waiting 3.0s for "Очистить результаты?" Alert to exist
+    t =    78.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Очистить результаты?" Alert`
+    t =    78.92s         Checking existence of `"Очистить результаты?" Alert`
+    t =    78.97s Tap "Отмена" Button
+    t =    78.97s     Wait for org.pokerpractice.native to idle
+    t =    78.97s     Find the "Отмена" Button
+    t =    79.00s     Check for interrupting elements affecting "Отмена" Button
+    t =    79.03s     Synthesize event
+    t =    79.31s     Wait for org.pokerpractice.native to idle
+    t =    79.57s Waiting 10.0s for "Прогресс" Button to exist
+    t =    80.60s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    80.60s         Checking existence of `"Прогресс" Button`
+    t =    80.65s Tap "Прогресс" Button
+    t =    80.65s     Wait for org.pokerpractice.native to idle
+    t =    80.65s     Find the "Прогресс" Button
+    t =    80.67s     Check for interrupting elements affecting "chart.bar.fill" Button
+    t =    80.69s     Synthesize event
+    t =    80.98s     Wait for org.pokerpractice.native to idle
+    t =    82.65s Get all elements bound by index for: Elements containing elements matching predicate 'label CONTAINS "ответов по ключу"'
+    t =    82.70s Find the StaticText (Element at index 0)
+    t =    82.72s Find the StaticText (Element at index 1)
+    t =    82.74s Find the Target Application 'org.pokerpractice.native'
+    t =    82.83s Added attachment named 'progress-after-cancel'
+    t =    82.83s Waiting 10.0s for "Настройки" Button to exist
+    t =    83.85s     Checking `Expect predicate `existsNoRetry == 1` for object "Настройки" Button`
+    t =    83.85s         Checking existence of `"Настройки" Button`
+    t =    83.90s Tap "Настройки" Button
+    t =    83.90s     Wait for org.pokerpractice.native to idle
+    t =    83.90s     Find the "Настройки" Button
+    t =    83.93s     Check for interrupting elements affecting "gearshape.fill" Button
+    t =    83.95s     Synthesize event
+    t =    84.24s     Wait for org.pokerpractice.native to idle
+    t =    85.94s Tap "Очистить результаты" Button
+    t =    85.94s     Wait for org.pokerpractice.native to idle
+    t =    85.94s     Find the "Очистить результаты" Button
+    t =    85.98s     Check for interrupting elements affecting "Очистить результаты" Button
+    t =    86.01s     Synthesize event
+    t =    86.30s     Wait for org.pokerpractice.native to idle
+    t =    86.56s Tap "Очистить" Button
+    t =    86.56s     Wait for org.pokerpractice.native to idle
+    t =    86.56s     Find the "Очистить" Button
+    t =    86.60s     Check for interrupting elements affecting "Очистить" Button
+    t =    86.63s     Synthesize event
+    t =    86.92s     Wait for org.pokerpractice.native to idle
+    t =    87.18s Waiting 10.0s for "Прогресс" Button to exist
+    t =    88.21s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    88.21s         Checking existence of `"Прогресс" Button`
+    t =    88.26s Tap "Прогресс" Button
+    t =    88.26s     Wait for org.pokerpractice.native to idle
+    t =    88.26s     Find the "Прогресс" Button
+    t =    88.28s     Check for interrupting elements affecting "chart.bar.fill" Button
+    t =    88.30s     Synthesize event
+    t =    88.59s     Wait for org.pokerpractice.native to idle
+    t =    90.28s Waiting 3.0s for "Пока нет попыток" StaticText to exist
+    t =    91.31s     Checking `Expect predicate `existsNoRetry == 1` for object "Пока нет попыток" StaticText`
+    t =    91.31s         Checking existence of `"Пока нет попыток" StaticText`
+    t =    91.35s Terminate org.pokerpractice.native:92586
+2026-10-17 01:49:52.244 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:49:52.244 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:49:52.245 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    92.38s Open org.pokerpractice.native
+    t =    92.39s     Launch org.pokerpractice.native
+2026-10-17 01:49:53.269 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:49:53.269 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:49:53.278 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    92.60s         Setting up automation session
+    t =    95.12s         Wait for org.pokerpractice.native to idle
+    t =    96.66s Waiting 10.0s for "Прогресс" Button to exist
+    t =    97.67s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    97.67s         Checking existence of `"Прогресс" Button`
+    t =    97.78s Tap "Прогресс" Button
+    t =    97.78s     Wait for org.pokerpractice.native to idle
+    t =    97.78s     Find the "Прогресс" Button
+    t =    97.80s     Check for interrupting elements affecting "Прогресс" Button
+    t =    97.81s     Synthesize event
+    t =    98.12s     Wait for org.pokerpractice.native to idle
+    t =    99.87s Waiting 3.0s for "Пока нет попыток" StaticText to exist
+    t =   100.89s     Checking `Expect predicate `existsNoRetry == 1` for object "Пока нет попыток" StaticText`
+    t =   100.90s         Checking existence of `"Пока нет попыток" StaticText`
+    t =   100.94s Find the Target Application 'org.pokerpractice.native'
+    t =   101.04s Added attachment named 'offline-settings-progress-cleared'
+    t =   101.04s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testOfflineAllSections]' passed (101.357 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testOutsLessonAndWrongAnswer]' started.
+    t =     0.00s Start Test at 2026-10-17 01:50:02.240
+    t =     0.03s Set Up
+    t =     0.03s     Open org.pokerpractice.native
+    t =     0.03s         Launch org.pokerpractice.native
+    t =     0.03s             Terminate org.pokerpractice.native:92639
+2026-10-17 01:50:02.285 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:02.286 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:02.286 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-17 01:50:03.313 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:50:03.313 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:50:03.318 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.28s             Setting up automation session
+    t =     3.77s             Wait for org.pokerpractice.native to idle
+    t =     5.25s Waiting 10.0s for "Тренировка" Button to exist
+    t =     6.28s     Checking `Expect predicate `existsNoRetry == 1` for object "Тренировка" Button`
+    t =     6.28s         Checking existence of `"Тренировка" Button`
+    t =     6.35s Tap "Тренировка" Button
+    t =     6.35s     Wait for org.pokerpractice.native to idle
+    t =     6.36s     Find the "Тренировка" Button
+    t =     6.37s     Check for interrupting elements affecting "Тренировка" Button
+    t =     6.39s     Synthesize event
+    t =     6.70s     Wait for org.pokerpractice.native to idle
+    t =     8.43s Tap "Ауты флеш-дро" StaticText
+    t =     8.43s     Wait for org.pokerpractice.native to idle
+    t =     8.44s     Find the "Ауты флеш-дро" StaticText
+    t =     8.49s     Check for interrupting elements affecting "Ауты флеш-дро" StaticText
+    t =     8.51s     Synthesize event
+    t =     8.80s     Wait for org.pokerpractice.native to idle
+    t =     9.16s Checking existence of `"9,0 %" Button`
+    t =     9.20s Find the "9,0 %" Button
+    t =     9.24s Swipe up Target Application 'org.pokerpractice.native'
+    t =     9.24s     Wait for org.pokerpractice.native to idle
+    t =     9.24s     Find the Target Application 'org.pokerpractice.native'
+    t =     9.26s     Check for interrupting elements affecting "Учебный стол" Application
+    t =     9.28s     Synthesize event
+    t =     9.70s     Wait for org.pokerpractice.native to idle
+    t =    10.63s Checking existence of `"9,0 %" Button`
+    t =    10.67s Find the "9,0 %" Button
+    t =    10.70s Checking existence of `"9,0 %" Button`
+    t =    10.73s Tap "9,0 %" Button
+    t =    10.73s     Wait for org.pokerpractice.native to idle
+    t =    10.73s     Find the "9,0 %" Button
+    t =    10.75s     Check for interrupting elements affecting "9,0 %" Button
+    t =    10.77s     Synthesize event
+    t =    11.06s     Wait for org.pokerpractice.native to idle
+    t =    11.07s Checking existence of `"Разберём расчёт" StaticText`
+    t =    11.11s Find the "Разберём расчёт" StaticText
+    t =    11.14s Checking existence of `"Разберём расчёт" StaticText`
+    t =    11.17s Checking existence of `"К вероятности к риверу" Button`
+    t =    11.19s Find the "К вероятности к риверу" Button
+    t =    11.22s Swipe up Target Application 'org.pokerpractice.native'
+    t =    11.22s     Wait for org.pokerpractice.native to idle
+    t =    11.22s     Find the Target Application 'org.pokerpractice.native'
+    t =    11.24s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    11.26s     Synthesize event
+    t =    11.68s     Wait for org.pokerpractice.native to idle
+    t =    12.43s Checking existence of `"К вероятности к риверу" Button`
+    t =    12.47s Find the "К вероятности к риверу" Button
+    t =    12.51s Tap "К вероятности к риверу" Button
+    t =    12.51s     Wait for org.pokerpractice.native to idle
+    t =    12.51s     Find the "К вероятности к риверу" Button
+    t =    12.53s     Check for interrupting elements affecting "К вероятности к риверу" Button
+    t =    12.56s     Synthesize event
+    t =    12.85s     Wait for org.pokerpractice.native to idle
+    t =    12.86s Checking existence of `"35,0 %" Button`
+    t =    12.90s Find the "35,0 %" Button
+    t =    12.93s Tap "35,0 %" Button
+    t =    12.93s     Wait for org.pokerpractice.native to idle
+    t =    12.93s     Find the "35,0 %" Button
+    t =    12.96s     Check for interrupting elements affecting "35,0 %" Button
+    t =    12.98s     Synthesize event
+    t =    13.27s     Wait for org.pokerpractice.native to idle
+    t =    13.27s Checking existence of `"Завершить урок" Button`
+    t =    13.32s Find the "Завершить урок" Button
+    t =    13.35s Swipe up Target Application 'org.pokerpractice.native'
+    t =    13.35s     Wait for org.pokerpractice.native to idle
+    t =    13.35s     Find the Target Application 'org.pokerpractice.native'
+    t =    13.37s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    13.39s     Synthesize event
+    t =    13.81s     Wait for org.pokerpractice.native to idle
+    t =    14.49s Checking existence of `"Завершить урок" Button`
+    t =    14.51s Find the "Завершить урок" Button
+    t =    14.54s Tap "Завершить урок" Button
+    t =    14.54s     Wait for org.pokerpractice.native to idle
+    t =    14.67s     Find the "Завершить урок" Button
+    t =    14.70s     Check for interrupting elements affecting "Завершить урок" Button
+    t =    14.73s     Synthesize event
+    t =    15.02s     Wait for org.pokerpractice.native to idle
+    t =    15.03s Waiting 5.0s for "Урок завершён" StaticText to exist
+    t =    16.05s     Checking `Expect predicate `existsNoRetry == 1` for object "Урок завершён" StaticText`
+    t =    16.05s         Checking existence of `"Урок завершён" StaticText`
+    t =    16.09s Find the Target Application 'org.pokerpractice.native'
+    t =    16.19s Added attachment named 'outs-completed'
+    t =    16.19s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testOutsLessonAndWrongAnswer]' passed (16.431 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testPotOddsExplanationAndRelaunch]' started.
+    t =     0.00s Start Test at 2026-10-17 01:50:18.672
+    t =     0.03s Set Up
+    t =     0.03s     Open org.pokerpractice.native
+    t =     0.03s         Launch org.pokerpractice.native
+    t =     0.03s             Terminate org.pokerpractice.native:92646
+2026-10-17 01:50:18.720 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:18.720 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:18.721 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-17 01:50:19.746 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:50:19.746 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:50:19.750 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.28s             Setting up automation session
+    t =     3.76s             Wait for org.pokerpractice.native to idle
+    t =     5.36s Waiting 10.0s for "Тренировка" Button to exist
+    t =     6.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Тренировка" Button`
+    t =     6.38s         Checking existence of `"Тренировка" Button`
+    t =     6.49s Tap "Тренировка" Button
+    t =     6.49s     Wait for org.pokerpractice.native to idle
+    t =     6.50s     Find the "Тренировка" Button
+    t =     6.51s     Check for interrupting elements affecting "Тренировка" Button
+    t =     6.53s     Synthesize event
+    t =     6.84s     Wait for org.pokerpractice.native to idle
+    t =     8.58s Tap "Шансы банка" StaticText
+    t =     8.58s     Wait for org.pokerpractice.native to idle
+    t =     8.59s     Find the "Шансы банка" StaticText
+    t =     8.64s     Check for interrupting elements affecting "Шансы банка" StaticText
+    t =     8.66s     Synthesize event
+    t =     8.95s     Wait for org.pokerpractice.native to idle
+    t =     9.30s Waiting 5.0s for "Процент" TextField to exist
+    t =    10.31s     Checking `Expect predicate `existsNoRetry == 1` for object "Процент" TextField`
+    t =    10.31s         Checking existence of `"Процент" TextField`
+    t =    10.34s Find the "Проверить" Button
+    t =    10.35s Tap "Процент" TextField
+    t =    10.35s     Wait for org.pokerpractice.native to idle
+    t =    10.35s     Find the "Процент" TextField
+    t =    10.37s     Check for interrupting elements affecting "Процент" TextField
+    t =    10.38s     Synthesize event
+    t =    10.67s     Wait for org.pokerpractice.native to idle
+    t =    10.77s Type '101' into "Процент" TextField
+    t =    10.77s     Wait for org.pokerpractice.native to idle
+    t =    11.14s     Find the "Процент" TextField
+    t =    11.18s     Check for interrupting elements affecting "Процент" TextField
+    t =    11.20s     Synthesize event
+    t =    11.46s     Wait for org.pokerpractice.native to idle
+    t =    11.46s Find the "Проверить" Button
+    t =    11.50s Type '25' into "Процент" TextField
+    t =    11.50s     Wait for org.pokerpractice.native to idle
+    t =    11.50s     Find the "Процент" TextField
+    t =    11.52s     Check for interrupting elements affecting "Процент" TextField
+    t =    11.54s     Synthesize event
+    t =    11.82s     Wait for org.pokerpractice.native to idle
+    t =    11.83s Tap "Проверить" Button
+    t =    11.83s     Wait for org.pokerpractice.native to idle
+    t =    11.84s     Find the "Проверить" Button
+    t =    11.87s     Check for interrupting elements affecting "Проверить" Button
+    t =    11.89s     Synthesize event
+    t =    12.18s     Wait for org.pokerpractice.native to idle
+    t =    12.43s Checking existence of `StaticText (First Match)`
+    t =    12.47s Find the StaticText (First Match)
+    t =    12.51s Checking existence of `"Порог эквити = цена колла / итоговый банк: 50 / 200 × 100 = 25.0 %." StaticText`
+    t =    12.54s Checking existence of `"Результат сохранён на устройстве." StaticText`
+    t =    12.55s Find the "Результат сохранён на устройстве." StaticText
+    t =    12.58s Checking existence of `"Результат сохранён на устройстве." StaticText`
+    t =    12.59s Find the Target Application 'org.pokerpractice.native'
+    t =    12.67s Added attachment named 'pot-odds-explanation'
+    t =    12.67s Waiting 10.0s for "Прогресс" Button to exist
+    t =    13.69s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    13.69s         Checking existence of `"Прогресс" Button`
+    t =    13.73s Tap "Прогресс" Button
+    t =    13.73s     Wait for org.pokerpractice.native to idle
+    t =    13.73s     Find the "Прогресс" Button
+    t =    13.76s     Check for interrupting elements affecting "chart.bar.fill" Button
+    t =    13.78s     Synthesize event
+    t =    14.06s     Wait for org.pokerpractice.native to idle
+    t =    15.80s Waiting 5.0s for "История" StaticText to exist
+    t =    16.83s     Checking `Expect predicate `existsNoRetry == 1` for object "История" StaticText`
+    t =    16.83s         Checking existence of `"История" StaticText`
+    t =    16.89s Find the StaticText (First Match)
+    t =    16.93s Terminate org.pokerpractice.native:92669
+2026-10-17 01:50:35.612 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:35.612 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:35.612 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    17.98s Open org.pokerpractice.native
+    t =    17.98s     Launch org.pokerpractice.native
+2026-10-17 01:50:36.652 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:50:36.652 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:50:36.658 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    18.19s         Setting up automation session
+    t =    20.67s         Wait for org.pokerpractice.native to idle
+    t =    22.28s Waiting 10.0s for "Прогресс" Button to exist
+    t =    23.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    23.29s         Checking existence of `"Прогресс" Button`
+    t =    23.40s Tap "Прогресс" Button
+    t =    23.40s     Wait for org.pokerpractice.native to idle
+    t =    23.40s     Find the "Прогресс" Button
+    t =    23.42s     Check for interrupting elements affecting "Прогресс" Button
+    t =    23.43s     Synthesize event
+    t =    23.74s     Wait for org.pokerpractice.native to idle
+    t =    25.48s Waiting 5.0s for "Верно 1 из 1 ответов по ключу" StaticText to exist
+    t =    26.50s     Checking `Expect predicate `existsNoRetry == 1` for object "Верно 1 из 1 ответов по ключу" StaticText`
+    t =    26.51s         Checking existence of `"Верно 1 из 1 ответов по ключу" StaticText`
+    t =    26.57s Find the Target Application 'org.pokerpractice.native'
+    t =    26.67s Added attachment named 'restored-progress'
+    t =    26.67s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testPotOddsExplanationAndRelaunch]' passed (26.904 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testRaiseMaximum]' started.
+    t =     0.00s Start Test at 2026-10-17 01:50:45.576
+    t =     0.02s Set Up
+    t =     0.02s     Open org.pokerpractice.native
+    t =     0.02s         Launch org.pokerpractice.native
+    t =     0.02s             Terminate org.pokerpractice.native:92678
+2026-10-17 01:50:45.614 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:45.615 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:45.615 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:46.638 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:50:46.638 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:50:46.642 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.27s             Setting up automation session
+Resolve Package Graph
+
+    t =     3.74s             Wait for org.pokerpractice.native to idle
+    t =     5.38s Terminate org.pokerpractice.native:92683
+2026-10-17 01:50:50.960 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:50.960 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:50:50.961 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.42s Open org.pokerpractice.native
+    t =     6.42s     Launch org.pokerpractice.native
+2026-10-17 01:50:52.000 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:50:52.000 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:50:52.004 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.63s         Setting up automation session
+    t =     9.14s         Wait for org.pokerpractice.native to idle
+    t =    10.75s Tap Button (First Match)
+    t =    10.75s     Wait for org.pokerpractice.native to idle
+    t =    10.75s     Find the Button (First Match)
+    t =    10.92s     Check for interrupting elements affecting "Открыть стол" Button
+    t =    10.94s     Synthesize event
+    t =    11.25s     Wait for org.pokerpractice.native to idle
+    t =    11.67s Waiting 5.0s for "Пас" Button to exist
+    t =    12.69s     Checking `Expect predicate `existsNoRetry == 1` for object "Пас" Button`
+    t =    12.69s         Checking existence of `"Пас" Button`
+    t =    12.76s Tap "Повысить…" Button
+    t =    12.76s     Wait for org.pokerpractice.native to idle
+    t =    12.76s     Find the "Повысить…" Button
+    t =    12.79s     Check for interrupting elements affecting "Повысить…" Button
+    t =    12.82s     Synthesize event
+    t =    13.10s     Wait for org.pokerpractice.native to idle
+    t =    13.59s Waiting 3.0s for "Сумма" TextField to exist
+    t =    14.60s     Checking `Expect predicate `existsNoRetry == 1` for object "Сумма" TextField`
+    t =    14.60s         Checking existence of `"Сумма" TextField`
+    t =    14.69s Tap "Сумма" TextField
+    t =    14.69s     Wait for org.pokerpractice.native to idle
+    t =    14.69s     Find the "Сумма" TextField
+    t =    14.73s     Check for interrupting elements affecting "Сумма" TextField
+    t =    14.77s     Synthesize event
+    t =    15.06s     Wait for org.pokerpractice.native to idle
+    t =    15.18s Find the "Сумма" TextField
+    t =    15.24s Type '1001' into "Сумма" TextField
+    t =    15.24s     Wait for org.pokerpractice.native to idle
+    t =    15.56s     Find the "Сумма" TextField
+    t =    15.62s     Check for interrupting elements affecting "Сумма" TextField
+    t =    15.66s     Synthesize event
+    t =    15.97s     Wait for org.pokerpractice.native to idle
+    t =    15.97s Find the "Подтвердить" Button
+    t =    16.03s Waiting 3.0s for "Сумма" TextField to exist
+    t =    17.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Сумма" TextField`
+    t =    17.06s         Checking existence of `"Сумма" TextField`
+    t =    17.14s Tap "Сумма" TextField
+    t =    17.14s     Wait for org.pokerpractice.native to idle
+    t =    17.14s     Find the "Сумма" TextField
+    t =    17.18s     Check for interrupting elements affecting "Сумма" TextField
+    t =    17.23s     Synthesize event
+    t =    17.51s     Wait for org.pokerpractice.native to idle
+    t =    17.52s Find the "Сумма" TextField
+    t =    17.64s Type '1000' into "Сумма" TextField
+    t =    17.64s     Wait for org.pokerpractice.native to idle
+    t =    18.03s     Find the "Сумма" TextField
+    t =    18.10s     Check for interrupting elements affecting "Сумма" TextField
+    t =    18.14s     Synthesize event
+    t =    18.48s     Wait for org.pokerpractice.native to idle
+    t =    18.63s Find the "Подтвердить" Button
+    t =    18.69s Find the Target Application 'org.pokerpractice.native'
+    t =    18.80s Added attachment named 'maximum-raise-1000-before-confirm'
+    t =    18.80s Tap "Подтвердить" Button
+    t =    18.80s     Wait for org.pokerpractice.native to idle
+    t =    18.80s     Find the "Подтвердить" Button
+    t =    18.85s     Check for interrupting elements affecting "Подтвердить" Button
+    t =    18.89s     Synthesize event
+    t =    19.18s     Wait for org.pokerpractice.native to idle
+    t =    19.58s Waiting 4.0s for Any (First Match) to exist
+    t =    20.60s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    20.60s         Checking existence of `Any (First Match)`
+    t =    20.66s Checking existence of `StaticText (First Match)`
+    t =    20.72s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testRaiseMaximum]' passed (20.953 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testRaiseMinimum]' started.
+    t =     0.00s Start Test at 2026-10-17 01:51:06.529
+    t =     0.03s Set Up
+    t =     0.03s     Open org.pokerpractice.native
+    t =     0.03s         Launch org.pokerpractice.native
+    t =     0.03s             Terminate org.pokerpractice.native:92691
+2026-10-17 01:51:06.584 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:51:06.584 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:51:06.585 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-17 01:51:07.620 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:51:07.620 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:51:07.626 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.30s             Setting up automation session
+    t =     3.80s             Wait for org.pokerpractice.native to idle
+    t =     5.40s Terminate org.pokerpractice.native:92719
+2026-10-17 01:51:11.938 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:51:11.939 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:51:11.939 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.43s Open org.pokerpractice.native
+    t =     6.44s     Launch org.pokerpractice.native
+2026-10-17 01:51:12.967 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:51:12.967 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:51:12.972 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.65s         Setting up automation session
+    t =     9.12s         Wait for org.pokerpractice.native to idle
+    t =    10.70s Tap Button (First Match)
+    t =    10.70s     Wait for org.pokerpractice.native to idle
+    t =    10.71s     Find the Button (First Match)
+    t =    10.90s     Check for interrupting elements affecting "Открыть стол" Button
+    t =    10.92s     Synthesize event
+    t =    11.23s     Wait for org.pokerpractice.native to idle
+    t =    11.62s Waiting 5.0s for "Пас" Button to exist
+    t =    12.63s     Checking `Expect predicate `existsNoRetry == 1` for object "Пас" Button`
+    t =    12.63s         Checking existence of `"Пас" Button`
+    t =    12.70s Checking existence of `"Колл 10" Button`
+    t =    12.73s Checking existence of `"Чек" Button`
+    t =    12.76s Tap "Повысить…" Button
+    t =    12.76s     Wait for org.pokerpractice.native to idle
+    t =    12.76s     Find the "Повысить…" Button
+    t =    12.79s     Check for interrupting elements affecting "Повысить…" Button
+    t =    12.82s     Synthesize event
+    t =    13.11s     Wait for org.pokerpractice.native to idle
+    t =    13.59s Waiting 3.0s for StaticText (First Match) to exist
+    t =    14.60s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    14.61s         Checking existence of `StaticText (First Match)`
+    t =    14.69s Find the StaticText (First Match)
+    t =    14.74s Find the "Сумма" TextField
+    t =    14.78s Waiting 3.0s for "Сумма" TextField to exist
+    t =    15.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Сумма" TextField`
+    t =    15.81s         Checking existence of `"Сумма" TextField`
+    t =    15.88s Tap "Сумма" TextField
+    t =    15.88s     Wait for org.pokerpractice.native to idle
+    t =    15.88s     Find the "Сумма" TextField
+    t =    15.92s     Check for interrupting elements affecting "Сумма" TextField
+    t =    15.96s     Synthesize event
+    t =    16.25s     Wait for org.pokerpractice.native to idle
+    t =    16.31s Find the "Сумма" TextField
+    t =    16.37s Type '19' into "Сумма" TextField
+    t =    16.37s     Wait for org.pokerpractice.native to idle
+    t =    16.69s     Find the "Сумма" TextField
+    t =    16.75s     Check for interrupting elements affecting "Сумма" TextField
+    t =    16.79s     Synthesize event
+    t =    17.06s     Wait for org.pokerpractice.native to idle
+    t =    17.06s Find the "Подтвердить" Button
+    t =    17.12s Waiting 3.0s for "Сумма" TextField to exist
+    t =    18.14s     Checking `Expect predicate `existsNoRetry == 1` for object "Сумма" TextField`
+    t =    18.14s         Checking existence of `"Сумма" TextField`
+    t =    18.22s Tap "Сумма" TextField
+    t =    18.22s     Wait for org.pokerpractice.native to idle
+    t =    18.22s     Find the "Сумма" TextField
+    t =    18.26s     Check for interrupting elements affecting "Сумма" TextField
+    t =    18.31s     Synthesize event
+    t =    18.60s     Wait for org.pokerpractice.native to idle
+    t =    18.60s Find the "Сумма" TextField
+    t =    18.72s Type '20' into "Сумма" TextField
+    t =    18.72s     Wait for org.pokerpractice.native to idle
+    t =    19.10s     Find the "Сумма" TextField
+    t =    19.17s     Check for interrupting elements affecting "Сумма" TextField
+    t =    19.22s     Synthesize event
+    t =    19.49s     Wait for org.pokerpractice.native to idle
+    t =    19.70s Find the Target Application 'org.pokerpractice.native'
+    t =    19.82s Added attachment named 'minimum-raise-20-before-confirm'
+    t =    19.82s Tap "Подтвердить" Button
+    t =    19.82s     Wait for org.pokerpractice.native to idle
+    t =    19.82s     Find the "Подтвердить" Button
+    t =    19.87s     Check for interrupting elements affecting "Подтвердить" Button
+    t =    19.91s     Synthesize event
+    t =    20.20s     Wait for org.pokerpractice.native to idle
+    t =    20.61s Waiting 4.0s for Any (First Match) to exist
+    t =    21.63s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    21.64s         Checking existence of `Any (First Match)`
+    t =    21.70s Checking existence of `StaticText (First Match)`
+    t =    21.76s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testRaiseMinimum]' passed (21.986 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testSettingsClearRequiresConfirmation]' started.
+    t =     0.00s Start Test at 2026-10-17 01:51:28.516
+    t =     0.03s Set Up
+    t =     0.03s     Open org.pokerpractice.native
+    t =     0.03s         Launch org.pokerpractice.native
+    t =     0.03s             Terminate org.pokerpractice.native:92726
+2026-10-17 01:51:28.568 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:51:28.569 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:51:28.569 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-17 01:51:29.591 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:51:29.591 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:51:29.593 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.28s             Setting up automation session
+    t =     3.78s             Wait for org.pokerpractice.native to idle
+    t =     5.38s Waiting 10.0s for "Прогресс" Button to exist
+    t =     6.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =     6.39s         Checking existence of `"Прогресс" Button`
+    t =     6.52s Tap "Прогресс" Button
+    t =     6.52s     Wait for org.pokerpractice.native to idle
+    t =     6.52s     Find the "Прогресс" Button
+    t =     6.54s     Check for interrupting elements affecting "Прогресс" Button
+    t =     6.55s     Synthesize event
+    t =     6.86s     Wait for org.pokerpractice.native to idle
+    t =     8.61s Get all elements bound by index for: Elements containing elements matching predicate 'label CONTAINS "ответов по ключу"'
+    t =     8.68s Find the StaticText (Element at index 0)
+    t =     8.70s Find the StaticText (Element at index 1)
+    t =     8.72s Waiting 10.0s for "Настройки" Button to exist
+    t =     9.75s     Checking `Expect predicate `existsNoRetry == 1` for object "Настройки" Button`
+    t =     9.75s         Checking existence of `"Настройки" Button`
+    t =     9.78s Tap "Настройки" Button
+    t =     9.78s     Wait for org.pokerpractice.native to idle
+    t =     9.79s     Find the "Настройки" Button
+    t =     9.81s     Check for interrupting elements affecting "gearshape.fill" Button
+    t =     9.83s     Synthesize event
+    t =    10.12s     Wait for org.pokerpractice.native to idle
+    t =    11.85s Tap "Очистить результаты" Button
+    t =    11.85s     Wait for org.pokerpractice.native to idle
+    t =    11.85s     Find the "Очистить результаты" Button
+    t =    11.90s     Check for interrupting elements affecting "Очистить результаты" Button
+    t =    11.92s     Synthesize event
+    t =    12.21s     Wait for org.pokerpractice.native to idle
+    t =    12.50s Waiting 3.0s for "Очистить результаты?" Alert to exist
+    t =    13.53s     Checking `Expect predicate `existsNoRetry == 1` for object "Очистить результаты?" Alert`
+    t =    13.53s         Checking existence of `"Очистить результаты?" Alert`
+    t =    13.58s Tap "Отмена" Button
+    t =    13.58s     Wait for org.pokerpractice.native to idle
+    t =    13.59s     Find the "Отмена" Button
+    t =    13.61s     Check for interrupting elements affecting "Отмена" Button
+    t =    13.64s     Synthesize event
+    t =    13.93s     Wait for org.pokerpractice.native to idle
+    t =    14.20s Waiting 10.0s for "Прогресс" Button to exist
+    t =    15.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    15.24s         Checking existence of `"Прогресс" Button`
+    t =    15.27s Tap "Прогресс" Button
+    t =    15.27s     Wait for org.pokerpractice.native to idle
+    t =    15.28s     Find the "Прогресс" Button
+    t =    15.30s     Check for interrupting elements affecting "chart.bar.fill" Button
+    t =    15.32s     Synthesize event
+    t =    15.61s     Wait for org.pokerpractice.native to idle
+    t =    17.28s Get all elements bound by index for: Elements containing elements matching predicate 'label CONTAINS "ответов по ключу"'
+    t =    17.33s Find the StaticText (Element at index 0)
+    t =    17.35s Find the StaticText (Element at index 1)
+    t =    17.37s Find the Target Application 'org.pokerpractice.native'
+    t =    17.45s Added attachment named 'progress-after-cancel'
+    t =    17.46s Waiting 10.0s for "Настройки" Button to exist
+    t =    18.48s     Checking `Expect predicate `existsNoRetry == 1` for object "Настройки" Button`
+    t =    18.48s         Checking existence of `"Настройки" Button`
+    t =    18.53s Tap "Настройки" Button
+    t =    18.53s     Wait for org.pokerpractice.native to idle
+    t =    18.53s     Find the "Настройки" Button
+    t =    18.56s     Check for interrupting elements affecting "gearshape.fill" Button
+    t =    18.58s     Synthesize event
+    t =    18.86s     Wait for org.pokerpractice.native to idle
+    t =    20.56s Tap "Очистить результаты" Button
+    t =    20.57s     Wait for org.pokerpractice.native to idle
+    t =    20.57s     Find the "Очистить результаты" Button
+    t =    20.61s     Check for interrupting elements affecting "Очистить результаты" Button
+    t =    20.63s     Synthesize event
+    t =    20.92s     Wait for org.pokerpractice.native to idle
+    t =    21.18s Tap "Очистить" Button
+    t =    21.19s     Wait for org.pokerpractice.native to idle
+    t =    21.19s     Find the "Очистить" Button
+    t =    21.22s     Check for interrupting elements affecting "Очистить" Button
+    t =    21.25s     Synthesize event
+    t =    21.54s     Wait for org.pokerpractice.native to idle
+    t =    21.81s Waiting 10.0s for "Прогресс" Button to exist
+    t =    22.85s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    22.85s         Checking existence of `"Прогресс" Button`
+    t =    22.89s Tap "Прогресс" Button
+    t =    22.89s     Wait for org.pokerpractice.native to idle
+    t =    22.89s     Find the "Прогресс" Button
+    t =    22.92s     Check for interrupting elements affecting "chart.bar.fill" Button
+    t =    22.94s     Synthesize event
+    t =    23.22s     Wait for org.pokerpractice.native to idle
+    t =    24.90s Waiting 3.0s for "Пока нет попыток" StaticText to exist
+    t =    25.92s     Checking `Expect predicate `existsNoRetry == 1` for object "Пока нет попыток" StaticText`
+    t =    25.92s         Checking existence of `"Пока нет попыток" StaticText`
+    t =    25.97s Terminate org.pokerpractice.native:92753
+2026-10-17 01:51:54.492 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:51:54.492 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:51:54.493 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    27.01s Open org.pokerpractice.native
+    t =    27.01s     Launch org.pokerpractice.native
+2026-10-17 01:51:55.529 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:51:55.529 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:51:55.537 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    27.22s         Setting up automation session
+    t =    29.72s         Wait for org.pokerpractice.native to idle
+    t =    31.28s Waiting 10.0s for "Прогресс" Button to exist
+    t =    32.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Прогресс" Button`
+    t =    32.30s         Checking existence of `"Прогресс" Button`
+    t =    32.42s Tap "Прогресс" Button
+    t =    32.42s     Wait for org.pokerpractice.native to idle
+    t =    32.42s     Find the "Прогресс" Button
+    t =    32.44s     Check for interrupting elements affecting "Прогресс" Button
+    t =    32.45s     Synthesize event
+    t =    32.77s     Wait for org.pokerpractice.native to idle
+    t =    34.53s Waiting 3.0s for "Пока нет попыток" StaticText to exist
+    t =    35.55s     Checking `Expect predicate `existsNoRetry == 1` for object "Пока нет попыток" StaticText`
+    t =    35.56s         Checking existence of `"Пока нет попыток" StaticText`
+    t =    35.61s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testSettingsClearRequiresConfirmation]' passed (35.847 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testShortRaiseDoesNotReopen]' started.
+    t =     0.00s Start Test at 2026-10-17 01:52:04.365
+    t =     0.03s Set Up
+    t =     0.03s     Open org.pokerpractice.native
+    t =     0.03s         Launch org.pokerpractice.native
+    t =     0.03s             Terminate org.pokerpractice.native:92829
+2026-10-17 01:52:04.415 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:04.416 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:04.416 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-17 01:52:05.434 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:52:05.434 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:52:05.438 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.27s             Setting up automation session
+    t =     3.76s             Wait for org.pokerpractice.native to idle
+    t =     5.36s Terminate org.pokerpractice.native:93185
+2026-10-17 01:52:09.748 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:09.750 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:09.751 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.42s Open org.pokerpractice.native
+    t =     6.42s     Launch org.pokerpractice.native
+2026-10-17 01:52:10.789 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:52:10.789 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:52:10.796 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.63s         Setting up automation session
+    t =     9.14s         Wait for org.pokerpractice.native to idle
+    t =    10.75s Tap Button (First Match)
+    t =    10.75s     Wait for org.pokerpractice.native to idle
+    t =    10.75s     Find the Button (First Match)
+    t =    10.88s     Check for interrupting elements affecting "Открыть стол" Button
+    t =    10.90s     Synthesize event
+    t =    11.21s     Wait for org.pokerpractice.native to idle
+    t =    11.64s Waiting 5.0s for "Пас" Button to exist
+    t =    12.66s     Checking `Expect predicate `existsNoRetry == 1` for object "Пас" Button`
+    t =    12.66s         Checking existence of `"Пас" Button`
+    t =    12.73s Checking existence of `"Колл 5" Button`
+    t =    12.76s Checking existence of `"Чек" Button`
+    t =    12.79s Checking existence of `"Повысить…" Button`
+    t =    12.81s Checking existence of `"Олл-ин" Button`
+    t =    12.84s Find the Target Application 'org.pokerpractice.native'
+    t =    12.93s Added attachment named 'short-raise-facing-call-5-no-reopen'
+    t =    12.93s Tap "Колл 5" Button
+    t =    12.93s     Wait for org.pokerpractice.native to idle
+    t =    12.93s     Find the "Колл 5" Button
+    t =    12.97s     Check for interrupting elements affecting "Колл 5" Button
+    t =    12.99s     Synthesize event
+    t =    13.28s     Wait for org.pokerpractice.native to idle
+    t =    13.28s Checking existence of `StaticText (First Match)`
+    t =    13.35s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testShortRaiseDoesNotReopen]' passed (13.578 seconds).
+Test Case '-[PokerTrainerUITests.CriticalFlows testShortStackAllInRaise]' started.
+    t =     0.00s Start Test at 2026-10-17 01:52:17.943
+    t =     0.03s Set Up
+    t =     0.03s     Open org.pokerpractice.native
+    t =     0.03s         Launch org.pokerpractice.native
+    t =     0.03s             Terminate org.pokerpractice.native:93194
+2026-10-17 01:52:17.994 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:17.995 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:17.996 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+2026-10-17 01:52:19.035 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:52:19.035 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:52:19.039 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     1.30s             Setting up automation session
+    t =     3.78s             Wait for org.pokerpractice.native to idle
+    t =     5.39s Terminate org.pokerpractice.native:93216
+2026-10-17 01:52:23.340 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:23.341 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:23.342 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.43s Open org.pokerpractice.native
+    t =     6.44s     Launch org.pokerpractice.native
+2026-10-17 01:52:24.381 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-17 01:52:24.381 xcodebuild[91927:7997599] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-17 01:52:24.387 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =     6.65s         Setting up automation session
+    t =     9.14s         Wait for org.pokerpractice.native to idle
+    t =    10.72s Tap Button (First Match)
+    t =    10.72s     Wait for org.pokerpractice.native to idle
+    t =    10.72s     Find the Button (First Match)
+    t =    10.89s     Check for interrupting elements affecting "Открыть стол" Button
+    t =    10.90s     Synthesize event
+    t =    11.21s     Wait for org.pokerpractice.native to idle
+    t =    11.60s Waiting 5.0s for "Пас" Button to exist
+    t =    12.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Пас" Button`
+    t =    12.62s         Checking existence of `"Пас" Button`
+    t =    12.70s Checking existence of `"Колл 10" Button`
+    t =    12.73s Checking existence of `"Повысить…" Button`
+    t =    12.75s Checking existence of `"Олл-ин" Button`
+    t =    12.78s Find the Target Application 'org.pokerpractice.native'
+    t =    12.87s Added attachment named 'short-stack-legal-actions'
+    t =    12.87s Tap "Олл-ин" Button
+    t =    12.87s     Wait for org.pokerpractice.native to idle
+    t =    12.87s     Find the "Олл-ин" Button
+    t =    12.90s     Check for interrupting elements affecting "Олл-ин" Button
+    t =    12.93s     Synthesize event
+    t =    13.22s     Wait for org.pokerpractice.native to idle
+    t =    13.66s Waiting 3.0s for StaticText (First Match) to exist
+    t =    14.68s     Checking `Expect predicate `existsNoRetry == 1` for object StaticText (First Match)`
+    t =    14.68s         Checking existence of `StaticText (First Match)`
+    t =    14.77s Find the StaticText (First Match)
+    t =    14.82s Find the Target Application 'org.pokerpractice.native'
+    t =    14.92s Added attachment named 'short-stack-all-in-15-before-confirm'
+    t =    14.92s Tap "Подтвердить" Button
+    t =    14.92s     Wait for org.pokerpractice.native to idle
+    t =    14.93s     Find the "Подтвердить" Button
+    t =    14.97s     Check for interrupting elements affecting "Подтвердить" Button
+    t =    15.00s     Synthesize event
+    t =    15.29s     Wait for org.pokerpractice.native to idle
+    t =    15.70s Waiting 4.0s for Any (First Match) to exist
+    t =    16.72s     Checking `Expect predicate `existsNoRetry == 1` for object Any (First Match)`
+    t =    16.72s         Checking existence of `Any (First Match)`
+    t =    16.78s Checking existence of `StaticText (First Match)`
+    t =    16.83s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testShortStackAllInRaise]' passed (17.065 seconds).
+Test Suite 'CriticalFlows' passed at 2026-10-17 01:52:35.008.
+	 Executed 12 tests, with 0 failures (0 unexpected) in 350.019 (350.035) seconds
+Test Suite 'PokerTrainerUITests.xctest' passed at 2026-10-17 01:52:35.010.
+	 Executed 12 tests, with 0 failures (0 unexpected) in 350.019 (350.037) seconds
+Test Suite 'Selected tests' passed at 2026-10-17 01:52:35.010.
+	 Executed 12 tests, with 0 failures (0 unexpected) in 350.019 (350.070) seconds
+2026-10-17 01:52:35.051 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:35.051 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:35.052 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:35.103 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:35.104 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:35.105 xcodebuild[91927:7997599] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-17 01:52:35.391 xcodebuild[91927:7997599] [MT] IDETestOperationsObserverDebug: 400.896 elapsed -- Testing started completed.
+2026-10-17 01:52:35.391 xcodebuild[91927:7997599] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-17 01:52:35.391 xcodebuild[91927:7997599] [MT] IDETestOperationsObserverDebug: 400.896 sec, +400.896 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/kr1ny77/Desktop/Poker/replica/tests/evidence/ios-20261017-014552/flows.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

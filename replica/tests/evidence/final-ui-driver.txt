@@ -1,0 +1,2 @@
+QA simulator: 185F59F3-FF35-4425-843E-7A3A7C7FBDF5
+Evidence: replica/tests/evidence/ios-20261017-010407

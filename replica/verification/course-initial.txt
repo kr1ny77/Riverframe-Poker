@@ -1,0 +1,23 @@
+Building for production...
+[Planning deferred tasks]
+[4 / 7]
+[5 / 8] PokerCore
+[6 / 9] PokerCore
+[13 / 15] PokerCoreChecks-product
+[16 / 16] PokerCoreChecks-product
+[21 / 23] PokerNativeTests-product
+[24 / 28] PokerNativeTests-product
+[26 / 28] PokerNativeTests-product
+Build complete! (13,78 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test blockerLessonVectorsWeightsAndCounterexample() started.
+◇ Test blockerArchiveMigrationAndTampering() started.
+◇ Test blockerInputValidationAndEmptyRange() started.
+◇ Test blockerAll169ClassesPartitionDeckAndRemoveExactly() started.
+✔ Test blockerInputValidationAndEmptyRange() passed after 0.001 seconds.
+✔ Test blockerLessonVectorsWeightsAndCounterexample() passed after 0.003 seconds.
+✔ Test blockerArchiveMigrationAndTampering() passed after 0.008 seconds.
+✔ Test blockerAll169ClassesPartitionDeckAndRemoveExactly() passed after 0.046 seconds.
+✔ Test run with 4 tests in 0 suites passed after 0.046 seconds.

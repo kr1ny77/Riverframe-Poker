@@ -1,0 +1,1 @@
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/regression-20261017-150504/screenshots/manifest.json

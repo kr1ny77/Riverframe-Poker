@@ -1,0 +1,2 @@
+Evidence: replica/tests/evidence/course-20261017-144624
+PASS: course routes and sample and restored progress.

@@ -1,0 +1,53 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "BAEED5C1-7BA7-4800-B68A-671E73D710B4",
+        "deviceName" : "Poker QA Range Equity iPhone17e",
+        "exportedFileName" : "2C4D1C25-EFB7-4893-A2CD-79316E057E78.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "range-equity-restored-progress_0_8074664D-C94D-4E9A-B2D7-95D96A4CCB50.png",
+        "timestamp" : 1792238006.097
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "BAEED5C1-7BA7-4800-B68A-671E73D710B4",
+        "deviceName" : "Poker QA Range Equity iPhone17e",
+        "exportedFileName" : "1EF872E0-10E2-406E-B6EB-924D340FDEC0.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "range-equity-completed_0_1B098B1F-DEBB-437F-B642-1DC68033380D.png",
+        "timestamp" : 1792237992.271
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "BAEED5C1-7BA7-4800-B68A-671E73D710B4",
+        "deviceName" : "Poker QA Range Equity iPhone17e",
+        "exportedFileName" : "199AF2EB-DD0B-4EA4-988C-FE827E3C907B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "range-equity-review-3_0_004E296B-ACDB-4DEE-873D-BF494F6A3044.png",
+        "timestamp" : 1792237990.567
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "BAEED5C1-7BA7-4800-B68A-671E73D710B4",
+        "deviceName" : "Poker QA Range Equity iPhone17e",
+        "exportedFileName" : "3D8B337B-286C-4788-B4BE-810DB20BE66E.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "range-equity-review-2_0_3F683F69-C6CA-4623-AEC3-24994350FD38.png",
+        "timestamp" : 1792237981.348
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "BAEED5C1-7BA7-4800-B68A-671E73D710B4",
+        "deviceName" : "Poker QA Range Equity iPhone17e",
+        "exportedFileName" : "8BDF2B88-03C9-406B-9716-0C852C203B7D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "range-equity-review-1_0_99D54086-4D9E-4103-BA0C-D1B8B30AA661.png",
+        "timestamp" : 1792237969.922
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRangeEquityLessonAndRelaunch()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRangeEquityLessonAndRelaunch"
+  }
+]

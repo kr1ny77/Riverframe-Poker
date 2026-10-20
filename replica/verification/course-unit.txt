@@ -1,0 +1,22 @@
+Building for production...
+[Planning deferred tasks]
+[1 / 1]
+[6 / 22] PokerCore
+[18 / 29] PokerCoreChecks-product
+[20 / 29] PokerCoreChecks-product
+[20 / 29] PokerNativeTests-product
+[24 / 28] PokerNativeTests-product
+[27 / 27] PokerCoreChecks-product
+Build complete! (11,91 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test courseCatalogPrerequisitesAndFullCoverage() started.
+◇ Test courseUniqueTemplatesLatestGradesAndPersistence() started.
+◇ Test courseRepeatThresholdsAndRecentWindow() started.
+◇ Test courseTaxonomyAndUnknownNumericIntegrity() started.
+✔ Test courseRepeatThresholdsAndRecentWindow() passed after 0.001 seconds.
+✔ Test courseTaxonomyAndUnknownNumericIntegrity() passed after 0.280 seconds.
+✔ Test courseCatalogPrerequisitesAndFullCoverage() passed after 0.524 seconds.
+✔ Test courseUniqueTemplatesLatestGradesAndPersistence() passed after 0.525 seconds.
+✔ Test run with 4 tests in 0 suites passed after 0.525 seconds.

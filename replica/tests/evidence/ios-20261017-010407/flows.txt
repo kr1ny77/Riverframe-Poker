@@ -1,0 +1,1 @@
+./Tools/test-ios.sh: line 30: sting:PokerTrainerUITests/CriticalFlows/testStorageFailureStillShowsPotOddsExplanation: No such file or directory
