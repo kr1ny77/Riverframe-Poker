@@ -1,0 +1,51 @@
+{
+  "devicesAndConfigurations" : [
+    {
+      "device" : {
+        "architecture" : "arm64",
+        "deviceId" : "A6C55E8F-9195-4A49-A662-3D30272125B6",
+        "deviceName" : "Poker QA Design",
+        "modelName" : "iPhone SE (3rd generation)",
+        "osBuildNumber" : "24A434",
+        "osVersion" : "27.0",
+        "platform" : "iOS Simulator"
+      },
+      "expectedFailures" : 0,
+      "failedTests" : 1,
+      "passedTests" : 0,
+      "skippedTests" : 0,
+      "testPlanConfiguration" : {
+        "configurationId" : "1",
+        "configurationName" : "Test Scheme Action"
+      }
+    }
+  ],
+  "environmentDescription" : "PokerTrainer · Built with macOS 26.6.2",
+  "expectedFailures" : 0,
+  "failedTests" : 1,
+  "finishTime" : 1792339345.255,
+  "passedTests" : 0,
+  "result" : "Failed",
+  "runtimeWarnings" : [
+
+  ],
+  "skippedTests" : 0,
+  "startTime" : 1792339085.865,
+  "statistics" : [
+
+  ],
+  "testFailures" : [
+    {
+      "failureText" : "Failed to install or launch the test runner. (Underlying Error: The operation couldn’t be completed. (Mach error -308 - (ipc/mig) server died))",
+      "targetName" : "PokerTrainerUITests",
+      "testIdentifier" : 1,
+      "testIdentifierString" : "PokerTrainerUITests-Runner encountered an error",
+      "testName" : "PokerTrainerUITests-Runner encountered an error"
+    }
+  ],
+  "title" : "Test - PokerTrainer",
+  "topInsights" : [
+
+  ],
+  "totalTestCount" : 1
+}

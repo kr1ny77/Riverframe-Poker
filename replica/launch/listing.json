@@ -1,0 +1,18 @@
+{
+  "locale": "ru-RU",
+  "store": "App Store",
+  "appName": "Riverframe: Покер NLHE",
+  "subtitle": "Практика решений в NLHE",
+  "promotionalText": "Играйте в 6-max NLHE с пятью локальными ботами и разбирайте короткие задачи по комбинациям, шансам банка, аутам, equity и EV. Офлайн, только виртуальные фишки.",
+  "keywords": "холдем,NLHE,эквити,ауты,ставки,комбинации,математика",
+  "description": "Практикуйте решения в безлимитном техасском холдеме — за виртуальным столом и в коротких уроках.\n\nИГРА ЗА СТОЛОМ\nИграйте в 6-max раздачи против пяти локальных ботов. Следите за улицей, банком, стеками, картами и доступными действиями. Делайте фолд, чек, колл, ставку, повышение или олл-ин, когда действие разрешено. В игре используются только виртуальные фишки.\n\nКОРОТКИЕ УРОКИ NLHE\nПройдите восемь учебных наборов: комбинации и сравнение рук; ауты флеш-дро; шансы банка; equity против известной руки; позиции и стартовые руки; equity против заданного диапазона; EV колла и фолда; комбинаторика и блокеры.\n\nВ задачах по комбинациям выбирайте победителя или лучшую пятёрку из семи карт. В уроках equity оценивайте долю банка против указанных карт или заданного диапазона. Разбор показывает исходные данные, метод и допущения. Учебные диапазоны и веса относятся к конкретной задаче.\n\nПРОГРЕСС НА УСТРОЙСТВЕ\nИстория ответов и показатели по темам сохраняются локально. Прогресс показывает охват заданий, ответы и размер выборки. Качество ответа в упражнении оценивается отдельно от выигрыша или проигрыша виртуальных фишек за столом.\n\nОФЛАЙН-ПРАКТИКА\nИграйте и проходите уроки без сетевого подключения. Игровые и учебные сценарии используют виртуальные фишки.",
+  "nameStatus": "Provisional brand candidate; trademark, App Store name, domain, and social-handle screening not completed.",
+  "unsupportedClaims": [
+    "App Store release, review approval, and availability",
+    "Price, paid/free status, and future billing model",
+    "Legal clearance or availability of the Riverframe name",
+    "Privacy-policy and support URLs, privacy labels, and final age rating",
+    "Availability of every lesson in a fully disconnected device session; offline UI verification covered launch, a hand, pot odds, outs, progress, and settings",
+    "Game with human opponents, network multiplayer, hand-history replay, adaptive training, and unrestricted range editing"
+  ]
+}

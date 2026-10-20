@@ -1,0 +1,35 @@
+Contrast failed
+Contrast failed for SwiftUI.AccessibilityNode
+Attributes: StaticText, 0x108856a80, {{16.0, 214.5}, {67.5, 249.5}}, label: 'Префлоп'
+Element subtree:
+ →StaticText, 0x108856a80, {{16.0, 214.5}, {67.5, 249.5}}, label: 'Префлоп'
+Path to element:
+ →Application, 0x1152d4280, pid: 76282, label: 'Учебный стол'
+  ↳Window (Main), 0x1152d6f80, {{0.0, 0.0}, {375.0, 667.0}}
+   ↳Other, 0x1152d7980, {{0.0, 0.0}, {375.0, 667.0}}
+    ↳Other, 0x1152d7c00, {{0.0, 0.0}, {375.0, 667.0}}
+     ↳Other, 0x1152d7480, {{0.0, 0.0}, {375.0, 667.0}}
+      ↳Other, 0x1152d7840, {{0.0, 0.0}, {375.0, 667.0}}
+       ↳Other, 0x105a3d400, {{0.0, 0.0}, {375.0, 667.0}}
+        ↳Other, 0x105a3d540, {{0.0, 0.0}, {375.0, 667.0}}
+         ↳Other, 0x108857480, {{0.0, 0.0}, {375.0, 667.0}}
+          ↳Other, 0x108857d40, {{0.0, 0.0}, {375.0, 667.0}}
+           ↳Other, 0x108854780, {{0.0, 0.0}, {375.0, 667.0}}
+            ↳Other, 0x1088570c0, {{0.0, 0.0}, {375.0, 667.0}}
+             ↳Other, 0x108857c00, {{0.0, 0.0}, {375.0, 667.0}}
+              ↳Other, 0x108857840, {{0.0, 0.0}, {375.0, 667.0}}
+               ↳Other, 0x108856080, {{0.0, 0.0}, {375.0, 667.0}}
+                ↳Other, 0x108855040, {{0.0, 0.0}, {375.0, 667.0}}
+                 ↳Other, 0x108856940, {{0.0, 0.0}, {375.0, 667.0}}
+                  ↳ScrollView, 0x108855540, {{0.0, 0.0}, {375.0, 667.0}}
+                   ↳Other, 0x108856440, {{0.0, 74.0}, {375.0, 3080.0}}
+                    ↳StaticText, 0x108856a80, {{16.0, 214.5}, {67.5, 249.5}}, label: 'Префлоп'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x11573ca00, pid: 76282, label: 'Учебный стол'
+  }
+  ↪︎Find: Descendant with identity binding to AX element pid: 76282, elementOrHash.elementID: 4592146048.109
+    Output: {
+      StaticText, 0x115714000, {{16.0, 214.5}, {67.5, 249.5}}, label: 'Префлоп'
+    }

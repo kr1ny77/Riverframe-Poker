@@ -1,0 +1,36 @@
+Text clipped
+Text of this SwiftUI.AccessibilityNode may be clipped at larger Dynamic Type sizes.
+Attributes: StaticText, 0x1152d70c0, {{32.0, 295.0}, {239.5, 34.0}}, label: 'Откройте урок и решите следующую задачу.'
+Element subtree:
+ →StaticText, 0x1152d70c0, {{32.0, 295.0}, {239.5, 34.0}}, label: 'Откройте урок и решите следующую задачу.'
+Path to element:
+ →Application, 0x108857c00, pid: 76271, label: 'Учебный стол'
+  ↳Window (Main), 0x108854f00, {{0.0, 0.0}, {375.0, 667.0}}
+   ↳Other, 0x1088575c0, {{0.0, 0.0}, {375.0, 667.0}}
+    ↳Other, 0x108856e40, {{0.0, 0.0}, {375.0, 667.0}}
+     ↳Other, 0x108857840, {{0.0, 0.0}, {375.0, 667.0}}
+      ↳Other, 0x108856080, {{0.0, 0.0}, {375.0, 667.0}}
+       ↳Other, 0x108855040, {{0.0, 0.0}, {375.0, 667.0}}
+        ↳Other, 0x108856940, {{0.0, 0.0}, {375.0, 667.0}}
+         ↳Other, 0x108855540, {{0.0, 0.0}, {375.0, 667.0}}
+          ↳Other, 0x108855b80, {{0.0, 0.0}, {375.0, 667.0}}
+           ↳Other, 0x108857980, {{0.0, 0.0}, {375.0, 667.0}}
+            ↳Other, 0x108857ac0, {{0.0, 0.0}, {375.0, 667.0}}
+             ↳Other, 0x108855f40, {{0.0, 0.0}, {375.0, 667.0}}
+              ↳Other, 0x105a3d540, {{0.0, 0.0}, {375.0, 667.0}}
+               ↳Other, 0x105a3d400, {{0.0, 0.0}, {375.0, 667.0}}
+                ↳Other, 0x1152d5f40, {{0.0, 0.0}, {375.0, 667.0}}
+                 ↳Other, 0x1152d5a40, {{0.0, 0.0}, {375.0, 667.0}}
+                  ↳ScrollView, 0x1152d4140, {{0.0, 0.0}, {375.0, 667.0}}
+                   ↳Other, 0x1152d6080, {{0.0, 74.0}, {375.0, 1270.0}}
+                    ↳Button, 0x1152d6bc0, {{32.0, 243.0}, {311.0, 86.0}}, identifier: 'course.next', label: 'Комбинации и сравнение рук, Откройте урок и решите следующую задачу.'
+                     ↳StaticText, 0x1152d70c0, {{32.0, 295.0}, {239.5, 34.0}}, label: 'Откройте урок и решите следующую задачу.'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x115718a00, pid: 76271, label: 'Учебный стол'
+  }
+  ↪︎Find: Descendant with identity binding to AX element pid: 76271, elementOrHash.elementID: 4557379360.140
+    Output: {
+      StaticText, 0x113413340, {{32.0, 295.0}, {239.5, 34.0}}, label: 'Откройте урок и решите следующую задачу.'
+    }

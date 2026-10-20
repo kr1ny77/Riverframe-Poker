@@ -1,0 +1,17 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "C55C3AC0-B6DC-42BD-9123-0E60724FA76B",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "27A9FE87-95C6-48C2-A90F-997300104085.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "progress-history-21-answers_0_D5DB853D-6994-4973-93A7-209A619569E4.png",
+        "timestamp" : 1792339513.055
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testDesignProgressHistory()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testDesignProgressHistory"
+  }
+]

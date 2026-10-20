@@ -1,0 +1,35 @@
+Contrast failed
+Contrast failed for SwiftUI.AccessibilityNode
+Attributes: StaticText, 0x1152d7980, {{208.5, 476.0}, {150.5, 153.5}}, label: 'Виртуальные фишки'
+Element subtree:
+ →StaticText, 0x1152d7980, {{208.5, 476.0}, {150.5, 153.5}}, label: 'Виртуальные фишки'
+Path to element:
+ →Application, 0x1088575c0, pid: 76282, label: 'Учебный стол'
+  ↳Window (Main), 0x108856e40, {{0.0, 0.0}, {375.0, 667.0}}
+   ↳Other, 0x108855180, {{0.0, 0.0}, {375.0, 667.0}}
+    ↳Other, 0x108855f40, {{0.0, 0.0}, {375.0, 667.0}}
+     ↳Other, 0x108857700, {{0.0, 0.0}, {375.0, 667.0}}
+      ↳Other, 0x108855400, {{0.0, 0.0}, {375.0, 667.0}}
+       ↳Other, 0x108857200, {{0.0, 0.0}, {375.0, 667.0}}
+        ↳Other, 0x1088548c0, {{0.0, 0.0}, {375.0, 667.0}}
+         ↳Other, 0x108856580, {{0.0, 0.0}, {375.0, 667.0}}
+          ↳Other, 0x108854500, {{0.0, 0.0}, {375.0, 667.0}}
+           ↳Other, 0x1088570c0, {{0.0, 0.0}, {375.0, 667.0}}
+            ↳Other, 0x108854780, {{0.0, 0.0}, {375.0, 667.0}}
+             ↳Other, 0x108856d00, {{0.0, 0.0}, {375.0, 667.0}}
+              ↳Other, 0x108856940, {{0.0, 0.0}, {375.0, 667.0}}
+               ↳Other, 0x108855040, {{0.0, 0.0}, {375.0, 667.0}}
+                ↳Other, 0x1152d7200, {{0.0, 0.0}, {375.0, 667.0}}
+                 ↳Other, 0x1152d57c0, {{0.0, 0.0}, {375.0, 667.0}}
+                  ↳ScrollView, 0x1152d4500, {{0.0, 0.0}, {375.0, 667.0}}
+                   ↳Other, 0x1152d4dc0, {{0.0, 74.0}, {375.0, 3080.0}}
+                    ↳StaticText, 0x1152d7980, {{208.5, 476.0}, {150.5, 153.5}}, label: 'Виртуальные фишки'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x11573ca00, pid: 76282, label: 'Учебный стол'
+  }
+  ↪︎Find: Descendant with identity binding to AX element pid: 76282, elementOrHash.elementID: 4592142048.113
+    Output: {
+      StaticText, 0x115714500, {{208.5, 476.0}, {150.5, 153.5}}, label: 'Виртуальные фишки'
+    }

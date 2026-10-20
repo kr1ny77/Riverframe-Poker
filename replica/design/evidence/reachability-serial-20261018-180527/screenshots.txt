@@ -1,0 +1,23 @@
+Exported 20 attachments for: CriticalFlows/testDesignAccessibility():
+File: F61C65CB-70AF-43C3-815E-3FFF277FE456.txt, suggested name: "accessibility-summary-pot-odds-axxxl_0_0D1F6475-3D92-4EE2-9071-7212B2514E7C.txt"
+File: ADE6EFF2-3562-4B0E-81D8-000EF0EE4779.txt, suggested name: "accessibility-pot-odds-axxxl_0_67B210E2-A685-4C26-ADE7-5060F6330ABB.txt"
+File: DBA9BA7B-443A-44C2-A13B-11EE1F3E8268.png, suggested name: "accessibility-pot-odds-axxxl_0_A3C4AEBD-CCAD-49EC-A616-CB939A6FF7FE.png"
+File: FDE52A24-0907-4A31-AE1C-F41BE4BADB71.txt, suggested name: "accessibility-summary-table-axxxl_0_D86EB964-6136-435C-BFC4-991C76A765B0.txt"
+File: EBB9ABC9-1B11-47E6-9897-280F0397FAA7.txt, suggested name: "accessibility-table-axxxl_0_E915F90F-6704-4221-90BC-9145D0C5198E.txt"
+File: B81F4972-D6D0-4BCA-A705-30DC53D13A48.png, suggested name: "accessibility-table-axxxl_0_D9E5D8C9-84C1-4968-8B02-6F7FF3D703E3.png"
+File: 192C094A-6A74-4498-95FF-E068EBDD401F.png, suggested name: "accessibility-table-actions-axxxl_0_AE02DB47-E2B0-4131-84F5-B7CB7B86B496.png"
+File: 5C3436BC-381C-4BC8-9F8B-3EF9EE36EB6E.png, suggested name: "accessibility-table-cards-axxxl_0_F5D69B67-ABF5-45D9-A6BF-167164E1CBB7.png"
+File: 7F034C46-2BC5-42AC-A8A9-B7EDE907B534.txt, suggested name: "accessibility-summary-course_0_E566A9E2-B7D8-44F1-A820-2944FCDFEAF1.txt"
+File: F19B356F-0B55-40D3-BE00-DE4D36E2FFBF.txt, suggested name: "accessibility-course_0_4FF3344A-C35D-40A7-923C-14232FCD6DDB.txt"
+File: D93723D2-D6E6-495B-B1F0-BAD4C0993B50.txt, suggested name: "accessibility-course_0_49E8F7A8-F711-4C09-982B-E8F99BCDA4BD.txt"
+File: 90331BEB-65F1-496D-BB59-CD33CB524C65.txt, suggested name: "accessibility-course_0_B9EBF37F-37CA-4276-A9F1-98C12B9EE131.txt"
+File: 531D03BC-D305-4A1D-A3B7-659D92BA758A.txt, suggested name: "accessibility-course_0_30378E71-A63C-40FC-829B-C84B5CC641AD.txt"
+File: D671D2CA-A7A2-4712-8F89-041D6402FF6A.txt, suggested name: "accessibility-course_0_E3D79C5B-70CB-4E2D-A9E8-45E813FFED58.txt"
+File: 008E2534-CE51-463B-AF11-EFB1FA1156B1.png, suggested name: "accessibility-course_0_84FF36D1-1878-492D-AFB8-7AE78EAE688F.png"
+File: AD43E98E-B54A-4065-B76B-B70E60151874.txt, suggested name: "accessibility-summary-home_0_98E51F45-6E07-454A-BEC5-90340D0B6F3C.txt"
+File: BFF366D7-A7AD-4869-8704-D09026178663.txt, suggested name: "accessibility-home_0_0FBE5FA0-B88C-481C-B107-911F687758C2.txt"
+File: 10176DD4-E863-4D84-A4C9-EE7E1572C703.txt, suggested name: "accessibility-home_0_58BF70B0-62CD-433C-B3C7-F29556EBBC6E.txt"
+File: 9F0FEF7B-D0F2-46AC-81A0-74EFAAD29420.txt, suggested name: "accessibility-home_0_7755E15A-EC4F-46CF-BD63-EDC25169F9DA.txt"
+File: 71276CC3-240B-429D-88D1-5A55504DE512.png, suggested name: "accessibility-home_0_84D1AF31-EB01-44BA-9F3B-2A75467CEA78.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/design/evidence/reachability-serial-20261018-180527/screenshots/manifest.json

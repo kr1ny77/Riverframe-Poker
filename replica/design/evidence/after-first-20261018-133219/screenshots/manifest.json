@@ -1,0 +1,89 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "EFFB46FA-9724-4AB0-A6C6-35210CAE695D",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "D2287AF4-5E61-40CF-81E1-11ED430A8129.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "design-settings_0_C142D518-57CD-4CB0-9081-AE178ADF7BB2.png",
+        "timestamp" : 1792323281.362
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "EFFB46FA-9724-4AB0-A6C6-35210CAE695D",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "1A415715-0965-4E25-801D-F0619FFD048D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "design-progress_0_64E7D3FF-96B4-43CC-9978-D183E78E3159.png",
+        "timestamp" : 1792323277.659
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "EFFB46FA-9724-4AB0-A6C6-35210CAE695D",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "CEE563B2-4580-4F55-A42E-CF9C1540E1DE.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "design-feedback_0_0A77433F-22E2-4BB1-8688-25ACF090147C.png",
+        "timestamp" : 1792323273.626
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "EFFB46FA-9724-4AB0-A6C6-35210CAE695D",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "2F063EB1-5EFF-44B5-95F6-96F3C0787A9B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "design-pot-odds_0_F78C0BF4-23C5-499F-A280-F83D3F62525F.png",
+        "timestamp" : 1792323264.165
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "EFFB46FA-9724-4AB0-A6C6-35210CAE695D",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "E056C857-8F42-46CA-9FA5-A281F104F4B7.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "design-equity_0_309AD5F8-E0E2-4D39-9035-80E90D1031FD.png",
+        "timestamp" : 1792323255.32
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "EFFB46FA-9724-4AB0-A6C6-35210CAE695D",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "5611E4E2-90CD-48C1-83CE-54F45DB62032.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "design-course_0_5EFB03AD-69A2-4F57-A37A-B20C31D20607.png",
+        "timestamp" : 1792323248.678
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "EFFB46FA-9724-4AB0-A6C6-35210CAE695D",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "48FA6B0F-3034-47E0-9153-7033FFA71D6D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "design-bet-editor_0_7B2B14A2-0D13-4C38-84EB-56478D931753.png",
+        "timestamp" : 1792323231.626
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "EFFB46FA-9724-4AB0-A6C6-35210CAE695D",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "CA14FFB4-88C9-4BC8-B0F3-94F0BADE70AB.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "design-table_0_9A53B213-56F1-46DC-B87A-5BE2B898F4AE.png",
+        "timestamp" : 1792323230.975
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "EFFB46FA-9724-4AB0-A6C6-35210CAE695D",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "5801414B-BBB9-4472-862C-DDE61B1ECA02.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "design-home_0_AAC06F8E-5502-41EC-9DE8-225789860132.png",
+        "timestamp" : 1792323221.708
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testDesignCapture()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testDesignCapture"
+  }
+]

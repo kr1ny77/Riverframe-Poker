@@ -1,0 +1,84 @@
+{
+  "devicesAndConfigurations" : [
+    {
+      "device" : {
+        "architecture" : "arm64",
+        "deviceId" : "D822C1AE-1C15-4995-9AD5-3ABABD4E1B89",
+        "deviceName" : "Poker QA Design",
+        "modelName" : "iPhone SE (3rd generation)",
+        "osBuildNumber" : "24A434",
+        "osVersion" : "27.0",
+        "platform" : "iOS Simulator"
+      },
+      "expectedFailures" : 0,
+      "failedTests" : 5,
+      "passedTests" : 4,
+      "skippedTests" : 1,
+      "testPlanConfiguration" : {
+        "configurationId" : "1",
+        "configurationName" : "Test Scheme Action"
+      }
+    }
+  ],
+  "environmentDescription" : "PokerTrainer · Built with macOS 26.6.2",
+  "expectedFailures" : 0,
+  "failedTests" : 5,
+  "finishTime" : 1792326031.371,
+  "passedTests" : 4,
+  "result" : "Failed",
+  "runtimeWarnings" : [
+
+  ],
+  "skippedTests" : 1,
+  "startTime" : 1792324662.789,
+  "statistics" : [
+
+  ],
+  "testFailures" : [
+    {
+      "failureText" : "Failed to get matching snapshot: No matches found for Elements matching predicate '\"course.sample.potOdds\" IN identifiers' from input {(\n    StaticText, label: 'Прогресс',\n    StaticText, label: 'Шансы банка',\n    StaticText, label: 'Верно',\n    StaticText, label: 'Ваш ответ 25.0% · ключ 25.0%',\n    StaticText, label: 'Шансы банка',\n    StaticText, label: 'Верно',\n    StaticText, label: 'Ваш ответ 16.7% · ключ 16.7%',\n    StaticText, label: 'История',\n    StaticText, label: 'Шансы банка',\n    StaticText, label: 'Разбор решения',\n    StaticText, label: 'Ваш ответ 0.0% · ключ 33.3%',\n    StaticText, label: 'Шансы банка',\n    StaticText, label: 'Верно',\n    StaticText, label: 'Ваш ответ 25.0% · ключ 25.0%',\n    StaticText, label: 'Шансы банка',\n    StaticText, label: 'Верно',\n    StaticText, label: 'Ваш ответ 16.7% · ключ 16.7%',\n    StaticText, label: 'Шансы банка',\n    StaticText, label: 'Разбор решения',\n    StaticText, label: 'Ваш ответ 0.0% · ключ 33.3%',\n    StaticText, label: 'Шансы банка',\n    StaticText, label: 'Верно',\n    StaticText, label: 'Ваш ответ 25.0% · ключ 25.0%'\n)}\nPossibly caused by runtime issues:\nAutomation type mismatch: computed Other from legacy attributes vs StaticText from modern attribute. Input attributes and values: {\n    \"XC_kAXXCAttributeAutomationType\" = 48;\n    \"XC_kAXXCAttributeElementBaseType\" = UILabel;\n    \"XC_kAXXCAttributeElementType\" = UILabel;\n    \"XC_kAXXCAttributeTraits\" = 8590000128;\n}\nSee test report attachments for more detail.",
+      "targetName" : "PokerTrainerUITests",
+      "testIdentifier" : 2,
+      "testIdentifierString" : "CriticalFlows/testCourseRepeatNavigationPersistenceAndGameIndependence()",
+      "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testCourseRepeatNavigationPersistenceAndGameIndependence",
+      "testName" : "testCourseRepeatNavigationPersistenceAndGameIndependence()"
+    },
+    {
+      "failureText" : "XCTAssertTrue failed",
+      "targetName" : "PokerTrainerUITests",
+      "testIdentifier" : 6,
+      "testIdentifierString" : "CriticalFlows/testDesignCapture()",
+      "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testDesignCapture",
+      "testName" : "testDesignCapture()"
+    },
+    {
+      "failureText" : "XCTAssertTrue failed",
+      "targetName" : "PokerTrainerUITests",
+      "testIdentifier" : 7,
+      "testIdentifierString" : "CriticalFlows/testDesignProgressHistory()",
+      "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testDesignProgressHistory",
+      "testName" : "testDesignProgressHistory()"
+    },
+    {
+      "failureText" : "XCTAssertTrue failed",
+      "targetName" : "PokerTrainerUITests",
+      "testIdentifier" : 8,
+      "testIdentifierString" : "CriticalFlows/testDesignRapidSubmit()",
+      "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testDesignRapidSubmit",
+      "testName" : "testDesignRapidSubmit()"
+    },
+    {
+      "failureText" : "XCTAssertEqual failed: (\"Optional(\"0\")\") is not equal to (\"Optional(\"1\")\")",
+      "targetName" : "PokerTrainerUITests",
+      "testIdentifier" : 9,
+      "testIdentifierString" : "CriticalFlows/testDesignReducedMotion()",
+      "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testDesignReducedMotion",
+      "testName" : "testDesignReducedMotion()"
+    }
+  ],
+  "title" : "Test - PokerTrainer",
+  "topInsights" : [
+
+  ],
+  "totalTestCount" : 10
+}

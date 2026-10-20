@@ -1,0 +1,36 @@
+Text clipped
+Text of this SwiftUI.AccessibilityNode may be clipped at larger Dynamic Type sizes.
+Attributes: StaticText, 0x108856300, {{32.0, 243.0}, {251.0, 49.0}}, label: 'Комбинации и сравнение рук'
+Element subtree:
+ →StaticText, 0x108856300, {{32.0, 243.0}, {251.0, 49.0}}, label: 'Комбинации и сравнение рук'
+Path to element:
+ →Application, 0x1152d4640, pid: 76271, label: 'Учебный стол'
+  ↳Window (Main), 0x1152d6e40, {{0.0, 0.0}, {375.0, 667.0}}
+   ↳Other, 0x1152d4f00, {{0.0, 0.0}, {375.0, 667.0}}
+    ↳Other, 0x1152d6940, {{0.0, 0.0}, {375.0, 667.0}}
+     ↳Other, 0x1152d6300, {{0.0, 0.0}, {375.0, 667.0}}
+      ↳Other, 0x1152d5180, {{0.0, 0.0}, {375.0, 667.0}}
+       ↳Other, 0x1152d4a00, {{0.0, 0.0}, {375.0, 667.0}}
+        ↳Other, 0x1152d4c80, {{0.0, 0.0}, {375.0, 667.0}}
+         ↳Other, 0x1152d66c0, {{0.0, 0.0}, {375.0, 667.0}}
+          ↳Other, 0x1152d5540, {{0.0, 0.0}, {375.0, 667.0}}
+           ↳Other, 0x1152d5900, {{0.0, 0.0}, {375.0, 667.0}}
+            ↳Other, 0x1152d6580, {{0.0, 0.0}, {375.0, 667.0}}
+             ↳Other, 0x1152d5400, {{0.0, 0.0}, {375.0, 667.0}}
+              ↳Other, 0x1152d61c0, {{0.0, 0.0}, {375.0, 667.0}}
+               ↳Other, 0x1152d7340, {{0.0, 0.0}, {375.0, 667.0}}
+                ↳Other, 0x1152d5680, {{0.0, 0.0}, {375.0, 667.0}}
+                 ↳Other, 0x1152d6440, {{0.0, 0.0}, {375.0, 667.0}}
+                  ↳ScrollView, 0x1152d4500, {{0.0, 0.0}, {375.0, 667.0}}
+                   ↳Other, 0x1152d43c0, {{0.0, 74.0}, {375.0, 1270.0}}
+                    ↳Button, 0x108856bc0, {{32.0, 243.0}, {311.0, 86.0}}, identifier: 'course.next', label: 'Комбинации и сравнение рук, Откройте урок и решите следующую задачу.'
+                     ↳StaticText, 0x108856300, {{32.0, 243.0}, {251.0, 49.0}}, label: 'Комбинации и сравнение рук'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x115718a00, pid: 76271, label: 'Учебный стол'
+  }
+  ↪︎Find: Descendant with identity binding to AX element pid: 76271, elementOrHash.elementID: 4557381440.138
+    Output: {
+      StaticText, 0x1134130c0, {{32.0, 243.0}, {251.0, 49.0}}, label: 'Комбинации и сравнение рук'
+    }

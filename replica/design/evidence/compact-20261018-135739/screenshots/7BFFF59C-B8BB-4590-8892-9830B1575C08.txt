@@ -1,0 +1,33 @@
+Failed to get matching snapshot: No matches found for Elements matching predicate '"course.sample.potOdds" IN identifiers' from input {(
+    StaticText, label: 'Прогресс',
+    StaticText, label: 'Шансы банка',
+    StaticText, label: 'Верно',
+    StaticText, label: 'Ваш ответ 25.0% · ключ 25.0%',
+    StaticText, label: 'Шансы банка',
+    StaticText, label: 'Верно',
+    StaticText, label: 'Ваш ответ 16.7% · ключ 16.7%',
+    StaticText, label: 'История',
+    StaticText, label: 'Шансы банка',
+    StaticText, label: 'Разбор решения',
+    StaticText, label: 'Ваш ответ 0.0% · ключ 33.3%',
+    StaticText, label: 'Шансы банка',
+    StaticText, label: 'Верно',
+    StaticText, label: 'Ваш ответ 25.0% · ключ 25.0%',
+    StaticText, label: 'Шансы банка',
+    StaticText, label: 'Верно',
+    StaticText, label: 'Ваш ответ 16.7% · ключ 16.7%',
+    StaticText, label: 'Шансы банка',
+    StaticText, label: 'Разбор решения',
+    StaticText, label: 'Ваш ответ 0.0% · ключ 33.3%',
+    StaticText, label: 'Шансы банка',
+    StaticText, label: 'Верно',
+    StaticText, label: 'Ваш ответ 25.0% · ключ 25.0%'
+)}
+Possibly caused by runtime issues:
+Automation type mismatch: computed Other from legacy attributes vs StaticText from modern attribute. Input attributes and values: {
+    "XC_kAXXCAttributeAutomationType" = 48;
+    "XC_kAXXCAttributeElementBaseType" = UILabel;
+    "XC_kAXXCAttributeElementType" = UILabel;
+    "XC_kAXXCAttributeTraits" = 8590000128;
+}
+See test report attachments for more detail.

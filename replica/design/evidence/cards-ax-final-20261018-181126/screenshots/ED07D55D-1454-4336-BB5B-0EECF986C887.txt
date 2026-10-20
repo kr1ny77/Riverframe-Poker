@@ -1,0 +1,35 @@
+Text clipped
+Text of this SwiftUI.AccessibilityNode may be clipped at larger Dynamic Type sizes.
+Attributes: StaticText, 0x10b7088c0, {{16.0, 52.5}, {297.5, 232.5}}, label: 'Какая доля банка нужна, чтобы оплатить колл?'
+Element subtree:
+ →StaticText, 0x10b7088c0, {{16.0, 52.5}, {297.5, 232.5}}, label: 'Какая доля банка нужна, чтобы оплатить колл?'
+Path to element:
+ →Application, 0x1140bf480, pid: 85256, label: 'Учебный стол'
+  ↳Window (Main), 0x1140bf5c0, {{0.0, 0.0}, {375.0, 667.0}}
+   ↳Other, 0x1140bf840, {{0.0, 0.0}, {375.0, 667.0}}
+    ↳Other, 0x1140bf980, {{0.0, 0.0}, {375.0, 667.0}}
+     ↳Other, 0x1140bfac0, {{0.0, 0.0}, {375.0, 667.0}}
+      ↳Other, 0x1140bfc00, {{0.0, 0.0}, {375.0, 667.0}}
+       ↳Other, 0x1140bfd40, {{0.0, 0.0}, {375.0, 667.0}}
+        ↳Other, 0x1140bfe80, {{0.0, 0.0}, {375.0, 667.0}}
+         ↳Other, 0x109c4cc80, {{0.0, 0.0}, {375.0, 667.0}}
+          ↳Other, 0x109c4e440, {{0.0, 0.0}, {375.0, 667.0}}
+           ↳Other, 0x109c4c3c0, {{0.0, 0.0}, {375.0, 667.0}}
+            ↳Other, 0x109c4f980, {{0.0, 0.0}, {375.0, 667.0}}
+             ↳Other, 0x109c4e580, {{0.0, 0.0}, {375.0, 667.0}}
+              ↳Other, 0x10b709040, {{0.0, 0.0}, {375.0, 667.0}}
+               ↳Other, 0x10b708780, {{0.0, 0.0}, {375.0, 667.0}}
+                ↳Other, 0x10b709540, {{0.0, 0.0}, {375.0, 667.0}}
+                 ↳Other, 0x10b70bd40, {{0.0, 0.0}, {375.0, 667.0}}
+                  ↳ScrollView, 0x10b7083c0, {{0.0, 0.0}, {375.0, 667.0}}
+                   ↳Other, 0x10b708640, {{0.0, -104.5}, {375.0, 2844.0}}
+                    ↳StaticText, 0x10b7088c0, {{16.0, 52.5}, {297.5, 232.5}}, label: 'Какая доля банка нужна, чтобы оплатить колл?'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x115442300, pid: 85256, label: 'Учебный стол'
+  }
+  ↪︎Find: Descendant with identity binding to AX element pid: 85256, elementOrHash.elementID: 4671113408.185
+    Output: {
+      StaticText, 0x1140f03c0, {{16.0, 52.5}, {297.5, 232.5}}, label: 'Какая доля банка нужна, чтобы оплатить колл?'
+    }

@@ -1,0 +1,35 @@
+Text clipped
+Text of this SwiftUI.AccessibilityNode may be clipped at larger Dynamic Type sizes.
+Attributes: StaticText, 0x105a3d540, {{40.0, 210.5}, {177.5, 24.0}}, label: 'Ваш учебный стол'
+Element subtree:
+ →StaticText, 0x105a3d540, {{40.0, 210.5}, {177.5, 24.0}}, label: 'Ваш учебный стол'
+Path to element:
+ →Application, 0x1152d4b40, pid: 76271, label: 'Учебный стол'
+  ↳Window (Main), 0x1152d4c80, {{0.0, 0.0}, {375.0, 667.0}}
+   ↳Other, 0x1152d4f00, {{0.0, 0.0}, {375.0, 667.0}}
+    ↳Other, 0x1152d5040, {{0.0, 0.0}, {375.0, 667.0}}
+     ↳Other, 0x1152d5180, {{0.0, 0.0}, {375.0, 667.0}}
+      ↳Other, 0x1152d6580, {{0.0, 0.0}, {375.0, 667.0}}
+       ↳Other, 0x1152d66c0, {{0.0, 0.0}, {375.0, 667.0}}
+        ↳Other, 0x1152d6800, {{0.0, 0.0}, {375.0, 667.0}}
+         ↳Other, 0x1152d6940, {{0.0, 0.0}, {375.0, 667.0}}
+          ↳Other, 0x1152d6a80, {{0.0, 0.0}, {375.0, 667.0}}
+           ↳Other, 0x1152d6bc0, {{0.0, 0.0}, {375.0, 667.0}}
+            ↳Other, 0x1152d6d00, {{0.0, 0.0}, {375.0, 667.0}}
+             ↳Other, 0x1152d6e40, {{0.0, 0.0}, {375.0, 667.0}}
+              ↳Other, 0x1152d7200, {{0.0, 0.0}, {375.0, 667.0}}
+               ↳Other, 0x1152d7340, {{0.0, 0.0}, {375.0, 667.0}}
+                ↳Other, 0x1152d7480, {{0.0, 0.0}, {375.0, 667.0}}
+                 ↳Other, 0x1152d75c0, {{0.0, 0.0}, {375.0, 667.0}}
+                  ↳ScrollView, 0x1152d7700, {{0.0, 0.0}, {375.0, 667.0}}
+                   ↳Other, 0x1152d7e80, {{0.0, 74.0}, {375.0, 676.0}}
+                    ↳StaticText, 0x105a3d540, {{40.0, 210.5}, {177.5, 24.0}}, label: 'Ваш учебный стол'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x113413480, pid: 76271, label: 'Учебный стол'
+  }
+  ↪︎Find: Descendant with identity binding to AX element pid: 76271, elementOrHash.elementID: 4398446016.68
+    Output: {
+      StaticText, 0x1152d5540, {{40.0, 210.5}, {177.5, 24.0}}, label: 'Ваш учебный стол'
+    }

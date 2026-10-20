@@ -1,0 +1,7 @@
+Exported 4 attachments for: CriticalFlows/testRegressionLessonEV():
+File: 89CA4EE6-45B6-4B34-BCB1-74A5CCF77126.png, suggested name: "ev-call-restored-progress_0_BC98CE38-B7C4-48E2-BB41-EBAD6CD35857.png"
+File: ECB54D13-7FB6-49D7-8C6C-8FC98E4EDB6A.png, suggested name: "ev-call-review-3_0_AE953797-F849-4726-B9ED-25ED0EA9FD1B.png"
+File: 6342C109-0FF7-4A3B-AA7E-B2BD5A604B3F.png, suggested name: "ev-call-review-2_0_C5492589-325B-415F-ADFE-EA0398342B59.png"
+File: 2857594F-291A-42DF-B605-5DCEEABACF56.png, suggested name: "ev-call-review-1_0_A34E4038-CDE4-4647-B560-5EAB5036532E.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/design/evidence/ev-final-20261018-175425/screenshots/manifest.json

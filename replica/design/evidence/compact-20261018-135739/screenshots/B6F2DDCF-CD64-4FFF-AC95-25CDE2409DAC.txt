@@ -1,0 +1,160 @@
+Application, 0x115f69540, pid: 68060, label: 'Учебный стол' <App element pid: 68060>
+  Window (Main), 0x115f69400, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4347773952.4>
+    Other, 0x115f692c0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4348504128.5>
+    Other, 0x115f69180, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4349432832.6>
+      Other, 0x115f69040, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4392105728.7>
+        Other, 0x115f68f00, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4347772928.8>
+          Other, 0x115f68dc0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4419564992.9>
+            Other, 0x115f68c80, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4349431808.10>
+              Other, 0x115f68b40, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4349439488.11>
+                Other, 0x115f68a00, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4620318720.946>
+                  Other, 0x115f688c0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4347831040.947>
+                    Other, 0x115f68780, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4636037984.948>
+                      Other, 0x115f68640, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4621100576.949>
+                        Other, 0x115f68500, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4392118272.950>
+                          NavigationBar, 0x115f683c0, {{0.0, 20.0}, {375.0, 54.0}}, identifier: 'Прогресс' <AX element pid: 68060, elementOrHash.elementID: 4637360896.951>
+                            StaticText, 0x115f69680, {{147.0, 31.5}, {80.5, 21.0}}, label: 'Прогресс' <AX element pid: 68060, elementOrHash.elementID: 4621407488.954>
+                          Other, 0x115f697c0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4621415552.952>
+                            Other, 0x115f69900, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4621407040.955>
+                              Other, 0x115f69a40, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4620011264.957>
+                                Other, 0x115f69b80, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4636035424.958>
+                                  CollectionView, 0x115f69cc0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4620553728.959>
+                                    Other, 0x115f69e00, {{0.0, -552.5}, {375.0, 2470.5}} <AX element pid: 68060, elementOrHash.elementID: 4392071680.1134>
+                                    Cell, 0x115f69f40, {{0.0, -42.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4643697152.1141>
+                                      Other, 0x115f6a080, {{0.0, -42.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4391947776.1158>
+                                        Other, 0x115f6a1c0, {{0.0, -42.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644195840.1174>
+                                          Other, 0x115f6a300, {{0.0, -42.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644325120.1190>
+                                            Other, 0x115f6a440, {{0.0, -42.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4621098176.1219>
+                                      Other, 0x115f6a580, {{0.0, -42.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644194496.1159>
+                                        Other, 0x115f6a6c0, {{0.0, -42.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644311552.1175>
+                                          Other, 0x115f6a800, {{0.0, -42.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4608109344.1191>
+                                            StaticText, 0x115f6a940, {{16.0, -27.5}, {112.0, 20.5}}, label: 'Шансы банка' <AX element pid: 68060, elementOrHash.elementID: 4608100064.1220>
+                                            StaticText, 0x115f6aa80, {{16.0, -5.0}, {50.0, 20.5}}, label: 'Верно' <AX element pid: 68060, elementOrHash.elementID: 4608102144.1221>
+                                            StaticText, 0x115f6abc0, {{16.0, 17.5}, {179.0, 14.5}}, label: 'Ваш ответ 25.0% · ключ 25.0%' <AX element pid: 68060, elementOrHash.elementID: 4608107744.1222>
+                                    Other, 0x115f6ad00, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4621407936.961>
+                                      Other, 0x115f6ae40, {{0.0, 0.0}, {375.0, 154.5}} <AX element pid: 68060, elementOrHash.elementID: 4607157888.980>
+                                      Other, 0x115f6af80, {{0.0, 534.0}, {375.0, 133.0}} <AX element pid: 68060, elementOrHash.elementID: 4607162368.981>
+                                    Other, 0x115f6b0c0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4621408384.962>
+                                      Other, 0x115f6b200, {{0.0, 0.0}, {375.0, 154.5}} <AX element pid: 68060, elementOrHash.elementID: 4619547776.1083>
+                                      Other, 0x115f6b340, {{0.0, 534.0}, {375.0, 133.0}} <AX element pid: 68060, elementOrHash.elementID: 4619536896.982>
+                                    Cell, 0x115f6b480, {{0.0, 47.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4643698432.1223>
+                                      Other, 0x115f6b5c0, {{0.0, 47.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4391949824.1230>
+                                        Other, 0x115f6b700, {{0.0, 47.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644196736.1242>
+                                          Other, 0x115f6b840, {{0.0, 47.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644326016.1254>
+                                            Other, 0x115f6b980, {{0.0, 47.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645573152.1266>
+                                      Other, 0x115f6bac0, {{0.0, 47.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644195392.1231>
+                                        Other, 0x115f6bc00, {{0.0, 47.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644313088.1243>
+                                          Other, 0x115f6bd40, {{0.0, 47.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645569792.1255>
+                                            StaticText, 0x115f6be80, {{16.0, 62.0}, {112.0, 20.5}}, label: 'Шансы банка' <AX element pid: 68060, elementOrHash.elementID: 4645569472.1267>
+                                            StaticText, 0x105c4de00, {{16.0, 84.5}, {50.0, 20.5}}, label: 'Верно' <AX element pid: 68060, elementOrHash.elementID: 4645569312.1268>
+                                            StaticText, 0x105c4e1c0, {{16.0, 107.0}, {174.5, 14.5}}, label: 'Ваш ответ 16.7% · ключ 16.7%' <AX element pid: 68060, elementOrHash.elementID: 4645569632.1269>
+                                    Other, 0x115f78000, {{16.0, 46.0}, {343.0, 1.0}} <AX element pid: 68060, elementOrHash.elementID: 4392275968.976>
+                                    Cell, 0x115f78140, {{0.0, 74.0}, {375.0, 40.5}} <AX element pid: 68060, elementOrHash.elementID: 4643694592.1135>
+                                      Other, 0x115f78280, {{0.0, 74.0}, {375.0, 40.5}} <AX element pid: 68060, elementOrHash.elementID: 4392074752.1146>
+                                      Other, 0x115f783c0, {{0.0, 74.0}, {375.0, 40.5}} <AX element pid: 68060, elementOrHash.elementID: 4644193152.1147>
+                                        Other, 0x115f78500, {{0.0, 74.0}, {375.0, 40.5}} <AX element pid: 68060, elementOrHash.elementID: 4644308480.1163>
+                                          Other, 0x115f78640, {{0.0, 74.0}, {375.0, 40.5}} <AX element pid: 68060, elementOrHash.elementID: 4636046464.1179>
+                                            StaticText, 0x115f78780, {{0.0, 74.0}, {375.0, 40.5}}, label: 'История' <AX element pid: 68060, elementOrHash.elementID: 4636045344.1198>
+                                    Cell, 0x115f788c0, {{0.0, 136.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644732928.1224>
+                                      Other, 0x115f78a00, {{0.0, 136.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4391951872.1232>
+                                        Other, 0x115f78b40, {{0.0, 136.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644197632.1244>
+                                          Other, 0x115f78c80, {{0.0, 136.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644326912.1256>
+                                            Other, 0x115f78dc0, {{0.0, 136.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645573312.1270>
+                                      Other, 0x115f78f00, {{0.0, 136.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644196288.1233>
+                                        Other, 0x115f79040, {{0.0, 136.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644314624.1245>
+                                          Other, 0x115f79180, {{0.0, 136.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645570432.1257>
+                                            StaticText, 0x115f792c0, {{16.0, 151.5}, {112.0, 20.5}}, label: 'Шансы банка' <AX element pid: 68060, elementOrHash.elementID: 4645570112.1271>
+                                            StaticText, 0x115f79400, {{16.0, 174.0}, {133.0, 20.5}}, label: 'Разбор решения' <AX element pid: 68060, elementOrHash.elementID: 4645569952.1272>
+                                            StaticText, 0x115f79540, {{16.0, 196.5}, {172.0, 14.5}}, label: 'Ваш ответ 0.0% · ключ 33.3%' <AX element pid: 68060, elementOrHash.elementID: 4645570272.1273>
+                                    Other, 0x115f79680, {{16.0, 135.5}, {343.0, 1.0}} <AX element pid: 68060, elementOrHash.elementID: 4392278016.978>
+                                    Cell, 0x115f797c0, {{0.0, 226.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644734208.1225>
+                                      Other, 0x115f79900, {{0.0, 226.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4391953920.1234>
+                                        Other, 0x115f79a40, {{0.0, 226.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644198528.1246>
+                                          Other, 0x115f79b80, {{0.0, 226.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644327808.1258>
+                                            Other, 0x115f79cc0, {{0.0, 226.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645573472.1274>
+                                      Other, 0x115f79e00, {{0.0, 226.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644197184.1235>
+                                        Other, 0x115f79f40, {{0.0, 226.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644316160.1247>
+                                          Other, 0x115f7a080, {{0.0, 226.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645571072.1259>
+                                            StaticText, 0x115f7a1c0, {{16.0, 241.0}, {112.0, 20.5}}, label: 'Шансы банка' <AX element pid: 68060, elementOrHash.elementID: 4645570752.1275>
+                                            StaticText, 0x115f7a300, {{16.0, 263.5}, {50.0, 20.5}}, label: 'Верно' <AX element pid: 68060, elementOrHash.elementID: 4645570592.1276>
+                                            StaticText, 0x115f7a440, {{16.0, 286.0}, {179.0, 14.5}}, label: 'Ваш ответ 25.0% · ключ 25.0%' <AX element pid: 68060, elementOrHash.elementID: 4645570912.1277>
+                                    Other, 0x115f7a580, {{16.0, 225.0}, {343.0, 1.0}} <AX element pid: 68060, elementOrHash.elementID: 4391912448.1226>
+                                    Cell, 0x115f7a6c0, {{0.0, 315.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644735488.1227>
+                                      Other, 0x115f7a800, {{0.0, 315.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4391955968.1236>
+                                        Other, 0x115f7a940, {{0.0, 315.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644199424.1248>
+                                          Other, 0x115f7aa80, {{0.0, 315.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644328704.1260>
+                                            Other, 0x115f7abc0, {{0.0, 315.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645573632.1278>
+                                      Other, 0x115f7ad00, {{0.0, 315.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644198080.1237>
+                                        Other, 0x115f7ae40, {{0.0, 315.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644317696.1249>
+                                          Other, 0x115f7af80, {{0.0, 315.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645571712.1261>
+                                            StaticText, 0x115f7b0c0, {{16.0, 330.5}, {112.0, 20.5}}, label: 'Шансы банка' <AX element pid: 68060, elementOrHash.elementID: 4645571392.1279>
+                                            StaticText, 0x115f7b200, {{16.0, 353.0}, {50.0, 20.5}}, label: 'Верно' <AX element pid: 68060, elementOrHash.elementID: 4645571232.1280>
+                                            StaticText, 0x115f7b340, {{16.0, 375.5}, {174.5, 14.5}}, label: 'Ваш ответ 16.7% · ключ 16.7%' <AX element pid: 68060, elementOrHash.elementID: 4645571552.1281>
+                                    Other, 0x115f7b480, {{16.0, 314.5}, {343.0, 1.0}} <AX element pid: 68060, elementOrHash.elementID: 4392273920.968>
+                                    Cell, 0x115f7b5c0, {{0.0, 405.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644736768.1228>
+                                      Other, 0x115f7b700, {{0.0, 405.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4391958016.1238>
+                                        Other, 0x115f7b840, {{0.0, 405.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644200320.1250>
+                                          Other, 0x115f7b980, {{0.0, 405.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644329600.1262>
+                                            Other, 0x115f7bac0, {{0.0, 405.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645573792.1282>
+                                      Other, 0x115f7bc00, {{0.0, 405.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644198976.1239>
+                                        Other, 0x115f7bd40, {{0.0, 405.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644319232.1251>
+                                          Other, 0x115f7be80, {{0.0, 405.0}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645572352.1263>
+                                            StaticText, 0x115f7c000, {{16.0, 420.0}, {112.0, 20.5}}, label: 'Шансы банка' <AX element pid: 68060, elementOrHash.elementID: 4645572032.1283>
+                                            StaticText, 0x115f7c140, {{16.0, 442.5}, {133.0, 20.5}}, label: 'Разбор решения' <AX element pid: 68060, elementOrHash.elementID: 4645571872.1284>
+                                            StaticText, 0x115f7c280, {{16.0, 465.0}, {172.0, 14.5}}, label: 'Ваш ответ 0.0% · ключ 33.3%' <AX element pid: 68060, elementOrHash.elementID: 4645572192.1285>
+                                    Other, 0x115f7c3c0, {{16.0, 404.0}, {343.0, 1.0}} <AX element pid: 68060, elementOrHash.elementID: 4392253440.966>
+                                    Cell, 0x115f7c500, {{0.0, 494.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644738048.1229>
+                                      Other, 0x115f7c640, {{0.0, 494.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4391960064.1240>
+                                        Other, 0x115f7c780, {{0.0, 494.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644201664.1252>
+                                          Other, 0x115f7c8c0, {{0.0, 494.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644330496.1264>
+                                            Other, 0x115f7ca00, {{0.0, 494.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645573952.1286>
+                                      Other, 0x115f7cb40, {{0.0, 494.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644200768.1241>
+                                        Other, 0x115f7cc80, {{0.0, 494.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4644320768.1253>
+                                          Other, 0x115f7cdc0, {{0.0, 494.5}, {375.0, 89.5}} <AX element pid: 68060, elementOrHash.elementID: 4645572992.1265>
+                                            StaticText, 0x115f7cf00, {{16.0, 509.5}, {112.0, 20.5}}, label: 'Шансы банка' <AX element pid: 68060, elementOrHash.elementID: 4645572672.1287>
+                                            StaticText, 0x115f7d040, {{16.0, 532.0}, {50.0, 20.5}}, label: 'Верно' <AX element pid: 68060, elementOrHash.elementID: 4645572512.1288>
+                                            StaticText, 0x115f7d180, {{16.0, 554.5}, {179.0, 14.5}}, label: 'Ваш ответ 25.0% · ключ 25.0%' <AX element pid: 68060, elementOrHash.elementID: 4645572832.1289>
+                                    Other, 0x115f7d2c0, {{16.0, 493.5}, {343.0, 1.0}} <AX element pid: 68060, elementOrHash.elementID: 4392274944.970>
+                                    Other, 0x115f7d400, {{16.0, 583.0}, {343.0, 1.0}} <AX element pid: 68060, elementOrHash.elementID: 4392271872.974>
+                                    Other, 0x115f7d540, {{342.0, 74.0}, {30.0, 510.0}}, label: 'Вертикальная полоса прокрутки, 6 страниц', value: 100 % <AX element pid: 68060, elementOrHash.elementID: 4392240640.979>
+                                      Other, 0x115f7d680, {{369.0, 458.0}, {3.0, 123.0}} <AX element pid: 68060, elementOrHash.elementID: 4618770112.999>
+                                    Other, 0x115f7d7c0, {{342.0, 74.0}, {30.0, 510.0}}, label: 'Вертикальная полоса прокрутки, 6 страниц', value: 100 % <AX element pid: 68060, elementOrHash.elementID: 4392240640.979>
+                                      Other, 0x115f7d900, {{369.0, 458.0}, {3.0, 123.0}} <AX element pid: 68060, elementOrHash.elementID: 4618770112.999>
+                          Toolbar, 0x115f7da40, {{0.0, 0.0}, {375.0, 667.0}}, identifier: 'Toolbar', label: 'Панель инструментов' <AX element pid: 68060, elementOrHash.elementID: 4392112640.953>
+                            Other, 0x115f7db80, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4392119296.956>
+              Other, 0x115f7dcc0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4349461376.12>
+                Other, 0x115f7de00, {{0.0, 584.0}, {375.0, 83.0}} <AX element pid: 68060, elementOrHash.elementID: 4348502784.14>
+                  Other, 0x115f7df40, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4348503232.16>
+                    TabBar, 0x115f7e080, {{0.0, 584.0}, {375.0, 83.0}}, label: 'Панель вкладок' <AX element pid: 68060, elementOrHash.elementID: 4392229632.19>
+                      Other, 0x115f7e1c0, {{21.0, 584.0}, {333.0, 62.0}} <AX element pid: 68060, elementOrHash.elementID: 4349433856.22>
+                        Other, 0x115f7e300, {{21.0, 584.0}, {93.4, 54.0}} <AX element pid: 68060, elementOrHash.elementID: 4348509056.25>
+                        Other, 0x115f7e440, {{21.0, 584.0}, {333.0, 62.0}} <AX element pid: 68060, elementOrHash.elementID: 4348496512.26>
+                          Button, 0x115f7e580, {{25.0, 588.0}, {84.0, 54.0}}, identifier: 'suit.spade.fill', label: 'Играть' <AX element pid: 68060, elementOrHash.elementID: 4347778048.34>
+                            Image, 0x115f7e6c0, {{54.0, 594.5}, {25.5, 26.5}}, identifier: 'suit.spade.fill', label: 'Пика' <AX element pid: 68060, elementOrHash.elementID: 4417912832.44>
+                          Button, 0x115f7e800, {{89.0, 588.0}, {107.1, 54.0}}, identifier: 'brain.head.profile', label: 'Тренировка' <AX element pid: 68060, elementOrHash.elementID: 4347780096.35>
+                            Image, 0x115f7e940, {{128.0, 592.5}, {29.0, 31.0}}, identifier: 'brain.head.profile.fill', label: 'Профиль головы с изображением мозга, с заливкой' <AX element pid: 68060, elementOrHash.elementID: 4417914112.45>
+                          Button, 0x115f7ea80, {{176.0, 588.0}, {93.4, 54.0}}, identifier: 'chart.bar.fill', label: 'Прогресс', Selected <AX element pid: 68060, elementOrHash.elementID: 4347782144.36>
+                            Image, 0x115f7ebc0, {{205.0, 595.0}, {35.0, 25.5}}, identifier: 'chart.bar.fill', label: 'гистограмма' <AX element pid: 68060, elementOrHash.elementID: 4417915392.46>
+                          Button, 0x115f7ed00, {{249.5, 588.0}, {100.5, 54.0}}, identifier: 'gearshape.fill', label: 'Настройки' <AX element pid: 68060, elementOrHash.elementID: 4347784192.37>
+                            Image, 0x115f7ee40, {{286.0, 594.0}, {28.0, 28.0}}, identifier: 'gearshape.fill', label: 'Форма шестеренки, с заливкой' <AX element pid: 68060, elementOrHash.elementID: 4417916672.47>
+                        Other, 0x115f7ef80, {{21.0, 584.0}, {333.0, 62.0}} <AX element pid: 68060, elementOrHash.elementID: 4348496960.27>
+                        Other, 0x115f7f0c0, {{176.0, 588.0}, {93.4, 54.0}} <AX element pid: 68060, elementOrHash.elementID: 4392400640.28>
+                          Other, 0x115f7f200, {{176.0, 588.0}, {93.0, 54.0}} <AX element pid: 68060, elementOrHash.elementID: 4348498752.38>
+                            Other, 0x115f7f340, {{176.0, 588.0}, {93.0, 54.0}} <AX element pid: 68060, elementOrHash.elementID: 4348497408.48>
+                            Other, 0x115f7f480, {{176.0, 588.0}, {93.0, 54.0}} <AX element pid: 68060, elementOrHash.elementID: 4349434880.49>
+                              Other, 0x115f7f5c0, {{176.0, 588.0}, {93.0, 54.0}} <AX element pid: 68060, elementOrHash.elementID: 4348500096.52>
+                                Other, 0x115f7f700, {{176.0, 588.0}, {93.0, 54.0}} <AX element pid: 68060, elementOrHash.elementID: 4348500544.55>
+                                  Other, 0x115f7f840, {{176.0, 588.0}, {93.0, 54.0}} <AX element pid: 68060, elementOrHash.elementID: 4348500992.58>
+                                Other, 0x115f7f980, {{176.0, 588.0}, {93.0, 54.0}} <AX element pid: 68060, elementOrHash.elementID: 4348499200.56>
+                              Other, 0x115f7fac0, {{176.0, 588.0}, {93.0, 54.0}} <AX element pid: 68060, elementOrHash.elementID: 4348499648.53>
+                  Other, 0x115f7fc00, {{0.0, 584.0}, {375.0, 83.0}} <AX element pid: 68060, elementOrHash.elementID: 4349437440.17>
+                    Other, 0x115f7fd40, {{0.0, 584.0}, {375.0, 83.0}} <AX element pid: 68060, elementOrHash.elementID: 4347677696.20>
+                      Other, 0x115f7fe80, {{0.0, 584.0}, {375.0, 83.0}} <AX element pid: 68060, elementOrHash.elementID: 4348509504.23>
+                        Other, 0x115f88000, {{0.0, 584.0}, {375.0, 83.0}} <AX element pid: 68060, elementOrHash.elementID: 4349001728.29>
+                          Other, 0x115f88140, {{0.0, 584.0}, {375.0, 83.0}} <AX element pid: 68060, elementOrHash.elementID: 4348407296.39>
+                            Other, 0x115f88280, {{0.0, 584.0}, {375.0, 83.0}} <AX element pid: 68060, elementOrHash.elementID: 4349002176.50>
+                        Other, 0x115f883c0, {{0.0, 584.0}, {375.0, 83.0}} <AX element pid: 68060, elementOrHash.elementID: 4348407808.30>
+                          Other, 0x115f88500, {{0.0, 584.0}, {375.0, 83.0}} <AX element pid: 68060, elementOrHash.elementID: 4349003520.40>
+  Window, 0x115f88640, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4542125056.203>
+    Other, 0x115f88780, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4392279552.205>
+      Other, 0x115f888c0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 68060, elementOrHash.elementID: 4618764736.207>

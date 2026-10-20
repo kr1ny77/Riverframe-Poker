@@ -1,0 +1,35 @@
+Text clipped
+Text of this SwiftUI.AccessibilityNode may be clipped at larger Dynamic Type sizes.
+Attributes: StaticText, 0x10b708dc0, {{32.0, 417.0}, {286.5, 38.0}}, label: 'Все темы доступны. Порядок помогает наращивать опору.'
+Element subtree:
+ →StaticText, 0x10b708dc0, {{32.0, 417.0}, {286.5, 38.0}}, label: 'Все темы доступны. Порядок помогает наращивать опору.'
+Path to element:
+ →Application, 0x109c4e940, pid: 85004, label: 'Учебный стол'
+  ↳Window (Main), 0x109c4d040, {{0.0, 0.0}, {375.0, 667.0}}
+   ↳Other, 0x109c4da40, {{0.0, 0.0}, {375.0, 667.0}}
+    ↳Other, 0x109c4ef80, {{0.0, 0.0}, {375.0, 667.0}}
+     ↳Other, 0x109c4d900, {{0.0, 0.0}, {375.0, 667.0}}
+      ↳Other, 0x109c4ee40, {{0.0, 0.0}, {375.0, 667.0}}
+       ↳Other, 0x109c4f340, {{0.0, 0.0}, {375.0, 667.0}}
+        ↳Other, 0x109c4f0c0, {{0.0, 0.0}, {375.0, 667.0}}
+         ↳Other, 0x109c4f480, {{0.0, 0.0}, {375.0, 667.0}}
+          ↳Other, 0x109c4fd40, {{0.0, 0.0}, {375.0, 667.0}}
+           ↳Other, 0x109c4fe80, {{0.0, 0.0}, {375.0, 667.0}}
+            ↳Other, 0x109c4f200, {{0.0, 0.0}, {375.0, 667.0}}
+             ↳Other, 0x109c4e080, {{0.0, 0.0}, {375.0, 667.0}}
+              ↳Other, 0x109c4fac0, {{0.0, 0.0}, {375.0, 667.0}}
+               ↳Other, 0x109c4f5c0, {{0.0, 0.0}, {375.0, 667.0}}
+                ↳Other, 0x109c4df40, {{0.0, 0.0}, {375.0, 667.0}}
+                 ↳Other, 0x109c4fc00, {{0.0, 0.0}, {375.0, 667.0}}
+                  ↳ScrollView, 0x109c4d180, {{0.0, 0.0}, {375.0, 667.0}}
+                   ↳Other, 0x10b708140, {{0.0, 74.0}, {375.0, 1270.0}}
+                    ↳StaticText, 0x10b708dc0, {{32.0, 417.0}, {286.5, 38.0}}, label: 'Все темы доступны. Порядок помогает наращивать опору.'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x1140ebe80, pid: 85004, label: 'Учебный стол'
+  }
+  ↪︎Find: Descendant with identity binding to AX element pid: 85004, elementOrHash.elementID: 4649165728.118
+    Output: {
+      StaticText, 0x1140bd040, {{32.0, 417.0}, {286.5, 38.0}}, label: 'Все темы доступны. Порядок помогает наращивать опору.'
+    }

@@ -1,0 +1,44 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "E1DB54D9-FDC1-4951-970B-D35C71B1B0B1",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "89CA4EE6-45B6-4B34-BCB1-74A5CCF77126.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-restored-progress_0_BC98CE38-B7C4-48E2-BB41-EBAD6CD35857.png",
+        "timestamp" : 1792339216.27
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "E1DB54D9-FDC1-4951-970B-D35C71B1B0B1",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "ECB54D13-7FB6-49D7-8C6C-8FC98E4EDB6A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-review-3_0_AE953797-F849-4726-B9ED-25ED0EA9FD1B.png",
+        "timestamp" : 1792339186.466
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "E1DB54D9-FDC1-4951-970B-D35C71B1B0B1",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "6342C109-0FF7-4A3B-AA7E-B2BD5A604B3F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-review-2_0_C5492589-325B-415F-ADFE-EA0398342B59.png",
+        "timestamp" : 1792339160.352
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "E1DB54D9-FDC1-4951-970B-D35C71B1B0B1",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "2857594F-291A-42DF-B605-5DCEEABACF56.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "ev-call-review-1_0_A34E4038-CDE4-4647-B560-5EAB5036532E.png",
+        "timestamp" : 1792339134.533
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRegressionLessonEV()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRegressionLessonEV"
+  }
+]

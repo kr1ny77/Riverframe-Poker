@@ -1,0 +1,36 @@
+Contrast failed
+Contrast failed for SwiftUI.AccessibilityNode
+Attributes: StaticText, 0x1152d6580, {{67.0, 594.5}, {132.0, 20.5}}, label: 'Ауты флеш-дро'
+Element subtree:
+ →StaticText, 0x1152d6580, {{67.0, 594.5}, {132.0, 20.5}}, label: 'Ауты флеш-дро'
+Path to element:
+ →Application, 0x108854500, pid: 76271, label: 'Учебный стол'
+  ↳Window (Main), 0x108856d00, {{0.0, 0.0}, {375.0, 667.0}}
+   ↳Other, 0x1088552c0, {{0.0, 0.0}, {375.0, 667.0}}
+    ↳Other, 0x108856580, {{0.0, 0.0}, {375.0, 667.0}}
+     ↳Other, 0x108855a40, {{0.0, 0.0}, {375.0, 667.0}}
+      ↳Other, 0x108855cc0, {{0.0, 0.0}, {375.0, 667.0}}
+       ↳Other, 0x108857700, {{0.0, 0.0}, {375.0, 667.0}}
+        ↳Other, 0x108857200, {{0.0, 0.0}, {375.0, 667.0}}
+         ↳Other, 0x108857e80, {{0.0, 0.0}, {375.0, 667.0}}
+          ↳Other, 0x1088548c0, {{0.0, 0.0}, {375.0, 667.0}}
+           ↳Other, 0x1088561c0, {{0.0, 0.0}, {375.0, 667.0}}
+            ↳Other, 0x108856a80, {{0.0, 0.0}, {375.0, 667.0}}
+             ↳Other, 0x108857340, {{0.0, 0.0}, {375.0, 667.0}}
+              ↳Other, 0x105a3d400, {{0.0, 0.0}, {375.0, 667.0}}
+               ↳Other, 0x105a3d540, {{0.0, 0.0}, {375.0, 667.0}}
+                ↳Other, 0x1152d5400, {{0.0, 0.0}, {375.0, 667.0}}
+                 ↳Other, 0x1152d7340, {{0.0, 0.0}, {375.0, 667.0}}
+                  ↳ScrollView, 0x1152d75c0, {{0.0, 0.0}, {375.0, 667.0}}
+                   ↳Other, 0x1152d70c0, {{0.0, 74.0}, {375.0, 1270.0}}
+                    ↳Button, 0x1152d66c0, {{32.0, 588.5}, {311.0, 52.5}}, identifier: 'training.outs', label: 'Ауты флеш-дро, Задания · 0/2 · последние ответы: 0/0'
+                     ↳StaticText, 0x1152d6580, {{67.0, 594.5}, {132.0, 20.5}}, label: 'Ауты флеш-дро'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x115718a00, pid: 76271, label: 'Учебный стол'
+  }
+  ↪︎Find: Descendant with identity binding to AX element pid: 76271, elementOrHash.elementID: 4398432736.144
+    Output: {
+      StaticText, 0x108854dc0, {{67.0, 594.5}, {132.0, 20.5}}, label: 'Ауты флеш-дро'
+    }

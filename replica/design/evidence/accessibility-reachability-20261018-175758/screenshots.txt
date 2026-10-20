@@ -1,0 +1,3 @@
+Skipped export for PokerTrainerUITests-Runner encountered an error: no matching attachments
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/design/evidence/accessibility-reachability-20261018-175758/screenshots/manifest.json

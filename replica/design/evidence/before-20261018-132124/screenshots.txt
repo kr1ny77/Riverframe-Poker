@@ -1,0 +1,12 @@
+Exported 9 attachments for: CriticalFlows/testDesignCapture():
+File: C13D7411-0086-484E-A2B6-34AE15272E08.png, suggested name: "design-settings_0_F7EBC5C5-170D-48D5-B307-2EFAE0463226.png"
+File: A65C829F-CD84-4019-A448-17022AF140E7.png, suggested name: "design-progress_0_EDED873D-623E-4693-92A5-030034A20B70.png"
+File: C25E191B-060A-4A55-88D4-B35FC6C09F19.png, suggested name: "design-feedback_0_10F07981-4CE7-4703-84DC-370B2BE7FEF8.png"
+File: 8E639E09-96B6-410E-A3CF-138224311D16.png, suggested name: "design-pot-odds_0_C7B00AE2-C4CB-4AA3-B1E0-A8A79DEA57E7.png"
+File: 2E1135C2-E4B6-4344-A2F4-E2D479CA380C.png, suggested name: "design-equity_0_7F3FC56F-2821-4361-B9BD-F68CB9D54A13.png"
+File: FFD1E711-981B-496C-A606-588DA3C19530.png, suggested name: "design-course_0_02E37049-5C9A-4B8C-A4DE-27A065B461B8.png"
+File: ADD95DB0-920B-44E3-8E80-BF3D85D33E6B.png, suggested name: "design-bet-editor_0_6E97422F-08EF-462A-8285-0DB686D72FD3.png"
+File: 04121125-65F5-476B-BC0F-D721C9458FF4.png, suggested name: "design-table_0_1E57BE6E-949E-4E20-BCA5-D5E737061091.png"
+File: 2C8AFA47-B060-40CA-8968-DCEB77695D04.png, suggested name: "design-home_0_6901D7F8-0D8C-4A7F-A8AE-8C8792A2BE02.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/design/evidence/before-20261018-132124/screenshots/manifest.json

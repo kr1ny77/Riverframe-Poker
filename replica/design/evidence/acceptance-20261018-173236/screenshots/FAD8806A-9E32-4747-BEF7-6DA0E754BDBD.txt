@@ -1,0 +1,36 @@
+Contrast failed
+Contrast failed for SwiftUI.AccessibilityNode
+Attributes: StaticText, 0x108854780, {{67.0, 619.0}, {237.5, 16.0}}, identifier: 'course.status.outs', label: 'Задания · 0/2 · последние ответы: 0/0'
+Element subtree:
+ →StaticText, 0x108854780, {{67.0, 619.0}, {237.5, 16.0}}, identifier: 'course.status.outs', label: 'Задания · 0/2 · последние ответы: 0/0'
+Path to element:
+ →Application, 0x1152d5900, pid: 76271, label: 'Учебный стол'
+  ↳Window (Main), 0x1152d5540, {{0.0, 0.0}, {375.0, 667.0}}
+   ↳Other, 0x1152d66c0, {{0.0, 0.0}, {375.0, 667.0}}
+    ↳Other, 0x1152d4a00, {{0.0, 0.0}, {375.0, 667.0}}
+     ↳Other, 0x1152d4f00, {{0.0, 0.0}, {375.0, 667.0}}
+      ↳Other, 0x1152d5180, {{0.0, 0.0}, {375.0, 667.0}}
+       ↳Other, 0x1152d6300, {{0.0, 0.0}, {375.0, 667.0}}
+        ↳Other, 0x1152d6940, {{0.0, 0.0}, {375.0, 667.0}}
+         ↳Other, 0x1152d6a80, {{0.0, 0.0}, {375.0, 667.0}}
+          ↳Other, 0x1152d6800, {{0.0, 0.0}, {375.0, 667.0}}
+           ↳Other, 0x1152d6e40, {{0.0, 0.0}, {375.0, 667.0}}
+            ↳Other, 0x1152d4640, {{0.0, 0.0}, {375.0, 667.0}}
+             ↳Other, 0x1152d5040, {{0.0, 0.0}, {375.0, 667.0}}
+              ↳Other, 0x1152d6d00, {{0.0, 0.0}, {375.0, 667.0}}
+               ↳Other, 0x1152d7c00, {{0.0, 0.0}, {375.0, 667.0}}
+                ↳Other, 0x1152d7e80, {{0.0, 0.0}, {375.0, 667.0}}
+                 ↳Other, 0x1152d7840, {{0.0, 0.0}, {375.0, 667.0}}
+                  ↳ScrollView, 0x1152d7980, {{0.0, 0.0}, {375.0, 667.0}}
+                   ↳Other, 0x1152d48c0, {{0.0, 74.0}, {375.0, 1270.0}}
+                    ↳Button, 0x1088570c0, {{32.0, 588.5}, {311.0, 52.5}}, identifier: 'training.outs', label: 'Ауты флеш-дро, Задания · 0/2 · последние ответы: 0/0'
+                     ↳StaticText, 0x108854780, {{67.0, 619.0}, {237.5, 16.0}}, identifier: 'course.status.outs', label: 'Задания · 0/2 · последние ответы: 0/0'
+Query chain:
+ →Find: Target Application 'org.pokerpractice.native'
+  Output: {
+    Application, 0x115718a00, pid: 76271, label: 'Учебный стол'
+  }
+  ↪︎Find: Descendant with identity binding to AX element pid: 76271, elementOrHash.elementID: 4398433696.146
+    Output: {
+      StaticText, 0x1152d5400, {{67.0, 619.0}, {237.5, 16.0}}, identifier: 'course.status.outs', label: 'Задания · 0/2 · последние ответы: 0/0'
+    }

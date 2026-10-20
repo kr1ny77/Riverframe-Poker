@@ -1,0 +1,4 @@
+Exported 1 attachment for: CriticalFlows/testDesignProgressHistory():
+File: 27A9FE87-95C6-48C2-A90F-997300104085.png, suggested name: "progress-history-21-answers_0_D5DB853D-6994-4973-93A7-209A619569E4.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/design/evidence/history-final-20261018-175732/screenshots/manifest.json
