@@ -1,4 +1,4 @@
-# Учебный стол — нативный прототип для iPhone
+# RiverFrame - PokerApp
 
 Swift 6, SwiftUI, iOS 17+. Проект: `PokerTrainer.xcodeproj`, схема `PokerTrainer`. Внешних зависимостей нет. Существующая текстура стола и дизайн-токены подключены к ресурсам приложения.
 
