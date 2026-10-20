@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F90000000000000000000002 /* App/UI/CourseCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90000000000000000000001 /* App/UI/CourseCatalogView.swift */; };
 		00000000000000000000002A /* PokerCore in Frameworks */ = {isa = PBXBuildFile; productRef = 000000000000000000000029 /* PokerCore */; };
 		0000000000000000000000C8 /* App/PokerTrainerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000064 /* App/PokerTrainerApp.swift */; };
 		0000000000000000000000C9 /* App/Application/GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000065 /* App/Application/GameViewModel.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F90000000000000000000001 /* App/UI/CourseCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/CourseCatalogView.swift; sourceTree = "<group>"; };
 		000000000000000000000004 /* PokerTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		000000000000000000000064 /* App/PokerTrainerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/PokerTrainerApp.swift; sourceTree = "<group>"; };
 		000000000000000000000065 /* App/Application/GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/Application/GameViewModel.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		000000000000000000000002 = {
 			isa = PBXGroup;
 			children = (
+				F90000000000000000000001 /* App/UI/CourseCatalogView.swift */,
 				F80000000000000000000001 /* App/UI/DesignSystem.swift */,
 				F70000000000000000000001 /* App/UI/LearningCourseView.swift */,
 				F60000000000000000000001 /* App/UI/BlockerLessonView.swift */,
@@ -211,6 +214,7 @@
 			files = (
 				F80000000000000000000002 /* App/UI/DesignSystem.swift in Sources */,
 				F70000000000000000000002 /* App/UI/LearningCourseView.swift in Sources */,
+				F90000000000000000000002 /* App/UI/CourseCatalogView.swift in Sources */,
 				F60000000000000000000002 /* App/UI/BlockerLessonView.swift in Sources */,
 				F50000000000000000000002 /* App/UI/EVCallLessonView.swift in Sources */,
 				F40000000000000000000002 /* App/UI/PositionLessonView.swift in Sources */,

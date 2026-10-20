@@ -28,6 +28,38 @@ struct AppChecks {
             print("PASS BUG-001: failed reload blocks writes; successful reload unlocks recording")
             return
         }
+        // Catalog uses the same typed result and transaction as the original pot-odds lesson.
+        let catalogFile = directory.appendingPathComponent("catalog/history.json")
+        let catalogStore = PracticeStore(fileURL: catalogFile)
+        guard let exercise = CourseCatalog.exercise(lesson: .potOdds, legacyKey: "pot-100-bet-50-v1"),
+              let question = exercise.potOddsQuestion else { fatalError("Missing typed catalog route") }
+        let catalogAttempt = PracticeAttempt(question: question, answer: 25)
+        try catalogStore.record(catalogAttempt); try catalogStore.record(catalogAttempt)
+        let restoredCatalog = PracticeStore(fileURL: catalogFile)
+        precondition(restoredCatalog.attempts == [catalogAttempt])
+        precondition(restoredCatalog.catalog.observations.count == 1)
+        precondition(restoredCatalog.catalog.observations.first?.id == catalogAttempt.id)
+        precondition(restoredCatalog.catalog.observations.first?.date == catalogAttempt.date)
+        precondition(restoredCatalog.catalog.observations.first?.exerciseID == exercise.id)
+        precondition(restoredCatalog.catalog.progress(for: .t11).covered == 1)
+        let corruptCatalogBytes = Data("corrupt-catalog-history".utf8)
+        try corruptCatalogBytes.write(to: catalogFile)
+        restoredCatalog.reload()
+        do { try restoredCatalog.record(catalogAttempt); fatalError("Catalog wrote after failed load") } catch {}
+        let retainedCatalogBytes = try Data(contentsOf: catalogFile)
+        precondition(retainedCatalogBytes == corruptCatalogBytes)
+        precondition(restoredCatalog.catalog.observations.count == 1)
+        let blockedCatalogParent = directory.appendingPathComponent("catalog-write-blocker")
+        try Data("file".utf8).write(to: blockedCatalogParent)
+        let retryCatalog = PracticeStore(fileURL: blockedCatalogParent.appendingPathComponent("history.json"))
+        do { try retryCatalog.record(catalogAttempt); fatalError("Catalog expected write failure") } catch {}
+        precondition(retryCatalog.catalog.observations.isEmpty && retryCatalog.attempts.isEmpty)
+        try FileManager.default.removeItem(at: blockedCatalogParent)
+        try retryCatalog.record(catalogAttempt); try retryCatalog.record(catalogAttempt)
+        let retriedCatalog = PracticeStore(fileURL: blockedCatalogParent.appendingPathComponent("history.json"))
+        precondition(retriedCatalog.attempts == [catalogAttempt] && retriedCatalog.catalog.observations.count == 1)
+        print("PASS Catalog: typed exercise, UUID/date restoration, failed reload protection, no phantom on failed write and same-UUID retry")
+
         let first=PracticeStore(fileURL:file)
         precondition(first.attempts.isEmpty && first.errorMessage==nil)
         let attempt=PracticeAttempt(question:PotOddsQuestion.examples[0],answer:25)

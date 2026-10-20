@@ -1,0 +1,28 @@
+Building for production...
+[1 / 3]
+[2 / 3] PokerNativeTests-product
+[3 / 4] PokerNativeTests-product
+[8 / 12] PokerNativeTests-product
+[10 / 12] PokerNativeTests-product
+Build complete! (10,05 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test catalogIDsReferencesAndLegacyOverlapMappingsAreStable() started.
+◇ Test catalogSchemaFiveRoundTripPreservesAllStoredFieldsAndCompletion() started.
+◇ Test catalogAtomicWriteFailureLeavesTargetDirectoryUntouched() started.
+◇ Test catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test catalogPreservesUnmappedLegacyAttemptsWithoutCountingThemAsCoverage() started.
+◇ Test catalogRejectsInvalidOrCorruptArchivesWithoutChangingTheirBytes() started.
+◇ Test case passing 1 argument version → 2 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 1 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 3 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 5 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 4 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+✔ Test catalogIDsReferencesAndLegacyOverlapMappingsAreStable() passed after 0.001 seconds.
+✔ Test catalogPreservesUnmappedLegacyAttemptsWithoutCountingThemAsCoverage() passed after 0.004 seconds.
+✔ Test catalogRejectsInvalidOrCorruptArchivesWithoutChangingTheirBytes() passed after 0.007 seconds.
+✔ Test catalogSchemaFiveRoundTripPreservesAllStoredFieldsAndCompletion() passed after 0.324 seconds.
+✔ Test catalogAtomicWriteFailureLeavesTargetDirectoryUntouched() passed after 0.333 seconds.
+✔ Test catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) with 5 test cases passed after 0.333 seconds.
+✔ Test run with 6 tests in 0 suites passed after 0.333 seconds.

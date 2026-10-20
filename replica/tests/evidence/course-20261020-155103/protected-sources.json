@@ -1,0 +1,18 @@
+{
+  "allMatchHEAD": true,
+  "sha256": {
+    "Sources/PokerCore/LearningCourse.swift": "3fb9c617b0d44191365fa47786b31d2a90768cc4d6922e2b84a3cd02357c262a",
+    "Sources/PokerCore/EquityLesson.swift": "2e388625eb8b2fed0e85e174fcb2242cfb2dba29f0af3cb555e463a03acf46b6",
+    "Sources/PokerCore/PositionLesson.swift": "d5405e9a2da1b0475f1d23422c977960b471f42c9de7cb6de95866193b1c6105",
+    "Sources/PokerCore/HandComparisonLesson.swift": "c72f3f2cda3dfcc36f94b27cc744c272da6bdc0fb2a1478a5b9c75fb073adfa4",
+    "Sources/PokerCore/Practice.swift": "54752bd90dc0e6fea7bc45226d5deb05d6ea9fac01946bf46adf476642340eb9",
+    "Sources/PokerCore/EVCallLesson.swift": "cc91a0abee2a135850bee88a2dd4bc06c9d6813158757e36fc823fca859f08c5",
+    "Sources/PokerCore/OutsLesson.swift": "40ed91e1c96e723c6b37535f086e722e2ec8f6512cf75d6da6baeb29254a4171",
+    "Sources/PokerCore/RangeEquityLesson.swift": "03f95ed4bbf9b5e0caf3954eb983f9a12a36c7c463cdd82f32ed766d9863585c",
+    "Sources/PokerCore/BlockerLesson.swift": "8290e900311092b5d482ef899aa50427d8d7dc38684c22d9125fad5e5c2701fa",
+    "Sources/PokerCore/Cards.swift": "bf46c0e3763745de77050d224ce2d0d6a1ceffc782af91fbb4a86a455b157f40",
+    "Sources/PokerCore/HoldemGame.swift": "c448c17497f5ce7d74fefceaa6c3af273402a545e5fbccd5d33e468e16571d32",
+    "App/Application/GameViewModel.swift": "08a07457df136ad9d99daa965d6882c5ae8bda7096af628abb5e3470edef3a34"
+  },
+  "baselineCommit": "4bc0f8546842cf74ddd8eabaaed1c4b1abc1528f"
+}

@@ -1,0 +1,5 @@
+Exported 2 attachments for: CriticalFlows/testCatalogSingleExerciseAndRelaunch():
+File: 6024EB83-719B-4007-A877-37917CD6DFC7.png, suggested name: "catalog-result-restored_0_8111F491-51E6-4EE7-A8F6-FF5E65E511D8.png"
+File: 64222EE6-5FE5-4FAF-9627-AF4C0720D3C0.png, suggested name: "catalog-exercise-saved_0_FD52E951-C154-46B7-8E57-5B63FF3EDE24.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261020-155103/screenshots/manifest.json

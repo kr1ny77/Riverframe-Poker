@@ -366,6 +366,45 @@ final class CriticalFlows: XCTestCase {
         XCTAssertTrue(error.label.contains("1 ошибок из 1 ответов"))
         screenshot("course-wheel-error")
     }
+    func testCatalogSingleExerciseAndRelaunch() {
+        freshRegression()
+        func openTopic() {
+            tab("Тренировка")
+            let catalog = app.buttons["course.catalog"]
+            scrollTo(catalog); catalog.tap()
+            XCTAssertTrue(app.staticTexts["catalog.summary"].waitForExistence(timeout: 5))
+            let module = app.descendants(matching: .any).matching(identifier: "catalog.module.M03").firstMatch
+            scrollTo(module); module.tap()
+            let topic = app.descendants(matching: .any).matching(identifier: "catalog.topic.T11").firstMatch
+            scrollTo(topic); topic.tap()
+        }
+        openTopic()
+        XCTAssertEqual(app.staticTexts["catalog.progress.T11"].label, "Охват текущих упражнений: 0/6")
+        let exercise = app.buttons["catalog.exercise.E.pot.100.50"]
+        scrollTo(exercise); exercise.tap()
+        let field = app.textFields["Процент"]
+        XCTAssertTrue(field.waitForExistence(timeout: 5)); field.tap(); field.typeText("25")
+        checkAnswer()
+        let saved = app.staticTexts["Результат сохранён на устройстве."]
+        scrollTo(saved); XCTAssertTrue(saved.exists)
+        screenshot("catalog-exercise-saved")
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        let progress = app.staticTexts["catalog.progress.T11"]
+        scrollTo(progress)
+        XCTAssertEqual(progress.label, "Охват текущих упражнений: 1/6")
+        XCTAssertTrue(app.staticTexts["catalog.answers.T11"].label.contains("Ответов: 1."))
+        app.terminate(); app.launch()
+        openTopic()
+        XCTAssertEqual(app.staticTexts["catalog.progress.T11"].label, "Охват текущих упражнений: 1/6")
+        XCTAssertTrue(app.staticTexts["catalog.answers.T11"].label.contains("Ответов: 1."))
+        let restored = app.buttons["catalog.exercise.E.pot.100.50"]
+        scrollTo(restored)
+        XCTAssertTrue(restored.label.contains("Последний ответ: верно по условию."))
+        screenshot("catalog-result-restored")
+        tab("Прогресс")
+        XCTAssertEqual(app.staticTexts["course.progress.completed"].label, "Пройдено наборов: 0 из 8")
+    }
+
     func testCourseRoutesPotOddsAndSample() {
         tab("Тренировка")
         XCTAssertEqual(app.staticTexts["course.completed"].label,"Пройдено наборов: 0 из 8")

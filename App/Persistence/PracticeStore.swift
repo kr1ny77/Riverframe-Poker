@@ -16,6 +16,8 @@ public final class PracticeStore: ObservableObject {
         LearningCourseSnapshot(archive:PracticeArchive(attempts:attempts,comparisons:comparisons,positions:positions,evCalls:evCalls,blockers:blockers))
     }
 
+    public var catalog: CourseCatalogSnapshot { CourseCatalogSnapshot(course: course) }
+
     public init(fileURL: URL? = nil) {
         let directory = FileManager.default.urls(for:.applicationSupportDirectory,in:.userDomainMask)[0]
             .appendingPathComponent("PokerPractice",isDirectory:true)

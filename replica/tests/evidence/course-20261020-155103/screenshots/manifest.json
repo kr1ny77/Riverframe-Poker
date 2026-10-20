@@ -1,0 +1,26 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "C369C1B9-C007-494E-9CB1-48A287FC17BC",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "6024EB83-719B-4007-A877-37917CD6DFC7.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "catalog-result-restored_0_8111F491-51E6-4EE7-A8F6-FF5E65E511D8.png",
+        "timestamp" : 1792504380.334
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "C369C1B9-C007-494E-9CB1-48A287FC17BC",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "64222EE6-5FE5-4FAF-9627-AF4C0720D3C0.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "catalog-exercise-saved_0_FD52E951-C154-46B7-8E57-5B63FF3EDE24.png",
+        "timestamp" : 1792504363.56
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testCatalogSingleExerciseAndRelaunch()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testCatalogSingleExerciseAndRelaunch"
+  }
+]

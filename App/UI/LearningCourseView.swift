@@ -22,6 +22,14 @@ struct LearningCourseHomeView: View {
                     .foregroundStyle(AppTheme.muted)
                     .accessibilityIdentifier("course.completed")
 
+                NavigationLink {
+                    CourseCatalogView()
+                } label: {
+                    Label("Каталог: 60 тем", systemImage: "books.vertical")
+                }
+                .buttonStyle(SecondaryButtonStyle())
+                .accessibilityIdentifier("course.catalog")
+
                 CourseNextStepView()
 
                 if !course.repeatLessons.isEmpty {

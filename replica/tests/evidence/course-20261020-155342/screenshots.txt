@@ -1,0 +1,6 @@
+Exported 3 attachments for: CriticalFlows/testCourseRoutesPotOddsAndSample():
+File: F8AE0E2C-9239-4AEC-9269-1DD282011C77.png, suggested name: "course-restored-progress_0_DEFF8CCE-F147-4E84-A746-BE73A5877D61.png"
+File: 6FFCDF6F-E0E6-42A9-A9F9-7A508C20CDAE.png, suggested name: "course-small-sample_0_260BFA20-0F7A-4962-BEDC-59306F718B79.png"
+File: B290B557-114A-4412-AFAC-EC86F46ECB4F.png, suggested name: "course-pot-odds-last-review_0_3FE09253-1EA4-4054-AA8A-DA0C17925F55.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261020-155342/screenshots/manifest.json
