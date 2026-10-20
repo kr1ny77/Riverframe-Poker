@@ -13,37 +13,70 @@ final class GameViewModel: ObservableObject {
     @Published private(set) var isBotThinking = false
     @Published var errorMessage: String?
 
+    @Published private(set) var selectedBotLevel: BotLevel
+    @Published private(set) var activeBotLevel: BotLevel
+    private let defaults: UserDefaults
+    private let decision: @Sendable (BotObservation, BotLevel, UInt64) throws -> PokerAction
+    private let botDelay: Duration
+    private var requestID = UUID()
+    private var worker: Task<PokerAction, Error>?
     private var game: HoldemGame
     private var botTask: Task<Void, Never>?
 
-    init() {
+    init(defaults: UserDefaults = .standard, game suppliedGame: HoldemGame? = nil,
+         botDelay: Duration = .milliseconds(550),
+         decision: @escaping @Sendable (BotObservation, BotLevel, UInt64) throws -> PokerAction = {
+             try BotPolicy.decide($0, level: $1, seed: $2)
+         }) {
+        self.defaults = defaults
+        self.botDelay = botDelay
+        self.decision = decision
+        let level = defaults.string(forKey: "table.botLevel").flatMap(BotLevel.init(rawValue:)) ?? .amateur
+        selectedBotLevel = level
+        activeBotLevel = level
         #if DEBUG && targetEnvironment(simulator)
         SimulatorQA.isolateNetworkIfRequested()
         let newGame = SimulatorQA.makeGame() ?? HoldemGame()
         #else
         let newGame = HoldemGame()
         #endif
-        game = newGame
-        snapshot = newGame.snapshot
+        game = suppliedGame ?? newGame
+        snapshot = (suppliedGame ?? newGame).snapshot
     }
 
-    deinit { botTask?.cancel() }
+    deinit { botTask?.cancel(); worker?.cancel() }
+
+    func selectBotLevel(_ level: BotLevel) {
+        selectedBotLevel = level
+        defaults.set(level.rawValue, forKey: "table.botLevel")
+    }
+
+    private func cancelBot() {
+        requestID = UUID()
+        botTask?.cancel()
+        worker?.cancel()
+        botTask = nil
+        worker = nil
+        isBotThinking = false
+    }
 
     func startFreshHand() {
-        botTask?.cancel()
+        cancelBot()
         do {
             try game.nextHand()
+            activeBotLevel = selectedBotLevel
             snapshot = game.snapshot
             errorMessage = nil
             scheduleBotIfNeeded()
         } catch {
             errorMessage = "Не удалось начать следующую раздачу: \(error.localizedDescription)"
+            scheduleBotIfNeeded()
         }
     }
 
     func send(_ action: PokerAction) {
         guard let actor = snapshot.actor, actor == 0, !isPaused else { return }
-        botTask?.cancel()
+        cancelBot()
         do {
             try game.act(action, seat: 0, revision: snapshot.revision)
             snapshot = game.snapshot
@@ -59,9 +92,7 @@ final class GameViewModel: ObservableObject {
     func setPaused(_ paused: Bool) {
         isPaused = paused
         if paused {
-            botTask?.cancel()
-            botTask = nil
-            isBotThinking = false
+            cancelBot()
         } else {
             scheduleBotIfNeeded()
         }
@@ -72,32 +103,48 @@ final class GameViewModel: ObservableObject {
     }
 
     private func scheduleBotIfNeeded() {
-        botTask?.cancel()
-        guard !isPaused, !snapshot.complete, let seat = snapshot.actor, seat != 0 else {
-            isBotThinking = false
-            return
-        }
+        cancelBot()
+        guard !isPaused, !snapshot.complete, let seat = snapshot.actor, seat != 0,
+              let observation = game.botObservation() else { return }
         let expectedRevision = snapshot.revision
+        let expectedHand = snapshot.handNumber
+        let token = requestID
+        let level = activeBotLevel
+        let seed = game.botDecisionSeed
+        let compute = decision
+        let delay = botDelay
         isBotThinking = true
         botTask = Task { [weak self] in
-            try? await Task.sleep(for: .milliseconds(550))
-            guard !Task.isCancelled else { return }
-            self?.playBot(expectedSeat: seat, expectedRevision: expectedRevision)
+            do {
+                try await Task.sleep(for: delay)
+                try Task.checkCancellation()
+                let task = Task.detached(priority: .userInitiated) {
+                    try Task.checkCancellation()
+                    return try compute(observation, level, seed)
+                }
+                self?.worker = task
+                let action = try await withTaskCancellationHandler {
+                    try await task.value
+                } onCancel: {
+                    task.cancel()
+                }
+                try Task.checkCancellation()
+                guard let self, self.requestID == token, !self.isPaused,
+                      !self.snapshot.complete, self.snapshot.handNumber == expectedHand,
+                      self.snapshot.actor == seat, self.snapshot.revision == expectedRevision else { return }
+                try self.game.act(action, seat: seat, revision: expectedRevision)
+                self.snapshot = self.game.snapshot
+                self.errorMessage = nil
+                self.scheduleBotIfNeeded()
+            } catch is CancellationError {
+                // The owner invalidates the request before cancelling it.
+            } catch {
+                guard let self, self.requestID == token else { return }
+                self.snapshot = self.game.snapshot
+                self.errorMessage = "Бот не смог завершить ход: \(error.localizedDescription)"
+                self.cancelBot()
+            }
         }
-    }
-
-    private func playBot(expectedSeat: Int, expectedRevision: Int) {
-        guard !isPaused, snapshot.actor == expectedSeat, snapshot.revision == expectedRevision else { return }
-        do {
-            try game.act(game.botAction(), seat: expectedSeat, revision: expectedRevision)
-            snapshot = game.snapshot
-            errorMessage = nil
-        } catch {
-            errorMessage = "Бот не смог завершить ход: \(error.localizedDescription)"
-            snapshot = game.snapshot
-        }
-        isBotThinking = false
-        scheduleBotIfNeeded()
     }
 }
 

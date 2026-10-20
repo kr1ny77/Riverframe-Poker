@@ -1,0 +1,29 @@
+Building for debugging...
+[3 / 13] PokerCore
+[5 / 14] PokerCore
+Build complete! (0,83 sec)
+PASS all evaluator categories and seven-card selection
+PASS wheel and pair kicker ordering
+PASS board-only tie
+PASS full six-player hand and big blind option
+PASS early fold settlement and hidden cards
+PASS rejected commands preserve state
+PASS short all-in keeps raise closed
+PASS cumulative short all-ins reopen raise
+PASS unequal all-ins and side pots
+PASS short blind all-in runout and refunds
+PASS split pot and odd chip order
+PASS 200 deterministic mixed hands
+PASS deterministic deal and bot decisions
+PASS pot odds denominator and explanation
+PASS answer tolerance boundaries
+PASS atomic local persistence round trip
+PASS duplicate attempt rejection
+PASS schema and corruption rejection
+PASS persisted answer consistency
+PASS outs known cards and nine valid outs
+PASS outs exact enumeration and analytic formula
+PASS outs independent evaluator over all 1081 runouts
+PASS outs choice keys and versioned grading
+PASS legacy pot odds and outs results coexist
+Checks: 24/24 passed; 10937 assertions; 0 failures.

@@ -1,0 +1,14 @@
+{
+  "machine": "arm64",
+  "model": "Mac16,13",
+  "macOS": "26.6.2",
+  "xcode": "Xcode 27.1\nBuild version 27A9275",
+  "swift": "Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)\nTarget: arm64-apple-macosx26.0",
+  "simulator": "iPhone 17e",
+  "runtime": "iOS 27.0 (24A434)",
+  "uuid": "54714A01-B621-4D35-9778-94E20E84AFB6",
+  "binarySHA256": "78020866591af3d9bff4c9f46d71b2347909e1408733d5295d962880b28aab28",
+  "method": "Release -O; 3 sequential runs;50 warmups/profile/run;1000 samples/profile/run; synchronous compute only",
+  "policyVersion": 1,
+  "corpusVersion": 1
+}

@@ -5,3 +5,9 @@
 Автоматизация: Swift Testing, Application/Core checks и XCUITest; команды и доказательства перечислены в отчёте.
 
 Каталог и миграции schema1–5: [матрица CAT](tests/test-plan.md#cat--каталог-legacy-связи-и-schema-15-20-октября-2026), [результаты](tests/catalog-results.md).
+
+## Пять учебных профилей ботов
+
+Контракт: [bot-profiles.md](bot-profiles.md). Результаты: [tests/bot-results.md](tests/bot-results.md).
+Целевые unit-тесты: BotPolicyTests; Application: Tools/AppChecks.swift;
+Release Simulator benchmark: Tools/benchmark-bots.sh.

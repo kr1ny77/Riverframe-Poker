@@ -56,3 +56,15 @@ Core-проверки на момент записи прошли: `24/24` гр�
 Добавлен CourseCatalog редакции1: 60 тем,18 модулей,4 уровня и43 явных aliases существующих упражнений. Новый UI: каталог → модуль → тема → отдельный pot-odds вопрос; остальные типы открывают прежние наборы. PracticeStore предоставляет производную проекцию каталога на прежнем schema5 JSON. Чтение schema1–5 и старые completion/UUID/Date/ответы сохраняются.
 
 Целевые миграционные и storage-тесты прошли, финальный `Tools/verify.sh`:24/24 Core-группы,10 937 утверждений,46 Swift Testing-тестов, Simulator build и Application checks. Новый UI-срез1/1 и прежний course-поток1/1 прошли. Правила/evaluator/игровая модель:12 файлов совпадают с исходным коммитом. Архитектура: [course-architecture.md](course-architecture.md); границы и runtime warning: [catalog-results.md](tests/catalog-results.md).
+
+## 20 октября 2026 — пять учебных профилей ботов
+
+Добавлены BotLevel/BotObservation/BotPolicy v1, локальный выбор общего профиля,
+next-hand активация и фоновый отменяемый расчёт с проверкой request/hand/seat/revision.
+Движок проверяет легальность; публичная история и слои банка доступны в снимке.
+Старый Basic-v1 сохранён как профиль «Любитель». Уход со стола/вкладки сохраняет паузу.
+
+Проверено:Core24/24(10937 assertions),58 Release unit tests,iOS build,Application,
+три Release Simulator benchmark(15000 решений; худший P9521.72мс),независимые ревью
+APPROVE/CLEAR. Отчёт:replica/tests/bot-results.md; контракт:replica/bot-profiles.md.
+Удалённый README rename5e54d1a сохранён fast-forward до коммита этого этапа.

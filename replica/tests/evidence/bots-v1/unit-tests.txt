@@ -1,0 +1,155 @@
+Building for production...
+[3 / 11] PokerCore
+[5 / 12] PokerCore
+[10 / 13] PokerNativeTests-product
+[14 / 18] PokerNativeTests-product
+[16 / 18] PokerNativeTests-product
+Build complete! (15,54 sec)
+Test Suite 'All tests' started at 2026-10-20 19:37:15.814.
+Test Suite 'All tests' passed at 2026-10-20 19:37:15.815.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test positionsMigrateLegacyArchivesAndRejectTampering() started.
+◇ Test shortOpeningAfterCheckFollowsFullBetProfile() started.
+◇ Test botObservationAdmitsOnlyOwnCardsAndPublicState() started.
+◇ Test catalogIDsReferencesAndLegacyOverlapMappingsAreStable() started.
+◇ Test catalogSchemaFiveRoundTripPreservesAllStoredFieldsAndCompletion() started.
+◇ Test courseTaxonomyAndUnknownNumericIntegrity() started.
+◇ Test categoricalArchiveRejectsTamperedGradeAndDuplicateIdentity() started.
+◇ Test courseWheelErrorRetainsItsSpecificCategory() started.
+◇ Test courseAccuracyDenominatorsAndTopicIsolation() started.
+◇ Test randomLegalActionsMatchIndependentPotLedger() started.
+◇ Test rangeEquityValidationScalingAndPersistence() started.
+◇ Test generatedQuestionsStayValidAcrossSeeds() started.
+◇ Test seededPoliciesAreRepeatableAndSensitiveOnlyToTheirInputSeed() started.
+◇ Test potOddsAndStoredHistoryAreConsistent() started.
+◇ Test blockerAll169ClassesPartitionDeckAndRemoveExactly() started.
+◇ Test evCallArchiveMigrationMixedWritesAndTampering() started.
+◇ Test blockerLessonVectorsWeightsAndCounterexample() started.
+◇ Test courseUniqueTemplatesLatestGradesAndPersistence() started.
+◇ Test exhaustiveFiveCardCategoryCounts() started.
+◇ Test decisionSeedChangesPreserveDealingWithIdenticalPublicActions() started.
+◇ Test bestFiveQuestionsHaveOnePhysicalBestSubsetAndRejectWrongAnswers() started.
+◇ Test comparisonQuestionDecodingRejectsTamperedCardsAndIDs() started.
+◇ Test preCancelledDecisionStopsBeforePolicyEvaluation() started.
+◇ Test comparisonAttemptsRoundTripAndDetectTamperedResult() started.
+◇ Test knownHandEquityExactCountsAndTies() started.
+◇ Test policyActionsApplyThroughEngineAndPreserveShortStackLedger() started.
+◇ Test equityRejectsEveryDuplicateLocation() started.
+◇ Test amateurRemainsTheIndependentBasicV1Oracle() started.
+◇ Test challengeComparesRaisesWithTheValueOfFreeCheck() started.
+◇ Test positionLessonSeatsAndAnswerKeys() started.
+◇ Test allBotProfilesReturnLegalActionsForFixedCorpus() started.
+◇ Test catalogPreservesUnmappedLegacyAttemptsWithoutCountingThemAsCoverage() started.
+◇ Test specialSevenCardKickersAndTies() started.
+◇ Test positionPriceDrawAndStackCorpusShowsPlannedPolicyDifferences() started.
+◇ Test fullLessonMixedAnswersPersistAndRestore() started.
+◇ Test catalogRejectsInvalidOrCorruptArchivesWithoutChangingTheirBytes() started.
+◇ Test completeDealsHaveUniqueCards() started.
+◇ Test catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test everyTemplateExplanationMatchesEvaluatorRanksAndWinner() started.
+◇ Test knownHandEquityRejectsImpossibleCardsAndPersists() started.
+◇ Test profilesRespectUnreopenedShortRaiseAndSidePotCaps() started.
+◇ Test replayedActionAndSettlementAreRejected() started.
+◇ Test courseTwoTaskSampleAndRepeatAfterCompletion() started.
+◇ Test blockerArchiveMigrationAndTampering() started.
+◇ Test catalogAtomicWriteFailureLeavesTargetDirectoryUntouched() started.
+◇ Test courseEqualDatesPreserveRecordedOrder() started.
+◇ Test evCallRejectsInvalidInputsAndQuestionSubstitution() started.
+◇ Test courseRepeatThresholdsAndRecentWindow() started.
+◇ Test sevenCardIndependentReference() started.
+◇ Test equityMatchesIndependentOracle(_:) started.
+◇ Test legacyV1MigratesAtomicallyAndNumericWritesPreserveComparisons() started.
+◇ Test courseCatalogPrerequisitesAndFullCoverage() started.
+◇ Test rangeEquityExactWeightedOracle() started.
+◇ Test blockerInputValidationAndEmptyRange() started.
+◇ Test evCallExactExamplesAgainstIndependentBranches() started.
+◇ Test adjacentProfilesHaveFixedDistinguishingScenarios() started.
+◇ Test handComparisonCoversEveryCategoryAndKnownShowdowns() started.
+◇ Test secretNoninterferenceHoldsOnEveryStreet() started.
+◇ Test case passing 1 argument version → 1 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 2 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 3 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+EQUITY FLOP: wins=907 ties=0 losses=83 total=990 equity=91.61616161616162
+◇ Test case passing 1 argument version → 4 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 5 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "lesson-flop", hero: [12, 25], opponent: [11, 24], board: [0, 18, 33], expected: [907, 0, 83]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "lesson-turn-split", hero: [12, 24], opponent: [38, 50], board: [8, 22, 36, 39], expected: [0, 44, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT lesson-turn-split: W/T/L=[0, 44, 0], total=44, equity=50.0
+◇ Test case passing 1 argument fixture → EquityFixture(name: "royal-flop", hero: [12, 11], opponent: [25, 24], board: [8, 9, 10], expected: [990, 0, 0]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "zero-flop", hero: [25, 24], opponent: [12, 11], board: [8, 9, 10], expected: [0, 0, 990]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "royal-turn", hero: [12, 11], opponent: [25, 24], board: [8, 9, 10, 0], expected: [44, 0, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT royal-turn: W/T/L=[44, 0, 0], total=44, equity=100.0
+◇ Test case passing 1 argument fixture → EquityFixture(name: "zero-turn", hero: [25, 24], opponent: [12, 11], board: [8, 9, 10, 0], expected: [0, 0, 44]) to equityMatchesIndependentOracle(_:) started.
+EXACT zero-turn: W/T/L=[0, 0, 44], total=44, equity=0.0
+EXACT lesson-flop: W/T/L=[907, 0, 83], total=990, equity=91.61616161616162
+◇ Test case passing 1 argument fixture → EquityFixture(name: "turn-vulnerable-lead", hero: [12, 25], opponent: [11, 24], board: [0, 18, 33, 40], expected: [42, 0, 2]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "turn-two-splits", hero: [11, 25], opponent: [23, 38], board: [0, 1, 2, 3], expected: [42, 2, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT turn-vulnerable-lead: W/T/L=[42, 0, 2], total=44, equity=95.45454545454545
+EXACT turn-two-splits: W/T/L=[42, 2, 0], total=44, equity=97.72727272727273
+✔ Test shortOpeningAfterCheckFollowsFullBetProfile() passed after 0.991 seconds.
+✔ Test catalogIDsReferencesAndLegacyOverlapMappingsAreStable() passed after 0.991 seconds.
+✔ Test botObservationAdmitsOnlyOwnCardsAndPublicState() passed after 0.991 seconds.
+✔ Test courseAccuracyDenominatorsAndTopicIsolation() passed after 0.991 seconds.
+✔ Test courseWheelErrorRetainsItsSpecificCategory() passed after 0.991 seconds.
+✔ Test courseTaxonomyAndUnknownNumericIntegrity() passed after 0.991 seconds.
+✔ Test potOddsAndStoredHistoryAreConsistent() passed after 0.991 seconds.
+✔ Test categoricalArchiveRejectsTamperedGradeAndDuplicateIdentity() passed after 0.991 seconds.
+✔ Test positionsMigrateLegacyArchivesAndRejectTampering() passed after 0.991 seconds.
+✔ Test decisionSeedChangesPreserveDealingWithIdenticalPublicActions() passed after 0.991 seconds.
+✔ Test evCallArchiveMigrationMixedWritesAndTampering() passed after 0.991 seconds.
+✔ Test comparisonQuestionDecodingRejectsTamperedCardsAndIDs() passed after 0.991 seconds.
+✔ Test blockerLessonVectorsWeightsAndCounterexample() passed after 0.991 seconds.
+✔ Test bestFiveQuestionsHaveOnePhysicalBestSubsetAndRejectWrongAnswers() passed after 0.991 seconds.
+✔ Test comparisonAttemptsRoundTripAndDetectTamperedResult() passed after 0.991 seconds.
+✔ Test equityRejectsEveryDuplicateLocation() passed after 0.991 seconds.
+✔ Test policyActionsApplyThroughEngineAndPreserveShortStackLedger() passed after 0.991 seconds.
+✔ Test amateurRemainsTheIndependentBasicV1Oracle() passed after 0.991 seconds.
+✔ Test challengeComparesRaisesWithTheValueOfFreeCheck() passed after 0.991 seconds.
+✔ Test positionLessonSeatsAndAnswerKeys() passed after 0.991 seconds.
+✔ Test catalogPreservesUnmappedLegacyAttemptsWithoutCountingThemAsCoverage() passed after 0.991 seconds.
+✔ Test rangeEquityValidationScalingAndPersistence() passed after 0.991 seconds.
+✔ Test blockerAll169ClassesPartitionDeckAndRemoveExactly() passed after 0.991 seconds.
+✔ Test catalogRejectsInvalidOrCorruptArchivesWithoutChangingTheirBytes() passed after 0.991 seconds.
+✔ Test fullLessonMixedAnswersPersistAndRestore() passed after 0.991 seconds.
+✔ Test everyTemplateExplanationMatchesEvaluatorRanksAndWinner() passed after 0.991 seconds.
+✔ Test positionPriceDrawAndStackCorpusShowsPlannedPolicyDifferences() passed after 0.991 seconds.
+✔ Test specialSevenCardKickersAndTies() passed after 0.991 seconds.
+✔ Test profilesRespectUnreopenedShortRaiseAndSidePotCaps() passed after 0.991 seconds.
+✔ Test knownHandEquityRejectsImpossibleCardsAndPersists() passed after 0.991 seconds.
+✔ Test replayedActionAndSettlementAreRejected() passed after 0.991 seconds.
+✔ Test seededPoliciesAreRepeatableAndSensitiveOnlyToTheirInputSeed() passed after 0.992 seconds.
+✔ Test completeDealsHaveUniqueCards() passed after 0.991 seconds.
+✔ Test blockerArchiveMigrationAndTampering() passed after 0.991 seconds.
+✔ Test catalogSchemaFiveRoundTripPreservesAllStoredFieldsAndCompletion() passed after 0.992 seconds.
+✔ Test courseEqualDatesPreserveRecordedOrder() passed after 0.991 seconds.
+✔ Test allBotProfilesReturnLegalActionsForFixedCorpus() passed after 0.992 seconds.
+✔ Test evCallRejectsInvalidInputsAndQuestionSubstitution() passed after 0.992 seconds.
+✔ Test generatedQuestionsStayValidAcrossSeeds() passed after 0.992 seconds.
+✔ Test courseRepeatThresholdsAndRecentWindow() passed after 0.992 seconds.
+✔ Test knownHandEquityExactCountsAndTies() passed after 0.992 seconds.
+✔ Test catalogAtomicWriteFailureLeavesTargetDirectoryUntouched() passed after 0.992 seconds.
+✔ Test legacyV1MigratesAtomicallyAndNumericWritesPreserveComparisons() passed after 0.992 seconds.
+✔ Test courseUniqueTemplatesLatestGradesAndPersistence() passed after 0.992 seconds.
+✔ Test sevenCardIndependentReference() passed after 0.992 seconds.
+✔ Test courseTwoTaskSampleAndRepeatAfterCompletion() passed after 0.992 seconds.
+✔ Test blockerInputValidationAndEmptyRange() passed after 0.992 seconds.
+✔ Test evCallExactExamplesAgainstIndependentBranches() passed after 0.992 seconds.
+✔ Test adjacentProfilesHaveFixedDistinguishingScenarios() passed after 0.992 seconds.
+✔ Test handComparisonCoversEveryCategoryAndKnownShowdowns() passed after 0.992 seconds.
+✔ Test preCancelledDecisionStopsBeforePolicyEvaluation() passed after 0.992 seconds.
+EXACT royal-flop: W/T/L=[990, 0, 0], total=990, equity=100.0
+EXACT zero-flop: W/T/L=[0, 0, 990], total=990, equity=0.0
+✔ Test equityMatchesIndependentOracle(_:) with 8 test cases passed after 1.052 seconds.
+✔ Test catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) with 5 test cases passed after 1.079 seconds.
+RANGE EXACT equity-range-flop-v1: W/T/L=3628/0/332; evaluations=1980; equity=91.61616161616162
+RANGE EXACT equity-range-turn-1to3-v1: W/T/L=132/44/0; evaluations=88; equity=87.5
+RANGE EXACT equity-range-turn-3to1-v1: W/T/L=44/132/0; evaluations=88; equity=62.5
+✔ Test rangeEquityExactWeightedOracle() passed after 1.170 seconds.
+✔ Test randomLegalActionsMatchIndependentPotLedger() passed after 1.195 seconds.
+✔ Test secretNoninterferenceHoldsOnEveryStreet() passed after 1.347 seconds.
+✔ Test courseCatalogPrerequisitesAndFullCoverage() passed after 1.432 seconds.
+✔ Test exhaustiveFiveCardCategoryCounts() passed after 3.934 seconds.
+✔ Test run with 58 tests in 0 suites passed after 3.934 seconds.

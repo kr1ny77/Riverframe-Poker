@@ -86,7 +86,7 @@ struct AppShellView: View {
         }
         .tint(AppTheme.accent)
         .opaqueTabBar()
-        .onChange(of: selectedTab) { _, tab in game.setPaused(tab != 0) }
+        .onChange(of: selectedTab) { _, tab in if tab != 0 { game.setPaused(true) } }
         .onChange(of: scenePhase) { _, phase in game.handleScenePhase(phase) }
     }
 }
@@ -115,6 +115,11 @@ struct PlayHomeView: View {
                             Text("Блайнды").font(.caption).foregroundStyle(AppTheme.muted)
                         }
                     }.accessibilityLabel("Демонстрация карт. Блайнды пять и десять.")
+                    Text("Учебный профиль: \(game.activeBotLevel.title)")
+                        .accessibilityIdentifier("table.activeBotLevel")
+                    if game.selectedBotLevel != game.activeBotLevel {
+                        Text("Со следующей раздачи: \(game.selectedBotLevel.title)").font(.footnote)
+                    }
                     NavigationLink { TableView() } label: {
                         Label(game.snapshot.complete ? "Результат раздачи" : "Открыть стол",systemImage:"play.fill")
                     }.buttonStyle(PrimaryButtonStyle())
@@ -128,7 +133,7 @@ struct PlayHomeView: View {
                     }.buttonStyle(SecondaryButtonStyle())
                 }
                 DisclosureGroup("Как устроены боты") {
-                    Text("Пять локальных ботов «Базовый v1» используют фиксированные простые эвристики. Практикуйте порядок ходов и ставки; стратегию изучайте в уроках с указанными условиями.")
+                    Text("Все пять ботов используют общий учебный профиль. Уровни меняют выбор рук, реакцию на ставки и размеры ставок по условным эвристикам. Практикуйте решения и разбирайте их условия в уроках.")
                         .font(.subheadline).foregroundStyle(AppTheme.muted).padding(.top,8)
                 }.font(.subheadline)
                 Label("Офлайн · виртуальные фишки",systemImage:"iphone").font(.footnote).foregroundStyle(AppTheme.muted)
@@ -150,6 +155,8 @@ struct TableView: View {
                 (typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(alignment:.leading,spacing:12)) : AnyLayout(HStackLayout())) {
                     VStack(alignment: .leading) {
                         Text("Раздача \(snapshot.handNumber)").font(.headline)
+                        Text("Учебный профиль: \(game.activeBotLevel.title)").font(.caption)
+                            .accessibilityIdentifier("table.botProfile")
                         (typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(alignment:.leading,spacing:4)) : AnyLayout(HStackLayout(spacing:4))) {
                             Text(snapshot.street)
                             if let actor=snapshot.players.first(where:{ $0.id == snapshot.actor }) {
@@ -628,6 +635,7 @@ struct ProgressView: View {
 }
 
 struct SettingsView: View {
+    @EnvironmentObject private var game: GameViewModel
     @EnvironmentObject private var store: PracticeStore
     @State private var confirmClear = false
     var body: some View {
@@ -635,7 +643,12 @@ struct SettingsView: View {
             Group {
             Section("Учебный стол") {
                 LabeledContent("Блайнды", value: "5 / 10")
-                LabeledContent("Боты", value: "Базовый v1")
+                Picker("Учебный профиль ботов", selection: Binding(get: { game.selectedBotLevel }, set: { game.selectBotLevel($0) })) {
+                    ForEach(BotLevel.allCases, id: \.self) { level in Text(level.title).tag(level) }
+                }.accessibilityIdentifier("settings.botLevel")
+                Text(game.selectedBotLevel.learningDescription).font(.footnote)
+                Text("Один профиль для всех пяти ботов. Изменение вступает в силу со следующей раздачи.")
+                    .font(.footnote).foregroundStyle(AppTheme.muted)
                 Text("Виртуальные фишки и локальные боты. Уроки и прогресс доступны офлайн.").font(.footnote).foregroundStyle(AppTheme.muted)
             }
             Section("Прогресс") { Button("Очистить результаты", role: .destructive) { confirmClear = true }.foregroundStyle(AppTheme.danger) }

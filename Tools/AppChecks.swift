@@ -3,6 +3,38 @@ import Foundation
 import SwiftUI
 import PokerCore
 
+// Explicit synchronization is confined to this adversarial test worker.
+private final class BotWorkerProbe: @unchecked Sendable {
+    private let lock = NSLock()
+    private var started = 0
+    private var finished = Set<Int>()
+    private var released = Set<Int>()
+    private var releaseAll = false
+    var count: Int { lock.withLock { started } }
+    func completed(_ index: Int) -> Bool { lock.withLock { finished.contains(index) } }
+    func release(_ index: Int) { lock.withLock { _ = released.insert(index) } }
+    func finish() { lock.withLock { releaseAll = true } }
+    func evaluate(_ observation: BotObservation) -> PokerAction {
+        precondition(!Thread.isMainThread, "Bot computation ran on UI thread")
+        let index = lock.withLock { started += 1; return started }
+        let deadline = Date().addingTimeInterval(10)
+        while !lock.withLock({ releaseAll || released.contains(index) }) {
+            precondition(Date() < deadline, "Test failed to release worker")
+            Thread.sleep(forTimeInterval: 0.001)
+        }
+        lock.withLock { _ = finished.insert(index) }
+        return observation.legal.canCheck ? .check : .call
+    }
+}
+
+@MainActor private func awaitBotCheck(_ predicate: () -> Bool) async throws {
+    for _ in 0..<1000 {
+        if predicate() { return }
+        try await Task.sleep(for: .milliseconds(5))
+    }
+    preconditionFailure("Bot application check timed out")
+}
+
 @main
 struct AppChecks {
     @MainActor static func main() async throws {
@@ -199,6 +231,44 @@ struct AppChecks {
         precondition(courseBytesAfter==courseBytes)
         print("PASS course: derived coverage and repeat after reload; 12 answers / 3 tasks / 4 errors; read preserves bytes")
 
+        // Isolated local preference, a real background decision, and a late result
+        // returned by a deliberately cancellation-ignoring test evaluator.
+        let preferenceName = "bot-checks-" + UUID().uuidString
+        let preferences = UserDefaults(suiteName: preferenceName)!
+        defer { preferences.removePersistentDomain(forName: preferenceName) }
+        let levels = GameViewModel(defaults: preferences)
+        precondition(levels.selectedBotLevel == .amateur && levels.activeBotLevel == .amateur)
+        levels.selectBotLevel(.challenge)
+        precondition(levels.activeBotLevel == .amateur)
+        let restoredLevels = GameViewModel(defaults: preferences)
+        precondition(restoredLevels.selectedBotLevel == .challenge && restoredLevels.activeBotLevel == .challenge)
+        let probe = BotWorkerProbe()
+        defer { probe.finish() }
+        let stale = GameViewModel(defaults: preferences, game: HoldemGame(seed: 42), botDelay: .zero, decision: { observation, _, _ in
+            probe.evaluate(observation)
+        })
+        let unchanged = stale.snapshot.revision
+        stale.setPaused(false)
+        try await awaitBotCheck { probe.count == 1 }
+        stale.setPaused(true)
+        probe.release(1)
+        try await awaitBotCheck { probe.completed(1) }
+        precondition(stale.snapshot.revision == unchanged && !stale.isBotThinking)
+        // Identical seat/revision after pause/resume still invalidates old requests.
+        stale.setPaused(false)
+        try await awaitBotCheck { probe.count == 2 }
+        stale.setPaused(true)
+        stale.setPaused(false)
+        try await awaitBotCheck { probe.count == 3 }
+        probe.release(2)
+        try await awaitBotCheck { probe.completed(2) }
+        precondition(stale.snapshot.revision == unchanged && stale.isBotThinking)
+        probe.release(3)
+        try await awaitBotCheck { stale.snapshot.revision == unchanged + 1 }
+        stale.setPaused(true)
+        probe.finish()
+        print("PASS bot preferences and detached worker: default, pending selection, relaunch, cancellation, stale request")
+
         let model=GameViewModel()
         precondition(model.isPaused)
         let start=model.snapshot.revision
@@ -223,6 +293,30 @@ struct AppChecks {
         print(model.snapshot.result)
         model.startFreshHand()
         precondition(model.snapshot.handNumber==2 && !model.snapshot.complete)
+        for level in BotLevel.allCases {
+            var hand = HoldemGame(seed: 71, botSeed: 92, startingStacks: [20,35,50,70,90,120])
+            let configured = GameViewModel(defaults: preferences, game: hand, botDelay: .zero)
+            configured.selectBotLevel(level)
+            // Finish a complete first hand to test the next-hand boundary.
+            while !hand.snapshot.complete {
+                let state = hand.snapshot
+                try hand.act(.fold, seat: state.actor!, revision: state.revision)
+            }
+            let next = GameViewModel(defaults: preferences, game: hand, botDelay: .zero)
+            next.selectBotLevel(level)
+            next.startFreshHand()
+            precondition(next.activeBotLevel == level)
+            next.setPaused(false)
+            for _ in 0..<1000 {
+                if next.snapshot.complete { break }
+                if next.snapshot.actor == 0 { next.send(next.snapshot.legal.canCheck ? .check : .call) }
+                try await Task.sleep(for: .milliseconds(10))
+            }
+            precondition(next.snapshot.complete && next.errorMessage == nil)
+            precondition(next.snapshot.players.reduce(Int64(0)) { $0 + $1.stack } == 385)
+            next.setPaused(true)
+        }
+        print("PASS all five bot profiles: next-hand selection, application loop, short stacks and chip conservation")
         model.setPaused(true)
         print("PASS Next hand; main-actor model integration finished")
         let afterGame=courseReload.course.progress(.potOdds)

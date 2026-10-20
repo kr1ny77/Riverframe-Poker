@@ -78,19 +78,24 @@ public struct HoldemGame: Sendable {
     private var complete = true
     private var result = ""
     private var publicLog: [String] = []
+    private var publicActions: [BotPublicAction] = []
     private var awardedPot: Int64 = 0
     private var deckRNG: SeededGenerator
     private var botRNG: SeededGenerator
     private var handBudget: Int64 = 0
 
     /// Fixed six-seat table. Zero stacks are topped up before each new hand.
-    public init(seed: UInt64 = UInt64.random(in: 1...UInt64.max), startingStacks: [Int64] = Array(repeating:1000,count:6), button: Int = 0) {
+    public init(seed: UInt64? = nil, botSeed: UInt64? = nil, startingStacks: [Int64] = Array(repeating:1000,count:6), button: Int = 0) {
         precondition(startingStacks.count == 6 && startingStacks.allSatisfy { (1...1_000_000).contains($0) })
         precondition((0..<6).contains(button))
+        let deckSeed = seed ?? UInt64.random(in: 1...UInt64.max)
+        let decisionSeed = botSeed ?? (seed == nil ? UInt64.random(in: 1...UInt64.max) : deckSeed ^ 0xA5A5A5A5A5A5A5A5)
         seats = startingStacks.map { Seat(stack:$0) }
         self.button = button
-        deckRNG = SeededGenerator(state:seed)
-        botRNG = SeededGenerator(state:seed ^ 0xA5A5A5A5A5A5A5A5)
+        deckRNG = SeededGenerator(state:deckSeed)
+        // The decision stream is separate from dealing. Tests may provide a
+        // stable stream explicitly; normal games derive a distinct stream.
+        botRNG = SeededGenerator(state:decisionSeed)
         beginHand()
     }
 
@@ -103,6 +108,68 @@ public struct HoldemGame: Sendable {
                 isButton:i == button,cards:(i == 0 || (show && !seats[i].folded)) ? seats[i].cards : [],lastAction:seats[i].lastAction)
         }
         return GameSnapshot(revision:revision,handNumber:handNumber,street:["Префлоп","Флоп","Тёрн","Ривер"][streetIndex],actor:actor,players:players,board:board,pot:complete ? awardedPot : seats.reduce(0){$0+$1.total},currentBet:currentBet,complete:complete,result:result,log:publicLog,legal:actor == 0 ? legalActions(for:0) : .none)
+    }
+
+    /// Seed for a pure bot request at the current state. Applying an action
+    /// advances the private decision stream; merely reading this value does not.
+    public var botDecisionSeed: UInt64 { botRNG.state }
+
+    /// Creates the allowlisted data boundary used by bot policies. The deck,
+    /// cursor and all opponents' hole cards remain inside the game owner.
+    public func botObservation() -> BotObservation? {
+        guard let i = actor, !complete, seats.indices.contains(i), seats[i].cards.count == 2 else { return nil }
+        let publicSeats = seats.indices.map { index in
+            BotSeatObservation(
+                seat: index,
+                stack: seats[index].stack,
+                streetContribution: seats[index].street,
+                totalContribution: seats[index].total,
+                folded: seats[index].folded,
+                allIn: seats[index].stack == 0 && !seats[index].folded,
+                isButton: index == button
+            )
+        }
+        let contributions = seats.map(\.total)
+        let projectedTotal = contributions[i] + legalActions(for: i).callAmount
+        // Split at the caller's cap even when no existing contribution ends there.
+        let levels = Set((contributions + [projectedTotal]).filter { $0 > 0 }).sorted()
+        var prior: Int64 = 0
+        let layers = levels.map { level -> BotPotLayer in
+            defer { prior = level }
+            let contributors = seats.indices.filter { contributions[$0] >= level }
+            var eligible = contributors.filter { !seats[$0].folded }
+            if projectedTotal >= level, !seats[i].folded, !eligible.contains(i) { eligible.append(i) }
+            return BotPotLayer(amount: (level - prior) * Int64(contributors.count), eligibleSeats: eligible)
+        }
+        return BotObservation(
+            handNumber: handNumber,
+            revision: revision,
+            actingSeat: i,
+            street: [.preflop, .flop, .turn, .river][streetIndex],
+            ownCards: seats[i].cards,
+            board: board,
+            seats: publicSeats,
+            pot: seats.reduce(0) { $0 + $1.total },
+            currentBet: currentBet,
+            legal: legalActions(for: i),
+            publicActions: publicActions,
+            potLayers: layers
+        )
+    }
+
+    /// Internal metamorphic-test seam. Preserves the acting seat and every
+    /// public value while varying the private state that the policy must ignore.
+    func varyingUnobservedState(swapOpponentCards: Bool, reverseFutureDeck: Bool) -> Self {
+        var copy = self
+        if swapOpponentCards, let actor {
+            let others = seats.indices.filter { $0 != actor }
+            copy.seats[others[0]].cards = seats[others[1]].cards
+            copy.seats[others[1]].cards = seats[others[0]].cards
+        }
+        if reverseFutureDeck {
+            copy.deck.replaceSubrange(cursor..., with: deck[cursor...].reversed())
+        }
+        return copy
     }
 
     public mutating func nextHand() throws {
@@ -133,27 +200,15 @@ public struct HoldemGame: Sendable {
 
     /// A basic heuristic, based solely on the acting seat's cards and public state.
     public func botAction() -> PokerAction {
-        guard let i=actor else { return .check }
-        let legal = legalActions(for:i)
-        let cards = seats[i].cards
-        let pair = cards[0].rank == cards[1].rank
-        let high = max(cards[0].rank,cards[1].rank)
-        let strength = board.count >= 3 ? HandEvaluator.best(of:cards+board).category : (pair ? 2 : (high>=12 ? 1 : 0))
-        // Copy the decision stream: requests are pure and only a committed action advances it.
-        var random = botRNG
-        let roll = Int(random.next()%100)
-        if strength >= 2, roll < 22, let minimum=legal.minRaiseTo {
-            let target = max(minimum,currentBet+max(10,seats.reduce(0){$0+$1.total}/2))
-            if target <= legal.maxRaiseTo { return .raiseTo(target) }
-        }
-        if legal.canCheck { return .check }
-        if strength >= 1 || legal.callAmount <= max(10,seats[i].stack/12) || roll < 18 { return .call }
-        return .fold
+        guard let observation = botObservation() else { return .check }
+        // The default remains Basic-v1 and uses the same unadvanced stream as
+        // the previous implementation.
+        return BotPolicy.amateur(observation, seed: botRNG.state)
     }
 
     private mutating func beginHand() {
         handNumber += 1; revision += 1
-        publicLog=[]; result=""; awardedPot=0
+        publicLog=[]; publicActions=[]; result=""; awardedPot=0
         for i in seats.indices {
             let topUp = seats[i].stack == 0
             seats[i] = Seat(stack:topUp ? 1000 : seats[i].stack)
@@ -167,7 +222,9 @@ public struct HoldemGame: Sendable {
         for _ in 0..<2 { for offset in 1...6 { let i=(button+offset)%6; seats[i].cards.append(draw()) } }
         let sb=(button+1)%6, bb=(button+2)%6
         pay(min(5,seats[sb].stack),seat:sb); seats[sb].lastAction="Малый блайнд \(seats[sb].street)"
+        publicActions.append(.init(seat: sb, street: .preflop, kind: .blind(seats[sb].street)))
         pay(min(10,seats[bb].stack),seat:bb); seats[bb].lastAction="Большой блайнд \(seats[bb].street)"
+        publicActions.append(.init(seat: bb, street: .preflop, kind: .blind(seats[bb].street)))
         publicLog.append("Раздача \(handNumber) · блайнды 5 / 10")
         pending=Set(seats.indices.filter { seats[$0].stack>0 })
         actor=nextPending(after:bb)
@@ -219,6 +276,15 @@ public struct HoldemGame: Sendable {
         pending.remove(i)
         if raised { pending=Set(seats.indices.filter { $0 != i && !seats[$0].folded && seats[$0].stack>0 && seats[$0].street<currentBet }) }
         publicLog.append("\(name(i)): \(seats[i].lastAction)")
+        let kind: BotPublicActionKind
+        switch action {
+        case .fold: kind = .fold
+        case .check: kind = .check
+        case .call: kind = .call(legal.callAmount)
+        case .raiseTo(let target): kind = .raiseTo(target)
+        case .allIn: preconditionFailure("all-in is normalized before public history")
+        }
+        publicActions.append(.init(seat: i, street: [.preflop, .flop, .turn, .river][streetIndex], kind: kind))
         _=botRNG.next()
         advance(after:i)
     }
