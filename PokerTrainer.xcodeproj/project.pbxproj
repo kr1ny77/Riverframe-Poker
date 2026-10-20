@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00000000000000000000002A /* PokerCore in Frameworks */ = {isa = PBXBuildFile; productRef = 000000000000000000000029 /* PokerCore */; };
+		0000000000000000000000C8 /* App/PokerTrainerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000064 /* App/PokerTrainerApp.swift */; };
+		0000000000000000000000C9 /* App/Application/GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000065 /* App/Application/GameViewModel.swift */; };
+		0000000000000000000000CA /* App/UI/PokerTrainerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000066 /* App/UI/PokerTrainerViews.swift */; };
+		0000000000000000000000CB /* App/Persistence/PracticeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000067 /* App/Persistence/PracticeStore.swift */; };
+		0000000000000000000000CC /* App/Resources/design-tokens.json in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000068 /* App/Resources/design-tokens.json */; };
+		0000000000000000000000CD /* App/Resources/Textures/poker-table-charcoal-cloth-v1.png in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000069 /* App/Resources/Textures/poker-table-charcoal-cloth-v1.png */; };
+		00000000000000000000012D /* App/UI/OutsLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000012C /* App/UI/OutsLessonView.swift */; };
+		E0000000000000000000000A /* AppUITests/CriticalFlows.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00000000000000000000009 /* AppUITests/CriticalFlows.swift */; };
+		F10000000000000000000002 /* App/UI/HandComparisonLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000001 /* App/UI/HandComparisonLessonView.swift */; };
+		F10000000000000000000003 /* PokerCore in Frameworks */ = {isa = PBXBuildFile; productRef = 000000000000000000000029 /* PokerCore */; };
+		F20000000000000000000002 /* App/UI/EquityLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20000000000000000000001 /* App/UI/EquityLessonView.swift */; };
+		F30000000000000000000002 /* App/UI/RangeEquityLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30000000000000000000001 /* App/UI/RangeEquityLessonView.swift */; };
+		F40000000000000000000002 /* App/UI/PositionLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40000000000000000000001 /* App/UI/PositionLessonView.swift */; };
+		F50000000000000000000002 /* App/UI/EVCallLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50000000000000000000001 /* App/UI/EVCallLessonView.swift */; };
+		F60000000000000000000002 /* App/UI/BlockerLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60000000000000000000001 /* App/UI/BlockerLessonView.swift */; };
+		F70000000000000000000002 /* App/UI/LearningCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70000000000000000000001 /* App/UI/LearningCourseView.swift */; };
+		F80000000000000000000002 /* App/UI/DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80000000000000000000001 /* App/UI/DesignSystem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0000000000000000000000B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000005;
+			remoteInfo = PokerTrainer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000004 /* PokerTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000064 /* App/PokerTrainerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/PokerTrainerApp.swift; sourceTree = "<group>"; };
+		000000000000000000000065 /* App/Application/GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/Application/GameViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000066 /* App/UI/PokerTrainerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/PokerTrainerViews.swift; sourceTree = "<group>"; };
+		000000000000000000000067 /* App/Persistence/PracticeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/Persistence/PracticeStore.swift; sourceTree = "<group>"; };
+		000000000000000000000068 /* App/Resources/design-tokens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "App/Resources/design-tokens.json"; sourceTree = "<group>"; };
+		000000000000000000000069 /* App/Resources/Textures/poker-table-charcoal-cloth-v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "App/Resources/Textures/poker-table-charcoal-cloth-v1.png"; sourceTree = "<group>"; };
+		00000000000000000000012C /* App/UI/OutsLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/OutsLessonView.swift; sourceTree = "<group>"; };
+		E00000000000000000000008 /* PokerTrainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerTrainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00000000000000000000009 /* AppUITests/CriticalFlows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUITests/CriticalFlows.swift; sourceTree = "<group>"; };
+		F10000000000000000000001 /* App/UI/HandComparisonLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/HandComparisonLessonView.swift; sourceTree = "<group>"; };
+		F20000000000000000000001 /* App/UI/EquityLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/EquityLessonView.swift; sourceTree = "<group>"; };
+		F30000000000000000000001 /* App/UI/RangeEquityLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/RangeEquityLessonView.swift; sourceTree = "<group>"; };
+		F40000000000000000000001 /* App/UI/PositionLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/PositionLessonView.swift; sourceTree = "<group>"; };
+		F50000000000000000000001 /* App/UI/EVCallLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/EVCallLessonView.swift; sourceTree = "<group>"; };
+		F60000000000000000000001 /* App/UI/BlockerLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/BlockerLessonView.swift; sourceTree = "<group>"; };
+		F70000000000000000000001 /* App/UI/LearningCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/LearningCourseView.swift; sourceTree = "<group>"; };
+		F80000000000000000000001 /* App/UI/DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/DesignSystem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000000002A /* PokerCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10000000000000000000003 /* PokerCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				F80000000000000000000001 /* App/UI/DesignSystem.swift */,
+				F70000000000000000000001 /* App/UI/LearningCourseView.swift */,
+				F60000000000000000000001 /* App/UI/BlockerLessonView.swift */,
+				F50000000000000000000001 /* App/UI/EVCallLessonView.swift */,
+				F40000000000000000000001 /* App/UI/PositionLessonView.swift */,
+				F30000000000000000000001 /* App/UI/RangeEquityLessonView.swift */,
+				F20000000000000000000001 /* App/UI/EquityLessonView.swift */,
+				F10000000000000000000001 /* App/UI/HandComparisonLessonView.swift */,
+				E00000000000000000000009 /* AppUITests/CriticalFlows.swift */,
+				00000000000000000000012C /* App/UI/OutsLessonView.swift */,
+				000000000000000000000064 /* App/PokerTrainerApp.swift */,
+				000000000000000000000065 /* App/Application/GameViewModel.swift */,
+				000000000000000000000066 /* App/UI/PokerTrainerViews.swift */,
+				000000000000000000000067 /* App/Persistence/PracticeStore.swift */,
+				000000000000000000000068 /* App/Resources/design-tokens.json */,
+				000000000000000000000069 /* App/Resources/Textures/poker-table-charcoal-cloth-v1.png */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000004 /* PokerTrainer.app */,
+				E00000000000000000000008 /* PokerTrainerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000005 /* PokerTrainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000000B /* Build configuration list for PBXNativeTarget "PokerTrainer" */;
+			buildPhases = (
+				000000000000000000000006 /* Sources */,
+				000000000000000000000007 /* Resources */,
+				000000000000000000000008 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokerTrainer;
+			packageProductDependencies = (
+				000000000000000000000029 /* PokerCore */,
+			);
+			productName = PokerTrainer;
+			productReference = 000000000000000000000004 /* PokerTrainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E00000000000000000000001 /* PokerTrainerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00000000000000000000002 /* Build configuration list for PBXNativeTarget "PokerTrainerUITests" */;
+			buildPhases = (
+				E00000000000000000000005 /* Sources */,
+				E00000000000000000000006 /* Frameworks */,
+				E00000000000000000000007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0000000000000000000000C /* PBXTargetDependency */,
+			);
+			name = PokerTrainerUITests;
+			packageProductDependencies = (
+				000000000000000000000029 /* PokerCore */,
+			);
+			productName = PokerTrainerUITests;
+			productReference = E00000000000000000000008 /* PokerTrainerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 00000000000000000000000A /* Build configuration list for PBXProject "PokerTrainer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ru;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				ru,
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			packageReferences = (
+				000000000000000000000028 /* XCLocalSwiftPackageReference "." */,
+			);
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000005 /* PokerTrainer */,
+				E00000000000000000000001 /* PokerTrainerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0000000000000000000000CC /* App/Resources/design-tokens.json in Resources */,
+				0000000000000000000000CD /* App/Resources/Textures/poker-table-charcoal-cloth-v1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80000000000000000000002 /* App/UI/DesignSystem.swift in Sources */,
+				F70000000000000000000002 /* App/UI/LearningCourseView.swift in Sources */,
+				F60000000000000000000002 /* App/UI/BlockerLessonView.swift in Sources */,
+				F50000000000000000000002 /* App/UI/EVCallLessonView.swift in Sources */,
+				F40000000000000000000002 /* App/UI/PositionLessonView.swift in Sources */,
+				F30000000000000000000002 /* App/UI/RangeEquityLessonView.swift in Sources */,
+				F20000000000000000000002 /* App/UI/EquityLessonView.swift in Sources */,
+				F10000000000000000000002 /* App/UI/HandComparisonLessonView.swift in Sources */,
+				00000000000000000000012D /* App/UI/OutsLessonView.swift in Sources */,
+				0000000000000000000000C8 /* App/PokerTrainerApp.swift in Sources */,
+				0000000000000000000000C9 /* App/Application/GameViewModel.swift in Sources */,
+				0000000000000000000000CA /* App/UI/PokerTrainerViews.swift in Sources */,
+				0000000000000000000000CB /* App/Persistence/PracticeStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00000000000000000000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0000000000000000000000A /* AppUITests/CriticalFlows.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0000000000000000000000C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000005 /* PokerTrainer */;
+			targetProxy = E0000000000000000000000B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		000000000000000000000015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		000000000000000000000016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV7GKWHHFZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Учебный стол";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.pokerpractice.native;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		000000000000000000000017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV7GKWHHFZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Учебный стол";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.pokerpractice.native;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E00000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.pokerpractice.native.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = PokerTrainer;
+			};
+			name = Debug;
+		};
+		E00000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.pokerpractice.native.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = PokerTrainer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00000000000000000000000A /* Build configuration list for PBXProject "PokerTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000014 /* Debug */,
+				000000000000000000000015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000000B /* Build configuration list for PBXNativeTarget "PokerTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000016 /* Debug */,
+				000000000000000000000017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00000000000000000000002 /* Build configuration list for PBXNativeTarget "PokerTrainerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00000000000000000000003 /* Debug */,
+				E00000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		000000000000000000000028 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		000000000000000000000029 /* PokerCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 000000000000000000000028 /* XCLocalSwiftPackageReference "." */;
+			productName = PokerCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}
