@@ -1,0 +1,6 @@
+Exported 3 attachments for: CriticalFlows/testMonteCarloReportAndBayesRounding():
+File: 692AFB1C-A9FD-43BB-8AA3-906C285DF68C.png, suggested name: "rounded-result-T17_0_E5DD7D56-9441-49EE-8297-3D23930C81E1.png"
+File: 04C93C67-A1F5-4CD2-A589-8D1858E26E2D.png, suggested name: "rounded-result-T10_0_0B9D5020-D5FB-4A36-B0C6-C5B86FB5C174.png"
+File: A11AAD61-D26A-4045-B737-9ED4240A3CB8.png, suggested name: "monte-carlo-method-and-error_0_E681C57A-8CCB-4003-92DC-3B15FCDBEDD9.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261021-182114/screenshots/manifest.json

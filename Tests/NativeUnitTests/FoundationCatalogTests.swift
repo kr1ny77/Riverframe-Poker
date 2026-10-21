@@ -4,10 +4,10 @@ import Testing
 
 @Test func publishedFoundationModulesPreserveAliasesAndAddAllThreeLearningPurposes() throws {
     let expected: [CourseTopicID: Int] = [.t03: 6, .t04: 6, .t05: 5, .t06: 3, .t07: 3, .t08: 3, .t09: 3, .t21: 3, .t22: 4, .t28: 3]
-    #expect(FoundationLesson.exercises.count == 39)
+    #expect(FoundationLesson.v2Exercises.count == 39)
     #expect(CourseCatalog.exercises.count == 43)
-    #expect(CourseCatalog.allExerciseIDs.count == 82)
-    #expect(Set(FoundationLesson.exercises.map(\.id)).isDisjoint(with: Set(CourseCatalog.exercises.map(\.id))))
+    #expect(CourseCatalog.allExerciseIDs.count == 132)
+    #expect(Set(FoundationLesson.v2Exercises.map(\.id)).isDisjoint(with: Set(CourseCatalog.exercises.map(\.id))))
     for (topic, count) in expected {
         let exercises = CourseCatalog.foundations(for: topic)
         #expect(exercises.count == count)
@@ -30,11 +30,11 @@ import Testing
 }
 
 @Test func foundationCoverageUsesCurrentRevisionAndChronologicalLatestWithoutChangingLegacyCompletion() throws {
-    let attempts = FoundationLesson.exercises.enumerated().map { index, exercise in
+    let attempts = FoundationLesson.v2Exercises.enumerated().map { index, exercise in
         FoundationAttempt(exercise: exercise, response: exercise.answer.correctResponse,
                           date: Date(timeIntervalSinceReferenceDate: Double(index)))
     }
-    let first = try #require(FoundationLesson.exercises.first)
+    let first = try #require(FoundationLesson.v2Exercises.first)
     let wrong = FoundationAttempt(exercise: first, response: .number(-100), date: Date(timeIntervalSinceReferenceDate: 999))
     let pot = PracticeAttempt(question: PotOddsQuestion.examples[0], answer: 25)
     let archive = PracticeArchive(attempts: [pot], foundations: attempts + [wrong])

@@ -28,6 +28,9 @@ struct FoundationLessonView: View {
             VStack(alignment: .leading, spacing: AppTheme.Measure.d20) {
                 LessonHeader(title: exercise.title, detail: exercise.topicID.rawValue + " · " + exercise.purpose.title)
                 Text(exercise.resultKind.title).font(.subheadline.weight(.medium))
+                if let simulation = exercise.simulation {
+                    CourseSimulationPanel(report: simulation)
+                }
                 if !started {
                     Text("Цель: применить «" + exercise.term + "» к заданной ситуации.").font(.headline)
                     if let latest {
@@ -81,6 +84,8 @@ struct FoundationLessonView: View {
                 TextField("Числовой ответ", text: $number).textFieldStyle(.roundedBorder)
                     .keyboardType(.numbersAndPunctuation).focused($answerFocused).accessibilityIdentifier("foundation.answer")
                     .disabled(checked != nil)
+                Text("Допуск: ±\(exercise.answer.tolerance.formatted(.number.locale(Locale(identifier: "ru_RU")))) в единицах условия.")
+                    .font(.footnote).foregroundStyle(AppTheme.muted)
             case .choice(let options, _):
                 ForEach(options.indices, id: \.self) { index in
                     Button { selection = index } label: {
@@ -95,7 +100,7 @@ struct FoundationLessonView: View {
                 Text(checked.isCorrect ? "Верно по условию." : "Есть ошибка. Посмотрите разбор.")
                     .font(.headline).accessibilityIdentifier("foundation.grade")
                 Text(responseLabel(checked.response)).font(.subheadline)
-                Text("Проверяемый ответ: " + answerLabel(checked.expected)).font(.headline)
+                Text("Проверяемый ответ: " + answerLabel(checked.expected, rounded: true)).font(.headline)
                     .accessibilityIdentifier("foundation.expected")
                 if !exercise.diagram.isEmpty {
                     VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
@@ -149,12 +154,47 @@ struct FoundationLessonView: View {
         catch { saved = false; self.error = "Запись не удалась. Повтор сохранит тот же ответ." }
     }
     private func responseLabel(_ response: FoundationResponse) -> String { "Ваш ответ: " + answerLabel(response) }
-    private func answerLabel(_ response: FoundationResponse) -> String {
+    private func answerLabel(_ response: FoundationResponse, rounded: Bool = false) -> String {
         switch response {
-        case .number(let value): return "\(value.formatted(.number.locale(Locale(identifier: "ru_RU"))))"
+        case .number(let value):
+            let tolerance = exercise.answer.tolerance
+            let places = tolerance > 0 ? min(8, max(0, Int(ceil(-log10(tolerance))))) : 0
+            let format = FloatingPointFormatStyle<Double>.number
+                .precision(.fractionLength(rounded ? places...places : 0...12))
+                .locale(Locale(identifier: "ru_RU"))
+            return value.formatted(format)
         case .choice(let index):
             if case .choice(let options, _) = exercise.answer, options.indices.contains(index) { return options[index] }
             return "Вариант \(index + 1)"
         }
+    }
+}
+
+
+private struct CourseSimulationPanel: View {
+    let report: CourseMonteCarloReport
+    private func value(_ number: Double) -> String {
+        number.formatted(.number.precision(.fractionLength(4)).locale(Locale(identifier: "ru_RU")))
+    }
+    var body: some View {
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+            Text("Записанная демонстрация Монте-Карло").font(.headline)
+            Text(report.method).font(.footnote)
+            Text("Seed: \(report.seed) · N: \(report.samples)").font(.subheadline.monospacedDigit())
+            Text("W/T/L: \(report.wins) / \(report.ties) / \(report.losses). Знаменатель среднего: \(report.samples) проб.")
+                .font(.footnote)
+            EquityMeter(percent: report.meanPercent,
+                        caption: "Выплата за пробу: победа 1 банка, ничья 0,5, поражение 0.",
+                        title: "Оценка средней доли банка")
+            Text("SE: \(value(report.standardErrorPP)) п.п.")
+            Text("Приближённый 95%-интервал: \(value(report.lower95Percent))–\(value(report.upper95Percent)) % банка.")
+            Text("s² = Σ(X − среднее)² / (N − 1); SE = √(s² / N). Числа показаны с округлением до 0,0001. Интервал использует наблюдённую дисперсию и нормальное приближение; границы ограничены 0–100 %.")
+                .font(.footnote).foregroundStyle(AppTheme.muted)
+            Text("Погрешность относится к выборке при заданных картах. Ошибка исходной модели требует отдельной оценки.")
+                .font(.footnote)
+        }
+        .padding(AppTheme.Measure.d16)
+        .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius))
+        .accessibilityIdentifier("foundation.monte-carlo")
     }
 }

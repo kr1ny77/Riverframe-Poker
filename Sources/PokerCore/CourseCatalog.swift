@@ -150,7 +150,7 @@ public struct CatalogExercise: Identifiable, Sendable {
 }
 
 public enum CourseCatalog {
-    public static let contentVersion = 2
+    public static let contentVersion = 3
     public static let modules: [CatalogModule] = [
         .init(id: .m01, title: "Правила и банки", level: .foundations),
         .init(id: .m02, title: "Колода и события", level: .foundations),

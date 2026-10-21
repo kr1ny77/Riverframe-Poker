@@ -16,7 +16,7 @@ private func wrongFoundationResponse(for answer: FoundationAnswer) -> Foundation
 }
 
 private func foundationArchiveAttempts() -> [FoundationAttempt] {
-    FoundationLesson.exercises.enumerated().map { index, exercise in
+    FoundationLesson.v2Exercises.enumerated().map { index, exercise in
         let response = index.isMultiple(of: 2) ? exercise.answer.correctResponse : wrongFoundationResponse(for: exercise.answer)
         let identifier = UUID(uuidString: String(format: "00000000-0000-4000-8000-%012d", index + 1))!
         return FoundationAttempt(exercise: exercise, response: response, id: identifier,
@@ -124,7 +124,7 @@ private func archiveThrough(version: Int, fixture: PracticeArchive) -> PracticeA
     let history = PracticeHistory(fileURL: path)
     let numeric = PracticeAttempt(question: PotOddsQuestion.examples[0], answer: 25)
     let foundation = foundationArchiveAttempts()[0]
-    let choiceExercise = try #require(FoundationLesson.exercises.first {
+    let choiceExercise = try #require(FoundationLesson.v2Exercises.first {
         if case .choice = $0.answer { return true }
         return false
     })

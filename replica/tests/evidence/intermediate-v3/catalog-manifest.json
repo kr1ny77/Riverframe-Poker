@@ -1,0 +1,1274 @@
+{
+  "contentVersion" : 3,
+  "foundationV2Tasks" : 39,
+  "intermediateTasks" : 50,
+  "legacyTasks" : 43,
+  "modules" : [
+    {
+      "id" : "M01",
+      "title" : "Правила и банки",
+      "topics" : [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05"
+      ],
+      "uniqueTasks" : 38
+    },
+    {
+      "id" : "M02",
+      "title" : "Колода и события",
+      "topics" : [
+        "T06",
+        "T07"
+      ],
+      "uniqueTasks" : 11
+    },
+    {
+      "id" : "M03",
+      "title" : "Equity и цена решения",
+      "topics" : [
+        "T08",
+        "T09",
+        "T11"
+      ],
+      "uniqueTasks" : 17
+    },
+    {
+      "id" : "M04",
+      "title" : "Стартовые руки и позиции",
+      "topics" : [
+        "T21",
+        "T22",
+        "T28"
+      ],
+      "uniqueTasks" : 13
+    },
+    {
+      "id" : "M05",
+      "title" : "Точность оценок",
+      "topics" : [
+        "T10",
+        "T16"
+      ],
+      "uniqueTasks" : 6
+    },
+    {
+      "id" : "M06",
+      "title" : "Будущая стоимость и рейк",
+      "topics" : [
+        "T14",
+        "T15"
+      ],
+      "uniqueTasks" : 6
+    },
+    {
+      "id" : "M07",
+      "title" : "Префлоп-линии",
+      "topics" : [
+        "T23",
+        "T24",
+        "T25",
+        "T26",
+        "T27"
+      ],
+      "uniqueTasks" : 15
+    },
+    {
+      "id" : "M08",
+      "title" : "Условные диапазоны",
+      "topics" : [
+        "T17",
+        "T18",
+        "T32"
+      ],
+      "uniqueTasks" : 13
+    },
+    {
+      "id" : "M09",
+      "title" : "Основы постфлопа",
+      "topics" : [
+        "T29",
+        "T34",
+        "T35",
+        "T37",
+        "T39"
+      ],
+      "uniqueTasks" : 17
+    },
+    {
+      "id" : "M10",
+      "title" : "Агрессия и план улиц",
+      "topics" : [
+        "T12",
+        "T13",
+        "T36",
+        "T38"
+      ],
+      "uniqueTasks" : 0
+    },
+    {
+      "id" : "M11",
+      "title" : "Распределения и multiway",
+      "topics" : [
+        "T30",
+        "T31",
+        "T33",
+        "T40"
+      ],
+      "uniqueTasks" : 0
+    },
+    {
+      "id" : "M12",
+      "title" : "Частоты и bluff-catching",
+      "topics" : [
+        "T19",
+        "T20"
+      ],
+      "uniqueTasks" : 0
+    },
+    {
+      "id" : "M13",
+      "title" : "Стоимость турнирного стека",
+      "topics" : [
+        "T45",
+        "T46",
+        "T47",
+        "T49",
+        "T50"
+      ],
+      "uniqueTasks" : 0
+    },
+    {
+      "id" : "M14",
+      "title" : "Теория и солверы",
+      "topics" : [
+        "T41",
+        "T42",
+        "T43",
+        "T51"
+      ],
+      "uniqueTasks" : 0
+    },
+    {
+      "id" : "M15",
+      "title" : "Эксплойт и гипотезы",
+      "topics" : [
+        "T44"
+      ],
+      "uniqueTasks" : 0
+    },
+    {
+      "id" : "M16",
+      "title" : "Сателлиты",
+      "topics" : [
+        "T48"
+      ],
+      "uniqueTasks" : 0
+    },
+    {
+      "id" : "M17",
+      "title" : "Разбор и повторение",
+      "topics" : [
+        "T52",
+        "T53",
+        "T54",
+        "T60"
+      ],
+      "uniqueTasks" : 0
+    },
+    {
+      "id" : "M18",
+      "title" : "Риск и процесс",
+      "topics" : [
+        "T55",
+        "T56",
+        "T57",
+        "T58",
+        "T59"
+      ],
+      "uniqueTasks" : 0
+    }
+  ],
+  "topics" : [
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T01",
+      "legacyIDs" : [
+        "E.hand.highcard",
+        "E.hand.pair",
+        "E.hand.twopair",
+        "E.hand.set",
+        "E.hand.wheel",
+        "E.hand.flush",
+        "E.hand.fullhouse",
+        "E.hand.quads",
+        "E.hand.straightflush",
+        "E.hand.boardsplit",
+        "E.hand.kicker",
+        "E.hand.straight"
+      ],
+      "module" : "M01",
+      "prerequisites" : [
+
+      ],
+      "status" : "Блок доступен",
+      "title" : "Лучшая пятёрка, kicker, ничья и wheel"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T02",
+      "legacyIDs" : [
+        "E.position.UTG",
+        "E.position.HJ",
+        "E.position.CO",
+        "E.position.BTN",
+        "E.position.SB",
+        "E.position.BB",
+        "E.position.preflop",
+        "E.position.postflop",
+        "E.position.relative"
+      ],
+      "module" : "M01",
+      "prerequisites" : [
+        "T01"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Позиции и порядок действий"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.T03.spr",
+        "E.foundation.T03.effective",
+        "E.foundation.T03.bba",
+        "E.foundation.T03.cash-start-pot",
+        "E.foundation.T03.turn-spr",
+        "E.foundation.T03.zero-pot"
+      ],
+      "id" : "T03",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M01",
+      "prerequisites" : [
+        "T02"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Блайнды, анте, эффективный стек и SPR"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.T04.min-raise",
+        "E.foundation.T04.next-min-raise",
+        "E.foundation.T04.short-all-in",
+        "E.foundation.T04.cumulative",
+        "E.foundation.T04.short-call",
+        "E.foundation.T04.check"
+      ],
+      "id" : "T04",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M01",
+      "prerequisites" : [
+        "T02",
+        "T03"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Легальные действия, min-raise и неполный all-in"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.T05.main-pot",
+        "E.foundation.T05.layers",
+        "E.foundation.T05.folded-eligibility",
+        "E.foundation.T05.refund",
+        "E.foundation.T05.odd-chip"
+      ],
+      "id" : "T05",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M01",
+      "prerequisites" : [
+        "T01",
+        "T04"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Side pots, odd chips и возврат лишней ставки"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t06.classes",
+        "E.foundation.t06.one-ace",
+        "E.foundation.t06.no-return"
+      ],
+      "id" : "T06",
+      "legacyIDs" : [
+        "E.blocker.aa",
+        "E.blocker.aks",
+        "E.blocker.ako"
+      ],
+      "module" : "M02",
+      "prerequisites" : [
+        "T01"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Комбинации и события без возвращения"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t07.clean-outs",
+        "E.foundation.t07.river-equity",
+        "E.foundation.t07.rule-four"
+      ],
+      "id" : "T07",
+      "legacyIDs" : [
+        "E.outs.next",
+        "E.outs.river"
+      ],
+      "module" : "M02",
+      "prerequisites" : [
+        "T01",
+        "T06"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Точные outs и dirty outs"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t08.tie-share",
+        "E.foundation.t08.complete-turn",
+        "E.foundation.t08.duplicate-card"
+      ],
+      "id" : "T08",
+      "legacyIDs" : [
+        "E.equity.flop",
+        "E.equity.turn"
+      ],
+      "module" : "M03",
+      "prerequisites" : [
+        "T01",
+        "T06"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Точная equity против известной руки"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t09.weights",
+        "E.foundation.t09.weighted-equity",
+        "E.foundation.t09.blocked-range"
+      ],
+      "id" : "T09",
+      "legacyIDs" : [
+        "E.range.flop",
+        "E.range.turn-1to3",
+        "E.range.turn-3to1"
+      ],
+      "module" : "M03",
+      "prerequisites" : [
+        "T06",
+        "T08"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Equity против взвешенного диапазона"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t10.recorded-mean",
+        "E.foundation.t10.four-times-n",
+        "E.foundation.t10.ties-variance"
+      ],
+      "id" : "T10",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M05",
+      "prerequisites" : [
+        "T08",
+        "T09"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Monte Carlo, дисперсия оценщика и ошибка"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T11",
+      "legacyIDs" : [
+        "E.pot.100.50",
+        "E.pot.120.120",
+        "E.pot.200.50",
+        "E.ev.positive",
+        "E.ev.negative",
+        "E.ev.zero"
+      ],
+      "module" : "M03",
+      "prerequisites" : [
+        "T08",
+        "T09"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Pot odds и EV call\/fold"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T12",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M10",
+      "prerequisites" : [
+        "T11"
+      ],
+      "status" : "Подготовка",
+      "title" : "Bet EV, fold equity и чистый блеф"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T13",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M10",
+      "prerequisites" : [
+        "T04",
+        "T05",
+        "T11",
+        "T12"
+      ],
+      "status" : "Подготовка",
+      "title" : "Raise, reshove и all-in EV"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t14.direct-ev",
+        "E.foundation.t14.future-payments",
+        "E.foundation.t14.future-limit"
+      ],
+      "id" : "T14",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M06",
+      "prerequisites" : [
+        "T07",
+        "T11"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Implied odds, reverse implied odds и доминирование"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t15-rake-small-pot",
+        "E.foundation.t15-rake-cap",
+        "E.foundation.t15-net-threshold"
+      ],
+      "id" : "T15",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M06",
+      "prerequisites" : [
+        "T11"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Rake и cap"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t16-wald-se",
+        "E.foundation.t16-four-times-sample",
+        "E.foundation.t16-small-sample"
+      ],
+      "id" : "T16",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M05",
+      "prerequisites" : [
+        "T10"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Variance, размер выборки и интервал"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t17.normalizer",
+        "E.foundation.t17.changed-likelihood",
+        "E.foundation.t17.boundary"
+      ],
+      "id" : "T17",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M08",
+      "prerequisites" : [
+        "T06",
+        "T09",
+        "T16"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Байесовское обновление диапазона и предположения о блефе"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T18",
+      "legacyIDs" : [
+        "E.blocker.aa",
+        "E.blocker.aks",
+        "E.blocker.ako",
+        "E.blocker.range",
+        "E.blocker.weights",
+        "E.blocker.bluffs"
+      ],
+      "module" : "M08",
+      "prerequisites" : [
+        "T06",
+        "T09"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Blockers и removal effects"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T19",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M12",
+      "prerequisites" : [
+        "T11",
+        "T12",
+        "T18"
+      ],
+      "status" : "Подготовка",
+      "title" : "MDF и bluff:value в toy river game"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T20",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M12",
+      "prerequisites" : [
+        "T11",
+        "T18",
+        "T19"
+      ],
+      "status" : "Подготовка",
+      "title" : "Bluff-catcher и порог колла"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t21.dominated-ace",
+        "E.foundation.t21.remaining-combos",
+        "E.foundation.t21.playability-limit"
+      ],
+      "id" : "T21",
+      "legacyIDs" : [
+        "E.position.suited",
+        "E.position.kicker",
+        "E.position.prior-actions"
+      ],
+      "module" : "M04",
+      "prerequisites" : [
+        "T01",
+        "T06"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Свойства стартовых рук и доминирование"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t22.rfi-definition",
+        "E.foundation.t22.players-behind",
+        "E.foundation.t22.chart-co-read",
+        "E.foundation.t22.chart-passport"
+      ],
+      "id" : "T22",
+      "legacyIDs" : [
+        "E.position.prior-actions"
+      ],
+      "module" : "M04",
+      "prerequisites" : [
+        "T02",
+        "T21"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Open-raise и чарты по позиции"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t23.bb-price",
+        "E.foundation.t23.bb-open-three",
+        "E.foundation.t23.realisation-limit"
+      ],
+      "id" : "T23",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M07",
+      "prerequisites" : [
+        "T22",
+        "T11"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Защита BB"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t24.dead-money",
+        "E.foundation.t24.limper-price",
+        "E.foundation.t24.limp-limit"
+      ],
+      "id" : "T24",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M07",
+      "prerequisites" : [
+        "T22",
+        "T23"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Limp, isolation и dead money"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t25.bet-names",
+        "E.foundation.t25.hj-call-price",
+        "E.foundation.t25-sizing-limit"
+      ],
+      "id" : "T25",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M07",
+      "prerequisites" : [
+        "T22",
+        "T24"
+      ],
+      "status" : "Блок доступен",
+      "title" : "3-bet, 4-bet и 5-bet"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t26.squeeze-name",
+        "E.foundation.t26.btn-squeeze-price",
+        "E.foundation.t26.range-limit"
+      ],
+      "id" : "T26",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M07",
+      "prerequisites" : [
+        "T25"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Cold call и squeeze"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t27.shove-addition",
+        "E.foundation.t27.final-pot",
+        "E.foundation.t27.icm-limit"
+      ],
+      "id" : "T27",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M07",
+      "prerequisites" : [
+        "T04",
+        "T05",
+        "T11",
+        "T25"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Короткий стек: shove и resteal"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t28.hu-order",
+        "E.foundation.t28.co-behind",
+        "E.foundation.t28.table-limit"
+      ],
+      "id" : "T28",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M04",
+      "prerequisites" : [
+        "T02",
+        "T22"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Heads-up, 6-max и full ring"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t29.tags",
+        "E.foundation.t29.straight-completers",
+        "E.foundation.t29.range-boundary"
+      ],
+      "id" : "T29",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M09",
+      "prerequisites" : [
+        "T01",
+        "T06"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Текстуры доски"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T30",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M11",
+      "prerequisites" : [
+        "T09",
+        "T18",
+        "T29"
+      ],
+      "status" : "Подготовка",
+      "title" : "Range advantage и nut advantage"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T31",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M11",
+      "prerequisites" : [
+        "T09",
+        "T11",
+        "T39"
+      ],
+      "status" : "Подготовка",
+      "title" : "Реализация equity и playability"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t32.hard-cap",
+        "E.foundation.t32.soft-cap-mass",
+        "E.foundation.t32.polarized-boundary",
+        "E.foundation.t32.linear"
+      ],
+      "id" : "T32",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M08",
+      "prerequisites" : [
+        "T17",
+        "T18"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Linear, polarized, capped и uncapped"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T33",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M11",
+      "prerequisites" : [
+        "T30",
+        "T32"
+      ],
+      "status" : "Подготовка",
+      "title" : "Board coverage"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t34.delayed",
+        "E.foundation.t34.delayed-price",
+        "E.foundation.t34.probe-boundary",
+        "E.foundation.t34.cbet"
+      ],
+      "id" : "T34",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M09",
+      "prerequisites" : [
+        "T22",
+        "T29",
+        "T39"
+      ],
+      "status" : "Блок доступен",
+      "title" : "C-bet и delayed c-bet"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t35.probe",
+        "E.foundation.t35.donk-price",
+        "E.foundation.t35.term-boundary"
+      ],
+      "id" : "T35",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M09",
+      "prerequisites" : [
+        "T34"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Probe bet и donk bet"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T36",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M10",
+      "prerequisites" : [
+        "T12",
+        "T29",
+        "T34"
+      ],
+      "status" : "Подготовка",
+      "title" : "Check-raise"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t37.river-value",
+        "E.foundation.t37.semi-bluff",
+        "E.foundation.t37.value-boundary"
+      ],
+      "id" : "T37",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M09",
+      "prerequisites" : [
+        "T11",
+        "T29"
+      ],
+      "status" : "Блок доступен",
+      "title" : "Value, protection и semi-bluff"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T38",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M10",
+      "prerequisites" : [
+        "T03",
+        "T12",
+        "T13"
+      ],
+      "status" : "Подготовка",
+      "title" : "Сайзинг, overbet, SPR и план улиц"
+    },
+    {
+      "foundationIDs" : [
+        "E.foundation.t39.ip",
+        "E.foundation.t39.call-threshold",
+        "E.foundation.t39.folded-button"
+      ],
+      "id" : "T39",
+      "legacyIDs" : [
+        "E.position.relative"
+      ],
+      "module" : "M09",
+      "prerequisites" : [
+        "T02",
+        "T29"
+      ],
+      "status" : "Блок доступен",
+      "title" : "IP и OOP"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T40",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M11",
+      "prerequisites" : [
+        "T05",
+        "T09",
+        "T29",
+        "T39"
+      ],
+      "status" : "Подготовка",
+      "title" : "Multiway pots"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T41",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M14",
+      "prerequisites" : [
+        "T19",
+        "T20"
+      ],
+      "status" : "Подготовка",
+      "title" : "Равновесие, GTO и предел exploitability"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T42",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M14",
+      "prerequisites" : [
+        "T30",
+        "T38",
+        "T41"
+      ],
+      "status" : "Подготовка",
+      "title" : "Чувствительность solver-отчёта к входам"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T43",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M14",
+      "prerequisites" : [
+        "T42",
+        "T11"
+      ],
+      "status" : "Подготовка",
+      "title" : "Смешанные действия и допустимое упрощение"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T44",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M15",
+      "prerequisites" : [
+        "T16",
+        "T17",
+        "T41",
+        "T42"
+      ],
+      "status" : "Подготовка",
+      "title" : "Эксплойт, nodelock и малые выборки"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T45",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M13",
+      "prerequisites" : [
+        "T05",
+        "T09",
+        "T11"
+      ],
+      "status" : "Подготовка",
+      "title" : "ICM и chip EV"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T46",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M13",
+      "prerequisites" : [
+        "T45"
+      ],
+      "status" : "Подготовка",
+      "title" : "Risk premium и bubble factor"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T47",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M13",
+      "prerequisites" : [
+        "T45",
+        "T46"
+      ],
+      "status" : "Подготовка",
+      "title" : "Баббл, поздняя стадия MTT и pay jumps"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T48",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M16",
+      "prerequisites" : [
+        "T45",
+        "T47"
+      ],
+      "status" : "Подготовка",
+      "title" : "Satellite ICM"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T49",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M13",
+      "prerequisites" : [
+        "T27",
+        "T45",
+        "T46"
+      ],
+      "status" : "Подготовка",
+      "title" : "Короткий стек, анте, push\/fold и reshove"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T50",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M13",
+      "prerequisites" : [
+        "T05",
+        "T09",
+        "T45"
+      ],
+      "status" : "Подготовка",
+      "title" : "Multiway all-in, side pots и ICM"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T51",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M14",
+      "prerequisites" : [
+        "T42",
+        "T43"
+      ],
+      "status" : "Подготовка",
+      "title" : "Воспроизводимость и валидация solver-модели"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T52",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M17",
+      "prerequisites" : [
+        "T11",
+        "T17",
+        "T42"
+      ],
+      "status" : "Подготовка",
+      "title" : "Разбор раздачи и контрфактические линии"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T53",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M17",
+      "prerequisites" : [
+        "T52"
+      ],
+      "status" : "Подготовка",
+      "title" : "Таксономия ошибок и заметки"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T54",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M17",
+      "prerequisites" : [
+        "T53"
+      ],
+      "status" : "Подготовка",
+      "title" : "Целенаправленная практика, интервалы и ретест"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T55",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M18",
+      "prerequisites" : [
+
+      ],
+      "status" : "Подготовка",
+      "title" : "Тильт, усталость и внимание"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T56",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M18",
+      "prerequisites" : [
+        "T15",
+        "T16"
+      ],
+      "status" : "Подготовка",
+      "title" : "Банкролл, риск и дисперсия"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T57",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M18",
+      "prerequisites" : [
+        "T15",
+        "T16",
+        "T44"
+      ],
+      "status" : "Подготовка",
+      "title" : "Выбор игры и неопределённость поля"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T58",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M18",
+      "prerequisites" : [
+        "T17",
+        "T16"
+      ],
+      "status" : "Подготовка",
+      "title" : "Live tells, надёжность и обновление Байеса"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T59",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M18",
+      "prerequisites" : [
+
+      ],
+      "status" : "Подготовка",
+      "title" : "Ответственная игра: лимиты и признаки риска"
+    },
+    {
+      "foundationIDs" : [
+
+      ],
+      "id" : "T60",
+      "legacyIDs" : [
+
+      ],
+      "module" : "M17",
+      "prerequisites" : [
+        "T48",
+        "T50",
+        "T51",
+        "T52",
+        "T53",
+        "T54",
+        "T55",
+        "T56",
+        "T57",
+        "T58",
+        "T59"
+      ],
+      "status" : "Подготовка",
+      "title" : "Capstone: полный аудит решения и независимая проверка"
+    }
+  ],
+  "uniqueTasks" : 132
+}

@@ -59,22 +59,26 @@ public struct FoundationExercise: Identifiable, Sendable {
     public let diagram: [FoundationDiagramRow]
     public let chart: [FoundationDiagramRow]
     public let cards: [Card]
+    public let simulation: CourseMonteCarloReport?
     public let researchAnchor: String
     public init(id: String, topicID: CourseTopicID, title: String, purpose: FoundationPurpose,
                 context: [String], question: String, answer: FoundationAnswer, explanation: [String],
                 typicalError: String, term: String, definition: String, example: String,
                 method: String, assumptions: String, resultKind: LessonResultKind = .exact,
-                diagram: [FoundationDiagramRow] = [], chart: [FoundationDiagramRow] = [], cards: [Card] = [], researchAnchor: String) {
+                diagram: [FoundationDiagramRow] = [], chart: [FoundationDiagramRow] = [], cards: [Card] = [], simulation: CourseMonteCarloReport? = nil, researchAnchor: String) {
         self.id = .init(rawValue: id); self.topicID = topicID; self.title = title; self.purpose = purpose
         self.context = context; self.question = question; self.answer = answer; self.explanation = explanation
         self.typicalError = typicalError; self.term = term; self.definition = definition; self.example = example
         self.method = method; self.assumptions = assumptions; self.resultKind = resultKind
-        self.diagram = diagram; self.chart = chart; self.cards = cards; self.researchAnchor = researchAnchor
+        self.diagram = diagram; self.chart = chart; self.cards = cards; self.simulation = simulation; self.researchAnchor = researchAnchor
     }
 }
 
 public enum FoundationLesson {
-    public static let exercises: [FoundationExercise] = rulesExercises + remainingExercises
+    /// Frozen revision-2 content remains available to compatibility checks.
+    public static let v2Exercises: [FoundationExercise] = rulesExercises + remainingExercises
+    public static let intermediateExercises: [FoundationExercise] = estimationExercises + preflopExercises + rangesPostflopExercises
+    public static let exercises: [FoundationExercise] = v2Exercises + intermediateExercises
     public static func exercise(_ id: CatalogExerciseID) -> FoundationExercise? {
         exercises.first { $0.id == id }
     }

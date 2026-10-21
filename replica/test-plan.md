@@ -1,3 +1,23 @@
+# INT — M05–M09, редакция 3
+
+| ID | Критерий | Проверка |
+| --- | --- | --- |
+| INT-01 | 50 новых ID, три цели на каждый новый T-ID, 132 общих | CourseIntermediateTests |
+| INT-02 | Замороженный MC seed/N/W/T/L, ties, SE и 95% | CourseEstimationTests + CourseIntermediateTests |
+| INT-03 | Implied/reverse, rake/cap, единицы, независимые ключи | CourseEstimationTests + CourseIntermediateTests |
+| INT-04 | Префлоп: полный банк/вклад, короткий стек, условный паспорт | CoursePreflopTests |
+| INT-05 | Байес/веса, физические карты, linear/polar/cap, позиция и типы ставок | CourseRangesPostflopTests |
+| INT-06 | Все 82 старых результата + 50 новых после записи/reload; completion 8/8 | fixture baseline67e44b4 + CourseIntermediateTests |
+| INT-07 | Все 16 дополненных T-ID: маршрут, ответ, сохранение, relaunch | testIntermediateTopicsAndRelaunch |
+| INT-08 | MC отчёт и ввод с запятой; округление Байеса и восстановление | testMonteCarloReportAndBayesRounding |
+
+Команды: `swift test -c release`, `./Tools/verify.sh`,
+`./Tools/test-course-ios.sh testIntermediateTopicsAndRelaunch`,
+`./Tools/test-course-ios.sh testMonteCarloReportAndBayesRounding`.
+XXXL и расширенная ручная доступность отложены пользователем.
+
+Ниже сохранены проверки предыдущих этапов.
+
 # План QA нативного NLHE-приложения
 
 Актуальный план: [tests/test-plan.md](tests/test-plan.md).
