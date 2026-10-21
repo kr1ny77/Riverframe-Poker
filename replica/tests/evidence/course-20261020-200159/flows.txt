@@ -1,0 +1,1261 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project PokerTrainer.xcodeproj -scheme PokerTrainer -destination "platform=iOS Simulator,id=CEEF54A3-E423-4532-847C-E0572270CCDE" -derivedDataPath .build/ui-qa -resultBundlePath replica/tests/evidence/course-20261020-200159/flows.xcresult -parallel-testing-enabled NO -collect-test-diagnostics never "-only-testing:PokerTrainerUITests/CriticalFlows/testCatalogSingleExerciseAndRelaunch" CODE_SIGNING_ALLOWED=NO test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  PokerDomain: /Users/kr1ny77/Desktop/Poker @ local
+
+Writing result bundle at path:
+	/Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261020-200159/flows.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (4 targets)
+    Target 'PokerTrainerUITests' in project 'PokerTrainer'
+        ➜ Explicit dependency on target 'PokerTrainer' in project 'PokerTrainer'
+        ➜ Explicit dependency on target 'PokerCore-product' in project 'PokerDomain'
+    Target 'PokerTrainer' in project 'PokerTrainer'
+        ➜ Explicit dependency on target 'PokerCore-product' in project 'PokerDomain'
+    Target 'PokerCore-product' in project 'PokerDomain'
+        ➜ Explicit dependency on target 'PokerCore' in project 'PokerDomain'
+    Target 'PokerCore' in project 'PokerDomain' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: c3ce6eb47bb50e572646716e340e9649
+Build description path: /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/XCBuildData/c3ce6eb47bb50e572646716e340e9649.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache
+
+WriteAuxiliaryFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.SwiftFileList (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker
+    write-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.SwiftFileList
+
+WriteAuxiliaryFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-OutputFileMap.json (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker
+    write-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.LinkFileList (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker
+    write-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.LinkFileList
+
+WriteAuxiliaryFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.SwiftConstValuesFileList (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker
+    write-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.SwiftConstValuesFileList
+
+SwiftDriver PokerCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name PokerCore -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name poker -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore_const_extract_protocols.json -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ PokerCore (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+
+
+SwiftCompile normal arm64 Compiling\ LessonPresentation.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/LessonPresentation.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/LessonPresentation.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile LessonPresentation.swift
+
+SwiftCompile normal arm64 Compiling\ BotPolicy.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/BotPolicy.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/BotPolicy.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile BotPolicy.swift
+
+SwiftCompile normal arm64 Compiling\ HoldemGame.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/HoldemGame.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/HoldemGame.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile HoldemGame.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling LessonPresentation.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 Compiling\ CourseCatalog.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/CourseCatalog.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/CourseCatalog.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile CourseCatalog.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling CourseCatalog.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling HoldemGame.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling BotPolicy.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for PokerCore (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 Compiling\ Cards.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/Cards.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/Cards.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile Cards.swift
+
+SwiftCompile normal arm64 Compiling\ RangeEquityLesson.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/RangeEquityLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/RangeEquityLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile RangeEquityLesson.swift
+
+SwiftCompile normal arm64 Compiling\ PositionLesson.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/PositionLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/PositionLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile PositionLesson.swift
+
+SwiftCompile normal arm64 Compiling\ HandComparisonLesson.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/HandComparisonLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/HandComparisonLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile HandComparisonLesson.swift
+
+SwiftCompile normal arm64 Compiling\ EquityLesson.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/EquityLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/EquityLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile EquityLesson.swift
+
+SwiftCompile normal arm64 Compiling\ LearningCourse.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/LearningCourse.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/LearningCourse.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile LearningCourse.swift
+
+SwiftCompile normal arm64 Compiling\ OutsLesson.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/OutsLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/OutsLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile OutsLesson.swift
+
+SwiftCompile normal arm64 Compiling\ Practice.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/Practice.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/Practice.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile Practice.swift
+
+SwiftCompile normal arm64 Compiling\ EVCallLesson.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/EVCallLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/EVCallLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile EVCallLesson.swift
+
+SwiftCompile normal arm64 Compiling\ BlockerLesson.swift /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/BlockerLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/Sources/PokerCore/BlockerLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-SwiftPerFileCompile BlockerLesson.swift
+
+SwiftDriver\ Compilation\ Requirements PokerCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name PokerCore -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name poker -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore_const_extract_protocols.json -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling OutsLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.swiftmodule (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.swiftmodule /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.swiftdoc (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.swiftdoc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+SwiftDriverJobDiscovery normal arm64 Compiling RangeEquityLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.abi.json (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.abi.json /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.swiftsourceinfo (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.swiftsourceinfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling EquityLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Cards.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling PositionLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Practice.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling BlockerLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling EVCallLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling LearningCourse.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriverJobDiscovery normal arm64 Compiling HandComparisonLesson.swift (in target 'PokerCore' from project 'PokerDomain')
+
+SwiftDriver\ Compilation PokerCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -parse-as-library -module-name PokerCore -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -package-name poker -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore_const_extract_protocols.json -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker/PokerTrainer.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.o normal (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -O0 -Xlinker -no_warn_duplicate_libraries -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -filelist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.swiftmodule -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.o
+
+ExtractAppIntentsMetadata (in target 'PokerCore' from project 'PokerDomain')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name PokerCore --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk --xcode-version 27A9275 --platform-family iOS --deployment-target 17.0 --bundle-identifier poker.PokerCore --output /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.appintents --target-triple arm64-apple-ios17.0-simulator --binary-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerCore.o --dependency-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore_dependency_info.dat --stringsdata-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.SwiftFileList --metadata-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/PokerCore.DependencyMetadataFileList --static-metadata-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/PokerCore.DependencyStaticMetadataFileList --swift-const-vals-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerDomain.build/Debug-iphonesimulator/PokerCore-t.build/Objects-normal/arm64/PokerCore.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-20 20:02:03.506 appintentsmetadataprocessor[41971:11557098] Starting appintentsmetadataprocessor export
+2026-10-20 20:02:03.544 appintentsmetadataprocessor[41971:11557098] Extracted no relevant App Intents symbols, skipping writing output
+
+WriteAuxiliaryFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftConstValuesFileList (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    write-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftFileList (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    write-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftFileList
+
+WriteAuxiliaryFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.LinkFileList (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    write-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.LinkFileList
+
+WriteAuxiliaryFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-OutputFileMap.json (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    write-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-OutputFileMap.json
+
+ProcessInfoPlistFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Info.plist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/empty-PokerTrainer.plist (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-infoPlistUtility /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/empty-PokerTrainer.plist -producttype com.apple.product-type.application -genpkginfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Info.plist
+
+SwiftDriver PokerTrainer normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainer -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ EquityLessonView.swift,\ HandComparisonLessonView.swift /Users/kr1ny77/Desktop/Poker/App/UI/EquityLessonView.swift /Users/kr1ny77/Desktop/Poker/App/UI/HandComparisonLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/EquityLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile EquityLessonView.swift
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/HandComparisonLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile HandComparisonLessonView.swift
+
+SwiftCompile normal arm64 Compiling\ PositionLessonView.swift,\ RangeEquityLessonView.swift /Users/kr1ny77/Desktop/Poker/App/UI/PositionLessonView.swift /Users/kr1ny77/Desktop/Poker/App/UI/RangeEquityLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/PositionLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile PositionLessonView.swift
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/RangeEquityLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile RangeEquityLessonView.swift
+
+SwiftCompile normal arm64 Compiling\ DesignSystem.swift,\ LearningCourseView.swift /Users/kr1ny77/Desktop/Poker/App/UI/DesignSystem.swift /Users/kr1ny77/Desktop/Poker/App/UI/LearningCourseView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/DesignSystem.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile DesignSystem.swift
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/LearningCourseView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile LearningCourseView.swift
+
+SwiftCompile normal arm64 Compiling\ CourseCatalogView.swift,\ LessonTemplateView.swift /Users/kr1ny77/Desktop/Poker/App/UI/CourseCatalogView.swift /Users/kr1ny77/Desktop/Poker/App/UI/LessonTemplateView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/CourseCatalogView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile CourseCatalogView.swift
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/LessonTemplateView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile LessonTemplateView.swift
+
+SwiftCompile normal arm64 Compiling\ BlockerLessonView.swift,\ EVCallLessonView.swift /Users/kr1ny77/Desktop/Poker/App/UI/BlockerLessonView.swift /Users/kr1ny77/Desktop/Poker/App/UI/EVCallLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/BlockerLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile BlockerLessonView.swift
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/EVCallLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile EVCallLessonView.swift
+
+SwiftCompile normal arm64 Compiling\ PracticeStore.swift /Users/kr1ny77/Desktop/Poker/App/Persistence/PracticeStore.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/Persistence/PracticeStore.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile PracticeStore.swift
+
+SwiftCompile normal arm64 Compiling\ OutsLessonView.swift /Users/kr1ny77/Desktop/Poker/App/UI/OutsLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/OutsLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile OutsLessonView.swift
+
+SwiftCompile normal arm64 Compiling\ PokerTrainerApp.swift /Users/kr1ny77/Desktop/Poker/App/PokerTrainerApp.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/PokerTrainerApp.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile PokerTrainerApp.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ PokerTrainer (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+
+
+SwiftCompile normal arm64 Compiling\ PokerTrainerViews.swift /Users/kr1ny77/Desktop/Poker/App/UI/PokerTrainerViews.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/UI/PokerTrainerViews.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile PokerTrainerViews.swift
+
+SwiftCompile normal arm64 Compiling\ GameViewModel.swift /Users/kr1ny77/Desktop/Poker/App/Application/GameViewModel.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/App/Application/GameViewModel.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile GameViewModel.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling PokerTrainerApp.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriverJobDiscovery normal arm64 Compiling PracticeStore.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriverJobDiscovery normal arm64 Compiling GameViewModel.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriverJobDiscovery normal arm64 Compiling OutsLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for PokerTrainer (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriver\ Compilation\ Requirements PokerTrainer normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainer -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftsourceinfo (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftsourceinfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.abi.json (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.abi.json /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+SwiftDriver PokerTrainerUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainerUITests -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling CourseCatalogView.swift, LessonTemplateView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriverJobDiscovery normal arm64 Compiling BlockerLessonView.swift, EVCallLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DesignSystem.swift, LearningCourseView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 Compiling\ CriticalFlows.swift /Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:9:9: warning: main actor-isolated property 'app' can not be mutated from a nonisolated context
+   4 | @MainActor
+   5 | final class CriticalFlows: XCTestCase {
+   6 |     private var app: XCUIApplication!
+     |                 `- note: mutation of this property is only permitted within the actor
+   7 |     override func setUpWithError() throws {
+   8 |         continueAfterFailure=false
+   9 |         app=XCUIApplication()
+     |         `- warning: main actor-isolated property 'app' can not be mutated from a nonisolated context
+  10 |         app.terminate()
+  11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:9:13: warning: call to main actor-isolated initializer 'init()' in a synchronous nonisolated context [#ActorIsolatedCall]
+   7 |     override func setUpWithError() throws {
+   8 |         continueAfterFailure=false
+   9 |         app=XCUIApplication()
+     |             `- warning: call to main actor-isolated initializer 'init()' in a synchronous nonisolated context [#ActorIsolatedCall]
+  10 |         app.terminate()
+  11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework/Headers/XCUIApplication.h:29:1: note: calls to initializer 'init()' from outside of its actor context are implicitly asynchronous
+ 27 |  * Returns a proxy for the application specified by the "Target Application" target setting.
+ 28 |  */
+ 29 | - (instancetype)init NS_DESIGNATED_INITIALIZER;
+    | `- note: calls to initializer 'init()' from outside of its actor context are implicitly asynchronous
+ 30 | + (instancetype)new;
+ 31 |
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:10:13: warning: call to main actor-isolated instance method 'terminate()' in a synchronous nonisolated context [#ActorIsolatedCall]
+   8 |         continueAfterFailure=false
+   9 |         app=XCUIApplication()
+  10 |         app.terminate()
+     |             `- warning: call to main actor-isolated instance method 'terminate()' in a synchronous nonisolated context [#ActorIsolatedCall]
+  11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+  12 |         app.launch()
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework/Headers/XCUIApplication.h:84:1: note: calls to instance method 'terminate()' from outside of its actor context are implicitly asynchronous
+ 82 |  * is sent to the process.
+ 83 |  */
+ 84 | - (void)terminate;
+    | `- note: calls to instance method 'terminate()' from outside of its actor context are implicitly asynchronous
+ 85 |
+ 86 | /*!
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:10:9: warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+   4 | @MainActor
+   5 | final class CriticalFlows: XCTestCase {
+   6 |     private var app: XCUIApplication!
+     |                 `- note: property declared here
+   7 |     override func setUpWithError() throws {
+   8 |         continueAfterFailure=false
+   9 |         app=XCUIApplication()
+  10 |         app.terminate()
+     |         `- warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+  11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+  12 |         app.launch()
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:11:13: warning: main actor-isolated property 'launchArguments' can not be mutated from a nonisolated context
+   9 |         app=XCUIApplication()
+  10 |         app.terminate()
+  11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+     |             `- warning: main actor-isolated property 'launchArguments' can not be mutated from a nonisolated context
+  12 |         app.launch()
+  13 |     }
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework/Headers/XCUIApplication.h:93:51: note: mutation of this property is only permitted within the actor
+ 91 |  * is launched.
+ 92 |  */
+ 93 | @property (nonatomic, copy) NSArray <NSString *> *launchArguments;
+    |                                                   `- note: mutation of this property is only permitted within the actor
+ 94 |
+ 95 | /*!
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:11:9: warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+   4 | @MainActor
+   5 | final class CriticalFlows: XCTestCase {
+   6 |     private var app: XCUIApplication!
+     |                 `- note: property declared here
+   7 |     override func setUpWithError() throws {
+   8 |         continueAfterFailure=false
+   9 |         app=XCUIApplication()
+  10 |         app.terminate()
+  11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+     |         `- warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+  12 |         app.launch()
+  13 |     }
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:12:13: warning: call to main actor-isolated instance method 'launch()' in a synchronous nonisolated context [#ActorIsolatedCall]
+  10 |         app.terminate()
+  11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+  12 |         app.launch()
+     |             `- warning: call to main actor-isolated instance method 'launch()' in a synchronous nonisolated context [#ActorIsolatedCall]
+  13 |     }
+  14 |     private func tab(_ name:String) {
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework/Headers/XCUIApplication.h:54:1: note: calls to instance method 'launch()' from outside of its actor context are implicitly asynchronous
+ 52 |  * at that point.
+ 53 | */
+ 54 | - (void)launch;
+    | `- note: calls to instance method 'launch()' from outside of its actor context are implicitly asynchronous
+ 55 |
+ 56 | /*!
+
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:12:9: warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+   4 | @MainActor
+   5 | final class CriticalFlows: XCTestCase {
+   6 |     private var app: XCUIApplication!
+     |                 `- note: property declared here
+   7 |     override func setUpWithError() throws {
+   8 |         continueAfterFailure=false
+     :
+  10 |         app.terminate()
+  11 |         app.launchArguments=["-AppleLanguages","(ru)","-AppleLocale","ru_RU"]
+  12 |         app.launch()
+     |         `- warning: main actor-isolated property 'app' can not be referenced from a nonisolated context
+  13 |     }
+  14 |     private func tab(_ name:String) {
+
+[#ActorIsolatedCall]: <https://docs.swift.org/compiler/documentation/diagnostics/actor-isolated-call>
+
+SwiftCompile normal arm64 /Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-SwiftPerFileCompile CriticalFlows.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ PokerTrainerUITests (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+
+SwiftCompile normal arm64 (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for PokerTrainerUITests (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+
+SwiftDriver\ Compilation\ Requirements PokerTrainerUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainerUITests -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftsourceinfo (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftsourceinfo /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.abi.json (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.abi.json /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftmodule (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftmodule /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+SwiftDriverJobDiscovery normal arm64 Compiling PositionLessonView.swift, RangeEquityLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriverJobDiscovery normal arm64 Compiling EquityLessonView.swift, HandComparisonLessonView.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriverJobDiscovery normal arm64 Compiling CriticalFlows.swift (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+
+SwiftDriver\ Compilation PokerTrainerUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainerUITests -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -parse-as-library -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling PokerTrainerViews.swift (in target 'PokerTrainer' from project 'PokerTrainer')
+
+SwiftDriver\ Compilation PokerTrainer normal arm64 com.apple.xcode.tools.swift.compiler (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name PokerTrainer -Onone @/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -target arm64-apple-ios17.0-simulator -g -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -Xfrontend -serialize-debugging-options -index-store-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Index.noindex/DataStore -swift-version 6 -I /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKStatCaches.noindex/iphonesimulator27.1-24A94232-35d3147121984ba087c28d913653d626.sdkstatcache -output-file-map /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex -sdk-module-cache-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_const_extract_protocols.json -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-generated-files.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-own-target-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer-411beb4a9fe69667f0a5db37a9c7c8d3-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-project-headers.hmap -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources-normal/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources/arm64 -Xcc -I/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer-Swift.h -working-directory /Users/kr1ny77/Desktop/Poker -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib normal (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -filelist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.LinkFileList -install_name @rpath/PokerTrainer.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_lto.o -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-ExecutorLinkFileList-normal-arm64.txt (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    construct-stub-executor-link-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'PokerTrainer' from project 'PokerTrainer')
+
+Ld /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer normal (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer-ExecutorLinkFileList-normal-arm64.txt /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer
+
+ExtractAppIntentsMetadata (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name PokerTrainer --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk --xcode-version 27A9275 --platform-family iOS --deployment-target 17.0 --bundle-identifier org.pokerpractice.native --output /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app --target-triple arm64-apple-ios17.0-simulator --binary-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer --dependency-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer_dependency_info.dat --stringsdata-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftFileList --metadata-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer.DependencyMetadataFileList --static-metadata-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/PokerTrainer.DependencyStaticMetadataFileList --swift-const-vals-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/Objects-normal/arm64/PokerTrainer.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-20 20:02:06.280 appintentsmetadataprocessor[42016:11557312] Starting appintentsmetadataprocessor export
+2026-10-20 20:02:06.281 appintentsmetadataprocessor[42016:11557312] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CopySwiftLibs /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app (in target 'PokerTrainer' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PokerTrainer.debug.dylib --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Frameworks --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/PlugIns --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/SystemExtensions --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainer.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainer.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ProcessInfoPlistFile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Info.plist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/empty-PokerTrainerUITests.plist (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-infoPlistUtility /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/empty-PokerTrainerUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/ProductTypeInfoPlistAdditions.plist -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Info.plist
+
+Ld /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PokerTrainerUITests normal (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios17.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk/Developer/Library/Frameworks -filelist /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path -Xlinker -rpath -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_lto.o -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PokerTrainerUITests
+
+ExtractAppIntentsMetadata (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name PokerTrainerUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.1.sdk --xcode-version 27A9275 --platform-family iOS --deployment-target 17.0 --bundle-identifier org.pokerpractice.native.uitests --output /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest --target-triple arm64-apple-ios17.0-simulator --binary-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PokerTrainerUITests --dependency-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests_dependency_info.dat --stringsdata-file /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.SwiftFileList --metadata-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests.DependencyMetadataFileList --static-metadata-file-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/PokerTrainerUITests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/Objects-normal/arm64/PokerTrainerUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-10-20 20:02:06.448 appintentsmetadataprocessor[42020:11557329] Starting appintentsmetadataprocessor export
+2026-10-20 20:02:06.449 appintentsmetadataprocessor[42020:11557329] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CopySwiftLibs /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest (in target 'PokerTrainerUITests' from project 'PokerTrainer')
+    cd /Users/kr1ny77/Desktop/Poker
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PokerTrainerUITests --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Frameworks --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/PlugIns --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/SystemExtensions --scan-folder /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Products/Debug-iphonesimulator/PokerTrainerUITests-Runner.app/PlugIns/PokerTrainerUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/PokerTrainer.build/Debug-iphonesimulator/PokerTrainerUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+PruneExplicitPrecompiledModules /Users/kr1ny77/Desktop/Poker/.build/ui-qa/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/kr1ny77/Desktop/Poker/.build/ui-qa/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+Resolve Package Graph
+
+Resolve Package Graph
+
+2026-10-20 20:02:09.542 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-20 20:02:48.560207+0200 PokerTrainerUITests-Runner[42263:11560209] [Default] Running tests...
+objc[42263]: Class UIAccessibilityLoaderWebShared is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.TMrvJ5/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10a340398) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.1.434.0.TMrvJ5/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10a924310). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-20 20:02:58.836.
+Test Suite 'PokerTrainerUITests.xctest' started at 2026-10-20 20:02:58.836.
+Test Suite 'CriticalFlows' started at 2026-10-20 20:02:58.837.
+Test Case '-[PokerTrainerUITests.CriticalFlows testCatalogSingleExerciseAndRelaunch]' started.
+    t =     0.00s Start Test at 2026-10-20 20:02:58.839
+    t =     0.58s Set Up
+    t =     0.60s     Terminate org.pokerpractice.native:0
+    t =     0.63s     Open org.pokerpractice.native
+    t =     0.65s         Launch org.pokerpractice.native
+2026-10-20 20:03:00.108 xcodebuild[41937:11556772] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-20 20:03:00.108 xcodebuild[41937:11556772] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-20 20:03:00.291 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+Resolve Package Graph
+
+    t =     6.20s             Setting up automation session
+    t =    10.79s             Wait for org.pokerpractice.native to idle
+    t =    13.24s Waiting 10.0s for "Настройки" Button to exist
+    t =    14.29s     Checking `Expect predicate `existsNoRetry == 1` for object "Настройки" Button`
+    t =    14.29s         Checking existence of `"Настройки" Button`
+    t =    14.70s Tap "Настройки" Button
+    t =    14.70s     Wait for org.pokerpractice.native to idle
+    t =    14.71s     Find the "Настройки" Button
+    t =    14.75s     Check for interrupting elements affecting "Настройки" Button
+    t =    14.86s     Synthesize event
+    t =    15.36s     Wait for org.pokerpractice.native to idle
+    t =    17.55s Tap "Очистить результаты" Button
+    t =    17.55s     Wait for org.pokerpractice.native to idle
+    t =    17.55s     Find the "Очистить результаты" Button
+    t =    17.64s     Check for interrupting elements affecting "Очистить результаты" Button
+    t =    17.69s     Synthesize event
+    t =    18.00s     Wait for org.pokerpractice.native to idle
+    t =    18.36s Tap "Очистить" Button
+    t =    18.36s     Wait for org.pokerpractice.native to idle
+    t =    18.38s     Find the "Очистить" Button
+    t =    18.44s     Check for interrupting elements affecting "Очистить" Button
+    t =    18.51s     Synthesize event
+    t =    18.82s     Wait for org.pokerpractice.native to idle
+    t =    19.11s Terminate org.pokerpractice.native:42392
+2026-10-20 20:03:17.972 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-20 20:03:17.973 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-20 20:03:17.982 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    20.16s Open org.pokerpractice.native
+    t =    20.16s     Launch org.pokerpractice.native
+2026-10-20 20:03:19.007 xcodebuild[41937:11556772] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-10-20 20:03:19.007 xcodebuild[41937:11556772] [MT] IDELaunchParametersSnapshot: no debugger version
+2026-10-20 20:03:19.025 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+    t =    20.39s         Setting up automation session
+    t =    24.10s         Wait for org.pokerpractice.native to idle
+    t =    25.67s Waiting 10.0s for "Тренировка" Button to exist
+    t =    26.77s     Checking `Expect predicate `existsNoRetry == 1` for object "Тренировка" Button`
+    t =    26.77s         Checking existence of `"Тренировка" Button`
+    t =    27.06s Tap "Тренировка" Button
+    t =    27.06s     Wait for org.pokerpractice.native to idle
+    t =    27.07s     Find the "Тренировка" Button
+    t =    27.13s     Check for interrupting elements affecting "Тренировка" Button
+    t =    27.26s     Synthesize event
+    t =    27.67s     Wait for org.pokerpractice.native to idle
+    t =    29.59s Checking existence of `"course.catalog" Button`
+    t =    29.67s Find the "course.catalog" Button
+    t =    29.73s Checking existence of `Keyboard (First Match)`
+    t =    29.90s Checking existence of `"course.catalog" Button`
+    t =    29.95s Find the "course.catalog" Button
+    t =    30.25s Tap "course.catalog" Button
+    t =    30.26s     Wait for org.pokerpractice.native to idle
+    t =    30.28s     Find the "course.catalog" Button
+    t =    30.36s     Check for interrupting elements affecting "course.catalog" Button
+    t =    30.43s     Synthesize event
+    t =    30.75s     Wait for org.pokerpractice.native to idle
+    t =    31.35s Waiting 5.0s for "catalog.summary" StaticText to exist
+    t =    32.42s     Checking `Expect predicate `existsNoRetry == 1` for object "catalog.summary" StaticText`
+    t =    32.43s         Checking existence of `"catalog.summary" StaticText`
+    t =    32.73s Checking existence of `"catalog.module.M03" Any`
+    t =    33.06s Find the "catalog.module.M03" Any
+    t =    33.25s Checking existence of `Keyboard (First Match)`
+    t =    33.33s Checking existence of `"catalog.module.M03" Button`
+    t =    33.55s Find the "catalog.module.M03" Button
+    t =    34.10s Tap "catalog.module.M03" Button
+    t =    34.10s     Wait for org.pokerpractice.native to idle
+    t =    34.10s     Find the "catalog.module.M03" Button
+    t =    34.43s     Check for interrupting elements affecting "catalog.module.M03" Button
+    t =    34.87s     Synthesize event
+    t =    35.18s     Wait for org.pokerpractice.native to idle
+    t =    35.57s Checking existence of `"catalog.topic.T11" Any`
+    t =    35.84s Find the "catalog.topic.T11" Any
+    t =    35.98s Checking existence of `Keyboard (First Match)`
+    t =    36.07s Checking existence of `"catalog.topic.T11" Button`
+    t =    36.25s Find the "catalog.topic.T11" Button
+    t =    36.46s Tap "catalog.topic.T11" Button
+    t =    36.46s     Wait for org.pokerpractice.native to idle
+    t =    36.47s     Find the "catalog.topic.T11" Button
+    t =    36.66s     Check for interrupting elements affecting "catalog.topic.T11" Button
+    t =    36.80s     Synthesize event
+    t =    37.11s     Wait for org.pokerpractice.native to idle
+    t =    47.22s Find the "catalog.progress.T11" StaticText
+    t =    47.26s Checking existence of `"catalog.exercise.E.pot.100.50" Button`
+    t =    47.29s Find the "catalog.exercise.E.pot.100.50" Button
+    t =    47.31s Checking existence of `Keyboard (First Match)`
+    t =    47.36s Checking existence of `"catalog.exercise.E.pot.100.50" Button`
+    t =    47.39s Find the "catalog.exercise.E.pot.100.50" Button
+    t =    47.43s Tap "catalog.exercise.E.pot.100.50" Button
+    t =    47.43s     Wait for org.pokerpractice.native to idle
+    t =    47.44s     Find the "catalog.exercise.E.pot.100.50" Button
+    t =    47.48s     Check for interrupting elements affecting "catalog.exercise.E.pot.100.50" Button
+    t =    47.51s     Synthesize event
+    t =    47.81s     Wait for org.pokerpractice.native to idle
+    t =    48.26s Checking existence of `"lesson.start" Button`
+    t =    48.31s Find the "lesson.start" Button
+    t =    48.34s Checking existence of `Keyboard (First Match)`
+    t =    48.39s Checking existence of `"lesson.start" Button`
+    t =    48.42s Find the "lesson.start" Button
+    t =    48.47s Find the Target Application 'org.pokerpractice.native'
+    t =    48.50s Checking existence of `"lesson.start" Button`
+    t =    48.53s Find the "lesson.start" Button
+    t =    48.57s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    48.57s     Wait for org.pokerpractice.native to idle
+    t =    48.58s     Find the Target Application 'org.pokerpractice.native'
+    t =    48.60s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    48.63s     Synthesize event
+    t =    48.64s         Find the Target Application 'org.pokerpractice.native'
+    t =    48.66s         Find the Target Application 'org.pokerpractice.native'
+    t =    48.69s         Find the Target Application 'org.pokerpractice.native'
+    t =    48.71s         Find the Target Application 'org.pokerpractice.native'
+    t =    48.74s         Find the Target Application 'org.pokerpractice.native'
+    t =    49.89s     Wait for org.pokerpractice.native to idle
+    t =    49.90s Checking existence of `"lesson.start" Button`
+    t =    49.96s Find the "lesson.start" Button
+    t =    50.07s Find the Target Application 'org.pokerpractice.native'
+    t =    50.39s Checking existence of `"lesson.start" Button`
+    t =    50.45s Find the "lesson.start" Button
+    t =    50.54s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    50.54s     Wait for org.pokerpractice.native to idle
+    t =    50.57s     Find the Target Application 'org.pokerpractice.native'
+    t =    50.68s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    50.73s     Synthesize event
+    t =    50.74s         Find the Target Application 'org.pokerpractice.native'
+    t =    50.78s         Find the Target Application 'org.pokerpractice.native'
+    t =    50.88s         Find the Target Application 'org.pokerpractice.native'
+    t =    50.92s         Find the Target Application 'org.pokerpractice.native'
+    t =    50.95s         Find the Target Application 'org.pokerpractice.native'
+    t =    52.09s     Wait for org.pokerpractice.native to idle
+    t =    52.10s Checking existence of `"lesson.start" Button`
+    t =    52.13s Find the "lesson.start" Button
+    t =    52.18s Find the Target Application 'org.pokerpractice.native'
+    t =    52.21s Checking existence of `"lesson.start" Button`
+    t =    52.24s Find the "lesson.start" Button
+    t =    52.28s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    52.28s     Wait for org.pokerpractice.native to idle
+    t =    52.29s     Find the Target Application 'org.pokerpractice.native'
+    t =    52.32s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    52.35s     Synthesize event
+    t =    52.36s         Find the Target Application 'org.pokerpractice.native'
+    t =    52.38s         Find the Target Application 'org.pokerpractice.native'
+    t =    52.42s         Find the Target Application 'org.pokerpractice.native'
+    t =    52.45s         Find the Target Application 'org.pokerpractice.native'
+    t =    52.58s         Find the Target Application 'org.pokerpractice.native'
+    t =    53.72s     Wait for org.pokerpractice.native to idle
+    t =    53.74s Checking existence of `"lesson.start" Button`
+    t =    53.78s Find the "lesson.start" Button
+    t =    53.86s Find the Target Application 'org.pokerpractice.native'
+    t =    53.89s Checking existence of `"lesson.start" Button`
+    t =    53.92s Find the "lesson.start" Button
+    t =    53.95s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    53.96s     Wait for org.pokerpractice.native to idle
+    t =    53.96s     Find the Target Application 'org.pokerpractice.native'
+    t =    53.98s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    54.01s     Synthesize event
+    t =    54.02s         Find the Target Application 'org.pokerpractice.native'
+    t =    54.04s         Find the Target Application 'org.pokerpractice.native'
+    t =    54.07s         Find the Target Application 'org.pokerpractice.native'
+    t =    54.09s         Find the Target Application 'org.pokerpractice.native'
+    t =    54.12s         Find the Target Application 'org.pokerpractice.native'
+    t =    55.27s     Wait for org.pokerpractice.native to idle
+    t =    55.29s Checking existence of `"lesson.start" Button`
+    t =    55.33s Find the "lesson.start" Button
+    t =    55.38s Find the "lesson.start" Button
+    t =    55.43s Tap "lesson.start" Button
+    t =    55.44s     Wait for org.pokerpractice.native to idle
+    t =    55.44s     Find the "lesson.start" Button
+    t =    55.48s     Check for interrupting elements affecting "lesson.start" Button
+    t =    55.51s     Synthesize event
+    t =    55.82s     Wait for org.pokerpractice.native to idle
+    t =    56.25s Waiting 5.0s for "Процент" TextField to exist
+    t =    57.28s     Checking `Expect predicate `existsNoRetry == 1` for object "Процент" TextField`
+    t =    57.28s         Checking existence of `"Процент" TextField`
+    t =    57.32s Tap "Процент" TextField
+    t =    57.32s     Wait for org.pokerpractice.native to idle
+    t =    57.33s     Find the "Процент" TextField
+    t =    57.35s     Check for interrupting elements affecting "Процент" TextField
+    t =    57.39s     Synthesize event
+    t =    57.69s     Wait for org.pokerpractice.native to idle
+<unknown>:0: warning: -[PokerTrainerUITests.CriticalFlows testCatalogSingleExerciseAndRelaunch] : Invalid frame dimension (negative or non-finite).
+    t =    59.30s Type '25' into "Процент" TextField
+    t =    59.30s     Wait for org.pokerpractice.native to idle
+    t =    59.65s     Find the "Процент" TextField
+    t =    59.72s     Check for interrupting elements affecting "Процент" TextField
+    t =    59.78s     Synthesize event
+    t =    60.02s     Wait for org.pokerpractice.native to idle
+    t =    60.02s Checking existence of `"Проверить" Button`
+    t =    60.06s Find the "Проверить" Button
+    t =    60.10s Checking existence of `Keyboard (First Match)`
+    t =    60.11s Checking existence of `"Готово" Button`
+    t =    60.15s Find the "Готово" Button
+    t =    60.22s Tap "Готово" Button
+    t =    60.22s     Wait for org.pokerpractice.native to idle
+    t =    60.22s     Find the "Готово" Button
+    t =    60.26s     Check for interrupting elements affecting "Готово" Button
+    t =    60.30s     Synthesize event
+    t =    60.70s     Wait for org.pokerpractice.native to idle
+    t =    60.96s Checking existence of `"Проверить" Button`
+    t =    60.99s Find the "Проверить" Button
+    t =    61.03s Find the "Проверить" Button
+    t =    61.05s Tap "Проверить" Button
+    t =    61.05s     Wait for org.pokerpractice.native to idle
+    t =    61.06s     Find the "Проверить" Button
+    t =    61.08s     Check for interrupting elements affecting "Проверить" Button
+    t =    61.11s     Synthesize event
+    t =    61.41s     Wait for org.pokerpractice.native to idle
+    t =    61.49s Checking existence of `"Результат сохранён на устройстве." StaticText`
+    t =    61.53s Find the "Результат сохранён на устройстве." StaticText
+    t =    61.55s Checking existence of `Keyboard (First Match)`
+    t =    61.59s Checking existence of `"Результат сохранён на устройстве." StaticText`
+    t =    61.63s Find the "Результат сохранён на устройстве." StaticText
+    t =    61.67s Find the Target Application 'org.pokerpractice.native'
+    t =    61.70s Checking existence of `"Результат сохранён на устройстве." StaticText`
+    t =    61.73s Find the "Результат сохранён на устройстве." StaticText
+    t =    61.77s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    61.77s     Wait for org.pokerpractice.native to idle
+    t =    61.78s     Find the Target Application 'org.pokerpractice.native'
+    t =    61.80s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    61.83s     Synthesize event
+    t =    61.84s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.86s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.89s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.91s         Find the Target Application 'org.pokerpractice.native'
+    t =    61.94s         Find the Target Application 'org.pokerpractice.native'
+    t =    63.08s     Wait for org.pokerpractice.native to idle
+    t =    63.50s Checking existence of `"Результат сохранён на устройстве." StaticText`
+    t =    63.53s Find the "Результат сохранён на устройстве." StaticText
+    t =    63.68s Checking existence of `"Результат сохранён на устройстве." StaticText`
+    t =    63.71s Find the Target Application 'org.pokerpractice.native'
+    t =    63.88s Added attachment named 'catalog-exercise-saved'
+    t =    63.88s Tap Button (Element at index 0)
+    t =    63.88s     Wait for org.pokerpractice.native to idle
+    t =    63.88s     Find the Button (Element at index 0)
+    t =    63.91s     Check for interrupting elements affecting "BackButton" Button
+    t =    63.95s     Synthesize event
+    t =    64.25s     Wait for org.pokerpractice.native to idle
+    t =    64.57s Checking existence of `"lesson.restored-result" StaticText`
+    t =    64.62s Checking existence of `"lesson.restored-result" StaticText`
+    t =    64.66s Find the Target Application 'org.pokerpractice.native'
+    t =    64.68s Checking existence of `"lesson.restored-result" StaticText`
+    t =    64.72s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    64.72s     Wait for org.pokerpractice.native to idle
+    t =    64.73s     Find the Target Application 'org.pokerpractice.native'
+    t =    64.76s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    64.79s     Synthesize event
+    t =    64.80s         Find the Target Application 'org.pokerpractice.native'
+    t =    64.84s         Find the Target Application 'org.pokerpractice.native'
+    t =    64.87s         Find the Target Application 'org.pokerpractice.native'
+    t =    64.90s         Find the Target Application 'org.pokerpractice.native'
+    t =    64.94s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.09s     Wait for org.pokerpractice.native to idle
+    t =    66.10s Checking existence of `"lesson.restored-result" StaticText`
+    t =    66.13s Find the Target Application 'org.pokerpractice.native'
+    t =    66.15s Checking existence of `"lesson.restored-result" StaticText`
+    t =    66.18s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    66.18s     Wait for org.pokerpractice.native to idle
+    t =    66.19s     Find the Target Application 'org.pokerpractice.native'
+    t =    66.21s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    66.23s     Synthesize event
+    t =    66.24s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.26s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.28s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.30s         Find the Target Application 'org.pokerpractice.native'
+    t =    66.33s         Find the Target Application 'org.pokerpractice.native'
+    t =    67.47s     Wait for org.pokerpractice.native to idle
+    t =    67.81s Checking existence of `"lesson.restored-result" StaticText`
+    t =    67.85s Find the Target Application 'org.pokerpractice.native'
+    t =    67.87s Checking existence of `"lesson.restored-result" StaticText`
+    t =    67.91s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    67.91s     Wait for org.pokerpractice.native to idle
+    t =    67.99s     Find the Target Application 'org.pokerpractice.native'
+    t =    68.02s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    68.05s     Synthesize event
+    t =    68.05s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.07s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.10s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.12s         Find the Target Application 'org.pokerpractice.native'
+    t =    68.15s         Find the Target Application 'org.pokerpractice.native'
+    t =    69.30s     Wait for org.pokerpractice.native to idle
+    t =    69.68s Checking existence of `"lesson.restored-result" StaticText`
+    t =    69.72s Find the Target Application 'org.pokerpractice.native'
+    t =    69.75s Checking existence of `"lesson.restored-result" StaticText`
+    t =    69.78s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    69.78s     Wait for org.pokerpractice.native to idle
+    t =    69.88s     Find the Target Application 'org.pokerpractice.native'
+    t =    69.91s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    69.96s     Synthesize event
+    t =    69.96s         Find the Target Application 'org.pokerpractice.native'
+    t =    70.00s         Find the Target Application 'org.pokerpractice.native'
+    t =    70.19s         Find the Target Application 'org.pokerpractice.native'
+    t =    70.22s         Find the Target Application 'org.pokerpractice.native'
+    t =    70.26s         Find the Target Application 'org.pokerpractice.native'
+    t =    71.43s     Wait for org.pokerpractice.native to idle
+    t =    71.80s Checking existence of `"lesson.restored-result" StaticText`
+    t =    71.84s Find the Target Application 'org.pokerpractice.native'
+    t =    71.89s Checking existence of `"lesson.restored-result" StaticText`
+    t =    71.92s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    71.92s     Wait for org.pokerpractice.native to idle
+    t =    72.00s     Find the Target Application 'org.pokerpractice.native'
+    t =    72.02s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    72.06s     Synthesize event
+    t =    72.06s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.08s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.11s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.14s         Find the Target Application 'org.pokerpractice.native'
+    t =    72.17s         Find the Target Application 'org.pokerpractice.native'
+    t =    73.51s     Wait for org.pokerpractice.native to idle
+    t =    73.88s Checking existence of `"lesson.restored-result" StaticText`
+    t =    73.94s Find the Target Application 'org.pokerpractice.native'
+    t =    74.03s Checking existence of `"lesson.restored-result" StaticText`
+    t =    74.08s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    74.08s     Wait for org.pokerpractice.native to idle
+    t =    74.09s     Find the Target Application 'org.pokerpractice.native'
+    t =    74.13s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    74.18s     Synthesize event
+    t =    74.19s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.24s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.30s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.33s         Find the Target Application 'org.pokerpractice.native'
+    t =    74.40s         Find the Target Application 'org.pokerpractice.native'
+    t =    75.57s     Wait for org.pokerpractice.native to idle
+    t =    75.95s Checking existence of `"lesson.restored-result" StaticText`
+    t =    75.99s Find the Target Application 'org.pokerpractice.native'
+    t =    76.02s Checking existence of `"lesson.restored-result" StaticText`
+    t =    76.06s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    76.06s     Wait for org.pokerpractice.native to idle
+    t =    76.14s     Find the Target Application 'org.pokerpractice.native'
+    t =    76.19s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    76.23s     Synthesize event
+    t =    76.25s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.31s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.36s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.39s         Find the Target Application 'org.pokerpractice.native'
+    t =    76.45s         Find the Target Application 'org.pokerpractice.native'
+    t =    77.62s     Wait for org.pokerpractice.native to idle
+    t =    77.99s Checking existence of `"lesson.restored-result" StaticText`
+    t =    78.05s Find the Target Application 'org.pokerpractice.native'
+    t =    78.08s Checking existence of `"lesson.restored-result" StaticText`
+    t =    78.12s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    78.12s     Wait for org.pokerpractice.native to idle
+    t =    78.20s     Find the Target Application 'org.pokerpractice.native'
+    t =    78.23s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    78.27s     Synthesize event
+    t =    78.27s         Find the Target Application 'org.pokerpractice.native'
+    t =    78.30s         Find the Target Application 'org.pokerpractice.native'
+    t =    78.34s         Find the Target Application 'org.pokerpractice.native'
+    t =    78.36s         Find the Target Application 'org.pokerpractice.native'
+    t =    78.40s         Find the Target Application 'org.pokerpractice.native'
+    t =    79.55s     Wait for org.pokerpractice.native to idle
+    t =    79.91s Checking existence of `"lesson.restored-result" StaticText`
+    t =    79.95s Find the Target Application 'org.pokerpractice.native'
+    t =    79.97s Checking existence of `"lesson.restored-result" StaticText`
+    t =    80.01s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    80.01s     Wait for org.pokerpractice.native to idle
+    t =    80.11s     Find the Target Application 'org.pokerpractice.native'
+    t =    80.14s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    80.17s     Synthesize event
+    t =    80.18s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.21s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.24s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.26s         Find the Target Application 'org.pokerpractice.native'
+    t =    80.29s         Find the Target Application 'org.pokerpractice.native'
+    t =    81.44s     Wait for org.pokerpractice.native to idle
+    t =    81.81s Checking existence of `"lesson.restored-result" StaticText`
+    t =    81.85s Find the Target Application 'org.pokerpractice.native'
+    t =    81.87s Checking existence of `"lesson.restored-result" StaticText`
+    t =    81.90s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    81.90s     Wait for org.pokerpractice.native to idle
+    t =    82.01s     Find the Target Application 'org.pokerpractice.native'
+    t =    82.04s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    82.07s     Synthesize event
+    t =    82.07s         Find the Target Application 'org.pokerpractice.native'
+    t =    82.09s         Find the Target Application 'org.pokerpractice.native'
+    t =    82.12s         Find the Target Application 'org.pokerpractice.native'
+    t =    82.14s         Find the Target Application 'org.pokerpractice.native'
+    t =    82.17s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.32s     Wait for org.pokerpractice.native to idle
+    t =    83.68s Checking existence of `"lesson.restored-result" StaticText`
+    t =    83.71s Find the Target Application 'org.pokerpractice.native'
+    t =    83.72s Checking existence of `"lesson.restored-result" StaticText`
+    t =    83.75s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    83.75s     Wait for org.pokerpractice.native to idle
+    t =    83.88s     Find the Target Application 'org.pokerpractice.native'
+    t =    83.90s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    83.92s     Synthesize event
+    t =    83.92s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.94s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.96s         Find the Target Application 'org.pokerpractice.native'
+    t =    83.98s         Find the Target Application 'org.pokerpractice.native'
+    t =    84.00s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.13s     Wait for org.pokerpractice.native to idle
+    t =    85.49s Checking existence of `"lesson.restored-result" StaticText`
+    t =    85.53s Find the Target Application 'org.pokerpractice.native'
+    t =    85.56s Checking existence of `"lesson.restored-result" StaticText`
+    t =    85.60s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    85.60s     Wait for org.pokerpractice.native to idle
+    t =    85.69s     Find the Target Application 'org.pokerpractice.native'
+    t =    85.72s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    85.75s     Synthesize event
+    t =    85.75s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.77s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.79s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.82s         Find the Target Application 'org.pokerpractice.native'
+    t =    85.84s         Find the Target Application 'org.pokerpractice.native'
+    t =    86.98s     Wait for org.pokerpractice.native to idle
+    t =    87.34s Checking existence of `"lesson.restored-result" StaticText`
+    t =    87.37s Find the Target Application 'org.pokerpractice.native'
+    t =    87.39s Checking existence of `"lesson.restored-result" StaticText`
+    t =    87.41s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    87.41s     Wait for org.pokerpractice.native to idle
+    t =    87.54s     Find the Target Application 'org.pokerpractice.native'
+    t =    87.57s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    87.59s     Synthesize event
+    t =    87.59s         Find the Target Application 'org.pokerpractice.native'
+    t =    87.61s         Find the Target Application 'org.pokerpractice.native'
+    t =    87.63s         Find the Target Application 'org.pokerpractice.native'
+    t =    87.65s         Find the Target Application 'org.pokerpractice.native'
+    t =    87.67s         Find the Target Application 'org.pokerpractice.native'
+    t =    88.81s     Wait for org.pokerpractice.native to idle
+    t =    89.18s Checking existence of `"lesson.restored-result" StaticText`
+    t =    89.21s Find the Target Application 'org.pokerpractice.native'
+    t =    89.24s Checking existence of `"lesson.restored-result" StaticText`
+    t =    89.27s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    89.27s     Wait for org.pokerpractice.native to idle
+    t =    89.38s     Find the Target Application 'org.pokerpractice.native'
+    t =    89.40s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    89.43s     Synthesize event
+    t =    89.43s         Find the Target Application 'org.pokerpractice.native'
+    t =    89.45s         Find the Target Application 'org.pokerpractice.native'
+    t =    89.47s         Find the Target Application 'org.pokerpractice.native'
+    t =    89.49s         Find the Target Application 'org.pokerpractice.native'
+    t =    89.52s         Find the Target Application 'org.pokerpractice.native'
+    t =    90.65s     Wait for org.pokerpractice.native to idle
+    t =    91.03s Checking existence of `"lesson.restored-result" StaticText`
+    t =    91.05s Find the Target Application 'org.pokerpractice.native'
+    t =    91.07s Checking existence of `"lesson.restored-result" StaticText`
+    t =    91.10s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    91.10s     Wait for org.pokerpractice.native to idle
+    t =    91.23s     Find the Target Application 'org.pokerpractice.native'
+    t =    91.25s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    91.27s     Synthesize event
+    t =    91.28s         Find the Target Application 'org.pokerpractice.native'
+    t =    91.29s         Find the Target Application 'org.pokerpractice.native'
+    t =    91.31s         Find the Target Application 'org.pokerpractice.native'
+    t =    91.33s         Find the Target Application 'org.pokerpractice.native'
+    t =    91.36s         Find the Target Application 'org.pokerpractice.native'
+    t =    92.49s     Wait for org.pokerpractice.native to idle
+    t =    92.86s Checking existence of `"lesson.restored-result" StaticText`
+    t =    92.90s Find the Target Application 'org.pokerpractice.native'
+    t =    92.92s Checking existence of `"lesson.restored-result" StaticText`
+    t =    92.94s Press Target Application 'org.pokerpractice.native'[0.50, 0.65] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.65] -> (0.0, -180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    92.94s     Wait for org.pokerpractice.native to idle
+    t =    93.06s     Find the Target Application 'org.pokerpractice.native'
+    t =    93.08s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    93.10s     Synthesize event
+    t =    93.11s         Find the Target Application 'org.pokerpractice.native'
+    t =    93.12s         Find the Target Application 'org.pokerpractice.native'
+    t =    93.14s         Find the Target Application 'org.pokerpractice.native'
+    t =    93.16s         Find the Target Application 'org.pokerpractice.native'
+    t =    93.19s         Find the Target Application 'org.pokerpractice.native'
+    t =    94.33s     Wait for org.pokerpractice.native to idle
+    t =    94.69s Checking existence of `"lesson.restored-result" StaticText`
+    t =    94.73s Find the Target Application 'org.pokerpractice.native'
+    t =    94.75s Checking existence of `"lesson.restored-result" StaticText`
+    t =    94.77s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    94.77s     Wait for org.pokerpractice.native to idle
+    t =    94.89s     Find the Target Application 'org.pokerpractice.native'
+    t =    94.92s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    94.94s     Synthesize event
+    t =    94.95s         Find the Target Application 'org.pokerpractice.native'
+    t =    94.96s         Find the Target Application 'org.pokerpractice.native'
+    t =    94.98s         Find the Target Application 'org.pokerpractice.native'
+    t =    95.00s         Find the Target Application 'org.pokerpractice.native'
+    t =    95.02s         Find the Target Application 'org.pokerpractice.native'
+    t =    96.15s     Wait for org.pokerpractice.native to idle
+    t =    96.16s Checking existence of `"lesson.restored-result" StaticText`
+    t =    96.20s Find the Target Application 'org.pokerpractice.native'
+    t =    96.24s Checking existence of `"lesson.restored-result" StaticText`
+    t =    96.28s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    96.28s     Wait for org.pokerpractice.native to idle
+    t =    96.29s     Find the Target Application 'org.pokerpractice.native'
+    t =    96.31s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    96.40s     Synthesize event
+    t =    96.40s         Find the Target Application 'org.pokerpractice.native'
+    t =    96.42s         Find the Target Application 'org.pokerpractice.native'
+    t =    96.44s         Find the Target Application 'org.pokerpractice.native'
+    t =    96.46s         Find the Target Application 'org.pokerpractice.native'
+    t =    96.48s         Find the Target Application 'org.pokerpractice.native'
+    t =    97.62s     Wait for org.pokerpractice.native to idle
+    t =    97.62s Checking existence of `"lesson.restored-result" StaticText`
+    t =    97.67s Find the Target Application 'org.pokerpractice.native'
+    t =    97.68s Checking existence of `"lesson.restored-result" StaticText`
+    t =    97.71s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    97.71s     Wait for org.pokerpractice.native to idle
+    t =    97.71s     Find the Target Application 'org.pokerpractice.native'
+    t =    97.73s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    97.76s     Synthesize event
+    t =    97.76s         Find the Target Application 'org.pokerpractice.native'
+    t =    97.78s         Find the Target Application 'org.pokerpractice.native'
+    t =    97.80s         Find the Target Application 'org.pokerpractice.native'
+    t =    97.81s         Find the Target Application 'org.pokerpractice.native'
+    t =    97.84s         Find the Target Application 'org.pokerpractice.native'
+    t =    98.98s     Wait for org.pokerpractice.native to idle
+    t =    99.03s Checking existence of `"lesson.restored-result" StaticText`
+    t =    99.07s Find the Target Application 'org.pokerpractice.native'
+    t =    99.08s Checking existence of `"lesson.restored-result" StaticText`
+    t =    99.11s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =    99.11s     Wait for org.pokerpractice.native to idle
+    t =    99.11s     Find the Target Application 'org.pokerpractice.native'
+    t =    99.13s     Check for interrupting elements affecting "Учебный стол" Application
+    t =    99.16s     Synthesize event
+    t =    99.16s         Find the Target Application 'org.pokerpractice.native'
+    t =    99.18s         Find the Target Application 'org.pokerpractice.native'
+    t =    99.20s         Find the Target Application 'org.pokerpractice.native'
+    t =    99.21s         Find the Target Application 'org.pokerpractice.native'
+    t =    99.23s         Find the Target Application 'org.pokerpractice.native'
+    t =   100.36s     Wait for org.pokerpractice.native to idle
+    t =   100.37s Checking existence of `"lesson.restored-result" StaticText`
+    t =   100.39s Find the Target Application 'org.pokerpractice.native'
+    t =   100.41s Checking existence of `"lesson.restored-result" StaticText`
+    t =   100.44s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =   100.44s     Wait for org.pokerpractice.native to idle
+    t =   100.44s     Find the Target Application 'org.pokerpractice.native'
+    t =   100.46s     Check for interrupting elements affecting "Учебный стол" Application
+    t =   100.48s     Synthesize event
+    t =   100.48s         Find the Target Application 'org.pokerpractice.native'
+    t =   100.50s         Find the Target Application 'org.pokerpractice.native'
+    t =   100.52s         Find the Target Application 'org.pokerpractice.native'
+    t =   100.53s         Find the Target Application 'org.pokerpractice.native'
+    t =   100.55s         Find the Target Application 'org.pokerpractice.native'
+    t =   101.69s     Wait for org.pokerpractice.native to idle
+    t =   101.69s Checking existence of `"lesson.restored-result" StaticText`
+    t =   101.72s Find the Target Application 'org.pokerpractice.native'
+    t =   101.74s Checking existence of `"lesson.restored-result" StaticText`
+    t =   101.77s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =   101.77s     Wait for org.pokerpractice.native to idle
+    t =   101.77s     Find the Target Application 'org.pokerpractice.native'
+    t =   101.79s     Check for interrupting elements affecting "Учебный стол" Application
+    t =   101.81s     Synthesize event
+    t =   101.81s         Find the Target Application 'org.pokerpractice.native'
+    t =   101.83s         Find the Target Application 'org.pokerpractice.native'
+    t =   101.85s         Find the Target Application 'org.pokerpractice.native'
+    t =   101.87s         Find the Target Application 'org.pokerpractice.native'
+    t =   101.89s         Find the Target Application 'org.pokerpractice.native'
+    t =   103.02s     Wait for org.pokerpractice.native to idle
+    t =   103.34s Checking existence of `"lesson.restored-result" StaticText`
+    t =   103.37s Find the Target Application 'org.pokerpractice.native'
+    t =   103.39s Checking existence of `"lesson.restored-result" StaticText`
+    t =   103.41s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =   103.41s     Wait for org.pokerpractice.native to idle
+    t =   103.42s     Find the Target Application 'org.pokerpractice.native'
+    t =   103.44s     Check for interrupting elements affecting "Учебный стол" Application
+    t =   103.46s     Synthesize event
+    t =   103.46s         Find the Target Application 'org.pokerpractice.native'
+    t =   103.48s         Find the Target Application 'org.pokerpractice.native'
+    t =   103.50s         Find the Target Application 'org.pokerpractice.native'
+    t =   103.53s         Find the Target Application 'org.pokerpractice.native'
+    t =   103.55s         Find the Target Application 'org.pokerpractice.native'
+    t =   104.69s     Wait for org.pokerpractice.native to idle
+    t =   105.05s Checking existence of `"lesson.restored-result" StaticText`
+    t =   105.08s Find the Target Application 'org.pokerpractice.native'
+    t =   105.10s Checking existence of `"lesson.restored-result" StaticText`
+    t =   105.13s Press Target Application 'org.pokerpractice.native'[0.50, 0.40] for 0.0 seconds, then drag to Target Application 'org.pokerpractice.native'[0.50, 0.40] -> (0.0, 180.0) with velocity of 250.00 pixels per second, and then hold for 0.1 seconds
+    t =   105.13s     Wait for org.pokerpractice.native to idle
+    t =   105.13s     Find the Target Application 'org.pokerpractice.native'
+    t =   105.15s     Check for interrupting elements affecting "Учебный стол" Application
+    t =   105.18s     Synthesize event
+    t =   105.18s         Find the Target Application 'org.pokerpractice.native'
+    t =   105.20s         Find the Target Application 'org.pokerpractice.native'
+    t =   105.22s         Find the Target Application 'org.pokerpractice.native'
+    t =   105.23s         Find the Target Application 'org.pokerpractice.native'
+    t =   105.25s         Find the Target Application 'org.pokerpractice.native'
+    t =   106.39s     Wait for org.pokerpractice.native to idle
+    t =   106.75s Find the "lesson.restored-result" StaticText
+    t =   107.79s     Find the "lesson.restored-result" StaticText (retry 1)
+    t =   108.82s     Find the "lesson.restored-result" StaticText (retry 2)
+    t =   108.86s     Collecting debug information to assist test failure triage
+    t =   108.86s         Requesting snapshot of accessibility hierarchy for app with pid 42427
+    t =   108.91s     Requesting snapshot of accessibility hierarchy for app with pid 42427
+    t =   108.95s     Find: Descendants matching type StaticText
+    t =   108.95s     Find: Elements matching predicate '"lesson.restored-result" IN identifiers'
+    t =   108.95s     Requesting snapshot of accessibility hierarchy for app with pid 42427
+/Users/kr1ny77/Desktop/Poker/AppUITests/CriticalFlows.swift:396: error: -[PokerTrainerUITests.CriticalFlows testCatalogSingleExerciseAndRelaunch] : Failed to get matching snapshot: No matches found for Elements matching predicate '"lesson.restored-result" IN identifiers' from input {(
+    StaticText, label: 'Урок',
+    StaticText, label: 'Банк 100, ставка 50',
+    StaticText, label: 'T11 · Шансы банка',
+    StaticText, label: 'Цель',
+    StaticText, identifier: 'lesson.goal', label: 'Найдите минимальную долю итогового банка, покрывающую цену колла.',
+    StaticText, identifier: 'lesson.decision-diagram', label: 'План решения',
+    StaticText, label: 'В задаче: ситуация → ваш ответ → проверка → пошаговый разбор. После сохранения вернитесь сюда к результату и следующей задаче.',
+    StaticText, identifier: 'lesson.result', label: 'Последний ответ: верно по условию.',
+    StaticText, identifier: 'lesson.result', label: '20 окт. 2026 г., 20:04',
+    StaticText, identifier: 'lesson.result', label: 'Результат восстановлен из локальной истории.',
+    StaticText, label: 'ID: E.pot.100.50 · редакция 1',
+    StaticText, label: 'Термин',
+    StaticText, label: 'Pot odds',
+    StaticText, label: 'Отношение доплаты за колл к банку после этого колла.',
+    StaticText, label: 'Пример: Банк 100, соперник ставит 50: доплата 50, итоговый банк 200.',
+    StaticText, label: 'Метод',
+    StaticText, label: 'Сопоставляйте цену колла со средней долей банка при заданных условиях.',
+    StaticText, label: '1. Назовите банк до ставки и размер ставки соперника.',
+    StaticText, label: '2. Добавьте ставку соперника и свою доплату.',
+    StaticText, label: '3. Разделите доплату на итоговый банк и переведите в проценты.',
+    StaticText, label: 'Точный результат',
+    StaticText, label: 'Точный расчёт',
+    StaticText, label: 'Входы: конкретные карты, числа, варианты и веса показаны в условии задачи.',
+    StaticText, label: 'Один банк, без рейка и будущих ставок. Equity и вероятность собрать комбинацию имеют разные значения.',
+    StaticText, label: 'Условия ситуации',
+    StaticText, label: 'Банк и доплата',
+    StaticText, label: 'Цена колла',
+    StaticText, label: 'Доля банка / EV',
+    StaticText, label: 'Решить ещё раз',
+    StaticText, label: 'Следующая задача: Банк 120, ставка 120'
+)}
+Possibly caused by runtime issues:
+Automation type mismatch: computed Image from legacy attributes vs StaticText from modern attribute. Input attributes and values: {
+    "XC_kAXXCAttributeAutomationType" = 48;
+    "XC_kAXXCAttributeElementBaseType" = NSObject;
+    "XC_kAXXCAttributeElementType" = "SwiftUI.AccessibilityNode";
+    "XC_kAXXCAttributeTraits" = 8590000132;
+}
+Automation type mismatch: computed Other from legacy attributes vs StaticText from modern attribute. Input attributes and values: {
+    "XC_kAXXCAttributeAutomationType" = 48;
+    "XC_kAXXCAttributeElementBaseType" = UILabel;
+    "XC_kAXXCAttributeElementType" = UILabel;
+    "XC_kAXXCAttributeTraits" = 8590000128;
+}
+See test report attachments for more detail.
+    t =   109.25s Tear Down
+Test Case '-[PokerTrainerUITests.CriticalFlows testCatalogSingleExerciseAndRelaunch]' failed (109.752 seconds).
+Test Suite 'CriticalFlows' failed at 2026-10-20 20:04:48.592.
+	 Executed 1 test, with 1 failure (0 unexpected) in 109.752 (109.756) seconds
+Test Suite 'PokerTrainerUITests.xctest' failed at 2026-10-20 20:04:48.592.
+	 Executed 1 test, with 1 failure (0 unexpected) in 109.752 (109.756) seconds
+Test Suite 'Selected tests' failed at 2026-10-20 20:04:48.593.
+	 Executed 1 test, with 1 failure (0 unexpected) in 109.752 (109.757) seconds
+2026-10-20 20:04:48.835 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-20 20:04:48.848 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-20 20:04:48.859 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-20 20:04:48.918 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-20 20:04:48.919 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-20 20:04:48.922 xcodebuild[41937:11556772] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-10-20 20:04:49.185 xcodebuild[41937:11556772] [MT] IDETestOperationsObserverDebug: 162.727 elapsed -- Testing started completed.
+2026-10-20 20:04:49.185 xcodebuild[41937:11556772] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-20 20:04:49.185 xcodebuild[41937:11556772] [MT] IDETestOperationsObserverDebug: 162.727 sec, +162.727 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261020-200159/flows.xcresult
+
+Failing tests:
+	CriticalFlows.testCatalogSingleExerciseAndRelaunch()
+
+** TEST FAILED **
+
+Testing started

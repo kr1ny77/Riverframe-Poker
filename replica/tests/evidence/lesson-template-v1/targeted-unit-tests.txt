@@ -1,0 +1,33 @@
+Building for debugging...
+[Computing dependencies]
+[Constructing description]
+[Pre-planning 1 / 124]
+[Planning deferred tasks]
+[5 / 31]
+[6 / 32] PokerCore
+[8 / 34] PokerCore
+[13 / 28] PokerCore
+[17 / 28] PokerNativeTests-product
+[27 / 39] PokerNativeTests-product
+[28 / 39] PokerNativeTests-product
+[28 / 39] PokerCoreChecks-product
+[28 / 39] PokerNativeTests-product
+[32 / 38] PokerNativeTests-product
+[34 / 38] PokerNativeTests-product
+[35 / 38] PokerNativeTests-product
+[38 / 38] PokerCoreChecks-product
+Build complete! (29,16 sec)
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test resultKindsLabelMethodsWithoutInventingSamplesOrTables() started.
+◇ Test nextExerciseStaysWithinTopicAndEndsAtLastTask() started.
+◇ Test catalogProgressPreservesHistoricalRecordsAndDeduplicatesSharedExercises() started.
+◇ Test catalogExercisesResolveToTheirTypedLegacyProviders() started.
+◇ Test lessonGuidesCoverEveryPublishedLessonWithReadableSteps() started.
+✔ Test resultKindsLabelMethodsWithoutInventingSamplesOrTables() passed after 0.001 seconds.
+✔ Test lessonGuidesCoverEveryPublishedLessonWithReadableSteps() passed after 0.001 seconds.
+✔ Test nextExerciseStaysWithinTopicAndEndsAtLastTask() passed after 0.001 seconds.
+✔ Test catalogExercisesResolveToTheirTypedLegacyProviders() passed after 0.010 seconds.
+✔ Test catalogProgressPreservesHistoricalRecordsAndDeduplicatesSharedExercises() passed after 2.418 seconds.
+✔ Test run with 5 tests in 0 suites passed after 2.419 seconds.

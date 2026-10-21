@@ -1,0 +1,53 @@
+Attributes: Switch, 0x110a05540, {{32.0, 495.0}, {326.0, 28.0}}, identifier: 'TEXT_COLORS_DARKEN', label: 'Increase Contrast', value: 0
+Element subtree:
+ →Switch, 0x110a05540, {{32.0, 495.0}, {326.0, 28.0}}, identifier: 'TEXT_COLORS_DARKEN', label: 'Increase Contrast', value: 0
+Path to element:
+ →Application, 0x110d17ac0, pid: 49818, label: 'Settings'
+  ↳Window (Main), 0x110d17c00, {{0.0, 0.0}, {390.0, 844.0}}
+   ↳Other, 0x110d17d40, {{0.0, 0.0}, {390.0, 844.0}}
+    ↳Other, 0x110d17e80, {{0.0, 0.0}, {390.0, 844.0}}
+     ↳Other, 0x110a4b980, {{0.0, 0.0}, {390.0, 844.0}}
+      ↳Other, 0x110a4b840, {{0.0, 0.0}, {390.0, 844.0}}
+       ↳Other, 0x110a4a800, {{0.0, 0.0}, {390.0, 844.0}}
+        ↳Other, 0x110a4b700, {{0.0, 0.0}, {390.0, 844.0}}
+         ↳Other, 0x110a4b200, {{0.0, 0.0}, {390.0, 844.0}}
+          ↳Other, 0x110a4bc00, {{0.0, 0.0}, {390.0, 844.0}}
+           ↳Other, 0x110a06a80, {{0.0, 0.0}, {390.0, 844.0}}
+            ↳Other, 0x110a04a00, {{0.0, 0.0}, {390.0, 844.0}}
+             ↳Other, 0x110a04500, {{0.0, 0.0}, {390.0, 844.0}}
+              ↳Other, 0x110a05f40, {{0.0, 0.0}, {390.0, 844.0}}
+               ↳Other, 0x110a05180, {{0.0, 0.0}, {390.0, 844.0}}
+                ↳Other, 0x110a048c0, {{0.0, 101.0}, {390.0, 709.0}}
+                 ↳Table, 0x110a052c0, {{0.0, 0.0}, {390.0, 844.0}}
+                  ↳Cell, 0x110a075c0, {{16.0, 482.3}, {358.0, 53.0}}, identifier: 'TEXT_COLORS_DARKEN'
+                   ↳Other, 0x110a07340, {{16.0, 482.3}, {358.0, 53.0}}
+                    ↳Other, 0x110a05040, {{16.0, 482.3}, {358.0, 53.0}}
+                     ↳Switch, 0x110a05540, {{32.0, 495.0}, {326.0, 28.0}}, identifier: 'TEXT_COLORS_DARKEN', label: 'Increase Contrast', value: 0
+Query chain:
+ →Find: Application 'com.apple.Preferences'
+  Output: {
+    Application, 0x110d33ac0, pid: 49818, label: 'Settings'
+  }
+  ↪︎Find: Descendants matching type Switch
+    Output: {
+      Switch, 0x110d42800, {{32.0, 131.3}, {326.0, 28.0}}, identifier: 'ENHANCE_TEXT_LEGIBILITY', label: 'Bold Text', value: 0
+      Switch, 0x110d41a40, {{32.0, 237.3}, {326.0, 28.0}}, identifier: 'BUTTON_SHAPES', label: 'Show Borders', value: 0
+      Switch, 0x110d40c80, {{32.0, 290.3}, {326.0, 28.0}}, identifier: 'ON_OFF_LABELS', label: 'On/Off Labels', value: 0
+      Switch, 0x110d40140, {{32.0, 378.3}, {326.0, 28.0}}, identifier: 'REDUCE_TRANSPARENCY', label: 'Reduce Transparency', value: 1
+      Switch, 0x110d30640, {{32.0, 495.0}, {326.0, 28.0}}, identifier: 'TEXT_COLORS_DARKEN', label: 'Increase Contrast', value: 0
+      Switch, 0x110d31180, {{32.0, 611.7}, {326.0, 28.0}}, identifier: 'DIFFERENTIATE_WITHOUT_COLOR', label: 'Differentiate Without Color', value: 0
+      Switch, 0x110d31cc0, {{32.0, 728.3}, {326.0, 28.0}}, identifier: 'PREFER_HORIZONTAL_TEXT', label: 'Prefer Horizontal Text', value: 0
+      Switch, 0x110d32800, {{32.0, 845.0}, {326.0, 28.0}}, identifier: 'SMART_INVERT', label: 'Smart Invert', value: 0
+      Switch, 0x110d42080, {{297.0, 131.3}, {63.0, 28.0}}, value: 0
+      Switch, 0x110d41180, {{297.0, 237.3}, {63.0, 28.0}}, value: 0
+      Switch, 0x110d41040, {{297.0, 290.3}, {63.0, 28.0}}, value: 0
+      Switch, 0x110d40500, {{297.0, 378.3}, {63.0, 28.0}}, value: 1
+      Switch, 0x110d308c0, {{297.0, 495.0}, {63.0, 28.0}}, value: 0
+      Switch, 0x110d31400, {{297.0, 611.7}, {63.0, 28.0}}, value: 0
+      Switch, 0x110d31f40, {{297.0, 728.3}, {63.0, 28.0}}, value: 0
+      Switch, 0x110d32a80, {{297.0, 845.0}, {63.0, 28.0}}, value: 0
+    }
+    ↪︎Find: Elements matching predicate '"Increase Contrast" IN identifiers'
+      Output: {
+        Switch, 0x110a5a300, {{32.0, 495.0}, {326.0, 28.0}}, identifier: 'TEXT_COLORS_DARKEN', label: 'Increase Contrast', value: 0
+      }

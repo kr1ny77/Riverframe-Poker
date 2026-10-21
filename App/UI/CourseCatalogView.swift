@@ -16,9 +16,11 @@ struct CourseCatalogView: View {
                     Text("Записей вне текущего каталога: \(catalog.ignoredRecords). Исходная история сохранена; охват рассчитан по распознанным заданиям.")
                         .font(.footnote)
                 }
+                Text("Уникальных задач: \(catalog.overallProgress.covered)/\(catalog.overallProgress.exerciseIDs.count)")
+                    .accessibilityIdentifier("catalog.overall-progress")
                 Text("60 тем · 18 модулей · 4 уровня")
                     .accessibilityIdentifier("catalog.summary")
-                Text("Доступные упражнения используют уже пройденные вами наборы. У тем с частичным материалом показан охват текущих задач.")
+                Text("Доступные упражнения используют прежние наборы и сохранённую историю. У тем с частичным материалом показан охват текущих задач.")
                     .font(.footnote).foregroundStyle(AppTheme.muted)
             }
             ForEach(CourseLevel.allCases) { level in
@@ -27,9 +29,11 @@ struct CourseCatalogView: View {
                         NavigationLink {
                             CatalogModuleView(module: module)
                         } label: {
-                            VStack(alignment: .leading, spacing: 4) {
+                            VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
                                 Text("\(module.id.rawValue) · \(module.title)")
                                 Text("Тем: \(CourseCatalog.topics.filter { $0.moduleID == module.id }.count)")
+                                let progress = catalog.progress(in: module.id)
+                                Text(progress.exerciseIDs.isEmpty ? "Материал готовится" : "Охват: \(progress.covered)/\(progress.exerciseIDs.count) разных задач")
                                     .font(.footnote).foregroundStyle(AppTheme.muted)
                             }
                         }
@@ -54,7 +58,7 @@ private struct CatalogModuleView: View {
                     NavigationLink {
                         CatalogTopicView(topic: topic)
                     } label: {
-                        VStack(alignment: .leading, spacing: 4) {
+                        VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
                             Text("\(topic.id.rawValue) · \(topic.title)")
                             let count = CourseCatalog.exercises(for: topic.id).count
                             Text(count == 0 ? "Материал готовится" : "Доступно упражнений: \(count) · часть темы")
@@ -70,7 +74,7 @@ private struct CatalogModuleView: View {
     }
 }
 
-private struct CatalogTopicView: View {
+struct CatalogTopicView: View {
     let topic: CatalogTopic
     @EnvironmentObject private var store: PracticeStore
 
@@ -79,7 +83,7 @@ private struct CatalogTopicView: View {
         let catalog = store.catalog
         let progress = catalog.progress(for: topic.id)
         ScrollView {
-            VStack(alignment: .leading, spacing: 18) {
+            VStack(alignment: .leading, spacing: AppTheme.Measure.d18) {
                 LessonHeader(title: topic.title, detail: topic.id.rawValue)
                 if let error = store.errorMessage {
                     ErrorNotice(text: error)
@@ -97,15 +101,11 @@ private struct CatalogTopicView: View {
                     Text(progress.completedAvailableExercises ? "Ответы на все доступные упражнения сохранены." : "Пройдите доступные упражнения этой темы.")
                     Text("Этот охват относится к опубликованным задачам. Полная тема может включать новые сценарии. Общие задания учитываются в каждой связанной теме по одной сохранённой попытке.")
                         .font(.footnote).foregroundStyle(AppTheme.muted)
-                    if topic.id == .t11 {
-                        GroupBox("Термин") { Text("Pot odds — минимальная средняя доля итогового банка для оплаты колла при заданных условиях.") }
-                        GroupBox("Метод") { Text("Для pot odds применяется точная арифметика цены колла и итогового банка. Для EV ривера полностью проверяются заданные руки с весами; диапазон является условной моделью.") }
-                    }
                     ForEach(exercises) { exercise in
                         NavigationLink {
-                            CatalogExerciseView(exercise: exercise)
+                            LessonTemplateView(exercise: exercise, topicID: topic.id)
                         } label: {
-                            VStack(alignment: .leading, spacing: 6) {
+                            VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
                                 Text(exercise.title).font(.headline)
                                 Text(exercise.calculation.title).font(.footnote)
                                 if let latest = catalog.observations.last(where: { $0.exerciseID == exercise.id }) {
@@ -115,7 +115,7 @@ private struct CatalogTopicView: View {
                                 }
                             }
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(16).background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius))
+                            .padding(AppTheme.Measure.d16).background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius))
                         }
                         .buttonStyle(.plain)
                         .accessibilityIdentifier("catalog.exercise.\(exercise.id.rawValue)")
@@ -123,35 +123,56 @@ private struct CatalogTopicView: View {
                 }
                 if !topic.prerequisites.isEmpty {
                     GroupBox("Предпосылки") {
-                        Text(topic.prerequisites.map(\.rawValue).joined(separator: ", "))
-                            .frame(maxWidth: .infinity, alignment: .leading)
+                        VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+                            ForEach(topic.prerequisites, id: \.self) { id in
+                                if let prerequisite = CourseCatalog.topics.first(where: { $0.id == id }) {
+                                    NavigationLink { CatalogTopicView(topic: prerequisite) } label: {
+                                        Text("\(id.rawValue) · \(prerequisite.title)")
+                                    }
+                                }
+                            }
+                        }.frame(maxWidth: .infinity, alignment: .leading)
                     }
                 }
                 Text("Редакция каталога: \(CourseCatalog.contentVersion)").font(.footnote).foregroundStyle(AppTheme.muted)
-            }.padding(16)
+            }.padding(AppTheme.Measure.d16)
         }
         .lessonCanvas().navigationTitle(topic.id.rawValue)
     }
 }
 
-private struct CatalogExerciseView: View {
-    let exercise: CatalogExercise
+
+struct CatalogProgressSection: View {
+    @EnvironmentObject private var store: PracticeStore
     var body: some View {
-        if let question = exercise.potOddsQuestion {
-            PotOddsExerciseView(question: question)
-        } else {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 18) {
-                    LessonHeader(title: exercise.title, detail: exercise.calculation.title)
-                    Text("Это упражнение входит в набор «\(exercise.lesson.title)». Набор открывается целиком и сохраняет результаты каждого ответа отдельно.")
-                    NavigationLink {
-                        CourseLessonDestination(lesson: exercise.lesson)
-                    } label: {
-                        Text("Открыть набор")
-                    }.buttonStyle(PrimaryButtonStyle())
-                    Text("Редакция упражнения: \(exercise.contentVersion)").font(.footnote).foregroundStyle(AppTheme.muted)
-                }.padding(16)
-            }.lessonCanvas().navigationTitle("Упражнение")
+        let catalog = store.catalog
+        let overall = catalog.overallProgress
+        Section("Темы курса") {
+            Text("Уникальных задач: \(overall.covered)/\(overall.exerciseIDs.count). Ответов: \(overall.observations.count).")
+                .accessibilityIdentifier("progress.catalog.summary")
+            Text("Общие задания входят в несколько тем. В общем охвате каждая задача учитывается один раз.")
+                .font(.footnote).foregroundStyle(AppTheme.muted)
+            NavigationLink { CourseCatalogView() } label: {
+                Label("Открыть каталог T01–T60", systemImage: "books.vertical")
+            }.accessibilityIdentifier("progress.catalog")
+            ForEach(CourseCatalog.modules) { module in
+                DisclosureGroup {
+                    ForEach(CourseCatalog.topics.filter { $0.moduleID == module.id }) { topic in
+                        let progress = catalog.progress(for: topic.id)
+                        NavigationLink { CatalogTopicView(topic: topic) } label: {
+                            VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
+                                Text("\(topic.id.rawValue) · \(topic.title)")
+                                Text(progress.exerciseIDs.isEmpty ? "Материал готовится" : "Охват: \(progress.covered)/\(progress.exerciseIDs.count) · последние верные: \(progress.latestCorrect)")
+                                    .font(.footnote).foregroundStyle(AppTheme.muted)
+                            }
+                        }.accessibilityIdentifier("progress.topic.\(topic.id.rawValue)")
+                    }
+                } label: {
+                    let progress = catalog.progress(in: module.id)
+                    Text("\(module.id.rawValue) · \(module.title) · " + (progress.exerciseIDs.isEmpty ? "материал готовится" : "\(progress.covered)/\(progress.exerciseIDs.count)"))
+                }
+                .accessibilityIdentifier("progress.module.\(module.id.rawValue)")
+            }
         }
     }
 }

@@ -1,0 +1,44 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8FBB783A-EA53-4914-8FCE-0AA6B0A283C2",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "244EBF1A-434B-4DC6-8C15-74373305DA25.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "lesson-template-next_0_71D82503-0D35-491A-8FC9-E98ED4F4ECD4.png",
+        "timestamp" : 1792519702.97
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8FBB783A-EA53-4914-8FCE-0AA6B0A283C2",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "AA7D08C8-3533-4DB3-A74F-AA6A1E7D76D7.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "catalog-result-restored_0_69AC66AB-B416-4EF6-A96C-004672F0472F.png",
+        "timestamp" : 1792519691.143
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8FBB783A-EA53-4914-8FCE-0AA6B0A283C2",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "3826DAC5-758E-4CEF-A8E8-EC82C3C2998A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "lesson-template-result_0_52174941-2CFA-42A0-A487-1E95805AADE9.png",
+        "timestamp" : 1792519673.048
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8FBB783A-EA53-4914-8FCE-0AA6B0A283C2",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "AC1A1B88-0991-47D1-BFBF-2C124E50C6BD.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "catalog-exercise-saved_0_36375F98-39C1-4661-B0F6-819533A9B6F9.png",
+        "timestamp" : 1792519670.126
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testCatalogSingleExerciseAndRelaunch()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testCatalogSingleExerciseAndRelaunch"
+  }
+]

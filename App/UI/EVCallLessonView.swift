@@ -10,7 +10,19 @@ struct EVCallLessonView: View {
     @State private var saveError: String?
     @State private var finished=false
     @State private var completed: [EVCallAttempt]=[]
-    private var question: EVCallQuestion { EVCallQuestion.examples[index] }
+    private let questions: [EVCallQuestion]
+    private let selectionError: String?
+    init(exerciseKey: String? = nil) {
+        if let exerciseKey {
+            let selected = EVCallQuestion.examples.first { $0.id == exerciseKey }
+            questions = selected.map { [$0] } ?? []
+            selectionError = selected == nil ? "Задание \(exerciseKey) отсутствует в каталоге EV." : nil
+        } else {
+            questions = EVCallQuestion.examples
+            selectionError = nil
+        }
+    }
+    private var question: EVCallQuestion { questions[index] }
     private var result: EVCallResult { question.result }
 
     var body: some View {
@@ -19,7 +31,8 @@ struct EVCallLessonView: View {
                 VStack(alignment:.leading,spacing:AppTheme.Measure.d16) {
                     LessonHeader(title:"EV колла и фолда",detail:"Сравнение решений на готовой доске")
                         .id("ev.top")
-                    if finished {
+                    if let selectionError { ErrorNotice(text: selectionError) }
+                    else if finished {
                         Text("Набор завершён").font(.title2.bold())
                         MetricStrip(items:[("Верно","\(completed.filter(\.isCorrect).count) из \(completed.count)"),("Модель","Ривер · all-in")])
                         Text("При EV = 0 оба действия принимаются. Счёт оценивает сравнение вариантов в заданных условиях.")
@@ -35,7 +48,7 @@ struct EVCallLessonView: View {
     }
     private var exercise: some View {
         VStack(alignment:.leading,spacing:AppTheme.Measure.d12) {
-            MetricStrip(items:[("Сценарий","\(index+1) из \(EVCallQuestion.examples.count)"),("Улица","Ривер"),("Формат","NLHE cash")])
+            MetricStrip(items:[("Сценарий","\(index+1) из \(questions.count)"),("Улица","Ривер"),("Формат","NLHE cash")])
             VStack(alignment:.leading,spacing:AppTheme.Measure.d12) {
                 CardStrip(cards:question.hero,label:"Ваши карты · BTN (кнопка)")
                 CardStrip(cards:question.board,label:"Общие карты · ривер")
@@ -105,9 +118,9 @@ struct EVCallLessonView: View {
             }
             if saved {
                 Text("Результат сохранён на устройстве.").foregroundStyle(AppTheme.success)
-                Button(index+1 == EVCallQuestion.examples.count ? "Завершить урок" : "Следующий сценарий") {
+                Button(index+1 == questions.count ? "Завершить урок" : "Следующий сценарий") {
                     completed.append(review)
-                    if index+1 == EVCallQuestion.examples.count { finished=true }
+                    if index+1 == questions.count { finished=true }
                     else { self.review=nil;saved=false;saveError=nil;index+=1 }
                 }.buttonStyle(PrimaryButtonStyle())
             } else {

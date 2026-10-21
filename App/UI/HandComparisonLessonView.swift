@@ -34,13 +34,29 @@ struct HandComparisonLessonView: View {
     @State private var finished = false
     @State private var run: [HandComparisonAttempt] = []
     @ScaledMetric(relativeTo:.body) private var cardWidth = AppTheme.Metrics.boardCard.width
+    private let exerciseKey: String?
+    private let selectionError: String?
 
-    init() {
+    init(exerciseKey: String? = nil) {
         var seed = UInt64.random(in:1...UInt64.max)
         #if DEBUG && targetEnvironment(simulator)
         if let value = ProcessInfo.processInfo.environment["POKER_QA_COMPARISON_SEED"], let parsed = UInt64(value) { seed = parsed }
         #endif
-        _questions = State(initialValue:HandComparisonLesson.questions(seed:seed))
+        self.exerciseKey = exerciseKey
+        let allQuestions = HandComparisonLesson.questions(seed: exerciseKey == nil ? seed : 7)
+        if let exerciseKey {
+            let selected = allQuestions.first { Self.templateKey(for: $0.id) == exerciseKey }
+            _questions = State(initialValue: selected.map { [$0] } ?? [])
+            selectionError = selected == nil ? "Задание \(exerciseKey) отсутствует в каталоге комбинаций." : nil
+        } else {
+            _questions = State(initialValue:allQuestions)
+            selectionError = nil
+        }
+    }
+    private static func templateKey(for questionID: String) -> String? {
+        let parts = questionID.split(separator: "-", omittingEmptySubsequences: false)
+        guard parts.count == 5, parts[0] == "hcmp", parts[1] == "v1" else { return nil }
+        return String(parts[2])
     }
     private var question: HandComparisonQuestion { questions[index] }
 
@@ -49,7 +65,8 @@ struct HandComparisonLessonView: View {
             ScrollView {
                 VStack(alignment:.leading,spacing:AppTheme.Measure.d16) {
                     LessonHeader(title:"Комбинации",detail:"Сравнение лучших пяти карт из семи").id("lesson-top")
-                    if finished { summary }
+                    if let selectionError { ErrorNotice(text: selectionError) }
+                    else if finished { summary }
                     else {
                         Label("Задача \(index+1) из \(questions.count) · вскрытие",systemImage:"suit.spade.fill")
                             .font(.subheadline).foregroundStyle(AppTheme.muted)
@@ -162,7 +179,8 @@ struct HandComparisonLessonView: View {
                 .foregroundStyle(AppTheme.muted)
             CourseFinishView(lesson:.combinations)
             Button("Новый набор") {
-                questions=HandComparisonLesson.questions(seed:UInt64.random(in:1...UInt64.max))
+                let next = HandComparisonLesson.questions(seed: exerciseKey == nil ? UInt64.random(in:1...UInt64.max) : 7)
+                questions = exerciseKey.flatMap { key in next.first { Self.templateKey(for: $0.id) == key }.map { [$0] } } ?? next
                 index=0;selected=[];review=nil;saved=false;saveError=nil;finished=false;run=[]
             }.buttonStyle(PrimaryButtonStyle())
             Button("К темам") { dismiss() }.buttonStyle(SecondaryButtonStyle())

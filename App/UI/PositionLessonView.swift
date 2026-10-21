@@ -40,14 +40,29 @@ struct PositionLessonView: View {
     @State private var finished=false
     @State private var run:[PositionAttempt]=[]
     @ScaledMetric(relativeTo:.body) private var cardWidth=AppTheme.Metrics.boardCard.width
-    private var question: PositionQuestion { PositionLesson.questions[index] }
+    private let questions: [PositionQuestion]
+    private let selectionError: String?
+
+    init(exerciseKey: String? = nil) {
+        _introductory = State(initialValue: exerciseKey == nil)
+        if let exerciseKey {
+            let selected = PositionLesson.questions.first { $0.id == exerciseKey }
+            questions = selected.map { [$0] } ?? []
+            selectionError = selected == nil ? "Задание \(exerciseKey) отсутствует в каталоге позиций." : nil
+        } else {
+            questions = PositionLesson.questions
+            selectionError = nil
+        }
+    }
+    private var question: PositionQuestion { questions[index] }
 
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView {
                 VStack(alignment:.leading,spacing:AppTheme.Measure.d16) {
                     LessonHeader(title:"Позиции",detail:"6-max: место за столом и порядок решений").id("positions.top")
-                    if introductory { introduction }
+                    if let selectionError { ErrorNotice(text: selectionError) }
+                    else if introductory { introduction }
                     else if finished {
                         Text("Набор завершён").font(.title3.weight(.semibold))
                         MetricStrip(items:[("Верно", "\(run.filter(\.isCorrect).count)/\(run.count)"), ("Задач", "\(run.count)")])
@@ -87,7 +102,7 @@ struct PositionLessonView: View {
     }
     private var exercise: some View {
         VStack(alignment:.leading,spacing:AppTheme.Measure.d12) {
-            Label("Задание \(index+1) из \(PositionLesson.questions.count)",systemImage:"location.fill").font(.subheadline.weight(.medium)).foregroundStyle(AppTheme.muted)
+            Label("Задание \(index+1) из \(questions.count)",systemImage:"location.fill").font(.subheadline.weight(.medium)).foregroundStyle(AppTheme.muted)
             Text(PositionLesson.conditions).font(.footnote).foregroundStyle(AppTheme.muted)
             if !question.recognition,let position=try? SixMaxPosition.at(seat:question.heroSeat,button:question.button) {
                 Text("Hero: \(position.rawValue)").font(.title3.weight(.semibold))
@@ -125,9 +140,9 @@ struct PositionLessonView: View {
             FormulaSteps(lines:[question.explanation])
             if saved {
                 Text("Результат сохранён на устройстве.").foregroundStyle(AppTheme.success)
-                Button(index+1 == PositionLesson.questions.count ? "Завершить урок" : "Следующее задание") {
+                Button(index+1 == questions.count ? "Завершить урок" : "Следующее задание") {
                     run.append(review)
-                    if index+1 == PositionLesson.questions.count { finished=true }
+                    if index+1 == questions.count { finished=true }
                     else { index+=1;self.review=nil;saved=false;saveError=nil }
                 }.buttonStyle(PrimaryButtonStyle())
             } else {

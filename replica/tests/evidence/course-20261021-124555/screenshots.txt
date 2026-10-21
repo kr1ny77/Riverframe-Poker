@@ -1,0 +1,15 @@
+Exported 12 attachments for: CriticalFlows/testLessonTemplateAccessibility():
+File: BAC15ADD-19DC-4599-BD21-9B7DFDCA34FF.txt, suggested name: "Debug description for `"REDUCE_MOTION" Switch`_0_FB6AABDE-2941-4FEE-B5C4-E0C69CA85850.txt"
+File: CBB8896D-E618-4208-9BB7-737F3422443D, suggested name: "UI Snapshot 2026-10-21 at 12.49.05 PM"
+File: 10803E3B-9A5E-4419-8D0F-1E926E80633F, suggested name: "Synthesized Event 2026-10-21 at 12.48.59 PM"
+File: CAD5C76D-8246-45CA-8EA7-A97155019590.txt, suggested name: "Debug description for `"REDUCE_MOTION" Switch`_0_582934C4-3992-4FB4-80D6-DE9FF3022B29.txt"
+File: 6280B2EB-6DF1-4D01-90C8-4196A7A52474, suggested name: "UI Snapshot 2026-10-21 at 12.48.58 PM"
+File: 8AB0C2E3-CCAE-4365-8489-DB80F66C2335, suggested name: "Synthesized Event 2026-10-21 at 12.48.54 PM"
+File: 74B5C134-0B6A-48DA-896A-08101B4F7B53, suggested name: "Synthesized Event 2026-10-21 at 12.48.51 PM"
+File: C38BCD2C-03B8-4AFD-8FB8-17A003853403, suggested name: "Synthesized Event 2026-10-21 at 12.48.44 PM"
+File: 93387628-5740-4571-B027-BD7BE6391946, suggested name: "Synthesized Event 2026-10-21 at 12.48.22 PM"
+File: 9ADDD6FB-E55D-4EEC-9C3C-C51234E4D000, suggested name: "Synthesized Event 2026-10-21 at 12.48.21 PM"
+File: AFAD5108-3880-4477-9D7E-B2EF68A32097, suggested name: "Synthesized Event 2026-10-21 at 12.48.17 PM"
+File: D74E83C0-F5BA-41A3-916F-C22C8F0B888F.mp4, suggested name: "Screen Recording 2026-10-21 at 12.47.44 PM.mp4"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261021-124555/screenshots/manifest.json

@@ -21,7 +21,19 @@ struct EquityLessonView: View {
     @State private var finished=false
     @State private var completed: [PracticeAttempt]=[]
     private let calculator=EquityLessonCalculator()
-    private var question: KnownHandEquityQuestion { KnownHandEquityQuestion.examples[index] }
+    private let questions: [KnownHandEquityQuestion]
+    private let selectionError: String?
+    init(exerciseKey: String? = nil) {
+        if let exerciseKey {
+            let selected = KnownHandEquityQuestion.examples.first { $0.id == exerciseKey }
+            questions = selected.map { [$0] } ?? []
+            selectionError = selected == nil ? "Задание \(exerciseKey) отсутствует в каталоге equity." : nil
+        } else {
+            questions = KnownHandEquityQuestion.examples
+            selectionError = nil
+        }
+    }
+    private var question: KnownHandEquityQuestion { questions[index] }
     private var value: Double? { Double(answer.replacingOccurrences(of:",",with:".")) }
     private var valid: Bool { value.map { $0.isFinite && (0...100).contains($0) } ?? false }
 
@@ -31,13 +43,14 @@ struct EquityLessonView: View {
                 VStack(alignment:.leading,spacing:AppTheme.Measure.d16) {
                     LessonHeader(title:"Equity двух рук",detail:"Средняя доля банка · точный перебор")
                         .id("equity.top")
-                    if finished {
+                    if let selectionError { ErrorNotice(text: selectionError) }
+                    else if finished {
                         Text("Набор завершён").font(.title2.bold())
                         MetricStrip(items:[("Верно","\(completed.filter(\.isCorrect).count) из \(completed.count)"),("Допуск","±0,5 п.п.")])
                         CourseFinishView(lesson:.knownEquity)
                         Button("К темам") { dismiss() }.buttonStyle(PrimaryButtonStyle())
                     } else {
-                        MetricStrip(items:[("Задача","\(index+1) из 2"),("Улица",question.board.count == 3 ? "Флоп" : "Тёрн"),("Формат","NLHE")])
+                        MetricStrip(items:[("Задача","\(index+1) из \(questions.count)"),("Улица",question.board.count == 3 ? "Флоп" : "Тёрн"),("Формат","NLHE")])
                         VStack(alignment:.leading,spacing:AppTheme.Measure.d12) {
                             Text("Оцените equity к риверу").font(.headline)
                             Text("Победа даёт весь банк, ничья — половину. Введите значение от 0 до 100 %.")
@@ -79,7 +92,10 @@ struct EquityLessonView: View {
         }.lessonCanvas()
             .lessonKeyboardToolbar { answerFocused=false }
             .navigationTitle("Equity")
-            .task(id:index) { await calculate() }
+            .task(id:index) {
+                guard selectionError == nil else { return }
+                await calculate()
+            }
     }
     private func feedback(_ review:PracticeAttempt,result:KnownHandEquityResult) -> some View {
         VStack(alignment:.leading,spacing:AppTheme.Measure.d12) {
@@ -97,9 +113,9 @@ struct EquityLessonView: View {
             }
             if saved {
                 Text("Результат сохранён на устройстве.").foregroundStyle(AppTheme.success)
-                Button(index == 0 ? "К задаче на тёрне" : "Завершить урок") {
+                Button(questions.count == 1 ? "Завершить урок" : index == 0 ? "К задаче на тёрне" : "Завершить урок") {
                     completed.append(review)
-                    if index == 0 { self.review=nil; self.result=nil; saved=false; answer=""; error=nil; index=1 }
+                    if index + 1 < questions.count { self.review=nil; self.result=nil; saved=false; answer=""; error=nil; index+=1 }
                     else { finished=true }
                 }.buttonStyle(PrimaryButtonStyle())
             } else {

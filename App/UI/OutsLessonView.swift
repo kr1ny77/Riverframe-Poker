@@ -10,16 +10,30 @@ struct OutsLessonView: View {
     @State private var saveError: String?
     @State private var finished=false
     @State private var runAttempts: [PracticeAttempt]=[]
-    private let lesson=FlushDrawLesson.standard
-    private var question: FlushDrawQuestion { lesson.questions[index] }
+    private let lesson: FlushDrawLesson
+    private let questions: [FlushDrawQuestion]
+    private let selectionError: String?
+    init(exerciseKey: String? = nil) {
+        lesson = FlushDrawLesson.standard
+        if let exerciseKey {
+            let selected = lesson.questions.first { $0.id == exerciseKey }
+            questions = selected.map { [$0] } ?? []
+            selectionError = selected == nil ? "Задание \(exerciseKey) отсутствует в каталоге аутов." : nil
+        } else {
+            questions = lesson.questions
+            selectionError = nil
+        }
+    }
+    private var question: FlushDrawQuestion { questions[index] }
 
     var body: some View {
         ScrollView {
             VStack(alignment:.leading,spacing:AppTheme.Measure.d16) {
                 LessonHeader(title:"Ауты флеш-дро",detail:"Точный перебор без приближений")
-                if finished { summary }
+                if let selectionError { ErrorNotice(text: selectionError) }
+                else if finished { summary }
                 else {
-                    MetricStrip(items:[("Шаг","\(index+1) из \(lesson.questions.count)"),("Аутов","9"),("Метод","Точный перебор")])
+                    MetricStrip(items:[("Шаг","\(index+1) из \(questions.count)"),("Аутов","9"),("Метод","Точный перебор")])
                     context
                     Text("Из 47 неизвестных карт девять червей завершают флеш.")
                         .font(.subheadline)
@@ -70,7 +84,7 @@ struct OutsLessonView: View {
             }
             if saved {
                 Text("Ответ сохранён на устройстве.").font(.footnote).foregroundStyle(AppTheme.success)
-                Button(index+1 == lesson.questions.count ? "Завершить урок" : "К вероятности к риверу") { advance() }
+                Button(index+1 == questions.count ? "Завершить урок" : "К вероятности к риверу") { advance() }
                     .buttonStyle(PrimaryButtonStyle())
             } else {
                 if let saveError { ErrorNotice(text:saveError) }
@@ -106,7 +120,7 @@ struct OutsLessonView: View {
     private func advance() {
         guard saved,let review else { return }
         runAttempts.append(review)
-        if index+1==lesson.questions.count { finished=true }
+        if index+1==questions.count { finished=true }
         else { index+=1;self.review=nil;saved=false;saveError=nil }
     }
     private func percent(_ value:Double) -> String {

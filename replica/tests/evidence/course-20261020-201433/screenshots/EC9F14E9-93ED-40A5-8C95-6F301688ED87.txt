@@ -1,0 +1,53 @@
+Attributes: Switch, 0x110e00780, {{32.0, 378.3}, {326.0, 28.0}}, identifier: 'REDUCE_TRANSPARENCY', label: 'Reduce Transparency', value: 0
+Element subtree:
+ →Switch, 0x110e00780, {{32.0, 378.3}, {326.0, 28.0}}, identifier: 'REDUCE_TRANSPARENCY', label: 'Reduce Transparency', value: 0
+Path to element:
+ →Application, 0x110e00500, pid: 47033, label: 'Settings'
+  ↳Window (Main), 0x110e00640, {{0.0, 0.0}, {390.0, 844.0}}
+   ↳Other, 0x110e02f80, {{0.0, 0.0}, {390.0, 844.0}}
+    ↳Other, 0x110e030c0, {{0.0, 0.0}, {390.0, 844.0}}
+     ↳Other, 0x110e02d00, {{0.0, 0.0}, {390.0, 844.0}}
+      ↳Other, 0x110e02e40, {{0.0, 0.0}, {390.0, 844.0}}
+       ↳Other, 0x110e02a80, {{0.0, 0.0}, {390.0, 844.0}}
+        ↳Other, 0x110e02bc0, {{0.0, 0.0}, {390.0, 844.0}}
+         ↳Other, 0x110e02300, {{0.0, 0.0}, {390.0, 844.0}}
+          ↳Other, 0x110e02440, {{0.0, 0.0}, {390.0, 844.0}}
+           ↳Other, 0x110e02580, {{0.0, 0.0}, {390.0, 844.0}}
+            ↳Other, 0x110e026c0, {{0.0, 0.0}, {390.0, 844.0}}
+             ↳Other, 0x110e02940, {{0.0, 0.0}, {390.0, 844.0}}
+              ↳Other, 0x110e02800, {{0.0, 0.0}, {390.0, 844.0}}
+               ↳Other, 0x110e021c0, {{0.0, 0.0}, {390.0, 844.0}}
+                ↳Other, 0x110e01f40, {{0.0, 101.0}, {390.0, 709.0}}
+                 ↳Table, 0x110e02080, {{0.0, 0.0}, {390.0, 844.0}}
+                  ↳Cell, 0x110e00c80, {{16.0, 365.7}, {358.0, 53.0}}, identifier: 'REDUCE_TRANSPARENCY'
+                   ↳Other, 0x110e00f00, {{16.0, 365.7}, {358.0, 53.0}}
+                    ↳Other, 0x110e00dc0, {{16.0, 365.7}, {358.0, 53.0}}
+                     ↳Switch, 0x110e00780, {{32.0, 378.3}, {326.0, 28.0}}, identifier: 'REDUCE_TRANSPARENCY', label: 'Reduce Transparency', value: 0
+Query chain:
+ →Find: Application 'com.apple.Preferences'
+  Output: {
+    Application, 0x110ff3480, pid: 47033, label: 'Settings'
+  }
+  ↪︎Find: Descendants matching type Switch
+    Output: {
+      Switch, 0x110fe8f00, {{32.0, 131.3}, {326.0, 28.0}}, identifier: 'ENHANCE_TEXT_LEGIBILITY', label: 'Bold Text', value: 0
+      Switch, 0x110fea300, {{32.0, 237.3}, {326.0, 28.0}}, identifier: 'BUTTON_SHAPES', label: 'Show Borders', value: 0
+      Switch, 0x110feaa80, {{32.0, 290.3}, {326.0, 28.0}}, identifier: 'ON_OFF_LABELS', label: 'On/Off Labels', value: 0
+      Switch, 0x110feb480, {{32.0, 378.3}, {326.0, 28.0}}, identifier: 'REDUCE_TRANSPARENCY', label: 'Reduce Transparency', value: 0
+      Switch, 0x110ff0000, {{32.0, 495.0}, {326.0, 28.0}}, identifier: 'TEXT_COLORS_DARKEN', label: 'Increase Contrast', value: 0
+      Switch, 0x110ff0b40, {{32.0, 611.7}, {326.0, 28.0}}, identifier: 'DIFFERENTIATE_WITHOUT_COLOR', label: 'Differentiate Without Color', value: 0
+      Switch, 0x110ff1680, {{32.0, 728.3}, {326.0, 28.0}}, identifier: 'PREFER_HORIZONTAL_TEXT', label: 'Prefer Horizontal Text', value: 0
+      Switch, 0x110ff21c0, {{32.0, 845.0}, {326.0, 28.0}}, identifier: 'SMART_INVERT', label: 'Smart Invert', value: 0
+      Switch, 0x110fe9180, {{297.0, 131.3}, {63.0, 28.0}}, value: 0
+      Switch, 0x110fea580, {{297.0, 237.3}, {63.0, 28.0}}, value: 0
+      Switch, 0x110fead00, {{297.0, 290.3}, {63.0, 28.0}}, value: 0
+      Switch, 0x110feb700, {{297.0, 378.3}, {63.0, 28.0}}, value: 0
+      Switch, 0x110ff0280, {{297.0, 495.0}, {63.0, 28.0}}, value: 0
+      Switch, 0x110ff0dc0, {{297.0, 611.7}, {63.0, 28.0}}, value: 0
+      Switch, 0x110ff1900, {{297.0, 728.3}, {63.0, 28.0}}, value: 0
+      Switch, 0x110ff2440, {{297.0, 845.0}, {63.0, 28.0}}, value: 0
+    }
+    ↪︎Find: Elements matching predicate '"Reduce Transparency" IN identifiers'
+      Output: {
+        Switch, 0x110e77480, {{32.0, 378.3}, {326.0, 28.0}}, identifier: 'REDUCE_TRANSPARENCY', label: 'Reduce Transparency', value: 0
+      }

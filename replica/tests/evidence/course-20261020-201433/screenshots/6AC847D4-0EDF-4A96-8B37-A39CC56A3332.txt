@@ -1,0 +1,47 @@
+Attributes: Switch, 0x103237c00, {{32.0, 131.3}, {326.0, 28.0}}, identifier: 'REDUCE_MOTION', label: 'Reduce Motion', value: 0
+Element subtree:
+ →Switch, 0x103237c00, {{32.0, 131.3}, {326.0, 28.0}}, identifier: 'REDUCE_MOTION', label: 'Reduce Motion', value: 0
+Path to element:
+ →Application, 0x106053ac0, pid: 47033, label: 'Settings'
+  ↳Window (Main), 0x106053c00, {{0.0, 0.0}, {390.0, 844.0}}
+   ↳Other, 0x106053d40, {{0.0, 0.0}, {390.0, 844.0}}
+    ↳Other, 0x106053e80, {{0.0, 0.0}, {390.0, 844.0}}
+     ↳Other, 0x106051040, {{0.0, 0.0}, {390.0, 844.0}}
+      ↳Other, 0x106052bc0, {{0.0, 0.0}, {390.0, 844.0}}
+       ↳Other, 0x106052300, {{0.0, 0.0}, {390.0, 844.0}}
+        ↳Other, 0x1060526c0, {{0.0, 0.0}, {390.0, 844.0}}
+         ↳Other, 0x106052440, {{0.0, 0.0}, {390.0, 844.0}}
+          ↳Other, 0x106052a80, {{0.0, 0.0}, {390.0, 844.0}}
+           ↳Other, 0x106052940, {{0.0, 0.0}, {390.0, 844.0}}
+            ↳Other, 0x106050780, {{0.0, 0.0}, {390.0, 844.0}}
+             ↳Other, 0x106051cc0, {{0.0, 0.0}, {390.0, 844.0}}
+              ↳Other, 0x106050dc0, {{0.0, 0.0}, {390.0, 844.0}}
+               ↳Other, 0x106053980, {{0.0, 0.0}, {390.0, 844.0}}
+                ↳Other, 0x106053840, {{0.0, 101.0}, {390.0, 709.0}}
+                 ↳Table, 0x103237ac0, {{0.0, 0.0}, {390.0, 844.0}}
+                  ↳Cell, 0x103237980, {{16.0, 118.7}, {358.0, 53.0}}, identifier: 'REDUCE_MOTION'
+                   ↳Other, 0x103235400, {{16.0, 118.7}, {358.0, 53.0}}
+                    ↳Other, 0x103235540, {{16.0, 118.7}, {358.0, 53.0}}
+                     ↳Switch, 0x103237c00, {{32.0, 131.3}, {326.0, 28.0}}, identifier: 'REDUCE_MOTION', label: 'Reduce Motion', value: 0
+Query chain:
+ →Find: Application 'com.apple.Preferences'
+  Output: {
+    Application, 0x110e51040, pid: 47033, label: 'Settings'
+  }
+  ↪︎Find: Descendants matching type Switch
+    Output: {
+      Switch, 0x110e417c0, {{32.0, 131.3}, {326.0, 28.0}}, identifier: 'REDUCE_MOTION', label: 'Reduce Motion', value: 0
+      Switch, 0x110e42300, {{32.0, 248.0}, {326.0, 28.0}}, identifier: 'REDUCE_MOTION_AUTOPLAY_ANIMATED_IMAGES', label: 'Auto-Play Animated Images', value: 1
+      Switch, 0x110e42a80, {{32.0, 301.0}, {326.0, 28.0}}, identifier: 'REDUCE_MOTION_AUTOPLAY_VIDEO_PREVIEWS', label: 'Auto-Play Video Previews', value: 1
+      Switch, 0x110e43200, {{32.0, 354.0}, {326.0, 28.0}}, identifier: 'ReduceMotionAutoplayMessagesEffects', label: 'Auto-Play Message Effects', value: 1
+      Switch, 0x110e43d40, {{32.0, 470.7}, {326.0, 28.0}}, identifier: 'PREFER_NONBLINKING_CURSOR', label: 'Prefer Non-Blinking Cursor', value: 0
+      Switch, 0x110e41a40, {{297.0, 131.3}, {63.0, 28.0}}, value: 0
+      Switch, 0x110e42580, {{297.0, 248.0}, {63.0, 28.0}}, value: 1
+      Switch, 0x110e42d00, {{297.0, 301.0}, {63.0, 28.0}}, value: 1
+      Switch, 0x110e43480, {{297.0, 354.0}, {63.0, 28.0}}, value: 1
+      Switch, 0x110e50000, {{297.0, 470.7}, {63.0, 28.0}}, value: 0
+    }
+    ↪︎Find: Elements matching predicate '"Reduce Motion" IN identifiers'
+      Output: {
+        Switch, 0x110e00140, {{32.0, 131.3}, {326.0, 28.0}}, identifier: 'REDUCE_MOTION', label: 'Reduce Motion', value: 0
+      }

@@ -1,0 +1,29 @@
+Attributes: Switch, 0x110a07340, {{32.0, 378.3}, {326.0, 28.0}}, identifier: 'REDUCE_TRANSPARENCY', label: 'Reduce Transparency', value: 0
+Element subtree:
+ →Switch, 0x110a07340, {{32.0, 378.3}, {326.0, 28.0}}, identifier: 'REDUCE_TRANSPARENCY', label: 'Reduce Transparency', value: 0
+Path to element:
+ →Application, 0x110d33ac0, pid: 49818, label: 'Settings'
+  ↳Window (Main), 0x110d33c00, {{0.0, 0.0}, {390.0, 844.0}}
+   ↳Other, 0x110d33d40, {{0.0, 0.0}, {390.0, 844.0}}
+    ↳Other, 0x110d33e80, {{0.0, 0.0}, {390.0, 844.0}}
+     ↳Other, 0x110d43ac0, {{0.0, 0.0}, {390.0, 844.0}}
+      ↳Other, 0x110d43c00, {{0.0, 0.0}, {390.0, 844.0}}
+       ↳Other, 0x110d43d40, {{0.0, 0.0}, {390.0, 844.0}}
+        ↳Other, 0x110d43e80, {{0.0, 0.0}, {390.0, 844.0}}
+         ↳Other, 0x110a4bd40, {{0.0, 0.0}, {390.0, 844.0}}
+          ↳Other, 0x110a4be80, {{0.0, 0.0}, {390.0, 844.0}}
+           ↳Other, 0x110a4b5c0, {{0.0, 0.0}, {390.0, 844.0}}
+            ↳Other, 0x110a4a940, {{0.0, 0.0}, {390.0, 844.0}}
+             ↳Other, 0x110a4b480, {{0.0, 0.0}, {390.0, 844.0}}
+              ↳Other, 0x110a4bac0, {{0.0, 0.0}, {390.0, 844.0}}
+               ↳Other, 0x110a04500, {{0.0, 0.0}, {390.0, 844.0}}
+                ↳Other, 0x110a05f40, {{0.0, 101.0}, {390.0, 709.0}}
+                 ↳Table, 0x110a05180, {{0.0, 0.0}, {390.0, 844.0}}
+                  ↳Cell, 0x110a048c0, {{16.0, 365.7}, {358.0, 53.0}}, identifier: 'REDUCE_TRANSPARENCY'
+                   ↳Other, 0x110a052c0, {{16.0, 365.7}, {358.0, 53.0}}
+                    ↳Other, 0x110a075c0, {{inf, inf}, {0.0, 0.0}}
+                     ↳Switch, 0x110a07340, {{32.0, 378.3}, {326.0, 28.0}}, identifier: 'REDUCE_TRANSPARENCY', label: 'Reduce Transparency', value: 0
+Query chain:
+ →Find: Application 'com.apple.Preferences'
+  ↪︎Find: Descendants matching type Switch
+    ↪︎Find: Elements matching predicate '"Reduce Transparency" IN identifiers'

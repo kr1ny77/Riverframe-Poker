@@ -1,0 +1,81 @@
+{
+  "baseline": "3cc7409",
+  "allMatchHEAD": true,
+  "files": [
+    {
+      "path": "Sources/PokerCore/LearningCourse.swift",
+      "matchesBaseline": true,
+      "sha256": "3fb9c617b0d44191365fa47786b31d2a90768cc4d6922e2b84a3cd02357c262a"
+    },
+    {
+      "path": "Sources/PokerCore/EquityLesson.swift",
+      "matchesBaseline": true,
+      "sha256": "2e388625eb8b2fed0e85e174fcb2242cfb2dba29f0af3cb555e463a03acf46b6"
+    },
+    {
+      "path": "Sources/PokerCore/PositionLesson.swift",
+      "matchesBaseline": true,
+      "sha256": "d5405e9a2da1b0475f1d23422c977960b471f42c9de7cb6de95866193b1c6105"
+    },
+    {
+      "path": "Sources/PokerCore/CourseCatalog.swift",
+      "matchesBaseline": true,
+      "sha256": "6f3289cf4d5db65cd96880fc8d46094b39d6be5b0adbec77f656db9f913373ff"
+    },
+    {
+      "path": "Sources/PokerCore/HandComparisonLesson.swift",
+      "matchesBaseline": true,
+      "sha256": "c72f3f2cda3dfcc36f94b27cc744c272da6bdc0fb2a1478a5b9c75fb073adfa4"
+    },
+    {
+      "path": "Sources/PokerCore/Practice.swift",
+      "matchesBaseline": true,
+      "sha256": "54752bd90dc0e6fea7bc45226d5deb05d6ea9fac01946bf46adf476642340eb9"
+    },
+    {
+      "path": "Sources/PokerCore/EVCallLesson.swift",
+      "matchesBaseline": true,
+      "sha256": "cc91a0abee2a135850bee88a2dd4bc06c9d6813158757e36fc823fca859f08c5"
+    },
+    {
+      "path": "Sources/PokerCore/BotPolicy.swift",
+      "matchesBaseline": true,
+      "sha256": "9e35143aa9db0d5012aeb7add322fc3a921691943e3ff8621a92f88ebbf323d1"
+    },
+    {
+      "path": "Sources/PokerCore/OutsLesson.swift",
+      "matchesBaseline": true,
+      "sha256": "40ed91e1c96e723c6b37535f086e722e2ec8f6512cf75d6da6baeb29254a4171"
+    },
+    {
+      "path": "Sources/PokerCore/RangeEquityLesson.swift",
+      "matchesBaseline": true,
+      "sha256": "03f95ed4bbf9b5e0caf3954eb983f9a12a36c7c463cdd82f32ed766d9863585c"
+    },
+    {
+      "path": "Sources/PokerCore/BlockerLesson.swift",
+      "matchesBaseline": true,
+      "sha256": "8290e900311092b5d482ef899aa50427d8d7dc38684c22d9125fad5e5c2701fa"
+    },
+    {
+      "path": "Sources/PokerCore/Cards.swift",
+      "matchesBaseline": true,
+      "sha256": "bf46c0e3763745de77050d224ce2d0d6a1ceffc782af91fbb4a86a455b157f40"
+    },
+    {
+      "path": "Sources/PokerCore/HoldemGame.swift",
+      "matchesBaseline": true,
+      "sha256": "cf557fe5826c2bbae32750cd6184b2cdde80c4eb935105a70d8759cd6d4f5138"
+    },
+    {
+      "path": "App/Persistence/PracticeStore.swift",
+      "matchesBaseline": true,
+      "sha256": "1c50b8ad663692413723025b36cab30f708eee20cd9aab9497441302e7346ce3"
+    },
+    {
+      "path": "App/Application/GameViewModel.swift",
+      "matchesBaseline": true,
+      "sha256": "8ba367e472034c01ca177e3f68a7472d872ea5da66352278c60accc9854c1620"
+    }
+  ]
+}

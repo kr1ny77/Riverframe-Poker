@@ -1,0 +1,1 @@
+./Tools/test-course-ios.sh: line 24: t: command not found

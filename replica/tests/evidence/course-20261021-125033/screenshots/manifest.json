@@ -1,0 +1,62 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "C8CA1143-7962-476E-9332-06439575D196",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "8632ED2F-D27A-4EC7-8D49-7E8B203EBF43.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "lesson-result-xxxl_0_080524DF-C8E4-4A84-B806-920794137BB0.png",
+        "timestamp" : 1792580009.147
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "C8CA1143-7962-476E-9332-06439575D196",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "827A8CB8-5953-462F-9B01-5845B57D589D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "lesson-template-xxxl_0_2CD96A0A-66F1-4925-811B-CC1B5C2580D4.png",
+        "timestamp" : 1792579986.171
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "C8CA1143-7962-476E-9332-06439575D196",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "C6EF9D5F-B82F-44C5-B1C4-44DF285520F6.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "accessibility-summary-lesson-template_0_CE758CE8-6B46-43EF-9305-4052BCFD0F92.txt",
+        "timestamp" : 1792579985.78
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "C8CA1143-7962-476E-9332-06439575D196",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "07110C17-B933-4413-B645-CA50920A6EA5.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "accessibility-lesson-template_0_5817CA76-B370-488E-8477-CB0575572F48.txt",
+        "timestamp" : 1792579985.78
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "C8CA1143-7962-476E-9332-06439575D196",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "9A335209-1E5F-4FE7-B26B-3F06D0DA496B.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "accessibility-lesson-template_0_6CEA5443-7091-4FAC-9968-3A88D225ED96.txt",
+        "timestamp" : 1792579985.584
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "C8CA1143-7962-476E-9332-06439575D196",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "4FF9FB1E-18E9-4210-933F-75A726E64C3F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "lesson-os-accessibility-settings_0_6F193139-BB85-4005-BE05-42543E8F1947.png",
+        "timestamp" : 1792579937.27
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testLessonTemplateAccessibility()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testLessonTemplateAccessibility"
+  }
+]

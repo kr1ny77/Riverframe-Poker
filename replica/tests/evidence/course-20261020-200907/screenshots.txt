@@ -1,0 +1,10 @@
+Exported 7 attachments for: CriticalFlows/testCatalogExactTaskRoutes():
+File: 591E5B7F-8B87-4A30-975F-84EF45F8CEF5.png, suggested name: "exact-E.blocker_0_BDBB2C99-28D2-4974-B76E-C71DB9E8C2D9.bluffs"
+File: 1600ACBD-C0FC-4DA7-A285-95D044A598D2.png, suggested name: "exact-E.ev_0_DAAEBBD0-C13E-452C-85E0-335AF4D21ECF.negative"
+File: 250D153B-388A-4F4C-8874-DD2ABC528260.png, suggested name: "exact-E.range_0_474F14A1-D86D-4033-BBDC-223D4A8FC45C.turn-1to3"
+File: 230C250D-00D2-4BC8-AA7A-2433657CB69B.png, suggested name: "exact-E.equity_0_958FA715-682D-4760-9233-A74F097124B4.turn"
+File: 2990B412-6CF5-4977-9EDB-759EA7F9A01A.png, suggested name: "exact-E.outs_0_56708035-B7B9-4858-8F70-30927AF1BF97.river"
+File: 30CDD8EF-A5F9-42D7-8239-561138093D56.png, suggested name: "exact-E.position_0_6829DAF1-5834-4857-BE1D-5E8B13636442.CO"
+File: C10E71EA-9EC3-4E34-8D46-E987A94A290A.png, suggested name: "exact-E.hand_0_CDA68980-6745-450A-9909-7F73379E7D6B.wheel"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261020-200907/screenshots/manifest.json

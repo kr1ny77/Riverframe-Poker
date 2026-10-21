@@ -1,0 +1,29 @@
+Attributes: Switch, 0x110a052c0, {{32.0, 495.0}, {326.0, 28.0}}, identifier: 'TEXT_COLORS_DARKEN', label: 'Increase Contrast', value: 0
+Element subtree:
+ →Switch, 0x110a052c0, {{32.0, 495.0}, {326.0, 28.0}}, identifier: 'TEXT_COLORS_DARKEN', label: 'Increase Contrast', value: 0
+Path to element:
+ →Application, 0x110d23ac0, pid: 49818, label: 'Settings'
+  ↳Window (Main), 0x110d23c00, {{0.0, 0.0}, {390.0, 844.0}}
+   ↳Other, 0x110d23d40, {{0.0, 0.0}, {390.0, 844.0}}
+    ↳Other, 0x110d23e80, {{0.0, 0.0}, {390.0, 844.0}}
+     ↳Other, 0x110d17ac0, {{0.0, 0.0}, {390.0, 844.0}}
+      ↳Other, 0x110d17c00, {{0.0, 0.0}, {390.0, 844.0}}
+       ↳Other, 0x110d17d40, {{0.0, 0.0}, {390.0, 844.0}}
+        ↳Other, 0x110d17e80, {{0.0, 0.0}, {390.0, 844.0}}
+         ↳Other, 0x110a4b980, {{0.0, 0.0}, {390.0, 844.0}}
+          ↳Other, 0x110a4b840, {{0.0, 0.0}, {390.0, 844.0}}
+           ↳Other, 0x110a4a800, {{0.0, 0.0}, {390.0, 844.0}}
+            ↳Other, 0x110a4b700, {{0.0, 0.0}, {390.0, 844.0}}
+             ↳Other, 0x110a4b200, {{0.0, 0.0}, {390.0, 844.0}}
+              ↳Other, 0x110a4bc00, {{0.0, 0.0}, {390.0, 844.0}}
+               ↳Other, 0x110a06a80, {{0.0, 0.0}, {390.0, 844.0}}
+                ↳Other, 0x110a04a00, {{0.0, 101.0}, {390.0, 709.0}}
+                 ↳Table, 0x110a04500, {{inf, inf}, {0.0, 0.0}}
+                  ↳Cell, 0x110a05f40, {{inf, inf}, {0.0, 0.0}}, identifier: 'TEXT_COLORS_DARKEN'
+                   ↳Other, 0x110a05180, {{inf, inf}, {0.0, 0.0}}
+                    ↳Other, 0x110a048c0, {{inf, inf}, {0.0, 0.0}}
+                     ↳Switch, 0x110a052c0, {{32.0, 495.0}, {326.0, 28.0}}, identifier: 'TEXT_COLORS_DARKEN', label: 'Increase Contrast', value: 0
+Query chain:
+ →Find: Application 'com.apple.Preferences'
+  ↪︎Find: Descendants matching type Switch
+    ↪︎Find: Elements matching predicate '"Increase Contrast" IN identifiers'

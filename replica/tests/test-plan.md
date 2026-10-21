@@ -131,3 +131,20 @@ POS-H1: вводная часть и 12 ключей понятийного ур
 | BOT-PERF | Release iPhone17e Simulator,50 warmups/1000samples на профиль,P95≤250мс; сырые данные и среда |
 
 Подробные ограничения условной модели: ../bot-profiles.md. Фактические результаты: bot-results.md.
+
+## LESSON — шаблон урока и прогресс
+
+| ID | Проверяемый контракт | Проверка |
+| --- | --- | --- |
+| LESSON-ID | Все 43 E-ID разрешаются в исходные типизированные задания; восемь руководств заполнены | LessonPresentationTests |
+| LESSON-MATH | Exact/conditional/definitions соответствуют реальному методу; MC/таблицы получают собственные статусы при добавлении | LessonPresentationTests |
+| LESSON-OVERLAP | T11 pot odds/EV; T02/T21 позиции; T06/T18 блокеры; уникальные глобальные/модульные счётчики | LessonPresentationTests + прежние CatalogMigrationTests |
+| LESSON-RESTORE | UUID/даты/ответы всех категорий сохраняются; T60 без задач остаётся в подготовке | LessonPresentationTests + Application checks |
+| LESSON-UI | Каталог → T11 → точная задача → ответ 25 → разбор → результат → перезапуск → следующая задача → прогресс 1/43 | testCatalogSingleExerciseAndRelaunch |
+| LESSON-ROUTES | Семь остальных типов открывают выбранное E-ID; прежние восемь наборов доступны | testCatalogExactTaskRoutes; testCourseRoutesPotOddsAndSample |
+| LESSON-AX | XXXL, Reduce Motion/Transparency, Increase Contrast: открыть/решить/вернуть результат; подписи и зоны нажатия | testLessonTemplateAccessibility |
+
+Contrast/textClipped сохраняются как полная диагностика SDK; эти результаты требуют
+ручного разбора маскирования текста границами ScrollView. Пройденный функциональный
+сценарий отделён от полной приёмки доступности. VoiceOver, аппаратная клавиатура,
+iPad и самая узкая поддерживаемая ширина входят в ручную матрицу следующей проверки.

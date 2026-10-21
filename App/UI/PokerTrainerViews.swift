@@ -48,6 +48,7 @@ enum AppTheme {
         static let d48: CGFloat = 48
     }
     enum Metrics {
+        static let lessonReadingWidth: CGFloat = 760
         static let compactWidth: CGFloat = 340
         static let panelSpacing: CGFloat = 12
         static let tableRadius: CGFloat = 24
@@ -544,6 +545,7 @@ struct ProgressView: View {
                 Section { ErrorNotice(text: error); Button("Повторить загрузку") { store.reload() } }
             }
             CourseProgressSection()
+            CatalogProgressSection()
             if store.attempts.isEmpty && store.comparisons.isEmpty && store.positions.isEmpty && store.evCalls.isEmpty && store.blockers.isEmpty {
                 ContentUnavailableView("Пока нет попыток", systemImage: "chart.bar", description: Text("Результаты упражнений появятся здесь после проверки ответа."))
             } else {

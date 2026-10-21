@@ -33,6 +33,12 @@ final class CriticalFlows: XCTestCase {
         let summary=XCTAttachment(string:"\(context): \(count) diagnostic accessibility issues. Issues are collected for review; handler acceptance is not an accessibility pass.")
         summary.name="accessibility-summary-\(context)";summary.lifetime = .keepAlways;add(summary)
     }
+    private func auditLessonAccessibility() throws {
+        // Contrast/clipping diagnostics include text masked by scroll chrome.
+        // Keep every issue for review; this diagnostic pass is not an a11y pass.
+        try collectAccessibilityIssues("lesson-template")
+        try app.performAccessibilityAudit(for: [.hitRegion, .sufficientElementDescription, .trait])
+    }
     private func scrollTo(_ element:XCUIElement) {
         if element.exists && element.elementType != .textField && app.keyboards.firstMatch.exists {
             let done=app.buttons["Готово"]
@@ -366,7 +372,7 @@ final class CriticalFlows: XCTestCase {
         XCTAssertTrue(error.label.contains("1 ошибок из 1 ответов"))
         screenshot("course-wheel-error")
     }
-    func testCatalogSingleExerciseAndRelaunch() {
+    func testCatalogSingleExerciseAndRelaunch() throws {
         freshRegression()
         func openTopic() {
             tab("Тренировка")
@@ -382,12 +388,23 @@ final class CriticalFlows: XCTestCase {
         XCTAssertEqual(app.staticTexts["catalog.progress.T11"].label, "Охват текущих упражнений: 0/6")
         let exercise = app.buttons["catalog.exercise.E.pot.100.50"]
         scrollTo(exercise); exercise.tap()
+        let start = app.buttons["lesson.start"]
+        scrollTo(start); XCTAssertTrue(start.isHittable)
+        try auditLessonAccessibility()
+        screenshot("lesson-template-entry")
+        start.tap()
         let field = app.textFields["Процент"]
         XCTAssertTrue(field.waitForExistence(timeout: 5)); field.tap(); field.typeText("25")
         checkAnswer()
         let saved = app.staticTexts["Результат сохранён на устройстве."]
         scrollTo(saved); XCTAssertTrue(saved.exists)
         screenshot("catalog-exercise-saved")
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        let result = app.staticTexts["lesson.restored-result"]
+        scrollTo(result)
+        XCTAssertTrue(result.label.contains("верно"))
+        XCTAssertTrue(app.buttons["lesson.next"].exists)
+        screenshot("lesson-template-result")
         app.navigationBars.buttons.element(boundBy: 0).tap()
         let progress = app.staticTexts["catalog.progress.T11"]
         scrollTo(progress)
@@ -401,8 +418,122 @@ final class CriticalFlows: XCTestCase {
         scrollTo(restored)
         XCTAssertTrue(restored.label.contains("Последний ответ: верно по условию."))
         screenshot("catalog-result-restored")
+        restored.tap()
+        let restoredResult = app.staticTexts["lesson.restored-result"]
+        scrollTo(restoredResult)
+        XCTAssertTrue(restoredResult.label.contains("верно"))
+        let next = app.buttons["lesson.next"]
+        scrollTo(next); next.tap()
+        XCTAssertTrue(app.staticTexts["Банк 120, ставка 120"].waitForExistence(timeout: 5))
+        screenshot("lesson-template-next")
         tab("Прогресс")
         XCTAssertEqual(app.staticTexts["course.progress.completed"].label, "Пройдено наборов: 0 из 8")
+        let summary = app.staticTexts["progress.catalog.summary"]
+        scrollTo(summary); XCTAssertTrue(summary.label.contains("1/43"))
+        let progressCatalog = app.buttons["progress.catalog"]
+        scrollTo(progressCatalog); progressCatalog.tap()
+        XCTAssertTrue(app.staticTexts["catalog.summary"].waitForExistence(timeout: 5))
+        XCTAssertEqual(app.staticTexts["catalog.overall-progress"].label, "Уникальных задач: 1/43")
+        screenshot("catalog-from-progress")
+    }
+
+    func testLessonTemplateAccessibility() throws {
+        freshRegression()
+        let settings = XCUIApplication(bundleIdentifier: "com.apple.Preferences")
+        settings.launch()
+        func openSetting(_ title: String) {
+            let item = settings.descendants(matching: .any).matching(NSPredicate(format: "label == %@", title)).firstMatch
+            for _ in 0..<8 {
+                if item.exists && item.isHittable { break }
+                settings.swipeUp()
+            }
+            XCTAssertTrue(item.isHittable, settings.debugDescription); item.tap()
+        }
+        func enable(_ toggle: XCUIElement) {
+            let enabled = NSPredicate(format: "value == %@", "1")
+            for _ in 0..<3 {
+                if toggle.value as? String == "1" { return }
+                // Settings exposes the entire labelled row as one switch.
+                // Target its trailing thumb and wait for the OS to settle.
+                toggle.coordinate(withNormalizedOffset: CGVector(dx: 0.9, dy: 0.5)).tap()
+                let settled = XCTNSPredicateExpectation(predicate: enabled, object: toggle)
+                if XCTWaiter.wait(for: [settled], timeout: 10) == .completed { return }
+            }
+            XCTAssertEqual(toggle.value as? String, "1", toggle.debugDescription)
+        }
+        openSetting("Accessibility")
+        openSetting("Motion")
+        let motion = settings.switches["Reduce Motion"]
+        XCTAssertTrue(motion.waitForExistence(timeout: 5))
+        enable(motion)
+        settings.navigationBars.buttons.element(boundBy: 0).tap()
+        openSetting("Display & Text Size")
+        for title in ["Reduce Transparency", "Increase Contrast"] {
+            let toggle = settings.switches[title]
+            for _ in 0..<5 { if toggle.exists && toggle.isHittable { break }; settings.swipeUp() }
+            XCTAssertTrue(toggle.isHittable, settings.debugDescription)
+            enable(toggle)
+        }
+        let proof = XCTAttachment(screenshot: settings.screenshot())
+        proof.name = "lesson-os-accessibility-settings"; proof.lifetime = .keepAlways; add(proof)
+        app.terminate()
+        app.launchArguments += ["-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"]
+        app.launch()
+        tab("Тренировка")
+        let catalog = app.buttons["course.catalog"]; scrollTo(catalog); catalog.tap()
+        let module = app.descendants(matching: .any).matching(identifier: "catalog.module.M03").firstMatch
+        scrollTo(module); module.tap()
+        let topic = app.descendants(matching: .any).matching(identifier: "catalog.topic.T11").firstMatch
+        scrollTo(topic); topic.tap()
+        let task = app.buttons["catalog.exercise.E.pot.100.50"]
+        scrollTo(task); task.tap()
+        let start = app.buttons["lesson.start"]; scrollTo(start)
+        XCTAssertTrue(start.isHittable)
+        try auditLessonAccessibility()
+        screenshot("lesson-template-xxxl")
+        start.tap()
+        let answer = app.textFields["Процент"]
+        scrollTo(answer); answer.tap(); answer.typeText("25")
+        checkAnswer()
+        let next = app.buttons["pot-odds.next"]
+        scrollTo(next); XCTAssertTrue(next.isHittable); next.tap()
+        let restored = app.staticTexts["lesson.restored-result"]
+        scrollTo(restored); XCTAssertTrue(restored.label.contains("верно"))
+        screenshot("lesson-result-xxxl")
+    }
+
+    func testCatalogExactTaskRoutes() {
+        freshRegression()
+        let cases: [(String, String, String, String)] = [
+            ("M01", "T01", "E.hand.wheel", "comparison.step"),
+            ("M01", "T02", "E.position.CO", "positions.answer.0"),
+            ("M02", "T07", "E.outs.river", ""),
+            ("M03", "T08", "E.equity.turn", "equity.answer"),
+            ("M03", "T09", "E.range.turn-1to3", "range-equity.answer"),
+            ("M03", "T11", "E.ev.negative", ""),
+            ("M08", "T18", "E.blocker.bluffs", "")
+        ]
+        for (module, topic, exercise, control) in cases {
+            tab("Тренировка")
+            let catalog = app.buttons["course.catalog"]
+            scrollTo(catalog); catalog.tap()
+            let m = app.descendants(matching: .any).matching(identifier: "catalog.module." + module).firstMatch
+            scrollTo(m); m.tap()
+            let t = app.descendants(matching: .any).matching(identifier: "catalog.topic." + topic).firstMatch
+            scrollTo(t); t.tap()
+            let e = app.buttons["catalog.exercise." + exercise]
+            scrollTo(e); XCTAssertTrue(e.exists, exercise); e.tap()
+            let start = app.buttons["lesson.start"]
+            scrollTo(start); start.tap()
+            XCTAssertTrue(app.staticTexts["lesson.task-math-status"].waitForExistence(timeout: 10))
+            if !control.isEmpty {
+                let element = app.descendants(matching: .any).matching(identifier: control).firstMatch
+                XCTAssertTrue(element.waitForExistence(timeout: 15), app.debugDescription)
+            }
+            screenshot("exact-" + exercise)
+            // Restore the native training root for the next independent route.
+            for _ in 0..<5 { app.navigationBars.buttons.element(boundBy: 0).tap() }
+        }
     }
 
     func testCourseRoutesPotOddsAndSample() {

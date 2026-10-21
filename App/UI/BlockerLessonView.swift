@@ -11,13 +11,26 @@ struct BlockerLessonView: View {
     @State private var completed: [BlockerAttempt]=[]
     @State private var finished=false
     @ScaledMetric(relativeTo:.body) private var cardWidth=AppTheme.Metrics.boardCard.width
-    private var question: BlockerQuestion { BlockerQuestion.examples[index] }
+    private let questions: [BlockerQuestion]
+    private let selectionError: String?
+    init(exerciseKey: String? = nil) {
+        if let exerciseKey {
+            let selected = BlockerQuestion.examples.first { $0.id == exerciseKey }
+            questions = selected.map { [$0] } ?? []
+            selectionError = selected == nil ? "Задание \(exerciseKey) отсутствует в каталоге блокеров." : nil
+        } else {
+            questions = BlockerQuestion.examples
+            selectionError = nil
+        }
+    }
+    private var question: BlockerQuestion { questions[index] }
     var body: some View {
         ScrollViewReader { proxy in
             ScrollView {
                 VStack(alignment:.leading,spacing:AppTheme.Measure.d16) {
                     LessonHeader(title:"Блокеры",detail:"Как известные карты меняют число комбинаций").id("blockers.top")
-                    if finished {
+                    if let selectionError { ErrorNotice(text: selectionError) }
+                    else if finished {
                         Text("Набор завершён").font(.title3.weight(.semibold))
                         MetricStrip(items:[("Верно", "\(completed.filter(\.isCorrect).count)/\(completed.count)"), ("Задач", "\(completed.count)")])
                         Text("Проверены подсчёт, удаление и нормировка весов. Прогресс отражает ответы на фиксированные учебные задачи.")
@@ -32,7 +45,7 @@ struct BlockerLessonView: View {
     }
     private var exercise: some View {
         VStack(alignment:.leading,spacing:AppTheme.Measure.d12) {
-            Label("Задание \(index+1) из \(BlockerQuestion.examples.count)",systemImage:"rectangle.3.group.fill").font(.subheadline.weight(.medium)).foregroundStyle(AppTheme.muted)
+            Label("Задание \(index+1) из \(questions.count)",systemImage:"rectangle.3.group.fill").font(.subheadline.weight(.medium)).foregroundStyle(AppTheme.muted)
             Text("Известные карты удаляют комбинации из заданного диапазона.").font(.title3.weight(.semibold))
             DisclosureGroup("Правило подсчёта") {
                 FormulaSteps(lines:["Пара: C(4,2) = 6; одномастная рука (s): 4; разномастная (o): 4 × 3 = 12.", "Каждая известная карта исключает комбинации соперника, которые содержат эту карту."])
@@ -92,9 +105,9 @@ struct BlockerLessonView: View {
             if question.isRangeModel { frequency }
             if saved {
                 Text("Результат сохранён на устройстве.").foregroundStyle(AppTheme.success)
-                Button(index+1 == BlockerQuestion.examples.count ? "Завершить урок" : "Следующее задание") {
+                Button(index+1 == questions.count ? "Завершить урок" : "Следующее задание") {
                     completed.append(review)
-                    if index+1 == BlockerQuestion.examples.count { finished=true }
+                    if index+1 == questions.count { finished=true }
                     else { self.review=nil;saved=false;saveError=nil;index+=1 }
                 }.buttonStyle(PrimaryButtonStyle())
             } else {

@@ -11,3 +11,8 @@
 Контракт: [bot-profiles.md](bot-profiles.md). Результаты: [tests/bot-results.md](tests/bot-results.md).
 Целевые unit-тесты: BotPolicyTests; Application: Tools/AppChecks.swift;
 Release Simulator benchmark: Tools/benchmark-bots.sh.
+
+## Каталог, шаблон и восстановление — 21 октября 2026
+
+Целевая матрица: [LESSON](tests/test-plan.md#lesson--шаблон-урока-и-прогресс).
+Доказательства: [результаты](tests/lesson-template-results.md).

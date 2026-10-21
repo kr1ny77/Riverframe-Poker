@@ -9,7 +9,7 @@ struct LearningCourseHomeView: View {
         let totalTasks = CourseLessonID.allCases.reduce(0) { $0 + $1.requiredKeys.count }
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
-                LessonHeader(title: "Курс NLHE", detail: "\(totalTasks) задачи: карты, вероятности и решения")
+                LessonHeader(title: "Курс NLHE", detail: "60 тем · 18 модулей · 4 уровня")
 
                 if let error = store.errorMessage {
                     ErrorNotice(text: error)
@@ -27,9 +27,11 @@ struct LearningCourseHomeView: View {
                 } label: {
                     Label("Каталог: 60 тем", systemImage: "books.vertical")
                 }
-                .buttonStyle(SecondaryButtonStyle())
+                .buttonStyle(PrimaryButtonStyle())
                 .accessibilityIdentifier("course.catalog")
 
+                Text("Опубликовано \(totalTasks) разных задач. История прежних наборов входит в охват тем.")
+                    .font(.footnote).foregroundStyle(AppTheme.muted)
                 CourseNextStepView()
 
                 if !course.repeatLessons.isEmpty {

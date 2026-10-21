@@ -1,0 +1,15 @@
+Exported 12 attachments for: CriticalFlows/testCatalogSingleExerciseAndRelaunch():
+File: 64DF3BF0-6446-4054-BD1E-00DA82079B9A, suggested name: "Synthesized Event 2026-10-20 at 08.21.29 PM"
+File: FF82CDD3-B1CB-4C7C-8903-AF29906A991B, suggested name: "Synthesized Event 2026-10-20 at 08.21.27 PM"
+File: 7F3B0219-D2AC-4281-B4BE-C4AFFFA7A7BF, suggested name: "Synthesized Event 2026-10-20 at 08.21.26 PM"
+File: 7D742912-9F88-41A0-AD7B-9B03D5B5BB85, suggested name: "Synthesized Event 2026-10-20 at 08.21.21 PM"
+File: 847551B0-072C-4A35-AA54-73D09FB8FBBE, suggested name: "Synthesized Event 2026-10-20 at 08.21.18 PM"
+File: 73789427-8DC2-4CFC-949B-7BF88B914F07, suggested name: "Synthesized Event 2026-10-20 at 08.21.08 PM"
+File: 634E04CF-83F5-4036-9234-221C26B8B5A9, suggested name: "Synthesized Event 2026-10-20 at 08.21.07 PM"
+File: 8DADA27D-0BBE-42B8-8A01-D6CC01931102, suggested name: "Synthesized Event 2026-10-20 at 08.21.05 PM"
+File: EFF7FDC6-5380-4A5C-8B44-D2883FE6940B.mp4, suggested name: "Screen Recording 2026-10-20 at 08.20.52 PM.mp4"
+File: BC965C57-20E9-422A-986F-7B7FFADF8AC2.txt, suggested name: "Complete Issue Description.txt"
+File: F5B736E7-C7AC-42E4-BE15-FB871D89AD1B.png, suggested name: "App Screenshot_0_CF74EB3B-EDB8-4990-8AA3-C6049157273B.png"
+File: 7BF81BC1-B88B-41F2-9D79-6958568FF7D2.png, suggested name: "Element Screenshot_1_610A9FC7-DBB4-4159-B849-7594A8ACEE70.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261020-201939/screenshots/manifest.json

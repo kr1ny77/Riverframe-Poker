@@ -1,0 +1,1 @@
+lesson-template: 2 diagnostic accessibility issues. Issues are collected for review; handler acceptance is not an accessibility pass.

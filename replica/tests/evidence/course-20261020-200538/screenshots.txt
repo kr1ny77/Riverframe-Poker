@@ -1,0 +1,7 @@
+Exported 4 attachments for: CriticalFlows/testCatalogSingleExerciseAndRelaunch():
+File: 244EBF1A-434B-4DC6-8C15-74373305DA25.png, suggested name: "lesson-template-next_0_71D82503-0D35-491A-8FC9-E98ED4F4ECD4.png"
+File: AA7D08C8-3533-4DB3-A74F-AA6A1E7D76D7.png, suggested name: "catalog-result-restored_0_69AC66AB-B416-4EF6-A96C-004672F0472F.png"
+File: 3826DAC5-758E-4CEF-A8E8-EC82C3C2998A.png, suggested name: "lesson-template-result_0_52174941-2CFA-42A0-A487-1E95805AADE9.png"
+File: AC1A1B88-0991-47D1-BFBF-2C124E50C6BD.png, suggested name: "catalog-exercise-saved_0_36375F98-39C1-4661-B0F6-819533A9B6F9.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261020-200538/screenshots/manifest.json

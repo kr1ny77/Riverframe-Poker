@@ -52,7 +52,7 @@ struct EquityMeter: View {
     var title: String = "Доля банка"
     var accessibilityName: String = "Equity"
     @Environment(\.dynamicTypeSize) private var typeSize
-    private var fraction: Double { min(1,max(0,percent/100)) }
+    private var fraction: Double { percent.isFinite ? min(1,max(0,percent/100)) : 0 }
     var body: some View {
         VStack(alignment:.leading,spacing:10) {
             if typeSize.isAccessibilitySize {
@@ -61,9 +61,10 @@ struct EquityMeter: View {
                 HStack(alignment:.firstTextBaseline) { value;Spacer();titleLabel }
             }
             GeometryReader { proxy in
+                let width = proxy.size.width.isFinite ? max(0, proxy.size.width) : 0
                 ZStack(alignment:.leading) {
                     Capsule().fill(AppTheme.surfaceAlt)
-                    Capsule().fill(AppTheme.accent).frame(width:proxy.size.width*fraction)
+                    Capsule().fill(AppTheme.accent).frame(width:width*fraction)
                 }
             }.frame(height:10).accessibilityHidden(true)
             Text(caption).font(.footnote).foregroundStyle(AppTheme.muted)
