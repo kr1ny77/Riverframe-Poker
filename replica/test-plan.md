@@ -16,3 +16,9 @@ Release Simulator benchmark: Tools/benchmark-bots.sh.
 
 Целевая матрица: [LESSON](tests/test-plan.md#lesson--шаблон-урока-и-прогресс).
 Доказательства: [результаты](tests/lesson-template-results.md).
+
+## M01–M04, редакция2
+
+39 новых заданий и schema6: [план](tests/test-plan.md#foundation--m01m04),
+[результаты](tests/foundations-results.md), [покрытие](tests/course-coverage.md).
+Проверка XXXL отложена по согласованному объёму этапа.

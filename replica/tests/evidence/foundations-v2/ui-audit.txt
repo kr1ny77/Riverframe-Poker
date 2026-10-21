@@ -1,0 +1,4 @@
+SwiftUI UI audit: 1 files, profile=standard, high=0 medium=3 low=0
+[MEDIUM] FoundationLessonView.swift:66 identity.foreach-indices — Index-derived identity can break state and transitions when content changes.
+[MEDIUM] FoundationLessonView.swift:85 identity.foreach-indices — Index-derived identity can break state and transitions when content changes.
+[MEDIUM] FoundationLessonView.swift:102 identity.foreach-indices — Index-derived identity can break state and transitions when content changes.

@@ -60,8 +60,8 @@ private struct CatalogModuleView: View {
                     } label: {
                         VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
                             Text("\(topic.id.rawValue) · \(topic.title)")
-                            let count = CourseCatalog.exercises(for: topic.id).count
-                            Text(count == 0 ? "Материал готовится" : "Доступно упражнений: \(count) · часть темы")
+                            let count = CourseCatalog.exerciseIDs(for: topic.id).count
+                            Text(count == 0 ? "Материал готовится" : "Доступно упражнений: \(count) · учебный блок")
                                 .font(.footnote).foregroundStyle(AppTheme.muted)
                         }
                     }
@@ -80,6 +80,8 @@ struct CatalogTopicView: View {
 
     var body: some View {
         let exercises = CourseCatalog.exercises(for: topic.id)
+        let foundations = CourseCatalog.foundations(for: topic.id)
+        let total = CourseCatalog.exerciseIDs(for: topic.id).count
         let catalog = store.catalog
         let progress = catalog.progress(for: topic.id)
         ScrollView {
@@ -90,10 +92,10 @@ struct CatalogTopicView: View {
                     Button("Повторить загрузку") { store.reload() }.buttonStyle(SecondaryButtonStyle())
                 }
                 if let introduction = topic.introduction { Text(introduction) }
-                if exercises.isEmpty {
+                if exercises.isEmpty && foundations.isEmpty {
                     Text("Тема включена в программу. Объяснения и упражнения готовятся.")
                 } else {
-                    Text("Охват текущих упражнений: \(progress.covered)/\(exercises.count)")
+                    Text("Охват текущих упражнений: \(progress.covered)/\(total)")
                         .accessibilityIdentifier("catalog.progress.\(topic.id.rawValue)")
                     Text("Ответов: \(progress.observations.count). Последние верные ответы: \(progress.latestCorrect)/\(progress.covered).")
                         .font(.footnote).foregroundStyle(AppTheme.muted)
@@ -120,6 +122,20 @@ struct CatalogTopicView: View {
                         .buttonStyle(.plain)
                         .accessibilityIdentifier("catalog.exercise.\(exercise.id.rawValue)")
                     }
+                }
+                ForEach(foundations) { exercise in
+                    NavigationLink { FoundationLessonView(exercise: exercise) } label: {
+                        VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
+                            Text(exercise.title).font(.headline)
+                            Text(exercise.purpose.title + " · " + exercise.resultKind.title).font(.footnote)
+                            if let latest = catalog.observations.last(where: { $0.exerciseID == exercise.id }) {
+                                Text(latest.isCorrect ? "Последний ответ: верно по условию." : "Последний ответ: есть ошибка.").font(.footnote)
+                            }
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(AppTheme.Measure.d16)
+                        .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius))
+                    }.buttonStyle(.plain).accessibilityIdentifier("catalog.exercise.\(exercise.id.rawValue)")
                 }
                 if !topic.prerequisites.isEmpty {
                     GroupBox("Предпосылки") {

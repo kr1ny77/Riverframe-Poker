@@ -76,7 +76,7 @@ import Testing
     #expect(restored.evCalls == [ev] && restored.positions == [position] && restored.comparisons == [comparison] && restored.attempts.count == 2)
     let good=try Data(contentsOf:path)
     let object=try #require(JSONSerialization.jsonObject(with:good) as? [String:Any])
-    #expect(object["version"] as? Int == 5)
+    #expect(object["version"] as? Int == 6)
     for key in ["isCorrect","questionID","decision","id"] {
         var bad=object
         var records=try #require(bad["evCalls"] as? [[String:Any]])

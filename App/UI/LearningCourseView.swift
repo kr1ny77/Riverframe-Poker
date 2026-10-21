@@ -6,7 +6,7 @@ struct LearningCourseHomeView: View {
 
     var body: some View {
         let course = store.course
-        let totalTasks = CourseLessonID.allCases.reduce(0) { $0 + $1.requiredKeys.count }
+        let totalTasks = CourseCatalog.allExerciseIDs.count
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 LessonHeader(title: "Курс NLHE", detail: "60 тем · 18 модулей · 4 уровня")

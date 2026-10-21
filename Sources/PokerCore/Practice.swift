@@ -46,16 +46,18 @@ public struct PracticeArchive: Sendable, Equatable {
     public var positions: [PositionAttempt]
     public var evCalls: [EVCallAttempt]
     public var blockers: [BlockerAttempt]
-    public init(attempts: [PracticeAttempt] = [], comparisons: [HandComparisonAttempt] = [], positions: [PositionAttempt] = [], evCalls: [EVCallAttempt] = [], blockers: [BlockerAttempt] = []) {
+    public var foundations: [FoundationAttempt]
+    public init(attempts: [PracticeAttempt] = [], comparisons: [HandComparisonAttempt] = [], positions: [PositionAttempt] = [], evCalls: [EVCallAttempt] = [], blockers: [BlockerAttempt] = [], foundations: [FoundationAttempt] = []) {
         self.attempts = attempts
         self.comparisons = comparisons
         self.positions = positions
         self.evCalls = evCalls
         self.blockers = blockers
+        self.foundations = foundations
     }
 }
 
-/// Version 5 adds blocker answers. Versions 1/2/3/4 remain readable;
+/// Version 6 adds typed foundation answers. Versions 1–5 remain readable;
 /// a successful write migrates atomically and preserves all lesson categories.
 public struct PracticeHistory: Sendable {
     private struct Envelope: Codable {
@@ -65,6 +67,7 @@ public struct PracticeHistory: Sendable {
         let positions: [PositionAttempt]?
         let evCalls: [EVCallAttempt]?
         let blockers: [BlockerAttempt]?
+        let foundations: [FoundationAttempt]?
     }
     public let fileURL: URL
     public init(fileURL:URL) { self.fileURL=fileURL }
@@ -81,10 +84,11 @@ public struct PracticeHistory: Sendable {
         case 2: validStructure = envelope.comparisons != nil && envelope.positions == nil && envelope.evCalls == nil && envelope.blockers == nil
         case 3: validStructure = envelope.comparisons != nil && envelope.positions != nil && envelope.evCalls == nil && envelope.blockers == nil
         case 4: validStructure = envelope.comparisons != nil && envelope.positions != nil && envelope.evCalls != nil && envelope.blockers == nil
-        case 5: validStructure = envelope.comparisons != nil && envelope.positions != nil && envelope.evCalls != nil && envelope.blockers != nil
+        case 5: validStructure = envelope.comparisons != nil && envelope.positions != nil && envelope.evCalls != nil && envelope.blockers != nil && envelope.foundations == nil
+        case 6: validStructure = envelope.comparisons != nil && envelope.positions != nil && envelope.evCalls != nil && envelope.blockers != nil && envelope.foundations != nil
         default: validStructure = false
         }
-        guard validStructure,
+        guard validStructure, (envelope.version >= 6 || envelope.foundations == nil),
               envelope.attempts.allSatisfy({$0.answer.isFinite && (0...100).contains($0.answer) && $0.correctPercent.isFinite && (0...100).contains($0.correctPercent) && $0.isCorrect == (abs($0.answer-$0.correctPercent)<=0.5)}) else {
             throw CocoaError(.fileReadCorruptFile)
         }
@@ -92,20 +96,21 @@ public struct PracticeHistory: Sendable {
         let positions = envelope.positions ?? []
         let evCalls = envelope.evCalls ?? []
         let blockers = envelope.blockers ?? []
-        let ids = envelope.attempts.map(\.id) + comparisons.map(\.id) + positions.map(\.id) + evCalls.map(\.id) + blockers.map(\.id)
-        guard Set(ids).count == ids.count, comparisons.allSatisfy(\.isValid), positions.allSatisfy(\.isValid), evCalls.allSatisfy(\.isValid), blockers.allSatisfy(\.isValid) else {
+        let foundations = envelope.foundations ?? []
+        let ids = envelope.attempts.map(\.id) + comparisons.map(\.id) + positions.map(\.id) + evCalls.map(\.id) + blockers.map(\.id) + foundations.map(\.id)
+        guard Set(ids).count == ids.count, comparisons.allSatisfy(\.isValid), positions.allSatisfy(\.isValid), evCalls.allSatisfy(\.isValid), blockers.allSatisfy(\.isValid), foundations.allSatisfy(\.isValid) else {
             throw CocoaError(.fileReadCorruptFile)
         }
-        return PracticeArchive(attempts:envelope.attempts,comparisons:comparisons,positions:positions,evCalls:evCalls,blockers:blockers)
+        return PracticeArchive(attempts:envelope.attempts,comparisons:comparisons,positions:positions,evCalls:evCalls,blockers:blockers,foundations:foundations)
     }
     /// Compatibility entry point: numeric updates preserve any saved comparisons.
     public func save(_ attempts:[PracticeAttempt]) throws {
         let archive = try loadArchive()
-        try saveArchive(PracticeArchive(attempts:attempts,comparisons:archive.comparisons,positions:archive.positions,evCalls:archive.evCalls,blockers:archive.blockers))
+        try saveArchive(PracticeArchive(attempts:attempts,comparisons:archive.comparisons,positions:archive.positions,evCalls:archive.evCalls,blockers:archive.blockers,foundations:archive.foundations))
     }
     public func saveArchive(_ archive: PracticeArchive) throws {
         try FileManager.default.createDirectory(at:fileURL.deletingLastPathComponent(),withIntermediateDirectories:true)
-        let data=try JSONEncoder().encode(Envelope(version:5,attempts:archive.attempts,comparisons:archive.comparisons,positions:archive.positions,evCalls:archive.evCalls,blockers:archive.blockers))
+        let data=try JSONEncoder().encode(Envelope(version:6,attempts:archive.attempts,comparisons:archive.comparisons,positions:archive.positions,evCalls:archive.evCalls,blockers:archive.blockers,foundations:archive.foundations))
         try data.write(to:fileURL,options:.atomic)
     }
 }

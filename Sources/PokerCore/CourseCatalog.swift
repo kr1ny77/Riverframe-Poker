@@ -150,7 +150,7 @@ public struct CatalogExercise: Identifiable, Sendable {
 }
 
 public enum CourseCatalog {
-    public static let contentVersion = 1
+    public static let contentVersion = 2
     public static let modules: [CatalogModule] = [
         .init(id: .m01, title: "Правила и банки", level: .foundations),
         .init(id: .m02, title: "Колода и события", level: .foundations),
@@ -175,13 +175,13 @@ public enum CourseCatalog {
     public static let topics: [CatalogTopic] = [
         .init(id: .t01, title: "Лучшая пятёрка, kicker, ничья и wheel", moduleID: .m01, prerequisites: [], introduction: "Сравните лучшие пять карт, кикеры и равные руки. Доступный набор содержит 12 шаблонов вскрытия."),
         .init(id: .t02, title: "Позиции и порядок действий", moduleID: .m01, prerequisites: [.t01], introduction: "Определите место относительно кнопки и порядок ходов в 6-max. Сфолдившие участники пропускаются при выборе очереди."),
-        .init(id: .t03, title: "Блайнды, анте, эффективный стек и SPR", moduleID: .m01, prerequisites: [.t02], introduction: nil),
-        .init(id: .t04, title: "Легальные действия, min-raise и неполный all-in", moduleID: .m01, prerequisites: [.t02, .t03], introduction: nil),
-        .init(id: .t05, title: "Side pots, odd chips и возврат лишней ставки", moduleID: .m01, prerequisites: [.t01, .t04], introduction: nil),
-        .init(id: .t06, title: "Комбинации и события без возвращения", moduleID: .m02, prerequisites: [.t01], introduction: "Посчитайте физические комбинации пар, одномастных и разномастных рук. Известные карты уменьшают доступный набор."),
-        .init(id: .t07, title: "Точные outs и dirty outs", moduleID: .m02, prerequisites: [.t01, .t06], introduction: "Посчитайте вероятность собрать флеш на следующей карте и за два открытия. В этих задачах неизвестные карты равновероятны."),
-        .init(id: .t08, title: "Точная equity против известной руки", moduleID: .m03, prerequisites: [.t01, .t06], introduction: "Equity учитывает победы и долю банка при ничьей. Доступны два сценария с точным перебором общих карт."),
-        .init(id: .t09, title: "Equity против взвешенного диапазона", moduleID: .m03, prerequisites: [.t06, .t08], introduction: "Веса задают относительную массу конкретных рук. Три небольших диапазона позволяют проверить каждую ветвь отдельно."),
+        .init(id: .t03, title: "Блайнды, анте, эффективный стек и SPR", moduleID: .m01, prerequisites: [.t02], introduction: "Посчитайте банк после обязательных взносов, эффективный остаток и SPR на заданной улице. Анте и момент измерения указаны в каждом сценарии."),
+        .init(id: .t04, title: "Легальные действия, min-raise и неполный all-in", moduleID: .m01, prerequisites: [.t02, .t03], introduction: "Различите итоговую сумму повышения, последнюю полную прибавку и право на повторное повышение после коротких all-in."),
+        .init(id: .t05, title: "Side pots, odd chips и возврат лишней ставки", moduleID: .m01, prerequisites: [.t01, .t04], introduction: "Разложите вклады по слоям банка, проверьте участников каждого слоя, возврат непокрытой суммы и нечётную фишку."),
+        .init(id: .t06, title: "Комбинации и события без возвращения", moduleID: .m02, prerequisites: [.t01], introduction: "Физические комбинации и известные карты разобраны в прежнем уроке блокеров. Новые задачи добавляют события без возвращения и условные знаменатели."),
+        .init(id: .t07, title: "Точные outs и dirty outs", moduleID: .m02, prerequisites: [.t01, .t06], introduction: "Прежние задачи считают шанс собрать флеш. Новый блок различает чистые и грязные ауты против заданной руки."),
+        .init(id: .t08, title: "Точная equity против известной руки", moduleID: .m03, prerequisites: [.t01, .t06], introduction: "Прежний точный перебор дополнен подсчётом доли ничьих и проверкой физически возможного входа."),
+        .init(id: .t09, title: "Equity против взвешенного диапазона", moduleID: .m03, prerequisites: [.t06, .t08], introduction: "Проверьте нормировку весов, альтернативные ветви диапазона и пересечения с известными картами."),
         .init(id: .t10, title: "Monte Carlo, дисперсия оценщика и ошибка", moduleID: .m05, prerequisites: [.t08, .t09], introduction: nil),
         .init(id: .t11, title: "Pot odds и EV call/fold", moduleID: .m03, prerequisites: [.t08, .t09], introduction: "Цена колла делится на итоговый банк. EV дополнительно учитывает equity и сравнивается с нулём фолда."),
         .init(id: .t12, title: "Bet EV, fold equity и чистый блеф", moduleID: .m10, prerequisites: [.t11], introduction: nil),
@@ -193,14 +193,14 @@ public enum CourseCatalog {
         .init(id: .t18, title: "Blockers и removal effects", moduleID: .m08, prerequisites: [.t06, .t09], introduction: "Исключите комбинации с известными картами. Доли value и блефов относятся к заданным учебным весам."),
         .init(id: .t19, title: "MDF и bluff:value в toy river game", moduleID: .m12, prerequisites: [.t11, .t12, .t18], introduction: nil),
         .init(id: .t20, title: "Bluff-catcher и порог колла", moduleID: .m12, prerequisites: [.t11, .t18, .t19], introduction: nil),
-        .init(id: .t21, title: "Свойства стартовых рук и доминирование", moduleID: .m04, prerequisites: [.t01, .t06], introduction: "Различайте масть, старшинство и контекст стартовой руки. Доступны понятийные задачи существующего урока позиций."),
-        .init(id: .t22, title: "Open-raise и чарты по позиции", moduleID: .m04, prerequisites: [.t02, .t21], introduction: "Доступна вводная задача о различии открытия и ответа на 3-bet. Стратегические чарты требуют отдельной проверенной модели."),
+        .init(id: .t21, title: "Свойства стартовых рук и доминирование", moduleID: .m04, prerequisites: [.t01, .t06], introduction: "Прежние задачи о масти и кикере дополнены доминированием в явно заданном диапазоне и контрпримером универсальной силы руки."),
+        .init(id: .t22, title: "Open-raise и чарты по позиции", moduleID: .m04, prerequisites: [.t02, .t21], introduction: "Определите RFI и прочитайте паспорт чарта. Небольшая авторская таблица служит условной моделью для чтения меток."),
         .init(id: .t23, title: "Защита BB", moduleID: .m07, prerequisites: [.t22, .t11], introduction: nil),
         .init(id: .t24, title: "Limp, isolation и dead money", moduleID: .m07, prerequisites: [.t22, .t23], introduction: nil),
         .init(id: .t25, title: "3-bet, 4-bet и 5-bet", moduleID: .m07, prerequisites: [.t22, .t24], introduction: nil),
         .init(id: .t26, title: "Cold call и squeeze", moduleID: .m07, prerequisites: [.t25], introduction: nil),
         .init(id: .t27, title: "Короткий стек: shove и resteal", moduleID: .m07, prerequisites: [.t04, .t05, .t11, .t25], introduction: nil),
-        .init(id: .t28, title: "Heads-up, 6-max и full ring", moduleID: .m04, prerequisites: [.t02, .t22], introduction: nil),
+        .init(id: .t28, title: "Heads-up, 6-max и full ring", moduleID: .m04, prerequisites: [.t02, .t22], introduction: "Сравните очередь в HU, 6-max и full ring. Игровая практика приложения остаётся 6-max против пяти ботов."),
         .init(id: .t29, title: "Текстуры доски", moduleID: .m09, prerequisites: [.t01, .t06], introduction: nil),
         .init(id: .t30, title: "Range advantage и nut advantage", moduleID: .m11, prerequisites: [.t09, .t18, .t29], introduction: nil),
         .init(id: .t31, title: "Реализация equity и playability", moduleID: .m11, prerequisites: [.t09, .t11, .t39], introduction: nil),
@@ -237,6 +237,16 @@ public enum CourseCatalog {
 
     /// Explicit legacy aliases are retained when future tasks or content revisions are added.
     public static let exercises: [CatalogExercise] = legacyExercisesV1
+    public static var foundationExercises: [FoundationExercise] { FoundationLesson.exercises }
+    public static func foundations(for topic: CourseTopicID) -> [FoundationExercise] {
+        foundationExercises.filter { $0.topicID == topic }
+    }
+    public static func exerciseIDs(for topic: CourseTopicID) -> Set<CatalogExerciseID> {
+        Set(exercises(for: topic).map(\.id) + foundations(for: topic).map(\.id))
+    }
+    public static var allExerciseIDs: Set<CatalogExerciseID> {
+        Set(exercises.map(\.id) + foundationExercises.map(\.id))
+    }
 
     private static let legacyExercisesV1: [CatalogExercise] = [
         .init(id: .init(rawValue: "E.hand.highcard"), contentVersion: 1, title: "Старшая карта", lesson: .combinations, legacyKey: "highcard", topicIDs: [.t01], calculation: .exactEnumeration),
@@ -314,13 +324,13 @@ public struct CatalogTopicProgress: Sendable {
     }
 }
 
-/// Pure projection: schema 1–5 payloads remain the source of truth for legacy results.
+/// Pure projection: preserved legacy payloads and typed schema6 answers share stable catalog IDs.
 /// Shared exercises map to several topics while retaining one UUID and one stored answer.
 public struct CourseCatalogSnapshot: Sendable {
     public let observations: [CatalogObservation]
     public let ignoredRecords: Int
 
-    public init(course: LearningCourseSnapshot) {
+    public init(course: LearningCourseSnapshot, foundations: [FoundationAttempt] = []) {
         var mapped: [CatalogObservation] = []
         var rejected = course.ignoredRecords
         for observation in course.observations {
@@ -331,12 +341,18 @@ public struct CourseCatalogSnapshot: Sendable {
             mapped.append(CatalogObservation(id: observation.id, date: observation.date,
                 exerciseID: exercise.id, contentVersion: exercise.contentVersion, isCorrect: observation.isCorrect))
         }
-        observations = mapped
+        for attempt in foundations {
+            guard let exercise = FoundationLesson.exercise(attempt.exerciseID),
+                  exercise.contentVersion == attempt.contentVersion else { rejected += 1; continue }
+            mapped.append(CatalogObservation(id: attempt.id, date: attempt.date, exerciseID: attempt.exerciseID,
+                                            contentVersion: attempt.contentVersion, isCorrect: attempt.isCorrect))
+        }
+        observations = mapped.sorted { $0.date == $1.date ? $0.id.uuidString < $1.id.uuidString : $0.date < $1.date }
         ignoredRecords = rejected
     }
 
     public func progress(for topic: CourseTopicID) -> CatalogTopicProgress {
-        let ids = Set(CourseCatalog.exercises(for: topic).map(\.id))
+        let ids = CourseCatalog.exerciseIDs(for: topic)
         return CatalogTopicProgress(exerciseIDs: ids, observations: observations.filter { ids.contains($0.exerciseID) })
     }
 }

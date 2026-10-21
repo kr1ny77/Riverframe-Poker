@@ -35,6 +35,67 @@ private final class BotWorkerProbe: @unchecked Sendable {
     preconditionFailure("Bot application check timed out")
 }
 
+@MainActor private func checkFoundationPersistence(in directory: URL) throws {
+    let file = directory.appendingPathComponent("foundations/history.json")
+    guard let correctExercise = FoundationLesson.exercise(.init(rawValue: "E.foundation.T03.spr")),
+          let incorrectExercise = FoundationLesson.exercise(.init(rawValue: "E.foundation.T04.short-all-in")) else {
+        fatalError("Missing foundation exercise")
+    }
+    let correct = FoundationAttempt(exercise: correctExercise, response: correctExercise.answer.correctResponse,
+                                    id: UUID(uuidString: "00000000-0000-4000-8000-000000000701")!,
+                                    date: Date(timeIntervalSinceReferenceDate: 70_001))
+    let incorrect = FoundationAttempt(exercise: incorrectExercise, response: .choice(0),
+                                      id: UUID(uuidString: "00000000-0000-4000-8000-000000000702")!,
+                                      date: Date(timeIntervalSinceReferenceDate: 70_002))
+    let firstNumeric = PracticeAttempt(question: PotOddsQuestion.examples[0], answer: 25)
+    let secondNumeric = PracticeAttempt(question: PotOddsQuestion.examples[1], answer: 0)
+    let store = PracticeStore(fileURL: file)
+    try store.record(correct)
+    try store.record(firstNumeric)
+    try store.record(incorrect)
+    try store.record(secondNumeric)
+    precondition(store.foundations == [correct, incorrect] && store.attempts == [firstNumeric, secondNumeric])
+    precondition(store.catalog.observations.contains(where: { $0.id == correct.id && $0.isCorrect }))
+    precondition(store.catalog.observations.contains(where: { $0.id == incorrect.id && !$0.isCorrect }))
+
+    let changedSameID = FoundationAttempt(exercise: correctExercise, response: .number(0), id: correct.id, date: correct.date)
+    do { try store.record(changedSameID); fatalError("Foundation accepted changed payload with the same UUID") } catch {}
+    try store.record(correct)
+    precondition(store.foundations == [correct, incorrect])
+
+    let collidingFoundation = FoundationAttempt(exercise: correctExercise, response: correctExercise.answer.correctResponse,
+                                                id: firstNumeric.id, date: Date(timeIntervalSinceReferenceDate: 70_003))
+    do { try store.record(collidingFoundation); fatalError("Foundation accepted a cross-category UUID") } catch {}
+    precondition(store.foundations == [correct, incorrect] && store.attempts == [firstNumeric, secondNumeric])
+
+    let reloaded = PracticeStore(fileURL: file)
+    precondition(reloaded.foundations == [correct, incorrect] && reloaded.attempts == [firstNumeric, secondNumeric])
+    try Data("corrupt-foundations".utf8).write(to: file)
+    reloaded.reload()
+    do { try reloaded.record(correct); fatalError("Foundation wrote after failed reload") } catch {}
+    let corruptedBytes = try Data(contentsOf: file)
+    precondition(corruptedBytes == Data("corrupt-foundations".utf8))
+    try reloaded.clear()
+    let cleared = PracticeStore(fileURL: file)
+    precondition(cleared.foundations.isEmpty && cleared.attempts.isEmpty && cleared.errorMessage == nil)
+
+    let blockedParent = directory.appendingPathComponent("foundation-write-blocked")
+    try Data("file".utf8).write(to: blockedParent)
+    let retryFile = blockedParent.appendingPathComponent("history.json")
+    let retryStore = PracticeStore(fileURL: retryFile)
+    let retry = FoundationAttempt(exercise: correctExercise, response: correctExercise.answer.correctResponse,
+                                  id: UUID(uuidString: "00000000-0000-4000-8000-000000000703")!,
+                                  date: Date(timeIntervalSinceReferenceDate: 70_004))
+    do { try retryStore.record(retry); fatalError("Expected foundation write failure") } catch {}
+    precondition(retryStore.foundations.isEmpty && retryStore.errorMessage != nil)
+    try FileManager.default.removeItem(at: blockedParent)
+    try retryStore.record(retry)
+    try retryStore.record(retry)
+    precondition(retryStore.foundations == [retry])
+    precondition(PracticeStore(fileURL: retryFile).foundations == [retry])
+    print("PASS foundations: correct and incorrect answers, mixed writes, UUID protection, exact retry, reload, retry, corruption block and clear")
+}
+
 @main
 struct AppChecks {
     @MainActor static func main() async throws {
@@ -60,6 +121,7 @@ struct AppChecks {
             print("PASS BUG-001: failed reload blocks writes; successful reload unlocks recording")
             return
         }
+        try checkFoundationPersistence(in: directory)
         // Catalog uses the same typed result and transaction as the original pot-odds lesson.
         let catalogFile = directory.appendingPathComponent("catalog/history.json")
         let catalogStore = PracticeStore(fileURL: catalogFile)

@@ -89,7 +89,7 @@ func catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version: Int) th
 
     try PracticeHistory(fileURL: path).saveArchive(loaded)
     let normalized = try #require(JSONSerialization.jsonObject(with: Data(contentsOf: path)) as? [String: Any])
-    #expect(normalized["version"] as? Int == 5)
+    #expect(normalized["version"] as? Int == 6)
     let restored = try PracticeHistory(fileURL: path).loadArchive()
     let restoredCourse = LearningCourseSnapshot(archive: restored)
     #expect(restored == loaded)
@@ -115,7 +115,8 @@ func catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version: Int) th
     }
     if version >= 5 {
         #expect(CourseLessonID.allCases.allSatisfy { course.progress($0).completed && restoredCourse.progress($0).completed })
-        #expect(catalog.progress(for: .t06).completedAvailableExercises && catalog.progress(for: .t18).completedAvailableExercises)
+        #expect(catalog.progress(for: .t06).covered == 3 && !catalog.progress(for: .t06).completedAvailableExercises)
+        #expect(catalog.progress(for: .t18).completedAvailableExercises)
     }
 }
 
@@ -147,8 +148,8 @@ func catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version: Int) th
     })
     #expect(catalog.progress(for: .t11).completedAvailableExercises)
     #expect(catalog.progress(for: .t02).completedAvailableExercises)
-    #expect(catalog.progress(for: .t21).completedAvailableExercises)
-    #expect(catalog.progress(for: .t06).completedAvailableExercises)
+    #expect(catalog.progress(for: .t21).covered == 3 && !catalog.progress(for: .t21).completedAvailableExercises)
+    #expect(catalog.progress(for: .t06).covered == 3 && !catalog.progress(for: .t06).completedAvailableExercises)
     #expect(catalog.progress(for: .t18).completedAvailableExercises)
 
     let blockerIDs = Set(catalog.progress(for: .t06).observations.map(\.id))
@@ -157,7 +158,7 @@ func catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version: Int) th
 }
 
 @Test func catalogIDsReferencesAndLegacyOverlapMappingsAreStable() {
-    #expect(CourseCatalog.contentVersion == 1)
+    #expect(CourseCatalog.contentVersion == 2)
     #expect(Set(CourseTopicID.allCases.map(\.rawValue)).count == 60)
     #expect(Set(CourseModuleID.allCases.map(\.rawValue)).count == 18)
     #expect(Set(CourseLevel.allCases).count == 4)

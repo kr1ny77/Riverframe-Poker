@@ -429,11 +429,11 @@ final class CriticalFlows: XCTestCase {
         tab("Прогресс")
         XCTAssertEqual(app.staticTexts["course.progress.completed"].label, "Пройдено наборов: 0 из 8")
         let summary = app.staticTexts["progress.catalog.summary"]
-        scrollTo(summary); XCTAssertTrue(summary.label.contains("1/43"))
+        scrollTo(summary); XCTAssertTrue(summary.label.contains("1/\(CourseCatalog.allExerciseIDs.count)"))
         let progressCatalog = app.buttons["progress.catalog"]
         scrollTo(progressCatalog); progressCatalog.tap()
         XCTAssertTrue(app.staticTexts["catalog.summary"].waitForExistence(timeout: 5))
-        XCTAssertEqual(app.staticTexts["catalog.overall-progress"].label, "Уникальных задач: 1/43")
+        XCTAssertEqual(app.staticTexts["catalog.overall-progress"].label, "Уникальных задач: 1/\(CourseCatalog.allExerciseIDs.count)")
         screenshot("catalog-from-progress")
     }
 
@@ -500,6 +500,57 @@ final class CriticalFlows: XCTestCase {
         let restored = app.staticTexts["lesson.restored-result"]
         scrollTo(restored); XCTAssertTrue(restored.label.contains("верно"))
         screenshot("lesson-result-xxxl")
+    }
+
+    func testFoundationTopicsAndRelaunch() {
+        freshRegression()
+        let topics: [CourseTopicID] = [.t03, .t04, .t05, .t06, .t07, .t08, .t09, .t21, .t22, .t28]
+        let tasks = topics.compactMap { topic in
+            let exercises = CourseCatalog.foundations(for: topic)
+            return topic == .t22 ? exercises.first(where: { !$0.chart.isEmpty }) : exercises.first
+        }
+        XCTAssertEqual(tasks.count, topics.count)
+        func open(_ exercise: FoundationExercise) {
+            tab("Тренировка")
+            let catalog = app.buttons["course.catalog"]; scrollTo(catalog); catalog.tap()
+            let topic = CourseCatalog.topics.first { $0.id == exercise.topicID }!
+            let module = app.buttons["catalog.module." + topic.moduleID.rawValue]; scrollTo(module); module.tap()
+            let row = app.buttons["catalog.topic." + topic.id.rawValue]; scrollTo(row); row.tap()
+            let task = app.buttons["catalog.exercise." + exercise.id.rawValue]; scrollTo(task); task.tap()
+            XCTAssertTrue(app.buttons["foundation.start"].waitForExistence(timeout: 5))
+        }
+        func backToTraining() {
+            for _ in 0..<4 { app.navigationBars.buttons.element(boundBy: 0).tap() }
+            XCTAssertTrue(app.buttons["course.catalog"].exists)
+        }
+        for exercise in tasks {
+            open(exercise)
+            let start = app.buttons["foundation.start"]; scrollTo(start); start.tap()
+            if !exercise.chart.isEmpty { XCTAssertTrue(app.descendants(matching: .any).matching(identifier: "foundation.chart").firstMatch.exists) }
+            switch exercise.answer.correctResponse {
+            case .number(let value):
+                let input = app.textFields["foundation.answer"]; scrollTo(input); input.tap(); input.typeText(String(value))
+            case .choice(let index):
+                let choice = app.buttons["foundation.choice.\(index)"]; scrollTo(choice); choice.tap()
+            }
+            let check = app.buttons["foundation.check"]; scrollTo(check); XCTAssertTrue(check.isEnabled); check.tap()
+            let grade = app.staticTexts["foundation.grade"]; scrollTo(grade); XCTAssertEqual(grade.label, "Верно по условию.")
+            let saved = app.staticTexts["foundation.saved"]; scrollTo(saved); XCTAssertTrue(saved.exists)
+            screenshot("foundation-" + exercise.topicID.rawValue + "-checked")
+            backToTraining()
+        }
+        app.terminate(); app.launch()
+        for exercise in tasks {
+            open(exercise)
+            let restored = app.staticTexts["foundation.restored-result"]
+            scrollTo(restored); XCTAssertEqual(restored.label, "Последний ответ: верно по условию.")
+            screenshot("foundation-" + exercise.topicID.rawValue + "-restored")
+            backToTraining()
+        }
+        tab("Прогресс")
+        let summary = app.staticTexts["progress.catalog.summary"]
+        scrollTo(summary); XCTAssertTrue(summary.label.contains("10/\(CourseCatalog.allExerciseIDs.count)"))
+        XCTAssertTrue(summary.label.contains("Ответов: 10."))
     }
 
     func testCatalogExactTaskRoutes() {

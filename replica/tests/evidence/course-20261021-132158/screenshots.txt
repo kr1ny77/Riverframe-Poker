@@ -1,0 +1,14 @@
+Exported 11 attachments for: CriticalFlows/testCatalogSingleExerciseAndRelaunch():
+File: BD70E793-B5B4-4557-B74F-CDCF21BD9074.png, suggested name: "catalog-from-progress_0_4CAD19D4-CA6E-4C30-83DC-F72F2C3FF86F.png"
+File: 39100567-8810-4525-B006-F6FF9A51CEF1.png, suggested name: "lesson-template-next_0_DB95DFC4-43F7-4548-B4BE-967F4B925FC8.png"
+File: 7A047859-626A-44B8-AE4C-8AC432E369CE.png, suggested name: "catalog-result-restored_0_B5CC5B93-2227-43C3-9C47-D80217C3F495.png"
+File: 6915433A-AC71-45D0-B087-780B25D55B23.png, suggested name: "lesson-template-result_0_CD3751D6-BBEA-47AC-BFFD-2CFD144F234A.png"
+File: 7EF31277-DE1A-4FDC-B927-B2EC25906138.png, suggested name: "catalog-exercise-saved_0_2FEE1B83-1797-4481-BAB9-FA97A373D8A1.png"
+File: F29B0B1F-6593-477E-8EF0-B73036134F24.png, suggested name: "lesson-template-entry_0_2AA8970D-7BCF-4EAE-8D8D-C59626C42EFD.png"
+File: 32AB1F04-62C4-4F3C-9A7E-A63951B10418.txt, suggested name: "accessibility-summary-lesson-template_0_C7189391-2567-4DD2-B5EB-E1B1B9835C69.txt"
+File: A1980E40-C34D-45EC-A50D-F5FCA68E6FDF.txt, suggested name: "accessibility-lesson-template_0_9ADE2B6D-C4EC-4FC1-BF3A-3AB10037448F.txt"
+File: E6E02BAF-563D-4302-99D8-1B6EAF4A63F9.txt, suggested name: "accessibility-lesson-template_0_FD2F501E-14AB-459F-B716-BBB45C1CAF27.txt"
+File: 7356D4E2-DBA4-411B-BB0D-CD98F965D2DC.txt, suggested name: "accessibility-lesson-template_0_B2D7923C-B04E-41AB-BA42-D2EF212BD440.txt"
+File: 763CDE7A-67C8-4023-8ABF-EE9B6B279473.txt, suggested name: "accessibility-lesson-template_0_6CE2985B-9927-4F8D-8409-3FC9175BBF5D.txt"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261021-132158/screenshots/manifest.json

@@ -1,0 +1,23 @@
+Exported 20 attachments for: CriticalFlows/testFoundationTopicsAndRelaunch():
+File: 9FF9C4D3-D1D9-4FE2-BFA1-D9F701DD5D44.png, suggested name: "foundation-T28-restored_0_93A9FCB0-B7B5-477F-BAC3-315D616A9789.png"
+File: 9E73B73A-A102-485A-904D-3DC99307CE7F.png, suggested name: "foundation-T22-restored_0_8AEA53BC-29CB-43D3-B846-269A841F75DC.png"
+File: 6B401101-E98D-4507-B4C2-8309365B8FB2.png, suggested name: "foundation-T21-restored_0_C0DD3D2E-DA1C-4F8E-9389-AA365B8E5991.png"
+File: 303B990D-B678-4735-ACFB-CB8DB98B924B.png, suggested name: "foundation-T09-restored_0_F3913DF6-831F-439B-B005-2132267A587A.png"
+File: 1AC2C62A-3B7E-4961-877D-4ED14847E956.png, suggested name: "foundation-T08-restored_0_0F968149-E2CF-4E87-A5FA-C8BA6F941231.png"
+File: FD420B88-6D41-4AE4-BEE8-5E84A30ED6A0.png, suggested name: "foundation-T07-restored_0_B7653EE1-4483-4910-A70A-753761E308F8.png"
+File: CBC535B4-EA46-49DD-95A8-EDFEC6B0866D.png, suggested name: "foundation-T06-restored_0_6238D7C7-D8F4-4A8B-ABE0-0FA12CDA9292.png"
+File: DFB89F78-1784-45E1-A859-AC70FFC5A346.png, suggested name: "foundation-T05-restored_0_860400FD-99FE-457A-BF52-9B7C7F223F0B.png"
+File: 328680C7-959A-4FE3-8AED-C1BBEF990FBC.png, suggested name: "foundation-T04-restored_0_9CE3240A-2CA3-4A2D-AD62-CE6CAFD90BEB.png"
+File: E37B213F-DC7F-4B71-8B3D-E8EB7DD41B6E.png, suggested name: "foundation-T03-restored_0_06BF2AC3-A68F-44E2-B2F3-7A15D343E6B9.png"
+File: 16851031-3A99-4DDE-B76E-8F6B2C6FCE48.png, suggested name: "foundation-T28-checked_0_87C077EE-2BC9-4782-91A5-C51867B01763.png"
+File: C96DE77A-7C7D-4523-B6F9-F4478678276C.png, suggested name: "foundation-T22-checked_0_51B5C1D5-7376-479E-99C8-76B851C3BFF1.png"
+File: BEB9FF36-E011-4F04-8595-15749585A159.png, suggested name: "foundation-T21-checked_0_42198B0F-E70F-4C7A-B78F-BFD7885EDA56.png"
+File: D9B9BF65-9B17-4D75-9A6E-DDA0F97B62E9.png, suggested name: "foundation-T09-checked_0_DE8F1C44-1429-4BB6-B127-E0D099491936.png"
+File: 99D738DD-A0C3-4CFC-B71A-DA2B14D4C69A.png, suggested name: "foundation-T08-checked_0_F5AA0763-E81A-43E0-8110-2D789113F28C.png"
+File: E146252E-B7E5-4294-A281-CE5EDA850CA6.png, suggested name: "foundation-T07-checked_0_39434613-9780-43DD-A171-28F8BB61DF19.png"
+File: 8ED89305-9E6F-4D3B-ADD3-50B419759BFF.png, suggested name: "foundation-T06-checked_0_95A4345B-8822-4716-B157-98F5838A7893.png"
+File: 9A86FF1D-66B5-4FF1-8E2B-967F02B89FDA.png, suggested name: "foundation-T05-checked_0_4D3CEEDF-233B-4874-9529-19ECF701695E.png"
+File: 20E32629-D1DB-4195-9D7B-9D8601D5FA85.png, suggested name: "foundation-T04-checked_0_B860FD52-BEFD-4B4A-95E5-A0467CE012EB.png"
+File: C7FD9853-4734-45C4-9F17-AA53C83E9681.png, suggested name: "foundation-T03-checked_0_3770A7D3-B858-43AD-82AB-5C7E23027544.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261021-130750/screenshots/manifest.json

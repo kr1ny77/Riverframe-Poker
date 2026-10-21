@@ -123,7 +123,7 @@ private func completeLessonArchive() throws -> PracticeArchive {
     #expect(Set(catalog.observations.map(\.id)).count == 43)
     #expect(catalog.overallProgress.covered == 43)
     #expect(catalog.overallProgress.latestCorrect == 43)
-    #expect(catalog.overallProgress.completedAvailableExercises)
+    #expect(!catalog.overallProgress.completedAvailableExercises) // New curriculum tasks remain available alongside the complete legacy sets.
     #expect(catalog.progress(for: .t60).exerciseIDs.isEmpty)
     #expect(!catalog.progress(for: .t60).completedAvailableExercises)
     #expect(catalog.progress(for: .t06).covered == 3)

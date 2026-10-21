@@ -107,11 +107,12 @@ public extension CourseCatalog {
 public extension CourseCatalogSnapshot {
     /// Union of exercise IDs prevents shared topics from inflating course/module coverage.
     var overallProgress: CatalogTopicProgress {
-        scopedProgress(ids: Set(CourseCatalog.exercises.map(\.id)))
+        scopedProgress(ids: CourseCatalog.allExerciseIDs)
     }
     func progress(in module: CourseModuleID) -> CatalogTopicProgress {
         let topics = Set(CourseCatalog.topics.filter { $0.moduleID == module }.map(\.id))
-        let ids = Set(CourseCatalog.exercises.filter { !topics.isDisjoint(with: $0.topicIDs) }.map(\.id))
+        let ids = Set(CourseCatalog.exercises.filter { !topics.isDisjoint(with: $0.topicIDs) }.map(\.id)
+            + CourseCatalog.foundationExercises.filter { topics.contains($0.topicID) }.map(\.id))
         return scopedProgress(ids: ids)
     }
     private func scopedProgress(ids: Set<CatalogExerciseID>) -> CatalogTopicProgress {

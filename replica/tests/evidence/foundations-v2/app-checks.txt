@@ -1,0 +1,17 @@
+PASS foundations: correct and incorrect answers, mixed writes, UUID protection, exact retry, reload, retry, corruption block and clear
+PASS Catalog: typed exercise, UUID/date restoration, failed reload protection, no phantom on failed write and same-UUID retry
+PASS App persistence: record, duplicate ID, reload, corruption protection, explicit reset
+PASS comparison progress: typed answers, mixed archive, same-ID retry, relaunch, failed reload protection and clear
+PASS Save failure: no phantom result, error visible, same-ID retry succeeds once
+PASS positions: mixed archive, same-ID retry, restore, failed reload protection and clear
+PASS EV: mixed writes preserve all categories, same-ID retry, restore, failed reload, clear and save failure
+PASS blockers: five-category writes, same-ID retry, restore, failed reload, clear and disk failure
+PASS course: derived coverage and repeat after reload; 12 answers / 3 tasks / 4 errors; read preserves bytes
+PASS bot preferences and detached worker: default, pending selection, relaunch, cancellation, stale request
+PASS Application game loop: home paused, cancelled bot, resumed hand, hero actions, completed hand, 6000 chips conserved
+Основной банк 3552: Бот 1
+PASS all five bot profiles: next-hand selection, application loop, short stacks and chip conservation
+PASS Next hand; main-actor model integration finished
+PASS course/game independence: completed hand and new hand preserve all 12 attempts, grades, recommendation and history bytes
+PASS course clear resets observations and recommendations
+PASS BUG-001: failed reload blocks writes; successful reload unlocks recording

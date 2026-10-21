@@ -148,3 +148,19 @@ Contrast/textClipped сохраняются как полная диагност
 ручного разбора маскирования текста границами ScrollView. Пройденный функциональный
 сценарий отделён от полной приёмки доступности. VoiceOver, аппаратная клавиатура,
 iPad и самая узкая поддерживаемая ширина входят в ручную матрицу следующей проверки.
+
+## FOUNDATION — M01–M04
+
+| ID | Контракт | Проверка |
+| --- | --- | --- |
+| F-CONTENT | 39 уникальных новых E-ID; concept/transfer/boundary во всех 10 дополненных темах; 43 прежних aliases сохранены | FoundationRules/Remaining/CatalogTests |
+| F-MATH | SPR, min-raise, cumulative reopening, слои, refund, odd chip, события без возвращения, W/T/L и веса | Независимые константы research; invalid/overflow tests; dirty-outs evaluator oracle |
+| F-VERSION | Чтение1–5 без записи; миграция6; исходные UUID/date/answers/grade; unknown revision quarantine | FoundationArchiveTests + CatalogMigrationTests |
+| F-WRITE | Все writers сохраняют новую категорию; exact UUID retry; collision rejects; corrupt reload blocks; failed write+same UUID retry; clear | Tools/AppChecks.swift actual PracticeStore |
+| F-ROUTE | T03/T04/T05/T06/T07/T08/T09/T21/T22/T28: открыть, ввести ответ, проверить, сохранить; после terminate/launch открыть каждый результат | testFoundationTopicsAndRelaunch |
+| F-CHART | Условная авторская таблица T22 с полным паспортом; отображение и проверка метки | FoundationRemainingTests + UI case T22 |
+| F-LEGACY | Прежние восемь наборов, T11 pot odds/EV, T06/T18 общие блокеры, T02/T21 позиции сохраняются | Старые unit/Application checks; testCatalogSingleExerciseAndRelaunch |
+
+Сохранённый ответ отображается с датой. При ошибке записи экран хранит pending
+attempt до успешного повтора; уход со страницы до сохранения завершает эту попытку.
+XXXL и расширенная ручная доступность выполняются отдельным согласованным этапом.
