@@ -22,6 +22,7 @@ private struct Manifest: Codable {
     let legacyTasks: Int
     let foundationV2Tasks: Int
     let intermediateTasks: Int
+    let advancedTasks: Int
     let topics: [TopicRow]
     let modules: [ModuleRow]
 }
@@ -30,7 +31,7 @@ private struct Manifest: Codable {
         let topics = CourseCatalog.topics.map { topic in
             let old = CourseCatalog.exercises(for: topic.id).map { $0.id.rawValue }
             let new = CourseCatalog.foundations(for: topic.id).map { $0.id.rawValue }
-            let published = topic.moduleID.rawValue <= "M09"
+            let published = topic.moduleID.rawValue <= "M13"
             return TopicRow(id: topic.id.rawValue, title: topic.title, module: topic.moduleID.rawValue,
                             prerequisites: topic.prerequisites.map(\.rawValue), legacyIDs: old, foundationIDs: new,
                             status: published ? "Блок доступен" : (old.isEmpty && new.isEmpty ? "Подготовка" : "Частично"))
@@ -43,7 +44,7 @@ private struct Manifest: Codable {
         }
         let value = Manifest(contentVersion: CourseCatalog.contentVersion, uniqueTasks: CourseCatalog.allExerciseIDs.count,
                              legacyTasks: CourseCatalog.exercises.count, foundationV2Tasks: FoundationLesson.v2Exercises.count,
-                             intermediateTasks: FoundationLesson.intermediateExercises.count, topics: topics, modules: modules)
+                             intermediateTasks: FoundationLesson.intermediateExercises.count, advancedTasks: FoundationLesson.advancedExercises.count, topics: topics, modules: modules)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
         let data = try encoder.encode(value)

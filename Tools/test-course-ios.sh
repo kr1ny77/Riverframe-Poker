@@ -4,7 +4,7 @@ cd "$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)"
 QA_OUTPUT="replica/tests/evidence/course-$(date +%Y%m%d-%H%M%S)"
 QA_TEST=${1:-testCourseRoutesPotOddsAndSample}
 case "$QA_TEST" in
-  testMonteCarloReportAndBayesRounding|testIntermediateTopicsAndRelaunch|testFoundationTopicsAndRelaunch|testLessonTemplateAccessibility|testCatalogExactTaskRoutes|testCatalogSingleExerciseAndRelaunch|testCourseRoutesPotOddsAndSample|testCourseWheelTaxonomyAndOverview|testCourseRepeatCopy|testCourseRepeatNavigationPersistenceAndGameIndependence) ;;
+  testAdvancedICMLeavesAndThresholds|testAdvancedTopicsAndRelaunch|testMonteCarloReportAndBayesRounding|testIntermediateTopicsAndRelaunch|testFoundationTopicsAndRelaunch|testLessonTemplateAccessibility|testCatalogExactTaskRoutes|testCatalogSingleExerciseAndRelaunch|testCourseRoutesPotOddsAndSample|testCourseWheelTaxonomyAndOverview|testCourseRepeatCopy|testCourseRepeatNavigationPersistenceAndGameIndependence) ;;
   *) echo "Unsupported course test" >&2; exit 2 ;;
 esac
 mkdir -p "$QA_OUTPUT"

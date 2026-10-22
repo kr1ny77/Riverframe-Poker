@@ -78,7 +78,8 @@ public enum FoundationLesson {
     /// Frozen revision-2 content remains available to compatibility checks.
     public static let v2Exercises: [FoundationExercise] = rulesExercises + remainingExercises
     public static let intermediateExercises: [FoundationExercise] = estimationExercises + preflopExercises + rangesPostflopExercises
-    public static let exercises: [FoundationExercise] = v2Exercises + intermediateExercises
+    public static let advancedExercises: [FoundationExercise] = aggressionExercises + distributionExercises + icmExercises
+    public static let exercises: [FoundationExercise] = v2Exercises + intermediateExercises + advancedExercises
     public static func exercise(_ id: CatalogExerciseID) -> FoundationExercise? {
         exercises.first { $0.id == id }
     }

@@ -15,6 +15,9 @@ struct FoundationLessonView: View {
     private var latest: FoundationAttempt? {
         store.foundations.filter { $0.exerciseID == exercise.id && $0.contentVersion == exercise.contentVersion }.sorted { $0.date < $1.date }.last
     }
+    private var showsDecisionTree: Bool {
+        [.t12, .t13, .t19, .t20, .t36, .t45, .t46, .t47, .t49].contains(exercise.topicID)
+    }
     private var response: FoundationResponse? {
         switch exercise.answer {
         case .number:
@@ -102,7 +105,9 @@ struct FoundationLessonView: View {
                 Text(responseLabel(checked.response)).font(.subheadline)
                 Text("Проверяемый ответ: " + answerLabel(checked.expected, rounded: true)).font(.headline)
                     .accessibilityIdentifier("foundation.expected")
-                if !exercise.diagram.isEmpty {
+                if showsDecisionTree && !exercise.diagram.isEmpty {
+                    FoundationDecisionTree(rows: exercise.diagram)
+                } else if !exercise.diagram.isEmpty {
                     VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
                         ForEach(exercise.diagram.indices, id: \.self) { index in
                             let row = exercise.diagram[index]
@@ -196,5 +201,33 @@ private struct CourseSimulationPanel: View {
         .padding(AppTheme.Measure.d16)
         .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius))
         .accessibilityIdentifier("foundation.monte-carlo")
+    }
+}
+
+/// Visible branches repeat the complete textual labels used by VoiceOver.
+private struct FoundationDecisionTree: View {
+    let rows: [FoundationDiagramRow]
+    var body: some View {
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+            Text("Дерево решения и расчёт").font(.headline)
+            ForEach(rows.indices, id: \.self) { index in
+                HStack(alignment: .top, spacing: AppTheme.Measure.d12) {
+                    Image(systemName: "arrow.turn.down.right")
+                        .foregroundStyle(AppTheme.muted).accessibilityHidden(true)
+                    VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
+                        Text(rows[index].label).font(.subheadline.weight(.medium))
+                        Text(rows[index].value).monospacedDigit()
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .padding(AppTheme.Measure.d12)
+                .background(AppTheme.surfaceAlt, in: RoundedRectangle(cornerRadius: AppTheme.radius))
+                .accessibilityElement(children: .ignore)
+                .accessibilityLabel(rows[index].label + ": " + rows[index].value)
+            }
+        }
+        .padding(AppTheme.Measure.d16)
+        .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius))
+        .accessibilityIdentifier("foundation.decision-tree")
     }
 }

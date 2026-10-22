@@ -1,3 +1,25 @@
+# ADV — M10–M13, редакция 4
+
+| ID | Критерий | Проверка |
+| --- | --- | --- |
+| ADV-01 | 49 новых ID; три цели каждого из 15 T-ID; всего181 | CourseAdvancedTests |
+| ADV-02 | Fold/call/raise/all-in EV; покрытие стеков; размеры | CourseAggressionTests |
+| ADV-03 | MDF, B/V и B/(B+V) имеют свои знаменатели | CourseAggressionTests + CourseAdvancedTests |
+| ADV-04 | Физические ranges, nut-class, board coverage, EQR>100%, joint outcomes | CourseDistributionsTests + независимое перечисление пар |
+| ADV-05 | R0/R1/tie, все конечные стеки, выплаты, chip/prize EV, BF/risk premium | CourseICMTests + Fraction oracle |
+| ADV-06 | Поле2–6, один/несколько нулевых стеков, симметрия, WTA, одинаковые выплаты, крайние числа | CourseICMTests + CourseAdvancedTests |
+| ADV-07 | Все132 прежние записи +49 новых, UUID/даты/оценки/completion8/8 | baseline a77cc08 fixture + roundtrip181 |
+| ADV-08 | Все15 тем: экран/проверка/сохранение/перезапуск | testAdvancedTopicsAndRelaunch |
+| ADV-09 | ICM tie, числовой порог/risk premium, ICM после side pot | testAdvancedICMLeavesAndThresholds |
+
+Команды: `swift test -c release`, `./Tools/verify.sh`,
+`./Tools/test-course-ios.sh testAdvancedTopicsAndRelaunch`,
+`./Tools/test-course-ios.sh testAdvancedICMLeavesAndThresholds`.
+Независимый oracle: `python3 Tools/check-advanced-course.py` (stdlib Fraction и перестановки).
+XXXL и расширенная ручная доступность отложены пользователем.
+
+Ниже — планы предыдущих этапов.
+
 # INT — M05–M09, редакция 3
 
 | ID | Критерий | Проверка |

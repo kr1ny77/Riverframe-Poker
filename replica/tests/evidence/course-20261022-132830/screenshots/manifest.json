@@ -1,0 +1,107 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "3F87DA86-45EF-44AE-9944-9B49AD446842.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-E.foundation.t50_0_AD785ACB-D1EB-4076-862D-B4911FC4C5EA.icm-after-leaf-restored",
+        "timestamp" : 1792668789.865
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "73279571-1ABE-46F2-AB66-4ADF5E74580D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-E.foundation.t46_0_D29D72D5-1287-4F48-BE56-9E4ECB9BC722.r0-risk-premium-restored",
+        "timestamp" : 1792668771.318
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "A61CAF00-4EB9-4216-8A36-A68231A8062D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-E.foundation.t46_0_48661519-B91F-42E9-82AB-FBB0C17CED76.threshold-restored",
+        "timestamp" : 1792668752.761
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "D0DA662D-9C7A-4DE2-BEF0-810463E266CF.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-E.foundation.t45_0_7CF57491-46E9-43DD-A472-B1C4B53B3B7B.tie-leaf-restored",
+        "timestamp" : 1792668734.152
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "A18DB3EF-CA16-46A2-9ACB-D7E5049C608D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-E.foundation.t50_0_0C609126-8BC6-4E6A-8209-1C1C583550F1.icm-after-leaf-checked",
+        "timestamp" : 1792668707.622
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "72CB0D13-3842-4E60-9521-6D850041BD59.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-E.foundation.t46_0_7F8808F1-CEFA-412B-9FDB-D4971AC2FC37.r0-risk-premium-checked",
+        "timestamp" : 1792668681.332
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "490EDC7E-D413-44BC-8CD7-BE5F2EEC4BE9.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-tree-E.foundation.t46_0_D6889071-6642-456C-9F53-72E6EB4FB662.r0-risk-premium",
+        "timestamp" : 1792668676.673
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "5C34F387-64D3-4220-85EF-09447BF3BDA8.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-E.foundation.t46_0_858A31F6-60F8-40D3-B732-92F98CB4F71C.threshold-checked",
+        "timestamp" : 1792668651.906
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "54E38139-EACD-4B70-A91D-F410605FAEEB.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-tree-E.foundation.t46_0_69ED1316-AC41-436E-A7D8-8BC5B283019B.threshold",
+        "timestamp" : 1792668647.239
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "6A7F066B-7458-47F5-8464-3EB3AAA8B5D8.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-E.foundation.t45_0_D15D4C5F-0C63-42A4-A64A-A75AC20AEFE8.tie-leaf-checked",
+        "timestamp" : 1792668621.239
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "83125580-240A-4AE4-9B56-8ED015CA28D5",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "9E9325B3-364B-4108-B24D-0942D0C19E8B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "advanced-icm-tree-E.foundation.t45_0_4C3AA042-A33C-49F4-BE98-356178DAB51E.tie-leaf",
+        "timestamp" : 1792668614.755
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testAdvancedICMLeavesAndThresholds()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testAdvancedICMLeavesAndThresholds"
+  }
+]
