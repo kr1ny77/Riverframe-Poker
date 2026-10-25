@@ -32,6 +32,7 @@ struct LearningCourseHomeView: View {
 
                 Text("Опубликовано \(totalTasks) разных задач. История прежних наборов входит в охват тем.")
                     .font(.footnote).foregroundStyle(AppTheme.muted)
+                CourseBoundariesIntroduction()
                 CourseNextStepView()
 
                 if !course.repeatLessons.isEmpty {
@@ -94,8 +95,8 @@ struct LearningCourseHomeView: View {
                     .foregroundStyle(AppTheme.muted)
                 }
 
-                DisclosureGroup("Дальнейшая программа") {
-                    Text("Готовятся MDF и bluff-catching, implied odds, размеры ставок, отдельные треки cash и турниров, а также анализ моделей. Условия задач и учебные веса указаны в уроках. GTO требует отдельного проверяемого решения.")
+                DisclosureGroup("Статус учебных моделей") {
+                    Text("Все 60 тем доступны. Арифметика проверяет заданные входы; стратегические примеры используют условные диапазоны. Учебные solver-отчёты показывают способ чтения и проверки модели. Турнирные выплаты разбираются в отдельных задачах; практика проходит за столом 6-max.")
                         .font(.footnote)
                         .foregroundStyle(AppTheme.muted)
                 }

@@ -9,8 +9,8 @@ private let advancedTopics: Set<CourseTopicID> = [.t12, .t13, .t36, .t38, .t30, 
     #expect(tasks.count == 49)
     #expect(Set(tasks.map(\.id)).count == tasks.count)
     #expect(Set(tasks.map(\.topicID)) == advancedTopics)
-    #expect(CourseCatalog.contentVersion == 4)
-    #expect(CourseCatalog.allExerciseIDs.count == 181)
+    #expect(CourseCatalog.contentVersion == 5)
+    #expect(CourseCatalog.allExerciseIDs.count == 181 + FoundationLesson.finalExercises.count)
     let previous = FoundationLesson.v2Exercises + FoundationLesson.intermediateExercises
     #expect(Set(tasks.map(\.id)).isDisjoint(with: Set(previous.map(\.id))))
     for topic in advancedTopics {

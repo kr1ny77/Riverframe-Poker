@@ -666,6 +666,81 @@ final class CriticalFlows: XCTestCase {
         XCTAssertTrue(summary.label.contains("Ответов: 15."))
     }
 
+    func testEarlyBoundaries() {
+        freshRegression()
+        tab("Тренировка")
+        let intro = app.descendants(matching: .any).matching(identifier: "course.boundaries.introduction").firstMatch
+        scrollTo(intro); XCTAssertTrue(intro.exists)
+        screenshot("boundaries-course-entry")
+        let link = app.buttons["course.boundaries.open"]; scrollTo(link); link.tap()
+        XCTAssertTrue(app.staticTexts["catalog.progress.T59"].waitForExistence(timeout: 5))
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        let catalog = app.buttons["course.catalog"]; scrollTo(catalog); catalog.tap()
+        app.buttons["catalog.module.M01"].tap()
+        app.buttons["catalog.topic.T01"].tap()
+        let early = app.descendants(matching: .any).matching(identifier: "course.boundaries.introduction").firstMatch
+        scrollTo(early); XCTAssertTrue(early.exists)
+        screenshot("boundaries-M01-T01")
+    }
+
+    func testFinalTopicsAndRelaunch() {
+        freshRegression()
+        let topics: [CourseTopicID] = [.t41, .t42, .t43, .t44, .t48, .t51, .t52, .t53, .t54, .t55, .t56, .t57, .t58, .t59, .t60]
+        let tasks = topics.compactMap { topic in
+            let exercises = CourseCatalog.foundations(for: topic)
+            return exercises.first
+        }
+        XCTAssertEqual(tasks.count, topics.count)
+        func open(_ exercise: FoundationExercise) {
+            tab("Тренировка")
+            let catalog = app.buttons["course.catalog"]; scrollTo(catalog); catalog.tap()
+            let topic = CourseCatalog.topics.first { $0.id == exercise.topicID }!
+            let module = app.buttons["catalog.module." + topic.moduleID.rawValue]; scrollTo(module); module.tap()
+            let row = app.buttons["catalog.topic." + topic.id.rawValue]; scrollTo(row); row.tap()
+            let task = app.buttons["catalog.exercise." + exercise.id.rawValue]; scrollTo(task); task.tap()
+            XCTAssertTrue(app.buttons["foundation.start"].waitForExistence(timeout: 5))
+        }
+        func backToTraining() {
+            for _ in 0..<4 { app.navigationBars.buttons.element(boundBy: 0).tap() }
+            XCTAssertTrue(app.buttons["course.catalog"].exists)
+        }
+        for exercise in tasks {
+            open(exercise)
+            if exercise.simulation != nil {
+                let report = app.descendants(matching: .any).matching(identifier: "foundation.monte-carlo").firstMatch
+                XCTAssertTrue(report.waitForExistence(timeout: 5)); scrollTo(report); screenshot("final-MC-report")
+            }
+            let start = app.buttons["foundation.start"]; scrollTo(start); start.tap()
+            if !exercise.chart.isEmpty { XCTAssertTrue(app.descendants(matching: .any).matching(identifier: "foundation.chart").firstMatch.exists) }
+            switch exercise.answer.correctResponse {
+            case .number(let value):
+                let input = app.textFields["foundation.answer"]; scrollTo(input); input.tap(); input.typeText(String(value))
+            case .choice(let index):
+                let choice = app.buttons["foundation.choice.\(index)"]; scrollTo(choice); choice.tap()
+            }
+            let check = app.buttons["foundation.check"]; scrollTo(check); XCTAssertTrue(check.isEnabled); check.tap()
+            let grade = app.staticTexts["foundation.grade"]; scrollTo(grade); XCTAssertEqual(grade.label, "Верно по условию.")
+            if [.t12, .t13, .t19, .t20, .t36, .t45, .t46, .t47, .t49].contains(exercise.topicID) {
+                XCTAssertTrue(app.descendants(matching: .any).matching(identifier: "foundation.decision-tree").firstMatch.exists)
+            }
+            let saved = app.staticTexts["foundation.saved"]; scrollTo(saved); XCTAssertTrue(saved.exists)
+            screenshot("final-" + exercise.topicID.rawValue + "-checked")
+            backToTraining()
+        }
+        app.terminate(); app.launch()
+        for exercise in tasks {
+            open(exercise)
+            let restored = app.staticTexts["foundation.restored-result"]
+            scrollTo(restored); XCTAssertEqual(restored.label, "Последний ответ: верно по условию.")
+            screenshot("final-" + exercise.topicID.rawValue + "-restored")
+            backToTraining()
+        }
+        tab("Прогресс")
+        let summary = app.staticTexts["progress.catalog.summary"]
+        scrollTo(summary); XCTAssertTrue(summary.label.contains("15/\(CourseCatalog.allExerciseIDs.count)"))
+        XCTAssertTrue(summary.label.contains("Ответов: 15."))
+    }
+
     func testAdvancedICMLeavesAndThresholds() {
         freshRegression()
         let ids = ["E.foundation.t45.tie-leaf", "E.foundation.t46.threshold", "E.foundation.t46.r0-risk-premium", "E.foundation.t50.icm-after-leaf"]

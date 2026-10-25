@@ -64,3 +64,17 @@ Release Simulator benchmark: Tools/benchmark-bots.sh.
 39 новых заданий и schema6: [план](tests/test-plan.md#foundation--m01m04),
 [результаты](tests/foundations-results.md), [покрытие](tests/course-coverage.md).
 Проверка XXXL отложена по согласованному объёму этапа.
+
+## M14–M18 / полный каталог — 25 октября 2026
+
+| Проверка | Ожидание | Реализация |
+| --- | --- | --- |
+| FINAL-01 | 60 тем,18 модулей,226 уникальных ID;45 новых задач/3 цели | CourseCompletionTests |
+| FINAL-02 | Все числовые ключи совпадают с независимыми примерами | CourseCompletionTests + Theory/Review/RiskTests |
+| FINAL-03 | Полные ICM leaves; сохранение100chips; affine payouts | satelliteLedgerAndAffinePrizesUseIndependentBranches |
+| FINAL-04 | Старые181 результатов и новые45, UUID/даты/grade; повтор записи | baseline181AndEveryFinalAttemptSurviveRestartAndRepeatedSave |
+| FINAL-05 | 15 новых T-маршрутов, ввод, оценка, save и relaunch | testFinalTopicsAndRelaunch |
+| FINAL-06 | Введение до M18, переходT59 и рамкаM01 | testEarlyBoundaries |
+| FINAL-07 | Прежние миграции1–5, corruption/write failure/retry, engine/bots | Tools/verify.sh |
+
+XXXL и расширенная ручная VoiceOver/адаптивная приёмка отложены пользователем.

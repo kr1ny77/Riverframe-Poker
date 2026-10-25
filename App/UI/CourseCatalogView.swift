@@ -20,7 +20,7 @@ struct CourseCatalogView: View {
                     .accessibilityIdentifier("catalog.overall-progress")
                 Text("60 тем · 18 модулей · 4 уровня")
                     .accessibilityIdentifier("catalog.summary")
-                Text("Доступные упражнения используют прежние наборы и сохранённую историю. У тем с частичным материалом показан охват текущих задач.")
+                Text("Все темы содержат задания. Прежние наборы и сохранённая история включены в общий охват.")
                     .font(.footnote).foregroundStyle(AppTheme.muted)
             }
             ForEach(CourseLevel.allCases) { level in
@@ -91,6 +91,7 @@ struct CatalogTopicView: View {
                     ErrorNotice(text: error)
                     Button("Повторить загрузку") { store.reload() }.buttonStyle(SecondaryButtonStyle())
                 }
+                if topic.moduleID == .m01 { CourseBoundariesIntroduction() }
                 if let introduction = topic.introduction { Text(introduction) }
                 if exercises.isEmpty && foundations.isEmpty {
                     Text("Тема включена в программу. Объяснения и упражнения готовятся.")
@@ -190,5 +191,28 @@ struct CatalogProgressSection: View {
                 .accessibilityIdentifier("progress.module.\(module.id.rawValue)")
             }
         }
+    }
+}
+
+/// Always available before advanced study; the same introduction serves M01.
+struct CourseBoundariesIntroduction: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+            Text("Перед практикой").font(.headline)
+                .accessibilityIdentifier("course.boundaries.introduction")
+            Text("Фишки виртуальные и денежной ценности не имеют. Результат одной раздачи зависит от случайности; проверяйте решение по доступным тогда данным.")
+            Text("Заранее выберите время окончания. При усталости, раздражении или желании отыграться сделайте паузу. Личный предел — основание завершить занятие.")
+            Text("При повторяющихся трудностях с соблюдением границ обсудите их с человеком, которому доверяете, или квалифицированным специалистом.")
+            if let topic = CourseCatalog.topics.first(where: { $0.id == .t59 }) {
+                NavigationLink { CatalogTopicView(topic: topic) } label: {
+                    Label("Личные границы · T59", systemImage: "hand.raised")
+                }
+                .accessibilityIdentifier("course.boundaries.open")
+            }
+            Text("Подробный разбор риска — в M18. Эти рекомендации помогают организовать практику; ответ в упражнении проверяет знание сценария.")
+                .font(.footnote).foregroundStyle(AppTheme.muted)
+        }
+        .padding(AppTheme.Measure.d16)
+        .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius))
     }
 }

@@ -158,7 +158,7 @@ func catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version: Int) th
 }
 
 @Test func catalogIDsReferencesAndLegacyOverlapMappingsAreStable() {
-    #expect(CourseCatalog.contentVersion == 4)
+    #expect(CourseCatalog.contentVersion == 5)
     #expect(Set(CourseTopicID.allCases.map(\.rawValue)).count == 60)
     #expect(Set(CourseModuleID.allCases.map(\.rawValue)).count == 18)
     #expect(Set(CourseLevel.allCases).count == 4)

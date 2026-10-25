@@ -9,6 +9,8 @@ private struct TopicRow: Codable {
     let legacyIDs: [String]
     let foundationIDs: [String]
     let status: String
+    let route: String
+    let evidence: [String]
 }
 private struct ModuleRow: Codable {
     let id: String
@@ -23,6 +25,7 @@ private struct Manifest: Codable {
     let foundationV2Tasks: Int
     let intermediateTasks: Int
     let advancedTasks: Int
+    let finalTasks: Int
     let topics: [TopicRow]
     let modules: [ModuleRow]
 }
@@ -31,10 +34,12 @@ private struct Manifest: Codable {
         let topics = CourseCatalog.topics.map { topic in
             let old = CourseCatalog.exercises(for: topic.id).map { $0.id.rawValue }
             let new = CourseCatalog.foundations(for: topic.id).map { $0.id.rawValue }
-            let published = topic.moduleID.rawValue <= "M13"
+            let published = !old.isEmpty || !new.isEmpty
             return TopicRow(id: topic.id.rawValue, title: topic.title, module: topic.moduleID.rawValue,
                             prerequisites: topic.prerequisites.map(\.rawValue), legacyIDs: old, foundationIDs: new,
-                            status: published ? "Блок доступен" : (old.isEmpty && new.isEmpty ? "Подготовка" : "Частично"))
+                            status: published ? "Блок доступен" : "Подготовка",
+                            route: "Тренировка → Каталог → " + topic.moduleID.rawValue + " → " + topic.id.rawValue + " → E-ID",
+                            evidence: Array(Set(CourseCatalog.exercises(for: topic.id).map { $0.calculation.title } + CourseCatalog.foundations(for: topic.id).map { $0.resultKind.title })).sorted())
         }
         let snapshot = CourseCatalogSnapshot(course: LearningCourseSnapshot(archive: PracticeArchive()))
         let modules = CourseCatalog.modules.map { module in
@@ -44,7 +49,7 @@ private struct Manifest: Codable {
         }
         let value = Manifest(contentVersion: CourseCatalog.contentVersion, uniqueTasks: CourseCatalog.allExerciseIDs.count,
                              legacyTasks: CourseCatalog.exercises.count, foundationV2Tasks: FoundationLesson.v2Exercises.count,
-                             intermediateTasks: FoundationLesson.intermediateExercises.count, advancedTasks: FoundationLesson.advancedExercises.count, topics: topics, modules: modules)
+                             intermediateTasks: FoundationLesson.intermediateExercises.count, advancedTasks: FoundationLesson.advancedExercises.count, finalTasks: FoundationLesson.finalExercises.count, topics: topics, modules: modules)
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
         let data = try encoder.encode(value)

@@ -1,0 +1,26 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "92D12115-3EF2-4D7A-8325-08CDF3514AB2",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "A059297E-FC72-4D0D-9D83-136592856B54.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "boundaries-M01-T01_0_04AFCAA8-FF07-4ACD-9ADE-BA2E311F0B69.png",
+        "timestamp" : 1792952365.146
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "92D12115-3EF2-4D7A-8325-08CDF3514AB2",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "45D4F07B-05DE-48C0-91E8-A628C36063A0.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "boundaries-course-entry_0_3D570FB7-A476-4F54-AB52-6F24D79AFA0A.png",
+        "timestamp" : 1792952357.822
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testEarlyBoundaries()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testEarlyBoundaries"
+  }
+]

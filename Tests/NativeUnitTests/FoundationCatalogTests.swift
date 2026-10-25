@@ -6,7 +6,7 @@ import Testing
     let expected: [CourseTopicID: Int] = [.t03: 6, .t04: 6, .t05: 5, .t06: 3, .t07: 3, .t08: 3, .t09: 3, .t21: 3, .t22: 4, .t28: 3]
     #expect(FoundationLesson.v2Exercises.count == 39)
     #expect(CourseCatalog.exercises.count == 43)
-    #expect(CourseCatalog.allExerciseIDs.count == 181)
+    #expect(CourseCatalog.allExerciseIDs.count == 181 + FoundationLesson.finalExercises.count)
     #expect(Set(FoundationLesson.v2Exercises.map(\.id)).isDisjoint(with: Set(CourseCatalog.exercises.map(\.id))))
     for (topic, count) in expected {
         let exercises = CourseCatalog.foundations(for: topic)
