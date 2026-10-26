@@ -1,0 +1,138 @@
+[
+  {
+    "path": "App/Application/GameViewModel.swift",
+    "sha256": "8ba367e472034c01ca177e3f68a7472d872ea5da66352278c60accc9854c1620"
+  },
+  {
+    "path": "App/Persistence/PracticeStore.swift",
+    "sha256": "ec25ca584c5495563607990e2107e2f179e26559fe3327360a4c4f48f81e5373"
+  },
+  {
+    "path": "Sources/PokerCore/BlockerLesson.swift",
+    "sha256": "8290e900311092b5d482ef899aa50427d8d7dc38684c22d9125fad5e5c2701fa"
+  },
+  {
+    "path": "Sources/PokerCore/BotPolicy.swift",
+    "sha256": "9e35143aa9db0d5012aeb7add322fc3a921691943e3ff8621a92f88ebbf323d1"
+  },
+  {
+    "path": "Sources/PokerCore/Cards.swift",
+    "sha256": "bf46c0e3763745de77050d224ce2d0d6a1ceffc782af91fbb4a86a455b157f40"
+  },
+  {
+    "path": "Sources/PokerCore/CourseAggression.swift",
+    "sha256": "c0591db5774a4df90bd5b5f12331af16c65e76a3bb9cf4167f6cc3e037640177"
+  },
+  {
+    "path": "Sources/PokerCore/CourseCatalog.swift",
+    "sha256": "86200d4bd194d8f6ddb4eeeae3f8ad4325f01396eb6ee8ceb173c805990224b5"
+  },
+  {
+    "path": "Sources/PokerCore/CourseDistributions.swift",
+    "sha256": "ddbc9acef03b5b674ed2f5ed5c72c719bd9d0ab5ce2bcef0d42257890ffde1cf"
+  },
+  {
+    "path": "Sources/PokerCore/CourseEstimation.swift",
+    "sha256": "d0b34ebc90c06433395504415d46f03df77d076fbdf956a741544572ae2c91be"
+  },
+  {
+    "path": "Sources/PokerCore/CourseICM.swift",
+    "sha256": "ea287b02a7457e26da01aa041d5796a77fab209b27d569c79cb73db982cb260a"
+  },
+  {
+    "path": "Sources/PokerCore/CourseLearning.swift",
+    "sha256": "ecddf556e90b3e79990c0deb595e69cd15804d0aeb44dde353d0cbec66c72f45"
+  },
+  {
+    "path": "Sources/PokerCore/CoursePreflop.swift",
+    "sha256": "7bcf722084c08f590a9e3e09911169d5a4e1147adecb5512c73d3cacbc0f1e3a"
+  },
+  {
+    "path": "Sources/PokerCore/CourseRangesPostflop.swift",
+    "sha256": "c6a15b000a8557ec6d1076dec065662f67f2eb12eb82e84ee9cdc02c91fa11ff"
+  },
+  {
+    "path": "Sources/PokerCore/CourseReview.swift",
+    "sha256": "c69b49a505514b13faaa390e825f52272fdafb519eac388e41cb35063879ce50"
+  },
+  {
+    "path": "Sources/PokerCore/CourseRisk.swift",
+    "sha256": "5ede6cf7e511d5952635df7b1e5d040502f84ea5514cc9255f2b884a8ca92ab7"
+  },
+  {
+    "path": "Sources/PokerCore/CourseTheory.swift",
+    "sha256": "3e7a3026c11b7dc1ea167d1553a17ea3cd7042eeeadb03355d9163940f02c454"
+  },
+  {
+    "path": "Sources/PokerCore/EVCallLesson.swift",
+    "sha256": "cc91a0abee2a135850bee88a2dd4bc06c9d6813158757e36fc823fca859f08c5"
+  },
+  {
+    "path": "Sources/PokerCore/EquityLesson.swift",
+    "sha256": "2e388625eb8b2fed0e85e174fcb2242cfb2dba29f0af3cb555e463a03acf46b6"
+  },
+  {
+    "path": "Sources/PokerCore/FoundationLesson.swift",
+    "sha256": "8d487fd9cb78e54091d3d134e8a863455a4e2a495731768c95893872f1f8dc13"
+  },
+  {
+    "path": "Sources/PokerCore/FoundationRemaining.swift",
+    "sha256": "3a20f34b696cfff4caa2044f8067591b386cd2ba515025e5fe133ca8e37b4b06"
+  },
+  {
+    "path": "Sources/PokerCore/FoundationRules.swift",
+    "sha256": "0779bd21e2359cbf0877c315826e5c0e508a9914dccd883a24c145c7d3a28c96"
+  },
+  {
+    "path": "Sources/PokerCore/HandComparisonLesson.swift",
+    "sha256": "c72f3f2cda3dfcc36f94b27cc744c272da6bdc0fb2a1478a5b9c75fb073adfa4"
+  },
+  {
+    "path": "Sources/PokerCore/HoldemGame.swift",
+    "sha256": "cf557fe5826c2bbae32750cd6184b2cdde80c4eb935105a70d8759cd6d4f5138"
+  },
+  {
+    "path": "Sources/PokerCore/LearningCourse.swift",
+    "sha256": "3fb9c617b0d44191365fa47786b31d2a90768cc4d6922e2b84a3cd02357c262a"
+  },
+  {
+    "path": "Sources/PokerCore/LessonPresentation.swift",
+    "sha256": "0353243cd196fb046bf69cff1fb241112e3a9393e3e4ee286bbf72a17ed6c720"
+  },
+  {
+    "path": "Sources/PokerCore/OutsLesson.swift",
+    "sha256": "40ed91e1c96e723c6b37535f086e722e2ec8f6512cf75d6da6baeb29254a4171"
+  },
+  {
+    "path": "Sources/PokerCore/PositionLesson.swift",
+    "sha256": "d5405e9a2da1b0475f1d23422c977960b471f42c9de7cb6de95866193b1c6105"
+  },
+  {
+    "path": "Sources/PokerCore/Practice.swift",
+    "sha256": "45c59b5868c341687206842b7a97b2be00f6532ee4ceff51bb93d8077ba789bf"
+  },
+  {
+    "path": "Sources/PokerCore/RangeEquityLesson.swift",
+    "sha256": "03f95ed4bbf9b5e0caf3954eb983f9a12a36c7c463cdd82f32ed766d9863585c"
+  },
+  {
+    "path": "Tests/Fixtures/README.md",
+    "sha256": "864ba4671caea36fa1a82f4c2552559bf60e1e37383d5d68c79848052efc78c6"
+  },
+  {
+    "path": "Tests/Fixtures/course-v2-all82.json",
+    "sha256": "95921ac02eeb8b1aec7a9b9c75959aab3a88e6c7c5d1576299ee266dabc236a9"
+  },
+  {
+    "path": "Tests/Fixtures/course-v3-all132.json",
+    "sha256": "4128620f6d9f4dfc9e057bfa9cbc275b72eb9efcdfced311fb322bce18fe2e5d"
+  },
+  {
+    "path": "Tests/Fixtures/course-v4-all181.json",
+    "sha256": "69a57ea20bfa0c9fc432c4bdf170405183bf3f113ed4cdad7e8e02fd781dc159"
+  },
+  {
+    "path": "Tests/Fixtures/course-v4-math-oracle.json",
+    "sha256": "7bac692e80f7f1f5180ad493bef68d1d86ac0cad34a4464acb3b8e6a3407cfe4"
+  }
+]
