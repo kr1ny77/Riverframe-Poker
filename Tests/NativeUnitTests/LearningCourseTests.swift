@@ -146,7 +146,11 @@ private func completeCourseArchive() throws -> PracticeArchive {
     let history=PracticeHistory(fileURL:directory.appendingPathComponent("audit.json"))
     try history.saveArchive(archive)
     let loaded=try history.loadArchive()
-    #expect(loaded == archive)
+    #expect(loaded.attempts == archive.attempts && loaded.comparisons == archive.comparisons
+        && loaded.positions == archive.positions && loaded.evCalls == archive.evCalls
+        && loaded.blockers == archive.blockers && loaded.foundations == archive.foundations)
+    #expect(loaded.diagnostics == CourseLearning.inferredDiagnostics(catalog: CourseCatalogSnapshot(
+        course: LearningCourseSnapshot(archive: archive), foundations: archive.foundations)))
     let restored=LearningCourseSnapshot(archive:loaded).progress(.potOdds)
     #expect(restored.latestCorrect == 2 && restored.recentErrors == 2 && restored.covered == 3)
 }

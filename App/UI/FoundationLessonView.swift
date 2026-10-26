@@ -127,6 +127,7 @@ struct FoundationLessonView: View {
                 Text(exercise.assumptions).font(.footnote).foregroundStyle(AppTheme.muted)
                 if saved {
                     Text("Результат сохранён на устройстве.").accessibilityIdentifier("foundation.saved")
+                    if !checked.isCorrect { LearningErrorEditor(attemptID: checked.id) }
                     Button("К результату") { started = false; self.checked = nil; number = ""; selection = nil; saved = false }
                         .buttonStyle(SecondaryButtonStyle()).accessibilityIdentifier("foundation.result")
                     if let next = nextExercise {

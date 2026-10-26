@@ -89,7 +89,7 @@ func catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version: Int) th
 
     try PracticeHistory(fileURL: path).saveArchive(loaded)
     let normalized = try #require(JSONSerialization.jsonObject(with: Data(contentsOf: path)) as? [String: Any])
-    #expect(normalized["version"] as? Int == 6)
+    #expect(normalized["version"] as? Int == 7)
     let restored = try PracticeHistory(fileURL: path).loadArchive()
     let restoredCourse = LearningCourseSnapshot(archive: restored)
     #expect(restored == loaded)
@@ -128,7 +128,11 @@ func catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version: Int) th
     let history = PracticeHistory(fileURL: path)
     try history.saveArchive(archive)
     let restored = try history.loadArchive()
-    #expect(restored == archive)
+    #expect(restored.attempts == archive.attempts && restored.comparisons == archive.comparisons
+        && restored.positions == archive.positions && restored.evCalls == archive.evCalls
+        && restored.blockers == archive.blockers && restored.foundations == archive.foundations)
+    #expect(restored.diagnostics == CourseLearning.inferredDiagnostics(catalog: CourseCatalogSnapshot(
+        course: LearningCourseSnapshot(archive: archive), foundations: archive.foundations)))
 
     let source = LearningCourseSnapshot(archive: archive)
     let restoredCourse = LearningCourseSnapshot(archive: restored)

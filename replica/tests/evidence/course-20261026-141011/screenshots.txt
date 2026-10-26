@@ -1,0 +1,6 @@
+Exported 3 attachments for: CriticalFlows/testLearningProgressAndReview():
+File: F44787E2-4EA4-45CB-A1C4-021999FAFAA6.png, suggested name: "learning-progress-cleared_0_6B2DFC61-7BA9-4A65-826C-C7C3A196A3D3.png"
+File: 28D78378-C949-44A5-AF15-DBDD5676DF49.png, suggested name: "learning-early-review-alternate-task_0_D77C4648-23A1-4192-AF83-E533B3ACC12F.png"
+File: 6BD5F705-00CC-4E07-AF75-5CCFD19CA895.png, suggested name: "learning-wrong-answer-diagnosis_0_CAD54199-CEC7-48EB-89AC-6FF44699FCCA.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/tests/evidence/course-20261026-141011/screenshots/manifest.json

@@ -96,6 +96,69 @@ private final class BotWorkerProbe: @unchecked Sendable {
     print("PASS foundations: correct and incorrect answers, mixed writes, UUID protection, exact retry, reload, retry, corruption block and clear")
 }
 
+@MainActor private func checkLearningDiagnosticsAndRetry(in directory: URL) throws {
+    let parent = directory.appendingPathComponent("learning-blocked")
+    try Data("block".utf8).write(to: parent)
+    let file = parent.appendingPathComponent("history.json")
+    let store = PracticeStore(fileURL: file)
+    let task = CourseCatalog.foundations(for: .t03)[0]
+    let alternate = CourseCatalog.foundations(for: .t03)[1]
+    let epoch = Date(timeIntervalSinceReferenceDate: 80_000)
+    let wrong = FoundationAttempt(exercise: task, response: .number(999),
+        id: UUID(uuidString: "00000000-0000-4000-8000-000000000801")!, date: epoch)
+    precondition(!wrong.isCorrect)
+    precondition(store.learning(now: epoch).reviews.isEmpty && store.diagnostics.isEmpty)
+    do { try store.record(wrong); fatalError("Expected learning write failure") } catch {}
+    precondition(store.foundations.isEmpty && store.diagnostics.isEmpty && store.errorMessage != nil)
+    try FileManager.default.removeItem(at: parent)
+    try store.record(wrong); try store.record(wrong)
+    precondition(store.foundations == [wrong] && store.diagnostics.count == 1)
+    let restored = PracticeStore(fileURL: file)
+    precondition(restored.foundations == [wrong] && restored.diagnostics == store.diagnostics)
+    let scheduled = restored.learning(now: epoch).reviews.first { $0.topicID == .t03 }!
+    precondition(scheduled.dueDate == epoch.addingTimeInterval(86400) && scheduled.exerciseID != task.id)
+
+    // A blocked destination tests atomic relabelling and successful retry with the same source UUID.
+    let goodBytes = try Data(contentsOf: file)
+    try FileManager.default.removeItem(at: file)
+    try FileManager.default.createDirectory(at: file, withIntermediateDirectories: true)
+    do { try restored.classifyError(attemptID: wrong.id, kind: .attention); fatalError("Expected diagnosis write failure") } catch {}
+    precondition(restored.diagnostics.first?.kind == .arithmetic)
+    do { try restored.clear(); fatalError("Expected clear failure") } catch {}
+    precondition(restored.foundations == [wrong] && restored.diagnostics.count == 1)
+    try FileManager.default.removeItem(at: file)
+    try goodBytes.write(to: file)
+    try restored.classifyError(attemptID: wrong.id, kind: .attention)
+    try restored.classifyError(attemptID: wrong.id, kind: .attention)
+    precondition(restored.diagnostics.count == 1 && restored.diagnostics[0].kind == .attention)
+    precondition(PracticeStore(fileURL: file).diagnostics == restored.diagnostics)
+
+    let validArchive = try Data(contentsOf: file)
+    let corrupt = Data("learning-corrupt-file".utf8)
+    try corrupt.write(to: file)
+    restored.reload()
+    do { try restored.record(wrong); fatalError("Wrote after corrupt learning reload") } catch {}
+    do { try restored.classifyError(attemptID: wrong.id, kind: .rules); fatalError("Relabelled after corrupt reload") } catch {}
+    let preservedCorrupt = try Data(contentsOf: file)
+    precondition(preservedCorrupt == corrupt)
+    precondition(restored.foundations == [wrong] && restored.diagnostics[0].kind == .attention)
+    try validArchive.write(to: file)
+    restored.reload()
+    precondition(restored.errorMessage == nil)
+    let due = FoundationAttempt(exercise: alternate, response: alternate.answer.correctResponse,
+        id: UUID(uuidString: "00000000-0000-4000-8000-000000000802")!, date: epoch.addingTimeInterval(86400))
+    try restored.record(due); try restored.record(due)
+    let after = PracticeStore(fileURL: file)
+    precondition(after.foundations == [wrong, due] && after.diagnostics.count == 1)
+    precondition(after.learning(now: due.date).reviews.first?.stage == 1)
+    let metrics = LearningMetrics(progress: after.catalog.progress(for: .t03))
+    precondition(metrics.attempts == 2 && metrics.distinctTemplates == 2 && metrics.firstTemplateAccuracy == 0.5)
+    try after.clear()
+    let empty = PracticeStore(fileURL: file)
+    precondition(empty.foundations.isEmpty && empty.diagnostics.isEmpty && empty.learning().reviews.isEmpty)
+    print("PASS learning progress: empty, wrong, category, atomic write/clear failures, UUID retry, corruption lock, reload, due review and clear")
+}
+
 @main
 struct AppChecks {
     @MainActor static func main() async throws {
@@ -122,6 +185,7 @@ struct AppChecks {
             return
         }
         try checkFoundationPersistence(in: directory)
+        try checkLearningDiagnosticsAndRetry(in: directory)
         // Catalog uses the same typed result and transaction as the original pot-odds lesson.
         let catalogFile = directory.appendingPathComponent("catalog/history.json")
         let catalogStore = PracticeStore(fileURL: catalogFile)

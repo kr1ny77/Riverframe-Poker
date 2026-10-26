@@ -1,0 +1,35 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "5689AE62-8E96-4031-A25A-4044F683761C",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "23D25451-08B6-4497-B951-4E6B685290A5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "learning-progress-cleared_0_FA8546DC-1619-4EA9-97B2-6EE4A7128C22.png",
+        "timestamp" : 1793020108.098
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "5689AE62-8E96-4031-A25A-4044F683761C",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "6A44F240-7599-4227-AF36-02F0EF4FAC39.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "learning-early-review-alternate-task_0_4604D833-7675-41B4-BE37-8465B02040A2.png",
+        "timestamp" : 1793020068.536
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "5689AE62-8E96-4031-A25A-4044F683761C",
+        "deviceName" : "Poker QA Course iPhone17e",
+        "exportedFileName" : "D58C165B-8EBD-4234-A475-A0FF24846CDD.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "learning-wrong-answer-diagnosis_0_F0BA9EF3-73C1-4EAA-88EB-26DF01449369.png",
+        "timestamp" : 1793020029.565
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testLearningProgressAndReview()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testLearningProgressAndReview"
+  }
+]

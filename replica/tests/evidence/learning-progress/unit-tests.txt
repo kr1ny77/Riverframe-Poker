@@ -1,0 +1,349 @@
+Building for production...
+[3 / 11] PokerCore
+[5 / 12] PokerCore
+[9 / 12] PokerNativeTests-product
+[14 / 18] PokerNativeTests-product
+[16 / 18] PokerNativeTests-product
+Build complete! (60,84 sec)
+Test Suite 'All tests' started at 2026-10-26 14:11:06.602.
+Test Suite 'All tests' passed at 2026-10-26 14:11:06.608.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.006) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test knownHandEquityExactCountsAndTies() started.
+◇ Test policyActionsApplyThroughEngineAndPreserveShortStackLedger() started.
+◇ Test sidePotExamplesMatchIndependentResearchConstants() started.
+◇ Test monteCarloMatchesExactEquityWithinReportedSamplingError() started.
+◇ Test knownHandEquityRejectsImpossibleCardsAndPersists() started.
+◇ Test reviewMathAndDecisionTimeBoundariesStayExplicit() started.
+◇ Test riverToyDenominatorsStayDistinctAndBoundaryCallsMatchEV() started.
+◇ Test recordedMonteCarloReportMatchesFrozenAlgorithmAndIndependentStatistics() started.
+◇ Test shortOpeningAfterCheckFollowsFullBetProfile() started.
+◇ Test positionsMigrateLegacyArchivesAndRejectTampering() started.
+◇ Test foundationRuleAnswersAcceptOnlyExpectedTypedResponses() started.
+◇ Test foundationRulesMathRejectsNonFiniteArithmeticResults() started.
+◇ Test matchingPenniesAndFixedSuitRangesHaveTheDocumentedBoundaries() started.
+◇ Test catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test laterWrongResetsScheduleAndExplicitDiagnosticWinsOverInference() started.
+◇ Test finalNumericKeysMatchIndependentExamples() started.
+◇ Test namedRiverHandsMatchTheDeclaredCallAndRemovalBranches() started.
+◇ Test icmSidePotAccountingKeepsAllChipsAndExercisesCoverFiveTopics() started.
+◇ Test foundationCoverageUsesCurrentRevisionAndChronologicalLatestWithoutChangingLegacyCompletion() started.
+◇ Test catalogAtomicWriteFailureLeavesTargetDirectoryUntouched() started.
+◇ Test reviewNumericKeysAndPhysicalCardRemovalMatchIndependentArithmetic() started.
+◇ Test completeDealsHaveUniqueCards() started.
+◇ Test icmRejectsInvalidInputsAndChecksWTLDenominator() started.
+◇ Test theoryMathRejectsBrokenModels() started.
+◇ Test positionLessonSeatsAndAnswerKeys() started.
+◇ Test sprExamplesMatchIndependentResearchConstants() started.
+◇ Test distributionMathRejectsInvalidInputsAndCorruptJointModels() started.
+◇ Test mdfRatioFractionAndBluffCatcherUseTheirOwnDenominators() started.
+◇ Test nextExerciseStaysWithinTopicAndEndsAtLastTask() started.
+◇ Test monteCarloReportUsesUnbiasedVarianceAndRejectsInvalidCounts() started.
+◇ Test preflopExercisesCoverThreePurposesForEveryPreflopTopic() started.
+◇ Test challengeComparesRaisesWithTheValueOfFreeCheck() started.
+◇ Test courseUniqueTemplatesLatestGradesAndPersistence() started.
+◇ Test comparisonQuestionDecodingRejectsTamperedCardsAndIDs() started.
+◇ Test versionSixRoundTripPreservesAllFoundationResponsesAndLegacySaveKeepsThem() started.
+◇ Test unknownFoundationRevisionRoundTripsAndIsIgnoredByCurrentCatalog() started.
+◇ Test sameCategoryWrongResetsWhileOtherCategoryQueueSurvives() started.
+◇ Test handComparisonCoversEveryCategoryAndKnownShowdowns() started.
+◇ Test advancedICMMatchesIndependentExactFractionOracleForAllLeavesAndSixPlayers() started.
+◇ Test courseEqualDatesPreserveRecordedOrder() started.
+◇ Test bayesUsesIndependentNumeratorNormalizerAndChangedLikelihood() started.
+◇ Test icmSupportsEqualPayoutsAndOneEliminatedPlayer() started.
+◇ Test equityRejectsEveryDuplicateLocation() started.
+◇ Test botObservationAdmitsOnlyOwnCardsAndPublicState() started.
+◇ Test replayedActionAndSettlementAreRejected() started.
+◇ Test positionPriceDrawAndStackCorpusShowsPlannedPolicyDifferences() started.
+◇ Test resultKindsLabelMethodsWithoutInventingSamplesOrTables() started.
+◇ Test levelProgressUsesExerciseUnionAndEmptyHistoryRecommendsUnseenTask() started.
+◇ Test riskMathMatchesIndependentWorkedValues() started.
+◇ Test aggressionEVTreesUseIndependentFoldCallAndStackInputs() started.
+◇ Test foundationAttemptPreservesTypedAnswerAndResult() started.
+◇ Test randomLegalActionsMatchIndependentPotLedger() started.
+◇ Test preflopMathRejectsInvalidAndOverflowingInputs() started.
+◇ Test preflopMathMatchesIndependentResearchConstants() started.
+◇ Test evCallRejectsInvalidInputsAndQuestionSubstitution() started.
+◇ Test rangesRejectInvalidProbabilitiesNormalizersAndAmounts() started.
+◇ Test dirtyOutExampleAgreesWithTheExistingExactEvaluator() started.
+◇ Test adjacentProfilesHaveFixedDistinguishingScenarios() started.
+◇ Test legacyV1MigratesAtomicallyAndNumericWritesPreserveComparisons() started.
+◇ Test completedCourseCoversEveryTopicAndModuleWithUniqueRoutes() started.
+◇ Test completedFourthReviewLeavesQueueUntilAnotherWrongAnswer() started.
+◇ Test baselineV3All132ResultsSurviveAdvancedWritesAndRelaunch() started.
+◇ Test sevenCardIndependentReference() started.
+◇ Test distributionLessonsHaveThreePurposesAndCompletePassports() started.
+◇ Test baselineV2All82ResultsSurviveIntermediateWritesWithIDsDatesGradesAndCompletion() started.
+◇ Test courseAccuracyDenominatorsAndTopicIsolation() started.
+◇ Test sameTimestampUsesUUIDTieBreakForReplay() started.
+◇ Test comparisonAttemptsRoundTripAndDetectTamperedResult() started.
+◇ Test physicalBoardsAndMadeHandExamplesAgreeWithEvaluator() started.
+◇ Test reviewLessonsCoverSatelliteAndReviewTopicsWithThreePurposes() started.
+◇ Test riskMathRejectsBrokenModelsAndUnknownSignalDenominator() started.
+◇ Test courseRepeatThresholdsAndRecentWindow() started.
+◇ Test advancedCatalogHasStableIDsThreePurposesAndDisclosedModels() started.
+◇ Test riskLessonsCoverFiveTopicsWithThreePurposes() started.
+◇ Test blockerArchiveMigrationAndTampering() started.
+◇ Test foundationRulesExercisesHaveStableCoverageAndTeachingFields() started.
+◇ Test estimationArithmeticUsesIndependentEVRakeAndSamplingUnits() started.
+◇ Test blockerLessonVectorsWeightsAndCounterexample() started.
+◇ Test distributionMathUsesDeclaredDenominatorsAndSupportsAboveHundredEQR() started.
+◇ Test learningMetricsDescribeFirstTemplatesAndProjectCriterionWithoutClaimingMastery() started.
+◇ Test lessonGuidesCoverEveryPublishedLessonWithReadableSteps() started.
+◇ Test foundationStudyMathMatchesIndependentResearchConstants() started.
+◇ Test blockerAll169ClassesPartitionDeckAndRemoveExactly() started.
+◇ Test courseCatalogPrerequisitesAndFullCoverage() started.
+◇ Test allBotProfilesReturnLegalActionsForFixedCorpus() started.
+◇ Test schemaSevenRoundTripPreservesExplicitKindAndAllSourceFields() started.
+◇ Test estimationExercisesCoverAllPurposesAndKeepTypedKeys() started.
+◇ Test satellitePassportUsesAllStacksAndSeparateTicketLeaves() started.
+◇ Test theoryLessonsCoverM14AndM15WithTypedAnswers() started.
+◇ Test fullLessonMixedAnswersPersistAndRestore() started.
+◇ Test courseWheelErrorRetainsItsSpecificCategory() started.
+◇ Test catalogProgressPreservesHistoricalRecordsAndDeduplicatesSharedExercises() started.
+◇ Test baseline181AndEveryFinalAttemptSurviveRestartAndRepeatedSave() started.
+◇ Test allTopicsHaveTypedDiagnosisAndLevelMetricsDeduplicateSharedIDs() started.
+◇ Test observationRatesSeparateArithmeticFromUncertainty() started.
+◇ Test icmConservesPayoutsAndRespectsScaleAndPermutationSymmetry() started.
+◇ Test bestFiveQuestionsHaveOnePhysicalBestSubsetAndRejectWrongAnswers() started.
+◇ Test seededPoliciesAreRepeatableAndSensitiveOnlyToTheirInputSeed() started.
+◇ Test secretNoninterferenceHoldsOnEveryStreet() started.
+◇ Test amateurRemainsTheIndependentBasicV1Oracle() started.
+◇ Test specialSevenCardKickersAndTies() started.
+◇ Test catalogExercisesResolveToTheirTypedLegacyProviders() started.
+◇ Test potOddsAndStoredHistoryAreConsistent() started.
+◇ Test monteCarloIsSeedStableAndUsesHalfBankForTies() started.
+◇ Test courseTwoTaskSampleAndRepeatAfterCompletion() started.
+◇ Test weightedTransferUsesPhysicalResearchBranchesWithChangedWeights() started.
+◇ Test preflopTypedAnswersMatchPublishedPassportExamples() started.
+◇ Test rangeEquityValidationScalingAndPersistence() started.
+◇ Test raisingExamplesMatchIndependentResearchConstants() started.
+◇ Test corruptDiagnosticDateCannotMoveReviewAndTimeZonesDoNotShiftElapsedIntervals() started.
+◇ Test profilesRespectUnreopenedShortRaiseAndSidePotCaps() started.
+◇ Test categoricalArchiveRejectsTamperedGradeAndDuplicateIdentity() started.
+◇ Test aggressionBatchHasThreePurposesPerTopicAndFullTeachingPassport() started.
+◇ Test t28BoundaryKeepsPokerModelContextForFormatTransfer() started.
+◇ Test generatedQuestionsStayValidAcrossSeeds() started.
+◇ Test rangeAndPostflopBatchHasThreePurposesAndExplicitContexts() started.
+◇ Test blockerInputValidationAndEmptyRange() started.
+◇ Test evCallArchiveMigrationMixedWritesAndTampering() started.
+◇ Test rangeEquityExactWeightedOracle() started.
+◇ Test schemaSevenRejectsDuplicateOrMismatchedDiagnosticsWithoutChangingBytes() started.
+◇ Test foundationAnswersAcceptOnlyTheirTypedExpectedResponses() started.
+◇ Test catalogIDsReferencesAndLegacyOverlapMappingsAreStable() started.
+◇ Test courseTaxonomyAndUnknownNumericIntegrity() started.
+◇ Test archiveVersionsOneThroughFiveMigrateToSixWithoutChangingLegacyRecords() started.
+◇ Test catalogPreservesUnmappedLegacyAttemptsWithoutCountingThemAsCoverage() started.
+◇ Test foundationRulesMathRejectsInvalidInputs() started.
+◇ Test catalogSchemaFiveRoundTripPreservesAllStoredFieldsAndCompletion() started.
+◇ Test satelliteLedgerAndAffinePrizesUseIndependentBranches() started.
+◇ Test preCancelledDecisionStopsBeforePolicyEvaluation() started.
+◇ Test foundationRemainingHasThreePurposesForEveryCoveredTopic() started.
+◇ Test aggressionMathRejectsInvalidAndOverflowingInputs() started.
+◇ Test boardCompletersAndValueBranchesAgreeWithIndependentEvaluator() started.
+◇ Test mixedEVAndSimplificationUseIndependentWeightedArithmetic() started.
+◇ Test decisionSeedChangesPreserveDealingWithIdenticalPublicActions() started.
+◇ Test t22ChartCarriesItsPassportAndGradesTheDisplayedMark() started.
+◇ Test postflopPricesAndRiverValueUseIndependentDenominators() started.
+◇ Test earlyCorrectDoesNotConsumeReviewAndDueDifferentTaskAdvancesStage() started.
+◇ Test catalogRejectsInvalidOrCorruptArchivesWithoutChangingTheirBytes() started.
+◇ Test equityMatchesIndependentOracle(_:) started.
+◇ Test archiveRejectsForgedFoundationGradeDuplicatesCorruptionAndUnsupportedVersionWithoutWriting() started.
+◇ Test legacySchemasProjectStableWrongAnswerDiagnosticsWithoutWriting(version:) started.
+◇ Test advancedPhysicalCombinationCountsUseIndependentPairEnumeration() started.
+◇ Test wrongAnswerCreatesDeterministicOneDayReviewWithDifferentTask() started.
+◇ Test evCallExactExamplesAgainstIndependentBranches() started.
+◇ Test advancedPublishedNumericKeysMatchIndependentWorkedExamples() started.
+◇ Test intermediateCatalogHasStableUniqueIDsAndAllLearningPurposes() started.
+◇ Test everyTemplateExplanationMatchesEvaluatorRanksAndWinner() started.
+◇ Test publishedFoundationModulesPreserveAliasesAndAddAllThreeLearningPurposes() started.
+◇ Test exhaustiveFiveCardCategoryCounts() started.
+◇ Test icmMatchesIndependentThreePlayerClosedFormForR0() started.
+◇ Test preCancelledCourseSimulationStopsCooperatively() started.
+◇ Test riskExercisesKeepNoiseAndPersonalBoundariesOutOfNumericClaims() started.
+◇ Test case passing 1 argument version → 1 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 2 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 3 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 4 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+◇ Test case passing 1 argument version → 5 to catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) started.
+EQUITY FLOP: wins=907 ties=0 losses=83 total=990 equity=91.61616161616162
+◇ Test case passing 1 argument fixture → EquityFixture(name: "lesson-flop", hero: [12, 25], opponent: [11, 24], board: [0, 18, 33], expected: [907, 0, 83]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument version → 1 to legacySchemasProjectStableWrongAnswerDiagnosticsWithoutWriting(version:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "lesson-turn-split", hero: [12, 24], opponent: [38, 50], board: [8, 22, 36, 39], expected: [0, 44, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT lesson-turn-split: W/T/L=[0, 44, 0], total=44, equity=50.0
+◇ Test case passing 1 argument version → 2 to legacySchemasProjectStableWrongAnswerDiagnosticsWithoutWriting(version:) started.
+◇ Test case passing 1 argument version → 3 to legacySchemasProjectStableWrongAnswerDiagnosticsWithoutWriting(version:) started.
+◇ Test case passing 1 argument version → 4 to legacySchemasProjectStableWrongAnswerDiagnosticsWithoutWriting(version:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "royal-flop", hero: [12, 11], opponent: [25, 24], board: [8, 9, 10], expected: [990, 0, 0]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument version → 5 to legacySchemasProjectStableWrongAnswerDiagnosticsWithoutWriting(version:) started.
+◇ Test case passing 1 argument version → 6 to legacySchemasProjectStableWrongAnswerDiagnosticsWithoutWriting(version:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "zero-flop", hero: [25, 24], opponent: [12, 11], board: [8, 9, 10], expected: [0, 0, 990]) to equityMatchesIndependentOracle(_:) started.
+RANGE EXACT equity-range-flop-v1: W/T/L=3628/0/332; evaluations=1980; equity=91.61616161616162
+RANGE EXACT equity-range-turn-1to3-v1: W/T/L=132/44/0; evaluations=88; equity=87.5
+RANGE EXACT equity-range-turn-3to1-v1: W/T/L=44/132/0; evaluations=88; equity=62.5
+◇ Test case passing 1 argument fixture → EquityFixture(name: "royal-turn", hero: [12, 11], opponent: [25, 24], board: [8, 9, 10, 0], expected: [44, 0, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT royal-turn: W/T/L=[44, 0, 0], total=44, equity=100.0
+◇ Test case passing 1 argument fixture → EquityFixture(name: "zero-turn", hero: [25, 24], opponent: [12, 11], board: [8, 9, 10, 0], expected: [0, 0, 44]) to equityMatchesIndependentOracle(_:) started.
+EXACT lesson-flop: W/T/L=[907, 0, 83], total=990, equity=91.61616161616162
+EXACT zero-turn: W/T/L=[0, 0, 44], total=44, equity=0.0
+◇ Test case passing 1 argument fixture → EquityFixture(name: "turn-vulnerable-lead", hero: [12, 25], opponent: [11, 24], board: [0, 18, 33, 40], expected: [42, 0, 2]) to equityMatchesIndependentOracle(_:) started.
+◇ Test case passing 1 argument fixture → EquityFixture(name: "turn-two-splits", hero: [11, 25], opponent: [23, 38], board: [0, 1, 2, 3], expected: [42, 2, 0]) to equityMatchesIndependentOracle(_:) started.
+EXACT turn-two-splits: W/T/L=[42, 2, 0], total=44, equity=97.72727272727273
+✔ Test riverToyDenominatorsStayDistinctAndBoundaryCallsMatchEV() passed after 2.666 seconds.
+✔ Test reviewMathAndDecisionTimeBoundariesStayExplicit() passed after 2.666 seconds.
+EXACT turn-vulnerable-lead: W/T/L=[42, 0, 2], total=44, equity=95.45454545454545
+✔ Test sidePotExamplesMatchIndependentResearchConstants() passed after 2.673 seconds.
+EXACT royal-flop: W/T/L=[990, 0, 0], total=990, equity=100.0
+✔ Test matchingPenniesAndFixedSuitRangesHaveTheDocumentedBoundaries() passed after 2.729 seconds.
+✔ Test shortOpeningAfterCheckFollowsFullBetProfile() passed after 2.728 seconds.
+✔ Test finalNumericKeysMatchIndependentExamples() passed after 2.728 seconds.
+✔ Test foundationRuleAnswersAcceptOnlyExpectedTypedResponses() passed after 2.729 seconds.
+✔ Test foundationRulesMathRejectsNonFiniteArithmeticResults() passed after 2.729 seconds.
+✔ Test icmSidePotAccountingKeepsAllChipsAndExercisesCoverFiveTopics() passed after 2.728 seconds.
+✔ Test namedRiverHandsMatchTheDeclaredCallAndRemovalBranches() passed after 2.729 seconds.
+✔ Test policyActionsApplyThroughEngineAndPreserveShortStackLedger() passed after 2.729 seconds.
+✔ Test laterWrongResetsScheduleAndExplicitDiagnosticWinsOverInference() passed after 2.729 seconds.
+✔ Test foundationCoverageUsesCurrentRevisionAndChronologicalLatestWithoutChangingLegacyCompletion() passed after 2.729 seconds.
+✔ Test reviewNumericKeysAndPhysicalCardRemovalMatchIndependentArithmetic() passed after 2.729 seconds.
+✔ Test knownHandEquityRejectsImpossibleCardsAndPersists() passed after 2.729 seconds.
+✔ Test positionsMigrateLegacyArchivesAndRejectTampering() passed after 2.729 seconds.
+✔ Test completeDealsHaveUniqueCards() passed after 2.729 seconds.
+✔ Test icmRejectsInvalidInputsAndChecksWTLDenominator() passed after 2.729 seconds.
+✔ Test theoryMathRejectsBrokenModels() passed after 2.729 seconds.
+✔ Test positionLessonSeatsAndAnswerKeys() passed after 2.729 seconds.
+✔ Test sprExamplesMatchIndependentResearchConstants() passed after 2.729 seconds.
+✔ Test distributionMathRejectsInvalidInputsAndCorruptJointModels() passed after 2.729 seconds.
+✔ Test mdfRatioFractionAndBluffCatcherUseTheirOwnDenominators() passed after 2.729 seconds.
+✔ Test nextExerciseStaysWithinTopicAndEndsAtLastTask() passed after 2.729 seconds.
+✔ Test monteCarloReportUsesUnbiasedVarianceAndRejectsInvalidCounts() passed after 2.729 seconds.
+✔ Test preflopExercisesCoverThreePurposesForEveryPreflopTopic() passed after 2.729 seconds.
+✔ Test challengeComparesRaisesWithTheValueOfFreeCheck() passed after 2.729 seconds.
+✔ Test catalogReadsEverySupportedSchemaWithoutMutatingSourceBytes(version:) with 5 test cases passed after 2.729 seconds.
+✔ Test comparisonQuestionDecodingRejectsTamperedCardsAndIDs() passed after 2.729 seconds.
+✔ Test versionSixRoundTripPreservesAllFoundationResponsesAndLegacySaveKeepsThem() passed after 2.729 seconds.
+✔ Test unknownFoundationRevisionRoundTripsAndIsIgnoredByCurrentCatalog() passed after 2.729 seconds.
+✔ Test sameCategoryWrongResetsWhileOtherCategoryQueueSurvives() passed after 2.729 seconds.
+✔ Test handComparisonCoversEveryCategoryAndKnownShowdowns() passed after 2.729 seconds.
+✔ Test advancedICMMatchesIndependentExactFractionOracleForAllLeavesAndSixPlayers() passed after 2.729 seconds.
+✔ Test courseEqualDatesPreserveRecordedOrder() passed after 2.729 seconds.
+✔ Test bayesUsesIndependentNumeratorNormalizerAndChangedLikelihood() passed after 2.729 seconds.
+✔ Test icmSupportsEqualPayoutsAndOneEliminatedPlayer() passed after 2.729 seconds.
+✔ Test equityRejectsEveryDuplicateLocation() passed after 2.730 seconds.
+✔ Test botObservationAdmitsOnlyOwnCardsAndPublicState() passed after 2.729 seconds.
+✔ Test replayedActionAndSettlementAreRejected() passed after 2.729 seconds.
+✔ Test catalogAtomicWriteFailureLeavesTargetDirectoryUntouched() passed after 2.730 seconds.
+✔ Test resultKindsLabelMethodsWithoutInventingSamplesOrTables() passed after 2.729 seconds.
+✔ Test levelProgressUsesExerciseUnionAndEmptyHistoryRecommendsUnseenTask() passed after 2.729 seconds.
+✔ Test riskMathMatchesIndependentWorkedValues() passed after 2.729 seconds.
+✔ Test aggressionEVTreesUseIndependentFoldCallAndStackInputs() passed after 2.729 seconds.
+✔ Test foundationAttemptPreservesTypedAnswerAndResult() passed after 2.729 seconds.
+✔ Test preflopMathRejectsInvalidAndOverflowingInputs() passed after 2.730 seconds.
+✔ Test preflopMathMatchesIndependentResearchConstants() passed after 2.729 seconds.
+✔ Test evCallRejectsInvalidInputsAndQuestionSubstitution() passed after 2.729 seconds.
+✔ Test rangesRejectInvalidProbabilitiesNormalizersAndAmounts() passed after 2.729 seconds.
+✔ Test adjacentProfilesHaveFixedDistinguishingScenarios() passed after 2.729 seconds.
+✔ Test positionPriceDrawAndStackCorpusShowsPlannedPolicyDifferences() passed after 2.730 seconds.
+✔ Test dirtyOutExampleAgreesWithTheExistingExactEvaluator() passed after 2.729 seconds.
+✔ Test completedFourthReviewLeavesQueueUntilAnotherWrongAnswer() passed after 2.729 seconds.
+✔ Test completedCourseCoversEveryTopicAndModuleWithUniqueRoutes() passed after 2.729 seconds.
+✔ Test legacyV1MigratesAtomicallyAndNumericWritesPreserveComparisons() passed after 2.730 seconds.
+✔ Test distributionLessonsHaveThreePurposesAndCompletePassports() passed after 2.730 seconds.
+✔ Test courseAccuracyDenominatorsAndTopicIsolation() passed after 2.730 seconds.
+✔ Test sameTimestampUsesUUIDTieBreakForReplay() passed after 2.730 seconds.
+✔ Test baselineV3All132ResultsSurviveAdvancedWritesAndRelaunch() passed after 2.730 seconds.
+✔ Test physicalBoardsAndMadeHandExamplesAgreeWithEvaluator() passed after 2.730 seconds.
+✔ Test reviewLessonsCoverSatelliteAndReviewTopicsWithThreePurposes() passed after 2.730 seconds.
+✔ Test riskMathRejectsBrokenModelsAndUnknownSignalDenominator() passed after 2.730 seconds.
+✔ Test courseRepeatThresholdsAndRecentWindow() passed after 2.730 seconds.
+✔ Test riskLessonsCoverFiveTopicsWithThreePurposes() passed after 2.730 seconds.
+✔ Test comparisonAttemptsRoundTripAndDetectTamperedResult() passed after 2.730 seconds.
+✔ Test foundationRulesExercisesHaveStableCoverageAndTeachingFields() passed after 2.730 seconds.
+✔ Test estimationArithmeticUsesIndependentEVRakeAndSamplingUnits() passed after 2.730 seconds.
+✔ Test advancedCatalogHasStableIDsThreePurposesAndDisclosedModels() passed after 2.730 seconds.
+✔ Test blockerLessonVectorsWeightsAndCounterexample() passed after 2.730 seconds.
+✔ Test learningMetricsDescribeFirstTemplatesAndProjectCriterionWithoutClaimingMastery() passed after 2.730 seconds.
+✔ Test lessonGuidesCoverEveryPublishedLessonWithReadableSteps() passed after 2.730 seconds.
+✔ Test distributionMathUsesDeclaredDenominatorsAndSupportsAboveHundredEQR() passed after 2.730 seconds.
+✔ Test foundationStudyMathMatchesIndependentResearchConstants() passed after 2.730 seconds.
+✔ Test baselineV2All82ResultsSurviveIntermediateWritesWithIDsDatesGradesAndCompletion() passed after 2.730 seconds.
+✔ Test knownHandEquityExactCountsAndTies() passed after 2.731 seconds.
+✔ Test blockerArchiveMigrationAndTampering() passed after 2.730 seconds.
+✔ Test schemaSevenRoundTripPreservesExplicitKindAndAllSourceFields() passed after 2.730 seconds.
+✔ Test estimationExercisesCoverAllPurposesAndKeepTypedKeys() passed after 2.730 seconds.
+✔ Test satellitePassportUsesAllStacksAndSeparateTicketLeaves() passed after 2.730 seconds.
+✔ Test theoryLessonsCoverM14AndM15WithTypedAnswers() passed after 2.730 seconds.
+✔ Test courseWheelErrorRetainsItsSpecificCategory() passed after 2.730 seconds.
+✔ Test fullLessonMixedAnswersPersistAndRestore() passed after 2.730 seconds.
+✔ Test blockerAll169ClassesPartitionDeckAndRemoveExactly() passed after 2.730 seconds.
+✔ Test baseline181AndEveryFinalAttemptSurviveRestartAndRepeatedSave() passed after 2.730 seconds.
+✔ Test observationRatesSeparateArithmeticFromUncertainty() passed after 2.730 seconds.
+✔ Test icmConservesPayoutsAndRespectsScaleAndPermutationSymmetry() passed after 2.730 seconds.
+✔ Test allTopicsHaveTypedDiagnosisAndLevelMetricsDeduplicateSharedIDs() passed after 2.730 seconds.
+✔ Test bestFiveQuestionsHaveOnePhysicalBestSubsetAndRejectWrongAnswers() passed after 2.730 seconds.
+✔ Test seededPoliciesAreRepeatableAndSensitiveOnlyToTheirInputSeed() passed after 2.730 seconds.
+✔ Test amateurRemainsTheIndependentBasicV1Oracle() passed after 2.730 seconds.
+✔ Test specialSevenCardKickersAndTies() passed after 2.730 seconds.
+✔ Test catalogExercisesResolveToTheirTypedLegacyProviders() passed after 2.730 seconds.
+✔ Test potOddsAndStoredHistoryAreConsistent() passed after 2.730 seconds.
+✔ Test sevenCardIndependentReference() passed after 2.730 seconds.
+✔ Test allBotProfilesReturnLegalActionsForFixedCorpus() passed after 2.730 seconds.
+✔ Test catalogProgressPreservesHistoricalRecordsAndDeduplicatesSharedExercises() passed after 2.730 seconds.
+✔ Test preflopTypedAnswersMatchPublishedPassportExamples() passed after 2.730 seconds.
+✔ Test weightedTransferUsesPhysicalResearchBranchesWithChangedWeights() passed after 2.730 seconds.
+✔ Test raisingExamplesMatchIndependentResearchConstants() passed after 2.730 seconds.
+✔ Test corruptDiagnosticDateCannotMoveReviewAndTimeZonesDoNotShiftElapsedIntervals() passed after 2.730 seconds.
+✔ Test profilesRespectUnreopenedShortRaiseAndSidePotCaps() passed after 2.730 seconds.
+✔ Test categoricalArchiveRejectsTamperedGradeAndDuplicateIdentity() passed after 2.730 seconds.
+✔ Test aggressionBatchHasThreePurposesPerTopicAndFullTeachingPassport() passed after 2.730 seconds.
+✔ Test t28BoundaryKeepsPokerModelContextForFormatTransfer() passed after 2.730 seconds.
+✔ Test rangeEquityValidationScalingAndPersistence() passed after 2.730 seconds.
+✔ Test rangeAndPostflopBatchHasThreePurposesAndExplicitContexts() passed after 2.730 seconds.
+✔ Test blockerInputValidationAndEmptyRange() passed after 2.730 seconds.
+✔ Test evCallArchiveMigrationMixedWritesAndTampering() passed after 2.730 seconds.
+✔ Test courseUniqueTemplatesLatestGradesAndPersistence() passed after 2.731 seconds.
+✔ Test schemaSevenRejectsDuplicateOrMismatchedDiagnosticsWithoutChangingBytes() passed after 2.730 seconds.
+✔ Test foundationAnswersAcceptOnlyTheirTypedExpectedResponses() passed after 2.730 seconds.
+✔ Test catalogIDsReferencesAndLegacyOverlapMappingsAreStable() passed after 2.730 seconds.
+✔ Test courseTaxonomyAndUnknownNumericIntegrity() passed after 2.730 seconds.
+✔ Test archiveVersionsOneThroughFiveMigrateToSixWithoutChangingLegacyRecords() passed after 2.730 seconds.
+✔ Test foundationRulesMathRejectsInvalidInputs() passed after 2.730 seconds.
+✔ Test catalogPreservesUnmappedLegacyAttemptsWithoutCountingThemAsCoverage() passed after 2.730 seconds.
+✔ Test secretNoninterferenceHoldsOnEveryStreet() passed after 2.730 seconds.
+✔ Test satelliteLedgerAndAffinePrizesUseIndependentBranches() passed after 2.730 seconds.
+✔ Test foundationRemainingHasThreePurposesForEveryCoveredTopic() passed after 2.730 seconds.
+✔ Test aggressionMathRejectsInvalidAndOverflowingInputs() passed after 2.730 seconds.
+✔ Test mixedEVAndSimplificationUseIndependentWeightedArithmetic() passed after 2.730 seconds.
+✔ Test boardCompletersAndValueBranchesAgreeWithIndependentEvaluator() passed after 2.730 seconds.
+✔ Test decisionSeedChangesPreserveDealingWithIdenticalPublicActions() passed after 2.730 seconds.
+✔ Test t22ChartCarriesItsPassportAndGradesTheDisplayedMark() passed after 2.730 seconds.
+✔ Test postflopPricesAndRiverValueUseIndependentDenominators() passed after 2.730 seconds.
+✔ Test earlyCorrectDoesNotConsumeReviewAndDueDifferentTaskAdvancesStage() passed after 2.731 seconds.
+✔ Test catalogRejectsInvalidOrCorruptArchivesWithoutChangingTheirBytes() passed after 2.730 seconds.
+✔ Test archiveRejectsForgedFoundationGradeDuplicatesCorruptionAndUnsupportedVersionWithoutWriting() passed after 2.730 seconds.
+✔ Test advancedPhysicalCombinationCountsUseIndependentPairEnumeration() passed after 2.730 seconds.
+✔ Test courseCatalogPrerequisitesAndFullCoverage() passed after 2.731 seconds.
+✔ Test legacySchemasProjectStableWrongAnswerDiagnosticsWithoutWriting(version:) with 6 test cases passed after 2.730 seconds.
+✔ Test monteCarloIsSeedStableAndUsesHalfBankForTies() passed after 2.731 seconds.
+✔ Test rangeEquityExactWeightedOracle() passed after 2.730 seconds.
+✔ Test wrongAnswerCreatesDeterministicOneDayReviewWithDifferentTask() passed after 2.730 seconds.
+✔ Test evCallExactExamplesAgainstIndependentBranches() passed after 2.730 seconds.
+✔ Test intermediateCatalogHasStableUniqueIDsAndAllLearningPurposes() passed after 2.730 seconds.
+✔ Test advancedPublishedNumericKeysMatchIndependentWorkedExamples() passed after 2.730 seconds.
+✔ Test publishedFoundationModulesPreserveAliasesAndAddAllThreeLearningPurposes() passed after 2.729 seconds.
+✔ Test icmMatchesIndependentThreePlayerClosedFormForR0() passed after 2.729 seconds.
+✔ Test riskExercisesKeepNoiseAndPersonalBoundariesOutOfNumericClaims() passed after 2.729 seconds.
+✔ Test everyTemplateExplanationMatchesEvaluatorRanksAndWinner() passed after 2.730 seconds.
+✔ Test preCancelledDecisionStopsBeforePolicyEvaluation() passed after 2.730 seconds.
+✔ Test preCancelledCourseSimulationStopsCooperatively() passed after 2.730 seconds.
+EXACT zero-flop: W/T/L=[0, 0, 990], total=990, equity=0.0
+✔ Test equityMatchesIndependentOracle(_:) with 8 test cases passed after 2.753 seconds.
+✔ Test generatedQuestionsStayValidAcrossSeeds() passed after 2.820 seconds.
+✔ Test randomLegalActionsMatchIndependentPotLedger() passed after 2.938 seconds.
+✔ Test catalogSchemaFiveRoundTripPreservesAllStoredFieldsAndCompletion() passed after 2.942 seconds.
+✔ Test courseTwoTaskSampleAndRepeatAfterCompletion() passed after 3.000 seconds.
+✔ Test recordedMonteCarloReportMatchesFrozenAlgorithmAndIndependentStatistics() passed after 3.822 seconds.
+✔ Test monteCarloMatchesExactEquityWithinReportedSamplingError() passed after 3.936 seconds.
+✔ Test exhaustiveFiveCardCategoryCounts() passed after 9.391 seconds.
+✔ Test run with 152 tests in 0 suites passed after 9.394 seconds.

@@ -78,3 +78,11 @@ Release Simulator benchmark: Tools/benchmark-bots.sh.
 | FINAL-07 | Прежние миграции1–5, corruption/write failure/retry, engine/bots | Tools/verify.sh |
 
 XXXL и расширенная ручная VoiceOver/адаптивная приёмка отложены пользователем.
+
+## Прогресс и повторение /26 октября2026
+
+План LP-01…LP-08: [learning-progress-plan.md](tests/learning-progress-plan.md).
+Unit: CourseLearningTests + LearningDiagnosticsArchiveTests; Application:
+checkLearningDiagnosticsAndRetry в Tools/AppChecks; UI: testLearningProgressAndReview.
+Проверки включают пустую историю, ошибки,1/3/7/21, малую выборку, новые E-ID,
+миграции1–6, corruption, write failure, retry, clear failure и подтверждённую очистку.

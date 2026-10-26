@@ -28,7 +28,7 @@ private func archivePath() -> URL {
     try history.save([old,second])
     #expect(try history.loadArchive()==PracticeArchive(attempts:[old,second],comparisons:[new]))
     let object=try #require(JSONSerialization.jsonObject(with:Data(contentsOf:path)) as? [String:Any])
-    #expect(object["version"] as? Int == 6)
+    #expect(object["version"] as? Int == 7)
     try history.saveArchive(PracticeArchive())
     #expect(try history.loadArchive()==PracticeArchive())
 }

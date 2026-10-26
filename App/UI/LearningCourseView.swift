@@ -33,6 +33,8 @@ struct LearningCourseHomeView: View {
                 Text("Опубликовано \(totalTasks) разных задач. История прежних наборов входит в охват тем.")
                     .font(.footnote).foregroundStyle(AppTheme.muted)
                 CourseBoundariesIntroduction()
+                LearningNextStepView()
+                LearningReviewQueueView()
                 CourseNextStepView()
 
                 if !course.repeatLessons.isEmpty {

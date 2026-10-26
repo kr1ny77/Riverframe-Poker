@@ -1424,4 +1424,128 @@ final class CriticalFlows: XCTestCase {
         screenshot("comparison-large-text-feedback")
     }
 
+    func testLearningProgressAndReview() {
+        freshRegression()
+        let topic = CourseTopicID.t03
+        let exercises = CourseCatalog.foundations(for: topic)
+        guard let first = exercises.first,
+              let alternate = exercises.first(where: { $0.id != first.id }) else {
+            XCTFail("T03 needs at least two foundation exercises for an error review.")
+            return
+        }
+
+        func open(_ exercise: FoundationExercise) {
+            tab("Тренировка")
+            let catalog = app.buttons["course.catalog"]
+            scrollTo(catalog); XCTAssertTrue(catalog.isHittable); catalog.tap()
+            let module = app.buttons["catalog.module.M01"]
+            scrollTo(module); XCTAssertTrue(module.isHittable); module.tap()
+            let row = app.buttons["catalog.topic.T03"]
+            scrollTo(row); XCTAssertTrue(row.isHittable); row.tap()
+            let task = app.buttons["catalog.exercise." + exercise.id.rawValue]
+            scrollTo(task); XCTAssertTrue(task.isHittable, task.debugDescription); task.tap()
+            let start = app.buttons["foundation.start"]
+            scrollTo(start); XCTAssertTrue(start.isHittable); start.tap()
+        }
+
+        func submit(_ exercise: FoundationExercise, correct: Bool) {
+            switch exercise.answer {
+            case .number(let expected, _):
+                let value = correct ? expected : expected + exercise.answer.tolerance + 1
+                let answer = app.textFields["foundation.answer"]
+                scrollTo(answer); XCTAssertTrue(answer.isHittable); answer.tap(); answer.typeText(String(value))
+            case .choice(let options, let expected):
+                let value = correct ? expected : options.indices.first(where: { $0 != expected })!
+                let answer = app.buttons["foundation.choice.\(value)"]
+                scrollTo(answer); XCTAssertTrue(answer.isHittable); answer.tap()
+            }
+            let check = app.buttons["foundation.check"]
+            scrollTo(check); XCTAssertTrue(check.isEnabled); check.tap()
+        }
+
+        func backToTraining() {
+            for _ in 0..<4 { app.navigationBars.buttons.element(boundBy: 0).tap() }
+            XCTAssertTrue(app.buttons["course.catalog"].waitForExistence(timeout: 5))
+        }
+
+        func openTopicMetrics() -> XCUIElement {
+            tab("Тренировка")
+            let catalog = app.buttons["course.catalog"]
+            scrollTo(catalog); catalog.tap()
+            let module = app.buttons["catalog.module.M01"]
+            scrollTo(module); module.tap()
+            let row = app.buttons["catalog.topic.T03"]
+            scrollTo(row); row.tap()
+            let metrics = app.descendants(matching: .any).matching(identifier: "learning.metrics.topic.T03").firstMatch
+            scrollTo(metrics); XCTAssertTrue(metrics.waitForExistence(timeout: 5), app.debugDescription)
+            return metrics
+        }
+
+        open(first)
+        submit(first, correct: false)
+        let grade = app.staticTexts["foundation.grade"]
+        scrollTo(grade); XCTAssertEqual(grade.label, "Есть ошибка. Посмотрите разбор.")
+        let errorKind = app.descendants(matching: .any).matching(identifier: "learning.error.kind").firstMatch
+        scrollTo(errorKind); XCTAssertTrue(errorKind.exists, app.debugDescription)
+        let saveError = app.buttons["learning.error.save"]
+        scrollTo(saveError); XCTAssertTrue(saveError.isHittable); saveError.tap()
+        let savedError = app.descendants(matching: .any).matching(identifier: "learning.error.saved").firstMatch
+        scrollTo(savedError); XCTAssertTrue(savedError.waitForExistence(timeout: 5), app.debugDescription)
+        screenshot("learning-wrong-answer-diagnosis")
+        backToTraining()
+
+        let topicMetrics = openTopicMetrics()
+        XCTAssertTrue(topicMetrics.label.contains("1") && topicMetrics.label.localizedCaseInsensitiveContains("попыт"), topicMetrics.label)
+        for _ in 0..<3 { app.navigationBars.buttons.element(boundBy: 0).tap() }
+
+        tab("Прогресс")
+        let reviewQueue = app.descendants(matching: .any).matching(identifier: "learning.review.queue").firstMatch
+        scrollTo(reviewQueue); XCTAssertTrue(reviewQueue.exists, app.debugDescription)
+        let firstReview = app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "Проверка 1/4")).firstMatch
+        scrollTo(firstReview); XCTAssertTrue(firstReview.exists, app.debugDescription)
+        let review = app.buttons["learning.review.open.T03"]
+        scrollTo(review); XCTAssertTrue(review.isHittable, review.debugDescription)
+        let recommendation = app.descendants(matching: .any).matching(identifier: "learning.recommendation").firstMatch
+        scrollTo(recommendation); XCTAssertTrue(recommendation.exists)
+        scrollTo(review); review.tap()
+        let alternateTitle = app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", alternate.id.rawValue)).firstMatch
+        scrollTo(alternateTitle); XCTAssertTrue(alternateTitle.waitForExistence(timeout: 5), app.debugDescription)
+        let start = app.buttons["foundation.start"]
+        scrollTo(start); XCTAssertTrue(start.isHittable); start.tap()
+        submit(alternate, correct: true)
+        let saved = app.staticTexts["foundation.saved"]
+        scrollTo(saved); XCTAssertTrue(saved.exists)
+        screenshot("learning-early-review-alternate-task")
+
+        app.terminate(); app.launch()
+        tab("Прогресс")
+        let totalMetrics = app.descendants(matching: .any).matching(identifier: "learning.metrics.total").firstMatch
+        scrollTo(totalMetrics); XCTAssertTrue(totalMetrics.waitForExistence(timeout: 5), app.debugDescription)
+        XCTAssertTrue(totalMetrics.label.contains("2"), totalMetrics.label)
+        let restoredQueue = app.descendants(matching: .any).matching(identifier: "learning.review.queue").firstMatch
+        scrollTo(restoredQueue); XCTAssertTrue(restoredQueue.exists)
+        let restoredReview = app.buttons["learning.review.open.T03"]
+        scrollTo(restoredReview); XCTAssertTrue(restoredReview.exists)
+        let restoredDiagnosis = app.staticTexts.matching(NSPredicate(format: "label CONTAINS %@", "Арифметика и единицы")).firstMatch
+        scrollTo(restoredDiagnosis); XCTAssertTrue(restoredDiagnosis.exists, app.debugDescription)
+
+        tab("Настройки")
+        let clear = app.buttons["Очистить результаты"]
+        scrollTo(clear); clear.tap()
+        let cancel = app.alerts.buttons["Отмена"]
+        XCTAssertTrue(cancel.waitForExistence(timeout: 5)); cancel.tap()
+        tab("Прогресс")
+        scrollTo(totalMetrics); XCTAssertTrue(totalMetrics.exists)
+        XCTAssertTrue(totalMetrics.label.contains("Попыток: 2"))
+        tab("Настройки")
+        scrollTo(clear); clear.tap()
+        let confirm = app.alerts.buttons["Очистить"]
+        XCTAssertTrue(confirm.waitForExistence(timeout: 5)); confirm.tap()
+        tab("Прогресс")
+        scrollTo(totalMetrics); XCTAssertTrue(totalMetrics.exists)
+        XCTAssertTrue(totalMetrics.label.contains("Попыток: 0"), totalMetrics.label)
+        XCTAssertFalse(app.buttons["learning.review.open.T03"].exists)
+        screenshot("learning-progress-cleared")
+    }
+
 }

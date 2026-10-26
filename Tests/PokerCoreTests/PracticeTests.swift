@@ -46,7 +46,14 @@ final class PracticeTests: CoreCheckCase {
     func testHistoryRejectsDuplicateIDs() throws {
         let history = try temporaryHistory()
         let attempt = PracticeAttempt(question: PotOddsQuestion.examples[0], answer: 25)
-        try history.save([attempt,attempt])
+        try history.save([attempt])
+        let before = try Data(contentsOf: history.fileURL)
+        assertThrowsError(try history.save([attempt,attempt]))
+        assertEqual(try Data(contentsOf: history.fileURL), before)
+        var document = try unwrap(JSONSerialization.jsonObject(with: before) as? [String:Any])
+        let rows = try unwrap(document["attempts"] as? [[String:Any]])
+        document["attempts"] = rows + rows
+        try JSONSerialization.data(withJSONObject: document).write(to: history.fileURL)
         assertThrowsError(try history.load())
     }
 

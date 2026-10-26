@@ -128,7 +128,7 @@ private func comboOracle(_ hand:ComboHandClass,known:[Card]) -> Set<String> {
     let restored=try history.loadArchive()
     #expect(restored.blockers == attempts && restored.evCalls == [ev] && restored.positions == [position] && restored.comparisons == [comparison])
     let object=try #require(JSONSerialization.jsonObject(with:Data(contentsOf:file)) as? [String:Any])
-    #expect(object["version"] as? Int == 6)
+    #expect(object["version"] as? Int == 7)
     for key in ["isCorrect","answerIndex","questionID","id","missing"] {
         var bad=object
         var rows=try #require(bad["blockers"] as? [[String:Any]])

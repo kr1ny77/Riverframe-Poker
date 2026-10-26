@@ -81,7 +81,7 @@ private func archiveThrough(version: Int, fixture: PracticeArchive) -> PracticeA
         let migrated = try history.loadArchive()
         #expect(migrated == expected)
         let object = try #require(JSONSerialization.jsonObject(with: Data(contentsOf: path)) as? [String: Any])
-        #expect(object["version"] as? Int == 6)
+        #expect(object["version"] as? Int == 7)
         #expect(migrated.attempts.map(\.id) == expected.attempts.map(\.id))
         #expect(migrated.attempts.map(\.date) == expected.attempts.map(\.date))
         #expect(migrated.attempts.map(\.answer) == expected.attempts.map(\.answer))
@@ -105,7 +105,10 @@ private func archiveThrough(version: Int, fixture: PracticeArchive) -> PracticeA
     let numeric = PracticeAttempt(question: PotOddsQuestion.examples[0], answer: 25)
     let archive = PracticeArchive(attempts: [numeric], foundations: foundations)
     try history.saveArchive(archive)
-    #expect(try history.loadArchive() == archive)
+    let restored = try history.loadArchive()
+    #expect(restored.attempts == archive.attempts && restored.foundations == foundations)
+    let catalog = CourseCatalogSnapshot(course: LearningCourseSnapshot(archive: archive), foundations: foundations)
+    #expect(restored.diagnostics == CourseLearning.inferredDiagnostics(catalog: catalog))
 
     try history.save([])
     let afterLegacyNumericSave = try history.loadArchive()
@@ -115,6 +118,8 @@ private func archiveThrough(version: Int, fixture: PracticeArchive) -> PracticeA
     #expect(afterLegacyNumericSave.foundations.map(\.date) == foundations.map(\.date))
     #expect(afterLegacyNumericSave.foundations.map(\.response) == foundations.map(\.response))
     #expect(afterLegacyNumericSave.foundations.map(\.isCorrect) == foundations.map(\.isCorrect))
+    #expect(afterLegacyNumericSave.diagnostics == CourseLearning.inferredDiagnostics(catalog: CourseCatalogSnapshot(
+        course: LearningCourseSnapshot(archive: afterLegacyNumericSave), foundations: foundations)))
 }
 
 @Test func archiveRejectsForgedFoundationGradeDuplicatesCorruptionAndUnsupportedVersionWithoutWriting() throws {
@@ -157,7 +162,7 @@ private func archiveThrough(version: Int, fixture: PracticeArchive) -> PracticeA
     duplicateIdentity["foundations"] = foundationRows
 
     var unsupportedVersion = object
-    unsupportedVersion["version"] = 7
+    unsupportedVersion["version"] = 8
 
     let invalidDocuments = [
         try JSONSerialization.data(withJSONObject: forgedGrade),
