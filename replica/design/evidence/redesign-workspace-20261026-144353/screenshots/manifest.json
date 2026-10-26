@@ -1,0 +1,71 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "0815EEFB-EEC2-4312-A841-8B366840CD46",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "E2FE45A7-5CB5-4519-88FA-368FBD4CF18F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "workbench-satellite-proof_0_93420FB8-E9F5-4F64-BD44-D63C200E1003.png",
+        "timestamp" : 1793022400.626
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "0815EEFB-EEC2-4312-A841-8B366840CD46",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "1CA283DA-A3B9-42DF-AF1F-4DEB5035269C.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "workbench-long-context_0_70ED7AE4-7AAA-4AE6-8538-9B8C10DC3333.png",
+        "timestamp" : 1793022399.185
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "0815EEFB-EEC2-4312-A841-8B366840CD46",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "CF366DD6-CE92-4EA5-9A15-C4ACFE27F2CE.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "workbench-repeat-and-progress_0_C61D8F08-D43C-4FD5-97F4-A1AB07E18DF3.png",
+        "timestamp" : 1793022367.898
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "0815EEFB-EEC2-4312-A841-8B366840CD46",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "AE3623EC-EEB8-4535-B9D9-F8BA20591344.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "workbench-lesson-error-category_0_D99AC96C-AC80-4333-B62E-72A0FA051D43.png",
+        "timestamp" : 1793022354.505
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "0815EEFB-EEC2-4312-A841-8B366840CD46",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "352A4BA1-4B68-4524-B810-B8018FBCA9C3.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "workbench-lesson-proof_0_19594026-F7CE-45E2-A292-754F60C886DF.png",
+        "timestamp" : 1793022351.069
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "0815EEFB-EEC2-4312-A841-8B366840CD46",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "B049198D-3A1A-46DD-B1D2-5D72840D8BEA.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "workbench-lesson-answer_0_BEC09936-08F3-4BA0-B738-CB2122FBB3EF.png",
+        "timestamp" : 1793022349.197
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "0815EEFB-EEC2-4312-A841-8B366840CD46",
+        "deviceName" : "Poker QA Design",
+        "exportedFileName" : "6094282E-CC42-4AEC-9FB6-31BE14B58826.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "workbench-lesson-goal_0_BF484B12-8AC2-4DDC-B849-ECFC0875AD3E.png",
+        "timestamp" : 1793022345.887
+      }
+    ],
+    "testIdentifier" : "CriticalFlows/testRedesignWorkspace()",
+    "testIdentifierURL" : "test://com.apple.xcode/PokerTrainer/PokerTrainerUITests/CriticalFlows/testRedesignWorkspace"
+  }
+]

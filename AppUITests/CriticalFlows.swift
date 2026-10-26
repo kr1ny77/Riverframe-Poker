@@ -82,7 +82,7 @@ final class CriticalFlows: XCTestCase {
         scrollTo(disclosure);XCTAssertTrue(disclosure.isHittable);disclosure.tap()
     }
     private func freshRegression() {
-        tab("Настройки");app.buttons["Очистить результаты"].tap();app.alerts.buttons["Очистить"].tap()
+        tab("Настройки");do { let clear = app.buttons["Очистить результаты"];scrollTo(clear);clear.tap();app.alerts.buttons["Очистить"].tap() }
         app.terminate();app.launch()
     }
     func testDesignCapture() {
@@ -264,7 +264,13 @@ final class CriticalFlows: XCTestCase {
         scrollTo(count);XCTAssertTrue(count.exists)
     }
     private func openTraining(_ identifier:String) {
-        let link=app.buttons[identifier];scrollTo(link)
+        let link=app.buttons[identifier]
+        if !link.exists {
+            let archive = app.buttons["Прежние восемь наборов"]
+            scrollTo(archive)
+            if archive.exists { archive.tap() }
+        }
+        scrollTo(link)
         if !link.isHittable { screenshot("missing-\(identifier)") }
         XCTAssertTrue(link.isHittable,app.debugDescription);link.tap()
     }
@@ -1379,7 +1385,7 @@ final class CriticalFlows: XCTestCase {
         XCTAssertTrue(feedback.label.contains(wrong ? "Разберём сравнение" : "Верно по картам"),feedback.label)
     }
     func testComparisonLessonAndProgress() {
-        tab("Настройки");app.buttons["Очистить результаты"].tap();app.alerts.buttons["Очистить"].tap()
+        tab("Настройки");do { let clear = app.buttons["Очистить результаты"];scrollTo(clear);clear.tap();app.alerts.buttons["Очистить"].tap() }
         openComparisonLesson()
         let questions=HandComparisonLesson.questions(seed:7)
         XCTAssertEqual(questions.count,12)
@@ -1413,7 +1419,7 @@ final class CriticalFlows: XCTestCase {
         app.terminate();app.launch();tab("Прогресс")
         scrollTo(result);XCTAssertEqual(result.label,expected)
         screenshot("comparison-restored-progress")
-        tab("Настройки");app.buttons["Очистить результаты"].tap();app.alerts.buttons["Очистить"].tap()
+        tab("Настройки");do { let clear = app.buttons["Очистить результаты"];scrollTo(clear);clear.tap();app.alerts.buttons["Очистить"].tap() }
         tab("Прогресс");let empty=app.staticTexts["Пока нет попыток"];scrollTo(empty);XCTAssertTrue(empty.exists)
     }
     func testComparisonLargeTextSelection() {
@@ -1546,6 +1552,66 @@ final class CriticalFlows: XCTestCase {
         XCTAssertTrue(totalMetrics.label.contains("Попыток: 0"), totalMetrics.label)
         XCTAssertFalse(app.buttons["learning.review.open.T03"].exists)
         screenshot("learning-progress-cleared")
+    }
+
+    private func openRedesignFoundation(_ topicID: CourseTopicID, exerciseID: String? = nil) -> FoundationExercise {
+        let topic = CourseCatalog.topics.first { $0.id == topicID }!
+        let exercise = CourseCatalog.foundations(for: topicID).first { exerciseID == nil || $0.id.rawValue == exerciseID }!
+        tab("Тренировка")
+        let catalog = app.buttons["course.catalog"]; scrollTo(catalog); catalog.tap()
+        let module = app.buttons["catalog.module." + topic.moduleID.rawValue]; scrollTo(module); module.tap()
+        let row = app.buttons["catalog.topic." + topicID.rawValue]; scrollTo(row); row.tap()
+        let task = app.buttons["catalog.exercise." + exercise.id.rawValue]; scrollTo(task); task.tap()
+        XCTAssertTrue(app.buttons["foundation.start"].waitForExistence(timeout: 5))
+        return exercise
+    }
+
+    func testRedesignWorkspace() throws {
+        freshRegression()
+        _ = openRedesignFoundation(.t03)
+        screenshot("workbench-lesson-goal")
+        app.buttons["foundation.start"].tap()
+        let field = app.textFields["foundation.answer"]; scrollTo(field); field.tap(); field.typeText("999")
+        screenshot("workbench-lesson-answer")
+        let check = app.buttons["foundation.check"]; scrollTo(check); check.tap()
+        let grade = app.staticTexts["foundation.grade"]; scrollTo(grade)
+        XCTAssertEqual(grade.label, "Есть ошибка. Посмотрите разбор.")
+        screenshot("workbench-lesson-proof")
+        let saved = app.staticTexts["foundation.saved"]; scrollTo(saved); XCTAssertTrue(saved.exists)
+        screenshot("workbench-lesson-error-category")
+        app.terminate(); app.launch(); tab("Прогресс")
+        let repeats = app.buttons["Повторение понятий"]; scrollTo(repeats); repeats.tap()
+        let queue = app.staticTexts["learning.review.queue"]; scrollTo(queue); XCTAssertTrue(queue.exists)
+        screenshot("workbench-repeat-and-progress")
+        let review = app.buttons["learning.review.open.T03"]; scrollTo(review); XCTAssertTrue(review.isHittable)
+        review.tap()
+        XCTAssertTrue(app.staticTexts["foundation.restored-result"].exists == false)
+        app.terminate(); app.launch()
+        let long = openRedesignFoundation(.t48, exerciseID: "E.foundation.t48.ticket-call")
+        app.buttons["foundation.start"].tap()
+        let input = app.textFields["foundation.answer"]; scrollTo(input); input.tap()
+        if case .number(let value) = long.answer.correctResponse { input.typeText(String(value)) }
+        screenshot("workbench-long-context")
+        let verify = app.buttons["foundation.check"]; scrollTo(verify); verify.tap()
+        let result = app.staticTexts["foundation.grade"]; scrollTo(result)
+        XCTAssertEqual(result.label, "Верно по условию.")
+        screenshot("workbench-satellite-proof")
+    }
+
+    func testRedesignSemantics() throws {
+        freshRegression()
+        try app.performAccessibilityAudit(for: [.sufficientElementDescription, .trait])
+        openFixture("raise")
+        for name in ["Пас", "Колл 10", "Повысить…", "Олл-ин"] {
+            let button = app.buttons[name]; scrollTo(button); XCTAssertTrue(button.isHittable, name)
+            XCTAssertGreaterThanOrEqual(button.frame.height, 44)
+        }
+        for label in raiseFixtureHeroCardLabels() {
+            let card = app.descendants(matching: .any).matching(NSPredicate(format: "label == %@", label)).firstMatch
+            scrollTo(card); XCTAssertTrue(card.exists)
+        }
+        try app.performAccessibilityAudit(for: [.sufficientElementDescription, .trait])
+        screenshot("workbench-table-accessibility")
     }
 
 }

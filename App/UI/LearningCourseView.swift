@@ -8,8 +8,8 @@ struct LearningCourseHomeView: View {
         let course = store.course
         let totalTasks = CourseCatalog.allExerciseIDs.count
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
-                LessonHeader(title: "Курс NLHE", detail: "60 тем · 18 модулей · 4 уровня")
+            VStack(alignment: .leading, spacing: AppTheme.Measure.d20) {
+                LessonHeader(title: "Тренировка", detail: "Курс, задачи и повторение")
 
                 if let error = store.errorMessage {
                     ErrorNotice(text: error)
@@ -17,28 +17,99 @@ struct LearningCourseHomeView: View {
                         .buttonStyle(SecondaryButtonStyle())
                 }
 
-                Text("Пройдено наборов: \(course.completedLessons) из \(CourseLessonID.allCases.count)")
-                    .font(.footnote)
-                    .foregroundStyle(AppTheme.muted)
-                    .accessibilityIdentifier("course.completed")
-
-                NavigationLink {
-                    CourseCatalogView()
-                } label: {
-                    Label("Каталог: 60 тем", systemImage: "books.vertical")
-                }
-                .buttonStyle(PrimaryButtonStyle())
-                .accessibilityIdentifier("course.catalog")
-
-                Text("Опубликовано \(totalTasks) разных задач. История прежних наборов входит в охват тем.")
-                    .font(.footnote).foregroundStyle(AppTheme.muted)
-                CourseBoundariesIntroduction()
-                LearningNextStepView()
-                LearningReviewQueueView()
                 CourseNextStepView()
 
-                if !course.repeatLessons.isEmpty {
-                    courseSection(title: "Повторить по ответам", detail: "Задания с достаточным числом ошибок") {
+                ViewThatFits(in: .horizontal) {
+                    HStack(spacing: AppTheme.Measure.d12) {
+                        NavigationLink { CourseCatalogView() } label: {
+                            Label("Открыть каталог", systemImage: "rectangle.grid.2x2")
+                        }
+                        .buttonStyle(PrimaryButtonStyle())
+                        .accessibilityIdentifier("course.catalog")
+                        LearningCatalogHint(totalTasks: totalTasks)
+                    }
+                    VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+                        NavigationLink { CourseCatalogView() } label: {
+                            Label("Открыть каталог T01–T60", systemImage: "rectangle.grid.2x2")
+                        }
+                        .buttonStyle(PrimaryButtonStyle())
+                        .accessibilityIdentifier("course.catalog")
+                        LearningCatalogHint(totalTasks: totalTasks)
+                    }
+                }
+
+                Text("60 тем · 18 модулей · 4 уровня").font(.subheadline).foregroundStyle(AppTheme.muted)
+                Text("Пройдено прежних наборов: \(course.completedLessons) из \(CourseLessonID.allCases.count)").font(.footnote).foregroundStyle(AppTheme.muted).accessibilityIdentifier("course.completed")
+                WorkbenchCourseDetails(course: course)
+            }
+            .padding(AppTheme.Measure.d16)
+            .padding(.bottom, AppTheme.Measure.d16)
+        }
+        .lessonCanvas()
+        .navigationTitle("Тренировка")
+        .navigationDestination(for: CourseLessonID.self) { CourseLessonDestination(lesson: $0) }
+    }
+
+    private func courseWorkspaceOverview(course: LearningCourseSnapshot, totalTasks: Int) -> some View {
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+            Label("Рабочая карта", systemImage: "map")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(AppTheme.accent)
+            ViewThatFits(in: .horizontal) {
+                HStack(alignment: .firstTextBaseline, spacing: AppTheme.Measure.d16) {
+                    courseMetric("Темы", value: "60")
+                    courseMetric("Модули", value: "18")
+                    courseMetric("Уровни", value: "4")
+                    courseMetric("Задачи", value: "\(totalTasks)")
+                }
+                VStack(alignment: .leading, spacing: AppTheme.Measure.d8) {
+                    Text("60 тем · 18 модулей · 4 уровня · \(totalTasks) задач")
+                        .font(.subheadline.weight(.semibold))
+                }
+            }
+            Text("Пройдено прежних наборов: \(course.completedLessons) из \(CourseLessonID.allCases.count)")
+                .font(.footnote)
+                .foregroundStyle(AppTheme.muted)
+                .accessibilityIdentifier("course.completed")
+        }
+        .padding(AppTheme.Measure.d16)
+        .background(AppTheme.surfaceAlt, in: RoundedRectangle(cornerRadius: AppTheme.radius))
+    }
+
+    private func courseMetric(_ title: String, value: String) -> some View {
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d2) {
+            Text(value).font(.title3.weight(.bold)).monospacedDigit()
+            Text(title).font(.caption).foregroundStyle(AppTheme.muted)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+private struct LearningCatalogHint: View {
+    let totalTasks: Int
+
+    var body: some View {
+        Text("\(totalTasks) задач · старая история уже в охвате")
+            .font(.footnote)
+            .foregroundStyle(AppTheme.muted)
+            .fixedSize(horizontal: false, vertical: true)
+    }
+}
+
+private struct WorkbenchCourseDetails: View {
+    let course: LearningCourseSnapshot
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+            CourseBoundariesIntroduction()
+
+            DisclosureGroup("Следующая задача и повторение") {
+                VStack(alignment: .leading, spacing: AppTheme.Measure.d16) {
+                    LearningNextStepView()
+                    LearningReviewQueueView()
+                    if !course.repeatLessons.isEmpty {
+                        Divider()
+                        Text("Наборы с накопившимися ошибками").font(.subheadline.weight(.semibold))
                         ForEach(course.repeatLessons, id: \.self) { lesson in
                             NavigationLink(value: lesson) {
                                 CourseLessonRow(lesson: lesson, course: course, subtitle: course.progress(lesson).repeatText)
@@ -47,18 +118,21 @@ struct LearningCourseHomeView: View {
                         }
                     }
                 }
+                .padding(.top, AppTheme.Measure.d8)
+            }
 
-                courseSection(title: "Маршрут курса", detail: "Все темы доступны. Порядок помогает наращивать опору.") {
+            DisclosureGroup("Прежние восемь наборов") {
+                VStack(alignment: .leading, spacing: AppTheme.Measure.d16) {
                     ForEach(CourseStage.allCases) { stage in
-                        VStack(alignment: .leading, spacing: 8) {
-                            Text(stage.title).font(.headline).foregroundStyle(AppTheme.text)
+                        VStack(alignment: .leading, spacing: AppTheme.Measure.d8) {
+                            Text(stage.title).font(.subheadline.weight(.semibold)).foregroundStyle(AppTheme.text)
                             ForEach(CourseLessonID.allCases.filter { $0.stage == stage }) { lesson in
                                 let progress = course.progress(lesson)
                                 NavigationLink(value: lesson) {
                                     CourseLessonRow(
                                         lesson: lesson,
                                         course: course,
-                                        subtitle: "\(progress.completed ? "Набор пройден" : "Задания") · \(progress.covered)/\(lesson.requiredKeys.count) · последние ответы: \(progress.latestCorrect)/\(progress.covered)"
+                                        subtitle: "\(progress.completed ? "Набор пройден" : "Задания") · \(progress.covered)/\(lesson.requiredKeys.count) · последние \(progress.latestCorrect)/\(progress.covered)"
                                     )
                                 }
                                 .accessibilityIdentifier(lesson.accessibilityID)
@@ -66,58 +140,21 @@ struct LearningCourseHomeView: View {
                         }
                     }
                 }
-
-                DisclosureGroup("Предпосылки уроков") {
-                    VStack(alignment: .leading, spacing: 12) {
-                        ForEach(CourseLessonID.allCases) { lesson in
-                            let prerequisites = lesson.prerequisites
-                            VStack(alignment: .leading, spacing: 3) {
-                                Text(lesson.title).font(.subheadline.weight(.semibold))
-                                if prerequisites.isEmpty {
-                                    Text("Вводный урок. Его можно открыть сразу.")
-                                } else {
-                                    Text("Рекомендуется после: " + prerequisites.map { prerequisite in
-                                        "\(prerequisite.title) — \(course.progress(prerequisite).completed ? "пройдено" : "впереди")"
-                                    }.joined(separator: "; ") + ".")
-                                }
-                            }
-                        }
-                    }
-                    .font(.footnote)
-                    .foregroundStyle(AppTheme.muted)
-                }
-
-                DisclosureGroup("Как читать прогресс") {
-                    VStack(alignment: .leading, spacing: 8) {
-                        Text(LearningCourseSnapshot.interpretation)
-                        Text("Охват показывает число разных задач. Последний ответ показывает текущий результат по уже встреченным задачам.")
-                        Text("Рекомендация повтора появляется после накопления ответов. Она помогает выбрать следующий шаг и не описывает уровень игры целиком.")
-                    }
-                    .font(.footnote)
-                    .foregroundStyle(AppTheme.muted)
-                }
-
-                DisclosureGroup("Статус учебных моделей") {
-                    Text("Все 60 тем доступны. Арифметика проверяет заданные входы; стратегические примеры используют условные диапазоны. Учебные solver-отчёты показывают способ чтения и проверки модели. Турнирные выплаты разбираются в отдельных задачах; практика проходит за столом 6-max.")
-                        .font(.footnote)
-                        .foregroundStyle(AppTheme.muted)
-                }
+                .padding(.top, AppTheme.Measure.d8)
             }
-            .padding(16)
-        }
-        .lessonCanvas()
-        .navigationTitle("Тренировка")
-        .navigationDestination(for: CourseLessonID.self) { CourseLessonDestination(lesson: $0) }
-    }
 
-    @ViewBuilder
-    private func courseSection<Content: View>(title: String, detail: String, @ViewBuilder content: () -> Content) -> some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text(title).font(.title3.weight(.semibold))
-            Text(detail).font(.subheadline).foregroundStyle(AppTheme.muted).fixedSize(horizontal:false,vertical:true)
-            content()
+            DisclosureGroup("Опора и ограничения") {
+                VStack(alignment: .leading, spacing: AppTheme.Measure.d8) {
+                    Text(LearningCourseSnapshot.interpretation)
+                    Text("Охват показывает разные задачи; последний ответ отражает текущий результат по уже встреченным задачам.")
+                    Text("Арифметика проверяет заданные входы. Стратегические примеры используют условные диапазоны. Турнирные выплаты доступны только в учебных сценариях; практика проходит за столом 6-max.")
+                }
+                .font(.footnote)
+                .foregroundStyle(AppTheme.muted)
+                .padding(.top, AppTheme.Measure.d8)
+            }
         }
-        .padding(16)
+        .padding(AppTheme.Measure.d16)
         .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius))
     }
 }
@@ -149,41 +186,22 @@ private struct CourseLessonRow: View {
 struct CourseNextStepView: View {
     @EnvironmentObject private var store: PracticeStore
     var embeddedInList = false
-
     var body: some View {
-        let course = store.course
-        VStack(alignment: .leading, spacing: 10) {
-            if let next = course.nextLesson {
-                Label(course.progress(next).completed ? "Повторение по накопленным ответам" : "Следующий урок", systemImage: "arrow.right.circle.fill")
-                    .font(.subheadline.weight(.medium))
-                    .foregroundStyle(AppTheme.accent)
-                NavigationLink(value: next) {
-                    HStack {
-                        VStack(alignment: .leading, spacing: 3) {
-                            Text(next.title).font(.title3.weight(.semibold)).fixedSize(horizontal:false,vertical:true)
-                                .multilineTextAlignment(.leading)
-                            Text(course.progress(next).completed ? "Вернитесь к задачам, где накопились ошибки." : "Откройте урок и решите следующую задачу.")
-                                .font(.footnote)
-                                .fixedSize(horizontal:false,vertical:true)
-                                .multilineTextAlignment(.leading)
-                                .foregroundStyle(AppTheme.muted)
-                        }
-                        Spacer()
-                        if !embeddedInList { Image(systemName: "arrow.right").fontWeight(.semibold) }
-                    }
-                }
-                .accessibilityIdentifier("course.next")
+        let learning = store.learning()
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+            if let id = learning.recommendation(in: CourseCatalog.allExerciseIDs) {
+                let title = FoundationLesson.exercise(id)?.title ?? CourseCatalog.exercises.first(where: { $0.id == id })?.title ?? "Открыть задачу"
+                Text("Следующее решение").font(.subheadline.weight(.medium)).foregroundStyle(AppTheme.muted)
+                NavigationLink { learningDestination(id) } label: {
+                    NavigationRow(title: title, subtitle: "Продолжить с сохранённого шага", symbol: "arrow.right.circle")
+                }.buttonStyle(.plain).accessibilityIdentifier("course.next")
             } else {
-                Label("Все доступные наборы пройдены", systemImage: "checkmark.seal.fill")
-                    .font(.headline)
-                    .foregroundStyle(AppTheme.success)
-                Text("Для переноса навыка нужны новые задачи и отложенная проверка.")
-                    .font(.footnote)
-                    .foregroundStyle(AppTheme.muted)
+                Label("Все доступные шаблоны встречались", systemImage: "checkmark.circle").font(.headline)
+                Text("Откройте повторение или вернитесь к разбору.").font(.subheadline).foregroundStyle(AppTheme.muted)
             }
         }
-        .padding(16)
-        .background(AppTheme.surfaceAlt, in: RoundedRectangle(cornerRadius: AppTheme.radius))
+        .padding(AppTheme.Measure.d20)
+        .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius))
     }
 }
 

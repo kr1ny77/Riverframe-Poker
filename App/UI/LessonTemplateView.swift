@@ -40,7 +40,7 @@ struct LessonCalculationBox: View {
     }
 }
 
-private struct LessonFrame<Content: View>: View {
+struct LessonFrame<Content: View>: View {
     let title: String
     let symbol: String
     @ViewBuilder let content: Content
@@ -148,14 +148,25 @@ struct LessonTemplateView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: AppTheme.Measure.d20) {
                 LessonHeader(title: exercise.title, detail: "\(topicID.rawValue) · \(exercise.lesson.title)")
-                Text("Цель").font(.headline).accessibilityAddTraits(.isHeader)
-                Text(guide.goal).font(.body).fixedSize(horizontal: false, vertical: true).padding(.vertical, AppTheme.Measure.d3).accessibilityIdentifier("lesson.goal")
+                LessonFrame(title: "Цель урока", symbol: "scope") {
+                    Text(guide.goal)
+                        .font(.body.weight(.medium))
+                        .fixedSize(horizontal: false, vertical: true)
+                        .accessibilityIdentifier("lesson.goal")
+                    NavigationLink {
+                        CatalogTaskDestination(exercise: exercise)
+                    } label: {
+                        Label(latest == nil ? "Открыть ситуацию" : "Решить ещё раз", systemImage: "pencil.and.list.clipboard")
+                    }
+                    .buttonStyle(PrimaryButtonStyle())
+                    .accessibilityIdentifier("lesson.start")
+                }
                 if let error = store.errorMessage {
                     ErrorNotice(text: error)
                     Button("Повторить загрузку") { store.reload() }.buttonStyle(SecondaryButtonStyle())
                 }
                 if let latest {
-                    VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+                    LessonFrame(title: "Последняя проверка", symbol: latest.isCorrect ? "checkmark.circle.fill" : "exclamationmark.circle.fill") {
                         Label(latest.isCorrect ? "Последний ответ: верно по условию." : "Последний ответ: есть ошибка.",
                               systemImage: latest.isCorrect ? "checkmark.circle" : "exclamationmark.circle")
                             .font(.headline)
@@ -175,23 +186,29 @@ struct LessonTemplateView: View {
                         }
                     }
                 }
-                Text(exercise.resultKind.title).font(.subheadline.weight(.medium))
-                NavigationLink {
-                    CatalogTaskDestination(exercise: exercise)
-                } label: {
-                    Label(latest == nil ? "Перейти к задаче" : "Решить ещё раз", systemImage: "pencil.and.list.clipboard")
+                LessonFrame(title: "Как устроена задача", symbol: "rectangle.3.group") {
+                    Text("Ситуация → ваш ответ → проверка → пошаговый разбор.")
+                        .fixedSize(horizontal: false, vertical: true)
+                    Text(exercise.resultKind.title)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(AppTheme.muted)
                 }
-                .buttonStyle(PrimaryButtonStyle())
-                .accessibilityIdentifier("lesson.start")
-                Text("В задаче: ситуация → ваш ответ → проверка → пошаговый разбор. После сохранения вернитесь сюда к результату и следующей задаче.")
-                    .font(.footnote).foregroundStyle(AppTheme.muted).fixedSize(horizontal: false, vertical: true)
-                LessonTermBox(term: guide.term, definition: guide.definition, example: guide.example)
-                LessonMethodBox(when: guide.when, steps: guide.steps)
                 LessonCalculationBox(exercise: exercise, assumptions: guide.assumptions)
-                if let question = exercise.potOddsQuestion {
-                    LessonPotDiagram(pot: question.potBefore, bet: question.opponentBet)
+                DisclosureGroup("Термин и метод") {
+                    VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+                        LessonTermBox(term: guide.term, definition: guide.definition, example: guide.example)
+                        LessonMethodBox(when: guide.when, steps: guide.steps)
+                    }
+                    .padding(.top, AppTheme.Measure.d12)
                 }
-                LessonDecisionDiagram(lesson: exercise.lesson)
+                .font(.subheadline.weight(.semibold))
+                .accessibilityHint("Определение, пример, порядок решения и допущения")
+                LessonFrame(title: "Наглядная схема", symbol: "point.3.connected.trianglepath.dotted") {
+                    if let question = exercise.potOddsQuestion {
+                        LessonPotDiagram(pot: question.potBefore, bet: question.opponentBet)
+                    }
+                    LessonDecisionDiagram(lesson: exercise.lesson)
+                }
                 Text("ID: \(exercise.id.rawValue) · редакция \(exercise.contentVersion)")
                     .font(.footnote).foregroundStyle(AppTheme.muted)
             }

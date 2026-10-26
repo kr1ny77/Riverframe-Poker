@@ -1,36 +1,29 @@
 import SwiftUI
 import PokerCore
 
-private struct TokenFile: Decodable { let color: [String: String] }
-private enum DesignTokens {
-    static let colors: [String: String] = {
-        guard let url = Bundle.main.url(forResource: "design-tokens", withExtension: "json"),
-              let data = try? Data(contentsOf: url),
-              let file = try? JSONDecoder().decode(TokenFile.self, from: data) else { return [:] }
-        return file.color
-    }()
-    static func color(_ name: String, fallback: String) -> Color { Color(hex: colors[name] ?? fallback) }
-}
-
 enum AppTheme {
-    static let bg = DesignTokens.color("bg", fallback: "101A1D")
-    static let surface = DesignTokens.color("surface", fallback: "19272B")
-    static let surfaceAlt = DesignTokens.color("surface-alt", fallback: "24383D")
-    static let text = DesignTokens.color("text", fallback: "F2F2E9")
-    static let muted = DesignTokens.color("text-muted", fallback: "ADBDBE")
-    static let accent = DesignTokens.color("accent", fallback: "D7B98C")
-    static let onAccent = DesignTokens.color("on-accent", fallback: "101A1D")
-    static let border = DesignTokens.color("border", fallback: "445C61")
-    static let danger = DesignTokens.color("danger", fallback: "F2A0A3")
-    static let success = DesignTokens.color("success", fallback: "93D0B5")
-    static let warning = DesignTokens.color("warning", fallback: "D7B98C")
-    static let table = DesignTokens.color("table-bg", fallback: "173D3D")
-    static let cardInk = DesignTokens.color("card-ink", fallback: "19272B")
-    static let cardRed = DesignTokens.color("card-red", fallback: "A3283D")
-    static let accentPressed = DesignTokens.color("accent-pressed", fallback: "C2A275")
-    static let borderInput = DesignTokens.color("border-input", fallback: "91AAAF")
-    static let cardFace = DesignTokens.color("card-face", fallback: "FFFFFF")
-    static let radius: CGFloat = 16
+    static let bg = Color("bg")
+    static let surface = Color("surface")
+    static let surfaceAlt = Color("surface-alt")
+    static let text = Color("text")
+    static let muted = Color("text-muted")
+    static let accent = Color("accent")
+    static let onAccent = Color("on-accent")
+    static let border = Color("border")
+    static let danger = Color("danger")
+    static let success = Color("success")
+    static let warning = Color("warning")
+    static let table = Color("table-bg")
+    static let cardInk = Color("card-ink")
+    static let cardRed = Color("card-red")
+    static let accentPressed = Color("accent-pressed")
+    static let borderInput = Color("border-input")
+    static let cardFace = Color("card-face")
+    static let tableText = Color("table-text")
+    static let tableMuted = Color("table-muted")
+    static let tableSurface = Color("table-surface")
+    static let tableAccent = Color("table-accent")
+    static let radius: CGFloat = 20
     enum Measure {
         static let d0: CGFloat = 0
         static let d1: CGFloat = 1
@@ -44,6 +37,9 @@ enum AppTheme {
         static let d16: CGFloat = 16
         static let d18: CGFloat = 18
         static let d20: CGFloat = 20
+        static let d24: CGFloat = 24
+        static let d32: CGFloat = 32
+        static let d40: CGFloat = 40
         static let d30: CGFloat = 30
         static let d48: CGFloat = 48
     }
@@ -94,278 +90,68 @@ struct AppShellView: View {
 
 struct PlayHomeView: View {
     @EnvironmentObject private var game: GameViewModel
+    @EnvironmentObject private var store: PracticeStore
     var body: some View {
         ScrollView {
-            VStack(alignment:.leading,spacing:24) {
-                LessonHeader(title:"Практика холдема",detail:"Учитесь принимать решения — за столом и в коротких задачах.")
-                VStack(alignment:.leading,spacing:20) {
-                    HStack {
-                        VStack(alignment:.leading,spacing:6) {
-                            Text("Ваш учебный стол").font(.title3.weight(.semibold)).fixedSize(horizontal:false,vertical:true)
-                            Text("NLHE, шесть мест").font(.subheadline).foregroundStyle(AppTheme.muted)
-                        }
-                        Spacer()
-                        Image(systemName:"suit.spade.fill").font(.title).foregroundStyle(AppTheme.accent).accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: AppTheme.Measure.d32) {
+                StudioHeading(title: "RiverFrame", subtitle: "Покер начинается с решения")
+                VStack(alignment: .leading, spacing: AppTheme.Measure.d20) {
+                    HStack(alignment: .firstTextBaseline) {
+                        Text("Практика за столом").font(.title2.weight(.bold))
+                        Spacer(minLength: AppTheme.Measure.d8)
+                        Image(systemName: "suit.spade.fill").font(.title2).accessibilityHidden(true)
                     }
-                    HStack(alignment:.bottom,spacing:8) {
-                        PlayingCardView(card:Card(id:48),size:CGSize(width:52,height:73))
-                        PlayingCardView(card:Card(id:45),size:CGSize(width:52,height:73))
-                        Spacer()
-                        VStack(alignment:.trailing,spacing:4) {
-                            Text("5 / 10").font(.title2.weight(.semibold).monospacedDigit())
-                            Text("Блайнды").font(.caption).foregroundStyle(AppTheme.muted)
-                        }
-                    }.accessibilityLabel("Демонстрация карт. Блайнды пять и десять.")
-                    Text("Учебный профиль: \(game.activeBotLevel.title)")
-                        .accessibilityIdentifier("table.activeBotLevel")
+                    HStack(alignment: .center, spacing: AppTheme.Measure.d20) {
+                        HStack(spacing: AppTheme.Measure.d6) {
+                            PlayingCardView(card: Card(id: 48), size: CGSize(width: 48, height: 67))
+                            PlayingCardView(card: Card(id: 45), size: CGSize(width: 48, height: 67))
+                        }.accessibilityLabel("Демонстрационные карты")
+                        VStack(alignment: .leading, spacing: AppTheme.Measure.d8) {
+                            Text("Вы и пять ботов").font(.headline)
+                            Text("Блайнды 5 / 10").font(.subheadline.monospacedDigit())
+                            Text(game.activeBotLevel.title).font(.subheadline.weight(.medium))
+                                .accessibilityLabel("Учебный профиль: " + game.activeBotLevel.title)
+                                .accessibilityIdentifier("table.activeBotLevel")
+                        }.frame(maxWidth: .infinity, alignment: .leading)
+                    }
                     if game.selectedBotLevel != game.activeBotLevel {
-                        Text("Со следующей раздачи: \(game.selectedBotLevel.title)").font(.footnote)
+                        Text("Со следующей раздачи: " + game.selectedBotLevel.title).font(.footnote)
                     }
                     NavigationLink { TableView() } label: {
-                        Label(game.snapshot.complete ? "Результат раздачи" : "Открыть стол",systemImage:"play.fill")
-                    }.buttonStyle(PrimaryButtonStyle())
-                }.padding(20).background(AppTheme.table,in:RoundedRectangle(cornerRadius:24))
-                VStack(alignment:.leading,spacing:12) {
-                    Text("Разобрать одно решение").font(.system(.title3,design:.serif).weight(.semibold))
-                    Text("Комбинации, вероятности, диапазоны и цена колла. Ответьте, затем проверьте расчёт.").fixedSize(horizontal:false,vertical:true)
-                        .foregroundStyle(AppTheme.muted)
+                        Text(game.snapshot.complete ? "Результат раздачи" : "Открыть стол")
+                            .frame(maxWidth: .infinity, minHeight: AppTheme.Metrics.actionHeight)
+                            .font(.headline)
+                    }
+                    .buttonStyle(.plain).foregroundStyle(AppTheme.tableSurface)
+                    .background(AppTheme.tableText, in: RoundedRectangle(cornerRadius: AppTheme.Measure.d12))
+                }
+                .padding(AppTheme.Measure.d24)
+                .foregroundStyle(AppTheme.tableText)
+                .background(AppTheme.table, in: RoundedRectangle(cornerRadius: AppTheme.Metrics.tableRadius))
+
+                WorkbenchSection(title: "Вернуться к обучению") {
+                    CourseNextStepView()
                     NavigationLink { TrainingHomeView() } label: {
-                        Label("Короткая тренировка",systemImage:"arrow.right.circle")
-                    }.buttonStyle(SecondaryButtonStyle())
+                        NavigationRow(title: "Короткая тренировка", subtitle: "Курс из 60 тем и отдельные задачи", symbol: "books.vertical")
+                    }.buttonStyle(.plain)
+                }
+                HStack(alignment: .top, spacing: AppTheme.Measure.d12) {
+                    Image(systemName: "iphone").font(.headline)
+                    VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
+                        Text("Практика офлайн").font(.subheadline.weight(.medium))
+                        Text("Виртуальные фишки. Учитесь в своём темпе.").font(.footnote).foregroundStyle(AppTheme.muted)
+                    }
                 }
                 DisclosureGroup("Как устроены боты") {
-                    Text("Все пять ботов используют общий учебный профиль. Уровни меняют выбор рук, реакцию на ставки и размеры ставок по условным эвристикам. Практикуйте решения и разбирайте их условия в уроках.")
-                        .font(.subheadline).foregroundStyle(AppTheme.muted).padding(.top,8)
-                }.font(.subheadline)
-                Label("Офлайн · виртуальные фишки",systemImage:"iphone").font(.footnote).foregroundStyle(AppTheme.muted)
-            }.padding(20).padding(.bottom,16)
+                    Text("Все пять ботов используют один учебный профиль. Эвристики меняют выбор рук и реакцию на ставки. Условия решений можно разобрать в курсе.")
+                        .font(.subheadline).foregroundStyle(AppTheme.muted)
+                }
+            }
+            .frame(maxWidth: AppTheme.Metrics.lessonReadingWidth, alignment: .leading)
+            .frame(maxWidth: .infinity)
+            .padding(AppTheme.Measure.d20)
+            .padding(.bottom, AppTheme.Measure.d24)
         }.lessonCanvas().navigationTitle("Играть")
-    }
-}
-
-struct TableView: View {
-    @Environment(\.dynamicTypeSize) private var typeSize
-    @EnvironmentObject private var game: GameViewModel
-    @State private var editor: BetEditorKind?
-
-    var body: some View {
-        let snapshot = game.snapshot
-        GeometryReader { viewport in
-        ScrollView {
-            VStack(spacing: AppTheme.Measure.d12) {
-                (typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(alignment:.leading,spacing:12)) : AnyLayout(HStackLayout())) {
-                    VStack(alignment: .leading) {
-                        Text("Раздача \(snapshot.handNumber)").font(.headline)
-                        Text("Учебный профиль: \(game.activeBotLevel.title)").font(.caption)
-                            .accessibilityIdentifier("table.botProfile")
-                        (typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(alignment:.leading,spacing:4)) : AnyLayout(HStackLayout(spacing:4))) {
-                            Text(snapshot.street)
-                            if let actor=snapshot.players.first(where:{ $0.id == snapshot.actor }) {
-                                Text(actor.id == 0 ? "· Ваш ход" : "· \(actor.name)").font(.caption)
-                            }
-                        }.foregroundStyle(AppTheme.muted)
-                    }
-                    Spacer()
-                    Button(game.isPaused ? "Продолжить" : "Пауза") { game.setPaused(!game.isPaused) }
-                        .font(.subheadline.weight(.semibold)).padding(.horizontal,12).frame(minHeight:44).background(AppTheme.surfaceAlt,in:Capsule())
-                }
-                (typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(alignment:.leading,spacing:4)) : AnyLayout(HStackLayout())) {
-                    Text("Блайнды 5 / 10")
-                    Spacer()
-                    Text("Виртуальные фишки")
-                }.font(.caption).foregroundStyle(AppTheme.muted)
-                if typeSize.isAccessibilitySize { sessionControls(snapshot) }
-                PokerTableView(snapshot:snapshot,compact:viewport.size.height < 500)
-                if snapshot.complete {
-                    OutcomeView(snapshot: snapshot) { game.startFreshHand() }
-                }
-                if let error = game.errorMessage { ErrorNotice(text: error) }
-            }.padding()
-        }
-        }
-        .background(AppTheme.bg)
-        .navigationTitle("Стол")
-        .inlineNavigationTitle()
-        .safeAreaInset(edge: .bottom) {
-            if !typeSize.isAccessibilitySize { sessionControls(snapshot) }
-        }
-        .onAppear { game.setPaused(false) }
-        .onDisappear { game.setPaused(true) }
-        .sheet(item: $editor) { kind in
-            BetEditor(kind: kind, snapshot: snapshot) { game.send($0); editor = nil }
-                .presentationDetents([.large])
-        }
-    }
-    @ViewBuilder
-    private func sessionControls(_ snapshot: GameSnapshot) -> some View {
-        if !snapshot.complete {
-            VStack(spacing: AppTheme.Measure.d8) {
-                if game.isPaused {
-                    Text("Раздача на паузе. Нажмите «Продолжить».").foregroundStyle(AppTheme.muted)
-                    Button("Продолжить") { game.setPaused(false) }.buttonStyle(PrimaryButtonStyle())
-                } else {
-                    ActionBar(snapshot:snapshot,botThinking:game.isBotThinking,onAction:game.send,onBet:{ editor = $0 })
-                }
-            }.padding(.horizontal,16).padding(.vertical,10).frame(maxWidth:.infinity).background(AppTheme.bg)
-        }
-    }
-
-}
-
-struct PokerTableView: View {
-    let snapshot: GameSnapshot
-    var compact = false
-    @Environment(\.dynamicTypeSize) private var typeSize
-    var body: some View {
-        Group {
-            if typeSize >= .xLarge || compact {
-                VStack(spacing:16) {
-                    bankAndBoard
-                    ForEach(snapshot.players) { player in SeatView(player:player,isActor:player.id == snapshot.actor) }
-                }.padding(16)
-            } else {
-                PokerRingLayout {
-                    ForEach(snapshot.players) { player in SeatView(player:player,isActor:player.id == snapshot.actor) }
-                    bankAndBoard
-                }.frame(height:430)
-            }
-        }.frame(maxWidth:.infinity)
-            .background {
-                ZStack {
-                    AppTheme.table
-                    Image("poker-table-charcoal-cloth-v1").resizable(resizingMode:.tile).opacity(0.08).accessibilityHidden(true)
-                    if !compact && typeSize < .xLarge {
-                        Ellipse().stroke(AppTheme.accent.opacity(0.2),lineWidth:1).padding(.horizontal,24).padding(.vertical,35)
-                    }
-                }.clipShape(RoundedRectangle(cornerRadius:32))
-            }
-            .accessibilityElement(children:.contain)
-            .accessibilityLabel("Покерный стол, банк \(snapshot.pot), \(snapshot.street)")
-    }
-    private var bankAndBoard: some View {
-        VStack(spacing:8) {
-            VStack(spacing:3) {
-                Text("Банк · ставка \(snapshot.currentBet)").font(.caption).foregroundStyle(AppTheme.muted)
-                Text("\(snapshot.pot)").font(.system(.title,design:.rounded).weight(.semibold).monospacedDigit())
-            }.accessibilityElement(children:.combine)
-            BoardView(cards:snapshot.board)
-        }
-    }
-}
-
-private struct PokerRingLayout: Layout {
-    func sizeThatFits(proposal:ProposedViewSize,subviews:Subviews,cache:inout ()) -> CGSize {
-        CGSize(width:proposal.width.flatMap { $0.isFinite ? max(0,$0) : nil } ?? 350,height:proposal.height.flatMap { $0.isFinite ? max(0,$0) : nil } ?? 430)
-    }
-    func placeSubviews(in bounds:CGRect,proposal:ProposedViewSize,subviews:Subviews,cache:inout ()) {
-        let places:[CGPoint]=[CGPoint(x:0.5,y:0.80),CGPoint(x:0.15,y:0.77),CGPoint(x:0.15,y:0.30),CGPoint(x:0.5,y:0.14),CGPoint(x:0.85,y:0.30),CGPoint(x:0.85,y:0.77),CGPoint(x:0.5,y:0.46)]
-        for (index,view) in subviews.enumerated() where index < places.count {
-            let width:CGFloat=index == 6 ? max(0,bounds.width-36) : (index == 0 ? 124 : min(98,bounds.width*0.28))
-            view.place(at:CGPoint(x:bounds.minX+bounds.width*places[index].x,y:bounds.minY+bounds.height*places[index].y),anchor:.center,proposal:ProposedViewSize(width:width,height:nil))
-        }
-    }
-}
-
-struct BoardView: View {
-    let cards: [Card]
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
-    @ScaledMetric(relativeTo:.body) private var width:CGFloat=40
-    private var cardWidth:CGFloat { min(width,56) }
-    var body: some View {
-        LazyVGrid(columns:[GridItem(.adaptive(minimum:cardWidth),spacing:6)],spacing:6) {
-            ForEach(0..<5,id:\.self) { index in
-                Group {
-                    if index < cards.count { PlayingCardView(card:cards[index],size:CGSize(width:cardWidth,height:cardWidth*1.4))
-                            .transition(.opacity.combined(with:.offset(y:reduceMotion ? 0 : 8))) }
-                    else { RoundedRectangle(cornerRadius:7).stroke(AppTheme.muted.opacity(0.4),style:StrokeStyle(lineWidth:1,dash:[3,3]))
-                            .frame(width:cardWidth,height:cardWidth*1.4).accessibilityLabel("Общая карта ещё не открыта") }
-                }
-            }
-        }.frame(maxWidth:5*cardWidth+24)
-            .animation(.timingCurve(0.23,1,0.32,1,duration:reduceMotion ? 0.08 : 0.18),value:cards.count)
-    }
-}
-
-struct PlayingCardView: View {
-    let card: Card
-    var size: CGSize = AppTheme.Metrics.boardCard
-    var body: some View {
-        VStack(spacing:0) {
-            Text(card.rankLabel).font(.system(size:max(11,size.width*0.34),weight:.semibold,design:.serif))
-            Text(card.symbol).font(.system(size:max(11,size.width*0.38),weight:.medium))
-        }.foregroundStyle(card.isRed ? AppTheme.cardRed : AppTheme.cardInk)
-            .frame(width:size.width,height:size.height)
-            .background(AppTheme.cardFace,in:RoundedRectangle(cornerRadius:7))
-            .overlay(RoundedRectangle(cornerRadius:7).stroke(AppTheme.cardInk.opacity(0.1)))
-            .accessibilityElement(children:.ignore).accessibilityLabel(card.label)
-    }
-}
-
-struct SeatView: View {
-    let player:PlayerSnapshot
-    let isActor:Bool
-    @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
-    @Environment(\.colorSchemeContrast) private var contrast
-    @Environment(\.dynamicTypeSize) private var typeSize
-    var body: some View {
-        VStack(spacing:4) {
-            (typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(spacing:4)) : AnyLayout(HStackLayout(spacing:3))) {
-                if player.isButton { Text("D").font(.system(size:11,weight:.bold)).frame(width:18,height:18).background(AppTheme.accent,in:Circle()).foregroundStyle(AppTheme.onAccent).accessibilityLabel("Дилер") }
-                Text(player.name).font(.caption.weight(.semibold))
-                Text(player.position).font(.caption2).foregroundStyle(AppTheme.muted)
-            }
-            if !player.folded {
-                if typeSize >= .xLarge && !player.cards.isEmpty {
-                    CardStrip(cards:player.cards)
-                } else {
-                HStack(spacing:4) {
-                    ForEach(player.cards) { card in PlayingCardView(card:card,size:player.id == 0 ? CGSize(width:42,height:59) : CGSize(width:25,height:35)) }
-                    if player.cards.isEmpty {
-                        ForEach(0..<2,id:\.self) { _ in
-                            RoundedRectangle(cornerRadius:3).fill(AppTheme.surfaceAlt).overlay(RoundedRectangle(cornerRadius:3).stroke(AppTheme.muted.opacity(0.5)))
-                                .frame(width:19,height:26).accessibilityLabel("Закрытая карта")
-                        }
-                    }
-                }
-                }
-            }
-            Text("\(player.stack)").font(.subheadline.weight(.semibold).monospacedDigit()).accessibilityLabel("Стек \(player.stack)")
-            if player.contribution > 0 { Text("Внёс \(player.contribution)").font(.caption2.monospacedDigit()).foregroundStyle(AppTheme.accent) }
-            if player.folded { Text("Пас").font(.caption).foregroundStyle(AppTheme.muted) }
-            else if player.allIn { Text("Олл-ин").font(.caption).foregroundStyle(AppTheme.warning) }
-            else if isActor { Label(player.id == 0 ? "Ваш ход" : "Ходит",systemImage:"circle.fill").font(.caption2.weight(.semibold)).foregroundStyle(AppTheme.accent) }
-            if !player.lastAction.isEmpty && !(isActor && player.lastAction == "Ожидает") && !(player.folded && player.lastAction == "Пас") {
-                Text(player.lastAction).font(.caption2).foregroundStyle(AppTheme.muted).fixedSize(horizontal:false,vertical:true)
-            }
-        }.padding(.vertical,7).padding(.horizontal,5).frame(maxWidth:.infinity)
-            .background(isActor ? AppTheme.surfaceAlt : AppTheme.bg.opacity(reduceTransparency ? 1 : 0.78),in:RoundedRectangle(cornerRadius:12))
-            .overlay(RoundedRectangle(cornerRadius:12).stroke(isActor ? AppTheme.accent : .clear,lineWidth:contrast == .increased ? 2.5 : 1.5))
-            .accessibilityElement(children:.combine)
-    }
-}
-
-struct ActionBar: View {
-    @Environment(\.dynamicTypeSize) private var typeSize
-    let snapshot: GameSnapshot
-    let botThinking: Bool
-    let onAction: (PokerAction) -> Void
-    let onBet: (BetEditorKind) -> Void
-    var body: some View {
-        guard snapshot.actor == 0 else {
-            return AnyView(Text(botThinking ? "Бот выбирает ход…" : "Ожидание хода").foregroundStyle(AppTheme.muted).padding())
-        }
-        let legal = snapshot.legal
-        return AnyView(VStack(spacing: AppTheme.Measure.d8) {
-            (typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(spacing:AppTheme.Measure.d8)) : AnyLayout(HStackLayout(spacing:AppTheme.Measure.d8))) {
-                if legal.canFold { Button("Пас") { onAction(.fold) }.buttonStyle(SecondaryButtonStyle()) }
-                if legal.canCheck { Button("Чек") { onAction(.check) }.buttonStyle(PrimaryButtonStyle()) }
-                else { Button("Колл \(legal.callAmount)") { onAction(.call) }.buttonStyle(PrimaryButtonStyle()) }
-            }
-            (typeSize.isAccessibilitySize ? AnyLayout(VStackLayout(spacing:AppTheme.Measure.d8)) : AnyLayout(HStackLayout(spacing:AppTheme.Measure.d8))) {
-                if legal.minRaiseTo != nil { Button(snapshot.currentBet == 0 ? "Ставка…" : "Повысить…") { onBet(.raise) }.buttonStyle(SecondaryButtonStyle()) }
-                if legal.canAllIn { Button("Олл-ин") { onBet(.allIn) }.buttonStyle(SecondaryButtonStyle()) }
-            }
-        })
     }
 }
 
@@ -540,13 +326,37 @@ struct ProgressView: View {
     @EnvironmentObject private var store: PracticeStore
     var body: some View {
         List {
+            if let error = store.errorMessage {
+                Section { ErrorNotice(text: error); Button("Повторить загрузку") { store.reload() } }
+            }
+            Section {
+                StudioHeading(title: "Ваш путь", subtitle: "Решения, понятия и следующая проверка")
+            }.listRowBackground(AppTheme.bg)
+            CatalogProgressSection()
+            CourseProgressSection()
+            Section {
+                NavigationLink { LegacyProgressHistoryView() } label: {
+                    NavigationRow(title: "История ответов", subtitle: "Прежние наборы и подробные результаты", symbol: "clock.arrow.circlepath")
+                }
+            }
+        }
+        .listStyle(.insetGrouped).scrollContentBackground(.hidden).background(AppTheme.bg)
+        .lessonCanvas().navigationTitle("Прогресс")
+        .navigationDestination(for: CourseLessonID.self) { CourseLessonDestination(lesson: $0) }
+    }
+}
+
+private struct LegacyProgressHistoryView: View {
+    @EnvironmentObject private var store: PracticeStore
+    var body: some View {
+        List {
             Group {
             if let error = store.errorMessage {
                 Section { ErrorNotice(text: error); Button("Повторить загрузку") { store.reload() } }
             }
             CourseProgressSection()
             CatalogProgressSection()
-            if store.attempts.isEmpty && store.comparisons.isEmpty && store.positions.isEmpty && store.evCalls.isEmpty && store.blockers.isEmpty {
+            if store.attempts.isEmpty && store.comparisons.isEmpty && store.positions.isEmpty && store.evCalls.isEmpty && store.blockers.isEmpty && store.foundations.isEmpty {
                 ContentUnavailableView("Пока нет попыток", systemImage: "chart.bar", description: Text("Результаты упражнений появятся здесь после проверки ответа."))
             } else {
                 if !store.blockers.isEmpty {
@@ -643,15 +453,25 @@ struct SettingsView: View {
     var body: some View {
         Form {
             Group {
+            Section {
+                StudioHeading(title: "Ваша практика", subtitle: "Условия стола и данные на устройстве")
+            }
             Section("Учебный стол") {
+                LabeledContent("Формат", value: "6-max")
                 LabeledContent("Блайнды", value: "5 / 10")
+            }
+            Section("Все пять ботов") {
                 Picker("Учебный профиль ботов", selection: Binding(get: { game.selectedBotLevel }, set: { game.selectBotLevel($0) })) {
                     ForEach(BotLevel.allCases, id: \.self) { level in Text(level.title).tag(level) }
                 }.accessibilityIdentifier("settings.botLevel")
-                Text(game.selectedBotLevel.learningDescription).font(.footnote)
-                Text("Один профиль для всех пяти ботов. Изменение вступает в силу со следующей раздачи.")
+                Text(game.selectedBotLevel.learningDescription).font(.subheadline).foregroundStyle(AppTheme.muted)
+                Label("Новый профиль — со следующей раздачи", systemImage: "arrow.triangle.2.circlepath")
                     .font(.footnote).foregroundStyle(AppTheme.muted)
-                Text("Виртуальные фишки и локальные боты. Уроки и прогресс доступны офлайн.").font(.footnote).foregroundStyle(AppTheme.muted)
+            }
+            Section("На вашем устройстве") {
+                Label("Курс и результаты доступны офлайн", systemImage: "iphone")
+                Text("Виртуальные фишки используются для практики. Результаты упражнений сохраняются локально.")
+                    .font(.footnote).foregroundStyle(AppTheme.muted)
             }
             Section("Прогресс") { Button("Очистить результаты", role: .destructive) { confirmClear = true }.foregroundStyle(AppTheme.danger) }
             if let error = store.errorMessage {
@@ -672,9 +492,9 @@ struct PrimaryButtonStyle: ButtonStyle {
     func makeBody(configuration:Configuration) -> some View {
         configuration.label.font(.body.weight(.semibold)).multilineTextAlignment(.center)
             .frame(maxWidth:.infinity,minHeight:48).padding(.horizontal,14)
-            .foregroundStyle(AppTheme.onAccent)
-            .background(configuration.isPressed ? AppTheme.accentPressed : AppTheme.accent,in:RoundedRectangle(cornerRadius:12))
-            .opacity(enabled ? 1 : 0.45)
+            .foregroundStyle(enabled ? AppTheme.onAccent : AppTheme.muted)
+            .background(!enabled ? AppTheme.surfaceAlt : (configuration.isPressed ? AppTheme.accentPressed : AppTheme.accent),in:RoundedRectangle(cornerRadius:12))
+            .opacity(1)
     }
 }
 struct SecondaryButtonStyle: ButtonStyle {
@@ -683,14 +503,14 @@ struct SecondaryButtonStyle: ButtonStyle {
         configuration.label.font(.body.weight(.medium)).multilineTextAlignment(.center)
             .frame(maxWidth:.infinity,minHeight:48).padding(.horizontal,12)
             .foregroundStyle(AppTheme.text)
-            .background(configuration.isPressed ? AppTheme.border : AppTheme.surfaceAlt,in:RoundedRectangle(cornerRadius:12))
+            .background(configuration.isPressed ? AppTheme.surfaceAlt : AppTheme.surface,in:RoundedRectangle(cornerRadius:12))
             .overlay(RoundedRectangle(cornerRadius:12).stroke(AppTheme.border,lineWidth:1))
-            .opacity(enabled ? 1 : 0.45)
+            .opacity(1)
     }
 }
 struct DarkGroupBoxStyle: GroupBoxStyle { func makeBody(configuration: Configuration) -> some View { VStack(alignment: .leading, spacing: AppTheme.Measure.d8) { configuration.label.font(.headline); configuration.content }.padding().background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius)) } }
 
-private extension View {
+extension View {
     @ViewBuilder func opaqueTabBar() -> some View {
         #if os(iOS)
         self.toolbarBackground(AppTheme.bg,for:.tabBar).toolbarBackground(.visible,for:.tabBar)

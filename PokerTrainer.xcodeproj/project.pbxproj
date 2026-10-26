@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0000000000000000000002 /* TablePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000001; };
+		FA0000000000000000000004 /* DesignColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA0000000000000000000003; };
+
 		F90000000000000000000002 /* App/UI/CourseCatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90000000000000000000001 /* App/UI/CourseCatalogView.swift */; };
 		D70000000000000000000002 /* App/UI/LessonTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70000000000000000000001 /* App/UI/LessonTemplateView.swift */; };
 		D80000000000000000000002 /* App/UI/FoundationLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80000000000000000000001 /* App/UI/FoundationLessonView.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA0000000000000000000001 /* TablePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/TablePresentation.swift; sourceTree = "<group>"; };
+		FA0000000000000000000003 /* DesignColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = App/Resources/DesignColors.xcassets; sourceTree = "<group>"; };
+
 		F90000000000000000000001 /* App/UI/CourseCatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/CourseCatalogView.swift; sourceTree = "<group>"; };
 		D70000000000000000000001 /* App/UI/LessonTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/LessonTemplateView.swift; sourceTree = "<group>"; };
 		D80000000000000000000001 /* App/UI/FoundationLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/UI/FoundationLessonView.swift; sourceTree = "<group>"; };
@@ -88,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				F90000000000000000000001 /* App/UI/CourseCatalogView.swift */,
+                FA0000000000000000000001,
+                FA0000000000000000000003,
 				D70000000000000000000001 /* App/UI/LessonTemplateView.swift */,
 				D80000000000000000000001 /* App/UI/FoundationLessonView.swift */,
 				F80000000000000000000001 /* App/UI/DesignSystem.swift */,
@@ -200,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0000000000000000000000CC /* App/Resources/design-tokens.json in Resources */,
+                FA0000000000000000000004,
 				0000000000000000000000CD /* App/Resources/Textures/poker-table-charcoal-cloth-v1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +230,7 @@
 				F80000000000000000000002 /* App/UI/DesignSystem.swift in Sources */,
 				F70000000000000000000002 /* App/UI/LearningCourseView.swift in Sources */,
 				F90000000000000000000002 /* App/UI/CourseCatalogView.swift in Sources */,
+                FA0000000000000000000002,
 				D70000000000000000000002 /* App/UI/LessonTemplateView.swift in Sources */,
 				D80000000000000000000002 /* App/UI/FoundationLessonView.swift in Sources */,
 				F60000000000000000000002 /* App/UI/BlockerLessonView.swift in Sources */,

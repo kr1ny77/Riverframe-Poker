@@ -1,0 +1,10 @@
+Exported 7 attachments for: CriticalFlows/testRedesignWorkspace():
+File: E2FE45A7-5CB5-4519-88FA-368FBD4CF18F.png, suggested name: "workbench-satellite-proof_0_93420FB8-E9F5-4F64-BD44-D63C200E1003.png"
+File: 1CA283DA-A3B9-42DF-AF1F-4DEB5035269C.png, suggested name: "workbench-long-context_0_70ED7AE4-7AAA-4AE6-8538-9B8C10DC3333.png"
+File: CF366DD6-CE92-4EA5-9A15-C4ACFE27F2CE.png, suggested name: "workbench-repeat-and-progress_0_C61D8F08-D43C-4FD5-97F4-A1AB07E18DF3.png"
+File: AE3623EC-EEB8-4535-B9D9-F8BA20591344.png, suggested name: "workbench-lesson-error-category_0_D99AC96C-AC80-4333-B62E-72A0FA051D43.png"
+File: 352A4BA1-4B68-4524-B810-B8018FBCA9C3.png, suggested name: "workbench-lesson-proof_0_19594026-F7CE-45E2-A292-754F60C886DF.png"
+File: B049198D-3A1A-46DD-B1D2-5D72840D8BEA.png, suggested name: "workbench-lesson-answer_0_BEC09936-08F3-4BA0-B738-CB2122FBB3EF.png"
+File: 6094282E-CC42-4AEC-9FB6-31BE14B58826.png, suggested name: "workbench-lesson-goal_0_BF484B12-8AC2-4DDC-B849-ECFC0875AD3E.png"
+
+Generated manifest file with attachment details: /Users/kr1ny77/Desktop/Poker/replica/design/evidence/redesign-workspace-20261026-144353/screenshots/manifest.json

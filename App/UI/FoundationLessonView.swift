@@ -6,6 +6,7 @@ struct FoundationLessonView: View {
     let exercise: FoundationExercise
     @EnvironmentObject private var store: PracticeStore
     @FocusState private var answerFocused: Bool
+    @AccessibilityFocusState private var feedbackFocused: Bool
     @State private var started = false
     @State private var number = ""
     @State private var selection: Int?
@@ -30,24 +31,12 @@ struct FoundationLessonView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: AppTheme.Measure.d20) {
                 LessonHeader(title: exercise.title, detail: exercise.topicID.rawValue + " · " + exercise.purpose.title)
-                Text(exercise.resultKind.title).font(.subheadline.weight(.medium))
+                FoundationStatusChip(title: exercise.resultKind.title)
                 if let simulation = exercise.simulation {
                     CourseSimulationPanel(report: simulation)
                 }
                 if !started {
-                    Text("Цель: применить «" + exercise.term + "» к заданной ситуации.").font(.headline)
-                    if let latest {
-                        Text(latest.isCorrect ? "Последний ответ: верно по условию." : "Последний ответ: есть ошибка.")
-                            .font(.headline).accessibilityIdentifier("foundation.restored-result")
-                        Text(responseLabel(latest.response)).font(.subheadline)
-                        Text(latest.date, format: .dateTime.day().month().year().hour().minute()).font(.footnote)
-                        Text("Результат восстановлен из локальной истории.").font(.footnote)
-                    }
-                    Button(latest == nil ? "Перейти к задаче" : "Решить ещё раз") { started = true }
-                        .buttonStyle(PrimaryButtonStyle()).accessibilityIdentifier("foundation.start")
-                    LessonTermBox(term: exercise.term, definition: exercise.definition, example: exercise.example)
-                    LessonMethodBox(when: exercise.assumptions, steps: [exercise.method, "Проверьте единицы ответа и ограничения условия."])
-                    Text(exercise.assumptions).font(.footnote).foregroundStyle(AppTheme.muted)
+                    foundationStart
                 } else {
                     task
                 }
@@ -62,30 +51,96 @@ struct FoundationLessonView: View {
         .scrollDismissesKeyboard(.interactively)
         .toolbar { ToolbarItemGroup(placement: .keyboard) { Spacer(); Button("Готово") { answerFocused = false } } }
     }
+    private var foundationStart: some View {
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d16) {
+            LessonFrame(title: "Цель", symbol: "scope") {
+                Text("Примените «" + exercise.term + "» к ситуации и проверьте единицы результата.")
+                    .font(.body.weight(.medium))
+                    .fixedSize(horizontal: false, vertical: true)
+                Button(latest == nil ? "Открыть ситуацию" : "Решить ещё раз") { started = true }
+                    .buttonStyle(PrimaryButtonStyle())
+                    .accessibilityIdentifier("foundation.start")
+            }
+
+            if let latest {
+                LessonFrame(title: "Восстановленный результат", symbol: latest.isCorrect ? "checkmark.circle.fill" : "exclamationmark.circle.fill") {
+                    Text(latest.isCorrect ? "Последний ответ: верно по условию." : "Последний ответ: есть ошибка.")
+                        .font(.headline)
+                        .accessibilityIdentifier("foundation.restored-result")
+                    Text(responseLabel(latest.response)).font(.subheadline)
+                    Text(latest.date, format: .dateTime.day().month().year().hour().minute())
+                        .font(.footnote).foregroundStyle(AppTheme.muted)
+                    Text("Результат восстановлен из локальной истории.")
+                        .font(.footnote).foregroundStyle(AppTheme.muted)
+                }
+            }
+
+            DisclosureGroup("Справка к задаче") {
+                VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+                    LessonTermBox(term: exercise.term, definition: exercise.definition, example: exercise.example)
+                    LessonMethodBox(when: exercise.assumptions, steps: [exercise.method, "Проверьте единицы ответа и ограничения условия."])
+                    Text(exercise.assumptions).font(.footnote).foregroundStyle(AppTheme.muted)
+                }
+                .padding(.top, AppTheme.Measure.d12)
+            }
+            .font(.subheadline.weight(.semibold))
+            .accessibilityHint("Термин, метод и допущения задачи")
+        }
+    }
     private var task: some View {
         VStack(alignment: .leading, spacing: AppTheme.Measure.d16) {
-            ForEach(exercise.context, id: \.self) { Text($0) }
-            if !exercise.cards.isEmpty { CardStrip(cards: exercise.cards, label: "Карты из условия") }
-            if !exercise.chart.isEmpty {
-                Text("Условная учебная таблица").font(.headline)
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())], spacing: AppTheme.Measure.d8) {
-                    ForEach(exercise.chart.indices, id: \.self) { index in
-                        let cell = exercise.chart[index]
-                        VStack(spacing: AppTheme.Measure.d6) {
-                            Text(cell.label).font(.headline)
-                            Text(cell.value).font(.footnote)
-                        }
-                        .frame(maxWidth: .infinity)
-                        .padding(AppTheme.Measure.d12).background(AppTheme.surfaceAlt, in: RoundedRectangle(cornerRadius: AppTheme.radius))
-                        .accessibilityElement(children: .ignore).accessibilityLabel(cell.label + ": " + cell.value)
-                    }
-                }.accessibilityIdentifier("foundation.chart")
+            if let checked {
+                DisclosureGroup("Условие и ваш ответ") {
+                    situationTray
+                    answerWorkbench
+                }
+                feedbackWorkbench(checked)
+            } else {
+                situationTray
+                answerWorkbench
             }
-            Text(exercise.question).font(.headline).accessibilityIdentifier("foundation.question")
+        }
+    }
+    private var situationTray: some View {
+        LessonFrame(title: "Ситуация", symbol: "rectangle.3.group") {
+            ForEach(exercise.context, id: \.self) { context in
+                Text(context).fixedSize(horizontal: false, vertical: true)
+            }
+            if !exercise.cards.isEmpty { CardStrip(cards: exercise.cards, label: "Карты из условия") }
+            if !exercise.chart.isEmpty { foundationChart }
+        }
+    }
+    private var foundationChart: some View {
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d8) {
+            Text("Данные условия").font(.subheadline.weight(.semibold))
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 92), spacing: AppTheme.Measure.d8)], spacing: AppTheme.Measure.d8) {
+                ForEach(exercise.chart.indices, id: \.self) { index in
+                    let cell = exercise.chart[index]
+                    VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
+                        Text(cell.label).font(.subheadline.weight(.medium))
+                        Text(cell.value).font(.footnote.monospacedDigit())
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(AppTheme.Measure.d12)
+                    .background(AppTheme.surfaceAlt, in: RoundedRectangle(cornerRadius: AppTheme.Measure.d8))
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel(cell.label + ": " + cell.value)
+                }
+            }
+        }
+        .accessibilityIdentifier("foundation.chart")
+    }
+    private var answerWorkbench: some View {
+        LessonFrame(title: "Ваше решение", symbol: "pencil.line") {
+            Text(exercise.question).font(.headline).fixedSize(horizontal: false, vertical: true)
+                .accessibilityIdentifier("foundation.question")
             switch exercise.answer {
             case .number:
-                TextField("Числовой ответ", text: $number).textFieldStyle(.roundedBorder)
-                    .keyboardType(.numbersAndPunctuation).focused($answerFocused).accessibilityIdentifier("foundation.answer")
+                TextField("Числовой ответ", text: $number)
+                    .textFieldStyle(.roundedBorder)
+                    .keyboardType(.numbersAndPunctuation)
+                    .focused($answerFocused)
+                    .accessibilityIdentifier("foundation.answer")
                     .disabled(checked != nil)
                 Text("Допуск: ±\(exercise.answer.tolerance.formatted(.number.locale(Locale(identifier: "ru_RU")))) в единицах условия.")
                     .font(.footnote).foregroundStyle(AppTheme.muted)
@@ -95,20 +150,48 @@ struct FoundationLessonView: View {
                         Label(options[index], systemImage: selection == index ? "checkmark.circle.fill" : "circle")
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    .buttonStyle(SecondaryButtonStyle()).disabled(checked != nil)
+                    .buttonStyle(SecondaryButtonStyle())
+                    .disabled(checked != nil)
                     .accessibilityIdentifier("foundation.choice.\(index)")
                 }
             }
-            if let checked {
-                Text(checked.isCorrect ? "Верно по условию." : "Есть ошибка. Посмотрите разбор.")
-                    .font(.headline).accessibilityIdentifier("foundation.grade")
-                Text(responseLabel(checked.response)).font(.subheadline)
-                Text("Проверяемый ответ: " + answerLabel(checked.expected, rounded: true)).font(.headline)
-                    .accessibilityIdentifier("foundation.expected")
-                if showsDecisionTree && !exercise.diagram.isEmpty {
-                    FoundationDecisionTree(rows: exercise.diagram)
-                } else if !exercise.diagram.isEmpty {
-                    VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+            if checked == nil {
+                Button("Проверить") {
+                    guard let response else { return }
+                    let attempt = FoundationAttempt(exercise: exercise, response: response)
+                    answerFocused = false; checked = attempt; save(attempt)
+                }
+                .buttonStyle(PrimaryButtonStyle())
+                .disabled(response == nil)
+                .accessibilityIdentifier("foundation.check")
+            }
+        }
+    }
+    @ViewBuilder private func feedbackWorkbench(_ checked: FoundationAttempt) -> some View {
+        LessonFrame(title: checked.isCorrect ? "Проверка: верно" : "Проверка: разберите ответ", symbol: checked.isCorrect ? "checkmark.seal.fill" : "exclamationmark.triangle.fill") {
+            Text(checked.isCorrect ? "Верно по условию." : "Есть ошибка. Посмотрите разбор.")
+                .font(.title3.weight(.bold)).accessibilityIdentifier("foundation.grade")
+                .accessibilityFocused($feedbackFocused).onAppear { feedbackFocused = true }
+            Text(responseLabel(checked.response)).font(.subheadline)
+            Text("Проверяемый ответ: " + answerLabel(checked.expected, rounded: true))
+                .font(.title3.weight(.semibold)).accessibilityIdentifier("foundation.expected")
+        }
+        proofWorkbench
+        LessonFrame(title: "Типичная ошибка", symbol: "exclamationmark.bubble") {
+            Text(exercise.typicalError).fixedSize(horizontal: false, vertical: true)
+        }
+        LessonFrame(title: exercise.resultKind.title, symbol: "function") {
+            Text(exercise.assumptions).font(.subheadline).foregroundStyle(AppTheme.muted)
+        }
+        saveWorkbench(checked)
+    }
+    @ViewBuilder private var proofWorkbench: some View {
+        WorkbenchSection(title: "Пошаговый разбор") {
+            if !exercise.diagram.isEmpty {
+                VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+                    if showsDecisionTree {
+                        FoundationDecisionTree(rows: exercise.diagram)
+                    } else {
                         ForEach(exercise.diagram.indices, id: \.self) { index in
                             let row = exercise.diagram[index]
                             ViewThatFits(in: .horizontal) {
@@ -118,35 +201,29 @@ struct FoundationLessonView: View {
                             .accessibilityElement(children: .ignore).accessibilityLabel(row.label + ": " + row.value)
                         }
                     }
-                    .padding(AppTheme.Measure.d16)
-                    .background(AppTheme.surface, in: RoundedRectangle(cornerRadius: AppTheme.radius))
                 }
-                FormulaSteps(lines: exercise.explanation)
-                Text("Типичная ошибка").font(.headline)
-                Text(exercise.typicalError)
-                Text(exercise.assumptions).font(.footnote).foregroundStyle(AppTheme.muted)
-                if saved {
-                    Text("Результат сохранён на устройстве.").accessibilityIdentifier("foundation.saved")
-                    if !checked.isCorrect { LearningErrorEditor(attemptID: checked.id) }
-                    Button("К результату") { started = false; self.checked = nil; number = ""; selection = nil; saved = false }
-                        .buttonStyle(SecondaryButtonStyle()).accessibilityIdentifier("foundation.result")
-                    if let next = nextExercise {
-                        NavigationLink { FoundationLessonView(exercise: next) } label: { Text("Следующая задача: " + next.title) }
-                            .buttonStyle(PrimaryButtonStyle()).accessibilityIdentifier("foundation.next")
-                    }
-                } else {
-                    if let error { ErrorNotice(text: error) }
-                    Button("Повторить сохранение") { save(checked) }.buttonStyle(PrimaryButtonStyle())
-                        .accessibilityIdentifier("foundation.retry")
+                .accessibilityIdentifier("foundation.mathdiagram")
+            }
+            FormulaSteps(lines: exercise.explanation)
+        }
+    }
+    @ViewBuilder private func saveWorkbench(_ checked: FoundationAttempt) -> some View {
+        if saved {
+            LessonFrame(title: "Результат", symbol: "externaldrive.fill.badge.checkmark") {
+                Text("Результат сохранён на устройстве.").accessibilityIdentifier("foundation.saved")
+                if !checked.isCorrect { LearningErrorEditor(attemptID: checked.id) }
+                Button("К результату") { started = false; self.checked = nil; number = ""; selection = nil; saved = false }
+                    .buttonStyle(SecondaryButtonStyle()).accessibilityIdentifier("foundation.result")
+                if let next = nextExercise {
+                    NavigationLink { FoundationLessonView(exercise: next) } label: { Text("Следующая задача: " + next.title) }
+                        .buttonStyle(PrimaryButtonStyle()).accessibilityIdentifier("foundation.next")
                 }
-            } else {
-                Button("Проверить") {
-                    guard let response else { return }
-                    let attempt = FoundationAttempt(exercise: exercise, response: response)
-                    answerFocused = false; checked = attempt; save(attempt)
-                }
-                .buttonStyle(PrimaryButtonStyle()).disabled(response == nil)
-                .accessibilityIdentifier("foundation.check")
+            }
+        } else {
+            VStack(alignment: .leading, spacing: AppTheme.Measure.d12) {
+                if let error { ErrorNotice(text: error) }
+                Button("Повторить сохранение") { save(checked) }
+                    .buttonStyle(PrimaryButtonStyle()).accessibilityIdentifier("foundation.retry")
             }
         }
     }
@@ -173,6 +250,19 @@ struct FoundationLessonView: View {
             if case .choice(let options, _) = exercise.answer, options.indices.contains(index) { return options[index] }
             return "Вариант \(index + 1)"
         }
+    }
+}
+
+private struct FoundationStatusChip: View {
+    let title: String
+    var body: some View {
+        Label(title, systemImage: "checklist")
+            .font(.subheadline.weight(.semibold))
+            .foregroundStyle(AppTheme.muted)
+            .padding(.horizontal, AppTheme.Measure.d12)
+            .padding(.vertical, AppTheme.Measure.d8)
+            .background(AppTheme.surfaceAlt, in: Capsule())
+            .accessibilityLabel("Статус результата: " + title)
     }
 }
 

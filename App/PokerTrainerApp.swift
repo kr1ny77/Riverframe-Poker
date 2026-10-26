@@ -10,7 +10,7 @@ struct PokerTrainerApp: App {
             AppShellView()
                 .environmentObject(game)
                 .environmentObject(practice)
-                .preferredColorScheme(.dark)
+
         }
     }
 }

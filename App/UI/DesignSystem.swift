@@ -6,7 +6,7 @@ struct LessonHeader: View {
     let detail: String
     var body: some View {
         VStack(alignment:.leading,spacing:8) {
-            Text(title).font(.system(.title2,design:.serif).weight(.semibold)).fixedSize(horizontal:false,vertical:true).accessibilityAddTraits(.isHeader)
+            Text(title).font(.title.weight(.bold)).fixedSize(horizontal:false,vertical:true).accessibilityAddTraits(.isHeader)
             if !detail.isEmpty { Text(detail).font(.subheadline).foregroundStyle(AppTheme.muted).fixedSize(horizontal:false,vertical:true) }
         }.frame(maxWidth:.infinity,alignment:.leading)
     }
@@ -68,7 +68,7 @@ struct EquityMeter: View {
                 }
             }.frame(height:10).accessibilityHidden(true)
             Text(caption).font(.footnote).foregroundStyle(AppTheme.muted)
-        }.padding(16).background(AppTheme.surface,in:RoundedRectangle(cornerRadius:16))
+        }.padding(20).background(AppTheme.surface,in:RoundedRectangle(cornerRadius:20))
             .accessibilityElement(children:.ignore)
             .accessibilityLabel("\(accessibilityName) \(String(format:"%.2f",percent)) процентов. \(caption)")
     }
@@ -131,15 +131,15 @@ struct EVComparisonDiagram: View {
                 }.accessibilityElement(children:.combine)
             }
             Text("Шкала: −\(String(format:"%.2f",limit)) … +\(String(format:"%.2f",limit)) фишек. Ноль — текущий стек.").font(.footnote).foregroundStyle(AppTheme.muted)
-        }.padding(16).background(AppTheme.surface,in:RoundedRectangle(cornerRadius:16))
+        }.padding(20).background(AppTheme.surface,in:RoundedRectangle(cornerRadius:20))
     }
     private func bar(_ value:Double) -> some View {
         GeometryReader { proxy in
             ZStack(alignment:.leading) {
                 Rectangle().fill(AppTheme.border).frame(width:1).offset(x:proxy.size.width/2)
                 Rectangle().fill(value < 0 ? AppTheme.danger : AppTheme.success)
-                    .frame(width:proxy.size.width/2*abs(value)/limit,height:10)
-                    .offset(x:value < 0 ? proxy.size.width/2*(1-abs(value)/limit) : proxy.size.width/2)
+                    .frame(width:max(0, proxy.size.width)/2*min(1,abs(value)/limit),height:10)
+                    .offset(x:value < 0 ? max(0,proxy.size.width)/2*(1-min(1,abs(value)/limit)) : max(0,proxy.size.width)/2)
             }.frame(maxHeight:.infinity)
         }.frame(height:24).accessibilityHidden(true)
     }
@@ -167,7 +167,7 @@ struct OddsDiagram: View {
                 Text("Банк после колла").foregroundStyle(AppTheme.muted)
                 Spacer();Text("\(pot+bet+bet)").font(.title3.weight(.semibold).monospacedDigit())
             }.accessibilityElement(children:.combine)
-        }.padding(16).background(AppTheme.surface,in:RoundedRectangle(cornerRadius:16))
+        }.padding(20).background(AppTheme.surface,in:RoundedRectangle(cornerRadius:20))
     }
 }
 
@@ -202,4 +202,57 @@ extension View {
         #endif
     }
     func lessonInput() -> some View { modifier(LessonInputStyle()) }
+}
+
+struct StudioHeading: View {
+    let title: String
+    var subtitle: String? = nil
+    var body: some View {
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d8) {
+            Text(title).font(.largeTitle.weight(.bold)).accessibilityAddTraits(.isHeader)
+                .fixedSize(horizontal: false, vertical: true)
+            if let subtitle { Text(subtitle).font(.subheadline).foregroundStyle(AppTheme.muted) }
+        }.frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+struct WorkbenchSection<Content: View>: View {
+    let title: String
+    let detail: String?
+    @ViewBuilder var content: Content
+    init(title: String, detail: String? = nil, @ViewBuilder content: () -> Content) {
+        self.title = title; self.detail = detail; self.content = content()
+    }
+    var body: some View {
+        VStack(alignment: .leading, spacing: AppTheme.Measure.d16) {
+            VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
+                Text(title).font(.title3.weight(.semibold)).accessibilityAddTraits(.isHeader)
+                if let detail { Text(detail).font(.subheadline).foregroundStyle(AppTheme.muted) }
+            }
+            content
+        }.frame(maxWidth: .infinity, alignment: .leading)
+    }
+}
+
+struct NavigationRow: View {
+    let title: String
+    var subtitle: String? = nil
+    let symbol: String
+    var completion: String? = nil
+    var body: some View {
+        HStack(alignment: .center, spacing: AppTheme.Measure.d16) {
+            Image(systemName: symbol).font(.title3).foregroundStyle(AppTheme.accent)
+                .frame(width: AppTheme.Measure.d40, height: AppTheme.Measure.d40)
+                .background(AppTheme.surfaceAlt, in: RoundedRectangle(cornerRadius: AppTheme.Measure.d12))
+                .accessibilityHidden(true)
+            VStack(alignment: .leading, spacing: AppTheme.Measure.d6) {
+                Text(title).font(.headline).foregroundStyle(AppTheme.text)
+                if let subtitle { Text(subtitle).font(.subheadline).foregroundStyle(AppTheme.muted) }
+                if let completion { Text(completion).font(.caption).foregroundStyle(AppTheme.muted) }
+            }.frame(maxWidth: .infinity, alignment: .leading)
+            Image(systemName: "chevron.right").font(.caption.weight(.bold)).foregroundStyle(AppTheme.muted).accessibilityHidden(true)
+        }.padding(.vertical, AppTheme.Measure.d12)
+            .frame(minHeight: AppTheme.Measure.d48)
+            .contentShape(Rectangle())
+    }
 }
